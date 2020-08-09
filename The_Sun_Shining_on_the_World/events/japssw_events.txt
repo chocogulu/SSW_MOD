@@ -1,0 +1,259 @@
+add_namespace = japssw
+
+##Event: 日本が陣営への加盟を画策
+country_event = {
+	id = japssw.1
+	title = japssw.1.title
+	desc = japssw.1.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.1.a
+		ai_chance = { factor = 10}
+		JAP = { add_to_faction = RUS }
+	}
+	option = {
+		name = japssw.1.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: ロシアが承認
+news_event = {
+	id = japssw.2
+	title = japssw.2.title
+	desc = japssw.2.desc
+	picture = GFX_news_event_001
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.2.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 農地改革
+country_event = {
+	id = japssw.3
+	title = japssw.3.title
+	desc = japssw.3.desc
+	picture = GFX_report_event_generic_usa_treaty
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.3.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 金本位制の再導入
+country_event = {
+	id = japssw.4
+	title = japssw.4.title
+	desc = japssw.4.desc
+	picture = GFX_report_event_finnish_letter
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.4.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 日本の軍縮政策
+country_event = {
+	id = japssw.5
+	title = japssw.5.title
+	desc = japssw.5.desc
+	picture = GFX_report_event_poland_rejects
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.5.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 銀行券の改定
+country_event = {
+	id = japssw.6
+	title = japssw.6.title
+	desc = japssw.6.desc
+	picture = GFX_report_event_pierre_laval
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.6.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 朝鮮円の廃止
+country_event = {
+	id = japssw.7
+	title = japssw.7.title
+	desc = japssw.7.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.7.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 南方ドルの廃止
+country_event = {
+	id = japssw.8
+	title = japssw.8.title
+	desc = japssw.8.desc
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.8.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 釜山の嵐
+country_event = {
+	id = japssw.9
+	title = japssw.9.title
+	desc = japssw.9.desc
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.9.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 経済租借地法
+country_event = {
+	id = japssw.10
+	title = japssw.10.title
+	desc = japssw.10.desc
+	picture = GFX_report_event_japanese_chinese_surrender
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.10.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 対独包囲網
+news_event = {
+	id = japssw.11
+	title = japssw.11.title
+	desc = japssw.11.desc
+	picture = news_event_saf_coup
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.11.a
+		ai_chance = { factor = 1}
+		trigger = {
+			OR = {
+				tag = JAP
+			}
+		}
+	}
+	option = {
+		name = japssw.11.b
+		ai_chance = { factor = 1}
+		trigger = {
+			not = {
+				tag = JAP
+			}
+	}
+}
+##Event: バンコク会談
+news_event = {
+	id = japssw.12
+	title = japssw.12.title
+	desc = japssw.12.desc
+	picture = GFX_news_event_canada_patriation
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.12.a
+		ai_chance = { factor = 1}
+		trigger = {
+			OR = {
+				tag = JAP
+			}
+		}
+	}
+	option = {
+		name = japssw.12.a
+		ai_chance = { factor = 1}
+		trigger = {
+			not = {
+				tag = JAP
+			}
+		}
+	}
+}
+##Event: 第3回大東亜会議
+news_event = {
+	id = japssw.13
+	title = japssw.13.title
+	desc = japssw.13.desc
+	picture = 3_36150
+	trigger = {
+		tag = JAP
+		date > 1950.1.10
+	}
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.13.a
+		ai_chance = { factor = 1}
+		complete_national_focus = JAP_the_third_greater_east_asia_conference
+	}
+
+	option = {
+		name = japssw.13.b
+		ai_chance = { factor = 1}
+		complete_national_focus = JAP_the_third_greater_east_asia_conference
+	}
+}
+##Event: 第4回大東亜会議
+news_event = {
+	id = japssw.14
+	title = japssw.14.title
+	desc = japssw.14.desc
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	} 
+	option = {
+		name = japssw.14.a
+		ai_chance = { factor = 1}
+		complete_national_focus = JAP_the_third_greater_east_asia_conference
+	}
+	option = {
+		name = japssw.14.b
+		ai_chance = { factor = 1}
+		complete_national_focus = JAP_the_third_greater_east_asia_conference
+	}
+}

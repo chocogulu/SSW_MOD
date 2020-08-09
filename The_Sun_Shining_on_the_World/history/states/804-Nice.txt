@@ -1,0 +1,27 @@
+
+state={
+	id=804
+	name="STATE_804"
+
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = FRA
+		victory_points = {
+			9909 5 
+		}
+		buildings = {
+			infrastructure = 4
+			9909 = {
+				naval_base = 2
+			}		
+		}
+
+	}
+
+	provinces={
+		3959 9909
+	}
+	manpower=164301
+	state_category=town
+}

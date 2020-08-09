@@ -1,0 +1,28 @@
+
+state={
+	id=321
+	name="STATE_321"
+	manpower = 633952
+
+	state_category = enclave
+
+	history={
+		owner = BCK
+		add_core_of = BCK
+		add_core_of = PRI
+		add_core_of = ING
+		victory_points = {
+			1273 1 
+		}
+		buildings = {
+			infrastructure = 5
+			1273 ={
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		1273 
+	}
+}

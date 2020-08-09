@@ -1,0 +1,24 @@
+
+state={
+	id=821
+	name="STATE_821"
+
+	history={
+		owner = ING
+		victory_points = {
+		1075 1
+		}
+			
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ING
+		add_core_of = PRI
+	}
+
+	provinces={
+		  1075 7634
+	}
+	manpower= 100000
+	state_category=rural
+}

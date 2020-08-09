@@ -1,0 +1,7 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "CRE_political_advisor_Doihara.dds"
+		texturefile = "gfx/interface/ideas/CRE_political_advisor_Doihara.dds"
+	}
+}

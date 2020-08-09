@@ -1,0 +1,63 @@
+spriteTypes = {	
+
+###CRE###中華民国
+
+	spriteType = {
+		name = "generic_goods_red_bonus.dds"
+		texturefile = "gfx/interface/ideas/generic_goods_red_bonus.dds"
+	}
+	spriteType = {
+		name = "FRA_scw_intervention_republicans_focus.dds"
+		texturefile = "gfx/interface/ideas/FRA_scw_intervention_republicans_focus.dds"
+	}
+	spriteType = {
+		name = "generic_local_self_management.dds"
+		texturefile = "gfx/interface/ideas/generic_local_self_management.dds"
+	}
+	spriteType = {
+		name = "jap_zaibatsu.dds"
+		texturefile = "gfx/interface/ideas/jap_zaibatsu.dds"
+	}
+
+###MEN###蒙古帝国
+
+	spriteType = {
+		name = "GFX_idea_De_Wang"
+		texturefile = "gfx/interface/ideas/men/SSW_ideas_MEN_De_Wang.dds"
+	}
+
+###JAP###大日本帝国
+
+	spriteType = {
+		name = "warrior_traditions_idea"
+		texturefile = "gfx/interface/ideas/warrior_traditions_idea.dds"
+	}
+	spriteType = {
+		name = "generic_production_bonus"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+	spriteType = {
+		name = "idea_generic_army_problems"
+		texturefile = "gfx/interface/ideas/idea_generic_army_problems.dds"
+	}
+	spriteType = {
+		name = "spr_seize_the_gold_reserves"
+		texturefile = "gfx/interface/ideas/spr_seize_the_gold_reserves.dds"
+	}
+	spriteType = {
+		name = "idea_jap_hirohito"
+		texturefile = "gfx/interface/ideas/idea_jap_hirohito.dds"
+	}
+	spriteType = {
+		name = "idea_generic_refining_concern_1"
+		texturefile = "gfx/interface/ideas/idea_generic_refining_concern_1.dds"
+	}
+	spriteType = {
+		name = "state_shintoism"
+		texturefile = "gfx/interface/ideas/state_shintoism.dds"
+	}
+	spriteType = {
+		name = "spr_relocate_the_gold_reserves"
+		texturefile = "gfx/interface/ideas/spr_relocate_the_gold_reserves.dds"
+	}
+}

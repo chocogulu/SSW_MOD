@@ -1,0 +1,24 @@
+
+state={
+	id=808
+	name="STATE_808"
+
+	history={
+		owner = BUL
+		victory_points = {
+			
+		}
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = SEL
+		add_core_of = BUL
+
+	}
+
+	provinces={
+		11868 11857 11832 
+	}
+	manpower=98134
+	state_category=town
+}

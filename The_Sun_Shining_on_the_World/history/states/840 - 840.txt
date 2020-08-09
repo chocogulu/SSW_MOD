@@ -1,0 +1,31 @@
+state={
+	id=840
+	name="STATE_840"
+	manpower = 30000
+	state_category = rural
+	
+	
+	history={
+		owner = ITA
+		victory_points = {
+			4073 5
+		}
+		victory_points = {
+			12049 5
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			4073 = {
+				naval_base = 2
+			}
+			12049 = {
+				naval_base = 2
+			}
+		}
+
+	}
+	provinces={
+		12049 4073
+	}
+}

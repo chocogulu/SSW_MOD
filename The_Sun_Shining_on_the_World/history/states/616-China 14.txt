@@ -1,0 +1,23 @@
+state={
+	id=616
+	name="STATE_616"
+
+	history={
+		owner = MEN
+		add_core_of = CRE
+		add_core_of = AGF
+		add_core_of = MEN
+		buildings = {
+			infrastructure = 3
+
+		}
+	
+	}
+
+	provinces={
+		3742 5031 5057 7511 8055 8081 8127 10724 12750 12776 
+	}
+	manpower=2777600
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

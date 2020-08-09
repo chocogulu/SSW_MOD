@@ -1,0 +1,18 @@
+state={
+	id=854
+	name="STATE_854"
+	manpower = 1682963
+	provinces={
+		7175 7204 11992 
+	}
+	state_category=town
+	history={
+		add_core_of = KOR
+		owner = JAP
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 4
+		}
+
+	}
+}

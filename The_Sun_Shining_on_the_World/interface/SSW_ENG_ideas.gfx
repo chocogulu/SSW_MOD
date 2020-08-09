@@ -1,0 +1,20 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_idea_Elizabeth"
+		texturefile = "gfx/interface/ideas/eng/Elizabeth_II.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_British_sick"
+		texturefile = "gfx/interface/ideas/eng/British_sick.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Welfare_state"
+		texturefile = "gfx/interface/ideas/eng/Welfare_state.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hudson_avoid"
+		texturefile = "gfx/interface/ideas/eng/hudson_avoid.dds"
+	}
+}

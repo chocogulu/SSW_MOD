@@ -1,0 +1,33 @@
+state={
+	id=845
+	name="STATE_845"
+	manpower = 14567000
+	state_category = megalopolis
+	
+	
+	history={
+		add_core_of = JAP
+		owner = JAP
+		victory_points = {
+		1182 50
+		}
+		victory_points = {
+		9998 25
+		}
+		buildings = {
+			infrastructure = 10
+			arms_factory = 3
+			industrial_complex = 3
+			dockyard = 3
+			fuel_silo = 3
+			9998 = {
+				naval_base = 10
+
+			}
+		}
+
+	}
+	provinces={
+		1182 4188 9998 4184
+	}
+}

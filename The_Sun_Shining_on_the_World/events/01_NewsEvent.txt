@@ -1,0 +1,36 @@
+#これはニュースイベントだよ！
+
+add_namespace = 01_news
+
+#ローマオリンピック
+news_event = { #news_eventのはじまりだよ的な
+	id = 01_news.1　#イベントのID　区別番号的な
+	title = 01_news.1.t #タイトル 盧溝橋事件のイベントなら「盧溝橋」t
+	desc = 01_news.1.d　#イベント構文
+	picture = GFX_news_event_07　#イベントの画像
+	
+	major = yes
+	
+	trigger = { #イベントが起きるきっかけ
+		date > 1950.1.2 #1952.7.19　#日にち
+
+		country_exists = JAP　#この国家が存在しているか
+		country_exists = ITA
+		country_exists = GER
+		
+		GER = { has_war = no } #戦争していないか
+		FRA = { has_war = no }
+		ENG = { has_war = no }
+		WAU = { has_war = no }
+		JAP = { has_war = no }
+		ITA = { has_war = no }
+	}
+	
+	mean_time_to_happen = { #何日表示されるか
+		days = 2
+	}
+	
+	option = {
+		name = 01_news.1.a #選択肢っぽいやつ
+	}
+}

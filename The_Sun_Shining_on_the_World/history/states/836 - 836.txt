@@ -1,0 +1,25 @@
+state=
+{
+	id=836
+	name="STATE_836"
+	manpower = 1000000
+	state_category = largy_city
+	
+	
+	history=
+	{
+		owner = GRE
+		add_core_of = GRE
+		victory_points = {
+			4109 20 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+		}
+
+	}
+	provinces={
+		4109
+	}
+}

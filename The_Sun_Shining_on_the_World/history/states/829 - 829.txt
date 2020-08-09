@@ -1,0 +1,32 @@
+state=
+{
+	id=829
+	name="STATE_829"
+	manpower = 400000
+	state_category = town
+	
+	
+	history=
+	{
+		owner = JAP
+		add_core_of = CRE
+		add_core_of = AGF
+		victory_points = {
+			4205 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 3
+			4205 = {
+				naval_base = 2
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+
+	}
+	provinces={
+		4205
+	}
+}

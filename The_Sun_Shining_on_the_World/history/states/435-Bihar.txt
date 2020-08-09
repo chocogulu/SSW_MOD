@@ -1,0 +1,25 @@
+state={
+	id=435
+	name="STATE_435"
+
+	history={
+		owner = ING
+		victory_points = {
+			4516 3 
+		}
+		buildings = {
+			infrastructure = 5
+
+		}
+		add_core_of = PRI
+		add_core_of = ING
+
+	}
+
+	provinces={
+		1541 1569 4459 4516 4544 4571 7334 10361 10751 10878
+	}
+	manpower=20574500
+	buildings_max_level_factor=1.000
+	state_category=town
+}

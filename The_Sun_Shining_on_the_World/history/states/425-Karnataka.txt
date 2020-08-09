@@ -1,0 +1,32 @@
+
+state={
+	id=425
+	name="STATE_425" # Mysore
+	manpower = 12348200
+	
+	state_category = rural
+	
+	resources={
+		chromium=10 # was: 20
+	}
+
+	history={
+		owner = KOT
+		victory_points = {
+			8011 15
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = PRI
+		add_core_of = ING
+		add_core_of = NOH
+		add_core_of = KOT
+
+	}
+
+	provinces={
+		1412 4278 4344 5032 7244 7391 7395 7411 8011 8100 10190 10208 10259 10799 12146 12208 12734 
+	}
+}

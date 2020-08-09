@@ -1,0 +1,24 @@
+﻿# Names are based on equipment types (picking equipment with highest amount from the pool)
+# Generic are used for countries that are not scripted in.
+generic = {
+#mod_end #Supports
+#More Units
+	garrison = {
+		prefix = ""
+		generic = { "Garrison Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	militia = {
+		prefix = ""
+		generic = { "Militia Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+	police_infantry = {
+		prefix = ""
+		generic = { "Police Brigade" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+}

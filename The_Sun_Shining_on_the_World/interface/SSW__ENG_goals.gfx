@@ -1,0 +1,41 @@
+spriteTypes = {
+
+	#### Generic continuous goal icons
+
+	SpriteType = {
+		name = "GFX_focus_1950_vote"
+		texturefile = "gfx/interface/goals/eng/focus_1950_vote.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_attack_wau"
+		texturefile = "gfx/interface/goals/eng/focus_attack_wau.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_attack_wsl"
+		texturefile = "gfx/interface/goals/eng/focus_attack_wsl.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_hbs"
+		texturefile = "gfx/interface/goals/eng/focus_hbs.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_British_Columbia"
+		texturefile = "gfx/interface/goals/eng/focus_British_Columbia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_West_sea"
+		texturefile = "gfx/interface/goals/eng/focus_West_sea.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_canada_one"
+		texturefile = "gfx/interface/goals/eng/focus_canada_one.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_attack_utc"
+		texturefile = "gfx/interface/goals/eng/focus_attack_utc.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_NewEngland_Handshake"
+		texturefile = "gfx/interface/goals/eng/focus_NewEngland_Handshake.dds"
+	}
+}

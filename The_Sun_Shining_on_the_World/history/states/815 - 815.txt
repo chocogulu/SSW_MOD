@@ -1,0 +1,27 @@
+
+state={
+	id=815
+	name="STATE_815"
+
+	history={
+		owner = MCK
+		victory_points = {
+		10278 10
+		}
+			
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		add_core_of = ING
+		add_core_of = PRI
+		add_core_of = MCK
+	}
+
+	provinces={
+		12164 1268 7436 4420 10808 4315 10278 1381 10246
+	}
+	manpower= 26223300
+	state_category=city
+}

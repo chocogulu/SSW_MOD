@@ -1,0 +1,25 @@
+
+state={
+	id=863
+	name="STATE_863"
+	manpower = 6512
+	
+	state_category = pastoral
+	resources={
+	steel=7
+	}
+	history={
+		owner = AST
+		buildings = {
+		infrastructure = 1
+		}
+		add_core_of = AST
+		victory_points = {
+		10971 2
+		}
+	}
+
+	provinces={
+	2201 8152 5125 10971 4645 12323 1511 1540
+	}
+}

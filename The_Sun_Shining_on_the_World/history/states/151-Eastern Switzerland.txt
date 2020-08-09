@@ -1,0 +1,30 @@
+
+state={
+	id=151
+	name="STATE_151"
+	manpower = 1854711
+	
+	
+	state_category = city
+	
+	resources={
+		aluminium=15 # was: 24
+	}
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+		}
+		victory_points = {
+			663 20 
+		}
+		add_core_of = SWI
+		add_core_of = GER
+	}
+
+	provinces={
+		661 663 3660 11601 11623 
+	}
+}

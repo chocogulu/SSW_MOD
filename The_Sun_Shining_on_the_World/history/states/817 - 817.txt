@@ -1,0 +1,24 @@
+
+state={
+	id=817
+	name="STATE_817"
+
+	history={
+		owner = BCK
+		victory_points = {
+		}
+			
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = ING
+		add_core_of = PRI
+		add_core_of = BCK
+	}
+
+	provinces={
+		  7232 10210
+	}
+	manpower= 922000
+	state_category=town
+}

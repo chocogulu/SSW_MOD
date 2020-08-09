@@ -1,0 +1,537 @@
+JAP_Hanshin_Fulfillment = {
+	JAP_Enhancement_of_Kansai_infrastructure = { #関西周辺におけるインフラの充実
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			owns_state = 847
+			controls_state = 847
+			owns_state = 848
+			controls_state = 848
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0 #        civilian_factory_use = 7
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+		visible = {
+			has_completed_focus = JAP_expand_the_hanshin_industrial_region
+		}
+		days_remove = 150
+		remove_effect = {
+			set_country_flag = dec_01
+            847 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 2
+    				instant_build = yes
+				}
+			}
+            848 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_Construction_of_railway_network_in_Chugoku_region = { #中国地方における鉄道網の敷設
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 849
+			controls_state = 849
+			owns_state = 529
+			controls_state = 529
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0 #        civilian_factory_use = 7
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			has_completed_focus = JAP_expand_the_hanshin_industrial_region
+		}
+		days_remove = 150
+		remove_effect = {
+			set_country_flag = dec_02
+            849 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+            529 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_dec_expand_the_kitakyushu_industrial_region = { #北九州工業地帯の拡大
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			owns_state = 528
+			controls_state = 528
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0 #        civilian_factory_use = 7
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+		visible = {
+			has_completed_focus =   JAP_expand_the_kitakyushu_industrial_region
+		}
+		days_remove = 70
+		remove_effect = {
+			set_country_flag = dec_03
+            528 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 3
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_dec_the_setouchi_industrial_region = { #瀬戸内工業の発展
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			owns_state = 529
+			controls_state = 529
+			owns_state = 530
+			controls_state = 530
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0 #        civilian_factory_use = 5
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+		visible = {
+			has_completed_focus =   JAP_the_setouchi_industrial_region
+		}
+		days_remove = 70
+		remove_effect = {
+			set_country_flag = dec_04
+            530 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+			529 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_dec_the_coal_liquefaction = { #燃料庫の大規模建設
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			owns_state = 528
+			controls_state = 528
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0 #        civilian_factory_use = 3
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 3
+		}
+		visible = {
+			has_completed_focus = JAP_the_coal_liquefaction
+		}
+		days_remove = 70
+		remove_effect = {
+			set_country_flag = dec_05
+            528 = {
+				add_building_construction = {
+    				type = fuel_silo
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_dec_the_west_japan_industrial_line = { #西日本ラインの建設
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			owns_state = 528
+			controls_state = 528
+			owns_state = 529
+			controls_state = 529
+			owns_state = 531
+			controls_state = 531
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0 #        civilian_factory_use = 3
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+		visible = {
+			has_completed_focus = JAP_the_west_japan_industrial_line
+		}
+		days_remove = 70
+		remove_effect = {
+			set_country_flag = dec_06
+            528 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			529 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			531 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_dec_the_kure_imabari_harima_line = { #呉-今治-播磨ラインの建設
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			owns_state = 529
+			controls_state = 529
+			owns_state = 530
+			controls_state = 530
+			owns_state = 531
+			controls_state = 531
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0 #        civilian_factory_use = 3
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+		visible = {
+			has_completed_focus = JAP_the_kure_imabari_harima_line
+		}
+		days_remove = 70
+		remove_effect = {
+			set_country_flag = dec_07
+            529 = {
+				add_building_construction = {
+    				type = dockyard
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			530 = {
+				add_building_construction = {
+    				type = dockyard
+    				level = 1
+    				instant_build = yes
+				}
+			}
+			531 = {
+				add_building_construction = {
+    				type = dockyard
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+JAP_Keihin_Fulfillment = {
+	JAP_Enhancement_of_Keihin_infrastructure = { #京浜周辺におけるインフラの充実
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+			owns_state = 846
+			controls_state = 846
+			owns_state = 533
+			controls_state = 533
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0 
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 10
+		}
+		visible = {
+			has_completed_focus = JAP_expand_the_keihin_industrial_region
+		}
+		days_remove = 150
+		remove_effect = {
+			set_country_flag = dec_08
+            533 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 2
+    				instant_build = yes
+				}
+			}
+            846 = {
+				add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+	}
+}
+JAP_cat_the_west_japan_heavy_industry_region_plan = {
+	JAP_dec_the_kyushu_large_factory = { #九州大工場の建設
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+			owns_state = 528
+			controls_state = 528
+			owns_state = 851
+			controls_state = 851
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0 
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 10
+		}
+		visible = {
+			has_completed_focus = JAP_the_kyushu_large_factory
+		}
+		days_remove = 150
+		remove_effect = {
+			set_country_flag = dec_09
+            528 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 3
+    				instant_build = yes
+				}
+			}
+            851 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 3
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_dec_the_kinki_large_factory = { #近畿大工場の建設
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+			owns_state = 531
+			controls_state = 531
+			owns_state = 848
+			controls_state = 848
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0 
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 10
+		}
+		visible = {
+			has_completed_focus = JAP_the_kinki_large_factory
+		}
+		days_remove = 150
+		remove_effect = {
+			set_country_flag = dec_10
+            531 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 3
+    				instant_build = yes
+				}
+			}
+            848 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 3
+    				instant_build = yes
+				}
+			}
+		}
+	}
+}
+JAP_cat_the_kanto_industry_region_plan = {
+	JAP_dec_moved_the_heavy_industry = { #重工業の移転
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+			owns_state = 282
+			controls_state = 282
+			owns_state = 844
+			controls_state = 844
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0 
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 10
+		}
+		visible = {
+			has_completed_focus = JAP_moved_the_heavy_industry
+		}
+		days_remove = 100
+		remove_effect = {
+			set_country_flag = dec_11
+            282 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+            844 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_dec_the_hokuriku_industry_region = { #北陸工業地帯の形成
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories_available_for_projects > 10
+			owns_state = 535
+			controls_state = 535
+			owns_state = 534
+			controls_state = 534
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0 
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 10
+		}
+		visible = {
+			has_completed_focus = JAP_the_hokuriku_industry_region
+		}
+		days_remove = 100
+		remove_effect = {
+			set_country_flag = dec_12
+            535 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+            534 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_dec_the_sendai_large_factory = { #仙台大工場の建設
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories_available_for_projects > 15
+			owns_state = 533
+			controls_state = 533
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0 
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 15
+		}
+		visible = {
+			has_completed_focus = JAP_the_sendai_large_factory
+		}
+		days_remove = 150
+		remove_effect = {
+			set_country_flag = dec_13
+            533 = {
+				add_building_construction = {
+    				type = arms_factory
+    				level = 6
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	JAP_dec_the_nigata_large_factory = { #新潟大造船所の建設
+		icon = generic_industry
+		available = {
+			num_of_civilian_factories_available_for_projects > 15
+			owns_state = 534
+			controls_state = 534
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 0 
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 15
+		}
+		visible = {
+			has_completed_focus = JAP_the_nigata_large_factory
+		}
+		days_remove = 150
+		remove_effect = {
+			set_country_flag = dec_14
+            534 = {
+				add_building_construction = {
+    				type = dockyard
+    				level = 6
+    				instant_build = yes
+				}
+			}
+		}
+	}
+}

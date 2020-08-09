@@ -1,0 +1,25 @@
+
+state={
+	id=812
+	name="STATE_812"
+
+	history={
+		owner = GER
+		victory_points = {
+		
+		}
+			
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = GER
+                add_core_of = DEN
+
+	}
+
+	provinces={
+		332 11251  
+	}
+	manpower=117467
+	state_category=town
+}

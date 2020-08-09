@@ -1,0 +1,24 @@
+state=
+{
+	id=835
+	name="STATE_835"
+	manpower = 92000
+	state_category = rural
+	
+	
+	history=
+	{
+		owner = CRE
+		add_core_of = CRE
+		add_core_of = AGF
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+
+	}
+	provinces={
+		7189 1084 12093
+	}
+}

@@ -1,0 +1,8 @@
+CAN_war_plans = {
+	allowed = {
+		original_tag = CAN
+	}
+	visible = {
+		has_completed_focus = SSW_CAN_15
+	}
+}

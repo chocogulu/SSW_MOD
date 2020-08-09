@@ -1,0 +1,23 @@
+
+state={
+	id=826
+	name="STATE_826"
+
+	history={
+		owner = CAM
+		victory_points = {
+		7376 = 10
+		}
+			
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = CAM
+	}
+
+	provinces={
+		  10317 7376 7432 10289 7404 4359 1353 12191 7319
+	}
+	manpower= 3450000
+	state_category=town
+}

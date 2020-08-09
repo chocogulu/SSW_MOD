@@ -1,0 +1,25 @@
+
+state={
+	id=819
+	name="STATE_819"
+
+	history={
+		owner = NOH
+		victory_points = {
+		}
+			
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ING
+		add_core_of = PRI
+		add_core_of = BCK
+		add_core_of = NOH
+	}
+
+	provinces={
+		  12142 4353 1405
+	}
+	manpower= 500000
+	state_category=town
+}

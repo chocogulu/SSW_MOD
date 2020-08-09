@@ -1,0 +1,31 @@
+
+state={
+	id=613
+	name="STATE_613"
+	manpower = 11305100
+	
+	state_category = large_city
+	
+	history={
+		owner = CRE
+		add_core_of = CRE
+		add_core_of = AGF
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			air_base = 6
+			dockyard = 1
+		}
+		victory_points = {
+			11913 20 
+		}
+		victory_points = {
+			10076 3
+		}
+
+	}
+
+	provinces={
+		996 1089 4091 10076 11913 11928 11982 13142 7120
+	}
+}

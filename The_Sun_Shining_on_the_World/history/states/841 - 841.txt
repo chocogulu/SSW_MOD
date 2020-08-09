@@ -1,0 +1,19 @@
+state={
+	id=841
+	name="STATE_841"
+	manpower = 20000
+	state_category = rural
+	
+	
+	history={
+		owner = ITA
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+		}
+
+	}
+	provinces={
+		9947 1155
+	}
+}

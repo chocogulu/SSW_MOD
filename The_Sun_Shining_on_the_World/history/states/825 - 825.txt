@@ -1,0 +1,24 @@
+
+state={
+	id=825
+	name="STATE_825"
+
+	history={
+		owner = TCK
+		victory_points = {
+		}
+			
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = ING
+		add_core_of = PRI
+		add_core_of = TCK
+	}
+
+	provinces={
+		  7447 1238 1321
+	}
+	manpower= 9000000
+	state_category=town
+}

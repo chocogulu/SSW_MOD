@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		GER_idea_1 = {
+			
+			allowed = {always = yes}#最初から常にあるか
+			
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = idea_eng_imperial_conscription#アイコンの写真
+			
+			modifier = {
+				training_time_army_factor = -0.25
+
+			}
+		}
+	}
+}

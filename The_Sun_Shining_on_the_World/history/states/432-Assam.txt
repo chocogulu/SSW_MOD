@@ -1,0 +1,27 @@
+state={
+	id=432
+	name="STATE_432"
+	resources={
+		oil=18.000
+	}
+
+	history={
+		owner = ING
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			7455 1 
+		}
+		add_core_of = ING
+		add_core_of = PRI
+
+	}
+
+	provinces={
+		1525 7455 10349 12366
+	}
+	manpower=4077100
+	buildings_max_level_factor=1.000
+	state_category=town
+}

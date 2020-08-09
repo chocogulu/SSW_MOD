@@ -1,0 +1,181 @@
+add_namespace = SSW_GER
+
+country_event = {
+	id = SSW_GER.1
+	title = SSW_GER.1.t
+	desc = SSW_GER.1.d
+	picture = GFX_Gebbers_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.1.a
+		GER = {
+			country_event = {
+				id = SSW_GER.2
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.2
+	title = SSW_GER.2.t
+	desc = SSW_GER.2.d
+	picture = GFX_Himmler_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.2.a
+		GER = {
+			country_event = {
+				id = SSW_GER.3
+				days = 10
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = SSW_GER.3
+	title = SSW_GER.3.t
+	desc = SSW_GER.3.d
+	picture = GFX_Gering_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.3.a
+		GER = {
+			country_event = {
+				id = SSW_GER.4
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.4
+	title = SSW_GER.4.t
+	desc = SSW_GER.4.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.4.a
+			load_focus_tree = JGB_naisen
+			hidden_effect = {
+			GER = { country_event = { id = SSW_GER.5 days = 1 } }
+			LTV = { transfer_state = 56 }
+			LTV = { transfer_state = 57 }
+			LTV = { transfer_state = 58 }
+			LTV = { transfer_state = 59 }
+			LTV = { transfer_state = 61 }
+			LTV = { transfer_state = 812 }
+			LTV = { add_state_core = 56 }
+			LTV = { add_state_core = 57 }
+			LTV = { add_state_core = 58 }
+			LTV = { add_state_core = 59 }
+			LTV = { add_state_core = 61 }
+			HLH = { transfer_state = 3 }
+			HLH = { transfer_state = 8 }
+			HLH = { transfer_state = 28 }
+			HLH = { transfer_state = 42 }
+			HLH = { transfer_state = 50 }
+			HLH = { transfer_state = 51 }
+			HLH = { transfer_state = 54 }
+			HLH = { transfer_state = 55 }
+			HLH = { transfer_state = 151 }
+			HLH = { transfer_state = 803 }
+			HLH = { add_state_core = 3 }
+			HLH = { add_state_core = 8 }
+			HLH = { add_state_core = 28 }
+			HLH = { add_state_core = 42 }
+			HLH = { add_state_core = 50 }
+			HLH = { add_state_core = 51 }
+			HLH = { add_state_core = 54 }
+			HLH = { add_state_core = 55 }
+			HLH = { add_state_core = 151 }
+			HLH = { add_state_core = 803 }
+			HGR = { transfer_state = 4 }
+			HGR = { transfer_state = 52 }
+			HGR = { transfer_state = 53 }
+			HGR = { transfer_state = 102 }
+			HGR = { transfer_state = 152 }
+			HGR = { transfer_state = 153 }
+			HGR = { add_state_core = 4 }
+			HGR = { add_state_core = 52 }
+			HGR = { add_state_core = 53 }
+			HGR = { add_state_core = 102 }
+			HGR = { add_state_core = 152 }
+			HGR = { add_state_core = 153 }
+		}
+	}
+}
+
+
+country_event = {
+	id = SSW_GER.5
+	title = SSW_GER.5.t
+	desc = SSW_GER.5.d
+	picture = GFX_Gering_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.5.a
+		hidden_effect = {
+			delete_unit_template_and_units = {Division_template = "Infanterie-Division"}
+			delete_unit_template_and_units = {Division_template = "Fallschirmjäger-Division"}
+			delete_unit_template_and_units = {Division_template = "Infanterie-Division (mot.)"}
+			delete_unit_template_and_units = {Division_template = "Leichte Division"}
+			delete_unit_template_and_units = {Division_template = "Panzer-Division"}
+			delete_unit_template_and_units = {Division_template = "Kavallerie-Brigade"}
+			delete_unit_template_and_units = {Division_template = "Sicherungs-Division"}
+			delete_unit_template_and_units = {Division_template = "SS-Regiment"}
+			delete_unit_template_and_units = {Division_template = "Gebirgs-Division"}
+			GER = { country_event = { id = SSW_GER.6 days = 1 } }
+		}
+		custom_effect_tooltip = SSW_GER.5.b
+	}
+}
+
+
+country_event = {
+	id = SSW_GER.6
+	title = SSW_GER.6.t
+	desc = SSW_GER.6.d
+	picture = GFX_Gering_speech
+
+	is_triggered_only = yes
+	immediate = {
+		LTV = { country_event = { id = SSW_LTV.1  } }
+		HLH = { country_event = { id = SSW_HLH.1  } }
+		HGR = { country_event = { id = SSW_HGR.1  } }
+
+	}
+	option = {
+		name = SSW_GER.6.a
+		hidden_effect = {
+			load_oob = "GER_Civil_War"
+			GER = { country_event = { id = SSW_GER.7 days = 2 } }
+		}
+		custom_effect_tooltip = SSW_GER.6.b
+	}
+}
+
+country_event = {
+	id = SSW_GER.7
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		HLH = { declare_war_on = { type = annex_everything    target = GER } }
+		LTV = { declare_war_on = { type = annex_everything    target = GER } }
+		HGR = { declare_war_on = { type = annex_everything    target = GER } }
+	}
+}

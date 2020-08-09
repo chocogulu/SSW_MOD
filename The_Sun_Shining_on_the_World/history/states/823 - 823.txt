@@ -1,0 +1,24 @@
+
+state={
+	id=823
+	name="STATE_823"
+
+	history={
+		owner = ING
+		victory_points = {
+		1497 1
+		}
+			
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ING
+		add_core_of = PRI
+	}
+
+	provinces={
+		  1497 12395
+	}
+	manpower= 200000
+	state_category=town
+}

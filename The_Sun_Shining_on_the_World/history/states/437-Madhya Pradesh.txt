@@ -1,0 +1,23 @@
+
+state={
+	id=437
+	name="STATE_437" # Indore
+	manpower = 9002500
+
+	state_category = rural
+
+	history={
+		owner = PRI
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+		}
+		add_core_of = ING
+		add_core_of = PRI
+
+	}
+
+	provinces={
+		1949 2036 2092 2105 4106 7080 7205 8076 10807 10816 11993 11995 12080 
+	}
+}

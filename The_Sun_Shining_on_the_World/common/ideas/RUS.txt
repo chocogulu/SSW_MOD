@@ -1,0 +1,69 @@
+ideas = {
+	country = {
+		RUS_idea_1 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture =name=generic_disjointed_gov
+			
+			modifier = {political_power_gain = -0.5
+			production_speed_buildings_factor = -0.2
+			research_speed_factor = -0.1
+			stability_factor = 0.15
+			}
+		}
+		RUS_idea_3 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_local_self_management
+			
+			modifier = {consumer_goods_factor = 0.05
+			war_support_factor = 0.1
+			industrial_capacity_factory = 0.1
+			}
+		}
+		RUS_idea_4 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = jap_zaibatsu
+			
+			modifier = {
+			}
+		}
+	}
+
+	# 軍事顧問
+	army_chief = {
+		
+		Kenji_Doihara = {　#顧問の名前
+			
+			picture = CRE_political_advisor_Doihara
+			
+			allowed = {
+				original_tag = CRE #国家タグを書く
+			}
+			
+
+			
+			traits = { army_chief_planning_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

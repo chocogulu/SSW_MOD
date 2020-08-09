@@ -1,0 +1,1516 @@
+focus_tree = {
+	id = SSW_ENG
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	continuous_focus_position = { x = 100 y = 1200 }
+	default = no
+
+#This file is made by Chiyo.
+
+#contact details = DiscordID = Chiyo#4420
+
+
+	focus = {
+		id = ENG_1950_vote
+		icon = GFX_focus_1950_vote
+		cost = 10.00
+		x = 26
+		y = 0
+		select_effect = {
+			country_event = { id = SSW_ENG.8 days = 14 } #Debate begins
+		}
+	}
+
+	focus = {
+		id = ENG_sangyou_1
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_1950_vote
+		}
+		x = 11
+		y = 1
+			completion_reward = {
+					add_political_power = 150
+					country_event = {
+							id = SSW_ENG.1
+							days = 1
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_8
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_sangyou_1
+		}
+		x = 7
+		y = 2
+			completion_reward = {
+					add_timed_idea = {
+							idea = ENG_idea_10
+							days = 365
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_2
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_sangyou_8
+		}
+		x = 7
+		y = 3
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = ENG_idea_1
+							add_idea = ENG_idea_2
+						}
+					country_event = {
+							id = SSW_ENG.2
+							days = 1
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_9
+		icon = GFX_focus_generic_military_academy
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_sangyou_1
+		}
+		x = 11
+		y = 2
+			completion_reward = {
+					country_event = {
+							id = SSW_ENG.3
+							days = 1
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_4
+		icon = GFX_goal_generic_construction2
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_sangyou_9
+		}
+		x = 10
+		y = 3
+			completion_reward = {
+					add_ideas = ENG_idea_11
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_sangyou_9
+		}
+		x = 12
+		y = 3
+			completion_reward = {
+					add_ideas = ENG_idea_12
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 1.0
+							uses = 2
+							category = industry
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_5
+		icon = GFX_focus_generic_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_sangyou_1
+		}
+		x = 15
+		y = 2
+			completion_reward = {
+					country_event = {
+							id = SSW_ENG.5
+							days = 1
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_6
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_sangyou_5
+		}
+		x = 15
+		y = 3
+			completion_reward = {
+					country_event = {
+							id = SSW_ENG.4
+							days = 1
+						}
+					swap_ideas = {
+							remove_idea = ENG_idea_2
+							add_idea = ENG_idea_3
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_7
+		icon = GFX_focus_eng_the_sun_never_sets
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_sangyou_6
+		}
+		prerequisite = {
+			focus = ENG_sangyou_3
+		}
+		prerequisite = {
+			focus = ENG_sangyou_4
+		}
+		prerequisite = {
+			focus = ENG_sangyou_2
+		}
+		x = 11
+		y = 4
+			completion_reward = {
+					remove_ideas = ENG_idea_3
+					country_event = {
+							id = SSW_ENG.6
+							days = 1
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_10
+		icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_sangyou_7
+		}
+		x = 5
+		y = 5
+			completion_reward = {
+					country_event = {
+							id = SSW_ENG.8
+							days = 1
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_21
+		icon = GFX_focus_generic_industry_1
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_sangyou_10
+		}
+		x = 4
+		y = 6
+			completion_reward = {
+					CAN = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = industrial_complex
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					AST = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = industrial_complex
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					NEK = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = industrial_complex
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					NZL = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = industrial_complex
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_22
+		icon = GFX_focus_generic_industry_2
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_sangyou_21
+		}
+		x = 2
+		y = 7
+			completion_reward = {
+					CAN = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					AST = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					NEK = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					NZL = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_20
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_sangyou_10
+		}
+		x = 7
+		y = 6
+			completion_reward = {
+					add_ideas = ENG_idea_9
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_18
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_sangyou_7
+		}
+		x = 10
+		y = 6
+			completion_reward = {
+					add_ideas = free_trade
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_13
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_sangyou_7
+		}
+		x = 13
+		y = 6
+			completion_reward = {
+					ENG = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = industrial_complex
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_12
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_sangyou_7
+		}
+		x = 16
+		y = 5
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_25
+		icon = GFX_focus_rocketry
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_sangyou_12
+		}
+		x = 16
+		y = 6
+			completion_reward = {
+					add_tech_bonus = {
+							name = jet_technology
+							bonus = 1.0
+							uses = 2
+							category = jet_technology
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_15
+		icon = GFX_goal_generic_production2
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_sangyou_13
+		}
+		prerequisite = {
+			focus = ENG_sangyou_25
+		}
+		x = 16
+		y = 7
+			completion_reward = {
+					add_ideas = ENG_idea_8
+				}
+
+	}
+	focus = {
+		id = ENG_army_1
+		icon = GFX_focus_eng_chiefs_of_staff_committee
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_1950_vote
+		}
+		x = 26
+		y = 3
+			completion_reward = {
+					air_experience = 25
+					army_experience = 25
+					navy_experience = 25
+				}
+
+	}
+	focus = {
+		id = ENG_army_3
+		icon = GFX_goal_generic_build_navy
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_army_1
+		}
+		x = 20
+		y = 4
+			completion_reward = {
+					navy_experience = 30
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_17
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_sangyou_15
+		}
+		prerequisite = {
+			focus = ENG_army_3
+		}
+		x = 16
+		y = 8
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									is_coastal = yes
+									free_building_slots = {
+											building = dockyard
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_6
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_3
+		}
+		mutually_exclusive = {
+			focus = ENG_army_7
+		}
+		x = 18
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = bc_tech
+							bonus = 1.0
+							uses = 2
+							category = bc_tech
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_10
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_3
+		}
+		x = 20
+		y = 6
+			completion_reward = {
+					add_tech_bonus = {
+							name = naval_doctrine
+							bonus = 1.0
+							uses = 2
+							category = naval_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_7
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_3
+		}
+		mutually_exclusive = {
+			focus = ENG_army_6
+		}
+		x = 22
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = cv_tech
+							bonus = 1.0
+							uses = 2
+							category = cv_tech
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_9
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_6
+			focus = ENG_army_7
+		}
+		x = 22
+		y = 7
+			completion_reward = {
+					add_tech_bonus = {
+							name = asw_tech
+							bonus = 1.0
+							uses = 2
+							category = asw_tech
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_14
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_9
+		}
+		x = 19
+		y = 8
+			completion_reward = {
+					add_tech_bonus = {
+							name = bb_tech
+							bonus = 1.0
+							uses = 1
+							category = bb_tech
+						}
+					add_tech_bonus = {
+							name = bc_tech
+							bonus = 1.0
+							uses = 1
+							category = bc_tech
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_12
+		icon = GFX_focus_generic_cruiser2
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_9
+		}
+		x = 21
+		y = 8
+			completion_reward = {
+					add_tech_bonus = {
+							name = cl_tech
+							bonus = 1.0
+							uses = 1
+							category = cl_tech
+						}
+					add_tech_bonus = {
+							name = ca_tech
+							bonus = 1.0
+							uses = 1
+							category = ca_tech
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_11
+		icon = GFX_focus_generic_destroyer
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_9
+		}
+		x = 23
+		y = 8
+			completion_reward = {
+					add_tech_bonus = {
+							name = dd_tech
+							bonus = 1.0
+							uses = 1
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_4
+		icon = GFX_goal_generic_build_airforce
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_army_1
+		}
+		x = 26
+		y = 4
+			completion_reward = {
+					air_experience = 30
+				}
+
+	}
+	focus = {
+		id = ENG_army_16
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_4
+		}
+		x = 25
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = light_air
+							bonus = 1.0
+							uses = 2
+							category = light_air
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_18
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_4
+		}
+		x = 26
+		y = 6
+			completion_reward = {
+					add_tech_bonus = {
+							name = air_doctrine
+							bonus = 1.0
+							uses = 2
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_17
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_4
+		}
+		x = 27
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = medium_air
+							bonus = 1.0
+							uses = 2
+							category = medium_air
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_19
+		icon = GFX_goal_generic_air_production
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_17
+		}
+		prerequisite = {
+			focus = ENG_army_18
+		}
+		prerequisite = {
+			focus = ENG_army_16
+		}
+		x = 26
+		y = 7
+			completion_reward = {
+					add_ideas = ENG_idea_13
+				}
+
+	}
+	focus = {
+		id = ENG_army_2
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 4.00
+		prerequisite = {
+			focus = ENG_army_1
+		}
+		x = 32
+		y = 4
+			completion_reward = {
+					army_experience = 30
+				}
+
+	}
+	focus = {
+		id = ENG_army_21
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_2
+		}
+		mutually_exclusive = {
+			focus = ENG_army_20
+		}
+		x = 30
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 1
+							uses = 2
+							category = cat_mobile_warfare
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_20
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_2
+		}
+		mutually_exclusive = {
+			focus = ENG_army_21
+		}
+		x = 34
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 1
+							uses = 2
+							category = cat_superior_firepower
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_22
+		icon = GFX_focus_generic_tank_production
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_21
+			focus = ENG_army_20
+		}
+		x = 30
+		y = 6
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 1
+							uses = 1
+							category = cat_medium_armor
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_23
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_21
+			focus = ENG_army_20
+		}
+		x = 34
+		y = 6
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 1
+							uses = 2
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_24
+		icon = GFX_goal_generic_production2
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_22
+			focus = ENG_army_23
+		}
+		x = 32
+		y = 7
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = ENG_idea_8
+							add_idea = ENG_idea_7
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_13
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_9
+		}
+		prerequisite = {
+			focus = ENG_army_24
+		}
+		x = 25
+		y = 8
+			completion_reward = {
+					add_tech_bonus = {
+							name = marine_tech
+							bonus = 1.0
+							uses = 1
+							category = marine_tech
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_politics_1
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_1950_vote
+		}
+		x = 46
+		y = 1
+
+	}
+	focus = {
+		id = ENG_politics_3
+		icon = GFX_focus_eng_global_defense
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_politics_1
+		}
+		x = 42
+		y = 2
+
+	}
+	focus = {
+		id = ENG_realm_1
+		icon = GFX_focus_RAJ_two_nation_theory
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_politics_3
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = ENG_realm_5
+		icon = GFX_focus_RAJ_indianisation_of_army
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_realm_1
+		}
+		prerequisite = {
+			focus = ENG_realm_1
+		}
+		x = 37
+		y = 4
+
+	}
+	focus = {
+		id = ENG_realm_3
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_realm_1
+		}
+		x = 39
+		y = 4
+
+	}
+	focus = {
+		id = ENG_realm_2
+		icon = GFX_focus_AST_never_gallipoli
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_politics_3
+		}
+		x = 42
+		y = 3
+
+	}
+	focus = {
+		id = ENG_Canada_2
+		icon = GFX_focus_spa_the_war_of_vengeance
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_realm_2
+		}
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = ENG_realm_7
+		icon = GFX_focus_AST_rats_tobruk
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_realm_2
+		}
+		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = ENG_realm_4
+		icon = GFX_focus_RAJ_british_investors
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_realm_3
+		}
+		prerequisite = {
+			focus = ENG_realm_5
+		}
+		x = 39
+		y = 5
+
+	}
+	focus = {
+		id = ENG_Canada_1
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_realm_2
+		}
+		x = 43
+		y = 4
+
+	}
+	focus = {
+		id = ENG_realm_6
+		icon = GFX_focus_eng_imperial_federation
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_realm_4
+		}
+		prerequisite = {
+			focus = ENG_Canada_2
+		}
+		prerequisite = {
+			focus = ENG_Canada_1
+		}
+		x = 42
+		y = 6
+
+	}
+	focus = {
+		id = ENG_europe_1
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_politics_3
+		}
+		x = 46
+		y = 3
+
+	}
+	focus = {
+		id = ENG_europe_2
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_europe_1
+		}
+		x = 45
+		y = 4
+
+	}
+	focus = {
+		id = ENG_europe_4
+		icon = GFX_focus_attack_germany
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_europe_2
+		}
+		mutually_exclusive = {
+			focus = ENG_europe_5
+		}
+		x = 44
+		y = 5
+
+	}
+	focus = {
+		id = ENG_europe_5
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_europe_2
+		}
+		mutually_exclusive = {
+			focus = ENG_europe_4
+		}
+		x = 46
+		y = 5
+
+	}
+	focus = {
+		id = ENG_europe_3
+		icon = GFX_focus_generic_italy_first
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_europe_1
+		}
+		x = 47
+		y = 4
+
+	}
+	focus = {
+		id = ENG_politics_2
+		icon = GFX_focus_generic_home_defense
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_politics_1
+		}
+		x = 50
+		y = 2
+
+	}
+	focus = {
+		id = ENG_politics_4
+		icon = GFX_focus_eng_god_save_the_king
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_politics_2
+		}
+		x = 48
+		y = 3
+
+	}
+	focus = {
+		id = ENG_politics_6
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_politics_2
+		}
+		x = 50
+		y = 3
+
+	}
+	focus = {
+		id = ENG_politics_8
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_politics_6
+		}
+		prerequisite = {
+			focus = ENG_politics_4
+		}
+		x = 49
+		y = 4
+
+	}
+	focus = {
+		id = ENG_sangyou_23
+		icon = GFX_focus_generic_industry_3
+		cost = 5.00
+		prerequisite = {
+			focus = ENG_sangyou_21
+		}
+		x = 4
+		y = 7
+			completion_reward = {
+					CAN = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 0
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = dockyard
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					AST = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 0
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = dockyard
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					NEK = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 0
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = dockyard
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					NZL = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = industrial_complex
+											level = 1
+											instant_build = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 0
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = dockyard
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_8
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_6
+			focus = ENG_army_7
+		}
+		x = 18
+		y = 7
+			completion_reward = {
+					add_tech_bonus = {
+							name = ss_tech
+							bonus = 1.0
+							uses = 1
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_14
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_sangyou_13
+		}
+		x = 13
+		y = 7
+			completion_reward = {
+					ENG = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = industrial_complex
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_16
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_sangyou_14
+		}
+		prerequisite = {
+			focus = ENG_sangyou_15
+		}
+		x = 13
+		y = 8
+			completion_reward = {
+					ENG = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = arms_factory
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_19
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_sangyou_18
+		}
+		x = 10
+		y = 7
+			completion_reward = {
+					add_resource = {
+							type = oil
+							amount = 49
+							state = 120
+						}
+					add_resource = {
+							type = oil
+							amount = 28
+							state = 136
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_24
+		icon = GFX_focus_generic_treaty
+		cost = 7.00
+		prerequisite = {
+			focus = ENG_sangyou_19
+		}
+		prerequisite = {
+			focus = ENG_sangyou_20
+		}
+		x = 8
+		y = 8
+			completion_reward = {
+					country_event = {
+							id = SSW_ENG.9
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_army_15
+		icon = GFX_focus_ger_accept_british_naval_dominance
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army_13
+		}
+		prerequisite = {
+			focus = ENG_army_11
+		}
+		prerequisite = {
+			focus = ENG_army_12
+		}
+		prerequisite = {
+			focus = ENG_army_14
+		}
+		x = 22
+		y = 9
+			completion_reward = {
+					country_event = {
+							id = SSW_ENG.10
+						}
+					add_tech_bonus = {
+							name = naval_doctrine
+							bonus = 1.0
+							uses = 2
+							category = naval_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = ENG_politics_5
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_politics_2
+		}
+		x = 52
+		y = 3
+
+	}
+	focus = {
+		id = ENG_Japan_1
+		icon = GFX_focus_AST_war_japan
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_realm_5
+		}
+		prerequisite = {
+			focus = ENG_realm_3
+		}
+		x = 37
+		y = 5
+
+	}
+	focus = {
+		id = ENG_JAPAN_2
+		icon = GFX_focus_attack_japan
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_Japan_1
+		}
+		x = 37
+		y = 6
+
+	}
+	focus = {
+		id = ENG_politics_7
+		icon = GFX_focus_fra_milice
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_politics_5
+		}
+		x = 52
+		y = 4
+
+	}
+}

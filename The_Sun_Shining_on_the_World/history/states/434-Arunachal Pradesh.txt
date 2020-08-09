@@ -1,0 +1,25 @@
+
+state={
+	id=434
+	name="STATE_434"
+	manpower = 250000
+	
+	state_category = wasteland
+	resources={
+		# tungsten=57 # was: 54
+	}
+
+	history={
+		owner = ING
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ING
+		add_core_of = PRI
+
+	}
+
+	provinces={
+		1116 1996 10810 12322 12730 
+	}
+}

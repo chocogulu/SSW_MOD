@@ -1,0 +1,978 @@
+focus_tree = {
+	id = FRA
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	focus = {
+		id = フランス経済の見直し
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 10.00
+		x = 11
+		y = 0
+		completion_reward = {
+					add_ideas = {
+						idea = FRA_idea_1 }
+				}
+
+	}
+	focus = {
+		id = 南部フランスの開発
+		icon = GFX_goal_generic_construct_civilian
+		cost = 5.00
+		x = 22
+		y = 0
+
+	}
+	focus = {
+		id = 陸軍の改革
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 30
+		y = 0
+
+	}
+	focus = {
+		id = フランス地中海艦隊
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 5.00
+		x = 40
+		y = 0
+
+	}
+	focus = {
+		id = フランス空軍
+		icon = GFX_goal_generic_build_airforce
+		cost = 5.00
+		x = 46
+		y = 0
+
+	}
+	focus = {
+		id = ドイツに資金を乞う
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 5.00
+		prerequisite = {
+			focus = フランス経済の見直し
+		}
+		mutually_exclusive = {
+			focus = ペタン法の強硬可決
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = ライヒスバンクと提携
+		icon = GFX_focus_mex_privatisation
+		cost = 4.00
+		prerequisite = {
+			focus = ドイツに資金を乞う
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = ドイツの技術者達を雇用
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 4.00
+		prerequisite = {
+			focus = ドイツに資金を乞う
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = 独仏技術協定
+		icon = GFX_focus_research2
+		cost = 4.00
+		prerequisite = {
+			focus = ドイツに資金を乞う
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = ナチス指導部を招待
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = ドイツの技術者達を雇用
+			focus = 独仏技術協定
+			focus = ライヒスバンクと提携
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = ドイツ依存の社会
+		icon = GFX_focus_cze_german_puppet
+		cost = 8.00
+		prerequisite = {
+			focus = ナチス指導部を招待
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = ドイツ領フランス
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 5.00
+		prerequisite = {
+			focus = ドイツ依存の社会
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = ペタン法の強硬可決
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 4.00
+		prerequisite = {
+			focus = フランス経済の見直し
+		}
+		mutually_exclusive = {
+			focus = ドイツに資金を乞う
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = 農業に投資
+		icon = GFX_goal_generic_consumer_goods
+		cost = 7.00
+		prerequisite = {
+			focus = ペタン法の強硬可決
+		}
+		mutually_exclusive = {
+			focus = 工業化に注力
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = 工業化に注力
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 7.00
+		prerequisite = {
+			focus = ペタン法の強硬可決
+		}
+		mutually_exclusive = {
+			focus = 農業に投資
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = マルセイユ大学
+		icon = GFX_focus_research
+		cost = 5.00
+		prerequisite = {
+			focus = 農業に投資
+			focus = 工業化に注力
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = 経済革命
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 8.00
+		prerequisite = {
+			focus = マルセイユ大学
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = ハイル・ペタン
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		cost = 5.00
+		prerequisite = {
+			focus = 経済革命
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = 次の指導者
+		icon = GFX_focus_generic_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = ハイル・ペタン
+			focus = ドイツ領フランス
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = ダルナンを任命
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 2.00
+		prerequisite = {
+			focus = 次の指導者
+		}
+		mutually_exclusive = {
+			focus = ラヴァルを任命
+			focus = ドリオを任命
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = フランス人民戦線の解体
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5.00
+		prerequisite = {
+			focus = ダルナンを任命
+		}
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = 親独政権の樹立
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 5.00
+		prerequisite = {
+			focus = ダルナンを任命
+		}
+		x = 6
+		y = 8
+
+	}
+	focus = {
+		id = ドリオを任命
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 2.00
+		prerequisite = {
+			focus = 次の指導者
+		}
+		mutually_exclusive = {
+			focus = ラヴァルを任命
+			focus = ダルナンを任命
+		}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = フランス人民戦線と結託
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 5.00
+		prerequisite = {
+			focus = ドリオを任命
+		}
+		x = 18
+		y = 8
+
+	}
+	focus = {
+		id = 統合されたフランス政党
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = フランス人民戦線と結託
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = {
+		id = 反乱分子を潰す
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 5.00
+		prerequisite = {
+			focus = 統合されたフランス政党
+		}
+		x = 18
+		y = 10
+
+	}
+	focus = {
+		id = ペタン法の破棄
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 5.00
+		prerequisite = {
+			focus = 反乱分子を潰す
+		}
+		mutually_exclusive = {
+			focus = ペタン法の改正
+		}
+		x = 16
+		y = 11
+
+	}
+	focus = {
+		id = ペタン法の改正
+		icon = GFX_focus_generic_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = 反乱分子を潰す
+		}
+		mutually_exclusive = {
+			focus = ペタン法の破棄
+		}
+		x = 19
+		y = 11
+
+	}
+	focus = {
+		id = 利子を切り下げ
+		icon = GFX_focus_fra_devalue_the_franc
+		cost = 5.00
+		prerequisite = {
+			focus = ペタン法の改正
+		}
+		x = 19
+		y = 12
+
+	}
+	focus = {
+		id = フランス帝国
+		icon = GFX_focus_focus_fra_border
+		cost = 5.00
+		prerequisite = {
+			focus = 利子を切り下げ
+			focus = ペタン法の破棄
+		}
+		x = 18
+		y = 13
+
+	}
+	focus = {
+		id = 軍需産業の発展
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = 南部フランスの開発
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = リヨン工業地帯
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = 軍需産業の発展
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = 交通網を整備
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5.00
+		prerequisite = {
+			focus = 軍需産業の発展
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = 民間会社との提携
+		icon = GFX_goal_generic_production2
+		cost = 5.00
+		prerequisite = {
+			focus = 軍需産業の発展
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = 南部フランスの資源開拓
+		icon = GFX_goal_generic_construction2
+		cost = 5.00
+		prerequisite = {
+			focus = リヨン工業地帯
+			focus = 交通網を整備
+			focus = 民間会社との提携
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = 鉄鋼資源の開発
+		icon = GFX_focus_generic_steel
+		cost = 5.00
+		prerequisite = {
+			focus = 南部フランスの資源開拓
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = 希少資源の開発
+		icon = GFX_focus_generic_tungsten
+		cost = 5.00
+		prerequisite = {
+			focus = 南部フランスの資源開拓
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = 圧倒的火力
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5.00
+		prerequisite = {
+			focus = 陸軍の改革
+		}
+		mutually_exclusive = {
+			focus = 電撃戦
+			focus = 計画攻勢
+		}
+		x = 26
+		y = 1
+
+	}
+	focus = {
+		id = 装備の近代化
+		icon = GFX_goal_generic_army_artillery
+		cost = 5.00
+		prerequisite = {
+			focus = 圧倒的火力
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = 電撃戦
+		icon = GFX_goal_generic_army_tanks
+		cost = 5.00
+		prerequisite = {
+			focus = 陸軍の改革
+		}
+		mutually_exclusive = {
+			focus = 計画攻勢
+			focus = 圧倒的火力
+		}
+		x = 30
+		y = 1
+
+	}
+	focus = {
+		id = ドイツ製の戦車
+		icon = GFX_focus_generic_tank_production
+		cost = 5.00
+		prerequisite = {
+			focus = 電撃戦
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = 計画攻勢
+		icon = GFX_goal_rhineland
+		cost = 5.00
+		prerequisite = {
+			focus = 陸軍の改革
+		}
+		mutually_exclusive = {
+			focus = 電撃戦
+			focus = 圧倒的火力
+		}
+		x = 34
+		y = 1
+
+	}
+	focus = {
+		id = 歩兵装備の発展
+		icon = GFX_goal_generic_small_arms
+		cost = 5.00
+		prerequisite = {
+			focus = 計画攻勢
+		}
+		x = 34
+		y = 2
+
+	}
+	focus = {
+		id = フランス陸軍の拡大
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 5.00
+		prerequisite = {
+			focus = ドイツ製の戦車
+			focus = 歩兵装備の発展
+			focus = 装備の近代化
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = 造船所の拡大
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = フランス地中海艦隊
+		}
+		x = 40
+		y = 1
+
+	}
+	focus = {
+		id = フランス製巡洋艦
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5.00
+		prerequisite = {
+			focus = 造船所の拡大
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = 究極の海軍
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5.00
+		prerequisite = {
+			focus = フランス製巡洋艦
+		}
+		mutually_exclusive = {
+			focus = 空軍との連携
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = 地上部隊を支援
+		icon = GFX_goal_generic_CAS
+		cost = 5.00
+		prerequisite = {
+			focus = フランス空軍
+		}
+		x = 44
+		y = 1
+
+	}
+	focus = {
+		id = 海軍航空隊
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = 地上部隊を支援
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = 空軍との連携
+		icon = GFX_goal_generic_navy_carrier
+		cost = 5.00
+		prerequisite = {
+			focus = フランス製巡洋艦
+		}
+		prerequisite = {
+			focus = 海軍航空隊
+		}
+		mutually_exclusive = {
+			focus = 究極の海軍
+		}
+		x = 42
+		y = 3
+
+	}
+	focus = {
+		id = 大西洋のその向こうへ
+		icon = GFX_focus_generic_cruiser2
+		cost = 5.00
+		prerequisite = {
+			focus = 究極の海軍
+			focus = 空軍との連携
+		}
+		x = 40
+		y = 4
+
+	}
+	focus = {
+		id = 爆撃機に注力
+		icon = GFX_goal_generic_air_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = 地上部隊を支援
+		}
+		x = 45
+		y = 3
+
+	}
+	focus = {
+		id = ラヴァルを任命
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 2.00
+		prerequisite = {
+			focus = 次の指導者
+		}
+		mutually_exclusive = {
+			focus = ドリオを任命
+			focus = ダルナンを任命
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = 大フランス主義
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 4.00
+		prerequisite = {
+			focus = ラヴァルを任命
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = 選挙制度を廃止
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 5.00
+		prerequisite = {
+			focus = 大フランス主義
+		}
+		x = 11
+		y = 9
+
+	}
+	focus = {
+		id = 独裁者
+		icon = GFX_goal_generic_attack_allies
+		cost = 5.00
+		prerequisite = {
+			focus = 選挙制度を廃止
+		}
+		x = 11
+		y = 10
+
+	}
+	focus = {
+		id = ヨーロッパ政策
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 5.00
+		prerequisite = {
+			focus = 独裁者
+		}
+		x = 11
+		y = 11
+
+	}
+	focus = {
+		id = フランスナチズム
+		icon = GFX_goal_support_fascism
+		cost = 5.00
+		prerequisite = {
+			focus = 親独政権の樹立
+			focus = フランス人民戦線の解体
+		}
+		x = 5
+		y = 9
+
+	}
+	focus = {
+		id = 救国の聖女
+		icon = GFX_focus_focus_fra_revolution_upmost
+		cost = 5.00
+		prerequisite = {
+			focus = 自由を取り戻す為の力
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = 自由を取り戻す為の力
+		icon = GFX_focus_up_joan_of_arc
+		cost = 5.00
+		prerequisite = {
+			focus = フランス陸軍の拡大
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = 絶対的制空
+		icon = GFX_goal_generic_air_fighter
+		cost = 5.00
+		prerequisite = {
+			focus = フランス空軍
+		}
+		x = 47
+		y = 1
+
+	}
+	focus = {
+		id = 大規模な航空隊
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5.00
+		prerequisite = {
+			focus = 絶対的制空
+		}
+		x = 47
+		y = 3
+
+	}
+	focus = {
+		id = ドイツ内戦に介入
+		icon = GFX_goal_generic_territory_or_war
+		cost = 5.00
+		prerequisite = {
+			focus = フランスナチズム
+		}
+		x = 2
+		y = 10
+
+	}
+	focus = {
+		id = イタリアへ接近
+		icon = GFX_focus_befriend_italy
+		cost = 5.00
+		prerequisite = {
+			focus = ヨーロッパ政策
+		}
+		mutually_exclusive = {
+			focus = スペインに接近
+		}
+		x = 13
+		y = 12
+
+	}
+	focus = {
+		id = スペインに接近
+		icon = GFX_focus_intervention_spain_republic
+		cost = 5.00
+		prerequisite = {
+			focus = ヨーロッパ政策
+		}
+		mutually_exclusive = {
+			focus = イタリアへ接近
+		}
+		x = 9
+		y = 12
+
+	}
+	focus = {
+		id = ドイツに接近
+		icon = GFX_goal_generic_improve_relations
+		cost = 5.00
+		prerequisite = {
+			focus = フランスナチズム
+		}
+		x = 5
+		y = 10
+
+	}
+	focus = {
+		id = ドイツ領フランスの交渉開始
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5.00
+		prerequisite = {
+			focus = ドイツに接近
+		}
+		x = 5
+		y = 11
+
+	}
+	focus = {
+		id = 決裂
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 10.00
+		prerequisite = {
+			focus = ドイツ領フランスの交渉開始
+		}
+		mutually_exclusive = {
+			focus = 統一されたフランス
+		}
+		x = 7
+		y = 12
+
+	}
+	focus = {
+		id = 統一されたフランス
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 5.00
+		prerequisite = {
+			focus = ドイツ領フランスの交渉開始
+		}
+		mutually_exclusive = {
+			focus = 決裂
+		}
+		x = 3
+		y = 12
+
+	}
+	focus = {
+		id = 対独戦略
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 5.00
+		prerequisite = {
+			focus = 同盟の形成
+			focus = もうドイツは必要ない
+			focus = フランス帝国
+		}
+		x = 13
+		y = 14
+
+	}
+	focus = {
+		id = もうドイツは必要ない
+		icon = GFX_focus_SAF_colonialist_crusade
+		cost = 5.00
+		prerequisite = {
+			focus = 決裂
+			focus = 統一されたフランス
+		}
+		x = 5
+		y = 13
+
+	}
+	focus = {
+		id = 同盟の形成
+		icon = GFX_goal_anschluss
+		cost = 5.00
+		prerequisite = {
+			focus = スペインに接近
+			focus = イタリアへ接近
+		}
+		x = 11
+		y = 13
+
+	}
+	focus = {
+		id = 要塞線
+		icon = GFX_goal_generic_construct_military
+		cost = 5.00
+		prerequisite = {
+			focus = もうドイツは必要ない
+			focus = 同盟の形成
+			focus = フランス帝国
+		}
+		x = 9
+		y = 14
+
+	}
+	focus = {
+		id = 咆哮
+		icon = GFX_focus_hol_united_netherlands
+		cost = 10.00
+		prerequisite = {
+			focus = 対独戦略
+		}
+		prerequisite = {
+			focus = 要塞線
+		}
+		x = 11
+		y = 15
+
+	}
+	focus = {
+		id = アラスの報復
+		icon = GFX_goal_generic_major_war
+		cost = 4.00
+		prerequisite = {
+			focus = 咆哮
+		}
+		x = 8
+		y = 16
+
+	}
+	focus = {
+		id = ドイツ第三帝国を解体する
+		icon = GFX_focus_attack_germany
+		cost = 5.00
+		prerequisite = {
+			focus = 咆哮
+		}
+		x = 11
+		y = 16
+
+	}
+	focus = {
+		id = アルザスロレーヌとベルギー南部の再統合
+		icon = GFX_goal_generic_position_armies
+		cost = 4.00
+		prerequisite = {
+			focus = アラスの報復
+			focus = ドイツ第三帝国を解体する
+		}
+		x = 9
+		y = 17
+
+	}
+	focus = {
+		id = 自由フランス政府の引き渡しを要求
+		icon = GFX_focus_attack_britain
+		cost = 5.00
+		prerequisite = {
+			focus = 咆哮
+		}
+		x = 14
+		y = 16
+
+	}
+	focus = {
+		id = フランス世界帝国の再興
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		cost = 30.00
+		prerequisite = {
+			focus = 帝都パリ
+		}
+		x = 11
+		y = 19
+
+	}
+	focus = {
+		id = 死か服従か
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+		cost = 4.00
+		prerequisite = {
+			focus = 自由フランス政府の引き渡しを要求
+		}
+		x = 13
+		y = 17
+
+	}
+	focus = {
+		id = 帝都パリ
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 5.00
+		prerequisite = {
+			focus = 死か服従か
+		}
+		prerequisite = {
+			focus = アルザスロレーヌとベルギー南部の再統合
+		}
+		x = 11
+		y = 18
+
+	}
+}

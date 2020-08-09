@@ -1,0 +1,37 @@
+
+state={
+	id=528
+	name="STATE_528" # Kyushu
+	manpower = 5169000
+	state_category = large_city
+	resources={
+		chromium=100
+	}
+
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 8
+			air_base = 7
+			dockyard = 5
+			arms_factory = 3
+			industrial_complex = 3
+			9950 = {
+				naval_base = 6
+
+			}
+
+		}
+		victory_points = {
+			1025 10
+		}
+		victory_points = {
+			9950 30
+		}
+	}
+
+	provinces={
+		1025 1158 1183 4027 4164 7110 9950 10011 10020 10092 11925 12006 
+	}
+}

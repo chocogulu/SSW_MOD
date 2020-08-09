@@ -1,0 +1,25 @@
+
+state={
+	id=816
+	name="STATE_816"
+
+	history={
+		owner = BCK
+		victory_points = {
+		}
+			
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		add_core_of = ING
+		add_core_of = PRI
+		add_core_of = BCK
+	}
+
+	provinces={
+		  12295 4395 7250 4291 12105
+	}
+	manpower= 8560000
+	state_category=town
+}

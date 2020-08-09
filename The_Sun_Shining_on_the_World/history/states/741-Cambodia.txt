@@ -1,0 +1,29 @@
+
+state={
+	id=741
+	name="STATE_741"
+
+	history={
+		add_core_of = CAM
+		owner = CAM
+		victory_points = {
+			7376 1 
+		}
+		buildings = {
+			infrastructure = 2
+			7432 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1620 4330 4596 7645 10204 12167 12260 12288
+	}
+	manpower=1045000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

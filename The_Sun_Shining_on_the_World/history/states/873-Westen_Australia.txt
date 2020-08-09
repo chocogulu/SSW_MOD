@@ -1,0 +1,25 @@
+
+state={
+	id=873
+	name="STATE_873"
+	manpower = 21532
+	
+	state_category = town
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			12990 3
+		}
+		victory_points = {
+			12948 1
+		}
+		add_core_of = AST
+	}
+
+	provinces={
+	12948 2191 10969 12976 8200 12962 12990 10949
+	}
+}

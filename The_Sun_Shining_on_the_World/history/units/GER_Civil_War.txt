@@ -1,0 +1,819 @@
+division_template = {
+	name = "Civil-war-division"					
+	division_names_group = GER_Inf_01
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Artillery-division"					
+	division_names_group = GER_Inf_01
+	is_locked = no
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+
+
+
+
+
+
+
+units = {
+
+	division= {
+		name = "1.Artillery-division"
+		location = 6521
+		division_template = "Artillery-division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "2.Artillery-division"
+		location = 6521
+		division_template = "Artillery-division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "3.Artillery-division"
+		location = 6521
+		division_template = "Artillery-division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "4.Artillery-division"
+		location = 6521
+		division_template = "Artillery-division"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		name = "1.Artillery-division"
+		location = 6521
+		division_template = "Artillery-division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "2.Artillery-division"
+		location = 6521
+		division_template = "Artillery-division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "3.Artillery-division"
+		location = 6521
+		division_template = "Artillery-division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "4.Artillery-division"
+		location = 6521
+		division_template = "Artillery-division"
+		start_experience_factor = 0.3
+	}
+	
+
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9388
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9388
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9388
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9388
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9388
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9388
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 9388
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3340
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 3340
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3258
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 3258
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3367
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 3367
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11219
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 11219
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 11359
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 11359
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 11359
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 11359
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 11359
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 11359
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 11359
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3522
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 3522
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 6487
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 6487
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 425
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 425
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 3561
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = 3561
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 3500
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 3500
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 3500
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 3500
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 3500
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 3500
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 3500
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 3500
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 3500
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 482
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 482
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 9497
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = 9497
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 9441
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 9441
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 6470
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location = 6470
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 424
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location = 424
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 9555
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 39
+		}
+		location = 9555
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 7857
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 40
+		}
+		location = 7857
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 5283
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 41
+		}
+		location = 5283
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 543
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 543
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 543
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 543
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 543
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 543
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 543
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 543
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 11525
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 11525
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 557
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 557
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 557
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 557
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 557
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 557
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 557
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+}

@@ -1,0 +1,15 @@
+add_namespace = SSW_LTV
+
+country_event = {
+	id = SSW_LTV.1
+	title = SSW_LTV.1.t
+	desc = SSW_LTV.1.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_LTV.1.a
+		load_oob = "LTV_Civil_War"
+	}
+}

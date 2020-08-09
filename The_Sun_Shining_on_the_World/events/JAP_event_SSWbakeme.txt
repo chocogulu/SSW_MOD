@@ -1,0 +1,254 @@
+add_namespace = SSW_JAP_the_hiroshima_navy_agreement_event
+add_namespace = SSW_JAPAN_event_for_america
+country_event = {
+	id = SSW_JAP_the_hiroshima_navy_agreement_event.1
+	title = SSW_JAP_the_hiroshima_navy_agreement_event.1.t
+	desc = SSW_JAP_the_hiroshima_navy_agreement_event.1.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAP_the_hiroshima_navy_agreement_event.1.a
+		add_ideas = JAP_the_hiroshima_navy_agreement_idea
+		ai_chance = {
+		base = 1000
+		}
+		JAP = {
+			country_event = {
+			id = SSW_JAP_the_hiroshima_navy_agreement_event.2
+			days = 1
+			}
+		}
+	}
+	option = {
+		name = SSW_JAP_the_hiroshima_navy_agreement_event.1.a
+		add_ideas = JAP_the_hiroshima_navy_agreement_idea
+		ai_chance = {
+		base = 0
+		}
+		JAP = {
+			country_event = {
+			id = SSW_JAP_the_hiroshima_navy_agreement_event.3
+			days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_JAP_the_hiroshima_navy_agreement_event.2
+	title = SSW_JAP_the_hiroshima_navy_agreement_event.2.t
+	desc = SSW_JAP_the_hiroshima_navy_agreement_event.2.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAP_the_hiroshima_navy_agreement_event.2.a
+	}
+}
+
+country_event = {
+	id = SSW_JAP_the_hiroshima_navy_agreement_event.3
+	title = SSW_JAP_the_hiroshima_navy_agreement_event.3.t
+	desc = SSW_JAP_the_hiroshima_navy_agreement_event.3.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAP_the_hiroshima_navy_agreement_event.3.a
+	}
+}
+
+country_event = {
+	id = SSW_JAP_the_hiroshima_navy_agreement_event.4
+	title = SSW_JAP_the_hiroshima_navy_agreement_event.4.t
+	desc = SSW_JAP_the_hiroshima_navy_agreement_event.4.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAP_the_hiroshima_navy_agreement_event.4.a
+	}
+}
+
+country_event = {
+	id = SSW_JAPAN_event_for_america.1
+	title = SSW_JAPAN_event_for_america.1.t
+	desc = SSW_JAPAN_event_for_america.1.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAPAN_event_for_america.1.a
+		ai_chance = {
+		base = 1000
+		}
+		JAP = { 
+			add_to_faction = MEX 
+			country_event = {
+			id = SSW_JAPAN_event_for_america.7
+			days = 1
+			}
+		}
+	}
+	option = {
+		name = SSW_JAPAN_event_for_america.1.b
+		country_event = {
+		id = SSW_JAPAN_event_for_america.2
+		days = 1
+		}
+	}
+}
+
+country_event = {
+	id = SSW_JAPAN_event_for_america.105
+	title = SSW_JAPAN_event_for_america.105.t
+	desc = SSW_JAPAN_event_for_america.105.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAPAN_event_for_america.105.a
+		ai_chance = {
+		base = 1
+		}
+		JAP = { 
+			add_to_faction = WSL 
+			country_event = {
+			id = SSW_JAPAN_event_for_america.7
+			days = 1
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+		base = 999
+		}
+		name = SSW_JAPAN_event_for_america.105.b
+		country_event = {
+		id = SSW_JAPAN_event_for_america.2
+		days = 1
+		}
+	}
+}
+
+country_event = {
+	id = SSW_JAPAN_event_for_america.2
+	title = SSW_JAPAN_event_for_america.2.t
+	desc = SSW_JAPAN_event_for_america.2.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAPAN_event_for_america.2.a
+	}
+}
+
+country_event = {
+	id = SSW_JAPAN_event_for_america.3
+	title = SSW_JAPAN_event_for_america.3.t
+	desc = SSW_JAPAN_event_for_america.3.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+	name = SSW_JAPAN_event_for_america.3.a
+	}
+}
+
+country_event = {
+	id = SSW_JAPAN_event_for_america.4
+	title = SSW_JAPAN_event_for_america.4.t
+	desc = SSW_JAPAN_event_for_america.4.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAPAN_event_for_america.4.a
+		ai_chance = {
+		base = 1000
+		factor = 1000
+		}
+		JAP = {
+			set_state_controller = 649
+			set_state_owner = 649
+			add_timed_idea = {
+			idea = JAP_idea_09
+			days = 365
+			}
+			country_event = {
+			id = SSW_JAPAN_event_for_america.6
+			days = 1
+			}
+		}
+	}
+	option = {
+		name = SSW_JAPAN_event_for_america.4.b
+		ai_chance = {
+		base = 0
+		}
+		JAP = {
+			country_event = {
+			id = SSW_JAPAN_event_for_america.5
+			days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_JAPAN_event_for_america.5
+	title = SSW_JAPAN_event_for_america.5.t
+	desc = SSW_JAPAN_event_for_america.5.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAPAN_event_for_america.5.a
+		ai_chance = {
+		base = 1000
+		}
+	}
+}
+
+country_event = {
+	id = SSW_JAPAN_event_for_america.6
+	title = SSW_JAPAN_event_for_america.6.t
+	desc = SSW_JAPAN_event_for_america.6.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAPAN_event_for_america.6.a
+		chance = {
+		base = 1000
+		}
+	}
+}
+
+country_event = {
+	id = SSW_JAPAN_event_for_america.7
+	title = SSW_JAPAN_event_for_america.7.t
+	desc = SSW_JAPAN_event_for_america.7.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAPAN_event_for_america.7.a
+		ai_chance = {
+		base = 1000
+		}
+	}
+}

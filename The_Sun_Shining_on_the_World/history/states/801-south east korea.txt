@@ -1,0 +1,28 @@
+
+state={
+	id=801
+	name="STATE_801"
+
+	history={
+		owner = JAP
+		victory_points = {
+
+		}
+		buildings = {
+			4056 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = KOR
+		add_core_of = JAP
+
+	}
+
+	provinces={
+		4086 10115 4103 7121 12089 1081
+	}
+	manpower=100
+	buildings_max_level_factor=1.000
+	state_category=town
+}

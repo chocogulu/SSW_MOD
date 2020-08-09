@@ -1,0 +1,25 @@
+
+state={
+	id=818
+	name="STATE_818"
+
+	history={
+		owner = PRI
+		victory_points = {
+		}
+			
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+		add_core_of = ING
+		add_core_of = PRI
+		add_core_of = BCK
+	}
+
+	provinces={
+		  7060 4072 10019 7177
+	}
+	manpower= 3230000
+	state_category=town
+}

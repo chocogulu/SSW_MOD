@@ -1,0 +1,26 @@
+
+state={
+	id=813
+	name="STATE_813"
+
+	history={
+		owner = ANS
+		victory_points = {
+		9908 5
+		}
+			
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = ANS
+
+	}
+
+	provinces={
+		12893 3972 2055 9908 12624  
+	}
+	manpower= 84530
+	state_category=town
+}

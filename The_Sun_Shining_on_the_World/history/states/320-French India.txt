@@ -1,0 +1,23 @@
+
+state={
+	id=320
+	name="STATE_320"
+	manpower = 286410
+
+	state_category = enclave
+
+	history={
+		owner = MCK
+		add_core_of = MCK
+		add_core_of = ING
+		add_core_of = PRI
+		buildings = {
+			infrastructure = 5
+			10149 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={ 10149 }
+}

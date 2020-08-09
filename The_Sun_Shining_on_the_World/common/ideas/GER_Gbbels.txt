@@ -1,0 +1,287 @@
+ideas = {
+    country = {
+		Scars_of_the_civil_war = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = anti_soviet_pact
+
+			modifier = {
+				stability_factor = -0.50
+				war_support_factor = -0.30
+				consumer_goods_factor = 0.20
+				research_speed_factor = -0.10	
+			}
+		}
+		Scars_of_the_civil_war_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			picture = anti_soviet_pact
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.10
+				consumer_goods_factor = 0.20
+				research_speed_factor = -0.10	
+			}
+		}
+		
+		Scars_of_the_civil_war_3 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+	
+			removal_cost = -1
+			picture = anti_soviet_pact
+			modifier = {
+				stability_factor = -0.5
+				war_support_factor = -0.5
+				consumer_goods_factor = 0.10
+				research_speed_factor = -0.10	
+			}		
+		}
+		Scars_of_the_civil_war_4 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+	
+			removal_cost = -1
+			picture = anti_soviet_pact	
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.10
+				consumer_goods_factor = -0.5
+			}
+		}
+		Scars_of_the_civil_war_5 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+	
+			removal_cost = -1
+			picture = anti_soviet_pact	
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				consumer_goods_factor = -0.5
+			}
+		}
+		Resistance_Gering = {
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+	
+			removal_cost = -1
+			picture = FRA_matignon_agreements	
+			modifier = {
+				air_chief_cost_factor = 0.5
+				air_equipment_upgrade_xp_cost = 2.2
+				experience_gain_air = -0.05
+				air_accidents_factor = 0.10
+				army_bonus_air_superiority_factor = -0.10
+			}
+		}
+		Resistance_Gering_2 = {
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+	
+			removal_cost = -1
+			picture = FRA_matignon_agreements	
+			modifier = {
+				air_chief_cost_factor = 0.5
+				air_equipment_upgrade_xp_cost = 2.2
+			}
+		}
+		Resistance_himmler = {
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+	
+			removal_cost = -1
+			picture = FRA_scw_intervention_republicans_focus	
+			modifier = {
+				training_time_factor = 0.10
+				conscription = -0.10
+				high_command_cost_factor = 0.50
+			}
+		}
+		Resistance_himmler_2 = {
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+	
+			removal_cost = -1
+			picture = FRA_scw_intervention_republicans_focus	
+			modifier = {
+				training_time_factor = 0.05
+				conscription = -0.05
+			}
+		}
+		Resistance_Popular_Front = {
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+	
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus	
+			modifier = {
+				production_factory_max_efficiency_factor = -0.3
+				production_speed_buildings_factor = -0.1
+				production_factory_start_efficiency_factor = -0.05
+				local_resources_factor = -0.10
+			}
+		}
+		Resistance_Popular_Front_2 = {
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+	
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus	
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.5
+			}
+		}
+		Dominance_Army = {
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+	
+			removal_cost = -1
+			picture = generic_fascism_drift_bonus	
+			modifier = {
+				non_core_manpower = -0.10
+				planning_speed = -0.10
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		Dominance_Army_2 = {
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+	
+			removal_cost = -1
+			picture = generic_fascism_drift_bonus	
+			modifier = {
+				non_core_manpower = -0.10
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_org_Factor = 0.10
+				land_reinforce_rate = 0.10
+			}
+		}
+		recessive_Army = {
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+	
+			removal_cost = -1
+			picture = great_depression	
+			modifier = {
+				training_time_factor = 0.1
+				planning_speed = -0.10
+				army_org_Factor = -0.05
+			}
+		}
+		Allied_forces = {
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+	
+			removal_cost = -1
+			picture = generic_manpower_bonus	
+			modifier = {
+				army_leader_start_level = 1
+				army_leader_start_attack_level = 1
+				army_leader_start_planning_level = 1
+				army_leader_start_defense_level = 1	
+			}
+		}
+		Allied_forces_2 = {
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+	
+			removal_cost = -1
+			picture = generic_manpower_bonus	
+			modifier = {
+				army_leader_start_level = 1
+				army_leader_start_attack_level = 1
+				army_leader_start_planning_level = 1
+				army_leader_start_defense_level = 1
+				planning_speed = 0.10
+				max_planning = 0.25	
+			}
+		}
+		
+	}
+}

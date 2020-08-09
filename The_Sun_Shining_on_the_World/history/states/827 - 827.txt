@@ -1,0 +1,23 @@
+
+state={
+	id=827
+	name="STATE_827"
+
+	history={
+		owner = CAM
+		victory_points = {
+		4320 1
+		}
+			
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = CAM
+	}
+
+	provinces={
+		  4302 1324 12475 4639 5236
+	}
+	manpower= 1230000
+	state_category=rural
+}

@@ -1,0 +1,19 @@
+state={
+	id=842
+	name="STATE_842"
+	manpower = 750000
+	state_category = small_island
+	
+	
+	history={
+		add_core_of = JAP
+		owner = JAP
+		buildings = {
+			infrastructure = 5
+		}
+
+	}
+	provinces={
+		13235
+	}
+}

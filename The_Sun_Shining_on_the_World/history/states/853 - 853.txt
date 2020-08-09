@@ -1,0 +1,27 @@
+state={
+	id=853
+	name="STATE_853"
+	manpower = 2214406
+	state_category = large_city
+	
+	
+	history={
+		add_core_of = KOR
+		owner = JAP
+		victory_points = {
+		4056 15
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 7
+			4056 = {
+				naval_base = 5
+
+			}
+		}
+
+	}
+	provinces={
+		1054 10085 12060 4056
+	}
+}

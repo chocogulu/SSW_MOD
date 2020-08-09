@@ -1,0 +1,25 @@
+state={
+	id=754
+	name="STATE_754"
+	provinces={
+		1882 4536 4888 7270 10490 10817 11448 12732 12815 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category = rural
+	history={
+		owner = CRE
+		add_core_of = CRE
+		add_core_of = AGF
+		victory_points = {
+			12732 3 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+	
+	}
+}

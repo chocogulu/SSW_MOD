@@ -1,0 +1,15 @@
+add_namespace = SSW_HGR
+
+country_event = {
+	id = SSW_HGR.1
+	title = SSW_HGR.1.t
+	desc = SSW_HGR.1.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_HGR.1.a
+		load_oob = "HGR_Civil_War"
+	}
+}

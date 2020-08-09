@@ -1,0 +1,20 @@
+JAP_Hanshin_Fulfillment = {
+	allowed = {
+		original_tag = JAP
+	}
+}
+JAP_Keihin_Fulfillment = {
+	allowed = {
+		original_tag = JAP
+	}
+}
+JAP_cat_the_west_japan_heavy_industry_region_plan = {
+	allowed = {
+		original_tag = JAP
+	}
+}
+JAP_cat_the_kanto_industry_region_plan = {
+	allowed = {
+		original_tag = JAP
+	}
+}

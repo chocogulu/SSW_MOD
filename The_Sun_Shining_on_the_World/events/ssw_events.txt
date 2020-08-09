@@ -1,0 +1,46 @@
+add_namespace = ssw
+
+##Event: 世界首都ゲルマニア
+country_event = {
+	id = ssw.1
+	title = ssw.1.title
+	desc = ssw.1.desc
+	picture = GFX_report_event_spr_franco_victory
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = ssw.1.a
+		ai_chance = { factor = 1}
+		country_event= {
+days = 0 
+id = ssw.2 
+}
+news_event = ssw.3
+	}
+}
+##Event: 万博開催
+country_event = {
+	id = ssw.2
+	title = ssw.2.title
+	desc = ssw.2.desc
+	picture = GFX_news_event_herman_goring
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = ssw.2.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: ゲルマニア万博が開催
+news_event = {
+	id = ssw.3
+	title = ssw.3.title
+	desc = ssw.3.desc
+	picture = GFX_report_event_german_reichstag_gathering
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = ssw.3.a
+		ai_chance = { factor = 1}
+	}
+}

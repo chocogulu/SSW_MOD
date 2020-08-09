@@ -1,0 +1,23 @@
+state={
+	id=851
+	name="STATE_851"
+	manpower = 3450000
+	state_category = largy_city
+	
+	
+	history={
+		add_core_of = JAP
+		owner = JAP
+		victory_points = {
+		4102 15
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 4
+		}
+
+	}
+	provinces={
+		4102 4198 11949 12032 1020 7178
+	}
+}

@@ -1,0 +1,22 @@
+
+state={
+	id=828
+	name="STATE_828"
+
+	history={
+		owner = LAO
+		victory_points = {
+		}
+			
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = LAO
+	}
+
+	provinces={
+		  1390 1362 10326 1520 4260 10195 4539 10238 1374 12210 7426 1563 4554 1577 10453
+	}
+	manpower= 400000
+	state_category=rural
+}

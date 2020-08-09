@@ -1,0 +1,143 @@
+ideas = {
+	country = {
+		#アウトラーダ
+		outlarda = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+
+			}
+		}
+		#アウトラーダ_NF変更後
+		outlarda_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.20
+
+			}
+		}
+		#経済開発省
+		Economic_development_Ministry = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_bonus = {
+					industry = -0.08
+				}
+				global_building_slots_factor = 0.10
+			}
+		}
+		#イタリアの４ヵ年計画
+		Italy_4_year_plan = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+		#南北問題
+		South_north_question = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_start_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+		#外国人労働者の受け入れ
+		South_north_question = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				conscription = 0.01
+
+			}
+		}
+		#市民権
+		Citizenship = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				production_factory_start_efficiency_factor = -0.10
+			}
+		}
+		#死ぬまで働け
+		overwork = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.40
+				production_factory_start_efficiency_factor = 0.4
+				production_factory_max_efficiency_factor = 0.20
+			}
+		}
+	}
+}

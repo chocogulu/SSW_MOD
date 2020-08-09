@@ -1,0 +1,20 @@
+
+state={
+	id=875
+	name="STATE_875"
+	manpower = 215896
+	
+	state_category = town
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = AST
+	}
+
+	provinces={
+	2116 7610 12949 5198 10941 4632 4517 11006 5227
+	}
+}

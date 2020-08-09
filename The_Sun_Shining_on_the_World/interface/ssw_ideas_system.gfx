@@ -1,0 +1,36 @@
+spriteTypes = { 
+	SpriteType = { 
+		name = "GFX_idea_corporate_council_system"
+		texturefile = "gfx/interface/ideas/social_system/idea_corporate_council_system.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_idea_collective_anarchist_society"
+		texturefile = "gfx/interface/ideas/social_system/idea_collective_anarchist_society.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_idea_despotism"
+		texturefile = "gfx/interface/ideas/social_system/idea_despotism.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_idea_leftist_government"
+		texturefile = "gfx/interface/ideas/social_system/idea_leftist_government.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_idea_military_regime"
+		texturefile = "gfx/interface/ideas/social_system/idea_military_regime"
+	}
+
+	SpriteType = { 
+		name = "GFX_idea_one_party_dictatorship"
+		texturefile = "gfx/interface/ideas/social_system/idea_one_party_dictatorship"
+	}
+
+	SpriteType = { 
+		name = "GFX_idea_rightist_government"
+		texturefile = "gfx/interface/ideas/social_system/idea_rightist_government.dds"
+	}
+ }

@@ -1,0 +1,20 @@
+focus_tree = {
+	id = AGF
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AGF
+		}
+	}
+	default = no
+	focus = {
+		id = AGF_1
+		text = 革命闘争
+		icon = GFX_focus_generic_soviet_politics
+		cost = 1.00
+		x = 1
+		y = 0
+
+	}
+}

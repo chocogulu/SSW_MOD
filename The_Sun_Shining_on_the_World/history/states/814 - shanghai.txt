@@ -1,0 +1,31 @@
+
+state={
+	id=814
+	name="STATE_814"
+
+	history={
+		owner = JAP
+		victory_points = {
+		7014 20
+		}
+			
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			7014 = {
+				naval_base = 10
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+		add_core_of = CRE
+		add_core_of = AGF
+	}
+
+	provinces={
+		10034 12052 7014 12076
+	}
+	manpower= 945300
+	state_category=large_city
+}

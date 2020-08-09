@@ -1,0 +1,33 @@
+﻿capital = 446
+
+oob = "KOE_1950"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_autonomy = { target = IES autonomous_state = autonomy_wtt_imperial_protectorate }
+
+set_convoys = 150
+
+set_politics = {
+	ruling_party = authoritative_democracy
+	last_election = "1950.1.1"
+	election_frequency = 96
+	elections_allowed = no
+}
+set_popularities = {
+	authoritative_democracy = 100
+}
+
+create_country_leader = {
+	name = "Farouk I"
+	desc = ""
+	picture = "gfx/leaders/KOE/1KOE.dds"
+	expire = "1965.1.1"
+	ideology = illiberal_democracy
+	traits = {
+		#
+	}
+}

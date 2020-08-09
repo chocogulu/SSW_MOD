@@ -1,0 +1,24 @@
+
+state={
+	id=810
+	name="STATE_810"
+
+	history={
+		owner = RUS
+		victory_points = {
+		
+		}
+			
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		483 3477 326 3316 6366 3343 353
+	}
+	manpower=101344
+	state_category=town
+}
