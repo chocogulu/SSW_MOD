@@ -1,0 +1,127 @@
+ideas = {
+	country = {
+		CAN_idea_1 = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = ast_abandon_the_westminster_system#アイコンの写真
+
+			modifier = { political_power_gain = 0.5
+						 consumer_goods_factor = -0.03
+						 stability_factor = 0.05
+			}#効果
+		}
+		CAN_idea_2 = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = ast_abandon_the_westminster_system_fascism#アイコンの写真
+
+			modifier = { political_power_gain = 0.3
+						 consumer_goods_factor = -0.03
+						 war_support_factor = 0.05
+			}#効果
+		}
+		CAN_idea_3 = {
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = FRA_scw_intervention_nationalists_focus#アイコンの写真
+
+			modifier = { amphibious_invasion = 0.10
+						 army_org_factor = 0.05
+						 planning_speed = 0.10
+			}#効果
+		}
+		CAN_idea_4 = {
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = ast_abandon_the_westminster_system#アイコンの写真
+
+			modifier = { amphibious_invasion = 0.10
+						 army_org_factor = 0.10
+			}#効果
+		}
+		CAN_idea_5 = {
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_pp_unity_bonus#アイコンの写真
+
+			modifier = { research_speed_factor = 0.05
+						 surrender_limit = 0.1
+			}#効果
+		}
+		CAN_idea_6 = {
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_pp_unity_bonus#アイコンの写真
+
+			modifier = { research_speed_factor = 0.05
+						 surrender_limit = 0.1
+						 production_speed_buildings_factor = 0.05
+			}#効果
+		}
+		CAN_idea_7 = {
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_pp_unity_bonus#アイコンの写真
+
+			modifier = { research_speed_factor = 0.05
+						 surrender_limit = 0.1
+						 production_speed_buildings_factor = 0.1
+			}#効果
+		}
+		CAN_idea_8 = {
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = hudson_avoid#アイコンの写真
+
+			modifier = { consumer_goods_factor = 0.03
+						 production_speed_industrial_complex_factor = 0.15
+						  }#効果
+		}
+		CAN_idea_9 = {
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = eng_imperial_conscription#アイコンの写真
+
+			modifier = { conscription_factor = -0.30
+						  }#効果
+		}
+	}
+}

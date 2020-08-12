@@ -28,9 +28,44 @@ spriteTypes = {
 		name = "GFX_Canada_event_1"
 		texturefile = "gfx/event_pictures/Canada_event_1.dds"
 	}
-
 	spriteType = {
-		name = "GFX_931"
-		texturefile = "gfx/interface/event_gfx/country/931.dds"
+		name = "GFX_Eden_speech"
+		texturefile = "gfx/event_pictures/Eden_speech.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_flags_change"
+		texturefile = "gfx/event_pictures/CAN_flags_change.dds"
+	}
+	spriteType = {
+		name = "GFX_Greater_London"
+		texturefile = "gfx/event_pictures/Greater_London.dds"
+	}
+	spriteType = {
+		name = "GFX_Westminster"
+		texturefile = "gfx/event_pictures/Westminster.dds"
+	}
+	spriteType = {
+		name = "GFX_Queen_Elizabeth_Eden"
+		texturefile = "gfx/event_pictures/Queen_Elizabeth_Eden.dds"
+	}
+	spriteType = {
+		name = "GFX_conservatizm_win"
+		texturefile = "gfx/event_pictures/conservatizm_win.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_ottawa"
+		texturefile = "gfx/event_pictures/ENG_ottawa.dds"
+	}
+	spriteType = {
+		name = "GFX_india_map_event"
+		texturefile = "gfx/event_pictures/india_map_event.dds"
+	}
+	spriteType = {
+		name = "GFX_india_map_eng"
+		texturefile = "gfx/event_pictures/india_map_eng.dds"
+	}
+	spriteType = {
+		name = "GFX_Coronation_Elizabeth"
+		texturefile = "gfx/event_pictures/Coronation_Elizabeth.dds"
 	}
 }

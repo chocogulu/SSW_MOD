@@ -1,0 +1,314 @@
+division_template = {
+	name = "Grenadier Guards"					#
+#	division_names_group = ENG_Inf_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Infantry Division"			# 1st - 5th divisions = fully equipped, others = reserve divisions
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+				anti_tank = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Royal Marines Division"				#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+        marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+        marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Cavalry Division"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+
+}
+division_template = {
+	name = "Motorised Division"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+	}
+	support = {
+	 	mot_recon = { x = 0 y = 0 }
+	    anti_tank = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Tank Briagde"
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+	}
+	support = {
+		signal_company = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+	}
+}
+
+units = {
+	division= {
+		name = "1st Grenadier Guards"
+		location = 6103  # Greater London
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		name = "2nd Grenadier Guards"
+		location = 9239  # Greater London
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "3rd Grenadier Guards"
+		location = 11333  # Greater London
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "4th Grenadier Guards"
+		location = 11374  # Greater London
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "1st Tank Briagde"
+		location = 9297
+		division_template = "Tank Briagde"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "2nd Tank Briagde"
+		location = 9379
+		division_template = "Tank Briagde"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "3rd Tank Briagde"
+		location = 6384
+		division_template = "Tank Briagde"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "4th Tank Briagde"
+		location = 3273
+		division_template = "Tank Briagde"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "5th Tank Briagde"
+		location = 12406
+		division_template = "Tank Briagde"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "6th Tank Briagde"
+		location = 12137
+		division_template = "Tank Briagde"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "1st Cavalry Division"
+		location = 6318
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "2nd Cavalry Division"
+		location = 9315
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Royal Marines Division"
+		location = 3501
+		division_template = "Royal Marines Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Royal Marines Division"
+		location = 9458
+		division_template = "Royal Marines Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Royal Marines Division"
+		location = 7564
+		division_template = "Royal Marines Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Royal Marines Division"
+		location = 9975
+		division_template = "Royal Marines Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Infantry Division"
+		location = 540
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Infantry Division"
+		location = 6526
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3rd Infantry Division"
+		location = 271
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4th Infantry Division"
+		location = 3369
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5th Infantry Division"
+		location = 377
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6th Infantry Division"
+		location = 11297
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "7th Infantry Division"
+		location = 351
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8th Infantry Division"
+		location = 9392
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "9th Infantry Division"
+		location = 6300
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "10th Infantry Division"
+		location = 11064
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "11th Infantry Division"
+		location = 3379
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "12th Infantry Division"
+		location = 12505
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "13th Infantry Division"
+		location = 4345
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "14th Infantry Division"
+		location = 6732
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1st Motorised Division"
+		location = 12406
+		division_template = "Motorised Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2nd Motorised Division"
+		location = 9832
+		division_template = "Motorised Division"
+		start_experience_factor = 0.3
+	}
+
+}

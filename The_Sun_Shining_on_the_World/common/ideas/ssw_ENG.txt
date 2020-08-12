@@ -1,0 +1,243 @@
+ideas = {
+	country = {
+		ENG_idea_1 = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = British_sick#アイコンの写真
+
+			modifier = {consumer_goods_factor = 0.2
+						production_speed_arms_factory_factor = -0.3
+						production_speed_industrial_complex_factor = -0.3
+			}#効果
+		}
+
+		ENG_idea_2 = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = British_sick#アイコンの写真
+
+			modifier = {consumer_goods_factor = 0.15
+						production_speed_arms_factory_factor = -0.2
+						production_speed_industrial_complex_factor = -0.2
+			}#効果
+		}
+		ENG_idea_3 = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = British_sick#アイコンの写真
+
+			modifier = {consumer_goods_factor = 0.10
+						production_speed_arms_factory_factor = 0.05
+						production_speed_industrial_complex_factor = 0.05
+			}#効果
+		}
+		ENG_idea_4 = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = stiff_upper_lip#アイコンの写真
+
+			modifier = {
+			}#効果
+		}
+		ENG_idea_7 = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = vickers_armstrong_eng#アイコンの写真
+
+			modifier = {industrial_capacity_factory = 0.15
+						industrial_capacity_dockyard = 0.15
+			}
+		}
+		ENG_idea_8 = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = vickers_armstrong_eng#アイコンの写真
+
+			modifier = {industrial_capacity_factory = 0.1
+						industrial_capacity_dockyard = 0.1
+			}
+		}
+		ENG_idea_9 = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_research_bonus#アイコンの写真
+
+			modifier = {research_speed_factor = 0.05
+			}#効果
+		}
+		ENG_idea_10 = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = FRA_factory_strikes#アイコンの写真
+
+			modifier = {consumer_goods_factor = 0.05
+			}#効果
+		}
+		ENG_idea_11 = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = ast_all_in#アイコンの写真
+
+			modifier = {local_resources_factor = 0.10
+			}#効果
+		}
+		ENG_idea_12 = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = man_five_year_plan_industry#アイコンの写真
+
+			modifier = {production_speed_industrial_complex_factor = 0.1
+			}#効果
+		}
+		ENG_idea_13 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		Elizabeth = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = Elizabeth#アイコンの写真
+
+			modifier = { research_speed_factor = 0.05
+			}
+		}
+		George = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = george_vi#アイコンの写真
+
+			modifier = { research_speed_factor = 0.05
+			}
+		}
+		ENG_War_lose = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = hol_caved_to_the_british#アイコンの写真
+
+			modifier = { stability_factor = -0.10
+						 conscription_factor = -0.3
+						 war_support_factor = -0.10
+			}
+		}
+		Welfare_state = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = Welfare_state#アイコンの写真
+
+			modifier = {consumer_goods_factor = 0.05
+			}#効果
+		}
+		UKR_economy = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus#アイコンの写真
+
+			modifier = {consumer_goods_factor = -0.05
+			}#効果
+		}
+		UK_economy = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus#アイコンの写真
+
+			modifier = {consumer_goods_factor = 0.05
+			}#効果
+		}
+	}
+}

@@ -1,0 +1,90 @@
+add_namespace = news
+add_namespace = england_news
+#This file is made by chiyo
+news_event = {
+	id = england_news.1
+	title = england_news.1.t
+	desc = england_news.1.d
+	picture = GFX_conservatizm_win
+	mean_time_to_happen = { #何日表示されるか
+		days = 5
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = england_news.1.a
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = england_news.1.b
+		trigger = { TAG = CAN }
+		trigger = { TAG = AST }
+		trigger = { TAG = NEK }
+		trigger = { TAG = NZL }
+	}
+	option = {
+		name = england_news.1.c
+		trigger = { NOT ={ TAG = ENG TAG = CAN TAG = AST  TAG = NEK  TAG = NZL } }
+	}
+}
+news_event = {
+	id = england_news.2
+	title = england_news.2.t
+	desc = england_news.2.d
+	picture = GFX_india_map_eng
+	mean_time_to_happen = { #何日表示されるか
+		days = 5
+	}
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = england_news.2.a
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = england_news.2.b
+		trigger = { TAG = CAN }
+		trigger = { TAG = AST }
+		trigger = { TAG = NEK }
+		trigger = { TAG = NZL }
+		trigger = { TAG = PRI }
+	}
+	option = {
+		name = england_news.2.c
+		trigger = { NOT ={ TAG = ENG TAG = CAN TAG = AST  TAG = NEK  TAG = NZL TAG = PRI TAG = JAP } }
+	}
+}
+
+	option = {
+		name = england_news.2.e
+		trigger = { TAG = JAP }
+	}
+}
+
+news_event = {
+	id = england_news.3
+	title = england_news.3.t
+	desc = england_news.3.d
+	picture = GFX_Coronation_Elizabeth
+	fire_only_once = yes
+		trigger = { #イベントが起きるきっかけ
+		tag = ENG
+		date > 1953.6.1 #1952.7.19　#日にち
+		}
+	mean_time_to_happen = {
+		days = 2
+	}
+	major = yes
+	option = {
+		name = england_news.3.a
+		trigger = { TAG = ENG }
+		trigger = { TAG = CAN }
+		trigger = { TAG = AST }
+		trigger = { TAG = NEK }
+		trigger = { TAG = NZL }
+	}
+	option = {
+		name = england_news.3.b
+		trigger = { NOT ={ TAG = ENG TAG = CAN TAG = AST  TAG = NEK  TAG = NZL  } }
+	}
+}

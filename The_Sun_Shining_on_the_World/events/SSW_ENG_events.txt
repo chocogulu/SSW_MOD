@@ -1,0 +1,631 @@
+add_namespace = SSW_ENG
+#This file is made by chiyo
+country_event = {
+	id = SSW_ENG.1
+	title = SSW_ENG.1.t
+	desc = SSW_ENG.1.d
+	picture = GFX_Attlee_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.1.a
+	}
+}
+
+country_event = {
+	id = SSW_ENG.2
+	title = SSW_ENG.2.t
+	desc = SSW_ENG.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.2.a
+	}
+}
+
+
+country_event = {
+	id = SSW_ENG.3
+	title = SSW_ENG.3.t
+	desc = SSW_ENG.3.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.3.a
+	}
+}
+
+country_event = {
+	id = SSW_ENG.4
+	title = SSW_ENG.4.t
+	desc = SSW_ENG.4.d
+	picture = GFX_Greater_London
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.4.a
+	}
+}
+
+country_event = {
+	id = SSW_ENG.5
+	title = SSW_ENG.5.t
+	desc = SSW_ENG.5.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.5.a
+	}
+}
+
+country_event = {
+	id = SSW_ENG.6
+	title = SSW_ENG.6.t
+	desc = SSW_ENG.6.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.6.a
+	}
+}
+
+country_event = {
+	id = SSW_ENG.7
+	title = SSW_ENG.7.t
+	desc = SSW_ENG.7.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.7.a
+	add_popularity = { ideology = conservatism popularity = 0.12 }
+	remove_popularity = { ideology = liberalism popularity = 0.12 }
+	set_politics = {
+		ruling_party = conservatism
+			election_frequency = 60
+			elections_allowed = yes
+		}
+	}
+}
+
+country_event = {
+	id = SSW_ENG.8
+	title = SSW_ENG.8.t
+	desc = SSW_ENG.8.d
+	picture = GFX_Westminster
+	is_triggered_only = yes
+	option = {
+		name = SSW_ENG.8.a
+		ai_chance = {
+			factor = 160
+		}
+		ENG = {
+			country_event = {
+				id = SSW_ENG.9
+				days = 14
+				}
+			}
+		}
+	option = {
+		name = SSW_ENG.8.b
+		ENG = {
+			country_event = {
+				id = SSW_ENG.9
+				days = 14
+				}
+			}
+		}
+	}
+
+country_event = {
+	id = SSW_ENG.9
+	title = SSW_ENG.9.t
+	desc = SSW_ENG.9.d
+	picture = GFX_Eden_speech
+	is_triggered_only = yes
+	option = {
+		name = SSW_ENG.9.a
+		ai_chance = {
+			factor = 160
+		}
+		ENG = {
+			country_event = {
+				id = SSW_ENG.10
+				days = 10
+				}
+			}
+		}
+	option = {
+		name = SSW_ENG.8.b
+		ENG = {
+			country_event = {
+				id = SSW_ENG.10
+				days = 14
+				}
+			}
+		}
+	}
+
+country_event = {
+	id = SSW_ENG.10
+	title = SSW_ENG.10.t
+	desc = SSW_ENG.10.d
+	picture = GFX_Attlee_speech
+	is_triggered_only = yes
+	option = {
+		name = SSW_ENG.10.a
+		ai_chance = {
+			factor = 160
+		}
+		ENG = {
+			country_event = {
+				id = SSW_ENG.7
+				days = 28
+				}
+			}
+		ENG = {
+			country_event = {
+				id = england_news.1
+				days = 28
+				}
+			}
+		}
+	option = {
+		name = SSW_ENG.8.b
+		ENG = {
+			country_event = {
+				id = SSW_ENG.7
+				days = 28
+				}
+			}
+		ENG = {
+			country_event = {
+				id = england_news.1
+				days = 28
+				}
+			}
+	}
+}
+
+country_event = {
+	id = SSW_ENG.11
+	title = SSW_ENG.11.t
+	desc = SSW_ENG.11.d
+	picture = GFX_ENG_ottawa
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.11.a
+		ai_chance = {
+			factor = 160
+		}
+			country_event = {
+				id = SSW_ENG.12
+				days = 14
+				}
+					add_opinion_modifier = {
+							target = CAN
+							modifier = huge_increase
+						}
+					add_opinion_modifier = {
+							target = AST
+							modifier = huge_increase
+						}
+					add_opinion_modifier = {
+							target = NZL
+							modifier = huge_increase
+						}
+					add_opinion_modifier = {
+							target = NEK
+							modifier = huge_increase
+						}
+	}
+	option = {
+		name = SSW_ENG.11.b
+			country_event = {
+				id = SSW_ENG.12
+				days = 14
+				}
+					add_opinion_modifier = {
+							target = CAN
+							modifier = medium_decrease
+						}
+					add_opinion_modifier = {
+							target = AST
+							modifier = medium_decrease
+						}
+					add_opinion_modifier = {
+							target = NZL
+							modifier = medium_decrease
+						}
+					add_opinion_modifier = {
+							target = NEK
+							modifier = medium_decrease
+						}
+	}
+}
+country_event = {
+	id = SSW_ENG.12
+	title = SSW_ENG.12.t
+	desc = SSW_ENG.12.d
+	picture = GFX_ENG_ottawa
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.12.a
+		ai_chance = {
+			factor = 160
+		}
+			country_event = {
+				id = SSW_ENG.13
+				days = 3
+				}
+		ENG = {add_timed_idea = { idea = UK_economy  days = 365 }}
+		CAN = {add_timed_idea = { idea = UKR_economy  days = 365 }}
+		AST = {add_timed_idea = { idea = UKR_economy  days = 365 }}
+		NZL = {add_timed_idea = { idea = UKR_economy  days = 365 }}
+		NEK = {add_timed_idea = { idea = UKR_economy  days = 365 }}
+	}
+	option = {
+		name = SSW_ENG.12.b
+			country_event = {
+				id = SSW_ENG.13
+				days = 3
+				}
+					add_opinion_modifier = {
+							target = CAN
+							modifier = medium_decrease
+						}
+					add_opinion_modifier = {
+							target = AST
+							modifier = medium_decrease
+						}
+					add_opinion_modifier = {
+							target = NZL
+							modifier = medium_decrease
+						}
+					add_opinion_modifier = {
+							target = NEK
+							modifier = medium_decrease
+						}
+	}
+}
+country_event = {
+	id = SSW_ENG.13
+	title = SSW_ENG.13.t
+	desc = SSW_ENG.13.d
+	picture = GFX_ENG_ottawa
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.13.a
+		ai_chance = {
+			factor = 160
+		}
+			ENG = { country_event = {
+				id = SSW_ENG.14
+				days = 4
+				} }
+	}
+	option = {
+		name = SSW_ENG.13.b
+			country_event = {
+				id = SSW_ENG.14
+				days = 4
+				}
+	}
+}
+country_event = {
+	id = SSW_ENG.14
+	title = SSW_ENG.14.t
+	desc = SSW_ENG.14.d
+	picture = GFX_india_map_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.14.a
+		ai_chance = {
+			factor = 160
+		}
+			ENG = { country_event = {
+				id = SSW_ENG.15
+				days = 3
+				} }
+			PRI = { country_event = {
+				id = SSW_ENG.17
+				days = 4
+				} }
+	}
+	option = {
+		name = SSW_ENG.14.b
+			country_event = {
+				id = SSW_ENG.15
+				days = 3
+				}
+		custom_effect_tooltip = 2_ENG_tt
+	}
+	option = {
+		name = SSW_ENG.14.c
+			country_event = {
+				id = SSW_ENG.15
+				days = 3
+				}
+		custom_effect_tooltip = 2_ENG_tt
+	}
+}
+country_event = {
+	id = SSW_ENG.15
+	title = SSW_ENG.15.t
+	desc = SSW_ENG.15.d
+	picture = GFX_ENG_ottawa
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.15.a
+		ai_chance = {
+			factor = 160
+		}
+			country_event = {
+				id = SSW_ENG.16
+				days = 3
+				}
+		clr_global_flag = ENG_CAN_cooperation
+		ENG = { set_global_flag = ENG_CAN_cooperation }
+	}
+	option = {
+		name = SSW_ENG.15.b
+			country_event = {
+				id = SSW_ENG.16
+				days = 3
+				}
+	}
+}
+
+country_event = {
+	id = SSW_ENG.16
+	title = SSW_ENG.16.t
+	desc = SSW_ENG.16.d
+	picture = GFX_ENG_ottawa
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.16.a
+		ai_chance = {
+			factor = 160
+		}
+			country_event = {
+				id = england_news.4
+				days = 3
+				}
+	}
+}
+country_event = {
+	id = SSW_ENG.17
+	title = SSW_ENG.17.t
+	desc = SSW_ENG.17.d
+	picture = GFX_india_map_event
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.17.a
+		ai_chance = {
+			factor = 160
+		}
+		clr_global_flag = ENG_PRI_military
+		ENG = { set_global_flag = ENG_PRI_military }
+	ENG = { country_event = { id = SSW_ENG.18 days = 4 } }
+	}
+	option = {
+		name = SSW_ENG.17.b
+		ai_chance = {
+			factor = 0
+		}
+	ENG = { country_event = { id = SSW_ENG.19 days = 4 } }
+	}
+}
+country_event = {
+	id = SSW_ENG.18
+	title = SSW_ENG.18.t
+	desc = SSW_ENG.18.d
+	picture = GFX_india_map_event
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.18.a
+	}
+}
+
+country_event = {
+	id = SSW_ENG.19
+	title = SSW_ENG.19.t
+	desc = SSW_ENG.19.d
+	picture = GFX_india_map_event
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.19.a
+	}
+}
+
+country_event = {
+	id = SSW_ENG.20
+	title = SSW_ENG.20.t
+	desc = SSW_ENG.20.d
+	picture = GFX_india_map_event
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.20.a
+	}
+}
+
+country_event = {
+	id = SSW_ENG.21
+	title = SSW_ENG.21.t
+	desc = SSW_ENG.21.d
+	picture = GFX_india_map_event
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.21.a
+		ai_chance = {
+			factor = 160
+		}
+		clr_global_flag = ENG_PRI_military_Y
+		PRI = { set_global_flag = ENG_PRI_military_Y }
+	}
+	option = {
+		name = SSW_ENG.21.b
+		clr_global_flag = ENG_PRI_military_N
+		ENG = { set_global_flag = ENG_PRI_military_N }
+			ENG = {
+				diplomatic_relation = {
+					country = PRI
+					relation = guarantee
+					active = no
+				}
+			}
+			ENG = {
+				diplomatic_relation = {
+					country = PRI
+					relation = military_access
+					active = no
+				}
+			}
+	}
+}
+
+country_event = {
+	id = SSW_ENG.22
+	title = SSW_ENG.22.t
+	desc = SSW_ENG.22.d
+	picture = GFX_india_map_event
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.22.a
+		PRI = { add_ideas = ENG_idea_4 }
+		country_event = { id = SSW_ENG.23 days = 7 }
+	}
+}
+
+country_event = {
+	id = SSW_ENG.23
+	title = SSW_ENG.23.t
+	desc = SSW_ENG.23.d
+	picture = GFX_india_map_event
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.23.a
+		PRI = { country_event = { id = SSW_ENG.24 days = 50 } }
+		country_event = { id = SSW_ENG.25 days = 50 }
+	}
+}
+
+country_event = {
+	id = SSW_ENG.24
+	title = SSW_ENG.24.t
+	desc = SSW_ENG.24.d
+	picture = GFX_Queen_Elizabeth_Eden
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.24.a
+		add_ideas = Elizabeth
+	}
+}
+
+country_event = {
+	id = SSW_ENG.25
+	title = SSW_ENG.25.t
+	desc = SSW_ENG.25.d
+	picture = GFX_Queen_Elizabeth_Eden
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.25.a
+	country_event = { id = SSW_ENG.26 days = 7 }
+	}
+}
+
+country_event = {
+	id = SSW_ENG.26
+	title = SSW_ENG.26.t
+	desc = SSW_ENG.26.d
+	picture = GFX_india_map_event
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.26.a
+		add_to_faction = PRI
+		PRI = {
+			add_ai_strategy = {
+				type = alliance
+				id = "ENG"
+				value = 200
+			}
+		}
+	}
+}
+country_event = {
+	id = SSW_ENG.27
+	title = SSW_ENG.27.t
+	desc = SSW_ENG.27.d
+	picture = GFX_Queen_Elizabeth_Eden
+	fire_only_once = yes
+		trigger = { #イベントが起きるきっかけ
+		tag = ENG
+		date > 1952.2.5 #1952.7.19　#日にち
+		}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = SSW_ENG.27.a
+	ENG = {	add_ideas = Elizabeth
+			remove_ideas = George
+		  }
+	CAN = {	add_ideas = Elizabeth
+			remove_ideas = George
+		  }
+	AST = {	add_ideas = Elizabeth
+			remove_ideas = George
+		  }
+	NZL = {	add_ideas = Elizabeth
+			remove_ideas = George
+		  }
+	NEK = {	add_ideas = Elizabeth
+			remove_ideas = George
+		  }
+	}
+}
+country_event = {
+	id = SSW_ENG.28
+	title = SSW_ENG.28.t
+	desc = SSW_ENG.28.d
+	picture = GFX_CAN_flags_change
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.28.a
+		custom_effect_tooltip = 8_ENG_tt
+	}
+}

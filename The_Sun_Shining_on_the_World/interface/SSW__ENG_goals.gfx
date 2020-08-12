@@ -38,4 +38,56 @@ spriteTypes = {
 		name = "GFX_focus_NewEngland_Handshake"
 		texturefile = "gfx/interface/goals/eng/focus_NewEngland_Handshake.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_four_eyes"
+		texturefile = "gfx/interface/goals/eng/focus_four_eyes.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_nothem_Ireland"
+		texturefile = "gfx/interface/goals/eng/focus_nothem_Ireland.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_falkland"
+		texturefile = "gfx/interface/goals/eng/focus_falkland.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_geaman_eng"
+		texturefile = "gfx/interface/goals/eng/focus_geaman_eng.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Australia"
+		texturefile = "gfx/interface/goals/eng/focus_Australia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Labrador"
+		texturefile = "gfx/interface/goals/eng/focus_Labrador.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_can_cooperation"
+		texturefile = "gfx/interface/goals/eng/focus_can_cooperation.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ast_security"
+		texturefile = "gfx/interface/goals/eng/focus_ast_security.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_attack_plan_ger"
+		texturefile = "gfx/interface/goals/eng/focus_attack_plan_ger.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ger_break"
+		texturefile = "gfx/interface/goals/eng/focus_ger_break.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_coup_europe"
+		texturefile = "gfx/interface/goals/eng/focus_coup_europe.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_balkan_coup"
+		texturefile = "gfx/interface/goals/eng/focus_balkan_coup.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Africa_coup"
+		texturefile = "gfx/interface/goals/eng/focus_Africa_coup.dds"
+	}
 }
