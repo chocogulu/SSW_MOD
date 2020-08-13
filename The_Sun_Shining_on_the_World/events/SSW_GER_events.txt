@@ -70,7 +70,30 @@ country_event = {
 		name = SSW_GER.4.a
 			load_focus_tree = JGB_naisen
 			hidden_effect = {
+				remove_ideas = GER_idea_1
 			GER = { country_event = { id = SSW_GER.5 days = 1 } }
+			GER = { remove_state_core = 56 }
+			GER = { remove_state_core = 57 }
+			GER = { remove_state_core = 58 }
+			GER = { remove_state_core = 59 }
+			GER = { remove_state_core = 61 }
+			GER = { remove_state_core = 812 }
+			GER = { remove_state_core = 3 }
+			GER = { remove_state_core = 8 }
+			GER = { remove_state_core = 28 }
+			GER = { remove_state_core = 42 }
+			GER = { remove_state_core = 50 }
+			GER = { remove_state_core = 51 }
+			GER = { remove_state_core = 54 }
+			GER = { remove_state_core = 55 }
+			GER = { remove_state_core = 151 }
+			GER = { remove_state_core = 803 }
+			GER = { remove_state_core = 4 }
+			GER = { remove_state_core = 52 }
+			GER = { remove_state_core = 53 }
+			GER = { remove_state_core = 102 }
+			GER = { remove_state_core = 152 }
+			GER = { remove_state_core = 153 }
 			LTV = { transfer_state = 56 }
 			LTV = { transfer_state = 57 }
 			LTV = { transfer_state = 58 }
@@ -177,5 +200,165 @@ country_event = {
 		HLH = { declare_war_on = { type = annex_everything    target = GER } }
 		LTV = { declare_war_on = { type = annex_everything    target = GER } }
 		HGR = { declare_war_on = { type = annex_everything    target = GER } }
+	}
+}
+country_event = {
+	id = SSW_GER.8
+	title = SSW_GER.8.t
+	desc = SSW_GER.8.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	trigger = {
+
+		51 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+			}
+		}
+
+
+		51 = { is_owned_by = HLH }
+		55 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+			}
+		}
+		55 = { is_owned_by = HLH }
+		GER = { has_war_with = HLH }
+	}
+	
+	immediate = {
+		GER ={ annex_country = { target = HLH transfer_troops = no } }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = SSW_GER.8.a
+		add_war_support = 0.1
+	}
+}
+
+country_event = {
+	id = SSW_GER.9
+	title = SSW_GER.9.t
+	desc = SSW_GER.9.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	trigger = {
+
+		58 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+				is_controlled_by = NFR
+			}
+		}
+		58 = { is_owned_by = LTV }
+		59 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+				is_controlled_by = NFR
+			}
+		}
+		59 = { is_owned_by = LTV }
+		57 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+				is_controlled_by = NFR
+			}
+		}
+		57 = { is_owned_by = LTV }
+		GER = { has_war_with = LTV }
+	}
+	
+	immediate = {
+		GER ={ annex_country = { target = LTV transfer_troops = no } }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = SSW_GER.9.a
+		add_war_support = 0.1
+	}
+}
+
+country_event = {
+	id = SSW_GER.10
+	title = SSW_GER.10.t
+	desc = SSW_GER.10.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	trigger = {
+
+		4 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+				is_controlled_by = NFR
+			}
+		}
+		4 = { is_owned_by = HGR }
+		102 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+				is_controlled_by = NFR
+			}
+		}
+		102 = { is_owned_by = HGR }
+		153 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+				is_controlled_by = NFR
+			}
+		}
+		153 = { is_owned_by = HGR }
+		GER = { has_war_with = HGR }
+	}
+	
+	immediate = {
+		GER ={ annex_country = { target = HGR transfer_troops = no } }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = SSW_GER.10.a
+		add_war_support = 0.1
 	}
 }

@@ -330,6 +330,8 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = JGB_new_NF
 			hidden_effect = {
+				delete_unit_template_and_units = {Division_template = "Civil-war-division"}
+				delete_unit_template_and_units = {Division_template = "Artillery-division"}
 				load_focus_tree = GER_Gebbels
 				add_ideas = Scars_of_the_civil_war
 				add_ideas = Resistance_Gering

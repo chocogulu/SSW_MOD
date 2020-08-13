@@ -1,0 +1,6 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_idea_Emergency_conscription"
+		texturefile = "gfx/interface/ideas/ger/Emergency_conscription.dds"
+	}
+}

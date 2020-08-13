@@ -116,6 +116,18 @@ focus_tree = {
 			factor = 60
 		}
 			completion_reward = {
+				HGR = { remove_state_core = 4 }
+				HGR = { remove_state_core = 52 }
+				HGR = { remove_state_core = 53 }
+				HGR = { remove_state_core = 102 }
+				HGR = { remove_state_core = 152 }
+				HGR = { remove_state_core = 153 }
+				GER = { add_state_core = 4 }
+				GER = { add_state_core = 52 }
+				GER = { add_state_core = 53 }
+				GER = { add_state_core = 102 }
+				GER = { add_state_core = 152 }
+				GER = { add_state_core = 153 }
 					if = {
 							limit = {
 									has_idea = Resistance_Gering_2
@@ -282,6 +294,26 @@ focus_tree = {
 			factor = 65
 		}
 			completion_reward = {
+				HLH = { remove_state_core = 3 }
+				HLH = { remove_state_core = 8 }
+				HLH = { remove_state_core = 28 }
+				HLH = { remove_state_core = 42 }
+				HLH = { remove_state_core = 50 }
+				HLH = { remove_state_core = 51 }
+				HLH = { remove_state_core = 54 }
+				HLH = { remove_state_core = 55 }
+				HLH = { remove_state_core = 151 }
+				HLH = { remove_state_core = 803 }
+				GER = { add_state_core = 3 }
+				GER = { add_state_core = 8 }
+				GER = { add_state_core = 28 }
+				GER = { add_state_core = 42 }
+				GER = { add_state_core = 50 }
+				GER = { add_state_core = 51 }
+				GER = { add_state_core = 54 }
+				GER = { add_state_core = 55 }
+				GER = { add_state_core = 151 }
+				GER = { add_state_core = 803 }
 					remove_ideas = Resistance_himmler_2
 				}
 
@@ -436,6 +468,17 @@ focus_tree = {
 			factor = 65
 		}
 			completion_reward = {
+				LTV = { remove_state_core = 56 }
+				LTV = { remove_state_core = 57 }
+				LTV = { remove_state_core = 58 }
+				LTV = { remove_state_core = 59 }
+				LTV = { remove_state_core = 61 }
+				GER = { add_state_core = 56 }
+				GER = { add_state_core = 57 }
+				GER = { add_state_core = 58 }
+				GER = { add_state_core = 59 }
+				GER = { add_state_core = 61 }
+
 					remove_ideas = Resistance_Popular_Front_2
 				}
 
