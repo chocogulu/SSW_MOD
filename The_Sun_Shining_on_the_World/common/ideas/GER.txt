@@ -15,5 +15,35 @@ ideas = {
 
 			}
 		}
+		Emergency_conscription = {
+			
+			allowed = {always = yes} 
+			
+			removal_cost = -1 #わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = Emergency_conscription 
+			
+			modifier = {
+				training_time_army_factor = -0.25
+				non_core_manpower = 0.25
+				weekly_manpower = 2000
+			}
+		}
+		Protester = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1 #わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				surrender_limit = 10.0
+			}
+		}
 	}
 }
