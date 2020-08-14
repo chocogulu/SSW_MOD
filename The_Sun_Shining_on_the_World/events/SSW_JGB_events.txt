@@ -1,0 +1,29 @@
+add_namespace = jgb
+
+country_event = {
+	id = jgb.1
+	title = jgb.t
+	desc = jgb.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = jgb.1.a
+		hidden_effect = {
+			GER = {
+				add_ideas = Allied_forces
+			}	
+		}
+
+
+	}
+	option = {
+		name = jgb.1.b
+		GER = {
+			add_ideas = Dominance_Army
+		}
+		
+
+	}
+}
