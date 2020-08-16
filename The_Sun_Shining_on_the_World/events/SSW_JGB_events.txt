@@ -14,15 +14,76 @@ country_event = {
 			GER = {
 				add_ideas = Allied_forces
 			}	
+			POL = {
+				add_ideas = Allied_forces
+			}
+			UKR = {
+				add_ideas = Allied_forces
+			}
+			BLR = {
+				add_ideas = Allied_forces
+			}
+			MOS = {
+				add_ideas = Allied_forces
+			}
+			CCS = {
+				add_ideas = Allied_forces
+			}
+			NFR = {
+				add_ideas = Allied_forces
+			}
+			BEL = {
+				add_ideas = Allied_forces
+			}
+			HOL = {
+				add_ideas = Allied_forces
+			}
+			SLO = {
+				add_ideas = Allied_forces
+			}
+
 		}
+		custom_effect_tooltip = GER_allied
 
 
 	}
 	option = {
 		name = jgb.1.b
-		GER = {
-			add_ideas = Dominance_Army
+		hidden_effect = {
+			GER = {
+				add_ideas = Dominance_Army
+			}
+			POL = {
+				add_ideas = recessive_Army
+			}
+			UKR = {
+				add_ideas = recessive_Army
+			}
+			BLR = {
+				add_ideas = recessive_Army
+			}
+			MOS = {
+				add_ideas = recessive_Army
+			}
+			CCS = {
+				add_ideas = recessive_Army
+			}
+			NFR = {
+				add_ideas = recessive_Army
+			}
+			BEL = {
+				add_ideas = recessive_Army
+			}
+			HOL = {
+				add_ideas = recessive_Army
+			}
+			SLO = {
+				add_ideas = recessive_Army
+			}
+
 		}
+		custom_effect_tooltip = GER_dominance
+		
 		
 
 	}
