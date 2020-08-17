@@ -7,6 +7,7 @@ focus_tree = {
 			tag = ENG
 		}
 	}
+	continuous_focus_position = { x = 100 y = 1300 }
 	default = no
 	focus = {
 		id = ENG_1950_vote
@@ -336,10 +337,13 @@ focus_tree = {
 		}
 		x = 14
 		y = 2
+		available = { not ={		 has_idea = ENG_idea_1 
+									 has_idea = ENG_idea_2
+									 has_idea = ENG_idea_3  } }
 			completion_reward = {
 					custom_effect_tooltip = 5_ENG_tt
 				}
-			hidden_effect = {
+			select_effect = {
 					country_event = {
 							id = SSW_ENG.11
 							days = 7
@@ -535,7 +539,7 @@ focus_tree = {
 	focus = {
 		id = ENG_politics_8
 		icon = GFX_focus_can_cooperation
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ENG_politics_4
 		}
@@ -565,6 +569,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					custom_effect_tooltip = 4_ENG_tt
+			unlock_decision_tooltip = { decision = ENG_CAN_avoid_UTC show_effect_tooltip = yes show_modifiers = yes }
 				}
 
 	}
