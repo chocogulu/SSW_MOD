@@ -629,3 +629,25 @@ country_event = {
 		custom_effect_tooltip = 8_ENG_tt
 	}
 }
+
+country_event = {
+	id = SSW_ENG.29
+	title = SSW_ENG.29.t
+	desc = SSW_ENG.29.d
+	picture = GFX_CAN_flags_change
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.29.a
+		CAN = { transfer_state = 332 }
+		ENG = { add_state_core = 331 }
+	}
+	option = {
+		name = SSW_ENG.29.b
+		stability_factor = -0.1
+	add_opinion_modifier = {
+			target = CAN
+			modifier = medium_decrease
+		}
+	}
+}

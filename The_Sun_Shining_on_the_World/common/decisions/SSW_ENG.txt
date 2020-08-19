@@ -19,4 +19,44 @@ ENG_USA_civil_war = {
 		}
 		complete_effect = { declare_war_on = {type = annex_everything target = UTC } }
 	}
+	ENG_CAN_avoid_WAU = {
+		icon = generic_operation
+		available = {
+			CAN = { has_war_with = WAU }
+		}
+		visible = {
+			has_completed_focus = ENG_politics_9
+		}
+		ai_will_do = {
+			factor = 160
+		}
+		fire_only_once = yes
+		days_remove = 180
+		targeted_modifier = {
+			tag = WAU
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+		complete_effect = { declare_war_on = {type = annex_everything target = WAU } }
+	}
+	ENG_CAN_avoid_WSL = {
+		icon = generic_operation
+		available = {
+			CAN = { has_war_with = WSL }
+		}
+		visible = {
+			has_completed_focus = ENG_politics_9
+		}
+		ai_will_do = {
+			factor = 160
+		}
+		fire_only_once = yes
+		days_remove = 180
+		targeted_modifier = {
+			tag = WSL
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+		complete_effect = { declare_war_on = {type = annex_everything target = WSL } }
+	}
 }
