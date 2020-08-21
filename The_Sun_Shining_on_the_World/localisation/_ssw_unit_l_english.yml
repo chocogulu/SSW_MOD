@@ -1,0 +1,7 @@
+﻿l_english:
+ garrison:0 "直接守備隊"
+ garrison_desc:0 "防御を専門とする歩兵で、攻勢には向いていない。"
+ militia:0 "民兵"
+ militia_desc:0 "民兵は訓練を受けていない一般人で構成されており、緊急を要する状況下で使われる。"
+ police_infantry:0 "国家憲兵"
+ police_infantry_desc:0 "治安を維持するために動員された警察隊。"
