@@ -2,7 +2,7 @@
 state={
 	id=14
 	name="STATE_14"
-	manpower = 2396600
+	manpower = 2696600
 	
 	state_category = city
 
@@ -33,7 +33,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = FRA
+		add_core_of = VFR
 		add_core_of = NFR
 
 		1939.1.1 = {

@@ -3,7 +3,7 @@ state={
 	name="STATE_435"
 
 	history={
-		owner = ING
+		owner = NIN
 		victory_points = {
 			4516 3 
 		}
@@ -11,8 +11,8 @@ state={
 			infrastructure = 5
 
 		}
-		add_core_of = PRI
-		add_core_of = ING
+		add_core_of = PIN
+		add_core_of = NIN
 
 	}
 

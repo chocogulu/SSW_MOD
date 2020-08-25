@@ -4,7 +4,7 @@ state={
 	name="STATE_822"
 
 	history={
-		owner = ING
+		owner = NIN
 		victory_points = {
 		1581 1
 		}
@@ -12,8 +12,8 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = ING
-		add_core_of = PRI
+		add_core_of = NIN
+		add_core_of = PIN
 	}
 
 	provinces={

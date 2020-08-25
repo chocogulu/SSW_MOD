@@ -2,13 +2,13 @@ state=
 {
 	id=297
 	name="STATE_297" # Equatorial Guinea
-	manpower = 185000
+	manpower = 201000
 	
 	state_category = enclave
 	
 	history=
 	{
-		owner = NSR
+		owner = EQG
 		add_core_of = EQG
 		victory_points = {
 			1903 1 

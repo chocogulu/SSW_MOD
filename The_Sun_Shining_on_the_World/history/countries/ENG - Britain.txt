@@ -205,23 +205,6 @@ add_ideas = {
 set_convoys = 800
 
 # DIPLOMACY
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = NEK
-		autonomous_state = autonomy_integrated_puppet
-	}
-
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_to_tech_sharing_group = commonwealth_research
-}
 
 set_politics = {
 	ruling_party = social_democracy
@@ -241,12 +224,19 @@ set_popularities = {
 create_faction = Commonwealth_realm
 add_to_faction = ENG
 add_to_faction = CAN
+add_to_faction = NFL
 add_to_faction = AST
 add_to_faction = NZL
+add_to_faction = NEL
+add_to_faction = FFR
+
+set_autonomy = { target = CAN autonomous_state = british_commonwealth }
+set_autonomy = { target = NFL autonomous_state = british_commonwealth }
+set_autonomy = { target = AST autonomous_state = british_commonwealth }
+set_autonomy = { target = NZL autonomous_state = british_commonwealth }
+set_autonomy = { target = NEL autonomous_state = british_commonwealth }
 
 give_guarantee = PRI
-
-#give_guarantee = CZE
 
 # Order matters - here Chamberlain becomes starting leader
 

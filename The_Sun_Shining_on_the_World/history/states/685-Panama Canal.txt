@@ -6,7 +6,8 @@ state={
 	state_category = enclave
 
 	history={
-		owner = JAP
+		owner = PAC
+		add_core_of = PAC
 		victory_points = {
 			7617 15 
 		}

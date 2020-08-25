@@ -8,9 +8,9 @@ state=
 	
 	history=
 	{
-		owner = IEA
-		add_core_of = IEA
-		add_core_of = ELT
+		owner = NEA
+		add_core_of = NEA
+		add_core_of = ERI
 		victory_points = {
 			12766 1
 		}

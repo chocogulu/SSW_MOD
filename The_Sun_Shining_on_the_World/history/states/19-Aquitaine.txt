@@ -2,7 +2,7 @@
 state={
 	id=19
 	name="STATE_19"
-	manpower = 1340400
+	manpower = 1640400
 	resources={
 		steel=25 # was: 40
 		aluminium=11 # was: 18
@@ -11,7 +11,7 @@ state={
 	state_category = city
 
 	history={
-		owner = FRA
+		owner = VFR
 		victory_points = {
 			9737 20
 		}
@@ -25,7 +25,7 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = FRA
+		add_core_of = VFR
 	}
 
 	provinces={

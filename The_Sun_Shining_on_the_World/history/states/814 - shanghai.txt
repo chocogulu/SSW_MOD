@@ -4,7 +4,10 @@ state={
 	name="STATE_814"
 
 	history={
-		owner = JAP
+		owner = CLC
+		add_core_of = CLC
+		add_core_of = CHI
+		add_core_of = RCH
 		victory_points = {
 		7014 20
 		}
@@ -19,8 +22,6 @@ state={
 				bunker = 1
 			}
 		}
-		add_core_of = CRE
-		add_core_of = AGF
 	}
 
 	provinces={

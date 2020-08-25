@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = NOH
+		owner = HYD
 		victory_points = {
 			8087 15
 		}
@@ -19,9 +19,9 @@ state={
 			industrial_complex = 1
 			air_base = 3
 		}
-		add_core_of = PRI
-		add_core_of = ING
-		add_core_of = NOH
+		add_core_of = PIN
+		add_core_of = NIN
+		add_core_of = HYD
 
 	}
 

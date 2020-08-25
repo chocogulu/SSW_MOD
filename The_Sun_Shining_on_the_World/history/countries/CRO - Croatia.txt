@@ -2,7 +2,7 @@
 
 set_research_slots = 2
 
-oob = "CRO_1950"
+#oob = "CRO_1950"
 
 set_technology = {
 	infantry_weapons = 1

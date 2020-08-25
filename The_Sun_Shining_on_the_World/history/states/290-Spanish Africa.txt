@@ -2,7 +2,7 @@
 state={
 	id=290
 	name="STATE_290"
-	manpower = 744000
+	manpower = 934000
 	
 	
 	state_category = rural
@@ -12,7 +12,8 @@ state={
 	}
 
 	history={
-		owner = NSR
+		owner = RIF
+		add_core_of = RIF
 		add_core_of = MOR
 		victory_points = {
 			9945 20

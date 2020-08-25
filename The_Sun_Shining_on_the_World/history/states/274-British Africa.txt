@@ -3,8 +3,8 @@ state={
 	name="STATE_274"
 
 	history={
-		owner = LIB
-		add_core_of = LIB
+		owner = NWA
+		add_core_of = NWA
 		add_core_of = GHA
 		victory_points = {
 			10862 1 
@@ -23,7 +23,7 @@ state={
 	provinces={
 		8039 8096 10862 12742 12785 12787 13136 
 	}
-	manpower=3163600
+	manpower=3723600
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

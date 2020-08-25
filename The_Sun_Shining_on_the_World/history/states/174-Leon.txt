@@ -6,7 +6,7 @@ state={
 		tungsten=10.000
 	}
 	history={
-		owner = NSR
+		owner = SPR
 		victory_points = {
 			726 1
 		}
@@ -15,14 +15,14 @@ state={
 			industrial_complex = 1
 
 		}
-		add_core_of = NSR
+		add_core_of = SPR
 
 	}
 
 	provinces={
 		726 918 920 3725 3727 3918 3920 6746 6907 9699 11843 13219 13232 
 	}
-	manpower=749041
+	manpower=782041
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

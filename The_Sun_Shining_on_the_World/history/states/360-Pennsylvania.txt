@@ -12,7 +12,7 @@ state={
 
 
 	history={
-		owner = WAU
+		owner = FSA
 		buildings = {
 			infrastructure = 8
 			industrial_complex = 0
@@ -24,7 +24,7 @@ state={
 
 			}
 		}
-		add_core_of = WAU
+		add_core_of = FSA
 		victory_points = {
 			6845 20
 		}

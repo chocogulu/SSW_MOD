@@ -11,7 +11,10 @@ state={
 	}
 
 	history={
-		owner = TCK
+		owner = MDU
+		add_core_of = PIN
+		add_core_of = NIN
+		add_core_of = MDU
 		victory_points = {
 		1409 15
 		}
@@ -23,11 +26,6 @@ state={
 				naval_base = 4
 			}
 		}
-		victory_points = { 
-		}
-		add_core_of = PRI
-		add_core_of = ING
-		add_core_of = TCK
 
 	}
 

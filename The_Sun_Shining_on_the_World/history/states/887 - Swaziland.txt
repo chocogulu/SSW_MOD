@@ -1,0 +1,13 @@
+state={
+	id = 887
+	name = "STATE_887"
+	manpower = 272000
+	state_category = town
+	
+	history={
+		owner = SWL
+		add_core_of = SWL
+	}
+	
+	provinces={ 7900 }
+}

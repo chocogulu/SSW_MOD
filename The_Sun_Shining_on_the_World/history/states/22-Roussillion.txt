@@ -2,7 +2,7 @@
 state={
 	id=22
 	name="STATE_22" # Languedoc
-	manpower = 1691200
+	manpower = 1991200
 	
 	
 	state_category = town
@@ -13,7 +13,7 @@ state={
 	}
 
 	history={
-		owner = FRA
+		owner = VFR
 		victory_points = {
 			9898 1 
 		}
@@ -22,7 +22,7 @@ state={
 			industrial_complex = 2
 			air_base = 2
 		}
-		add_core_of = FRA
+		add_core_of = VFR
 	}
 
 	provinces={

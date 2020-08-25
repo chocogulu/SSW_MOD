@@ -7,10 +7,10 @@ state={
 	state_category = enclave
 
 	history={
-		owner = BCK
-		add_core_of = BCK
-		add_core_of = PRI
-		add_core_of = ING
+		owner = BOM
+		add_core_of = BOM
+		add_core_of = PIN
+		add_core_of = NIN
 		victory_points = {
 			1273 1 
 		}

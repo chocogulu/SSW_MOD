@@ -5,9 +5,6 @@ state={
 
 	history={
 		owner = MOS
-		victory_points = {
-		
-		}
 			
 		buildings = {
 			infrastructure = 6

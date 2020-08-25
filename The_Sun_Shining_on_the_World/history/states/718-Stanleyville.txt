@@ -9,13 +9,13 @@ state={
 	}
 
 	history={
-		owner = GSA
+		owner = MAF
 		buildings = {
 			infrastructure = 2
 
 		}
 		add_core_of = COG
-		add_core_of = GSA
+		add_core_of = MAF
 	}
 
 	provinces={

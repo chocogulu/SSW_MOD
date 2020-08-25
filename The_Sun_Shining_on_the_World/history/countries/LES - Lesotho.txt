@@ -1,0 +1,20 @@
+﻿capital = 886
+#obb = ""
+
+set_research_slots = 2
+set_stability = 0.8
+set_war_support = 0.5
+set_convoys = 0
+
+#set_technology = {}
+
+set_politics = {
+	ruling_party = 
+	last_election = 1950.1.1
+	election_frequency = 5
+	elections_allowed = yes
+}
+
+set_popularities = {
+	conservatism = 100
+}

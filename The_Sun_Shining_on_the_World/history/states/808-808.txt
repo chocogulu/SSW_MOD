@@ -5,13 +5,10 @@ state={
 
 	history={
 		owner = BUL
-		victory_points = {
-			
-		}
 		buildings = {
 			infrastructure = 6
 		}
-		add_core_of = SEL
+		add_core_of = SER
 		add_core_of = BUL
 
 	}

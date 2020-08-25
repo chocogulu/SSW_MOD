@@ -1,0 +1,31 @@
+capital = 378
+
+oob = "WSL_1950"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = authoritative_democracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	authoritative_democracy = 100
+}
+
+create_country_leader = {
+	name = "Quentin Roosevelt II"
+	desc = ""
+	picture = "gfx/leaders/WSL/Entin_Roosevelt_II.dds"
+	expire = "1965.1.1"
+	ideology = illiberal_democracy
+	traits = {
+	}
+}

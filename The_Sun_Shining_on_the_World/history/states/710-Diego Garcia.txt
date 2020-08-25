@@ -6,7 +6,8 @@ state={
 	
 	history=
 	{
-		owner = JAP
+		owner = INO
+		add_core_of = INO
 		buildings = {
 			infrastructure = 3
 			13019 = {

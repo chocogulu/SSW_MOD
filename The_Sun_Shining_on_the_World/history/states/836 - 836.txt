@@ -3,7 +3,7 @@ state=
 	id=836
 	name="STATE_836"
 	manpower = 1000000
-	state_category = largy_city
+	state_category = large_city
 	
 	
 	history=

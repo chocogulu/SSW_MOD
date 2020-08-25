@@ -2,12 +2,13 @@
 state={
 	id=310
 	name="STATE_310"
-	manpower = 47341
+	manpower = 81341
 
 	state_category = pastoral
 
 	history={
-		owner = GER
+		owner = ATL
+		add_core_of = ATL
 		add_core_of = CAY
 		buildings = {
 			infrastructure = 2

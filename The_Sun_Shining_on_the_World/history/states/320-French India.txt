@@ -7,10 +7,10 @@ state={
 	state_category = enclave
 
 	history={
-		owner = MCK
-		add_core_of = MCK
-		add_core_of = ING
-		add_core_of = PRI
+		owner = MDR
+		add_core_of = MDR
+		add_core_of = NIN
+		add_core_of = PIN
 		buildings = {
 			infrastructure = 5
 			10149 = {

@@ -3,7 +3,8 @@ state={
 	name="STATE_463"
 
 	history={
-		owner = JAP
+		owner = ARC
+		add_core_of = ARC
 		buildings = {
 			infrastructure = 2
 			air_base = 1

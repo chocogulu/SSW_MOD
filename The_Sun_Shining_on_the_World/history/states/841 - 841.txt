@@ -6,7 +6,8 @@ state={
 	
 	
 	history={
-		owner = ITA
+		owner = SUC
+		add_core_of = SUC
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 1

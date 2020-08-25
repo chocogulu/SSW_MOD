@@ -2,7 +2,7 @@
 state={
 	id=253
 	name="STATE_253"
-	manpower = 2585987
+	manpower = 2765987
 	
 	state_category = town
 
@@ -13,7 +13,7 @@ state={
 		}
 		add_core_of = MOS
 		victory_points = {
-			6269 3
+			6269 15
 		}
 	}
 

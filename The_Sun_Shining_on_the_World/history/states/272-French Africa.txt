@@ -2,7 +2,7 @@
 state={
 	id=272
 	name="STATE_272"
-	manpower = 1638000
+	manpower = 1918000
 	resources={
 		steel=3 # was: 4
 	}
@@ -10,7 +10,8 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = NSR
+		owner = NWA
+		add_core_of = NWA 
 		add_core_of = SEN
 		victory_points = {
 			4948 5 

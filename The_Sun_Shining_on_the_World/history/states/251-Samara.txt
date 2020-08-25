@@ -2,14 +2,14 @@
 state={
 	id=251
 	name="STATE_251"
-	manpower = 1391819
+	manpower = 1841819
 	
 	state_category = town
 
 	history={
 		owner = RUS
 		victory_points = {
-			11225 3 
+			11225 15 
 		}
 		buildings = {
 			infrastructure = 5

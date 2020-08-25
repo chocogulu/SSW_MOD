@@ -4,16 +4,8 @@ state={
 	name="STATE_802"
 
 	history={
-		owner = JAP
-		victory_points = {
-
-		}
-		buildings = {
-
-		}
+		owner = KOR
 		add_core_of = KOR
-		add_core_of = JAP
-
 	}
 
 	provinces={

@@ -7,13 +7,13 @@ state={
 		rubber=3 # was: 4
 	}
 	history={
-		owner = GEA
+		owner = NEA
 		buildings = {
 			infrastructure = 3
 
 		}
 		add_core_of = UGA
-		add_core_of = GEA
+		add_core_of = NEA
 		victory_points = {
 			12989 1
 		}

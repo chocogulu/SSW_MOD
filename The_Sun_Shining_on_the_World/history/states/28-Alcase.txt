@@ -2,7 +2,7 @@
 state={
 	id=28
 	name="STATE_28" # Alsace-Lorraine
-	manpower = 1915600
+	manpower = 2075600
 	
 	state_category = city
 	resources={
@@ -52,7 +52,7 @@ state={
 
 		}
 		add_core_of = GER
-		add_core_of = FRA
+		add_core_of = VFR
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4

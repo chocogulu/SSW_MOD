@@ -6,7 +6,7 @@ state={
 	name="STATE_545"
 
 	history={
-		owner = GEA
+		owner = MAF
 		buildings = {
 			infrastructure = 3
 
@@ -15,7 +15,7 @@ state={
 			10929 1 
 		}
 		add_core_of = ZIM
-		add_core_of = GEA
+		add_core_of = MAF
 	}
 
 	provinces={

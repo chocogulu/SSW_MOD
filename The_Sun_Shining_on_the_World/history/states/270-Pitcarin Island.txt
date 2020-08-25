@@ -2,12 +2,13 @@ state=
 {
 	id=270
 	name="STATE_270"
-	manpower = 40
+	manpower = 143
 	state_category = enclave
 	
 	history=
 	{
-		owner = JAP
+		owner = PAO
+		add_core_of = PAO
 		buildings = {
 			infrastructure = 1
 			1280 = {

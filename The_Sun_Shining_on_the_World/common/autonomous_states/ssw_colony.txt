@@ -1,0 +1,21 @@
+autonomy_state = {
+	id = colony
+	is_puppet = yes
+	
+	min_freedom_level = 0.50
+	manpower_influence = 0.7
+	
+	rule = {}
+	modifier = {}
+	ai_subject_wants_higher = {
+		factor = 1.0
+	}
+	ai_overlord_wants_lower = {
+		factor = 0.0
+	}
+
+	allowed = {
+		NOT = { OVERLORD = { original_tag = GER } }
+		NOT = { OVERLORD = { original_tag = JAP } }
+	}
+}

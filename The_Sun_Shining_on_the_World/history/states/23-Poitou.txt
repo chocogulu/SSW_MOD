@@ -2,7 +2,7 @@
 state={
 	id=23
 	name="STATE_23"
-	manpower = 1603100
+	manpower = 1903100
 	
 	state_category = town
 	
@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = FRA
+		owner = VFR
 		victory_points = {
 			6657 5
 		}
@@ -22,7 +22,7 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = FRA
+		add_core_of = VFR
 	}
 
 	provinces={

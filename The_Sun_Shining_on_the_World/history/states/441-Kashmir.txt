@@ -8,14 +8,14 @@ state={
 
 	history={
 		owner = PAK
+		add_core_of = PIN
+		add_claim_by = PAK
+		add_core_of = NIN
+		add_core_of = RCH
+		add_core_of = PIN
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = PRI
-		add_claim_by = PAK
-		add_core_of = ING
-                add_core_of = AGF
-                add_core_of = PRI
 	}
 
 	provinces={

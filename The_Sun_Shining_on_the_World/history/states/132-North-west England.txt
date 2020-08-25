@@ -1,7 +1,7 @@
 state= {
 	id=132
 	name="STATE_132" # Lancashire
-	manpower = 5770454
+	manpower = 6130454
 	
 	state_category = metropolis
 	

@@ -3,7 +3,7 @@ state={
 	name="STATE_168"
 
 	history={
-		owner = NSR
+		owner = SPR
 		victory_points = {
 			10024 3
 		}
@@ -17,14 +17,14 @@ state={
 			}
 
 		}
-		add_core_of = NSR
+		add_core_of = SPR
 
 	}
 
 	provinces={
 		832 1093 3835 4195 7111 9903 10024 10109 11807 11812 11884 
 	}
-	manpower=1007605
+	manpower=1317605
 	buildings_max_level_factor=1.000
 	state_category=town
 }

@@ -1,5 +1,8 @@
 ﻿capital = 458
 
+#obb = TUN_1950
+set_cosmetic_tag = TUN_ITA
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

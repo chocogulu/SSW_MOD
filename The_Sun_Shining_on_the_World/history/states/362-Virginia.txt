@@ -7,7 +7,7 @@ state={
 	state_category = large_city
 
 	history={
-		owner = WAU
+		owner = FSA
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
@@ -19,7 +19,7 @@ state={
 
 			}
 		}
-		add_core_of = WAU
+		add_core_of = FSA
 		victory_points = {
 			788 10
 		}

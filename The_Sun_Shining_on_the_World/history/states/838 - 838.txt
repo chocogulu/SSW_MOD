@@ -9,7 +9,7 @@ state={
 		owner = NFR
                 
 		add_core_of = NFR
-		add_core_of = FRA
+		add_core_of = VFR
 		add_core_of = SWI
 
 		buildings = {

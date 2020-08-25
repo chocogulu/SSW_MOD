@@ -1,0 +1,189 @@
+Great_Mongol = {	#大蒙古
+	color = rgb { 92 92 92 }
+	color_ui = rgb { 92 92 92 }
+}
+
+KOR_JAP = {	#日本領朝鮮
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JAM_JAP = {	#日本領ジャマイカ
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+SIN_JAP = {	#日本領昭南島
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+BRN_JAP = {	#日本領文莱
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+HAW_JAP = {	#日本領布哇
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+ARC_JAP = {	#日本領北極圏
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+PAO_JAP = {	#日本領太平洋
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+INO_JAP = {	#日本領インド洋
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+PAC_JAP = {	#日本領パナマ運河
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+CLC_JAPandCHI = {	#日中共同統治区
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+CZE_GER = {	#独領チェコ
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 138 155 116 }
+}
+
+POL_GER = {	#独領ポーランド
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 138 155 116 }
+}
+
+HOL_GER = {	#独領オランダ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
+}
+
+BEL_GER = {	#独領ベルギー
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
+}
+
+NFR_GER = {	#独領北フランス
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
+}
+
+NOR_GER = {	#独領ノルウェー
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
+}
+
+BAL_GER = {	#独領オストランド
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
+}
+
+UKR_GER = {	#独領ウクライナ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
+}
+
+MOS_GER = {	#独領モスクワ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
+}
+
+CCS_GER = {	#独領コーカサス
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
+}
+
+TOG_GER = {	#独領トーゴ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
+}
+
+WAF_GER = {	#独領西アフリカ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
+}
+
+MAF_GER = {	#独領中部アフリカ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
+}
+
+MAD_GER = {	#独領マダガスカル
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
+}
+
+ATL_GER = {	#独領大西洋
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
+}
+
+RIF_SPR = {	#西領モロッコ
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
+}
+
+WES_SPR = {	#西領サハラ
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
+}
+
+EQG_SPR = {	#西領ギニア
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
+}
+
+NWA_VFR = {	#ヴィシー領西アフリカ
+	color = rgb { 80 168 181 }
+	color_ui = rgb {115 185 196 }
+}
+
+EQA_VFR = {	#ヴィシー領赤道アフリカ
+	color = rgb { 80 168 181 }
+	color_ui = rgb {115 185 196 }
+}
+
+SUD_ITAandEGY = {	#伊埃領スーダン
+	color = rgb { 230 230 70 }
+	color_ui = rgb { 230 230 70 }
+}
+
+LBA_ITA = {	#伊領リビア
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 87 165 82 }
+}
+
+TUN_ITA = {	#伊領チュニジア
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 87 165 82 }
+}
+
+NEA_ITA = {	#伊領東アフリカ
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 87 165 82 }
+}
+
+SUC_ITA = {	#伊領スエズ運河
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 87 165 82 }
+}
+
+GIB_ITA = {	#伊領ジブラルタル
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 87 165 82 }
+}
+
+MOR_AFR = {	#アルジェ仏領モロッコ
+	color = rgb { 0 18 127 }
+	color_ui = rgb { 0 18 127 }
+}

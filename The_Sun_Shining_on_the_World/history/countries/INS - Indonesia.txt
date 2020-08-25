@@ -140,5 +140,3 @@ if = {
 		logistics_skill = 3
 	}
 }
-
-set_cosmetic_tag = INS_JAP

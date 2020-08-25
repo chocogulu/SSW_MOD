@@ -2,7 +2,7 @@
 state={
 	id=204
 	name="STATE_204" # Bobruysk
-	manpower = 1041084
+	manpower = 1321084
 	
 	state_category = rural
 
@@ -13,11 +13,11 @@ state={
 		victory_points = {
 			11313 1
 		}
-		owner = BLR
+		owner = BAL
 		buildings = {
 			infrastructure = 5
 		}
-		add_core_of = BLR
+		add_core_of = BAL
 	}
 
 	provinces={

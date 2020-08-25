@@ -1,0 +1,33 @@
+capital = 540
+
+#obb = MAF_1950
+set_cosmetic_tag = MAF_GER
+
+set_research_slots = 3
+set_stability = 80
+set_war_support = 50
+#set_convoys = 
+
+#add_ideas = {}
+
+#set_technology = {}
+
+set_politics = {
+	ruling_party = nazism
+	last_election = "1950.1.1"
+	last_election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	anarchism = 0
+	communism = 0
+	social_democracy = 0
+	democratic = 0
+	conservatism = 0
+	authoritative_democracy = 0
+	fascism = 0
+	nazism = 100
+	neutrality = 0
+	militarism = 0
+}

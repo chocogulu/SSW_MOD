@@ -8,7 +8,7 @@ state={
 
 	history={
 		victory_points = {
-			9809 3
+			9809 15
 		}
 		owner = ITA
 		add_core_of = MNT
@@ -28,7 +28,7 @@ state={
 	provinces={
 		937 6913 9809 9821 11858 
 	}
-	manpower=895500
+	manpower=1035500
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

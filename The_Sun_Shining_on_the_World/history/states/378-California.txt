@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		owner = WSL
+		owner = ALF
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
@@ -32,7 +32,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = WSL
+		add_core_of = ALF
 		victory_points = {
 			9814 30
 		}

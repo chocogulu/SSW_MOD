@@ -8,9 +8,10 @@ state=
 	
 	history=
 	{
-		owner = JAP
-		add_core_of = CRE
-		add_core_of = AGF
+		owner = CLC
+		add_core_of = CLC	
+		add_core_of = CHI
+		add_core_of = RCH
 		victory_points = {
 			10000 20 
 		}

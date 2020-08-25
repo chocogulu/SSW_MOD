@@ -3,9 +3,9 @@ state={
 	name="STATE_770"
 
 	history={
-		owner = GEA
+		owner = MAF
 		add_core_of = MLW
-		add_core_of = GEA
+		add_core_of = MAF
 		victory_points = {
 			12986 1 
 		}

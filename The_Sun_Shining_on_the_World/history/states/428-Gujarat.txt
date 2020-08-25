@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = PRI
+		owner = PIN
 		victory_points = {
 			9975 1 
 		}
@@ -22,8 +22,8 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = ING
-		add_core_of = PRI
+		add_core_of = NIN
+		add_core_of = PIN
 
 	}
 

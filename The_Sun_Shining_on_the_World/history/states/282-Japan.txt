@@ -2,7 +2,7 @@
 state={
 	id=282
 	name="STATE_282" # Kanto
-	manpower = 9503000
+	manpower = 1083000
 	
 	state_category = large_city
 	

@@ -6,7 +6,9 @@ state={
 	state_category = small_island
 
 	history={
-		owner = GER
+		owner = ATL
+		add_core_of = ATL
+		add_core_of = POR
 		victory_points = {
 			3118 1
 		}
@@ -16,7 +18,6 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = POR
 	}
 	
 	provinces={

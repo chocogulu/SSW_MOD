@@ -2,7 +2,7 @@
 state={
 	id=12
 	name="STATE_12"
-	manpower = 1520500
+	manpower = 1720500
 	resources={
 		steel=1 # was: 2
 	}
@@ -10,7 +10,7 @@ state={
 	state_category = city
 	
 	history={
-		owner = BLR
+		owner = BAL
 		victory_points = {
 			9340 15 
 		}
@@ -29,7 +29,7 @@ state={
 				bunker = 2
 			}
 		}
-		add_core_of = BLR
+		add_core_of = BAL
 	}
 
 	provinces={

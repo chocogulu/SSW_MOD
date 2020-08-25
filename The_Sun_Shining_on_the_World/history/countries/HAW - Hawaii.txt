@@ -1,6 +1,7 @@
 ﻿capital = 629
 
 #oob = ""
+set_cosmetic_tag = HAW_JAP
 
 # Starting tech
 set_technology = {

@@ -2,7 +2,7 @@ state={
 	id=796
 	name="STATE_796"
 	history={
-		owner = GSA
+		owner = MAF
 		buildings = {
 			infrastructure = 1
 			2115 = {
@@ -13,7 +13,7 @@ state={
 			2115 1 
 		}
 		add_core_of = ANG
-		add_core_of = GSA
+		add_core_of = MAF
 	}
 	provinces={
 		2115 

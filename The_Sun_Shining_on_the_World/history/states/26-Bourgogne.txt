@@ -2,12 +2,12 @@
 state={
 	id=26
 	name="STATE_26" # Auveregne
-	manpower = 877800
+	manpower = 937800
 	
 	state_category = city
 
 	history={
-		owner = FRA
+		owner = VFR
 		victory_points = {
 			3594 20 
 		}
@@ -16,7 +16,7 @@ state={
 			industrial_complex = 1
 
 		}
-		add_core_of = FRA
+		add_core_of = VFR
 	}
 
 	provinces={

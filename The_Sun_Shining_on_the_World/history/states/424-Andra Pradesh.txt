@@ -7,14 +7,14 @@ state={
 	
 
 	history={
-		owner = NOH
+		owner = HYD
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 		}
-		add_core_of = PRI
-		add_core_of = ING
-		add_core_of = NOH
+		add_core_of = PIN
+		add_core_of = NIN
+		add_core_of = HYD
 
 	}
 

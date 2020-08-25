@@ -6,8 +6,8 @@ state={
 	
 	
 	history={
+		owner = KOR
 		add_core_of = KOR
-		owner = JAP
 		victory_points = {
 		4056 15
 		}

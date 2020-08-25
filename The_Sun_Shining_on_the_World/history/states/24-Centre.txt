@@ -2,13 +2,13 @@
 state={
 	id=24
 	name="STATE_24"
-	manpower = 1546300
+	manpower = 1746300
 	
 	
 	state_category = large_town
 
 	history={
-		owner = FRA
+		owner = VFR
 		victory_points = {
 			3671 10
 		}
@@ -17,7 +17,7 @@ state={
 			industrial_complex = 2
 
 		}
-		add_core_of = FRA
+		add_core_of = VFR
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4

@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = KOT
+		owner = TRA
 		victory_points = {
 			8011 15
 		}
@@ -19,10 +19,10 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 		}
-		add_core_of = PRI
-		add_core_of = ING
-		add_core_of = NOH
-		add_core_of = KOT
+		add_core_of = PIN
+		add_core_of = NIN
+		add_core_of = HYD
+		add_core_of = TRA
 
 	}
 

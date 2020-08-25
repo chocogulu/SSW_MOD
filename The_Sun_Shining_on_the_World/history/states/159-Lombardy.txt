@@ -2,7 +2,7 @@
 state={
 	id=159
 	name="STATE_159"
-	manpower = 7397704
+	manpower = 7627704
 	state_category = metropolis
 
 	history={

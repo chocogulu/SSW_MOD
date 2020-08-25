@@ -7,8 +7,8 @@ state={
 	}
 	state_category=town
 	history={
+		owner = KOR
 		add_core_of = KOR
-		owner = JAP
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 5

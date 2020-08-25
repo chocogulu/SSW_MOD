@@ -7,8 +7,8 @@ state={
 	state_category=large_city
 	manpower=2502296
 	history={
+		owner = KOR
 		add_core_of = KOR
-		owner = JAP
 		victory_points = {
 		7125 20
 		}

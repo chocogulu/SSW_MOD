@@ -5,8 +5,8 @@ state={
 	state_category = tiny_island
 
 	history={
-		owner = GWA
-		add_core_of = GWA
+		owner = ATL
+		add_core_of = ATL
 		buildings = {
 			infrastructure = 2
 			13015 ={

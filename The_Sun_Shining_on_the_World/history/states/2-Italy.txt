@@ -1,7 +1,7 @@
 state= {
 	id=2
 	name="STATE_2" # Latium
-	manpower = 4571971
+	manpower = 5671971
 	
 	state_category = city
 

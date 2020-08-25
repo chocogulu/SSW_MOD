@@ -11,12 +11,12 @@ state={
 	}
 
 	history={
-		owner = PRI
+		owner = PIN
 		buildings = {
 			infrastructure = 6
 		}
-		add_core_of = ING
-		add_core_of = PRI
+		add_core_of = NIN
+		add_core_of = PIN
 
 	}
 

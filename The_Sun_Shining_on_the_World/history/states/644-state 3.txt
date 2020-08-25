@@ -1,17 +1,18 @@
 state={
 	id=644
 	name="STATE_644"
-	
+
 	history={
-		owner = JAP
+		owner = ARC
+		add_core_of = ARC
+		add_core_of = SOV
+        add_core_of = RUS
 		buildings = {
 			infrastructure = 1
 			13204 ={
 				naval_base = 1
 			}
 		}
-		add_core_of = SOV
-                add_core_of = RUS
 
 	}
 
@@ -21,5 +22,4 @@ state={
 	manpower=70364
 	buildings_max_level_factor=1
 	state_category="wasteland"
-	impassable = yes
 }

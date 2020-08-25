@@ -2,12 +2,12 @@
 state={
 	id=241
 	name="STATE_241" # Gomel
-	manpower = 943422
+	manpower = 1033422
 	
 	state_category = rural
 
 	history={
-		owner = BLR
+		owner = BAL
 		victory_points = {
 			9288 10 
 		}
@@ -15,7 +15,7 @@ state={
 			infrastructure = 5
 			air_base = 3
 		}
-		add_core_of = BLR
+		add_core_of = BAL
 	}
 
 	provinces={

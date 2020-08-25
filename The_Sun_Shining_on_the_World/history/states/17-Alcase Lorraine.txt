@@ -2,7 +2,7 @@
 state={
 	id=17
 	name="STATE_17" # Lorraine
-	manpower = 1517500
+	manpower = 1817500
 	
 	state_category = city
 	
@@ -23,7 +23,7 @@ state={
 			industrial_complex = 1
 			air_base = 5
 		}
-		add_core_of = FRA
+		add_core_of = VFR
 		add_core_of = NFR
 	}
 

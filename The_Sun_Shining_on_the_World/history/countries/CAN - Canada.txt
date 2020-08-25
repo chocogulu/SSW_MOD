@@ -1,6 +1,8 @@
-﻿capital = 276
+﻿﻿capital = 276
 
 oob = "CAN_1950"
+set_cosmetic_tag = CAN_UK
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_naval_oob = "CAN_1936_naval_mtg"

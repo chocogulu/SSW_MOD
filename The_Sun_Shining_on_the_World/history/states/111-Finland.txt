@@ -2,7 +2,7 @@
 state={
 	id=111
 	name="STATE_111" # Uusimaa
-	manpower = 1670190
+	manpower = 1930190
 	
 	state_category = city
 	

@@ -13,14 +13,14 @@ state={
 
 
 	history={
-		owner = OKS
+		owner = OKL
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
 			arms_factory = 2
 			air_base = 2
 		}
-		add_core_of = OKS
+		add_core_of = OKL
 		victory_points = {
 			1806 1 
 		}

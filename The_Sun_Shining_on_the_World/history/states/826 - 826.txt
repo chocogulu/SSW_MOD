@@ -6,7 +6,7 @@ state={
 	history={
 		owner = CAM
 		victory_points = {
-		7376 = 10
+			7376  10
 		}
 			
 		buildings = {

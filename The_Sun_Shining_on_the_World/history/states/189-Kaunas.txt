@@ -2,7 +2,7 @@
 state={
 	id=189
 	name="STATE_189"
-	manpower = 697100
+	manpower = 787100
 	
 	state_category = town
 	
@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = BLR
+		owner = BAL
 		victory_points = {
 			9483 5
 		}
@@ -24,7 +24,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = BLR
+		add_core_of = BAL
 	}
 
 	provinces={

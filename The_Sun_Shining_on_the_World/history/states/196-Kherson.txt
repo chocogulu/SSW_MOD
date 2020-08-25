@@ -2,7 +2,7 @@
 state={
 	id=196
 	name="STATE_196"
-	manpower = 728363
+	manpower = 918363
 	
 	state_category = rural
 	
@@ -12,9 +12,6 @@ state={
 
 	history={
 		owner = UKR
-		victory_points = {
-		
-		}
 		buildings = {
 			infrastructure = 5
 			air_base = 3

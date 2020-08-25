@@ -9,7 +9,7 @@ state={
 
 
 	history={
-		owner = NEK
+		owner = NEL
 		buildings = {
 			infrastructure = 7
 			arms_factory = 1
@@ -26,7 +26,7 @@ state={
 			}
 
 		}
-		add_core_of = NEK
+		add_core_of = NEL
 		victory_points = {
 			6732 20 
 		}

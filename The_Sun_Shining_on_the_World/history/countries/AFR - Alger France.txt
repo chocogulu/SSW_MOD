@@ -1,0 +1,34 @@
+capital = 459
+
+#obb = AFR_1950
+#set_cosmetic_tag = 
+
+set_research_slots = 3
+set_stability = 80
+set_war_support = 50
+#set_convoys = 
+
+#add_ideas = {}
+
+#set_technology = {}
+
+set_autonomy = { target = MOR	autonomous_state = ssw_dominion }	#•ÛŒì—Ì
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1950.1.1"
+	elections_allowed = no
+}
+
+set_popularities = {
+	anarchism = 0
+	communism = 0
+	social_democracy = 0
+	democratic = 0
+	conservatism = 0
+	authoritative_democracy = 0
+	fascism = 0
+	nazism = 0
+	neutrality = 100
+	militarism = 0
+}

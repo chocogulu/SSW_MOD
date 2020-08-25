@@ -2,14 +2,14 @@
 state={
 	id=252
 	name="STATE_252"
-	manpower = 3378176
+	manpower = 3678176
 	
 	state_category = city
 
 	history={
 		owner = MOS
 		victory_points = {
-			11375 10
+			11375 15
 		}
 		buildings = {
 			infrastructure = 5

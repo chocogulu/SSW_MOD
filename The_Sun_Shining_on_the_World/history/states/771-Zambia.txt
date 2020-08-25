@@ -10,9 +10,9 @@ state={
 	}
 
 	history={
-		owner = GEA
+		owner = MAF
 		add_core_of = ZAM
-		add_core_of = GEA
+		add_core_of = MAF
 		victory_points = {
 			5199 1
 		}

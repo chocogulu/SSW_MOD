@@ -13,8 +13,8 @@ state={
 
 		}
 		add_core_of = TIB
-		add_core_of = AGF
-		add_core_of = CRE
+		add_core_of = RCH
+		add_core_of = CHI
 
 	}
 

@@ -10,7 +10,7 @@ state={
 	state_category = town
 
 	history={
-		owner = KOE
+		owner = EGY
 		
 		victory_points = {
 			4076 15 
@@ -28,7 +28,7 @@ state={
 			}
 		}
 
-		add_core_of = KOE
+		add_core_of = EGY
 	}
 
 	provinces={

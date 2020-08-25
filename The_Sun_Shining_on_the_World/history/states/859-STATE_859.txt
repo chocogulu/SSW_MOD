@@ -7,10 +7,10 @@ state={
 	state_category=city
 	manpower=1434540
 	history={
+		owner = KOR
 		add_core_of = KOR
-		owner = JAP
 		victory_points = {
-		4052 3
+			4052 3
 		}
 		buildings = {
 			infrastructure = 1

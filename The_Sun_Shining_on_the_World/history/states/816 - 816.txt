@@ -4,17 +4,14 @@ state={
 	name="STATE_816"
 
 	history={
-		owner = BCK
-		victory_points = {
-		}
-			
+		owner = BOM
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1
 		}
-		add_core_of = ING
-		add_core_of = PRI
-		add_core_of = BCK
+		add_core_of = NIN
+		add_core_of = PIN
+		add_core_of = BOM
 	}
 
 	provinces={

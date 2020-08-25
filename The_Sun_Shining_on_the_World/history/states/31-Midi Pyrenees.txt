@@ -2,12 +2,12 @@
 state={
 	id=31
 	name="STATE_31"
-	manpower = 1825000
+	manpower = 1975000
 	
 	state_category = city
 
 	history={
-		owner = FRA
+		owner = VFR
 		victory_points = {
 			6766 5 
 		}
@@ -18,7 +18,7 @@ state={
 			air_base = 2
 
 		}
-		add_core_of = FRA
+		add_core_of = VFR
 	}
 
 	provinces={

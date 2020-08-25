@@ -14,9 +14,9 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = PAK
-		add_core_of = PRI
-		add_core_of = ING
-                add_core_of = AGF
+		add_core_of = PIN
+		add_core_of = NIN
+                add_core_of = RCH
 
 	}
 
