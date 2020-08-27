@@ -1,6 +1,6 @@
 ﻿capital = 543
 
-oob = "GMR_1950"
+oob = "MAD_1950"
 set_cosmetic_tag = MAD_GER
 
 # Starting tech
@@ -23,7 +23,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Adelbert Schulz"
 	desc = "POLITICS_EDWIN_BARCLAY_DESC"
-	picture = "gfx/leaders/GMR/Adelbert_Schulz_.dds"
+	picture = "gfx/leaders/MAD/Portrait_Adelbert_Schulz.dds"
 	expire = "1965.1.1"
 	ideology = nazism_ideology
 	traits = {

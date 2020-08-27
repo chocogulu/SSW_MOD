@@ -110,7 +110,7 @@ ideas = {
 			consumer_goods_factor = -0.05
 			}
 		}
-		JAP_japan_support_to_WSL_idea = {
+		JAP_japan_support_to_ALF_idea = {
 			allowed = {
 				always = yes
 			}

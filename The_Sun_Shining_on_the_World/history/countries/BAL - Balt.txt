@@ -1,6 +1,6 @@
 #capital = 206
 
-#oob = "BAL_1950"
+oob = "BAL_1950"
 set_cosmetic_tag = BAL_GER
 
 set_research_slots = 3
@@ -86,7 +86,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Walter Schimana"
     desc = ""
-    picture = "gfx/leaders/BLR/01.dds"
+    picture = "gfx/leaders/BAL/Portrait_Walter_Schimana.dds"
     expire = "1965.1.1"
     ideology = nazism_ideology
     traits = {

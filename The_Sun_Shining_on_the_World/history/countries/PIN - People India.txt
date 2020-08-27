@@ -1,5 +1,5 @@
 ﻿capital = 439
-oob = "PRI_1936"
+oob = "PIN_1936"
 
 # Starting tech
 set_technology = {
@@ -23,7 +23,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Jawaharlal Nehru"
 	desc = ""
-	picture = "gfx/leaders/PRI/Nehru.dds"
+	picture = "gfx/leaders/PIN/Portrait_Jawaharlal_Nehru.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

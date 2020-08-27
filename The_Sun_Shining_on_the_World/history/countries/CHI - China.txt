@@ -1,6 +1,6 @@
 ﻿1950.1.1 = {
 	capital = 613
-	oob = "CRE_1950"
+	#oob = "CHI_1950"
 
 	# Starting tech
 	set_technology = {
@@ -9,10 +9,10 @@
 	}
 
 	add_ideas = {
-		CRE_idea_1
-		CRE_idea_2
-		CRE_idea_3
-		CRE_idea_4
+		CHI_idea_1
+		CHI_idea_2
+		CHI_idea_3
+		CHI_idea_4
 	}
 
 	set_convoys = 167
@@ -31,31 +31,9 @@
 	create_country_leader = {
 		name = "陳公博"
 		desc = ""
-		picture = "gfx/leaders/CRE/陳公博.dds"
+		picture = "gfx/leaders/CHI/Portrait_Chen_Gongbo.dds"
 		expire = "1965.1.1"
 		ideology = liberalism
-		traits = {
-			#
-		}
-	}
-
-	create_country_leader = {
-		name = "Shigeo Odachi"
-		desc = ""
-		picture = "gfx/leaders/SNI/Portrait_Shonan_Shigeo_Odachi.dds"
-		expire = "1965.1.1"
-		ideology = stalinism
-		traits = {
-			#
-		}
-	}
-
-	create_country_leader = {
-		name = "Shigeo Odachi"
-		desc = ""
-		picture = "gfx/leaders/SNI/Portrait_Shonan_Shigeo_Odachi.dds"
-		expire = "1965.1.1"
-		ideology = fascism_ideology
 		traits = {
 			#
 		}

@@ -50,7 +50,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Liaquat Ali Khan"
-	picture = "gfx/leaders/PAK/01.dds"
+	picture = "gfx/leaders/PAK/Portrait_Liaquat_Ali_Khan.dds"
 	expire = "1960.1.1"
 	ideology = conservatism_ideology
 	traits = {

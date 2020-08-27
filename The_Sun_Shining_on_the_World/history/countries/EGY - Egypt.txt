@@ -1,6 +1,6 @@
 ﻿capital = 446
 
-#oob = "EGY_1950"
+oob = "EGY_1950"
 
 # Starting tech
 set_technology = {
@@ -10,7 +10,7 @@ set_technology = {
 puppet = SUD
 
 set_convoys = 150
-
+set_politics = {
 	ruling_party = authoritative_democracy
 	last_election = "1950.1.1"
 	election_frequency = 96
@@ -23,7 +23,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Farouk I"
 	desc = ""
-	picture = "gfx/leaders/KOE/1KOE.dds"
+	picture = "gfx/leaders/EGY/Portrait_Farouk_I.dds"
 	expire = "1965.1.1"
 	ideology = illiberal_democracy
 	traits = {

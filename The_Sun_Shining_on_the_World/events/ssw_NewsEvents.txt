@@ -19,9 +19,9 @@ news_event = { #news_eventのはじまりだよ的な
 		country_exists = GER
 		
 		GER = { has_war = no } #戦争していないか
-		FRA = { has_war = no }
+		VFR = { has_war = no }
 		ENG = { has_war = no }
-		WAU = { has_war = no }
+		FSA = { has_war = no }
 		JAP = { has_war = no }
 		ITA = { has_war = no }
 	}

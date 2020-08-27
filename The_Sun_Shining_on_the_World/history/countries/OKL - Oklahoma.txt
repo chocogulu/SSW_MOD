@@ -1,6 +1,6 @@
 ﻿capital = 374
 
-oob = "OKS_1950"
+oob = "OKL_1950"
 
 # Starting tech
 set_technology = {
@@ -23,7 +23,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Robert S. Kerr"
 	desc = ""
-	picture = "gfx/leaders/OKS/Robert_S_Carr.dds"
+	picture = "gfx/leaders/OKL/Portrait_Robert_S_Carr.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

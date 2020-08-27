@@ -100,11 +100,11 @@ focus_tree = {
 							modifier = large_decrease
 						}
 					add_opinion_modifier = {
-							target = WAU
+							target = FSA
 							modifier = large_decrease
 						}
 					add_opinion_modifier = {
-							target = WSL
+							target = ALF
 							modifier = large_decrease
 						}
 					add_opinion_modifier = {
@@ -126,9 +126,9 @@ focus_tree = {
 		x = 1
 		y = 4
 			completion_reward = {
-				NEK = {news_event = { id = Canada_news.2 days =1 } }
+				NEL = {news_event = { id = Canada_news.2 days =1 } }
 					add_opinion_modifier = {
-							target = NEK
+							target = NEL
 							modifier = large_decrease
 						}
 				}
@@ -147,7 +147,7 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 					add_opinion_modifier = {
-							target = NEK
+							target = NEL
 							modifier = huge_increase
 						}
 			}
@@ -182,7 +182,7 @@ focus_tree = {
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
-							target = WSL
+							target = ALF
 						}
 				}
 	}
@@ -797,7 +797,7 @@ focus_tree = {
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
-							target = WAU
+							target = FSA
 						}
 				}
 	}
@@ -822,7 +822,7 @@ focus_tree = {
 						}
 					create_wargoal = {
 							type = annex_everything
-							target = OKS
+							target = OKR
 						}
 					create_wargoal = {
 							type = annex_everything
@@ -830,11 +830,11 @@ focus_tree = {
 						}
 					create_wargoal = {
 							type = annex_everything
-							target = NOS
+							target = LUI
 						}
 					create_wargoal = {
 							type = annex_everything
-							target = ROT
+							target = TEX
 						}
 				}
 	}
@@ -923,12 +923,13 @@ focus_tree = {
 		}
 		x = 31
 		y = 5
-			completion_reward = {
-				add_tech_bonus = {
-							name = naval_doctrine
-							bonus = 1.0
-							uses = 2
-							category = naval_doctrine
-						}
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+		}
 	}
 }

@@ -1,6 +1,6 @@
 ﻿capital = 41
 
-oob = "NSR_1950"
+oob = "SPR_1950"
 
 # Starting tech
 set_technology = {
@@ -27,7 +27,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Francisco Franco Bahamonde"
 	desc = ""
-	picture = "gfx/leaders/NSP/01.dds"
+	picture = "gfx/leaders/SPR/Portrait_Francisco_Franco_Bahamonde.dds"
 	expire = "1965.1.1"
 	ideology = falangism
 	traits = {

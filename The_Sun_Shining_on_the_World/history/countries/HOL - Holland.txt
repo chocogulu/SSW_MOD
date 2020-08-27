@@ -1,6 +1,6 @@
 ﻿capital = 7
 
-oob = "HOL_1950"
+#oob = "HOL_1950"
 set_cosmetic_tag = HOL_GER
 
 if = {
@@ -75,6 +75,7 @@ if = {
 			has_dlc = "Together for Victory"
 			has_dlc = "Man the Guns"
 		}
+	}
 }
 
 set_variable = { var = gateway_to_europe_influence_pp_total value = 0 }
@@ -134,9 +135,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Richard Paul Wilhelm Kube"
+	name = "Richard_Paul_Wilhelm_Kube"
 	desc = "POLITICS_ANTON_MUSSERT_DESC"
-	picture = "01.dds"
+	picture = "gfx/leaders/HOL/Portrait_Richard_Paul_Wilhelm_Kube.dds"
 	expire = "1965.1.1"
 	ideology = nazism_ideology
 	traits = {

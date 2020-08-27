@@ -1092,7 +1092,7 @@ technologies = {
 
 				OR = {
 					tag = CHI
-					tag = PRC
+					tag = PCH
 					tag = XSM
 					tag = SIK
 					tag = GXC
@@ -1184,7 +1184,7 @@ technologies = {
 
 				OR = {
 					tag = CHI
-					tag = PRC
+					tag = PCH
 					tag = XSM
 					tag = SIK
 					tag = GXC

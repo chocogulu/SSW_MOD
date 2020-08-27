@@ -1,13 +1,13 @@
 spriteTypes = {	
 
-###CRE###中華民国
+###CHI###中華民国
 
 	spriteType = {
 		name = "generic_goods_red_bonus.dds"
 		texturefile = "gfx/interface/ideas/generic_goods_red_bonus.dds"
 	}
 	spriteType = {
-		name = "FRA_scw_intervention_republicans_focus.dds"
+		name = "VFR_scw_intervention_republicans_focus.dds"
 		texturefile = "gfx/interface/ideas/FRA_scw_intervention_republicans_focus.dds"
 	}
 	spriteType = {

@@ -182,7 +182,7 @@ set_autonomy = { target = POR autonomous_state = reichsatellite }
 create_country_leader = {
 	name = "Adolf Hitler"
 	desc = "POLITICS_ADOLF_HITLER_DESC"
-	picture = "Hitler.dds"
+	picture = "gfx/leaders/GER/Portrait_Adolf_Hitler.dds"
 	expire = "1965.1.1"
 	ideology = nazism_ideology
 	traits = {

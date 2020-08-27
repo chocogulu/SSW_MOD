@@ -1,6 +1,6 @@
 capital = 868
 
-oob = "AST_1950"
+#oob = "AST_1950"
 set_cosmetic_tag = AST_UK
 set_stability = 0.8
 set_war_support = 0.3
@@ -95,7 +95,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sir Earle Page"
 	desc = "POLITICS_JOHN_CURTIN_DESC"
-	picture = "01.dds"
+	picture = "gfx/leaders/AST/Portrait_Sir_Earle_Page.dds"
 	expire = "1965.1.1"
 	ideology = conservatism_ideology
 	traits = {

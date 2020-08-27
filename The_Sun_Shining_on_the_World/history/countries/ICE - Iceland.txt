@@ -1,6 +1,6 @@
 ﻿capital = 100 #Iceland
 
-oob = "ICE_1950"
+#oob = "ICE_1950"
 
 set_research_slots = 3
 
@@ -35,7 +35,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Ólafur Thors"
 	desc = ""
-	picture = "02.dds"
+	picture = "gfx/leaders/ICE/Portrait_Olafur_Thors.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

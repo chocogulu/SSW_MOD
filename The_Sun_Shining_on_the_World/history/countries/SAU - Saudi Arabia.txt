@@ -1,6 +1,6 @@
 ﻿capital = 292
 
-oob = "SAU_1950"
+#oob = "SAU_1950"
 
 # Starting tech
 set_technology = {
@@ -23,7 +23,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Abdulaziz bin Abdulrahman bin Faisal Al Saud"
 	desc = "POLITICS_ABDULAZIZ_DESC"
-	picture = "01.dds"
+	picture = "gfx/leaders/SAU/Portrait_Abdulaziz_bin_Abdulrahman_bin_Faisal_Al_Saud.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {

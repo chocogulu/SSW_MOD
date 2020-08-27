@@ -1,7 +1,6 @@
 capital = 459
 
 #obb = AFR_1950
-#set_cosmetic_tag = 
 
 set_research_slots = 3
 set_stability = 80
@@ -12,7 +11,7 @@ set_war_support = 50
 
 #set_technology = {}
 
-set_autonomy = { target = MOR	autonomous_state = ssw_dominion }	#•ÛŒì—Ì
+set_autonomy = { target = MOR	autonomous_state = ssw_dominion }	#ï¿½ÛŒï¿½ï¿½
 
 set_politics = {
 	ruling_party = neutrality

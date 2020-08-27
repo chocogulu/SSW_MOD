@@ -1,6 +1,6 @@
 ﻿capital = 43
 
-oob = "HUN_1950"
+#oob = "HUN_1950"
 
 set_research_slots = 3
 set_stability = 0.7
@@ -77,7 +77,7 @@ if = {
 create_country_leader = {
 	name = "Ferenc Szombathelyi"
 	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
-	picture = "01.dds"
+	picture = "gfx/leaders/HUN/Portrait_Ferenc_Szombathelyi.dds"
 	expire = "1965.1.1"
 	ideology = illiberal_democracy
 	traits = {

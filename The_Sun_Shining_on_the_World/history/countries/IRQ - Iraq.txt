@@ -1,6 +1,6 @@
 ﻿capital = 291
 
-oob = "IRQ_1950"
+#oob = "IRQ_1950"
 
 # Starting tech
 set_technology = {
@@ -82,7 +82,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Rashid Ali al-Gaylani"
 	desc = "POLITICS_GHAZI_I_DESC"
-	picture = "01.dds"
+	picture = "gfx/leaders/IRQ/Portrait_Rashid_Ali_al_Gaylani.dds"
 	expire = "1965.1.1"
 	ideology = illiberal_democracy
 	traits = {

@@ -19,12 +19,12 @@ news_event = {
 		name = england_news.1.b
 		trigger = { TAG = CAN }
 		trigger = { TAG = AST }
-		trigger = { TAG = NEK }
+		trigger = { TAG = NEL }
 		trigger = { TAG = NZL }
 	}
 	option = {
 		name = england_news.1.c
-		trigger = { NOT ={ TAG = ENG TAG = CAN TAG = AST  TAG = NEK  TAG = NZL } }
+		trigger = { NOT ={ TAG = ENG TAG = CAN TAG = AST  TAG = NEL  TAG = NZL } }
 	}
 }
 news_event = {
@@ -45,13 +45,13 @@ news_event = {
 		name = england_news.2.b
 		trigger = { TAG = CAN }
 		trigger = { TAG = AST }
-		trigger = { TAG = NEK }
+		trigger = { TAG = NEL }
 		trigger = { TAG = NZL }
-		trigger = { TAG = PRI }
+		trigger = { TAG = PIN }
 	}
 	option = {
 		name = england_news.2.c
-		trigger = { NOT ={ TAG = ENG TAG = CAN TAG = AST  TAG = NEK  TAG = NZL TAG = PRI TAG = JAP } }
+		trigger = { NOT ={ TAG = ENG TAG = CAN TAG = AST  TAG = NEL  TAG = NZL TAG = PIN TAG = JAP } }
 	}
 }
 
@@ -80,11 +80,11 @@ news_event = {
 		trigger = { TAG = ENG }
 		trigger = { TAG = CAN }
 		trigger = { TAG = AST }
-		trigger = { TAG = NEK }
+		trigger = { TAG = NEL }
 		trigger = { TAG = NZL }
 	}
 	option = {
 		name = england_news.3.b
-		trigger = { NOT ={ TAG = ENG TAG = CAN TAG = AST  TAG = NEK  TAG = NZL  } }
+		trigger = { NOT ={ TAG = ENG TAG = CAN TAG = AST  TAG = NEL  TAG = NZL  } }
 	}
 }

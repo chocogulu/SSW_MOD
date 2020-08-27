@@ -1,5 +1,5 @@
 ﻿capital = 815
-oob = "TCK_1950"
+#oob = "MDU_1950"
 
 # Starting tech
 set_technology = {
@@ -22,7 +22,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Tanguturi Prakasam"
 	desc = ""
-	picture = "gfx/leaders/TCK/Tanguturi_Prakasam.dds"
+	picture = "gfx/leaders/MDU/Portrait_Tanguturi_Prakasam.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {

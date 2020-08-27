@@ -1,6 +1,6 @@
 ﻿capital = 126
 
-set_oob = "ENG_1950"
+#set_oob = "ENG_1950"
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
@@ -236,14 +236,14 @@ set_autonomy = { target = AST autonomous_state = british_commonwealth }
 set_autonomy = { target = NZL autonomous_state = british_commonwealth }
 set_autonomy = { target = NEL autonomous_state = british_commonwealth }
 
-give_guarantee = PRI
+give_guarantee = PIN
 
 # Order matters - here Chamberlain becomes starting leader
 
 create_country_leader = {
 	name = "Anthony Eden"
 	desc = ""
-	picture = "Portrait_Britain_Anthony_Eden.dds"
+	picture = "gfx/leaders/ENG/Portrait_Anthony_Eden.dds"
 	expire = "1977.1.1"
 	ideology = conservatism_ideology
 	traits = {
@@ -255,7 +255,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Clement Attlee"
 	desc = ""
-	picture = "gfx/leaders/ENG/colorized-image (9).dds"
+	picture = "gfx/leaders/ENG/Portrait_Clement_Attlee.dds"
 	expire = "1965.1.1"
 	ideology = social_democracy_ideology
 	traits = {

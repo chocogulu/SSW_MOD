@@ -23,7 +23,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Anarchism Union"
 	desc = ""
-	picture = "gfx/leaders/ANS/無政府主義連合（アメリカ）.dds"
+	picture = "gfx/leaders/ANS/Portrait_Anarchism_Union.dds"
 	expire = "1965.1.1"
 	ideology = social_anarchism
 	traits = {
@@ -33,7 +33,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Halyna Kouzmenko"
-		picture = "01.dds"
+	picture = "gfx/leaders/ANS/Portrait_Halyna_Kouzmenko.dds"
 	traits = {
 	}
 	skill = 3

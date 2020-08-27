@@ -228,7 +228,7 @@ country_event = {
 							modifier = huge_increase
 						}
 					add_opinion_modifier = {
-							target = NEK
+							target = NEL
 							modifier = huge_increase
 						}
 	}
@@ -251,7 +251,7 @@ country_event = {
 							modifier = medium_decrease
 						}
 					add_opinion_modifier = {
-							target = NEK
+							target = NEL
 							modifier = medium_decrease
 						}
 	}
@@ -277,7 +277,7 @@ country_event = {
 		CAN = {add_timed_idea = { idea = UKR_economy  days = 365 }}
 		AST = {add_timed_idea = { idea = UKR_economy  days = 365 }}
 		NZL = {add_timed_idea = { idea = UKR_economy  days = 365 }}
-		NEK = {add_timed_idea = { idea = UKR_economy  days = 365 }}
+		NEL = {add_timed_idea = { idea = UKR_economy  days = 365 }}
 	}
 	option = {
 		name = SSW_ENG.12.b
@@ -298,7 +298,7 @@ country_event = {
 							modifier = medium_decrease
 						}
 					add_opinion_modifier = {
-							target = NEK
+							target = NEL
 							modifier = medium_decrease
 						}
 	}
@@ -346,7 +346,7 @@ country_event = {
 				id = SSW_ENG.15
 				days = 3
 				} }
-			PRI = { country_event = {
+			PIN = { country_event = {
 				id = SSW_ENG.17
 				days = 4
 				} }
@@ -428,8 +428,8 @@ country_event = {
 		ai_chance = {
 			factor = 160
 		}
-		clr_global_flag = ENG_PRI_military
-		ENG = { set_global_flag = ENG_PRI_military }
+		clr_global_flag = ENG_PIN_military
+		ENG = { set_global_flag = ENG_PIN_military }
 	ENG = { country_event = { id = SSW_ENG.18 days = 4 } }
 	}
 	option = {
@@ -488,23 +488,23 @@ country_event = {
 		ai_chance = {
 			factor = 160
 		}
-		clr_global_flag = ENG_PRI_military_Y
-		PRI = { set_global_flag = ENG_PRI_military_Y }
+		clr_global_flag = ENG_PIN_military_Y
+		PIN = { set_global_flag = ENG_PIN_military_Y }
 	}
 	option = {
 		name = SSW_ENG.21.b
-		clr_global_flag = ENG_PRI_military_N
-		ENG = { set_global_flag = ENG_PRI_military_N }
+		clr_global_flag = ENG_PIN_military_N
+		ENG = { set_global_flag = ENG_PIN_military_N }
 			ENG = {
 				diplomatic_relation = {
-					country = PRI
+					country = PIN
 					relation = guarantee
 					active = no
 				}
 			}
 			ENG = {
 				diplomatic_relation = {
-					country = PRI
+					country = PIN
 					relation = military_access
 					active = no
 				}
@@ -521,7 +521,7 @@ country_event = {
 
 	option = {
 		name = SSW_ENG.22.a
-		PRI = { add_ideas = ENG_idea_4 }
+		PIN = { add_ideas = ENG_idea_4 }
 		country_event = { id = SSW_ENG.23 days = 7 }
 	}
 }
@@ -535,7 +535,7 @@ country_event = {
 
 	option = {
 		name = SSW_ENG.23.a
-		PRI = { country_event = { id = SSW_ENG.24 days = 50 } }
+		PIN = { country_event = { id = SSW_ENG.24 days = 50 } }
 		country_event = { id = SSW_ENG.25 days = 50 }
 	}
 }
@@ -575,8 +575,8 @@ country_event = {
 
 	option = {
 		name = SSW_ENG.26.a
-		add_to_faction = PRI
-		PRI = {
+		add_to_faction = PIN
+		PIN = {
 			add_ai_strategy = {
 				type = alliance
 				id = "ENG"
@@ -612,7 +612,7 @@ country_event = {
 	NZL = {	add_ideas = Elizabeth
 			remove_ideas = George
 		  }
-	NEK = {	add_ideas = Elizabeth
+	NEL = {	add_ideas = Elizabeth
 			remove_ideas = George
 		  }
 	}

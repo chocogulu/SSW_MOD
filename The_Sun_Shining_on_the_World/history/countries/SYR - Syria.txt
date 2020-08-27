@@ -1,6 +1,6 @@
 ﻿capital = 554
 
-oob = "LEB_1950"
+oob = "SYR_1950"
 
 # Starting tech
 set_technology = {
@@ -19,42 +19,11 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
-
-create_country_leader = {
-	name = "Hashim al-Atassi"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Pierre Gemayel"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Europe_Generic_fascism1.dds"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
 create_country_leader = {
 	name = "Shukri al-Quwatli"
 	desc = ""
-	picture = "gfx/leaders/LEB/04.dds"
+	picture = "gfx/leaders/SYR/Portrait_Shukri_al_Quwatli.dds"
 	ideology = oligarchism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Rami Sarraff"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
-	ideology = leninism
 	traits = {
 		#
 	}

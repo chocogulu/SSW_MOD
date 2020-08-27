@@ -1,0 +1,19 @@
+focus_tree = {
+	id = RCH
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RCH
+		}
+	}
+	default = no
+	focus = {
+		id = RCH_1
+		text = 革命闘争
+		icon = GFX_focus_generic_soviet_politics
+		cost = 1.00
+		x = 1
+		y = 0
+	}
+}

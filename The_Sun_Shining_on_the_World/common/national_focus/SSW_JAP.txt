@@ -50,7 +50,7 @@ focus_tree = {
 											days = 2
 										}
 								}
-							CRE = {
+							CHI = {
 									country_event = {
 											id = SSW_JAP_the_hiroshima_navy_agreement_event.1
 											days = 2
@@ -885,7 +885,7 @@ focus_tree = {
 					country_event = {
 							id = japssw.8
 						}
-					SNI = {
+					SIN = {
 							add_ideas = SSW_jAP_change_the_south_dollar
 						}
 					CAM = {
@@ -938,7 +938,7 @@ focus_tree = {
 		x = 17
 		y = 5
 			completion_reward = {
-					SNI = {
+					SIN = {
 							add_stability = 0.1
 							add_autonomy_score = {
 									value = -100
@@ -957,7 +957,7 @@ focus_tree = {
 		x = 19
 		y = 6
 			completion_reward = {
-					SNI = {
+					SIN = {
 							swap_ideas = {
 									remove_idea = SSW_jAP_change_the_south_dollar
 									add_idea = SSW_jAP_Smooth_southern_trade
@@ -1066,7 +1066,7 @@ focus_tree = {
 		x = 21
 		y = 5
 			completion_reward = {
-					SNI = {
+					SIN = {
 							add_ideas = SSW_jAP_yokohama_shokin
 						}
 					CAM = {
@@ -1131,12 +1131,12 @@ focus_tree = {
 					send_equipment = {
 							equipment = infantry_equipment
 							amount = 5000
-							target = WSL
+							target = ALF
 						}
 					send_equipment = {
 							equipment = artillery_equipment
 							amount = 500
-							target = WSL
+							target = ALF
 						}
 				}
 
@@ -1371,7 +1371,7 @@ focus_tree = {
 		x = 29
 		y = 2
 			completion_reward = {
-					SNI = {
+					SIN = {
 							add_ideas = SSW_jAP_Daitoa_Zaibatsu
 						}
 					CAM = {
@@ -1828,7 +1828,7 @@ focus_tree = {
 					dismantle_faction = yes
 					create_faction = kan_taiheyo_kyoeiken
 					add_to_faction = SIA
-					WSL = {
+					ALF = {
 							country_event = {
 									id = SSW_JAPAN_event_for_america.105
 									days = 1
@@ -1884,13 +1884,13 @@ focus_tree = {
 		x = 43
 		y = 2
 			completion_reward = {
-					WSL = {
+					ALF = {
 							add_equipment_to_stockpile = {
 									type = infantry_equipment
 									amount = 5000
 									producer = JAP
 								}
-							add_ideas = JAP_japan_support_to_WSL_idea
+							add_ideas = JAP_japan_support_to_ALF_idea
 						}
 				}
 
@@ -2137,7 +2137,7 @@ focus_tree = {
 		x = 77
 		y = 5
 			available = {
-					SOR = {
+					SIB = {
 							is_puppet_of = JAP
 							controls_state = 563
 							controls_state = 566
@@ -2195,13 +2195,13 @@ focus_tree = {
 		x = 50
 		y = 7
 			available = {
-					SOR = {
+					SIB = {
 							is_puppet_of = JAP
 						}
 				}
 			completion_reward = {
 					custom_effect_tooltip = jap_siberia_company_tooltip
-					SOR = {
+					SIB = {
 							add_ideas = JAP_siberia_investment_idea
 						}
 				}
@@ -2217,12 +2217,12 @@ focus_tree = {
 		x = 48
 		y = 8
 			available = {
-					SOR = {
+					SIB = {
 							is_puppet_of = JAP
 						}
 				}
 			completion_reward = {
-					SOR = {
+					SIB = {
 							add_ideas = JAP_siberia_Railway_idea
 						}
 				}
@@ -2420,7 +2420,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = JAP_CRE_giyugun
+		id = JAP_CHI_giyugun
 		icon = GFX_goal_generic_construction2
 		cost = 5.00
 		prerequisite = {
@@ -2434,21 +2434,21 @@ focus_tree = {
 
 	}
 	focus = {
-		id = JAP_CRE_Who
+		id = JAP_CHI_Who
 		icon = GFX_goal_continuous_suppression
 		cost = 5.00
 		prerequisite = {
-			focus = JAP_CRE_giyugun
+			focus = JAP_CHI_giyugun
 		}
 		x = 70
 		y = 8
 			available = {
-					CRE = {
+					CHI = {
 							is_puppet_of = JAP
 						}
 				}
 			completion_reward = {
-					CRE = {
+					CHI = {
 							add_timed_idea = {
 									idea = JAP_kounichi_undo_aturyoku_idea
 									days = 100
@@ -2458,21 +2458,21 @@ focus_tree = {
 
 	}
 	focus = {
-		id = JAP_CRE_GELIRI
+		id = JAP_CHI_GELIRI
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 5.00
 		prerequisite = {
-			focus = JAP_CRE_Who
+			focus = JAP_CHI_Who
 		}
 		x = 69
 		y = 9
 			available = {
-					CRE = {
+					CHI = {
 							is_puppet_of = JAP
 						}
 				}
 			completion_reward = {
-					CRE = {
+					CHI = {
 							add_timed_idea = {
 									idea = JAP_kounichi_undo_aturyoku_idea
 									days = 150
@@ -2482,42 +2482,42 @@ focus_tree = {
 
 	}
 	focus = {
-		id = JAP_CRE_army
+		id = JAP_CHI_army
 		icon = GFX_focus_generic_military_academy
 		cost = 4.00
 		prerequisite = {
-			focus = JAP_CRE_giyugun
+			focus = JAP_CHI_giyugun
 		}
 		x = 72
 		y = 8
 			available = {
-					CRE = {
+					CHI = {
 							is_puppet_of = JAP
 						}
 				}
 			completion_reward = {
-					CRE = {
+					CHI = {
 							add_ideas = JAP_army_school_idea
 						}
 				}
 
 	}
 	focus = {
-		id = JAP_CRE_navy
+		id = JAP_CHI_navy
 		icon = GFX_focus_generic_destroyer
 		cost = 5.00
 		prerequisite = {
-			focus = JAP_CRE_giyugun
+			focus = JAP_CHI_giyugun
 		}
 		x = 74
 		y = 8
 			available = {
-					CRE = {
+					CHI = {
 							is_puppet_of = JAP
 						}
 				}
 			completion_reward = {
-					CRE = {
+					CHI = {
 							add_ideas = JAP_CHI_navy_reform_idea
 						}
 				}
@@ -2535,9 +2535,9 @@ focus_tree = {
 			available = {
 					AND = {
 							is_faction_leader = yes
-							has_completed_focus = JAP_CRE_GELIRI
-							has_completed_focus = JAP_CRE_greater_zyukei
-							has_completed_focus = JAP_CRE_Air
+							has_completed_focus = JAP_CHI_GELIRI
+							has_completed_focus = JAP_CHI_greater_zyukei
+							has_completed_focus = JAP_CHI_Air
 							has_completed_focus = JAP_the_modern_conscripted_farmers
 							has_completed_focus = JAP_INS_Zyukogyo
 							has_completed_focus = JAP_PHI_works
@@ -2675,13 +2675,13 @@ focus_tree = {
 					BRM = {
 							is_puppet_of = JAP
 						}
-					CRE = {
+					CHI = {
 							is_puppet_of = JAP
 						}
 					INS = {
 							is_puppet_of = JAP
 						}
-					SOR = {
+					SIB = {
 							is_puppet_of = JAP
 						}
 				}
@@ -2693,7 +2693,7 @@ focus_tree = {
 									state = 640
 								}
 						}
-					CRE = {
+					CHI = {
 							give_resource_rights = {
 									receiver = JAP
 									state = 592
@@ -2713,7 +2713,7 @@ focus_tree = {
 									state = 335
 								}
 						}
-					SOR = {
+					SIB = {
 							give_resource_rights = {
 									receiver = JAP
 									state = 566
@@ -2744,7 +2744,7 @@ focus_tree = {
 		x = 81
 		y = 2
 			available = {
-					CRE = {
+					CHI = {
 							is_puppet_of = JAP
 						}
 				}
@@ -2849,7 +2849,7 @@ focus_tree = {
 					INS = {
 							is_puppet_of = JAP
 						}
-					SNI = {
+					SIN = {
 							is_puppet_of = JAP
 						}
 					SIA = {
@@ -2902,11 +2902,11 @@ focus_tree = {
 							is_puppet_of = JAP
 							controls_state = 336
 						}
-					CRE = {
+					CHI = {
 							is_puppet_of = JAP
 							controls_state = 594
 						}
-					SOR = {
+					SIB = {
 							is_puppet_of = JAP
 							controls_state = 566
 							controls_state = 565
@@ -2959,11 +2959,11 @@ focus_tree = {
 							is_puppet_of = JAP
 							controls_state = 336
 						}
-					CRE = {
+					CHI = {
 							is_puppet_of = JAP
 							controls_state = 594
 						}
-					SOR = {
+					SIB = {
 							is_puppet_of = JAP
 							controls_state = 566
 						}
@@ -2972,10 +2972,10 @@ focus_tree = {
 					MAN = {
 							add_ideas = JAP_unfair_trade_to_daitoa_idea
 						}
-					CRE = {
+					CHI = {
 							add_ideas = JAP_unfair_trade_to_daitoa_idea
 						}
-					SOR = {
+					SIB = {
 							add_ideas = JAP_unfair_trade_to_daitoa_idea
 						}
 				}
@@ -3859,16 +3859,16 @@ focus_tree = {
 
 	}
 	focus = {
-		id = JAP_CRE_zyukei
+		id = JAP_CHI_zyukei
 		icon = GFX_goal_generic_construct_civilian
 		cost = 4.00
 		prerequisite = {
-			focus = JAP_CRE_giyugun
+			focus = JAP_CHI_giyugun
 		}
 		x = 76
 		y = 8
 			available = {
-					CRE = {
+					CHI = {
 							is_puppet_of = JAP
 							controls_state = 605
 							controls_state = 748
@@ -4393,16 +4393,16 @@ focus_tree = {
 
 	}
 	focus = {
-		id = JAP_CRE_greater_zyukei
+		id = JAP_CHI_greater_zyukei
 		icon = GFX_focus_JAP_the_chongqing_metropolis
 		cost = 5.00
 		prerequisite = {
-			focus = JAP_CRE_zyukei
+			focus = JAP_CHI_zyukei
 		}
 		x = 76
 		y = 9
 			available = {
-					CRE = {
+					CHI = {
 							is_puppet_of = JAP
 							controls_state = 605
 						}
@@ -4420,19 +4420,19 @@ focus_tree = {
 
 	}
 	focus = {
-		id = JAP_CRE_army_
+		id = JAP_CHI_army_
 		icon = GFX_focus_generic_military_mission
 		cost = 5.00
 		prerequisite = {
-			focus = JAP_CRE_army
+			focus = JAP_CHI_army
 		}
 		prerequisite = {
-			focus = JAP_CRE_navy
+			focus = JAP_CHI_navy
 		}
 		x = 73
 		y = 9
 			available = {
-					CRE = {
+					CHI = {
 							is_puppet_of = JAP
 						}
 				}
@@ -4440,7 +4440,7 @@ focus_tree = {
 					army_experience = 30
 					navy_experience = 30
 					air_experience = 30
-					CRE = {
+					CHI = {
 							army_experience = 30
 							navy_experience = 30
 							air_experience = 30
@@ -4449,21 +4449,21 @@ focus_tree = {
 
 	}
 	focus = {
-		id = JAP_CRE_Air
+		id = JAP_CHI_Air
 		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
-			focus = JAP_CRE_army_
+			focus = JAP_CHI_army_
 		}
 		x = 73
 		y = 10
 			available = {
-					CRE = {
+					CHI = {
 							is_puppet_of = JAP
 						}
 				}
 			completion_reward = {
-					CRE = {
+					CHI = {
 							add_ideas = JAP_CHI_airforce_reform_idea
 						}
 				}
@@ -4607,13 +4607,13 @@ focus_tree = {
 		x = 50
 		y = 8
 			available = {
-					SOR = {
+					SIB = {
 							is_puppet_of = JAP
 						}
 					has_manpower > 15000
 				}
 			completion_reward = {
-					SOR = {
+					SIB = {
 							add_manpower = 15000
 						}
 					add_manpower = -15000
@@ -4630,12 +4630,12 @@ focus_tree = {
 		x = 50
 		y = 9
 			available = {
-					SOR = {
+					SIB = {
 							is_puppet_of = JAP
 						}
 				}
 			completion_reward = {
-					SOR = {
+					SIB = {
 							add_ideas = JAP_siberia_Pioneering_idea
 						}
 				}
@@ -4651,12 +4651,12 @@ focus_tree = {
 		x = 52
 		y = 9
 			available = {
-					SOR = {
+					SIB = {
 							is_puppet_of = JAP
 						}
 				}
 			completion_reward = {
-					SOR = {
+					SIB = {
 							add_ideas = JAP_army_school_idea
 						}
 				}

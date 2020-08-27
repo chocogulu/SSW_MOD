@@ -1,6 +1,6 @@
 ﻿capital = 113
 
-oob = "IRE_1950"
+#oob = "IRE_1950"
 
 set_research_slots = 3
 
@@ -27,7 +27,7 @@ set_popularities = {
 create_country_leader = {
 	name = "E'amon de Valera"
 	desc = "POLITICS_EAMON_DE_VALERA_DESC"
-	picture = "03.dds"
+	picture = "gfx/leaders/IRE/Portrait_E_amon_de_Valera.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

@@ -119,7 +119,7 @@ country_event = {
 		base = 1
 		}
 		JAP = { 
-			add_to_faction = WSL 
+			add_to_faction = ALF 
 			country_event = {
 			id = SSW_JAPAN_event_for_america.7
 			days = 1

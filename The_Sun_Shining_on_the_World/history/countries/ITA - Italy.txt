@@ -1,6 +1,6 @@
 ﻿capital = 2
 
-oob = "ITA_1936"
+#oob = "ITA_1950"
 
 set_research_slots = 4
 set_stability = 0.6
@@ -157,7 +157,7 @@ set_autonomy = { target = TUN	autonomous_state = ssw_dominion }	#保護領
 create_country_leader = {
 	name = "Italo Balbo"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "barubo.dds"
+	picture = "gfx/leaders/ITA/Portrait_Italo_Balbo.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

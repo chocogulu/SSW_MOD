@@ -1,5 +1,5 @@
 ﻿capital = 566
-oob = "SOR_1936"
+oob = "SIB_1936"
 
 # Starting tech
 set_technology = {
@@ -26,31 +26,9 @@ set_popularities = {
 create_country_leader = {
 	name = "Genrikh Samoilovich Lyushkov"
 	desc = ""
-	picture = "gfx/leaders/SOR/16_20200630170043_2.dds"
+	picture = "gfx/leaders/SIB/Portrait_Genrikh_Samoilovich_Lyushkov.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Shigeo Odachi"
-	desc = ""
-	picture = "gfx/leaders/SNI/Portrait_Shonan_Shigeo_Odachi.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Shigeo Odachi"
-	desc = ""
-	picture = "gfx/leaders/SNI/Portrait_Shonan_Shigeo_Odachi.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
 	traits = {
 		#
 	}

@@ -1,0 +1,112 @@
+ideas = {
+    country = {
+        india_idea = {
+            picture = generic_morale_bonus
+            allowed = {
+                original_tag = NIN
+
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.05
+            }
+        }
+        india_idea_1 = {
+            picture = generic_morale_bonus
+
+            allowed = {
+				original_tag = NIN
+			}
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.10
+                production_speed_arms_factory_factor = 0.25
+            }
+        }
+        india_idea_2 = {
+            picture = NIN_marginalized_muslim_community_angry
+            allowed = {
+                original_tag = NIN
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+
+            modifier ={
+                special_forces_cap = 0.02
+            }
+        }
+        india_idea_3 = {
+            picture = NIN_marginalized_muslim_community_angry
+            allowed = {
+                original_tag = NIN
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+
+            modifier ={
+                special_forces_cap = 0.10
+                army_org_Factor = 0.05
+				planning_speed = 0.10
+            }
+        }
+        india_idea_4 = {
+            picture = generic_disjointed_gov
+            allowed = {
+                original_tag = NIN
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+
+            modifier ={
+                stability_factor = -0.10
+            }
+            
+        }
+        india_idea_5 = {
+            picture = generic_disjointed_gov
+            allowed = {
+                original_tag = NIN
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+
+            modifier ={
+                stability_factor = 0.05
+                consumer_goods_factor = -0.05
+            }
+            
+        }
+        india_idea_6 = {
+            picture = generic_wall_line
+            allowed = {
+                original_tag = NIN
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+
+            modifier ={
+                war_support_factor = 0.10
+                
+            }
+            
+        }
+    }
+}

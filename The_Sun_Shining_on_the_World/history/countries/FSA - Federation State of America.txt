@@ -1,6 +1,6 @@
 ﻿capital = 366
 
-oob = "WAU_1950"
+oob = "FSA_1950"
 
 # Starting tech
 set_technology = {
@@ -23,7 +23,7 @@ set_popularities = {
 create_country_leader = {
 	name = "William Dudley Pelley"
 	desc = ""
-	picture = "gfx/leaders/WAU/William_Dudley_Perry.dds"
+	picture = "gfx/leaders/FSA/Portrait_William_Dudley_Perry.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

@@ -82,7 +82,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Albert Viljam Hagelin"
 	desc = "POLITICS_VIDKUN_QUISLING_DESC"
-	picture = "popki.dds"
+	picture = "gfx/leaders/NOR/Portrait_Albert_Viljam_Hagelin.dds"
 	expire = "1965.1.1"
 	ideology = nazism_ideology
 	traits = {
@@ -247,4 +247,5 @@ if = {
 				rear_1_custom_slot = ship_depth_charge_1
 			}
 		}
+	}
 }

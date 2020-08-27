@@ -1,6 +1,6 @@
 capital = 357
 
-oob = "NEK_1950"
+oob = "NEL_1950"
 set_cosmetic_tag = NEL_UK
 
 # Starting tech
@@ -24,7 +24,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Leverett Saltonstall"
 	desc = ""
-	picture = "gfx/leaders/NEK/Leverett_Salton_Stole.dds"
+	picture = "gfx/leaders/NEL/Portrait_Leverett_Salton_Stole.dds"
 	expire = "1965.1.1"
 	ideology = illiberal_democracy
 	traits = {

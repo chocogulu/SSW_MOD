@@ -1,5 +1,5 @@
 ﻿capital = 427
-oob = "NOH_1936"
+oob = "HYD_1950"
 
 # Starting tech
 set_technology = {
@@ -22,7 +22,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Osman Ali Khan"
 	desc = ""
-	picture = "gfx/leaders/NOH/Osman_Ali_Khan.dds"
+	picture = "gfx/leaders/HYD/Portrait_Osman_Ali_Khan.dds"
 	expire = "1965.1.1"
 	ideology = monarchy
 	traits = {

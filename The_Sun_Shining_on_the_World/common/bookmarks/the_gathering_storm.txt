@@ -6,7 +6,7 @@ bookmarks = {
 		picture = ""
 		default_country = "JAP"
 
-		"WAU"={
+		"FSA"={
 			history = ""
 			ideology = fascism
 			ideas = {
@@ -17,7 +17,7 @@ bookmarks = {
 			}
 		}
 		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
+			history = ""
 			ideology = fascism
 			ideas = {
 			}
@@ -26,7 +26,7 @@ bookmarks = {
 			}
 		}
 		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
+			history = ""
 			ideology = fascism
 			ideas = {
 			}
@@ -34,15 +34,15 @@ bookmarks = {
 			}
 		}
 		"JAP"={
-			history = "JAP_GATHERING_STORM_DESC"
+			history = ""
 			ideology = authoritative_democracy
 			ideas = {
 			}
 			focuses = {
 			}
 		}
-		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
+		"VFR"={
+			history = ""
 			ideology = fascism
 			ideas = {
 			}
@@ -59,7 +59,7 @@ bookmarks = {
 
 		}
 		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
+			history = ""
 			ideology = democratic
 			ideas = {
 			}
@@ -72,7 +72,7 @@ bookmarks = {
 
 
 		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = ""
 		}
 
 ###############################################################################
@@ -86,7 +86,7 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"WSL"={
+		"ALF"={
 			minor = yes
 			history = ""
 			ideology = authoritative_democracy
@@ -116,7 +116,7 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"CRE"={
+		"CHI"={
 			minor = yes
 			history = ""
 			ideology = democratic
@@ -126,7 +126,7 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"AGF"={
+		"RCH"={
 			minor = yes
 			history = ""
 			ideology = authoritative_democracy
@@ -136,7 +136,7 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"ING"={
+		"NIN"={
 			minor = yes
 			history = ""
 			ideology = neutrality
@@ -146,7 +146,7 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"PRI"={
+		"PIN"={
 			minor = yes
 			history = ""
 			ideology = democratic

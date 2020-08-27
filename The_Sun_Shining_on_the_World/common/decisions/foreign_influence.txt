@@ -81,7 +81,7 @@ foreign_influence = {
 						OR = {
 							tag = CAN
 							tag = SAF
-							tag = RAJ
+							tag = IND
 							tag = AST
 							tag = NZL
 						}
@@ -146,7 +146,7 @@ foreign_influence = {
 						OR = {
 							tag = CAN
 							tag = SAF
-							tag = RAJ
+							tag = IND
 							tag = AST
 							tag = NZL
 						}
@@ -318,7 +318,7 @@ foreign_influence = {
 						OR = {
 							tag = CAN
 							tag = SAF
-							tag = RAJ
+							tag = IND
 							tag = AST
 							tag = NZL
 						}
@@ -388,7 +388,7 @@ foreign_influence = {
 						OR = {
 							tag = CAN
 							tag = SAF
-							tag = RAJ
+							tag = IND
 							tag = AST
 							tag = NZL
 						}
@@ -509,5 +509,4 @@ foreign_influence = {
 		target_non_existing = yes
 		target_array = occupied_countries
 	}
-}
 }

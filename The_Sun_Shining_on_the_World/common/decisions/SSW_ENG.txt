@@ -19,10 +19,10 @@ ENG_USA_civil_war = {
 		}
 		complete_effect = { declare_war_on = {type = annex_everything target = UTC } }
 	}
-	ENG_CAN_avoid_WAU = {
+	ENG_CAN_avoid_FSS = {
 		icon = generic_operation
 		available = {
-			CAN = { has_war_with = WAU }
+			CAN = { has_war_with = FSA }
 		}
 		visible = {
 			has_completed_focus = ENG_politics_9
@@ -33,16 +33,16 @@ ENG_USA_civil_war = {
 		fire_only_once = yes
 		days_remove = 180
 		targeted_modifier = {
-			tag = WAU
+			tag = FSA
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
-		complete_effect = { declare_war_on = {type = annex_everything target = WAU } }
+		complete_effect = { declare_war_on = {type = annex_everything target = FSA } }
 	}
-	ENG_CAN_avoid_WSL = {
+	ENG_CAN_avoid_ALF = {
 		icon = generic_operation
 		available = {
-			CAN = { has_war_with = WSL }
+			CAN = { has_war_with = ALF }
 		}
 		visible = {
 			has_completed_focus = ENG_politics_9
@@ -53,10 +53,10 @@ ENG_USA_civil_war = {
 		fire_only_once = yes
 		days_remove = 180
 		targeted_modifier = {
-			tag = WSL
+			tag = ALF
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
-		complete_effect = { declare_war_on = {type = annex_everything target = WSL } }
+		complete_effect = { declare_war_on = {type = annex_everything target = ALF } }
 	}
 }

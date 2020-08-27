@@ -1,5 +1,5 @@
 ﻿capital = 431
-oob = "ING_1950"
+oob = "NIN_1950"
 
 # Starting tech
 set_technology = {
@@ -22,7 +22,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Subhas Chandra Bose"
 	desc = ""
-	picture = "gfx/leaders/ING/Sebastiaan_Dravoce.dds"
+	picture = "gfx/leaders/NIN/Portrait_Subhas_Chandra_Bose.dds"
 	expire = "1965.1.1"
 	ideology = dictatorship
 	traits = {

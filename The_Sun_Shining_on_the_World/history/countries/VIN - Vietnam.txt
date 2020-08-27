@@ -104,7 +104,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Go Din Diem"
 	desc = ""
-	picture = "gfx/leaders/VIN/Go-Din-Diem.dds"
+	picture = "gfx/leaders/VIN/Portrait_Go_Din_Diem.dds"
 	expire = "1953.3.1"
 	ideology = illiberal_democracy
 	traits = {
@@ -122,6 +122,3 @@ create_country_leader = {
 		
 	}
 }
-
-
-

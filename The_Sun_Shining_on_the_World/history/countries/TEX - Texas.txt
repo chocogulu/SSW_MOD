@@ -1,6 +1,6 @@
 ﻿capital = 375
 
-oob = "ROT_1950"
+oob = "TEX_1950"
 
 # Starting tech
 set_technology = {
@@ -23,7 +23,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Ralph Webster Yarborough"
 	desc = ""
-	picture = "gfx/leaders/ROT/Alan_Shivers..dds"
+	picture = "gfx/leaders/TEX/Portrait_Ralph_Webster_Yarborough.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

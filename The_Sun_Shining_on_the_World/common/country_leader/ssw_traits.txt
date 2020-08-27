@@ -1,5 +1,4 @@
 leader_traits = {
-
 	Drug_addict = {
 	        random = no
 		political_power_factor = -0.50
@@ -9,7 +8,7 @@ leader_traits = {
 	Air_Force_founder = {
 	        random = no
 		air_doctrine_factor = -0.10
-	}　
+	}
 	Charisma = {
 	        random = no
 		stability_factor = 0.2

@@ -20,7 +20,7 @@ country_event = {
 			UKR = {
 				add_ideas = Allied_forces
 			}
-			BLR = {
+			BAL = {
 				add_ideas = Allied_forces
 			}
 			MOS = {
@@ -59,7 +59,7 @@ country_event = {
 			UKR = {
 				add_ideas = recessive_Army
 			}
-			BLR = {
+			BAL = {
 				add_ideas = recessive_Army
 			}
 			MOS = {

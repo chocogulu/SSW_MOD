@@ -1,5 +1,5 @@
 ﻿capital = 425
-oob = "KOT_1950"
+oob = "TRA_1950"
 
 # Starting tech
 set_technology = {
@@ -22,7 +22,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Balarama Varma II"
 	desc = ""
-	picture = "gfx/leaders/KOT/05.dds"
+	picture = "gfx/leaders/TRA/Portrait_Balarama_Varma_II.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {

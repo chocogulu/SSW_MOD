@@ -1,6 +1,6 @@
 ﻿capital = 335 #Jakarta
 
-oob = "INS_1950"
+#oob = "INS_1950"
 
 set_research_slots = 2
 
@@ -117,7 +117,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sukarno"
 	desc = ""
-	picture = "gfx/leaders/INS/01.dds"
+	picture = "gfx/leaders/INS/Portrait_Sukarno.dds"
 	expire = "1953.3.1"
 	ideology = conservatism_ideology
 	traits = {

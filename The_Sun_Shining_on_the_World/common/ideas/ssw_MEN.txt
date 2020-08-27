@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		MEN_idea_1 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = De_Wang
+			
+			modifier = {
+				stability_factor = 0.15
+			}
+		}
+	}
+}

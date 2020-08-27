@@ -139,7 +139,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Paul Emil von Lettow-Vorbeck"
-	picture = "Vorbeck.dds"
+	picture = "Portrait_Paul_Emil_von_Lettow_Vorbeck.dds"
 	expire = "1965.1.1"
 	ideology = military
 }

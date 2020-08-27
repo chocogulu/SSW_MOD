@@ -1,15 +1,6 @@
 ﻿capital = 26
 
-oob = "FRA_1950"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "FRA_1936_naval_mtg"
-		set_war_support = 0.1
-	else = {
-		set_naval_oob = "FRA_1936_naval_legacy"
-		set_war_support = 0.15
-	}
-}
+oob = "VFR_1950"
 
 set_research_slots = 3
 set_stability = 0.5
@@ -153,7 +144,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Philippe Petain"
 	desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-	picture = "87.dds"
+	picture = "gfx/leaders/VFR/Portrait_Philippe_Petain.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -370,7 +361,7 @@ if = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { FRA }
+		nationalities = { VFR }
 	}
 
 	create_operative_leader = {
@@ -380,7 +371,7 @@ if = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { FRA }
+		nationalities = { VFR }
 	}
 
 	create_operative_leader = {
@@ -389,7 +380,7 @@ if = {
 		traits = { operative_infiltrator }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { FRA }
+		nationalities = { VFR }
 	}
 
 	create_operative_leader = {
@@ -398,7 +389,7 @@ if = {
 		traits = { }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { FRA }
+		nationalities = { VFR }
 	}
 }
 

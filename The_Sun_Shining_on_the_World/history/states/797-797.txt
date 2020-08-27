@@ -5,9 +5,6 @@ state={
 
 	history={
 		owner = SIA
-		victory_points = {
-			
-		}
 		buildings = {
 
 		}

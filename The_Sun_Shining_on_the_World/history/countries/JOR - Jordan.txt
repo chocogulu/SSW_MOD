@@ -31,7 +31,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Amin al-Husseini"
 	desc = ""
-	picture = "gfx/leaders/JOR/03_1.dds"
+	picture = "gfx/leaders/JOR/Portrait_Amin_al_Husseini.dds"
 	ideology = fascism_ideology
 	traits = {
 		#

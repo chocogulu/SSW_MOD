@@ -1,6 +1,6 @@
 ﻿capital = 371
 
-oob = "NOS_1950"
+oob = "LUI_1950"
 
 # Starting tech
 set_technology = {
@@ -25,7 +25,7 @@ set_popularities = {
 create_country_leader = {
 	name = "James Houston Davis"
 	desc = ""
-	picture = "gfx/leaders/NOS/01.dds"
+	picture = "gfx/leaders/LUI/Portrait_James_Houston_Davis.dds"
 	expire = "1965.1.1"
 	ideology = conservatism_ideology
 	traits = {

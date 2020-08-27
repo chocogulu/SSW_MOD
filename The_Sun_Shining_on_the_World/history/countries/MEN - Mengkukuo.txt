@@ -1,6 +1,6 @@
 ﻿capital = 330
 
-oob = "MEN_1950"
+#oob = "MEN_1950"
 set_cosmetic_tag = Great_Mongol
 
 set_technology = {
@@ -38,7 +38,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "李守信"
 	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
-	picture = "GFX/leaders/MEN/李守信.dds"
+	picture = "GFX/leaders/MEN/Portrait_Li_Shouxin.dds"
 	expire = "1965.1.1"
 	ideology = illiberal_democracy
 	traits = {

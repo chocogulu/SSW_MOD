@@ -1,0 +1,169 @@
+ideas = {
+    country = {
+        Review of the French economy = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = Spr_seize_the_gold_reserves.png
+
+            modifier = {consumer_goods_factor = -0.03}
+        }
+    }
+}
+
+ideas = {
+    country = {
+        Pétain_Law = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = Fra_undividable.png
+
+            modifier = {production_speed_buildings_factor = 0.1}
+        }
+    }
+}
+
+ideas = {
+    country = {
+          Economic_revolution = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = Generic_production_bonus.png
+
+            modifier = {production_speed_buildings_factor = -0.05}
+        }
+    }
+}
+
+ideas = {
+    country = {
+          Reichsbank = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = Generic_goods_red_bonus.png
+
+            modifier = {consumer_goods_factor = 0.02}
+        }
+    }
+}
+
+ideas = {
+    country = {
+          France Nazism = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = Generic_fascism_drift_bonus.png
+
+            modifier = {enemy_partisan_effect = -0.10}
+        }
+    }
+}
+
+ideas = {
+    country = {
+          dictator = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = Triumphant_will.png
+
+            modifier = {political_power_gain = -0.25}
+        }
+    }
+}
+
+ideas = {
+    country = {
+        Integrated French political party = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = Idea_generic_deal_with_the_devil.png
+
+            modifier = {stability_weekly = 0.01}
+        }
+    }
+}
+
+ideas = {
+    country = {
+          Saint of the Salvation = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = Victors_of_the_Great_War.png
+
+            modifier = {planning_speed = 0.20}
+          }
+      }
+  }
+
+  ideas = {
+      country = {
+            Beyond the Atlantic = {
+
+              allowed = {always = no}
+
+              removal_cost = -1
+
+              allowed_civil_war = {always = yes}
+
+              picture = Generic_navy_bonus.png
+
+              modifier = {industrial_capacity_dockyard = 0.20}
+            }
+        }
+    }
+
+    ideas = {
+        country = {
+              Atlantic wall = {
+
+                allowed = {always = no}
+
+                removal_cost = -1
+
+                allowed_civil_war = {always = yes}
+
+                picture = Fortification_Focus.png
+
+                modifier = {production_speed_coastal_bunker_factor = 0.20}
+              }
+          }
+      }

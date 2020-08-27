@@ -1,6 +1,6 @@
 ﻿capital = 551
 
-oob = "IES_1950"
+oob = "SUD_1950"
 set_cosmetic_tag = SUD_ITAandEGY
 
 # Starting tech
@@ -23,7 +23,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Ismail al-Azhari"
 	desc = "POLITICS_EDWIN_BARCLAY_DESC"
-	picture = "gfx/leaders/IES/06.dds"
+	picture = "gfx/leaders/SUD/Portrait_Ismail_al_Azhari.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

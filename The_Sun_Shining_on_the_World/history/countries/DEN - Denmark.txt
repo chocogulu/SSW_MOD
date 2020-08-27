@@ -1,6 +1,6 @@
 ﻿capital = 37
 
-oob = "DEN_1950"
+#oob = "DEN_1950"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "DEN_1936_naval_mtg"
@@ -65,7 +65,7 @@ set_convoys = 40
 create_country_leader = {
 	name = "Thorvald Stauning"
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Portrait_Denmark_Thorvald_Stauning.dds"
+	picture = "/Portrait_Denmark_Thorvald_Stauning.dds"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
@@ -109,7 +109,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hans Hedtoft"
 	desc = ""
-	picture = "gfx/leaders/DEN/Hans_HedtoftDEN.dds"
+	picture = "gfx/leaders/DEN/Portrait_Hans_Hedtoft.dds"
 	expire = "1965.1.1"
 	ideology = social_democracy_ideology
 	traits = {
