@@ -176,7 +176,7 @@ set_popularities = {
 create_country_leader = {
 	name = "下位春吉"
 	desc = ""
-	picture = "Shimoi.dds"
+	picture = "Portrait_Harukichi_Shimoi.dds"
 	expire = "1957.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -186,7 +186,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "野坂参三"
 	desc = ""
-	picture = "Nosaka.dds"
+	picture = "Portrait_Sanzo_Nosaka.dds"
 	expire = "1989.1.1"
 	ideology = marxism
 	traits = {
@@ -196,7 +196,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "勝正憲"
 	desc = ""
-	picture = "Katsu.dds"
+	picture = "Portrait_Masanori_Katsu.dds"
 	expire = "1957.1.1"
 	ideology = liberalism #立憲民政党
 	traits = {
@@ -206,7 +206,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "徳川圀順"
 	desc = ""
-	picture = "tokugawa.dds"
+	picture = "Portrait_Kuniyuki_Tokugawa.dds"
 	expire = "1989.1.1"
 	ideology = illiberal_democracy #将軍派
 	traits = {
@@ -216,7 +216,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "無政府主義連盟"
 	desc = ""
-	picture = "anarchism.dds"
+	picture = "Portrait_Anarchist_League.dds"
 	expire = "1989.1.1"
 	ideology = social_anarchism
 	traits = {
@@ -226,7 +226,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Paul Hausser"
 	desc = ""
-	picture = "Paul.dds"
+	picture = "Portrait_Paul_Hausser.dds"
 	expire = "1989.1.1"
 	ideology = nazism
 	traits = {
@@ -236,7 +236,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "軍事政権"
 	desc = ""
-	picture = "military.dds"
+	picture = "Portrait_Military_Regime.dds"
 	expire = "1989.1.1"
 	ideology = militarism
 	traits = {
@@ -246,7 +246,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "浅沼稲次郎"
 	desc = ""
-	picture = "Asanuma.dds"
+	picture = "Portrait_Inejiro_Asanuma.dds"
 	expire = "1989.1.1"
 	ideology = social_democracy
 	traits = {
@@ -256,7 +256,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "久原房之助"
 	desc = ""
-	picture = "Kuhara.dds"
+	picture = "Portrait_Fusanosuke_Kuhara.dds"
 	expire = "1989.1.1"
 	ideology = conservatism_ideology
 	traits = {
@@ -267,7 +267,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "山下奉文" #陸軍元帥
-		picture = "30.dds"
+		picture = "Portrait_Tomoyuki_Yamashita.dds"
 	traits = {
 		trickster trait_engineer brilliant_strategist politically_connected
 	}
@@ -280,7 +280,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "武藤章" 
-		picture = "11.dds"
+		picture = "Portrait_Akira_Muto.dds"
 	traits = { career_officer  }
 	skill = 4
 	attack_skill = 3
@@ -291,7 +291,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "田中静壱"
-		picture = "09.dds"
+		picture = "Portrait_Shizuichi_Tanaka.dds"
 	traits = { trickster career_officer infantry_officer }
 	skill = 5
 	attack_skill = 5
@@ -302,7 +302,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "東久邇宮稔彦王"
-	picture = "13.dds"
+	picture = "Portrait_Prince_Naruhiko_Higashikuni.dds"
 	traits = { JAP_samurai_lineage politically_connected }
 	skill = 4
 	attack_skill = 4
@@ -313,7 +313,7 @@ create_corps_commander = {
 
 create_field_marshal = {
 	name = "板垣征四郎" #陸軍元帥
-		picture = "20.dds"
+		picture = "Portrait_Seishiro_Itagaki.dds"
 	traits = { JAP_samurai_lineage inflexible_strategist trait_reckless }
 	skill = 4
 	attack_skill = 4
@@ -324,7 +324,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "酒井隆"
-		picture = "03.dds"
+		picture = "Portrait_Takashi_Sakai.dds"
 	traits = { infantry_officer trait_reckless }
 	skill = 4
 	attack_skill = 3
@@ -335,7 +335,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "安達二十三"
-		picture = "17.dds"
+		picture = "Portrait_Hatazo_Adachi.dds"
 	traits = { trickster JAP_samurai_lineage trait_reckless infantry_officer }
 	skill = 3
 	attack_skill = 2
@@ -346,7 +346,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "樋口季一郎"
-		picture = "28.dds"
+		picture = "Portrait_Kiichiro_Higuchi.dds"
 	traits = { career_officer trait_cautious }
 	skill = 3
 	attack_skill = 3
@@ -357,7 +357,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "本間雅晴"
-		picture = "23.dds"
+		picture = "Portrait_Masaharu_Homma.dds"
 	traits = { media_personality trait_cautious }
 	skill = 3
 	attack_skill = 3
@@ -368,7 +368,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "飯村穣"
-		picture = "31.dds"
+		picture = "Portrait_Jo_Iimura.dds"
 	traits = { career_officer }
 	skill = 4
 	attack_skill = 3
@@ -379,7 +379,7 @@ create_corps_commander = {
 
 create_field_marshal = {
 	name = "今村均" #陸軍元帥
-		picture = "14.dds"
+		picture = "Portrait_Hitoshi_Imamura.dds"
 	traits = {  commando career_officer infantry_officer }
 	skill = 4
 	attack_skill = 5
@@ -390,7 +390,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "神田正種"
-		picture = "04.dds"
+		picture = "Portrait_Masatane_Kanda.dds"
 	traits = { trait_cautious }
 	skill = 3
 	attack_skill = 3
@@ -401,7 +401,7 @@ create_corps_commander = {
 
 create_field_marshal = {
 	name = "畑俊六" #陸軍元帥
-		picture = "19.dds"
+		picture = "Portrait_Shunroku_Hata.dds"
 	traits = { offensive_doctrine JAP_samurai_lineage }
 	skill = 5
 	attack_skill = 4
@@ -412,7 +412,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "朝香宮鳩彦王"
-		picture = "29.dds"
+		picture = "Portrait_Prince_Yasuhiko_Asaka.dds"
 	traits = { trait_cautious }
 	skill = 2
 	attack_skill = 2
@@ -434,7 +434,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "岡部直三郎"
-		picture = "25.dds"
+		picture = "Portrait_Naozaburo_Okabe.dds"
 	traits = { trait_cautious }
 	skill = 2
 	attack_skill = 1
@@ -445,7 +445,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "阿南惟幾"
-		picture = "01.dds"
+		picture = "Portrait_Korechika_Anami.dds"
 	traits = { trait_cautious }
 	skill = 3
 	attack_skill = 3
@@ -456,7 +456,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "小畑英良"
-		picture = "16.dds"
+		picture = "Portrait_Hideyoshi_Obata.dds"
 	traits = { trait_cautious }
 	skill = 3
 	attack_skill = 2
@@ -467,7 +467,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "喜多誠一"
-		picture = "18.dds"
+		picture = "Portrait_Seiichi_Kita.dds"
 	traits = { trait_cautious }
 	skill = 3
 	attack_skill = 2
@@ -478,7 +478,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "栗林忠道"
-		picture = "02.dds"
+		picture = "Portrait_Tadamichi_Kuribayashi.dds"
 	traits = { trait_cautious }
 	skill = 3
 	attack_skill = 2
@@ -489,7 +489,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "下村定"
-		picture = "21.dds"
+		picture = "Portrait_Sadamu_Shimomura.dds"
 	traits = { trait_cautious }
 	skill = 1
 	attack_skill = 1
@@ -500,7 +500,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "木村兵太郎"
-		picture = "12.dds"
+		picture = "Portrait_Heitaro_Kimura.dds"
 	traits = { trait_cautious }
 	skill = 2
 	attack_skill = 2
@@ -511,7 +511,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "鈴木宗作"
-		picture = "24.dds"
+		picture = "Portrait_Sosaku_Suzuki.dds"
 	traits = { trait_cautious }
 	skill = 2
 	attack_skill = 2
@@ -522,7 +522,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "牛島満"
-		picture = "27.dds"
+	picture = "Portrait_Mitsuru_Ushijima.dds"
 	traits = { trait_cautious }
 	skill = 3
 	attack_skill = 3
@@ -533,7 +533,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "佐藤賢了"
-		picture = "10.dds"
+		picture = "Portrait_Kenryo_Sato.dds"
 	traits = { trait_cautious }
 	skill = 2
 	attack_skill = 2
@@ -1257,7 +1257,7 @@ if = {
 				rear_1_custom_slot = ship_mine_layer_sub
 			}
 		}
-}
+
 	# 1939 Start #			
 	1939.1.1 = {
 		if = {
