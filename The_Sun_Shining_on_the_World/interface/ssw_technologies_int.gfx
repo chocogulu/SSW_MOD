@@ -1,0 +1,33 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_semi_modern_light_cruiser"
+		textureFile = "gfx/interface/technologies/semi_modern_light_cruiser.dds"
+	}
+#		spriteType = {
+#		name = "GFX_semi_modern_light_carrier"
+#		textureFile = "gfx/interface/technologies/semi_modern_light_carrier.dds"
+#	}
+		spriteType = {
+		name = "GFX_semi_modern_heavy_cruiser"
+		textureFile = "gfx/interface/technologies/semi_modern_heavy_cruiser.dds"
+	}
+		spriteType = {
+		name = "GFX_semi_modern_destroyer"
+		textureFile = "gfx/interface/technologies/semi_modern_destroyer.dds"
+	}
+		spriteType = {
+		name = "GFX_semi_modern_carrier"
+		textureFile = "gfx/interface/technologies/semi_modern_carrier.dds"
+	}
+		spriteType = {
+		name = "GFX_semi_modern_battleship"
+		textureFile = "gfx/interface/technologies/semi_modern_battleship.dds"
+	}
+
+
+}
+
+
+
+
+

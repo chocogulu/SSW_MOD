@@ -8,11 +8,11 @@ news_event = { #news_eventのはじまりだよ的な
 	title = 01_news.1.t #タイトル 盧溝橋事件のイベントなら「盧溝橋」t
 	desc = 01_news.1.d #イベント構文
 	picture = GFX_news_event_07 #イベントの画像
-	
+	is_triggered_only = yes
 	major = yes
 	
 	trigger = { #イベントが起きるきっかけ
-		date > 1950.1.2 #1952.7.19　#日にち
+		date > 1952.1.2 #1952.7.19　#日にち
 
 		country_exists = JAP #この国家が存在しているか
 		country_exists = ITA

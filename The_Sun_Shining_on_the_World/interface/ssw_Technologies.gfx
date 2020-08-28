@@ -1,0 +1,96 @@
+spriteTypes = {
+#	spriteType = {
+#		name = "GFX_unit_category_bomber"
+#		texturefile = "gfx/interface/category_bomber.dds"
+#		legacy_lazy_load = no
+#	}	
+#MtG
+	SpriteType = {
+		name = "GFX_tech_ship_hull_heavy_5_medium"
+		texturefile = "gfx/interface/technologies/semi_modern_battleship.dds"
+	}	
+	SpriteType = {
+		name = "GFX_tech_ship_hull_carrier_5_medium"
+		texturefile = "gfx/interface/technologies/semi_modern_carrier.dds"
+	}	
+	SpriteType = {
+		name = "GFX_tech_ship_hull_cruiser_5_medium"
+		texturefile = "gfx/interface/technologies/semi_modern_light_cruiser.dds"
+	}	
+	SpriteType = {
+		name = "GFX_tech_ship_hull_submarine_5_medium"
+		texturefile = "gfx/interface/technologies/semi_modern_submarine.dds"
+	}	
+	SpriteType = {
+		name = "GFX_tech_ship_hull_light_5_medium"
+		texturefile = "gfx/interface/technologies/semi_modern_destroyer.dds"
+	}		
+	SpriteType = {
+		name = "GFX_JAP_tech_ship_hull_heavy_5_medium"
+		texturefile = "gfx/interface/technologies/JAP_semi_modern_battleship.dds"
+	}	
+	SpriteType = {
+		name = "GFX_JAP_tech_ship_hull_carrier_5_medium"
+		texturefile = "gfx/interface/technologies/JAP_semi_modern_carrier.dds"
+	}	
+	SpriteType = {
+		name = "GFX_JAP_tech_ship_hull_cruiser_5_medium"
+		texturefile = "gfx/interface/technologies/JAP_semi_modern_light_cruiser.dds"
+	}	
+	SpriteType = {
+		name = "GFX_JAP_tech_ship_hull_submarine_5_medium"
+		texturefile = "gfx/interface/technologies/JAP_semi_modern_submarine.dds"
+	}	
+	SpriteType = {
+		name = "GFX_JAP_tech_ship_hull_light_5_medium"
+		texturefile = "gfx/interface/technologies/JAP_semi_modern_destroyer.dds"
+	}	
+	SpriteType = {
+		name = "GFX_JAP_ship_hull_cruiser_5_medium"
+		texturefile = "gfx/interface/technologies/JAP_semi_modern_light_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_ship_hull_cruiser_5_capital_medium"
+		texturefile = "gfx/interface/technologies/JAP_semi_modern_heavy_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_tech_ship_hull_carrier_5_medium"
+		texturefile = "gfx/interface/technologies/USA_semi_modern_carrier.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_tech_ship_hull_submarine_5_medium"
+		texturefile = "gfx/interface/technologies/USA_semi_modern_submarine.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_tech_ship_hull_heavy_5_medium"
+		texturefile = "gfx/interface/technologies/GER_semi_modern_battleship.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_tech_ship_hull_carrier_5_medium"
+		texturefile = "gfx/interface/technologies/GER_semi_modern_carrier.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_tech_ship_hull_cruiser_5_medium"
+		texturefile = "gfx/interface/technologies/GER_semi_modern_light_cruiser.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_tech_ship_hull_submarine_5_medium"
+		texturefile = "gfx/interface/technologies/GER_semi_modern_submarine.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_tech_ship_hull_light_5_medium"
+		texturefile = "gfx/interface/technologies/GER_semi_modern_destroyer.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_ship_hull_cruiser_5_medium"
+		texturefile = "gfx/interface/technologies/GER_semi_modern_light_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_ship_hull_cruiser_5_capital_medium"
+		texturefile = "gfx/interface/technologies/GER_semi_modern_heavy_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_tech_ship_hull_submarine_5_medium"
+		texturefile = "gfx/interface/technologies/SOV_semi_modern_submarine.dds"
+	}	
+}
