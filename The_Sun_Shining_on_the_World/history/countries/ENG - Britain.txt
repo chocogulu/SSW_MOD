@@ -1,6 +1,6 @@
 ﻿capital = 126
 
-#set_oob = "ENG_1950"
+set_oob = "ENG_1950"
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
