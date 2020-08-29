@@ -1,0 +1,20 @@
+state={
+	id=900
+	name="STATE_900"
+	provinces={
+		1414 4347 4826 7721 7865 10305 10625 12183 12553 
+	}
+	manpower=343953
+	history={
+		owner = ALF
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 1
+		}
+		add_core_of = ALF
+
+	}
+	buildings_max_level_factor=1.000
+	state_category = town
+}

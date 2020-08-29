@@ -1,0 +1,26 @@
+
+state={
+	id=914
+	name="STATE_914"
+	provinces={
+		734 3702 3733 3747 6707 9664 11650 11654 11680 
+	}
+	manpower=578738
+	history={
+		owner = NEL
+		buildings = {
+			infrastructure = 6
+			arms_factory = 3
+			industrial_complex = 5
+			air_base = 6
+
+		}
+		add_core_of = NEL
+		victory_points = {
+			11654 3 
+		}
+
+	}
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

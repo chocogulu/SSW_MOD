@@ -221,7 +221,6 @@ NIN = "countries/National India.txt"	#国民インド
 PIN = "countries/People India.txt"		#人民インド
 BOM = "countries/Bombay.txt"			#ボンベイ
 HYD = "countries/Hyderabad.txt"			#ハイデラバード
-MDR = "countries/Madras.txt"			#マドラス
 MDU = "countries/Madurai.txt"			#マドゥライ
 TRA = "countries/Travancore.txt"		#トラヴァンコール
 
@@ -258,3 +257,4 @@ NFL = "countries/Newfoundland.txt"		#ニューファンドランド
 BAL = "countries/Balt.txt"				#バルト
 LES = "countries/Lesotho.txt"			#レソト
 SWL = "countries/Swaziland.txt"			#スワジランド(現:エスワティニ)
+MYS = "countries/Mysore.txt"            #マイソール

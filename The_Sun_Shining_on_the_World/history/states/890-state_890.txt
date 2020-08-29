@@ -1,0 +1,20 @@
+state={
+	id=890
+	name="STATE_890"
+	provinces={
+		1949 2036 2092 7080 10807 
+	}
+	manpower=4573993
+		state_category = rural
+	history={
+		owner = PIN
+		add_core_of = PIN
+		add_core_of = NIN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 1
+		}
+	}
+	buildings_max_level_factor=1.000
+}
