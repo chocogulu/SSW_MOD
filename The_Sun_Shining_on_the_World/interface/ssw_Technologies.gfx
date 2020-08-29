@@ -93,4 +93,81 @@ spriteTypes = {
 		name = "GFX_SOV_tech_ship_hull_submarine_5_medium"
 		texturefile = "gfx/interface/technologies/SOV_semi_modern_submarine.dds"
 	}	
+
+	SpriteType = {
+		name = "GFX_paratroopers4_medium"
+		texturefile = "gfx/interface/technologies/paratroopers4.dds"
+	}	
+	SpriteType = {
+		name = "GFX_paratroopers5_medium"
+		texturefile = "gfx/interface/technologies/paratroopers5.dds"
+	}	
+	SpriteType = {
+		name = "GFX_paratroopers6_medium"
+		texturefile = "gfx/interface/technologies/paratroopers6.dds"
+	}	
+	SpriteType = {
+		name = "GFX_paratroopers7_medium"
+		texturefile = "gfx/interface/technologies/paratroopers7.dds"
+	}	
+	SpriteType = {
+		name = "GFX_paratroopers8_medium"
+		texturefile = "gfx/interface/technologies/paratroopers8.dds"
+	}	
+	SpriteType = {
+		name = "GFX_marines4_medium"
+		texturefile = "gfx/interface/technologies/marines4.dds"
+	}	
+	SpriteType = {
+		name = "GFX_marines5_medium"
+		texturefile = "gfx/interface/technologies/marines5.dds"
+	}	
+	SpriteType = {
+		name = "GFX_marines6_medium"
+		texturefile = "gfx/interface/technologies/marines6.dds"
+	}	
+	SpriteType = {
+		name = "GFX_marines7_medium"
+		texturefile = "gfx/interface/technologies/marines7.dds"
+	}	
+	SpriteType = {
+		name = "GFX_marines8_medium"
+		texturefile = "gfx/interface/technologies/marines8.dds"
+	}	
+	SpriteType = {
+		name = "GFX_tech_mountaineers4_medium"
+		texturefile = "gfx/interface/technologies/mountain4.dds"
+	}	
+	SpriteType = {
+		name = "GFX_tech_mountaineers5_medium"
+		texturefile = "gfx/interface/technologies/mountain5.dds"
+	}	
+	SpriteType = {
+		name = "GFX_tech_mountaineers6_medium"
+		texturefile = "gfx/interface/technologies/mountain6.dds"
+	}	
+	SpriteType = {
+		name = "GFX_tech_mountaineers7_medium"
+		texturefile = "gfx/interface/technologies/mountain7.dds"
+	}	
+	SpriteType = {
+		name = "GFX_tech_mountaineers8_medium"
+		texturefile = "gfx/interface/technologies/mountain8.dds"
+	}	
+	SpriteType = {
+		name = "GFX_mechanised_infantry4_medium"
+		texturefile = "gfx/interface/technologies/mechanized_equipment_4.dds"
+	}	
+	SpriteType = {
+		name = "GFX_mechanised_infantry5_medium"
+		texturefile = "gfx/interface/technologies/mechanized_equipment_5.dds"
+	}	
+	SpriteType = {
+		name = "GFX_mechanised_infantry6_medium"
+		texturefile = "gfx/interface/technologies/mechanized_equipment_6.dds"
+	}	
+	SpriteType = {
+		name = "GFX_mechanised_infantry7_medium"
+		texturefile = "gfx/interface/technologies/mechanized_equipment_7.dds"
+	}	
 }
