@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = TRA
+		owner = MYS
 		victory_points = {
 			8011 15
 		}
@@ -22,7 +22,7 @@ state={
 		add_core_of = PIN
 		add_core_of = NIN
 		add_core_of = HYD
-		add_core_of = TRA
+		add_core_of = MYS
 
 	}
 

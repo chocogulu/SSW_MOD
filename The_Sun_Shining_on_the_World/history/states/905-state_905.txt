@@ -1,0 +1,23 @@
+
+state={
+	id=905
+	name="STATE_905"
+	provinces={
+		2082 3960 4577 5001 5085 6968 7981 9829 9920 10778 10861 
+	}
+	manpower=560932
+	history={
+		owner = TEX
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = TEX
+		victory_points = {
+			3960 10 
+		}
+	}
+	state_category=town
+	buildings_max_level_factor=1.000
+}

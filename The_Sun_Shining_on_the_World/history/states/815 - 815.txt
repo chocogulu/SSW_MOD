@@ -4,7 +4,7 @@ state={
 	name="STATE_815"
 
 	history={
-		owner = MDR
+		owner = MDU
 		victory_points = {
 		10278 10
 		}
@@ -16,7 +16,7 @@ state={
 		}
 		add_core_of = NIN
 		add_core_of = PIN
-		add_core_of = MDR
+		add_core_of = MDU
 	}
 
 	provinces={

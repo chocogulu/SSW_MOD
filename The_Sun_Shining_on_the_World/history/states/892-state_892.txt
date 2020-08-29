@@ -1,0 +1,21 @@
+state={
+	id=892
+	name="STATE_892"
+	provinces={
+		7411 10259 10799 
+	}
+		state_category = rural
+	manpower=3402233
+	history={
+		owner = HYD
+		add_core_of = PIN
+		add_core_of = NIN
+		add_core_of = HYD
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 1
+		}
+	}
+	buildings_max_level_factor=1.000
+}

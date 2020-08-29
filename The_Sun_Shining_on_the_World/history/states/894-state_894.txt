@@ -1,0 +1,19 @@
+state={
+	id=894
+	name="STATE_894"
+	provinces={
+		1059 1101 1538 4104 4513 9946 10060 10088 10116 10428 11924 12063 12462 
+	}
+	manpower=7849432
+		state_category = rural
+	history={
+		owner = NIN
+		add_core_of = PIN
+		add_core_of = NIN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+	}
+	buildings_max_level_factor=1.000
+}
