@@ -1,0 +1,3542 @@
+focus_tree = {
+	id = ssw_Italy_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+	#Focus for yutakanaitaria
+	focus = {
+		id = ITA_yutakanaitaria
+		icon = GFX_focus_generic_industry_3
+		x = 12
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_itariayonnkanenn }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_idea= Italy_4_year_plan }
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 4
+ add_building_construction = {
+ type = arms_factory
+ level = 4
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 4
+ add_building_construction = {
+ type = arms_factory
+ level = 4
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for kyuuzounokoujou
+	focus = {
+		id = ITA_kyuuzounokoujou
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_seisannkourituka }
+		mutually_exclusive = { focus = ITA_itariayonnkanenn }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 2
+ add_building_construction = {
+ type = arms_factory
+ level = 2
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for hokubusanngyou
+	focus = {
+		id = ITA_hokubusanngyou
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 1
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+prioritize = { 159 }
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 4
+ add_building_construction = {
+ type = industrial_complex
+ level = 4
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for nannbusanngyou
+	focus = {
+		id = ITA_nannbusanngyou
+		icon = GFX_goal_generic_construct_civilian
+		x = 5
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+prioritize = { 117 }
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 4
+ add_building_construction = {
+ type = industrial_complex
+ level = 4
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for kougyoukibannnokakuritu
+	focus = {
+		id = ITA_kougyoukibannnokakuritu
+		icon = GFX_goal_generic_production2
+		x = 3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_hokubusanngyou 
+		}
+		prerequisite = { 
+			focus = ITA_nannbusanngyou 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 4
+ add_building_construction = {
+ type = industrial_complex
+ level = 4
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category = industry
+}
+		}
+	}
+	#Focus for autoraada
+	focus = {
+		id = ITA_autoraada
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_kougyoukibannnokakuritu }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = outlarda
+add_idea = outlarda_after
+}
+		}
+	}
+	#Focus for tityuukaishotou
+	focus = {
+		id = ITA_tityuukaishotou
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_autoraada }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ prioritize = { 177 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 1 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 114 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 183 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 182 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 164 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 187 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 116 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for hokubusigenn
+	focus = {
+		id = ITA_hokubusigenn
+		icon = GFX_goal_generic_construction2
+		x = 1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_hokubusanngyou 
+			focus = ITA_nannbusanngyou 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource= { 
+type = iron
+amount = 40
+state = 159
+}
+		}
+	}
+	#Focus for nannbusigenn
+	focus = {
+		id = ITA_nannbusigenn
+		icon = GFX_focus_generic_aluminum
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_hokubusanngyou 
+			focus = ITA_nannbusanngyou 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource= { 
+type = steel
+amount = 40
+state = 117
+}
+		}
+	}
+	#Focus for zousennjinokakutyou
+	focus = {
+		id = ITA_zousennjinokakutyou
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 9
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = dockyard
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 4
+ add_building_construction = {
+ type = dockyard
+ level = 4
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for darumatia
+	focus = {
+		id = ITA_darumatia
+		icon = GFX_goal_generic_amphibious_assault
+		x = 9
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_zousennjinokakutyou }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+prioritize = { 103 }
+ limit = {
+ free_building_slots = {
+ building = dockyard
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 2
+ add_building_construction = {
+ type = dockyard
+ level = 2
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for minnkannzousennjo
+	focus = {
+		id = ITA_minnkannzousennjo
+		icon = GFX_focus_generic_navy_battleship2
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_darumatia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = dockyard
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 4
+ add_building_construction = {
+ type = dockyard
+ level = 4
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for shokuminntikaihatu
+	focus = {
+		id = ITA_shokuminntikaihatu
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_autoraada 
+			focus = ITA_minnkannzousennjo 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ prioritize = { 450 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 451 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 663 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 449 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 662 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 273 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 661 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 448 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for toripori
+	focus = {
+		id = ITA_toripori
+		icon = GFX_goal_generic_production
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_shokuminntikaihatu }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ prioritize = { 448 }
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = industrial_complex
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for minnkannkoujou
+	focus = {
+		id = ITA_minnkannkoujou
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_tityuukaishotou }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+prioritize = { 1 }
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 1
+ add_building_construction = {
+ type = industrial_complex
+ level = 1
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+prioritize = { 114 }
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 1
+ add_building_construction = {
+ type = industrial_complex
+ level = 1
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+prioritize = { 177 }
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 1
+ add_building_construction = {
+ type = industrial_complex
+ level = 1
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for gunnjitekikaihatu
+	focus = {
+		id = ITA_gunnjitekikaihatu
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_minnkannkoujou }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+prioritize = { 115 }
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 2
+ add_building_construction = {
+ type = arms_factory
+ level = 2
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+prioritize = { 116 }
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 2
+ add_building_construction = {
+ type = arms_factory
+ level = 2
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for minnkannsanngyou
+	focus = {
+		id = ITA_minnkannsanngyou
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		x = 1
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_minnkannkoujou }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+prioritize = { 187 }
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 2
+ add_building_construction = {
+ type = industrial_complex
+ level = 2
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+prioritize = { 183 }
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 2
+ add_building_construction = {
+ type = industrial_complex
+ level = 2
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for kuretazousennjo
+	focus = {
+		id = ITA_kuretazousennjo
+		icon = GFX_focus_generic_navy_battleship2
+		x = 1
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_tityuukaishotou 
+			focus = ITA_shokuminntikaihatu 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+prioritize = { 182 }
+ limit = {
+ free_building_slots = {
+ building = dockyard
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = dockyard
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for kitaafurikatetudou
+	focus = {
+		id = ITA_kitaafurikatetudou
+		icon = GFX_focus_generic_africa_infrastructure
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_toripori }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ prioritize = { 458 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 665 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 460 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 459 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 513 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 514 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 840 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ prioritize = { 841 }
+ limit = {
+ free_building_slots = {
+ building = infrastructure
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = infrastructure
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for etiopiakaihatu
+	focus = {
+		id = ITA_etiopiakaihatu
+		icon = GFX_focus_generic_africa_factory
+		x = 8
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_toripori }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			EAF= {
+random_owned_controlled_state={
+prioritize = { 271 }
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = industrial_complex
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+}
+		}
+	}
+	#Focus for higasiafurika5
+	focus = {
+		id = ITA_higasiafurika5
+		icon = GFX_goal_generic_construct_civilian
+		x = 8
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_etiopiakaihatu }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			EAF = {
+random_owned_controlled_state={
+prioritize = { 271 }
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 4
+ add_building_construction = {
+ type = arms_factory
+ level = 4
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+}
+		}
+	}
+	#Focus for juuminntonokyouryoku
+	focus = {
+		id = ITA_juuminntonokyouryoku
+		icon = GFX_goal_generic_improve_relations
+		x = 8
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_higasiafurika5 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=Cooperation_with_Residents
+		}
+	}
+	#Focus for shokuminntisinnshutu
+	focus = {
+		id = ITA_shokuminntisinnshutu
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 10
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_kitaafurikatetudou }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+prioritize = { 449 }
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = arms_factory
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for seisannkourituka
+	focus = {
+		id = ITA_seisannkourituka
+		icon = GFX_focus_mex_caudillo_private_armies
+		x = 12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_itariasanngyoushou }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 4
+ add_building_construction = {
+ type = arms_factory
+ level = 4
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for itariasanngyoushou
+	focus = {
+		id = ITA_itariasanngyoushou
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_autoraada 
+			focus = ITA_minnkannzousennjo 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= Economic_development_Ministry
+		}
+	}
+	#Focus for itariasikinozousenn
+	focus = {
+		id = ITA_itariasikinozousenn
+		icon = GFX_goal_generic_navy_cruiser
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_minnkannzousennjo }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=Italian_style_shipbuilding
+		}
+	}
+	#Focus for itariayonnkanenn
+	focus = {
+		id = ITA_itariayonnkanenn
+		icon = GFX_focus_generic_treaty
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_seisannkourituka }
+		mutually_exclusive = { focus = ITA_kyuuzounokoujou }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea= { 
+idea = Italy_4_year_plan 
+days =140 
+}
+		}
+	}
+	#Focus for ribiaheiki
+	focus = {
+		id = ITA_ribiaheiki
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 10
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_shokuminntisinnshutu }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+prioritize = { 451 }
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 4
+ add_building_construction = {
+ type = arms_factory
+ level = 4
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for sekiyukaihatu
+	focus = {
+		id = ITA_sekiyukaihatu
+		icon = GFX_goal_generic_oil_refinery
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_tityuukaishotou 
+			focus = ITA_shokuminntikaihatu 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource= { 
+type = oil 
+amount = 40
+state = 448
+}
+		}
+	}
+	#Focus for takeover
+	focus = {
+		id = ITA_takeover
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 15
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_kyuuzounokoujou }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = arms_factory level = 3 }
+		}
+	}
+	#Focus for sikinnkakusanozesei
+	focus = {
+		id = ITA_sikinnkakusanozesei
+		icon = GFX_focus_generic_concessions
+		x = 12
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_yutakanaitaria }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = The_Serious_Funding_Gap
+add_idea =Corrected_funding_gap 
+}
+		}
+	}
+	#Focus for makenuke
+	focus = {
+		id = ITA_makenuke
+		icon = GFX_focus_rocketry
+		x = 12
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_sikinnkakusanozesei }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 1
+category = nuclear
+}
+add_tech_bonus= {
+ bonus = 1.5 
+uses = 2 
+category = rocketry
+}
+		}
+	}
+	#Focus for aratanatikara
+	focus = {
+		id = ITA_aratanatikara
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 12
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_makenuke }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 2.0
+uses = 2 
+category = nuclear
+}
+		}
+	}
+	#Focus for greaterefficiency
+	focus = {
+		id = ITA_greaterefficiency
+		icon = GFX_focus_generic_tank_production
+		x = 10
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_sikinnkakusanozesei }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 3
+ add_building_construction = {
+ type = arms_factory
+ level = 3
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for madeinitaly
+	focus = {
+		id = ITA_madeinitaly
+		icon = GFX_focus_befriend_italy
+		x = 10
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_greaterefficiency }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= Made_in_Italy
+		}
+	}
+	#Focus for acceptanceofworkers
+	focus = {
+		id = ITA_acceptanceofworkers
+		icon = GFX_focus_generic_military_academy
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_takeover }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= South_north_question_after
+		}
+	}
+	#Focus for getthetech
+	focus = {
+		id = ITA_getthetech
+		icon = GFX_goal_generic_production2
+		x = 15
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_acceptanceofworkers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.5 
+uses = 3 
+category = industry
+}
+		}
+	}
+	#Focus for civilrights
+	focus = {
+		id = ITA_civilrights
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 14
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_getthetech }
+		mutually_exclusive = { focus = ITA_worktillyoudie }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= Citizenship
+		}
+	}
+	#Focus for worktillyoudie
+	focus = {
+		id = ITA_worktillyoudie
+		icon = GFX_focus_CZE_german_puppet
+		x = 16
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_getthetech }
+		mutually_exclusive = { focus = ITA_civilrights }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= overwork
+		}
+	}
+	#Focus for 152
+	focus = {
+		id = ITA_152
+		icon = GFX_goal_generic_build_airforce
+		x = 18
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_151 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+prioritize = { 114 }
+ limit = {
+ free_building_slots = {
+ building = air_base
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_building_construction = {
+ type = air_base
+ level = 5
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+prioritize = { 182 }
+ limit = {
+ free_building_slots = {
+ building = air_base
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_building_construction = {
+ type = air_base
+ level = 5
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+prioritize = { 183 }
+ limit = {
+ free_building_slots = {
+ building = air_base
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_building_construction = {
+ type = air_base
+ level = 5
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+prioritize = { 177 }
+ limit = {
+ free_building_slots = {
+ building = air_base
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_building_construction = {
+ type = air_base
+ level = 5
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+prioritize = { 116 }
+ limit = {
+ free_building_slots = {
+ building = air_base
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_building_construction = {
+ type = air_base
+ level = 5
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for 151
+	focus = {
+		id = ITA_151
+		icon = GFX_goal_generic_production
+		x = 18
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_148 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+prioritize = { 2 }
+ limit = {
+ free_building_slots = {
+ building = air_base
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_building_construction = {
+ type = air_base
+ level = 5
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+prioritize = { 160 }
+ limit = {
+ free_building_slots = {
+ building = air_base
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_building_construction = {
+ type = air_base
+ level = 5
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+prioritize = { 156 }
+ limit = {
+ free_building_slots = {
+ building = air_base
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_building_construction = {
+ type = air_base
+ level = 5
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+	#Focus for 149
+	focus = {
+		id = ITA_149
+		icon = GFX_goal_generic_air_production
+		x = 18
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_147 
+			focus = ITA_145 
+			focus = ITA_146 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=Improving_the_efficiency_of_fighter_production
+		}
+	}
+	#Focus for 148
+	focus = {
+		id = ITA_148
+		icon = GFX_goal_generic_CAS
+		x = 21
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_146 
+			focus = ITA_145 
+			focus = ITA_147 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= the_Grand_Italian_Air_Force
+add_tech_bonus= {
+ bonus = 0.5 
+uses = 2 
+category = air_doctrine
+}
+air_experience= 50
+		}
+	}
+	#Focus for 146
+	focus = {
+		id = ITA_146
+		icon = GFX_goal_generic_air_fighter2
+		x = 24
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_144 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category = light_fighter
+}
+		}
+	}
+	#Focus for 145
+	focus = {
+		id = ITA_145
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 21
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_143 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =cat_strategic_bomber 
+}
+		}
+	}
+	#Focus for 144
+	focus = {
+		id = ITA_144
+		icon = GFX_focus_fra_regiment_normandie
+		x = 24
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_141 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =tactical_bomber 
+}
+		}
+	}
+	#Focus for 143
+	focus = {
+		id = ITA_143
+		icon = GFX_focus_usa_escort_fighters
+		x = 21
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_140 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =cas_bomber 
+}
+		}
+	}
+	#Focus for 142
+	focus = {
+		id = ITA_142
+		icon = GFX_focus_jap_zero
+		x = 18
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_134 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =light_fighter 
+}
+		}
+	}
+	#Focus for 162
+	focus = {
+		id = ITA_162
+		icon = GFX_focus_generic_destroyer
+		x = 44
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_119 
+			focus = ITA_155 
+			focus = ITA_154 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =dd_tech 
+}
+		}
+	}
+	#Focus for massmobilizationstrategy
+	focus = {
+		id = ITA_massmobilizationstrategy
+		icon = GFX_focus_usa_honor_the_confederacy
+		x = 39
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_armyreform }
+		mutually_exclusive = { 
+			focus = ITA_maneuveringstrategy 
+		}
+		mutually_exclusive = { 
+			focus = ITA_artillerydrivenstrategy 
+		}
+		mutually_exclusive = { 
+			focus = ITA_strategyformulation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category = cat_grand_battle_plan 
+}
+		}
+	}
+	#Focus for 137
+	focus = {
+		id = ITA_137
+		icon = GFX_goal_generic_position_armies
+		x = 35
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_132 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= Planned_Operational_Planning
+		}
+	}
+	#Focus for 150
+	focus = {
+		id = ITA_150
+		icon = GFX_goal_generic_air_bomber
+		x = 24
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_147 
+			focus = ITA_145 
+			focus = ITA_146 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=Improving_the_efficiency_of_bomber_production
+		}
+	}
+	#Focus for 154
+	focus = {
+		id = ITA_154
+		icon = GFX_goal_generic_navy_battleship
+		x = 42
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_119 
+			focus = ITA_153 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =fleet_in_being_tree 
+}
+		}
+	}
+	#Focus for 153
+	focus = {
+		id = ITA_153
+		icon = GFX_goal_generic_navy_cruiser
+		x = 48
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_118 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =naval_equipment 
+}
+		}
+	}
+	#Focus for armyreform
+	focus = {
+		id = ITA_armyreform
+		icon = GFX_goal_rhineland
+		x = 33
+		y = 0
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 50
+		}
+	}
+	#Focus for 167
+	focus = {
+		id = ITA_167
+		icon = GFX_goal_generic_territory_or_war
+		x = 33
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_166 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=Ready_for_Rome
+		}
+	}
+	#Focus for 112
+	focus = {
+		id = ITA_112
+		icon = GFX_goal_generic_air_doctrine
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience= 50
+add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category = air_doctrine
+}
+		}
+	}
+	#Focus for 114
+	focus = {
+		id = ITA_114
+		icon = GFX_goal_generic_small_arms
+		x = 39
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_massmobilizationstrategy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category = infantry_tech
+}
+		}
+	}
+	#Focus for 115
+	focus = {
+		id = ITA_115
+		icon = GFX_goal_generic_army_tanks
+		x = 27
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_maneuveringstrategy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 1
+category = armor
+}
+		}
+	}
+	#Focus for 116
+	focus = {
+		id = ITA_116
+		icon = GFX_focus_generic_license_production
+		x = 27
+		y = 3
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_115 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.5
+uses = 1
+category = armor
+}
+		}
+	}
+	#Focus for 118
+	focus = {
+		id = ITA_118
+		icon = GFX_goal_generic_navy_battleship
+		x = 46
+		y = 3
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience= 50
+		}
+	}
+	#Focus for 119
+	focus = {
+		id = ITA_119
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 44
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_118 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category = naval_doctrine
+}
+		}
+	}
+	#Focus for artillerydrivenstrategy
+	focus = {
+		id = ITA_artillerydrivenstrategy
+		icon = GFX_goal_generic_army_artillery2
+		x = 31
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_armyreform }
+		mutually_exclusive = { 
+			focus = ITA_massmobilizationstrategy 
+		}
+		mutually_exclusive = { 
+			focus = ITA_maneuveringstrategy 
+		}
+		mutually_exclusive = { 
+			focus = ITA_strategyformulation 
+		}
+		mutually_exclusive = { 
+			focus = ITA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category = cat_superior_firepower
+}
+		}
+	}
+	#Focus for strategyformulation
+	focus = {
+		id = ITA_strategyformulation
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 35
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_armyreform }
+		mutually_exclusive = { 
+			focus = ITA_massmobilizationstrategy 
+		}
+		mutually_exclusive = { 
+			focus = ITA_artillerydrivenstrategy 
+		}
+		mutually_exclusive = { 
+			focus = ITA_maneuveringstrategy 
+		}
+		mutually_exclusive = { 
+			focus = ITA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category = cat_grand_battle_plan
+}
+		}
+	}
+	#Focus for maneuveringstrategy
+	focus = {
+		id = ITA_maneuveringstrategy
+		icon = GFX_focus_generic_tank_production
+		x = 27
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_armyreform }
+		mutually_exclusive = { 
+			focus = ITA_massmobilizationstrategy 
+		}
+		mutually_exclusive = { 
+			focus = ITA_strategyformulation 
+		}
+		mutually_exclusive = { 
+			focus = ITA_artillerydrivenstrategy 
+		}
+		mutually_exclusive = { 
+			focus = ITA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =cat_mobile_warfare 
+}
+		}
+	}
+	#Focus for 125
+	focus = {
+		id = ITA_125
+		icon = GFX_goal_generic_army_artillery2
+		x = 31
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_artillerydrivenstrategy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 1
+category = artillery
+}
+		}
+	}
+	#Focus for 126
+	focus = {
+		id = ITA_126
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 35
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_strategyformulation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 1
+category =recon_tech 
+}
+		}
+	}
+	#Focus for 127
+	focus = {
+		id = ITA_127
+		icon = GFX_focus_generic_concessions
+		x = 39
+		y = 3
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_114 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =hospital_tech 
+}
+		}
+	}
+	#Focus for 132
+	focus = {
+		id = ITA_132
+		icon = GFX_goal_generic_production
+		x = 35
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_126 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.5
+uses = 2 
+category =engineers_tech 
+}
+		}
+	}
+	#Focus for 128
+	focus = {
+		id = ITA_128
+		icon = GFX_goal_generic_army_doctrines
+		x = 33
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_massmobilizationstrategy 
+			focus = ITA_maneuveringstrategy 
+			focus = ITA_strategyformulation 
+			focus = ITA_artillerydrivenstrategy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category = land_doctrine 
+}
+army_experience= 50
+		}
+	}
+	#Focus for 129
+	focus = {
+		id = ITA_129
+		icon = GFX_focus_generic_paratrooper
+		x = 31
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_125 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.5
+uses = 2 
+category =cat_anti_tank 
+}
+		}
+	}
+	#Focus for 130
+	focus = {
+		id = ITA_130
+		icon = GFX_goal_generic_army_motorized
+		x = 37
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_massmobilizationstrategy 
+			focus = ITA_strategyformulation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 1
+category = motorized_equipment
+}
+		}
+	}
+	#Focus for 131
+	focus = {
+		id = ITA_131
+		icon = GFX_focus_generic_rubber
+		x = 29
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_maneuveringstrategy 
+			focus = ITA_artillerydrivenstrategy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 1
+category =cat_mechanized_equipment 
+}
+		}
+	}
+	#Focus for 133
+	focus = {
+		id = ITA_133
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 33
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_135 
+			focus = ITA_136 
+			focus = ITA_137 
+			focus = ITA_138 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas=Weak_army
+		}
+	}
+	#Focus for 139
+	focus = {
+		id = ITA_139
+		icon = GFX_focus_generic_little_entente
+		x = 33
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_133 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=The_New_Italian_Army
+		}
+	}
+	#Focus for 136
+	focus = {
+		id = ITA_136
+		icon = GFX_goal_generic_army_artillery2
+		x = 31
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_129 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= Artillery_in_support_of_the_battlefield
+		}
+	}
+	#Focus for 138
+	focus = {
+		id = ITA_138
+		icon = GFX_focus_generic_combined_arms
+		x = 39
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_127 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=mass_mobilization_strategy
+		}
+	}
+	#Focus for 134
+	focus = {
+		id = ITA_134
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 19
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_112 }
+		mutually_exclusive = { 
+			focus = ITA_141 
+		}
+		mutually_exclusive = { 
+			focus = ITA_140 
+		}
+		mutually_exclusive = { 
+			focus = ITA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =strategic_destruction_tree 
+}
+		}
+	}
+	#Focus for 135
+	focus = {
+		id = ITA_135
+		icon = GFX_focus_eng_global_defense
+		x = 27
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_116 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= Italian_style_blitzkrieg
+		}
+	}
+	#Focus for 140
+	focus = {
+		id = ITA_140
+		icon = GFX_goal_generic_air_fighter2
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_112 }
+		mutually_exclusive = { 
+			focus = ITA_141 
+		}
+		mutually_exclusive = { 
+			focus = ITA_134 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =battlefield_support_tree 
+}
+		}
+	}
+	#Focus for 141
+	focus = {
+		id = ITA_141
+		icon = GFX_goal_generic_air_fighter2
+		x = 23
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_112 }
+		mutually_exclusive = { 
+			focus = ITA_140 
+		}
+		mutually_exclusive = { 
+			focus = ITA_134 
+		}
+		mutually_exclusive = { 
+			focus = ITA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =operational_integrity_tree 
+}
+		}
+	}
+	#Focus for 147
+	focus = {
+		id = ITA_147
+		icon = GFX_goal_generic_air_bomber
+		x = 18
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_142 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =heavy_air 
+}
+		}
+	}
+	#Focus for 155
+	focus = {
+		id = ITA_155
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 46
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_153 
+			focus = ITA_119 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =fleet_in_being_tree 
+}
+		}
+	}
+	#Focus for 156
+	focus = {
+		id = ITA_156
+		icon = GFX_goal_generic_navy_carrier
+		x = 50
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_119 
+			focus = ITA_153 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =cat_base_strike 
+}
+		}
+	}
+	#Focus for 159
+	focus = {
+		id = ITA_159
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 40
+		y = 6
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_154 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =shbb_tech 
+}
+navy_experience= 30
+		}
+	}
+	#Focus for 160
+	focus = {
+		id = ITA_160
+		icon = GFX_goal_generic_navy_carrier
+		x = 48
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_156 
+			focus = ITA_153 
+			focus = ITA_155 
+			focus = ITA_119 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =cv_tech 
+}
+navy_experience= 30
+		}
+	}
+	#Focus for 161
+	focus = {
+		id = ITA_161
+		icon = GFX_goal_generic_air_fighter2
+		x = 48
+		y = 7
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_160 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =naval_air 
+}
+navy_experience= 30
+air_experience= 30
+		}
+	}
+	#Focus for 157
+	focus = {
+		id = ITA_157
+		icon = GFX_focus_generic_navy_battleship2
+		x = 42
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_154 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =bb_tech 
+}
+		}
+	}
+	#Focus for 158
+	focus = {
+		id = ITA_158
+		icon = GFX_goal_generic_navy_submarine
+		x = 46
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_155 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.0
+uses = 2 
+category =ss_tech 
+}
+		}
+	}
+	#Focus for 163
+	focus = {
+		id = ITA_163
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 44
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_160 
+			focus = ITA_158 
+			focus = ITA_162 
+			focus = ITA_157 
+			focus = ITA_159 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=Formation_of_the_Great_Italian_Fleet
+navy_experience= 50
+		}
+	}
+	#Focus for 165
+	focus = {
+		id = ITA_165
+		icon = GFX_goal_generic_navy_carrier
+		x = 47
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_163 
+			focus = ITA_161 
+		}
+		mutually_exclusive = { focus = ITA_164 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=air_naval_policy
+		}
+	}
+	#Focus for 164
+	focus = {
+		id = ITA_164
+		icon = GFX_goal_generic_navy_battleship
+		x = 45
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_163 
+			focus = ITA_161 
+		}
+		mutually_exclusive = { focus = ITA_165 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=battleship_policy
+		}
+	}
+	#Focus for 166
+	focus = {
+		id = ITA_166
+		icon = GFX_focus_attack_italy
+		x = 33
+		y = 10
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_164 
+			focus = ITA_165 
+			focus = ITA_139 
+			focus = ITA_148 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas= Weak_army
+add_ideas=The_End_of_Military_Reform
+		}
+	}
+	#Focus for 796
+	focus = {
+		id = ITA_796
+		icon = GFX_focus_generic_home_defense
+		x = 72
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_792 }
+		mutually_exclusive = { focus = ITA_795 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 100
+  add_war_support= 0.05
+		}
+	}
+	#Focus for 795
+	focus = {
+		id = ITA_795
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		x = 66
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_792 }
+		mutually_exclusive = { focus = ITA_796 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 100 
+ add_stability= 0.05
+		}
+	}
+	#Focus for 790
+	focus = {
+		id = ITA_790
+		icon = GFX_focus_YUG_banovina_of_croatia
+		x = 66
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_779 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea= { 
+idea = Financial_Support_for_Croatia
+days = 100
+}
+CRO= {
+  add_timed_idea= { 
+idea =Financial_support_from_Italy 
+days = 100 
+}
+}
+		}
+	}
+	#Focus for 803
+	focus = {
+		id = ITA_803
+		icon = GFX_goal_unknown
+		x = 69
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_802 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 802
+	focus = {
+		id = ITA_802
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 69
+		y = 7
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_797 
+			focus = ITA_800 
+			focus = ITA_799 
+			focus = ITA_798 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core=81 
+ add_state_core= 46
+  add_state_core= 78
+  add_state_core= 79
+  add_state_core= 766 
+ add_state_core= 80 
+ add_state_core= 84 
+ add_state_core= 67 
+ add_state_core= 83 
+ add_state_core= 82
+		}
+	}
+	#Focus for 777
+	focus = {
+		id = ITA_777
+		icon = GFX_goal_generic_demand_territory
+		x = 60
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 75
+		}
+	}
+	#Focus for 778
+	focus = {
+		id = ITA_778
+		icon = GFX_goal_generic_neutrality_focus
+		x = 56
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_777 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50  
+add_stability= 0.05
+		}
+	}
+	#Focus for 779
+	focus = {
+		id = ITA_779
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 64
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_777 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.05 
+add_manpower= 5000
+		}
+	}
+	#Focus for 780
+	focus = {
+		id = ITA_780
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 53
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_778 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=Research_Support
+		}
+	}
+	#Focus for 781
+	focus = {
+		id = ITA_781
+		icon = GFX_focus_research2
+		x = 53
+		y = 3
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_780 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.5
+uses = 2 
+category = electronics 
+}
+		}
+	}
+	#Focus for 782
+	focus = {
+		id = ITA_782
+		icon = GFX_goal_generic_construct_civilian
+		x = 59
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_778 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea= { 
+idea = Investment_in_the_company
+days = 180
+}
+add_political_power = -50
+		}
+	}
+	#Focus for 784
+	focus = {
+		id = ITA_784
+		icon = GFX_focus_generic_italy_first
+		x = 62
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_779 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=Italy_Expansion_Policy
+		}
+	}
+	#Focus for 783
+	focus = {
+		id = ITA_783
+		icon = GFX_focus_generic_military_mission
+		x = 53
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_781 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=Review_of_appointment_methods
+		}
+	}
+	#Focus for 785
+	focus = {
+		id = ITA_785
+		icon = GFX_goal_generic_construction2
+		x = 59
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_782 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=Working_with_the_Autobahn
+		}
+	}
+	#Focus for 786
+	focus = {
+		id = ITA_786
+		icon = GFX_goal_generic_position_armies
+		x = 62
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_784 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			annex_country= {
+ target = PAL
+transfer_troops = yes
+}
+  annex_country= {
+ target = JOR
+transfer_troops = yes
+}
+		}
+	}
+	#Focus for 999
+	focus = {
+		id = ITA_999
+		icon = GFX_goal_unknown
+		x = 53
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_cosmetic_tag = SPQR_UNIFIED
+set_global_flag = form_roman_empire_flag
+		}
+	}
+	#Focus for 787
+	focus = {
+		id = ITA_787
+		icon = GFX_goal_generic_political_pressure
+		x = 62
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_786 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=Started_to_centralize_the_various_regions
+		}
+	}
+	#Focus for 788
+	focus = {
+		id = ITA_788
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 62
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_787 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 459
+  add_state_core= 460
+  add_state_core= 514
+  add_state_core= 458
+  add_state_core= 665
+		}
+	}
+	#Focus for 789
+	focus = {
+		id = ITA_789
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 62
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_788 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 448
+  add_state_core= 449
+  add_state_core= 661
+  add_state_core= 662
+  add_state_core= 273
+  add_state_core= 450
+  add_state_core= 451
+  add_state_core= 663
+		}
+	}
+	#Focus for 791
+	focus = {
+		id = ITA_791
+		icon = GFX_goal_generic_improve_relations
+		x = 66
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_790 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			diplomatic_relation= { 
+country = CRO
+relation =guarantee
+active = yes 
+}
+GRE= {
+Submit  diplomatic_relation= { 
+country = ITA
+relation =  guarantee
+active = yes 
+}
+}
+		}
+	}
+	#Focus for 792
+	focus = {
+		id = ITA_792
+		icon = GFX_focus_generic_monarchy_1
+		x = 66
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_791 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			puppet= CRO
+		}
+	}
+	#Focus for 793
+	focus = {
+		id = ITA_793
+		icon = GFX_focus_generic_coastal_fort
+		x = 56
+		y = 2
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_778 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			840 = {
+add_building_construction = {
+    type = bunker
+    level = 4
+    instant_build = yes
+    province = 12049
+    province = 4073
+}
+}
+841 = {
+add_building_construction = {
+    type = bunker
+    level = 4
+    instant_build = yes
+    province =1155
+    province =9947
+}
+}
+840 = {
+add_building_construction = {
+    type = coastal_bunker
+    level = 4
+    instant_build = yes
+    province = 12049
+    province = 4073
+}
+}
+841 = {
+add_building_construction = {
+    type = coastal_bunker
+    level = 4
+    instant_build = yes
+    province =1155
+    province =9947
+}
+}
+add_ideas = bunker_buy
+		}
+	}
+	#Focus for 794
+	focus = {
+		id = ITA_794
+		icon = GFX_goal_generic_oil_refinery
+		x = 59
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_785 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			give_resource_rights = {
+receiver = IRQ
+state = 291
+}
+give_resource_rights = {
+receiver = PER
+state = 413
+}
+give_resource_rights = {
+receiver = UAE
+state = 658
+}
+give_resource_rights = {
+receiver = SAU
+state = 292
+}
+		}
+	}
+	#Focus for 798
+	focus = {
+		id = ITA_798
+		icon = GFX_focus_rom_preserve_romania
+		x = 74
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_796 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			puppet= ROM
+		}
+	}
+	#Focus for 799
+	focus = {
+		id = ITA_799
+		icon = GFX_goal_generic_military_deal
+		x = 70
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_796 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			puppet= HUN
+		}
+	}
+	#Focus for 800
+	focus = {
+		id = ITA_800
+		icon = GFX_goal_generic_forceful_treaty
+		x = 68
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_795 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			annex_country= {
+ target = HUN
+}
+		}
+	}
+	#Focus for 801
+	focus = {
+		id = ITA_801
+		icon = GFX_goal_generic_construct_military
+		x = 56
+		y = 3
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_793 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			804 = {
+add_building_construction = {
+    type = bunker
+    level = 4
+    instant_build = yes
+    province = 3959
+　province = 9909
+}
+}
+158 = {
+add_building_construction = {
+    type = bunker
+    level = 4
+    instant_build = yes
+    province = 611
+province = 6780
+province = 9738
+province = 11721
+province = 770
+province = 11891
+}
+}
+735 = {
+add_building_construction = {
+    type = bunker
+    level = 4
+    instant_build = yes
+    province = 11571
+province = 9603
+province = 778
+province = 6609
+province = 9745
+}
+}
+add_ideas = bunker_buy
+		}
+	}
+	#Focus for 797
+	focus = {
+		id = ITA_797
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 64
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_795 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			annex_country= {
+ target = ROM
+}
+		}
+	}
+
+#End of focuses 
+ }

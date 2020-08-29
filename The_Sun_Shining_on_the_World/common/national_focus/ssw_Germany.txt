@@ -1,0 +1,26 @@
+focus_tree = {
+	id = ssw_Germany_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	default = no
+	focus = {
+		id = GER_ssw_focus1
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 30.00
+		x = 8
+		y = 1
+        available = {
+            date > 1950.1.25
+        }
+        completion_reward = {
+            country_event = {
+				id = SSW_GER.1
+            }
+        }
+	}
+}

@@ -1,7 +1,0 @@
-spriteTypes = {	
-
-	spriteType = {
-		name = "CHI_political_advisor_Doihara.dds"
-		texturefile = "gfx/interface/ideas/CHI_political_advisor_Doihara.dds"
-	}
-}

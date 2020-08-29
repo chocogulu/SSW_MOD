@@ -1,197 +1,112 @@
-#####-----> Mod by Sig "GreatExperiment" Altre
-## 社会体制
 spriteTypes = {
-	spriteType = {
-		name = "GFX_idea_slot_etgi_ideas_foreign_relations"
-		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+#社会体制
+    SpriteType = { 
+		name = "GFX_idea_corporate_council_system"
+		texturefile = "gfx/interface/ideas/social_system/idea_corporate_council_system.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_collective_anarchist_society"
+		texturefile = "gfx/interface/ideas/social_system/idea_collective_anarchist_society.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_despotism"
+		texturefile = "gfx/interface/ideas/social_system/idea_despotism.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_leftist_government"
+		texturefile = "gfx/interface/ideas/social_system/idea_leftist_government.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_military_regime"
+		texturefile = "gfx/interface/ideas/social_system/idea_military_regime.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_one_party_dictatorship"
+		texturefile = "gfx/interface/ideas/social_system/idea_one_party_dictatorship.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_rightist_government"
+		texturefile = "gfx/interface/ideas/social_system/idea_rightist_government.dds"
+	}
+#日本
+    spriteType = {
+		name = "warrior_traditions_idea"
+		texturefile = "gfx/interface/ideas/warrior_traditions_idea.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_slot_r56i_laws_category_security"
-		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+		name = "generic_production_bonus"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_slot_r56i_laws_leadership"
-		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+		name = "idea_generic_army_problems"
+		texturefile = "gfx/interface/ideas/idea_generic_army_problems.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_slot_r56i_laws_category_gender"
-		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+		name = "spr_seize_the_gold_reserves"
+		texturefile = "gfx/interface/ideas/spr_seize_the_gold_reserves.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_slot_r56i_laws_social"
-		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+		name = "idea_jap_hirohito"
+		texturefile = "gfx/interface/ideas/idea_jap_hirohito.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_slot_r56i_laws_war"
-		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
-	}
-
-###------> Laws gender <><> <><> <><> <><> <><>
-	spriteType = {
-		name = "GFX_idea_r56i_laws_gender_traditional"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_gender_traditional.dds"
+		name = "idea_generic_refining_concern_1"
+		texturefile = "gfx/interface/ideas/idea_generic_refining_concern_1.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_r56i_laws_gender_limited"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_gender_limited.dds"
+		name = "state_shintoism"
+		texturefile = "gfx/interface/ideas/state_shintoism.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_r56i_laws_gender_patriarchy"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_gender_patriarchy.dds"
+		name = "spr_relocate_the_gold_reserves"
+		texturefile = "gfx/interface/ideas/spr_relocate_the_gold_reserves.dds"
+    }
+#蒙古
+    spriteType = {
+		name = "GFX_idea_De_Wang"
+		texturefile = "gfx/interface/ideas/MEN/SSW_ideas_MEN_De_Wang.dds"
+	}
+#中国
+	spriteType = {
+		name = "CHI_political_advisor_Doihara.dds"
+		texturefile = "gfx/interface/ideas/CHI/CHI_political_advisor_Doihara.dds"
+	}
+    spriteType = {
+		name = "generic_goods_red_bonus.dds"
+		texturefile = "gfx/interface/ideas/generic_goods_red_bonus.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_r56i_laws_gender_equality"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_gender_equality.dds"
-	}
-
-###------> Laws social <><> <><> <><> <><> <><>
-	spriteType = {
-		name = "GFX_idea_r56i_laws_social_normal"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_social_normal.dds"
+		name = "VFR_scw_intervention_republicans_focus.dds"
+		texturefile = "gfx/interface/ideas/FRA_scw_intervention_republicans_focus.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_r56i_laws_social_hierarchy"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_social_hierarchy.dds"
+		name = "generic_local_self_management.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_local_self_management.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_r56i_laws_social_revolutionary"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_social_revolutionary.dds"
+		name = "jap_zaibatsu.dds"
+		texturefile = "gfx/interface/ideas/idea_jap_zaibatsu.dds"
+	}
+#ドイツ
+	spriteType = {
+		name = "GFX_idea_Emergency_conscription"
+		texturefile = "gfx/interface/ideas/GER/Emergency_conscription.dds"
+    }
+#イギリス
+    spriteType = {
+		name = "GFX_idea_Elizabeth"
+		texturefile = "gfx/interface/ideas/ENG/Elizabeth_II.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_r56i_laws_social_diversity"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_social_diversity.dds"
+		name = "GFX_idea_British_sick"
+		texturefile = "gfx/interface/ideas/ENG/British_sick.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_r56i_laws_social_unity"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_social_unity.dds"
-	}
-
-###------> Laws war <><> <><> <><> <><> <><>
-	spriteType = {
-		name = "GFX_idea_r56i_laws_war_historical"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_war_diplomacy.dds"
+		name = "GFX_idea_Welfare_state"
+		texturefile = "gfx/interface/ideas/ENG/Welfare_state.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_r56i_laws_war_ideological"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_war_ideological.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_r56i_laws_war_brinkmanship"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_war_brinkmanship.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_r56i_laws_war_diplomacy"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_war_historical.dds"
-	}
-
-###------> Foreign relations <><> <><> <><> <><> <><>
-	spriteType = {
-		name = "GFX_idea_etgi_laws_foreign_relations_d"
-		texturefile = "gfx/interface/ideas/idea_generic_tank_manufacturer_2.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_etgi_laws_foreign_relations_1"
-		texturefile = "gfx/interface/ideas/idea_generic_tank_manufacturer_3.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_etgi_laws_foreign_relations_2"
-		texturefile = "gfx/interface/ideas/idea_generic_industrial_concern_2.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_etgi_laws_foreign_relations_3"
-		texturefile = "gfx/interface/ideas/idea_generic_motorized_equipment_manufacturer_3.dds"
-	}
-
-###------> Laws security <><> <><> <><> <><> <><>
-	spriteType = {
-		name = "GFX_idea_r56i_laws_security_balanced"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_security_balanced.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_r56i_laws_security_order"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_security_order.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_r56i_laws_security_rights"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_security_rights.dds"
-	}
-
-###------> Leadership <><> <><> <><> <><> <><>
-	spriteType = {
-		name = "GFX_idea_r56i_laws_leadership_politics"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_leadership_politics.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_r56i_laws_leadership_cult"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_leadership_cult.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_r56i_laws_leadership_secular"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_leadership_secular.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_r56i_laws_leadership_divine"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_leadership_divine.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_r56i_laws_leadership_people"
-		texturefile = "gfx/interface/ideas/laws/r56i_laws_leadership_people.dds"
-	}
-
-###------> Riots <><> <><> <><> <><> <><>
-	spriteType = {
-		name = "GFX_idea_r56i_idea_riots"
-		texturefile = "gfx/interface/ideas/laws/r56i_idea_riotongoing.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_r56i_idea_riots_escalate"
-		texturefile = "gfx/interface/ideas/laws/r56i_idea_riotintense.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_r56i_idea_suppress_talks"
-		texturefile = "gfx/interface/ideas/laws/r56i_idea_talksongoing.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_r56i_idea_suppress_harsh"
-		texturefile = "gfx/interface/ideas/laws/r56i_idea_crackdownongoing.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_r56i_idea_suppress_spend"
-		texturefile = "gfx/interface/ideas/laws/r56i_idea_briberyongoing.dds"
-	}
-
-###------> XXX <><> <><> <><> <><> <><>
-	spriteType = {
-		name = "GFX_r56i_generic_event_01"
-		texturefile = "gfx/event_pictures/r56i_report_event_riotsoccur.dds"
-	}
-	spriteType = {
-		name = "GFX_r56i_generic_event_02"
-		texturefile = "gfx/event_pictures/r56i_report_event_riotsworsen.dds"
-	}
-	spriteType = {
-		name = "GFX_r56i_generic_event_04"
-		texturefile = "gfx/event_pictures/r56i_report_event_crackdownsucceeds.dds"
-	}
-	spriteType = {
-		name = "GFX_r56i_generic_event_05"
-		texturefile = "gfx/event_pictures/r56i_report_event_crackdownfails.dds"
-	}
-	spriteType = {
-		name = "GFX_r56i_generic_event_06"
-		texturefile = "gfx/event_pictures/r56i_report_event_talkssucceed.dds"
-	}
-	spriteType = {
-		name = "GFX_r56i_generic_event_07"
-		texturefile = "gfx/event_pictures/r56i_report_event_talksfail.dds"
-	}
-	spriteType = {
-		name = "GFX_r56i_generic_event_08"
-		texturefile = "gfx/event_pictures/r56i_report_event_briberysucceed.dds"
-	}
-	spriteType = {
-		name = "GFX_r56i_generic_event_09"
-		texturefile = "gfx/event_pictures/r56i_report_event_briberyfails.dds"
+		name = "GFX_idea_hudson_avoid"
+		texturefile = "gfx/interface/ideas/ENG/hudson_avoid.dds"
 	}
 }
-#####---------------------------------------------------------------------> End

@@ -1,0 +1,935 @@
+focus_tree = {
+	id = ssw_Canada_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CAN
+		}
+	}
+	continuous_focus_position = { x = 100 y = 1350 }
+
+	default = no
+	focus = {
+		id = SSW_CAN.1
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		x = 9
+		y = 0
+			completion_reward = {
+						add_political_power = 150
+			}
+	}
+	focus = {
+		id = SSW_CAN_33
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10.00
+		x = 25
+		y = 0
+			completion_reward = {
+					air_experience = 25
+					army_experience = 25
+					navy_experience = 25
+				}
+	}
+	focus = {
+		id = SSW_CAN.2
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.1
+		}
+		mutually_exclusive = {
+			focus = SSW_CAN.3
+		}
+		x = 5
+		y = 1
+			completion_reward = {
+			add_ideas =  CAN_idea_1
+			}
+	}
+	focus = {
+		id = SSW_CAN.3
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.1
+		}
+		mutually_exclusive = {
+			focus = SSW_CAN.2
+		}
+		x = 13
+		y = 1
+			completion_reward = {
+			add_ideas =  CAN_idea_2
+			set_politics = {
+				ruling_party = authoritative_democracy
+				elections_allowed = no
+			}
+			}
+	}
+	focus = {
+		id = SSW_CAN.5
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.2
+			focus = SSW_CAN.3
+		}
+		x = 4
+		y = 2
+			completion_reward = {
+					ENG = { news_event = { id = Canada_news.1 days = 1 } } }
+	}
+	focus = {
+		id = SSW_CAN.6
+		icon = GFX_focus_spa_the_war_of_vengeance
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.5
+		}
+		x = 2
+		y = 3
+			completion_reward = {
+					add_opinion_modifier = {
+							target = ENG
+							modifier = huge_increase
+						}
+					add_opinion_modifier = {
+							target = UTC
+							modifier = large_decrease
+						}
+					add_opinion_modifier = {
+							target = FSA
+							modifier = large_decrease
+						}
+					add_opinion_modifier = {
+							target = ALF
+							modifier = large_decrease
+						}
+					add_opinion_modifier = {
+							target = LFF
+							modifier = large_decrease
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN.8
+		icon = GFX_focus_canada_one
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.6
+		}
+		mutually_exclusive = {
+			focus = SSW_CAN_9
+		}
+		x = 1
+		y = 4
+			completion_reward = {
+				NEL = {news_event = { id = Canada_news.2 days =1 } }
+					add_opinion_modifier = {
+							target = NEL
+							modifier = large_decrease
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_9
+		icon = GFX_focus_NewEngland_Handshake
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.6
+		}
+		mutually_exclusive = {
+			focus = SSW_CAN.8
+		}
+		x = 3
+		y = 4
+			completion_reward = {
+					add_opinion_modifier = {
+							target = NEL
+							modifier = huge_increase
+						}
+			}
+	}
+	focus = {
+		id = SSW_CAN_10
+		icon = GFX_focus_attack_utc
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.8
+			focus = SSW_CAN_9
+		}
+		x = 0
+		y = 5
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = UTC
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_12
+		icon = GFX_focus_attack_wsl
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.8
+			focus = SSW_CAN_9
+		}
+		x = 4
+		y = 5
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = ALF
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN.7
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.5
+		}
+		x = 6
+		y = 3
+			completion_reward = { add_ideas = CAN_idea_3 }
+	}
+	focus = {
+		id = SSW_CAN_14
+		icon = GFX_focus_attack_germany
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.7
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+			unlock_decision_tooltip = { decision = CAN_execute_war_plan_GER show_effect_tooltip = yes show_modifiers = yes }}
+	}
+	focus = {
+		id = SSW_CAN_16
+		icon = GFX_focus_attack_soviet
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.7
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+			unlock_decision_tooltip = { decision = CAN_execute_war_plan_SOV show_effect_tooltip = yes show_modifiers = yes } }
+	}
+	focus = {
+		id = SSW_CAN_15
+		icon = GFX_focus_attack_italy
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.7
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+			unlock_decision_tooltip = { decision = CAN_execute_war_plan_silver show_effect_tooltip = yes show_modifiers = yes }
+		}
+	}
+	focus = {
+		id = SSW_CAN.4
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.3
+			focus = SSW_CAN.2
+		}
+		x = 9
+		y = 5
+			completion_reward = { add_ideas = CAN_idea_5 }
+	}
+	focus = {
+		id = SSW_CAN_17
+		icon = GFX_focus_British_Columbia
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.4
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+	swap_ideas = {
+		  remove_idea = CAN_idea_5
+			  add_idea = CAN_idea_6
+			}
+		}
+	}
+	focus = {
+		id = SSW_CAN_19
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_17
+		}
+		x = 7
+		y = 7
+			completion_reward = {
+								473 = {
+									add_building_construction = {
+											type = infrastructure
+											level = 2
+											instant_build = yes
+										}
+								}
+								471 = {
+									add_building_construction = {
+											type = infrastructure
+											level = 2
+											instant_build = yes
+										}
+								}
+								470 = {
+									add_building_construction = {
+											type = infrastructure
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+	}
+	focus = {
+		id = SSW_CAN_20
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_19
+		}
+		x = 6
+		y = 8
+			completion_reward = {
+							473 = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = industrial_complex
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+	}
+	focus = {
+		id = SSW_CAN_21
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_19
+		}
+		x = 8
+		y = 8
+			completion_reward = {
+							473 = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = arms_factory
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+	}
+	focus = {
+		id = SSW_CAN_18
+		icon = GFX_focus_West_sea
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.4
+		}
+		x = 11
+		y = 6
+			available = { has_idea = CAN_idea_6 }
+			completion_reward = {
+					swap_ideas = {
+					add_idea = CAN_idea_7
+					remove_idea = CAN_idea_6
+					}
+			}
+	}
+	focus = {
+		id = SSW_CAN_23
+		icon = GFX_focus_hbs
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_18
+		}
+		x = 11
+		y = 7
+			completion_reward = { add_timed_idea = { idea = CAN_idea_8 days = 120 } }
+	}
+	focus = {
+		id = SSW_CAN_25
+		icon = GFX_goal_generic_air_production
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_23
+		}
+		x = 10
+		y = 8
+			completion_reward = { add_ideas = ENG_idea_13 }
+	}
+	focus = {
+		id = SSW_CAN_27
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.3
+			focus = SSW_CAN.2
+		}
+		x = 14
+		y = 2
+			completion_reward = { add_research_slot = 1 }
+	}
+	focus = {
+		id = SSW_CAN_28
+		icon = GFX_focus_rocketry
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_27
+		}
+		x = 12
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = jet_technology
+							bonus = 1.0
+							uses = 2
+							category = jet_technology
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_24
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_23
+		}
+		x = 12
+		y = 8
+			completion_reward = {
+								466 = {
+									add_building_construction = {
+											type = infrastructure
+											level = 2
+											instant_build = yes
+										}
+								}
+								682 = {
+									add_building_construction = {
+											type = infrastructure
+											level = 2
+											instant_build = yes
+										}
+								}
+								683 = {
+									add_building_construction = {
+											type = infrastructure
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+	}
+	focus = {
+		id = SSW_CAN_29
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_27
+		}
+		x = 15
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = industry
+							bonus = 1.0
+							uses = 2
+							category = industry
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_30
+		icon = GFX_focus_generic_aluminum
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_29
+		}
+		x = 13
+		y = 4
+			completion_reward = {
+					add_resource = {
+							type = aluminum
+							amount = 19
+							state = 682
+						}}
+	}
+	focus = {
+		id = SSW_CAN_31
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_29
+		}
+		x = 15
+		y = 4
+			completion_reward = {
+					add_resource = {
+							type = oil
+							amount = 28
+							state = 470
+						}}
+	}
+	focus = {
+		id = SSW_CAN_34
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_33
+		}
+		x = 20
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doctrine
+							bonus = 1
+							uses = 2
+							category = land_doctrine
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_35
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_34
+		}
+		x = 17
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_weapons
+							bonus = 1
+							uses = 2
+							category = infantry_weapons
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_32
+		icon = GFX_focus_generic_steel
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_29
+		}
+		x = 17
+		y = 4
+			completion_reward = {
+				add_resource = {
+							type = steel
+							amount = 18
+							state = 682
+						}
+			}
+	}
+	focus = {
+		id = SSW_CAN_36
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_34
+		}
+		x = 20
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor
+							bonus = 1
+							uses = 1
+							category = armor
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_37
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_34
+		}
+		x = 23
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = artillery
+							bonus = 1
+							uses = 2
+							category = artillery
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_38
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_37
+			focus = SSW_CAN_36
+			focus = SSW_CAN_35
+		}
+		x = 20
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doctrine
+							bonus = 1
+							uses = 2
+							category = land_doctrine
+						} }
+	}
+	focus = {
+		id = SSW_CAN_39
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_33
+		}
+		x = 25
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = air_doctrine
+							bonus = 1
+							uses = 2
+							category = air_doctrine
+						} }
+	}
+	focus = {
+		id = SSW_CAN_40
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_39
+		}
+		x = 24
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = light_fighter
+							bonus = 1.0
+							uses = 2
+							category = light_fighter
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_41
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_39
+		}
+		x = 26
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = tactical_bomber
+							bonus = 1.0
+							uses = 1
+							category = tactical_bomber
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_42
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_41
+			focus = SSW_CAN_40
+		}
+		x = 25
+		y = 5
+			completion_reward = {
+					add_tech_bonus = {
+							name = cas_bomber
+							bonus = 1.0
+							uses = 1
+							category = cas_bomber
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_43
+		icon = GFX_focus_generic_air_defense
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_33
+		}
+		x = 31
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = naval_doctrine
+							bonus = 1.0
+							uses = 1
+							category = naval_doctrine
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_44
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_43
+		}
+		mutually_exclusive = {
+			focus = SSW_CAN_45
+		}
+		x = 29
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = bb_tech
+							bonus = 1.0
+							uses = 1
+							category = bb_tech
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_45
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_43
+		}
+		mutually_exclusive = {
+			focus = SSW_CAN_44
+		}
+		x = 33
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = cv_tech
+							bonus = 1.0
+							uses = 1
+							category = cv_tech
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_49
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_44
+			focus = SSW_CAN_45
+		}
+		x = 28
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = ss_tech
+							bonus = 1.0
+							uses = 2
+							category = ss_tech
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_47
+		icon = GFX_focus_generic_cruiser2
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_49
+		}
+		x = 30
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = cl_tech
+							bonus = 1.0
+							uses = 2
+							category = cl_tech
+						}
+					add_tech_bonus = {
+							name = ca_tech
+							bonus = 1.0
+							uses = 2
+							category = ca_tech
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_11
+		icon = GFX_focus_attack_wau
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.8
+			focus = SSW_CAN_9
+		}
+		x = 2
+		y = 5
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = FSA
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_13
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN.8
+			focus = SSW_CAN_9
+		}
+		x = 2
+		y = 6
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = LFF
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = ANS
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = OKR
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = BLS
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = LUI
+						}
+					create_wargoal = {
+							type = annex_everything
+							target = TEX
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_22
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_19
+		}
+		x = 7
+		y = 9
+			completion_reward = {
+							473 = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+	}
+	focus = {
+		id = SSW_CAN_26
+		icon = GFX_goal_tfv_can_compromise_with_quebec
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_23
+		}
+		x = 11
+		y = 9
+				completion_reward = { remove_ideas = CAN_idea_9 }
+	}
+	focus = {
+		id = SSW_CAN_46
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_44
+			focus = SSW_CAN_45
+		}
+		x = 34
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = asw_tech
+							bonus = 1.0
+							uses = 2
+							category = asw_tech
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_48
+		icon = GFX_focus_generic_destroyer
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_46
+		}
+		x = 32
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = dd_tech
+							bonus = 1.0
+							uses = 2
+							category = dd_tech
+						}
+				}
+	}
+	focus = {
+		id = SSW_CAN_50
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = SSW_CAN_48
+			focus = SSW_CAN_47
+		}
+		x = 31
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+}

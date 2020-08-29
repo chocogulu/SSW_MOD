@@ -44,7 +44,6 @@ ideologies = {
 			lend_lease_tension = 0.00
 			send_volunteers_tension = 0.00
 			guarantee_tension = 1.00
-			take_states_cost_factor = 0.10
 			annex_cost_factor = 0.10
 		}
 		
@@ -139,7 +138,6 @@ ideologies = {
 			lend_lease_tension = 0.20
 			send_volunteers_tension = 0.00
 			guarantee_tension = 0.00
-			take_states_cost_factor = 0.25
 			annex_cost_factor = 0.5
 		}
 		
@@ -195,7 +193,6 @@ ideologies = {
 			lend_lease_tension = 0.50
 			send_volunteers_tension = 0.50
 			guarantee_tension = 0.25
-			take_states_cost_factor = 0.25
 			annex_cost_factor = 0.5
 		}
 		
@@ -247,7 +244,6 @@ ideologies = {
 			lend_lease_tension = 0.20
 			send_volunteers_tension = 0.00
 			guarantee_tension = 0.00
-			take_states_cost_factor = 0.25
 			annex_cost_factor = 0.5
 		}
 		
@@ -300,7 +296,6 @@ ideologies = {
 			lend_lease_tension = 0.20
 			send_volunteers_tension = 0.00
 			guarantee_tension = 0.00
-			take_states_cost_factor = 0.25
 			annex_cost_factor = 0.5
 		}
 		
@@ -385,7 +380,6 @@ ideologies = {
 			lend_lease_tension = 0.20
 			send_volunteers_tension = 0.00
 			guarantee_tension = 0.00
-			take_states_cost_factor = 0.25
 			annex_cost_factor = 0.5
 		}
 		
@@ -454,7 +448,6 @@ ideologies = {
 	militarism = {
 	
 		types = {
-		
 			military = {
 			}
 		}
@@ -491,7 +484,6 @@ ideologies = {
 			lend_lease_tension = 0.20
 			send_volunteers_tension = 0.00
 			guarantee_tension = 0.00
-			take_states_cost_factor = 0.25
 			annex_cost_factor = 0.5
 		}
 		

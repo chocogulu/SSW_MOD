@@ -68,7 +68,7 @@ country_event = {
 
 	option = {
 		name = SSW_GER.4.a
-			load_focus_tree = JGB_naisen
+			load_focus_tree = ssw_Gebbels_Germany_civilwar_focus
 			hidden_effect = {
 				remove_ideas = GER_idea_1
 			GER = { country_event = { id = SSW_GER.5 days = 1 } }

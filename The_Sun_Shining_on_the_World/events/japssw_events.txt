@@ -180,6 +180,7 @@ news_event = {
 			not = {
 				tag = JAP
 			}
+		}
 	}
 }
 ##Event: バンコク会談

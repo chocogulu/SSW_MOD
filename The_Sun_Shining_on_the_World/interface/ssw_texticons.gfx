@@ -1,0 +1,43 @@
+spriteTypes = {	
+############################## Mod Units - NATO ##########################################
+	spriteType = {
+		name = "GFX_nato_unit_garrison_icon_small"
+		texturefile = "gfx/texticons/nato_unit_garrison_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+
+	spriteType = {
+		name = "GFX_nato_unit_militia_icon_small"
+		texturefile = "gfx/texticons/nato_unit_militia_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+
+	spriteType = {
+		name = "GFX_nato_unit_police_infantry_icon_small"
+		texturefile = "gfx/texticons/nato_unit_police_infantry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+
+############################ Mod Units ################################
+
+	spriteType = {
+		name = "GFX_unit_garrison_icon_small"
+		texturefile = "gfx/texticons/unit_garrison_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+
+	spriteType = {
+		name = "GFX_unit_militia_icon_small"
+		texturefile = "gfx/texticons/unit_militia_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+
+	spriteType = {
+		name = "GFX_unit_police_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_police_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+}

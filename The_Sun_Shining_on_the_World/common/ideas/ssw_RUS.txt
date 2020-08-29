@@ -45,25 +45,4 @@ ideas = {
 			}
 		}
 	}
-
-	# 軍事顧問
-	army_chief = {
-		
-		Kenji_Doihara = { #顧問の名前
-			
-			picture = CHI_political_advisor_Doihara
-			
-			allowed = {
-				original_tag = CHI #国家タグを書く
-			}
-			
-
-			
-			traits = { army_chief_planning_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
 }
