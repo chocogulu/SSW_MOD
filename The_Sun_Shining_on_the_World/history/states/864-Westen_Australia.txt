@@ -1,0 +1,25 @@
+
+state={
+	id=864
+	name="STATE_864"
+	manpower = 23584
+	
+	state_category = rural
+	history={
+		owner = AST
+		buildings = {
+		infrastructure = 1
+		}
+		add_core_of = AST
+		victory_points = {
+		8209 2
+		}
+		victory_points = {
+		5207 1
+		}
+	}
+
+	provinces={
+	5207 10937 11016 8209 8247 10958 
+	}
+}

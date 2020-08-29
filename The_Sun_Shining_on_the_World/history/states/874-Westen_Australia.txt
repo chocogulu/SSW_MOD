@@ -1,0 +1,38 @@
+
+state={
+	id=874
+	name="STATE_874"
+	manpower = 169210
+	
+	state_category = rural
+	resources={
+	aluminium = 24
+	}
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			7566 = {
+			naval_base = 1
+			}
+		}
+		add_core_of = AST
+		victory_points = {
+		7566 7
+		}
+		victory_points = {
+		10460 2
+		}
+		victory_points = {
+		8230 2
+		}
+		victory_points = {
+		1514 1
+		}
+	}
+
+	provinces={
+	1514 12957 2166 2187 1501 12354 7538 8230 4520 12367 12382 1557 12411 10460 4560 7566
+	}
+}

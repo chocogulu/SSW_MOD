@@ -1,0 +1,22 @@
+
+state={
+	id=922
+	name="STATE_922"
+	provinces={
+		1291 7342 12144 
+	}
+		history={
+		owner = SIA
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = MAL
+		add_core_of = INS
+		add_core_of = SIA
+
+	}
+
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
