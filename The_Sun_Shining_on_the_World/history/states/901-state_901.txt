@@ -1,0 +1,23 @@
+state={
+	id=901
+	name="STATE_901"
+	provinces={
+		1320 1690 4747 10155 10198 10327 10687 10690 10693 12155 12673 
+	}
+	manpower=650000
+	history={
+		owner = ALF
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 1
+		}
+		add_core_of = ALF
+		victory_points = {
+			1690 3
+		}
+	}
+	state_category = town
+	buildings_max_level_factor=1.000
+}

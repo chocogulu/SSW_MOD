@@ -1304,7 +1304,7 @@ HYD = {	#ハイデラバード
 	color_ui = rgb { 250 128 114 }
 }
 
-MDR = {	#マドラス
+MYS = {	#マイソール
 	color = rgb { 176 196 222 }
 	color_ui = rgb { 176 196 222 }
 }

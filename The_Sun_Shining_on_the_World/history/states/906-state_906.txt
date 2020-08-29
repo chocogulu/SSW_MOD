@@ -1,0 +1,19 @@
+
+state={
+	id=906
+	name="STATE_906"
+	provinces={
+		1767 4857 4863 7760 7880 7883 10587 10593 10624 10706 12572 
+	}
+	manpower=289438
+	history={
+		owner = UTC
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = UTC
+	}
+	buildings_max_level_factor=1.000
+		state_category = town
+}
