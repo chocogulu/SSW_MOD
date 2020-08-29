@@ -4,13 +4,13 @@ state={
 	name="STATE_825"
 
 	history={
-		owner = TRA
+		owner = MDU
 		buildings = {
 			infrastructure = 3
 		}
 		add_core_of = NIN
 		add_core_of = PIN
-		add_core_of = TRA
+		add_core_of = MDU
 	}
 
 	provinces={

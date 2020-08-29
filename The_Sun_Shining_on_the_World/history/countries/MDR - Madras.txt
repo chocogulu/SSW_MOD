@@ -1,5 +1,5 @@
-﻿#capital = 815
-#oob = "MYS_1950"
+﻿capital = 815
+#oob = "MDR_1950"
 
 # Starting tech
 set_technology = {
@@ -20,9 +20,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = ""
+	name = "C. N. Annadurai"
 	desc = ""
-	picture = "gfx/leaders/MYS/.dds"
+	picture = "gfx/leaders/MDR/Portrait_C_N_Annadurai.dds"
 	expire = "1965.1.1"
 	ideology = dictatorship
 	traits = {

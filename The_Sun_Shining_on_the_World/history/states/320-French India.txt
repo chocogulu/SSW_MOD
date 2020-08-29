@@ -7,8 +7,8 @@ state={
 	state_category = enclave
 
 	history={
-		owner = MDU
-		add_core_of = MDU
+		owner = MDR
+		add_core_of = MDR
 		add_core_of = NIN
 		add_core_of = PIN
 		buildings = {
