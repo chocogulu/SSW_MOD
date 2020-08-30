@@ -2,13 +2,14 @@
 state={
 	id=390
 	name="STATE_390"
+	manpower = 702849
+	state_category = rural
 
 	history={
 		owner = UTC
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1
-
 		}
 		add_core_of = UTC
 		victory_points = {
@@ -18,9 +19,6 @@ state={
 	}
 
 	provinces={
-		1747 1875 3750 4839 7745 7771 
+		1747 1875 3750 4839 4880 7745 7771 7862 10569 10595 12620 12667 
 	}
-	manpower=409382
-	buildings_max_level_factor=1.000
-	state_category=rural
 }

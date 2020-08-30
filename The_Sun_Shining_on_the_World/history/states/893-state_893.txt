@@ -11,13 +11,11 @@ state={
 		add_core_of = PIN
 		add_core_of = NIN
 		add_core_of = HYD
-		victory_points = {
-		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 			air_base = 1
 		}
-
+	}
 	buildings_max_level_factor=1.000
 }

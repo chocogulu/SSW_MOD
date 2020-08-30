@@ -7,12 +7,10 @@ state={
 		state_category = rural
 	manpower=35834332
 	history={
-		owner = MDR
+		owner = MYS
 		add_core_of = PIN
 		add_core_of = NIN
-		add_core_of = MDR
-		victory_points = {
-		}
+		add_core_of = MYS
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1

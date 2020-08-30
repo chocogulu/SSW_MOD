@@ -10,12 +10,10 @@ state={
 		owner = NIN
 		add_core_of = PIN
 		add_core_of = NIN
-		victory_points = {
-		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
 		}
-
+	}
 	buildings_max_level_factor=1.000
 }

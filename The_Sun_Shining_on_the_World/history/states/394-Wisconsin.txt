@@ -2,8 +2,11 @@
 state={
 	id=394
 	name="STATE_394"
+	manpower = 3039004
+	state_category = city
+	
 	resources={
-		steel=53.000
+		steel=53 # was: 84
 	}
 
 	history={
@@ -11,7 +14,6 @@ state={
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
-
 		}
 		add_core_of = UTC
 		victory_points = {
@@ -21,9 +23,6 @@ state={
 	}
 
 	provinces={
-		703 926 1560 4166 4738 4834 9657 10341 10341 12357 12456 
+		703 926 1560 1760 1849 3699 4029 4166 4738 4834 7776 7829 9657 9678 10341 10526 12357 12456 
 	}
-	manpower=2918761
-	buildings_max_level_factor=1.000
-	state_category=city
 }
