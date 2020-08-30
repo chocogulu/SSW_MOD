@@ -9,6 +9,8 @@ focus_tree = {
 	}
 	continuous_focus_position = { x = 100 y = 1300 }
 	default = no
+	#this file is made by Chiyo(DiscordID = Chiyo#4420)
+	#Please contact me in case of error.
 	focus = {
 		id = ENG_1950_vote
 		icon = GFX_focus_1950_vote

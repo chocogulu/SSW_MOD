@@ -1,5 +1,5 @@
 focus_tree = {
-	id = ssw_Vichy_France_focus
+	id = VFR
 	country = {
 		factor = 0
 		modifier = {
@@ -963,6 +963,17 @@ focus_tree = {
 		}
 		x = 11
 		y = 7
+			completion_reward = {
+					add_stability = -0.05
+					create_country_leader = {
+							name = "Jacques Doriot"
+							desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+							picture = GFX_portrait_fra_jacques_doriot
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = { eager_collaborator }
+						}
+				}
 
 	}
 	focus = {
@@ -974,6 +985,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 8
+			completion_reward = {
+					add_ideas = French_Peoples_Front
+				}
 
 	}
 	focus = {
@@ -985,6 +999,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 9
+			completion_reward = {
+					add_ideas = Integrated_french_government
+				}
 
 	}
 	focus = {
@@ -1044,10 +1061,14 @@ focus_tree = {
 		}
 		x = 12
 		y = 11
+			completion_reward = {
+					remove_ideas = Pétain_Law
+					add_ideas = Amended_Petan_Law
+				}
 
 	}
 	focus = {
-		id = 利子を切り下げ
+		id = 利子の切り下げ
 		icon = GFX_focus_fra_devalue_the_franc
 		cost = 5.00
 		prerequisite = {
@@ -1055,6 +1076,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 12
+			completion_reward = {
+					add_idea = Devaluation_of_interest
+				}
 
 	}
 	focus = {
@@ -1063,7 +1087,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = ペタン法の破棄
-			focus = 利子を切り下げ
+		}
+		prerequisite = {
+			focus = 利子の切り下げ
 		}
 		x = 11
 		y = 13
@@ -1231,7 +1257,7 @@ focus_tree = {
 		x = 11
 		y = 15
 			completion_reward = {
-					add_named_threat = 1
+					add_named_threat = 10
 				}
 
 	}
@@ -1376,6 +1402,15 @@ focus_tree = {
 		}
 		x = 8
 		y = 11
+			completion_reward = {
+					army_experience = 15
+					add_tech_bonus = {
+							name = SPR_engineering_advances
+							bonus = 1
+							uses = 2
+							category = land_doctrine
+						}
+				}
 
 	}
 	focus = {
