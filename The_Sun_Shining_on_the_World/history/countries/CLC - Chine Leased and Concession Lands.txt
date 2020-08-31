@@ -30,3 +30,15 @@ set_popularities = {
 	neutrality = 0
 	militarism = 0
 }
+
+create_country_leader = {
+		name = "土肥原賢二"
+		desc = ""
+		picture = "gfx/leaders/CLC/Doihara_Kenji.dds"
+		expire = "1965.1.1"
+		ideology = authoritative_democracy
+		traits = {
+			#
+		}
+	}
+}
