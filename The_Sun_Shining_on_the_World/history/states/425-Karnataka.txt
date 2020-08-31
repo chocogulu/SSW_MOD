@@ -21,8 +21,8 @@ state={
 		}
 		add_core_of = PIN
 		add_core_of = NIN
-		add_core_of = HYD
 		add_core_of = MYS
+		add_core_of = TRA
 
 	}
 

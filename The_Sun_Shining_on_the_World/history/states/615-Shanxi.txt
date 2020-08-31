@@ -2,13 +2,10 @@ state=
 {
 	id=615
 	name="STATE_615"
-	manpower = 19601000
-	
-	state_category = town
-	
-	history=
-	{
-		owner = CHI
+
+	history={
+		owner = SHX
+		add_core_of = SHX
 		add_core_of = CHI
 		add_core_of = RCH
 		victory_points = {
