@@ -71,6 +71,7 @@ country_event = {
 			load_focus_tree = ssw_Gebbels_Germany_civilwar_focus
 			hidden_effect = {
 				remove_ideas = GER_idea_1
+				remove_ideas = Air_force_conspiracy
 			GER = { country_event = { id = SSW_GER.5 days = 1 } }
 			GER = { remove_state_core = 56 }
 			GER = { remove_state_core = 57 }
@@ -537,7 +538,7 @@ country_event = {
 	
 	trigger = {
 
-		58 = { 
+		4 = { 
 			OR = { 
 				is_controlled_by = BEL
 				is_controlled_by = HOL
@@ -546,8 +547,8 @@ country_event = {
 				is_controlled_by = NFR
 			}
 		}
-		58 = { is_owned_by = HGR }
-		59 = { 
+		4 = { is_owned_by = HGR }
+		152 = { 
 			OR = { 
 				is_controlled_by = BEL
 				is_controlled_by = HOL
@@ -556,8 +557,8 @@ country_event = {
 				is_controlled_by = NFR
 			}
 		}
-		59 = { is_owned_by = HGR }
-		57 = { 
+		152 = { is_owned_by = HGR }
+		153 = { 
 			OR = { 
 				is_controlled_by = BEL
 				is_controlled_by = HOL
@@ -566,7 +567,7 @@ country_event = {
 				is_controlled_by = NFR
 			}
 		}
-		57 = { is_owned_by = HGR }
+		153 = { is_owned_by = HGR }
 		GER = { has_war_with = HGR }
 	}
 	

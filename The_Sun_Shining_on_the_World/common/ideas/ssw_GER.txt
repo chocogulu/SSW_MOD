@@ -25,7 +25,9 @@ ideas = {
 			picture = Emergency_conscription 
 			
 			modifier = {
-				surrender_limit = 10.0
+				training_time_army_factor = -0.25
+				non_core_manpower = 0.25
+				weekly_manpower = 2000
 			}
 		}
 		Protester = {
@@ -40,9 +42,6 @@ ideas = {
 			
 			modifier = {
 				surrender_limit = 10.0
-				training_time_army_factor = -0.25
-				non_core_manpower = 0.25
-				weekly_manpower = 2000
 			}
 		}
 		Air_force_conspiracy = {
@@ -54,6 +53,26 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
+
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = 100
+					instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = 100
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = 100
+					instant = yes
+				}
+				strat_bomber_equipment = {
+					build_cost_ic = 100
+					instant = yes
+				}
+			}
+
 			picture = ast_classify_alients
 			modifier = {
 				custom_modifier_tooltip = Air_force_conspiracy.d
