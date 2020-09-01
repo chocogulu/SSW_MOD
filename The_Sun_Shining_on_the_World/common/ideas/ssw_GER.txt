@@ -2,17 +2,16 @@ ideas = {
 	country = {
 		GER_idea_1 = {
 			
-			allowed = {always = yes}#最初から常にあるか
+			allowed = {always = yes} #最初から常にあるか
 			
 			removal_cost = -1#わかんね
 
 			allowed_civil_war = {always = yes}
 
-			picture = idea_eng_imperial_conscription#アイコンの写真
+			picture = eng_imperial_conscription #アイコンの写真
 			
 			modifier = {
-				training_time_army_factor = -0.25
-
+				custom_modifier_tooltip = GER_idea_1.d
 			}
 		}
 		Emergency_conscription = {
@@ -26,9 +25,7 @@ ideas = {
 			picture = Emergency_conscription 
 			
 			modifier = {
-				training_time_army_factor = -0.25
-				non_core_manpower = 0.25
-				weekly_manpower = 2000
+				surrender_limit = 10.0
 			}
 		}
 		Protester = {
@@ -43,6 +40,23 @@ ideas = {
 			
 			modifier = {
 				surrender_limit = 10.0
+				training_time_army_factor = -0.25
+				non_core_manpower = 0.25
+				weekly_manpower = 2000
+			}
+		}
+		Air_force_conspiracy = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+			picture = ast_classify_alients
+			modifier = {
+				custom_modifier_tooltip = Air_force_conspiracy.d
 			}
 		}
 	}

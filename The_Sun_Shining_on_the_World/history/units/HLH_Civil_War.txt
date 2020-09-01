@@ -668,3 +668,28 @@ units = {
 		start_experience_factor = 0.1
 	}
 }
+
+air_wings = {
+	
+	51 = { 						
+		tac_bomber_equipment_1 = { owner = "HLH" amount = 84 } 	
+		fighter_equipment_1 = { owner = "HLH"  amount = 76 }
+		fighter_equipment_1 = { owner = "HLH"  amount = 76 }
+		ace={ 	
+			modifier="fighter_genius"
+			name="tadokoro koji"
+			surname="Hartmann"
+			callsign="Bubi"
+			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+		}
+	}
+
+	55 = { 											
+		tac_bomber_equipment_1 = { owner = "HLH" amount = 72 } 
+		CAS_equipment_1 =  { owner = "HLH" amount = 30 }	
+		fighter_equipment_1 = { owner = "HLH"  amount = 216 }
+	}
+	54 = { 														
+		fighter_equipment_1 = { owner = "HLH"  amount = 24 }
+	}
+}

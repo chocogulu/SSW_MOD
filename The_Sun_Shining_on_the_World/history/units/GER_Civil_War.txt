@@ -36,7 +36,64 @@ division_template = {
 	}
 }
 
+division_template = {
+	name = "panzer-division"
+	division_names_group = GER_Inf_01
+	is_locked = no
+	regiments = { 
+		modern_armor = {
+			x = 0
+			y = 0
+		}
+		modern_armor = {
+			x = 0
+			y = 1
+		}
+		modern_armor = {
+			x = 0
+			y = 2
+		}
+		modern_armor = {
+			x = 1
+			y = 0
+		}
+		modern_armor = {
+			x = 1
+			y = 1
+		}
+		modern_armor = {
+			x = 1
+			y = 2
+		}
+		modern_armor = {
+			x = 1
+			y = 3
+		}
+		motorized = {
+			x = 2
+			y = 0
+		}
+		motorized = {
+			x = 2
+			y = 1
+		}
+		motorized = {
+			x = 2
+			y = 2
+		}
 
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		mot_recon = {
+			x = 0
+			y = 1
+		}
+	}
+}
 
 
 
@@ -44,6 +101,13 @@ division_template = {
 
 
 units = {
+
+	division = {
+		name = "1.emergency-panzer"
+		location = 6521
+		division_template = "panzer-division"
+		start_experience_factor = 0.1
+	}
 
 	division= {
 		name = "1.Artillery-division"
@@ -70,6 +134,30 @@ units = {
 		start_experience_factor = 0.3
 	}
 
+	division= {
+		name = "1.Artillery-division"
+		location = 6521
+		division_template = "Artillery-division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "2.Artillery-division"
+		location = 6521
+		division_template = "Artillery-division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "3.Artillery-division"
+		location = 6521
+		division_template = "Artillery-division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "4.Artillery-division"
+		location = 6521
+		division_template = "Artillery-division"
+		start_experience_factor = 0.3
+	}
 	division= {
 		name = "1.Artillery-division"
 		location = 6521
@@ -815,5 +903,147 @@ units = {
 		location = 557
 		division_template = "Civil-war-division"
 		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 3646
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 3666
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 698
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 521
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 11516
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 5291
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 3646
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 3666
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 698
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 521
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 11516
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 5291
+		division_template = "Civil-war-division"
+		start_experience_factor = 0.1
+	}
+}
+
+air_wings = {
+	64 = { 																		# Berlin 
+		### 7. Flieger-Division (CO: Student) ###
+		fighter_equipment_1 = { owner = "GER" amount = 132 }				# Kampfgeschwader zbV 1 -- Ju 52 (true number is divided by 4)
+						# Kampfgeschwader zbV 2 -- Ju 52 (true number is divided by 4)
+						# Kampfgeschwader zbV 172 -- Ju 52 (true number is divided by 4)
+		### Luftwaffenkommando III (CO: Weise) ###
+		fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 120 }					# Jagdgeschwader 2 -- Bf 109E (REVISIT -- VARIANT)
+		### Luftwaffenkommando IV (CO: Mayer) ###
+							# I./Jagdgeschwader 3 -- Bf 109E (REVISIT -- VARIANT)
+		heavy_fighter_equipment_1  = { owner = "GER"  amount = 30 }				# II./Jagdgeschwader 3 -- Bf 110C
+	}
+	62 = { 																		# Stettin
+		### 1. Flieger-Division (CO: Grauert) ###
+		fighter_equipment_1 = { owner = "GER" amount = 144 } 					# Kampfgeschwader 1 -- He 111H (REVISIT -- VARIANT)
+		 					# Kampfgeschwader 26 -- He 111H (REVISIT -- VARIANT)
+		CAS_equipment_1 =  { owner = "GER" amount = 108 }						# I/.Sturzkampfgeschwader 2 -- Ju 87B (REVISIT -- VARIANT)
+								# I./Lehrgeschwader 1 -- Ju 87B (REVISIT -- VARIANT)
+		fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 72 }					# Lehrgeschwader 2 -- Bf 109E (REVISIT -- VARIANT)
+		heavy_fighter_equipment_1  = { owner = "GER"  amount = 30 }				# Zerstörergeschwader 1 -- Bf 110C
+	}
+	763 = { 																		# Konigsberg 
+		### Luftwaffenkommando Ostpreussen (CO: Grauert) ###		
+		fighter_equipment_1 =  { owner = "GER" version_name = "Do 17" amount = 144 }						# I./Kampfgeschwader 3 -- Do 17Z
+								# Kampfgeschwader 2 -- Do 17Z
+		CAS_equipment_1 =  { owner = "GER" amount = 36 }						# II./Kampfgeschwader 3 -- Ju 87B (REVISIT -- VARIANT)
+		### Luftwaffen-Lehrdivision (CO: Förster) ###
+		tac_bomber_equipment_1 = { owner = "GER" amount = 72 } 					# II./Lehrgeschwader 1 -- He 111H (REVISIT -- VARIANT)
+		heavy_fighter_equipment_1  = { owner = "GER"  amount = 30 }				# III./Lehrgeschwader 1 -- Bf 110C
+		### Luftwaffenkommando I (CO: Musshoff) ###
+		fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 72 }					# Jagdgeschwader 1 -- Bf 109E (REVISIT -- VARIANT)
 	}
 }

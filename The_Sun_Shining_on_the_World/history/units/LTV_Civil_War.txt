@@ -491,5 +491,30 @@ units = {
 		division_template = "Civil-war-division"
 		start_experience_factor = 0.1
 	}
+}
 
+
+air_wings = {
+
+	
+	59 = { 
+
+		tac_bomber_equipment_1 = { 
+			owner = "LTV" 
+			amount = 192 
+		} 
+
+		fighter_equipment_1 = { 
+			owner = "LTV"  
+			amount = 144 
+		}
+	}
+
+	56 = {
+
+		fighter_equipment_1 = { 
+			owner = "LTV" 
+			amount = 108
+		}
+	}
 }

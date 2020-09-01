@@ -43,20 +43,20 @@ units = {
 		start_experience_factor = 0.3
 	}
 
-	ivision= {
+	division= {
 		name = "2.Artillery-division"
 		location = 11666
 		division_template = "Artillery-division"
 		start_experience_factor = 0.3
 	}
-	ivision= {
+	division= {
 		name = "3.Artillery-division"
 		location = 11666
 		division_template = "Artillery-division"
 		start_experience_factor = 0.3
 	}
 
-	ivision= {
+	division= {
 		name = "4.Artillery-division"
 		location = 11666
 		division_template = "Artillery-division"
@@ -552,5 +552,24 @@ units = {
 		location = 3718
 		division_template = "Civil-war-division"
 		start_experience_factor = 0.1
+	}
+}
+air_wings = {
+	153 = {
+		fighter_equipment_1 = {
+			owner = "HGR"
+			amount = 300
+		}
+		CAS_equipment_1 = {
+			owner = "HGR"
+			amount = 224
+		}
+	}
+
+	4 = {
+		fighter_equipment_1 = {
+			owner = "HGR"
+			amount = 200
+		}
 	}
 }

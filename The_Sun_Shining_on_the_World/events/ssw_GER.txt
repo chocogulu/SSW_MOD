@@ -68,7 +68,7 @@ country_event = {
 
 	option = {
 		name = SSW_GER.4.a
-			load_focus_tree = ssw_Gebbels_Germany_civilwar_focus
+			load_focus_tree = JGB_naisen
 			hidden_effect = {
 				remove_ideas = GER_idea_1
 			GER = { country_event = { id = SSW_GER.5 days = 1 } }
@@ -364,7 +364,6 @@ country_event = {
 				}
 				retire = yes
 			}
-			
 			delete_unit_template_and_units = {Division_template = "Infanterie-Division"}
 			delete_unit_template_and_units = {Division_template = "Fallschirmjäger-Division"}
 			delete_unit_template_and_units = {Division_template = "Infanterie-Division (mot.)"}
@@ -388,17 +387,19 @@ country_event = {
 	picture = GFX_Gering_speech
 
 	is_triggered_only = yes
-	immediate = {
-		LTV = { country_event = { id = SSW_LTV.1  } }
-		HLH = { country_event = { id = SSW_HLH.1  } }
-		HGR = { country_event = { id = SSW_HGR.1  } }
 
-	}
 	option = {
 		name = SSW_GER.6.a
 		hidden_effect = {
+			LTV = { country_event = { id = SSW_LTV.1  } }
+			HLH = { country_event = { id = SSW_HLH.1  } }
+			HGR = { country_event = { id = SSW_HGR.1  } }
 			load_oob = "GER_Civil_War"
 			GER = { country_event = { id = SSW_GER.7 days = 2 } }
+		}
+		GER = {
+			add_ideas = tot_economic_mobilisation
+			add_ideas = service_by_requirement
 		}
 		custom_effect_tooltip = SSW_GER.6.b
 	}
