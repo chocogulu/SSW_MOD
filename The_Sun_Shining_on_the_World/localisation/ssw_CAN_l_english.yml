@@ -49,8 +49,8 @@
  SSW_CAN_48:0 "駆逐艦の最新設計"
  SSW_CAN_49:0 "通商破壊艦隊"
  SSW_CAN_50:0 "新戦術の研究"
-
- #idea
+ 
+#idea
  CAN_idea_1:0 " 民主制の維持"
  CAN_idea_2:0 "開発独裁への移行"
  CAN_idea_3:0 "カナダ参謀本部"
@@ -61,7 +61,7 @@
  CAN_idea_8:0 "ハドソン湾会社の開発投資"
  CAN_idea_9:0 "フランス系カナダ人の徴兵危機"
 
- #decision
+#decision
  CAN_war_plans:0 "イギリスとの共同作戦"
  CAN_execute_war_plan_silver:0 "イタリア半島制圧の支援計画"
  CAN_execute_war_plan_GER:0 "ドイツ本土侵攻計画の立案"

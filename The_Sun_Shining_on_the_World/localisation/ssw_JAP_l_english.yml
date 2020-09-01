@@ -5,12 +5,12 @@
  JAP_have_no_front_and_back:0 "日本に表裏はない"
  JAP_world_factory:0 "世界の工場"
  JAP_expand_the_hanshin_industrial_region:0 "阪神工業地帯の充実"
- JAP_expand_the_kitakyushu_industrial_region:0 "北九州工業地帯の拡大"
- JAP_the_coal_liquefaction:0 "石炭液化"
  JAP_the_setouchi_industrial_region:0 "瀬戸内工業地帯"
- JAP_the_kure_imabari_harima_line:0 "呉-今治-播磨ライン"
+ JAP_the_coal_liquefaction:0 "石炭液化"
  JAP_the_west_japan_industrial_line:0 "西日本工業ライン"
+ JAP_the_kure_imabari_harima_line:0 "呉-今治-播磨ライン"
  JAP_the_west_japan_heavy_industry_region_plan:0 "西日本工業地帯構想"
+ JAP_expand_the_kitakyushu_industrial_region:0 "北九州工業地帯の拡大"
  JAP_the_kyushu_large_factory:0 "九州大工場"
  JAP_the_kinki_large_factory:0 "近畿大工場"
  JAP_the_west_japan_heavy_industry_region:0 "西日本工業地帯"
@@ -247,9 +247,11 @@
  JAP_siberia_kaitaku:0 "シベリア開拓団"
  JAP_siberia_tetsudo_toshi:0 "シベリア鉄道への投資支援"
  JAP_siberia_army:0 "シベリア軍の訓練"
+ 
 #focus event tooltip
  JAP_the_hiroshima_navy_agreement_focus_tooltip_01:0 "広島海軍協定の締結を大東亜共栄圏の海軍保有可能国に要求します"
  JAP_the_hiroshima_navy_agreement_event_tooltip_02:0 "§Rこの回答に大日本帝国は激怒するでしょう!§"
+ 
 #イベント
  japssw.1.title:0 "日本が陣営への加盟を画策"
  japssw.1.desc:0 "大日本帝国はドイツとの戦争に備えている。 ロシア国民の大部分は、日本と協力してドイツと戦争をすることを望んでいるが、 政府には戦争に対して消極的な者も存在する。 この陣営の招聘にはどう応じるべきだろうか？"
@@ -309,6 +311,7 @@
  SSW_JAPAN_event_for_america.5.t:0 "コロンビアが提案を拒否"
  SSW_JAPAN_event_for_america.6.t:0 "コロンビアが提案を受諾"
  SSW_JAPAN_event_for_america.7.t:0 "[FROM.GetName]が受諾"
+ 
 #idea
  JAP_idea_5:0 "天皇陛下"
  JAP_idea_6:0 "コロンビア石油会社"
@@ -405,6 +408,7 @@
  jap_indochina_company_tooltip:0 "インドシナは南シナ海の拠点である この地域はシャムが日本に牙を剥いた時の盾となる"
  jap_manchuria_company_tooltip:0 "満州の沃野は満州事変の時から日本の開拓が盛んだった 大日本の拡張の証たる満州の開拓をさらに進め工業を発展させるのだ！"
  jap_siberia_company_tooltip:0 "シベリアは一見不毛な大地に見えるが大資源地帯の可能性を秘めている！ 大量の資源は大東亜共栄圏全体にとっての大きな利益となる"
+
 #フラグ
  dec_01:0 "ディシジョン「関西周辺におけるインフラの充実」を完了した"
  dec_02:0 "ディシジョン「中国地方における鉄道網の敷設」を完了した"
@@ -422,7 +426,6 @@
  dec_14:0 "ディシジョン「新潟大造船所の建設」を完了した"
 
 #???
- kan_taiheyo_kyoeiken:0 "環太平洋共栄圏"
  JAP_Enhancement_of_Kansai_infrastructure:0 "関西周辺におけるインフラの充実"
  JAP_Construction_of_railway_network_in_Chugoku_region:0 "中国地方における鉄道網の敷設"
  JAP_dec_expand_the_kitakyushu_industrial_region:0 "北九州工業地帯の拡大"
