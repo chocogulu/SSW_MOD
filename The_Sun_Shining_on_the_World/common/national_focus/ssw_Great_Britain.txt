@@ -37,6 +37,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 1
+		ai_will_do = {
+			factor = 160
+		}
 			completion_reward = {
 					add_political_power = 150
 					country_event = {
@@ -55,6 +58,9 @@ focus_tree = {
 		}
 		x = 2
 		y = 2
+		ai_will_do = {
+			factor = 160
+		}
 			completion_reward = {
 					add_timed_idea = {
 							idea = ENG_idea_10
@@ -72,6 +78,9 @@ focus_tree = {
 		}
 		x = 2
 		y = 3
+		ai_will_do = {
+			factor = 160
+		}
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = ENG_idea_1
@@ -93,6 +102,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 2
+		ai_will_do = {
+			factor = 160
+		}
 			completion_reward = {
 					country_event = {
 							id = SSW_ENG.3
@@ -110,6 +122,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 3
+		ai_will_do = {
+			factor = 160
+		}
 			completion_reward = {
 					add_ideas = ENG_idea_11
 				}
@@ -124,6 +139,9 @@ focus_tree = {
 		}
 		x = 7
 		y = 3
+		ai_will_do = {
+			factor = 160
+		}
 			completion_reward = {
 					add_ideas = ENG_idea_12
 					add_tech_bonus = {
@@ -144,6 +162,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 2
+		ai_will_do = {
+			factor = 160
+		}
 			completion_reward = {
 					country_event = {
 							id = SSW_ENG.5
@@ -164,6 +185,9 @@ focus_tree = {
 			available = {
 					has_idea = ENG_idea_2
 				}
+		ai_will_do = {
+			factor = 160
+		}
 			completion_reward = {
 					country_event = {
 							id = SSW_ENG.4
@@ -194,6 +218,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 4
+		ai_will_do = {
+			factor = 160
+		}
 			completion_reward = {
 					remove_ideas = ENG_idea_3
 					country_event = {
@@ -325,6 +352,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 1
+		ai_will_do = {
+			factor = 50
+		}
 			completion_reward = {
 					custom_effect_tooltip = 3_ENG_tt
 				}
@@ -339,6 +369,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 2
+		ai_will_do = {
+			factor = 160
+		}
 		available = { not ={		 has_idea = ENG_idea_1 
 									 has_idea = ENG_idea_2
 									 has_idea = ENG_idea_3  } }
@@ -457,6 +490,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 2
+		ai_will_do = {
+			factor = 120
+		}
 			completion_reward = {
 					country_event = {
 							id = SSW_ENG.20
@@ -547,6 +583,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 2
+		ai_will_do = {
+			factor = 120
+		}
 			completion_reward = {
 					country_event = {
 							id = SSW_ENG.28
@@ -615,12 +654,28 @@ focus_tree = {
 	focus = {
 		id = ENG_politics_11
 		icon = GFX_focus_AST_rats_tobruk
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ENG_politics_4
 		}
 		x = 22
 		y = 2
+		ai_will_do = {
+			factor = 120
+		}
+		completion_reward = {
+				country_event = { id = SSW_ENG.30 }
+		}
+	}
+	focus = {
+		id = ENG_politics_14
+		icon = GFX_focus_Australia
+		cost = 7.00
+		prerequisite = {
+			focus = ENG_politics_11
+		}
+		x = 22
+		y = 3
 		completion_reward = {
 		521 = {
 			add_building_construction = {
@@ -628,30 +683,27 @@ focus_tree = {
      		   	province = 7564
 				level = 3
 				}
+			add_building_construction = {
+				type = coastal_bunker
+     		   	province = 7564
+				level = 3
+				}
 			}
 		}
 	}
 	focus = {
-		id = ENG_politics_14
-		icon = GFX_focus_Australia
-		cost = 10.00
-		prerequisite = {
-			focus = ENG_politics_11
-		}
-		x = 22
-		y = 3
-
-	}
-	focus = {
 		id = ENG_politics_16
-		icon = GFX_focus_ast_security
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		prerequisite = {
 			focus = ENG_politics_14
 		}
 		x = 22
 		y = 4
-
+		completion_reward = { 
+			custom_effect_tooltip = 9_ENG_tt 
+			AST = { country_event = { id = SSW_ENG.31 } }
+			}
 	}
 	focus = {
 		id = ENG_politics_17
