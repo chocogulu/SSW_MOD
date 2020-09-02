@@ -342,4 +342,20 @@ spriteTypes = {
 		name = "GFX_focus_Oxford"
 		texturefile = "gfx/interface/goals/ENG/focus_Oxford.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_attack_malaya"
+		texturefile = "gfx/interface/goals/ENG/focus_attack_malaya.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BBC_tv"
+		texturefile = "gfx/interface/goals/ENG/focus_BBC_tv.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CEDC"
+		texturefile = "gfx/interface/goals/ENG/focus_CEDC.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Oxford"
+		texturefile = "gfx/interface/goals/ENG/focus_Oxford.dds"
+	}
 }

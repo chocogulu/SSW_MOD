@@ -880,7 +880,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_UK_4
-		icon = GFX_goal_unknown
+		icon = GFX_focus_BBC_tv
 		cost = 10.00
 		prerequisite = {
 			focus = ENG_UK_3
@@ -957,7 +957,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_UK_11
-		icon = GFX_goal_unknown
+		icon = GFX_focus_CEDC
 		cost = 10.00
 		prerequisite = {
 			focus = ENG_UK_10
@@ -1947,7 +1947,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_jap_4
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_malaya
 		cost = 10.00
 		prerequisite = {
 			focus = ENG_jap_2
