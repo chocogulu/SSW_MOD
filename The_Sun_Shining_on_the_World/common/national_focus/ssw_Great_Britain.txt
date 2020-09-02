@@ -622,9 +622,14 @@ focus_tree = {
 		x = 22
 		y = 2
 		completion_reward = {
-							7564 = {
-							}
+		521 = {
+			add_building_construction = {
+				type = naval_base
+     		   	province = 7564
+				level = 3
+				}
 			}
+		}
 	}
 	focus = {
 		id = ENG_politics_14
