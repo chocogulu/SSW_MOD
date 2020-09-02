@@ -69,7 +69,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				war_support_factor = 0.10
-				consumer_goods_factor = -0.5
+				consumer_goods_factor = 0.05
 			}
 		}
 		Scars_of_the_civil_war_5 = {
@@ -85,7 +85,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.10
 				war_support_factor = 0.10
-				consumer_goods_factor = -0.5
+				consumer_goods_factor = 0.01
 			}
 		}
 		Resistance_Gering = {
@@ -99,6 +99,26 @@ ideas = {
 	
 			removal_cost = -1
 			picture = FRA_matignon_agreements	
+
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = 5
+					instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = 5
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = 5
+					instant = yes
+				}
+				strat_bomber_equipment = {
+					build_cost_ic = 5
+					instant = yes
+				}
+			}
+
 			modifier = {
 				air_chief_cost_factor = 0.5
 				air_equipment_upgrade_xp_cost = 2.2
@@ -117,7 +137,27 @@ ideas = {
 			}
 	
 			removal_cost = -1
-			picture = FRA_matignon_agreements	
+			picture = FRA_matignon_agreements
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = 1
+					instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = 1
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = 1
+					instant = yes
+				}
+				strat_bomber_equipment = {
+					build_cost_ic = 1
+					instant = yes
+				}
+			}
+
 			modifier = {
 				air_chief_cost_factor = 0.5
 				air_equipment_upgrade_xp_cost = 2.2
