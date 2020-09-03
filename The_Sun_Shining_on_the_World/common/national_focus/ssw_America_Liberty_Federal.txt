@@ -15,20 +15,20 @@ focus_tree = {
 		y = 17
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ALF_
+		prerequisite = {
+			# focus = ALF_ 仮修正 事前要求は何？
 			focus = ALF_KUYfWLrk
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = ALF_xsLjcZgm
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = ALF_hkstRGmN
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = ALF_DfhcXrzA
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = ALF_BXMijVSc
 		}
 		ai_will_do = {
@@ -43,14 +43,14 @@ focus_tree = {
 		y = 13
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_KUYfWLrk }
+		prerequisite = {
+			focus = ALF_KUYfWLrk
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_extra_state_shared_building_slots= {
- add_extra_state_shared_building_slots = 2 
-}
+			#仮修正 ステートのスコープを追加してください add_extra_state_shared_building_slots = 2 
 		}
 	}
 	#Focus for CASを増産
@@ -61,9 +61,9 @@ focus_tree = {
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ALF_dBfnkjrl 
-			focus = ALF_nmwvcfHb 
+		prerequisite = {
+			focus = ALF_dBfnkjrl
+			focus = ALF_nmwvcfHb
 		}
 		ai_will_do = {
 			factor = 1
@@ -77,8 +77,12 @@ focus_tree = {
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_RuibHnzo }
-		mutually_exclusive = { focus = ALF_dBfnkjrl }
+		prerequisite = {
+			focus = ALF_RuibHnzo
+		}
+		mutually_exclusive = {
+			focus = ALF_dBfnkjrl
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -91,7 +95,9 @@ focus_tree = {
 		y = 14
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_KyDhgNQC }
+		prerequisite = {
+			focus = ALF_KyDhgNQC
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -116,22 +122,26 @@ focus_tree = {
 		y = 3
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_nJGCvYjK }
-		mutually_exclusive = { focus = ALF_RriAtpTC }
+		prerequisite = {
+			focus = ALF_nJGCvYjK
+		}
+		mutually_exclusive = {
+			focus = ALF_RriAtpTC
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_popularity= { 
-ideology = democracy 
-popularity = -0.3 
-}
+			add_popularity = {
+				ideology = democracy
+				popularity = -0.3
+			}
 		}
 	}
 	#Focus for 産業成長期 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
 		id = ALF_KUYfWLrk
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown		##Unfortunately, the tool could not find your icon in the game's files
 		x = 15
 		y = 12
 		cost = 4
@@ -152,7 +162,7 @@ popularity = -0.3
 			factor = 10
 		}
 		completion_reward = {
-			add_political_power= 120
+			add_political_power = 120
 		}
 	}
 	#Focus for 国の安定を優先 - focus ID randomly generated due to title being in non-latin characters
@@ -163,12 +173,14 @@ popularity = -0.3
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_ovGIDHbW }
+		prerequisite = {
+			focus = ALF_ovGIDHbW
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability= 0.05
+			add_stability = 0.05
 		}
 	}
 	#Focus for 軍隊人数増加 - focus ID randomly generated due to title being in non-latin characters
@@ -179,12 +191,14 @@ popularity = -0.3
 		y = 3
 		cost = 1
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_nJGCvYjK }
+		prerequisite = {
+			focus = ALF_nJGCvYjK
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_manpower= 10000
+			add_manpower = 10000
 		}
 	}
 	#Focus for 社会自由党に投票 - focus ID randomly generated due to title being in non-latin characters
@@ -195,16 +209,20 @@ popularity = -0.3
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_nJGCvYjK }
-		mutually_exclusive = { focus = ALF_ZcLQRFCU }
+		prerequisite = {
+			focus = ALF_nJGCvYjK
+		}
+		mutually_exclusive = {
+			focus = ALF_ZcLQRFCU
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_popularity= { 
-ideology = democracy
-popularity = 0.1 
-}
+			add_popularity = {
+				ideology = democracy
+				popularity = 0.1
+			}
 		}
 	}
 	#Focus for 武装を強化 - focus ID randomly generated due to title being in non-latin characters
@@ -215,30 +233,29 @@ popularity = 0.1
 		y = 14
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_KyDhgNQC }
+		prerequisite = {
+			focus = ALF_KyDhgNQC
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
- limit = {
- free_building_slots = {
- building = arms_factory
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 1
- add_building_construction = {
- type = arms_factory
- level = 1
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for インフラを強化Ⅱ - focus ID randomly generated due to title being in non-latin characters
@@ -249,7 +266,9 @@ popularity = 0.1
 		y = 15
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_QxnGVSIF }
+		prerequisite = {
+			focus = ALF_QxnGVSIF
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -262,11 +281,11 @@ popularity = 0.1
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ALF_KPtJcbni 
+		prerequisite = {
+			focus = ALF_KPtJcbni
 		}
-		prerequisite = { 
-			focus = ALF_RuibHnzo 
+		prerequisite = {
+			focus = ALF_RuibHnzo
 		}
 		ai_will_do = {
 			factor = 1
@@ -280,7 +299,9 @@ popularity = 0.1
 		y = 14
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_KyDhgNQC }
+		prerequisite = {
+			focus = ALF_KyDhgNQC
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -293,7 +314,9 @@ popularity = 0.1
 		y = 15
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_XAQTNRru }
+		prerequisite = {
+			focus = ALF_XAQTNRru
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -306,7 +329,9 @@ popularity = 0.1
 		y = 15
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_LMKmvoxO }
+		prerequisite = {
+			focus = ALF_LMKmvoxO
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -319,7 +344,9 @@ popularity = 0.1
 		y = 14
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_KyDhgNQC }
+		prerequisite = {
+			focus = ALF_KyDhgNQC
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -332,15 +359,17 @@ popularity = 0.1
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_ovGIDHbW }
+		prerequisite = {
+			focus = ALF_ovGIDHbW
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			diplomatic_relation= { 
-country = JAP 
-relation = non_aggression_pact 
-}
+			diplomatic_relation = {
+				country = JAP
+				relation = non_aggression_pact
+			}
 		}
 	}
 	#Focus for 崇高なるアメリカ空軍 - focus ID randomly generated due to title being in non-latin characters
@@ -351,7 +380,9 @@ relation = non_aggression_pact
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_heAozVOY }
+		prerequisite = {
+			focus = ALF_heAozVOY
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -367,12 +398,14 @@ relation = non_aggression_pact
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_KPtJcbni }
+		prerequisite = {
+			focus = ALF_KPtJcbni
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			navy_experience= 2
+			navy_experience = 2
 		}
 	}
 	#Focus for 海軍演習Ⅱ - focus ID randomly generated due to title being in non-latin characters
@@ -383,12 +416,14 @@ relation = non_aggression_pact
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_VnKswkDH }
+		prerequisite = {
+			focus = ALF_VnKswkDH
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			navy_experience= 2
+			navy_experience = 2
 		}
 	}
 	#Focus for 海軍最後の仕上げ - focus ID randomly generated due to title being in non-latin characters
@@ -399,13 +434,17 @@ relation = non_aggression_pact
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_GtuBrXyD }
-		mutually_exclusive = { focus = ALF_pHrLCzyU }
+		prerequisite = {
+			focus = ALF_GtuBrXyD
+		}
+		mutually_exclusive = {
+			focus = ALF_pHrLCzyU
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			navy_experience= 1
+			navy_experience = 1
 		}
 	}
 	#Focus for 空軍演習Ⅰ - focus ID randomly generated due to title being in non-latin characters
@@ -416,7 +455,9 @@ relation = non_aggression_pact
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_RuibHnzo }
+		prerequisite = {
+			focus = ALF_RuibHnzo
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -429,8 +470,12 @@ relation = non_aggression_pact
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_EYZDBzag }
-		mutually_exclusive = { focus = ALF_CaAJmniT }
+		prerequisite = {
+			focus = ALF_EYZDBzag
+		}
+		mutually_exclusive = {
+			focus = ALF_CaAJmniT
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -446,8 +491,12 @@ relation = non_aggression_pact
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_RuibHnzo }
-		mutually_exclusive = { focus = ALF_nmwvcfHb }
+		prerequisite = {
+			focus = ALF_RuibHnzo
+		}
+		mutually_exclusive = {
+			focus = ALF_nmwvcfHb
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -460,8 +509,12 @@ relation = non_aggression_pact
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_KPtJcbni }
-		mutually_exclusive = { focus = ALF_dxeoDtpu }
+		prerequisite = {
+			focus = ALF_KPtJcbni
+		}
+		mutually_exclusive = {
+			focus = ALF_dxeoDtpu
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -474,8 +527,12 @@ relation = non_aggression_pact
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_KPtJcbni }
-		mutually_exclusive = { focus = ALF_TxWirnvI }
+		prerequisite = {
+			focus = ALF_KPtJcbni
+		}
+		mutually_exclusive = {
+			focus = ALF_TxWirnvI
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -488,9 +545,9 @@ relation = non_aggression_pact
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ALF_TxWirnvI 
-			focus = ALF_dxeoDtpu 
+		prerequisite = {
+			focus = ALF_TxWirnvI
+			focus = ALF_dxeoDtpu
 		}
 		ai_will_do = {
 			factor = 1
@@ -504,7 +561,9 @@ relation = non_aggression_pact
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_heAozVOY }
+		prerequisite = {
+			focus = ALF_heAozVOY
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -520,7 +579,9 @@ relation = non_aggression_pact
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_pWtEmXVB }
+		prerequisite = {
+			focus = ALF_pWtEmXVB
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -536,7 +597,9 @@ relation = non_aggression_pact
 		y = 15
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_CkDeqfIK }
+		prerequisite = {
+			focus = ALF_CkDeqfIK
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -549,7 +612,9 @@ relation = non_aggression_pact
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_RriAtpTC }
+		prerequisite = {
+			focus = ALF_RriAtpTC
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -562,10 +627,10 @@ relation = non_aggression_pact
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ALF_ORdMIqGF 
-			focus = ALF_xNBVwYIp 
-			focus = ALF_NmkznYKw 
+		prerequisite = {
+			focus = ALF_ORdMIqGF
+			focus = ALF_xNBVwYIp
+			focus = ALF_NmkznYKw
 		}
 		ai_will_do = {
 			factor = 1
@@ -579,12 +644,14 @@ relation = non_aggression_pact
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_MsKwTNFm }
+		prerequisite = {
+			focus = ALF_MsKwTNFm
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_manpower= 8000
+			add_manpower = 8000
 		}
 	}
 	#Focus for 大東亜共栄圏に参加 - focus ID randomly generated due to title being in non-latin characters
@@ -595,7 +662,9 @@ relation = non_aggression_pact
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_LQCWvKUo }
+		prerequisite = {
+			focus = ALF_LQCWvKUo
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -608,7 +677,9 @@ relation = non_aggression_pact
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_MsKwTNFm }
+		prerequisite = {
+			focus = ALF_MsKwTNFm
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -624,7 +695,9 @@ relation = non_aggression_pact
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ALF_MsKwTNFm }
+		prerequisite = {
+			focus = ALF_MsKwTNFm
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -644,8 +717,8 @@ relation = non_aggression_pact
 			factor = 1
 		}
 		completion_reward = {
-			army_experience= 15
+			army_experience = 15
 		}
 	}
-#End of focuses 
- }
+	#End of focuses 
+}
