@@ -2,10 +2,7 @@
 state={
 	id=915
 	name="STATE_915"
-	provinces={
-		1550 7546 7590 12347 
-	}
-	manpower=1940093
+
 	history={
 		owner = CUB
 		buildings = {
@@ -25,6 +22,11 @@ state={
 		}
 
 	}
+
+	provinces={
+		1550 7546 7590 12347 
+	}
+	manpower=1940093
 	buildings_max_level_factor=1.000
 	state_category=town
 }

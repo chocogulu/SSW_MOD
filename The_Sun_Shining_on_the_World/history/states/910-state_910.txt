@@ -2,10 +2,7 @@
 state={
 	id=910
 	name="STATE_910"
-	provinces={
-		1556 1572 1584 10352 10380 10407 12353 12381 
-	}
-	manpower=10029321
+
 	history={
 		owner = FSA
 		buildings = {
@@ -25,6 +22,11 @@ state={
 		add_core_of = FSA
 
 	}
+
+	provinces={
+		1556 1572 10352 10380 10407 12353 12381 
+	}
+	manpower=10029321
 	buildings_max_level_factor=1.000
 	state_category=town
 }

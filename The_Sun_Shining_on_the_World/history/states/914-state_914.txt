@@ -2,10 +2,7 @@
 state={
 	id=914
 	name="STATE_914"
-	provinces={
-		734 3702 3733 3747 6707 9664 11650 11654 11680 
-	}
-	manpower=578738
+
 	history={
 		owner = NEL
 		buildings = {
@@ -21,6 +18,11 @@ state={
 		}
 
 	}
+
+	provinces={
+		734 3702 3733 3747 6707 9664 11654 11680 
+	}
+	manpower=578738
 	buildings_max_level_factor=1.000
 	state_category=metropolis
 }

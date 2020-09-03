@@ -6,22 +6,24 @@ state={
 	history={
 		owner = MDU
 		victory_points = {
-		10278 10
+			10278 10 
 		}
-			
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2
 			arms_factory = 2
+
 		}
 		add_core_of = NIN
 		add_core_of = PIN
 		add_core_of = MDU
+
 	}
 
 	provinces={
-		12164 1268 7436 4420 10808 4315 10278 1381 10246
+		1268 1381 4420 7436 10246 10278 12164 
 	}
-	manpower= 26223300
+	manpower=26223300
+	buildings_max_level_factor=1.000
 	state_category=city
 }

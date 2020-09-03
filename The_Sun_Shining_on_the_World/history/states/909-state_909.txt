@@ -2,10 +2,7 @@
 state={
 	id=909
 	name="STATE_909"
-	provinces={
-		1760 1849 3699 4029 7776 7829 9678 10526 
-	}
-	manpower=1097236
+
 	history={
 		owner = UTC
 		buildings = {
@@ -16,6 +13,11 @@ state={
 		add_core_of = UTC
 
 	}
+
+	provinces={
+		1849 3699 4029 7776 7829 9678 10526 
+	}
+	manpower=1097236
 	buildings_max_level_factor=1.000
 	state_category=town
 }

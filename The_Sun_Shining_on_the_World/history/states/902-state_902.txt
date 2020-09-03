@@ -1,19 +1,24 @@
+
 state={
 	id=902
 	name="STATE_902"
-	provinces={
-		1954 4955 5038 10740 10894 12728 
-	}
-	manpower=198472
-		history={
+
+	history={
 		owner = TEX
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			arms_factory = 1
+
 		}
 		add_core_of = TEX
+
 	}
+
+	provinces={
+		1954 4955 5038 10740 10894 
+	}
+	manpower=198472
 	buildings_max_level_factor=1.000
 	state_category=town
 }

@@ -1,20 +1,24 @@
+
 state={
 	id=918
 	name="STATE_918"
-	provinces={
-		1961 5094 10802 12801 
-	}
-		state_category = pastoral
-	manpower=800000
+
 	history={
 		owner = TIB
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = TIB
 		add_core_of = CHI
 		add_core_of = RCH
 
 	}
+
+	provinces={
+		1961 10802 12801 
+	}
+	manpower=800000
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 }
