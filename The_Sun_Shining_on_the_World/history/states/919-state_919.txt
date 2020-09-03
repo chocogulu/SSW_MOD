@@ -5,6 +5,8 @@ state={
 		1991 4900 8121 12807 
 	}
 	manpower=300000
+	state_category = pastoral
+	
 	history={
 		owner = TIB
 		buildings = {
