@@ -1,228 +1,226 @@
 ideas = {
-    country = {
-          Review_of_the_French_economy = {
-
-            allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = spr_relocate_the_gold_reserves
-
-            modifier = {consumer_goods_factor = -0.03}
-        }
-
-
-          Pétain_Law = {
-
-            allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = triumphant_will
-
-            modifier = {production_speed_buildings_factor = 0.1}
-        }
-
-          Economic_revolution = {
-
-            allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = generic_production_bonus
-
-            modifier = {production_speed_buildings_factor = 0.05}
-        }
-
-
-          Reichsbank = {
-
-            allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = Generic_goods_red_bonus
-
-            modifier = {consumer_goods_factor = -0.02}
-        }
-
-        French_Peoples_Front = {
-
-            allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = idea_saf_ossewabrandwag_fascism.dds
-
-            modifier = {army_core_attack_factor = 0.1}
-        }
-
-          France_nazism = {
-
-            allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = Generic_fascism_drift_bonus
-
-            modifier = {enemy_partisan_effect = 0.10}
-        }
-          Integrated_french_government = {
-
-            allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = idea_generic_deal_with_the_devil.dds
-
-            modifier = {political_power_cost = -0.10}
-        }
-
-          dictator = {
-
-            allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = Triumphant_will
-
-            modifier = {political_power_gain = 0.25}
-        }
-
-          Integrated_French_political_party = {
-
-            allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = Idea_generic_deal_with_the_devil.dds
-
-            modifier = {stability_weekly = 0.01}
-        }
-
-
-          Saint_of_the_Salvation = {
-
-            allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = Victors_of_the_Great_War.dds
-
-            modifier = {planning_speed = 0.20}
-          }
-
-            Beyond_the_Atlantic = {
-
-              allowed = {always = no}
-
-              removal_cost = -1
-
-              allowed_civil_war = {always = yes}
-
-              picture = Generic_navy_bonus.dds
-
-              modifier = {industrial_capacity_dockyard = 0.20}
-            }
-
-
-              Atlantic_wall = {
-
-                allowed = {always = no}
-
-                removal_cost = -1
-
-                allowed_civil_war = {always = yes}
-
-                picture = Fortification_Focus.dds
-
-                modifier = {production_speed_coastal_bunker_factor = 0.20}
-              }
-
-              French_mediterranean_fleet = {
-
-              allowed = {always = no}
-
-              removal_cost = -1
-
-              allowed_civil_war = {always = yes}
-
-              picture = idea_generic_coastal_defense_ships.dds
-
-              modifier = {navy_capital_ship_attack_factor = 0.1}
-            }
-
-            Amended_Petan_Law = {
-
-              allowed = {always = no}
-
-              removal_cost = -1
-
-              allowed_civil_war = {always = yes}
-
-              picture = idea_generic_constitutional_guarantee.dds
-
-              modifier = {production_speed_buildings_factor = 0.15
-              industrial_capacity_factory = 0.1
-              political_power_cost = 0.25
-              }
-            }
-              Devaluation_of_interest = {
-
-              allowed = {always = no}
-
-              removal_cost = -1
-
-              allowed_civil_war = {always = yes}
-
-              picture = generic_goods_red_bonus
-
-              modifier = {consumer_goods_factor = -0.03}
-            }
-              Expansion_of_shipyards = {
-
-              allowed = {always = no}
-
-              removal_cost = -1
-
-              allowed_civil_war = {always = yes}
-
-              picture = fra_market_dynamism.dds
-
-              modifier = {industrial_capacity_dockyard = 0.1}
-            }
-          
-              Technical_agreement = {
-
-             allowed = {always = no}
-
-             removal_cost = -1
-
-              allowed_civil_war = {always = yes}
-
-              picture = Generic_constitutional_guarantee.dds
-
-             modifier = {research_speed_factor = 0.04}
-        }
-    }
+	country = {
+		Review_of_the_French_economy = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = spr_relocate_the_gold_reserves
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+		Pétain_Law = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = triumphant_will
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		Economic_revolution = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		Reichsbank = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = Generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+		French_Peoples_Front = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = idea_saf_ossewabrandwag_fascism.dds
+			modifier = {
+				army_core_attack_factor = 0.1
+			}
+		}
+		France_nazism = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = Generic_fascism_drift_bonus
+			modifier = {
+			}
+		}
+		Integrated_french_government = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = idea_generic_deal_with_the_devil.dds
+			modifier = {
+				political_power_cost = -0.1
+			}
+		}
+		dictator = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = Triumphant_will
+			modifier = {
+				political_power_gain = 0.25
+			}
+		}
+		Integrated_French_political_party = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = Idea_generic_deal_with_the_devil.dds
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
+		Saint_of_the_Salvation = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = Victors_of_the_Great_War.dds
+			modifier = {
+				planning_speed = 0.2
+			}
+		}
+		Beyond_the_Atlantic = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = Generic_navy_bonus.dds
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+			}
+		}
+		Atlantic_wall = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = Fortification_Focus.dds
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.2
+			}
+		}
+		French_mediterranean_fleet = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = idea_generic_coastal_defense_ships.dds
+			modifier = {
+				navy_capital_ship_attack_factor = 0.1
+			}
+		}
+		Amended_Petan_Law = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = idea_generic_constitutional_guarantee.dds
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.1
+				political_power_cost = 0.25
+			}
+		}
+		Devaluation_of_interest = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+		Expansion_of_shipyards = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = fra_market_dynamism.dds
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		Technical_agreement = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = Generic_constitutional_guarantee.dds
+			modifier = {
+				research_speed_factor = 0.04
+			}
+		}
+	}
 }
