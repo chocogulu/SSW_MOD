@@ -360,10 +360,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_timed_idea = {
-				idea = Investment_in_the_company
-				days = 180
-			}
+			#add_timed_idea = {
+			#	idea = Investment_in_the_company このようなアイデアは存在しません
+			#	days = 180
+			#}
 			add_political_power = -50
 		}
 	}
@@ -382,7 +382,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = Italy_Expansion_Policy
+			#add_ideas = Italy_Expansion_Policy このようなアイデアは存在しません
 		}
 	}
 	#Focus for appointment
@@ -4894,7 +4894,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = Ready_for_Rome
+			#add_ideas = Ready_for_Rome このようなアイデアは存在しません
 		}
 	}
 	#Focus for createairforce
@@ -5688,7 +5688,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = Formation_of_the_Great_Italian_Fleet
+			#add_ideas = Formation_of_the_Great_Italian_Fleet このようなアイデアは存在しません
 			navy_experience = 50
 		}
 	}
@@ -5711,7 +5711,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = air_naval_policy
+			#add_ideas = air_naval_policy このようなアイデアは存在しません
 		}
 	}
 	#Focus for battleshipinitiative
@@ -5733,7 +5733,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = battleship_policy
+			#add_ideas = battleship_policy このようなアイデアは存在しません
 		}
 	}
 	#Focus for experiencedarmy
@@ -5755,7 +5755,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = Weak_army
-			add_ideas = The_End_of_Military_Reform
+			#add_ideas = The_End_of_Military_Reform このようなアイデアは存在しません
 		}
 	}
 	#End of focuses 
