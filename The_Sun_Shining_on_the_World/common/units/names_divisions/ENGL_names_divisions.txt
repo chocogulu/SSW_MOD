@@ -825,7 +825,6 @@ BRENGL_ARM_02 = {
 		CAN
 		NZL
 		SAF
-		RAJ
 	}
 	can_use = {
 		always = yes
