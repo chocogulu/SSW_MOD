@@ -5,16 +5,12 @@ ideas = {
 			allowed = {
 				always = yes
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				production_speed_infrastructure_factor = 0.15
-
 			}
 		}
 		#アウトラーダ_NF変更後
@@ -22,16 +18,12 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
-				production_speed_infrastructure_factor = 0.20
-
+				production_speed_infrastructure_factor = 0.2
 			}
 		}
 		#経済開発省
@@ -39,18 +31,15 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			research_bonus = {
 				industry = -0.08
 			}
 			modifier = {
-				global_building_slots_factor = 0.10
+				global_building_slots_factor = 0.1
 			}
 		}
 		#イタリアの４ヵ年計画
@@ -58,15 +47,12 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
-				consumer_goods_factor = 0.10
+				consumer_goods_factor = 0.1
 			}
 		}
 		#南北問題
@@ -74,13 +60,10 @@ ideas = {
 			allowed = {
 				always = yes
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				production_factory_start_efficiency_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.05
@@ -91,17 +74,13 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
-				stability_factor = -0.10
+				stability_factor = -0.1
 				conscription = 0.01
-
 			}
 		}
 		#市民権
@@ -109,16 +88,13 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
-				stability_factor = -0.10
-				production_factory_start_efficiency_factor = -0.10
+				stability_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
 			}
 		}
 		#死ぬまで働け
@@ -126,17 +102,14 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				war_support_factor = -0.15
 				production_factory_start_efficiency_factor = 0.4
-				production_factory_max_efficiency_factor = 0.20
+				production_factory_max_efficiency_factor = 0.2
 			}
 		}
 		#貧弱な陸軍
@@ -144,17 +117,14 @@ ideas = {
 			allowed = {
 				always = yes
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_morale_factor = -0.15
 				army_org_Factor = -0.2
-				production_factory_max_efficiency_factor = 0.20
+				production_factory_max_efficiency_factor = 0.2
 				army_attack_factor = -0.15
 				army_defence_factor = -0.15
 			}
@@ -164,13 +134,10 @@ ideas = {
 			allowed = {
 				always = yes
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = 0.15
 			}
@@ -180,17 +147,14 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_factor = 0.15
 				production_factory_start_efficiency_factor = 0.05
-				justify_war_goal_time = 2.0
+				justify_war_goal_time = 2
 				conscription = -0.2
 			}
 		}
@@ -199,13 +163,10 @@ ideas = {
 			allowed = {
 				always = yes
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				industrial_capacity_dockyard = 0.15
 			}
@@ -215,13 +176,10 @@ ideas = {
 			allowed = {
 				always = yes
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -231,17 +189,14 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_armor_speed_factor = 0.15
-                army_armor_attack_factor = 0.10
-                army_armor_defence_factor = 0.15
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.15
 			}
 		}
 		#砲兵による戦場支援
@@ -249,17 +204,14 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				army_artillery_attack_factor = 0.15
 				army_artillery_defence_factor = 0.15
-                enemy_army_bonus_air_superiority_factor = -0.15
+				enemy_army_bonus_air_superiority_factor = -0.15
 			}
 		}
 		#計画的な作戦立案
@@ -267,13 +219,10 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				max_planning = 0.25
 				army_org_Factor = 0.15
@@ -285,13 +234,10 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				conscription_factor = 0.03
 				training_time_factor = -0.25
@@ -304,19 +250,16 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
-				conscription_factor = 0.10
+				conscription_factor = 0.1
 				army_core_attack_factor = 0.15
 				army_core_defence_factor = 0.15
-				army_morale_factor = 0.10
-				attrition = -0.20
+				army_morale_factor = 0.1
+				attrition = -0.2
 			}
 		}
 		#深刻な資金格差
@@ -324,13 +267,10 @@ ideas = {
 			allowed = {
 				always = yes
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				production_factory_efficiency_factor = -0.03
 				production_factory_start_efficiency_factor = -0.05
@@ -341,15 +281,12 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
-				production_factory_start_efficiency_factor = 0.10
+				production_factory_start_efficiency_factor = 0.1
 			}
 		}
 		#大イタリア空軍
@@ -357,13 +294,10 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				air_ace_generation_chance_factor = 0.15
 				army_bonus_air_superiority_factor = 0.25
@@ -376,13 +310,10 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				air_air_superiority_attack_factor = 0.15
 				air_air_superiority_defence_factor = 0.15
@@ -395,13 +326,10 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				air_strategic_bomber_attack_factor = 0.25
 				air_strategic_bomber_defence_factor = 0.25
@@ -414,13 +342,10 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				industry_air_damage_factor = -0.15
 				production_speed_radar_station_factor = 0.25
