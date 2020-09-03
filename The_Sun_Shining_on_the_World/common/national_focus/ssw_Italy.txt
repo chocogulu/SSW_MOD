@@ -15,32 +15,40 @@ focus_tree = {
 		y = 5
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_submissionincroatia }
-		mutually_exclusive = { focus = ITA_dilationbybloodandiron }
+		prerequisite = {
+			focus = ITA_submissionincroatia
+		}
+		mutually_exclusive = {
+			focus = ITA_dilationbybloodandsteel
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power= 100
-  add_war_support= 0.05
+			add_political_power = 100
+			add_war_support = 0.05
 		}
 	}
-	#Focus for dilationbybloodandiron
+	#Focus for dilationbybloodandsteel
 	focus = {
-		id = ITA_dilationbybloodandiron
+		id = ITA_dilationbybloodandsteel
 		icon = GFX_focus_spr_anarchism_knows_no_borders
 		x = 66
 		y = 5
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_submissionincroatia }
-		mutually_exclusive = { focus = ITA_extensionswithpenandpaper }
+		prerequisite = {
+			focus = ITA_submissionincroatia
+		}
+		mutually_exclusive = {
+			focus = ITA_extensionswithpenandpaper
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power= 100 
- add_stability= 0.05
+			add_political_power = 100
+			add_stability = 0.05
 		}
 	}
 	#Focus for defencegibraltar
@@ -51,29 +59,33 @@ focus_tree = {
 		y = 17
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_iberiastrategy }
-		mutually_exclusive = { focus = ITA_chengestate }
+		prerequisite = {
+			focus = ITA_iberiastrategy
+		}
+		mutually_exclusive = {
+			focus = ITA_chengestate
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			118 = {
-add_building_construction = {
-    type = naval_base
-    level = 4
-    instant_build = yes
-    province = 4135
-}
-}
-118 = {
-add_building_construction = {
-    type = bunker
-    level = 5
-    instant_build = yes
-    province = 4135
-}
-}
-add_ideas = bunker_buy
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					instant_build = yes
+					province = 4135
+				}
+			}
+			118 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = 4135
+				}
+			}
+			# add_ideas = bunker_buy 仮修正 bunker_buyというアイデアは存在しません
 		}
 	}
 	#Focus for chengstate2
@@ -84,20 +96,22 @@ add_ideas = bunker_buy
 		y = 18
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_chengestate }
+		prerequisite = {
+			focus = ITA_chengestate
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			set_state_owner= 290 
- set_state_owner= 461  
-set_state_owner= 462 
- set_state_owner= 783 
- set_state_owner= 178 
-NSR = {
-set_state_owner= 177 
- set_state_owner= 118  
-}
+			set_state_owner = 290
+			set_state_owner = 461
+			set_state_owner = 462
+			set_state_owner = 783
+			set_state_owner = 178
+			SPR = {
+				set_state_owner = 177
+				set_state_owner = 118
+			}
 		}
 	}
 	#Focus for coreturkey
@@ -108,34 +122,34 @@ set_state_owner= 177
 		y = 19
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_warofturkey2 
-			focus = ITA_allianceturkey 
+		prerequisite = {
+			focus = ITA_warofturkey2
+			focus = ITA_allianceturkey
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_core= 341
-  add_state_core= 340
-  add_state_core= 339
-  add_state_core= 343
-  add_state_core= 347
-  add_state_core= 49
-  add_state_core= 342 
- add_state_core= 345
-  add_state_core= 346
-  add_state_core= 344
-  add_state_core= 348
-  add_state_core= 356
-  add_state_core= 355 
- add_state_core= 349  
-add_state_core= 350 
- add_state_core= 353  
-add_state_core= 352 
- add_state_core= 354
-add_stability = -0.10
-add_war_support = -0.10
+			add_state_core = 341
+			add_state_core = 340
+			add_state_core = 339
+			add_state_core = 343
+			add_state_core = 347
+			add_state_core = 49
+			add_state_core = 342
+			add_state_core = 345
+			add_state_core = 346
+			add_state_core = 344
+			add_state_core = 348
+			add_state_core = 356
+			add_state_core = 355
+			add_state_core = 349
+			add_state_core = 350
+			add_state_core = 353
+			add_state_core = 352
+			add_state_core = 354
+			add_stability = -0.1
+			add_war_support = -0.1
 		}
 	}
 	#Focus for warofturkey2
@@ -146,15 +160,17 @@ add_war_support = -0.10
 		y = 18
 		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_warofturkey }
+		prerequisite = {
+			focus = ITA_warofturkey
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			declare_war_on= { 
-target = TUR
-type = annex_everything 
-}
+			declare_war_on = {
+				target = TUR
+				type = annex_everything
+			}
 		}
 	}
 	#Focus for economicsupportforcroatia
@@ -165,21 +181,23 @@ type = annex_everything
 		y = 2
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_expansionpolicy }
+		prerequisite = {
+			focus = ITA_expansionpolicy
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_timed_idea= { 
-idea = Financial_Support_for_Croatia
-days = 100
-}
-CRO= {
-  add_timed_idea= { 
-idea =Financial_support_from_Italy 
-days = 100 
-}
-}
+			#add_timed_idea = {
+			#	idea = Financial_Support_for_Croatia 仮修正　←このようなアイデアは存在しない
+			#	days = 100
+			#}
+			#CRO = {
+			#	add_timed_idea = {
+			#		idea = Financial_support_from_Italy 仮修正　←このようなアイデアは存在しない
+			#		days = 100
+			#	}
+			#}
 		}
 	}
 	#Focus for allianceregionsbegintomerge
@@ -190,14 +208,16 @@ days = 100
 		y = 8
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_centralizationofthedaciaregion }
+		prerequisite = {
+			focus = ITA_centralizationofthedaciaregion
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_manpower= 10000 
- add_war_support= 0.05  
-add_stability= 0.05
+			add_manpower = 10000
+			add_war_support = 0.05
+			add_stability = 0.05
 		}
 	}
 	#Focus for centralizationofthedaciaregion
@@ -208,28 +228,28 @@ add_stability= 0.05
 		y = 7
 		cost = 15
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_destroyingthefalsesuccessors 
-			focus = ITA_attacksondogsingermany 
-			focus = ITA_hungariansubmission 
-			focus = ITA_subjugationinromania 
+		prerequisite = {
+			focus = ITA_destroyingthefalsesuccessors
+			focus = ITA_attacksondogsingermany
+			focus = ITA_hungariansubmission
+			focus = ITA_subjugationinromania
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_core=81 
- add_state_core= 46
-  add_state_core= 78
-  add_state_core= 79
-  add_state_core= 766 
- add_state_core= 80 
- add_state_core= 84 
- add_state_core= 76 
- add_state_core= 83 
- add_state_core= 82
-add_war_support= -0.10 
-add_stability= -0.10
+			add_state_core = 81
+			add_state_core = 46
+			add_state_core = 78
+			add_state_core = 79
+			add_state_core = 766
+			add_state_core = 80
+			add_state_core = 84
+			add_state_core = 76
+			add_state_core = 83
+			add_state_core = 82
+			add_war_support = -0.1
+			add_stability = -0.1
 		}
 	}
 	#Focus for governmentpolicy
@@ -244,7 +264,7 @@ add_stability= -0.10
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power= 75
+			add_political_power = 75
 		}
 	}
 	#Focus for dealingwithdomesticissues
@@ -255,13 +275,15 @@ add_stability= -0.10
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_governmentpolicy }
+		prerequisite = {
+			focus = ITA_governmentpolicy
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power= 50  
-add_stability= 0.05
+			add_political_power = 50
+			add_stability = 0.05
 		}
 	}
 	#Focus for expansionpolicy
@@ -272,13 +294,15 @@ add_stability= 0.05
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_governmentpolicy }
+		prerequisite = {
+			focus = ITA_governmentpolicy
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_war_support= 0.05 
-add_manpower= 5000
+			add_war_support = 0.05
+			add_manpower = 5000
 		}
 	}
 	#Focus for supportresearch
@@ -289,12 +313,14 @@ add_manpower= 5000
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_dealingwithdomesticissues }
+		prerequisite = {
+			focus = ITA_dealingwithdomesticissues
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=Research_Support
+			#	add_ideas = Research_Support このようなアイデアは存在しません
 		}
 	}
 	#Focus for electronictechnology
@@ -305,16 +331,18 @@ add_manpower= 5000
 		y = 3
 		cost = 4
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_supportresearch }
+		prerequisite = {
+			focus = ITA_supportresearch
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.5
-uses = 2 
-category = electronics 
-}
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = electronics
+			}
 		}
 	}
 	#Focus for buildingsupport
@@ -325,16 +353,18 @@ category = electronics
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_dealingwithdomesticissues }
+		prerequisite = {
+			focus = ITA_dealingwithdomesticissues
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_timed_idea= { 
-idea = Investment_in_the_company
-days = 180
-}
-add_political_power = -50
+			add_timed_idea = {
+				idea = Investment_in_the_company
+				days = 180
+			}
+			add_political_power = -50
 		}
 	}
 	#Focus for thegreatitalianexpansionpolicy
@@ -345,12 +375,14 @@ add_political_power = -50
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_expansionpolicy }
+		prerequisite = {
+			focus = ITA_expansionpolicy
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=Italy_Expansion_Policy
+			add_ideas = Italy_Expansion_Policy
 		}
 	}
 	#Focus for appointment
@@ -361,12 +393,14 @@ add_political_power = -50
 		y = 4
 		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_electronictechnology }
+		prerequisite = {
+			focus = ITA_electronictechnology
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=Review_of_appointment_methods
+			# add_ideas = Review_of_appointment_methods このようなアイデアは存在しない
 		}
 	}
 	#Focus for workingwiththeautobahn
@@ -377,12 +411,14 @@ add_political_power = -50
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_buildingsupport }
+		prerequisite = {
+			focus = ITA_buildingsupport
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=Working_with_the_Autobahn
+			#add_ideas = Working_with_the_Autobahn このようなアイデアは存在しません
 		}
 	}
 	#Focus for integrationoftheholyland
@@ -393,19 +429,21 @@ add_political_power = -50
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_thegreatitalianexpansionpolicy }
+		prerequisite = {
+			focus = ITA_thegreatitalianexpansionpolicy
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			annex_country= {
- target = PAL
-transfer_troops = yes
-}
-  annex_country= {
- target = JOR
-transfer_troops = yes
-}
+			annex_country = {
+				target = PAL
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = JOR
+				transfer_troops = yes
+			}
 		}
 	}
 	#Focus for weareroma
@@ -416,28 +454,28 @@ transfer_troops = yes
 		y = 28
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_coreportugal 
+		prerequisite = {
+			focus = ITA_coreportugal
 		}
-		prerequisite = { 
-			focus = ITA_corearabia 
+		prerequisite = {
+			focus = ITA_corearabia
 		}
-		prerequisite = { 
-			focus = ITA_coreturkey 
+		prerequisite = {
+			focus = ITA_coreturkey
 		}
-		prerequisite = { 
-			focus = ITA_wingermany 
+		prerequisite = {
+			focus = ITA_wingermany
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		bypass = {
-			has_idea= Ready_for_Rome
+			#has_idea = Ready_for_Rome このようなアイデアは存在しません
 		}
 		completion_reward = {
 			set_cosmetic_tag = SPQR_UNIFIED
-set_global_flag = form_roman_empire_flag
-add_ideas = Roma_Empire
+			set_global_flag = form_roman_empire_flag
+			#add_ideas = Roma_Empire このようなアイデアは存在しません
 		}
 	}
 	#Focus for regionalcentering
@@ -448,12 +486,14 @@ add_ideas = Roma_Empire
 		y = 4
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_integrationoftheholyland }
+		prerequisite = {
+			focus = ITA_integrationoftheholyland
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=Started_to_centralize_the_various_regions
+			#add_ideas = Started_to_centralize_the_various_regions このようなアイデアは存在しません
 		}
 	}
 	#Focus for northwestafricancoreization
@@ -464,18 +504,20 @@ add_ideas = Roma_Empire
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_regionalcentering }
+		prerequisite = {
+			focus = ITA_regionalcentering
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_core= 459
-  add_state_core= 460
-  add_state_core= 514
-  add_state_core= 458
-  add_state_core= 665
-add_war_support= -0.05
-add_stability= -0.05
+			add_state_core = 459
+			add_state_core = 460
+			add_state_core = 514
+			add_state_core = 458
+			add_state_core = 665
+			add_war_support = -0.05
+			add_stability = -0.05
 		}
 	}
 	#Focus for coreoflibyan
@@ -486,21 +528,23 @@ add_stability= -0.05
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_northwestafricancoreization }
+		prerequisite = {
+			focus = ITA_northwestafricancoreization
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_core= 448
-  add_state_core= 449
-  add_state_core= 661
-  add_state_core= 662
-  add_state_core= 273
-  add_state_core= 450
-  add_state_core= 451
-  add_state_core= 663
-add_war_support= -0.10 
-add_stability= -0.10
+			add_state_core = 448
+			add_state_core = 449
+			add_state_core = 661
+			add_state_core = 662
+			add_state_core = 273
+			add_state_core = 450
+			add_state_core = 451
+			add_state_core = 663
+			add_war_support = -0.1
+			add_stability = -0.1
 		}
 	}
 	#Focus for diplomaticprotection
@@ -511,23 +555,25 @@ add_stability= -0.10
 		y = 3
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_economicsupportforcroatia }
+		prerequisite = {
+			focus = ITA_economicsupportforcroatia
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			diplomatic_relation= { 
-country = CRO
-relation =guarantee
-active = yes 
-}
-GRE= {
-Submit  diplomatic_relation= { 
-country = ITA
-relation =  guarantee
-active = yes 
-}
-}
+			diplomatic_relation = {
+				country = CRO
+				relation = guarantee
+				active = yes
+			}
+			GRE = {
+				diplomatic_relation = {
+					country = ITA
+					relation = guarantee
+					active = yes
+				}
+			}
 		}
 	}
 	#Focus for submissionincroatia
@@ -538,12 +584,14 @@ active = yes
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_diplomaticprotection }
+		prerequisite = {
+			focus = ITA_diplomaticprotection
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			puppet= CRO
+			puppet = CRO
 		}
 	}
 	#Focus for defenseofthesuezcanal
@@ -554,48 +602,70 @@ active = yes
 		y = 9
 		cost = 15
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_defenseagainstfrance }
+		prerequisite = {
+			focus = ITA_defenseagainstfrance
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			840 = {
-add_building_construction = {
-    type = bunker
-    level = 4
-    instant_build = yes
-    province = 12049
-    province = 4073
-}
-}
-841 = {
-add_building_construction = {
-    type = bunker
-    level = 4
-    instant_build = yes
-    province =1155
-    province =9947
-}
-}
-840 = {
-add_building_construction = {
-    type = coastal_bunker
-    level = 4
-    instant_build = yes
-    province = 12049
-    province = 4073
-}
-}
-841 = {
-add_building_construction = {
-    type = coastal_bunker
-    level = 4
-    instant_build = yes
-    province =1155
-    province =9947
-}
-}
-add_ideas = bunker_buy
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 12049
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 4073
+				}
+			}
+			841 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 1155
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 9947
+				}
+			}
+			840 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					instant_build = yes
+					province = 12049
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					instant_build = yes
+					province = 4073
+				}
+			}
+			841 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					instant_build = yes
+					province = 1155
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					instant_build = yes
+					province = 9947
+				}
+			}
+			#add_ideas = bunker_buy このようなアイデアは存在しません
 		}
 	}
 	#Focus for accesstooilresources
@@ -606,27 +676,29 @@ add_ideas = bunker_buy
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_workingwiththeautobahn }
+		prerequisite = {
+			focus = ITA_workingwiththeautobahn
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			give_resource_rights = {
-receiver = IRQ
-state = 291
-}
-give_resource_rights = {
-receiver = PER
-state = 413
-}
-give_resource_rights = {
-receiver = UAE
-state = 658
-}
-give_resource_rights = {
-receiver = SAU
-state = 292
-}
+				receiver = IRQ
+				state = 291
+			}
+			give_resource_rights = {
+				receiver = PER
+				state = 413
+			}
+			give_resource_rights = {
+				receiver = UAE
+				state = 658
+			}
+			give_resource_rights = {
+				receiver = SAU
+				state = 292
+			}
 		}
 	}
 	#Focus for subjugationinromania
@@ -637,12 +709,14 @@ state = 292
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_extensionswithpenandpaper }
+		prerequisite = {
+			focus = ITA_extensionswithpenandpaper
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			puppet= ROM
+			puppet = ROM
 		}
 	}
 	#Focus for hungariansubmission
@@ -653,12 +727,14 @@ state = 292
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_extensionswithpenandpaper }
+		prerequisite = {
+			focus = ITA_extensionswithpenandpaper
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			puppet= HUN
+			puppet = HUN
 		}
 	}
 	#Focus for attacksondogsingermany
@@ -669,15 +745,17 @@ state = 292
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_dilationbybloodandiron }
+		prerequisite = {
+			focus = ITA_dilationbybloodandsteel
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			declare_war_on= { 
-target = HUN
-type = annex_everything 
-}
+			declare_war_on = {
+				target = HUN
+				type = annex_everything
+			}
 		}
 	}
 	#Focus for defenseagainstfrance
@@ -688,46 +766,59 @@ type = annex_everything
 		y = 8
 		cost = 15
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_warofgermany }
+		prerequisite = {
+			focus = ITA_warofgermany
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			804 = {
-add_building_construction = {
-    type = bunker
-    level = 4
-    instant_build = yes
-    province = 3959
-　province = 9909
-}
-}
-158 = {
-add_building_construction = {
-    type = bunker
-    level = 4
-    instant_build = yes
-    province = 611
-province = 6780
-province = 9738
-province = 11721
-province = 770
-province = 11891
-}
-}
-735 = {
-add_building_construction = {
-    type = bunker
-    level = 4
-    instant_build = yes
-    province = 11571
-province = 9603
-province = 778
-province = 6609
-province = 9745
-}
-}
-add_ideas = bunker_buy
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 3959
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 9909
+				}
+			}
+			158 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+					}
+					#province = 611
+					#province = 6780
+					#province = 9738
+					#province = 11721
+					#province = 770
+					#province = 11891
+				}
+			}
+			735 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+					}
+					#province = 11571
+					#province = 9603
+					#province = 778
+					#province = 6609
+					#province = 9745
+				}
+			}
+			#add_ideas = bunker_buy このようなアイデアは存在しない
 		}
 	}
 	#Focus for destroyingthefalsesuccessors
@@ -738,15 +829,17 @@ add_ideas = bunker_buy
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_dilationbybloodandiron }
+		prerequisite = {
+			focus = ITA_dilationbybloodandsteel
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			declare_war_on= { 
-target = ROM
-type = annex_everything 
-}
+			declare_war_on = {
+				target = ROM
+				type = annex_everything
+			}
 		}
 	}
 	#Focus for getbulgaria
@@ -757,14 +850,16 @@ type = annex_everything
 		y = 12
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_supportfactorybulgaria }
+		prerequisite = {
+			focus = ITA_supportfactorybulgaria
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			puppet= BUL 
- add_stability= -0.05
-  add_war_support= -0.05
+			puppet = BUL
+			add_stability = -0.05
+			add_war_support = -0.05
 		}
 	}
 	#Focus for supportfactorybulgaria
@@ -775,73 +870,72 @@ type = annex_everything
 		y = 11
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_infrastructureinvestmentinbulgaria }
+		prerequisite = {
+			focus = ITA_infrastructureinvestmentinbulgaria
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			BUL= {
-random_owned_controlled_state={
-prioritize = {48}
- limit = {
- free_building_slots = {
- building = industrial_complex
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = industrial_complex
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
-prioritize = {212}
- limit = {
- free_building_slots = {
- building = arms_factory
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = arms_factory
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
-prioritize = {211}
- limit = {
- free_building_slots = {
- building = dockyard
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = dockyard
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-}
+			BUL = {
+				random_owned_controlled_state = {
+					prioritize = {
+						48
+					}
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						212
+					}
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						211
+					}
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+			}
 		}
 	}
 	#Focus for supportfactoryserbia
@@ -852,51 +946,47 @@ prioritize = {211}
 		y = 11
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_infrastructureinvestmentinserbia }
+		prerequisite = {
+			focus = ITA_infrastructureinvestmentinserbia
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			SER = {
- random_owned_controlled_state={
- limit = {
- free_building_slots = {
- building = arms_factory
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 1
- add_building_construction = {
- type = arms_factory
- level = 1
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
- limit = {
- free_building_slots = {
- building = industrial_complex
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 1
- add_building_construction = {
- type = industrial_complex
- level = 1
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+			}
 		}
 	}
 	#Focus for infrastructureinvestmentinbulgaria
@@ -907,133 +997,129 @@ prioritize = {211}
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_supportbulgaria }
+		prerequisite = {
+			focus = ITA_supportbulgaria
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			BUL = {
-random_owned_controlled_state={
-prioritize = {77}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = infrastructure
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
-prioritize = {211}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = infrastructure
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
-prioritize = {212}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = infrastructure
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
-prioritize = {48}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = infrastructure
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
-prioritize = {808}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = infrastructure
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
-prioritize = {106}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = infrastructure
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-}
+				random_owned_controlled_state = {
+					prioritize = {
+						77
+					}
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						211
+					}
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						212
+					}
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						48
+					}
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						808
+					}
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						106
+					}
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+			}
 		}
 	}
 	#Focus for subjugatinggreece
@@ -1044,13 +1130,17 @@ prioritize = {106}
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_allianceregionsbegintomerge }
-		mutually_exclusive = { focus = ITA_conquergreece }
+		prerequisite = {
+			focus = ITA_allianceregionsbegintomerge
+		}
+		mutually_exclusive = {
+			focus = ITA_conquergreece
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_to_faction= GRE
+			add_to_faction = GRE
 		}
 	}
 	#Focus for conquergreece
@@ -1061,18 +1151,22 @@ prioritize = {106}
 		y = 9
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_allianceregionsbegintomerge }
-		mutually_exclusive = { focus = ITA_subjugatinggreece }
+		prerequisite = {
+			focus = ITA_allianceregionsbegintomerge
+		}
+		mutually_exclusive = {
+			focus = ITA_subjugatinggreece
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_claim= 18 
- add_state_claim= 185 
- add_state_claim= 836 
- add_state_claim= 47 
- add_state_claim= 731
-  add_state_claim= 184
+			add_state_claim = 18
+			add_state_claim = 185
+			add_state_claim = 836
+			add_state_claim = 47
+			add_state_claim = 731
+			add_state_claim = 184
 		}
 	}
 	#Focus for supportserbia
@@ -1083,14 +1177,16 @@ prioritize = {106}
 		y = 9
 		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_allianceregionsbegintomerge }
+		prerequisite = {
+			focus = ITA_allianceregionsbegintomerge
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			SER = {
-add_political_power= 100  
-}
+				add_political_power = 100
+			}
 		}
 	}
 	#Focus for supportbulgaria
@@ -1101,14 +1197,16 @@ add_political_power= 100
 		y = 9
 		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_allianceregionsbegintomerge }
+		prerequisite = {
+			focus = ITA_allianceregionsbegintomerge
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			BUL = {
-add_political_power= 100  
-}
+				add_political_power = 100
+			}
 		}
 	}
 	#Focus for infrastructureinvestmentinserbia
@@ -1119,73 +1217,72 @@ add_political_power= 100
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_supportserbia }
+		prerequisite = {
+			focus = ITA_supportserbia
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			SER = {
-random_owned_controlled_state={
-prioritize = {764}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = infrastructure
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
-prioritize = {107}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = infrastructure
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
-prioritize = {108}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = infrastructure
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-}
+				random_owned_controlled_state = {
+					prioritize = {
+						764
+					}
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						107
+					}
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						108
+					}
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+			}
 		}
 	}
 	#Focus for oilfielddevelopment
@@ -1196,19 +1293,19 @@ prioritize = {108}
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_destroyingthefalsesuccessors 
-			focus = ITA_subjugationinromania 
+		prerequisite = {
+			focus = ITA_destroyingthefalsesuccessors
+			focus = ITA_subjugationinromania
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_resource= { 
-type = oil
-amount = 40
-state = 46
-}
+			add_resource = {
+				type = oil
+				amount = 40
+				state = 46
+			}
 		}
 	}
 	#Focus for getserbia
@@ -1219,14 +1316,16 @@ state = 46
 		y = 12
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_supportfactoryserbia }
+		prerequisite = {
+			focus = ITA_supportfactoryserbia
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			puppet= SER
-  add_stability= -0.05
-  add_war_support= -0.05
+			puppet = SER
+			add_stability = -0.05
+			add_war_support = -0.05
 		}
 	}
 	#Focus for warofgreece
@@ -1237,15 +1336,17 @@ state = 46
 		y = 10
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_conquergreece }
+		prerequisite = {
+			focus = ITA_conquergreece
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			declare_war_on= { 
-target = GRE
-type = annex_everything 
-}
+			declare_war_on = {
+				target = GRE
+				type = annex_everything
+			}
 		}
 	}
 	#Focus for supportgreece
@@ -1256,133 +1357,129 @@ type = annex_everything
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_subjugatinggreece }
+		prerequisite = {
+			focus = ITA_subjugatinggreece
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			GRE = {
-random_owned_controlled_state={
-prioritize = {731}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = infrastructure
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
-prioritize = {185}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = infrastructure
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
-prioritize = {47}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = infrastructure
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
-prioritize = {836}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = infrastructure
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
-prioritize = {186}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = infrastructure
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
-prioritize = {184}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = infrastructure
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-}
+				random_owned_controlled_state = {
+					prioritize = {
+						731
+					}
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						185
+					}
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						47
+					}
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						836
+					}
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						186
+					}
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						184
+					}
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+			}
 		}
 	}
 	#Focus for supportfactorygreece
@@ -1393,73 +1490,72 @@ prioritize = {184}
 		y = 11
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_supportgreece }
+		prerequisite = {
+			focus = ITA_supportgreece
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			GRE= {
-random_owned_controlled_state={
-prioritize = {731}
- limit = {
- free_building_slots = {
- building = industrial_complex
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = industrial_complex
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
-prioritize = {185}
- limit = {
- free_building_slots = {
- building = arms_factory
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = arms_factory
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
-prioritize = {186}
- limit = {
- free_building_slots = {
- building = dockyard
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = dockyard
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-}
+			GRE = {
+				random_owned_controlled_state = {
+					prioritize = {
+						731
+					}
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						185
+					}
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+				random_owned_controlled_state = {
+					prioritize = {
+						186
+					}
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+			}
 		}
 	}
 	#Focus for getgreece
@@ -1470,12 +1566,14 @@ prioritize = {186}
 		y = 12
 		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_supportfactorygreece }
+		prerequisite = {
+			focus = ITA_supportfactorygreece
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			puppet= GRE
+			puppet = GRE
 		}
 	}
 	#Focus for stabilitygreece
@@ -1486,17 +1584,17 @@ prioritize = {186}
 		y = 13
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_warofgreece 
-			focus = ITA_getgreece 
+		prerequisite = {
+			focus = ITA_warofgreece
+			focus = ITA_getgreece
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power= 100 
- add_stability= 0.05 
- add_war_support= 0.05
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 	}
 	#Focus for stabilitybalkan
@@ -1507,22 +1605,22 @@ prioritize = {186}
 		y = 14
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_getserbia 
+		prerequisite = {
+			focus = ITA_getserbia
 		}
-		prerequisite = { 
-			focus = ITA_stabilitygreece 
+		prerequisite = {
+			focus = ITA_stabilitygreece
 		}
-		prerequisite = { 
-			focus = ITA_getbulgaria 
+		prerequisite = {
+			focus = ITA_getbulgaria
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power= 125
-  add_stability= 0.05 
- add_war_support= 0.10
+			add_political_power = 125
+			add_stability = 0.05
+			add_war_support = 0.1
 		}
 	}
 	#Focus for allianceturkey
@@ -1533,13 +1631,17 @@ prioritize = {186}
 		y = 17
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_turkeystrategy }
-		mutually_exclusive = { focus = ITA_warofturkey }
+		prerequisite = {
+			focus = ITA_turkeystrategy
+		}
+		mutually_exclusive = {
+			focus = ITA_warofturkey
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_to_faction= TUR
+			add_to_faction = TUR
 		}
 	}
 	#Focus for corebalkan
@@ -1550,24 +1652,26 @@ prioritize = {186}
 		y = 15
 		cost = 15
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_stabilitybalkan }
+		prerequisite = {
+			focus = ITA_stabilitybalkan
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_core= 109 
- add_state_core= 104
-  add_state_core= 764 
- add_state_core=107 
- add_state_core= 108 
- add_state_core= 808
-  add_state_core= 106
-  add_state_core= 48 
- add_state_core= 212
-  add_state_core= 211 
- add_state_core= 77  
-add_stability = -0.15
-add_war_support = -0.15
+			add_state_core = 109
+			add_state_core = 104
+			add_state_core = 764
+			add_state_core = 107
+			add_state_core = 108
+			add_state_core = 808
+			add_state_core = 106
+			add_state_core = 48
+			add_state_core = 212
+			add_state_core = 211
+			add_state_core = 77
+			add_stability = -0.15
+			add_war_support = -0.15
 		}
 	}
 	#Focus for coregreece
@@ -1578,19 +1682,21 @@ add_war_support = -0.15
 		y = 14
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_stabilitygreece }
+		prerequisite = {
+			focus = ITA_stabilitygreece
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_core= 184
-  add_state_core= 731 
- add_state_core= 185 
- add_state_core= 47
-  add_state_core= 836
-  add_state_core= 186
-  add_stability= -0.05 
- add_war_support= -0.05
+			add_state_core = 184
+			add_state_core = 731
+			add_state_core = 185
+			add_state_core = 47
+			add_state_core = 836
+			add_state_core = 186
+			add_stability = -0.05
+			add_war_support = -0.05
 		}
 	}
 	#Focus for turkeystrategy
@@ -1601,15 +1707,17 @@ add_war_support = -0.15
 		y = 16
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_corebalkan }
+		prerequisite = {
+			focus = ITA_corebalkan
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power= 100
-  add_stability= 0.05
-  add_war_support= 0.05 
- add_manpower= 10000
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_manpower = 10000
 		}
 	}
 	#Focus for iberiastrategy
@@ -1620,15 +1728,17 @@ add_war_support = -0.15
 		y = 16
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_corebalkan }
+		prerequisite = {
+			focus = ITA_corebalkan
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power=100 
- add_stability= 0.05 
- add_war_support= 0.05
-  add_manpower= 10000
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_manpower = 10000
 		}
 	}
 	#Focus for legitimateownership
@@ -1639,36 +1749,38 @@ add_war_support = -0.15
 		y = 18
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_defencegibraltar }
+		prerequisite = {
+			focus = ITA_defencegibraltar
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_claim= 165
-  add_state_claim= 794
-  add_state_claim= 166 
- add_state_claim= 172
-  add_state_claim= 176 
- add_state_claim= 792 
- add_state_claim= 790 
- add_state_claim= 791
-  add_state_claim= 174
-  add_state_claim= 171 
- add_state_claim= 167 
- add_state_claim= 793
-  add_state_claim= 41 
- add_state_claim= 788 
- add_state_claim= 168 
- add_state_claim= 175 
- add_state_claim= 170 
- add_state_claim= 789
-  add_state_claim= 169 
- add_state_claim= 173 
- add_state_claim= 290
-  add_state_claim= 461 
- add_state_claim= 462
-  add_state_claim= 783 
- add_state_claim= 178
+			add_state_claim = 165
+			add_state_claim = 794
+			add_state_claim = 166
+			add_state_claim = 172
+			add_state_claim = 176
+			add_state_claim = 792
+			add_state_claim = 790
+			add_state_claim = 791
+			add_state_claim = 174
+			add_state_claim = 171
+			add_state_claim = 167
+			add_state_claim = 793
+			add_state_claim = 41
+			add_state_claim = 788
+			add_state_claim = 168
+			add_state_claim = 175
+			add_state_claim = 170
+			add_state_claim = 789
+			add_state_claim = 169
+			add_state_claim = 173
+			add_state_claim = 290
+			add_state_claim = 461
+			add_state_claim = 462
+			add_state_claim = 783
+			add_state_claim = 178
 		}
 	}
 	#Focus for warofspain
@@ -1679,15 +1791,17 @@ add_war_support = -0.15
 		y = 19
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_legitimateownership }
+		prerequisite = {
+			focus = ITA_legitimateownership
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			declare_war_on= { 
-target = NSR
-type = annex_everything 
-}
+			declare_war_on = {
+				target = SPR
+				type = annex_everything
+			}
 		}
 	}
 	#Focus for supportinfrastructure
@@ -1698,49 +1812,49 @@ type = annex_everything
 		y = 18
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_desertwar }
+		prerequisite = {
+			focus = ITA_desertwar
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
-prioritize = {455}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_building_construction = {
- type = infrastructure
- level = 4
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-  random_owned_controlled_state={
-prioritize = {454}
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_building_construction = {
- type = infrastructure
- level = 4
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					455
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					454
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for expansionoftheclaimarea
@@ -1751,18 +1865,20 @@ prioritize = {454}
 		y = 22
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_getspain }
+		prerequisite = {
+			focus = ITA_getspain
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_claim= 180
-  add_state_claim= 181 
- add_state_claim= 112
-  add_state_claim= 795
-  add_state_claim= 179 
- add_state_claim= 697
-  add_state_claim= 698
+			add_state_claim = 180
+			add_state_claim = 181
+			add_state_claim = 112
+			add_state_claim = 795
+			add_state_claim = 179
+			add_state_claim = 697
+			add_state_claim = 698
 		}
 	}
 	#Focus for getportugal
@@ -1773,15 +1889,17 @@ prioritize = {454}
 		y = 23
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_expansionoftheclaimarea }
+		prerequisite = {
+			focus = ITA_expansionoftheclaimarea
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			declare_war_on= { 
-target = POR
-type = annex_everything 
-}
+			declare_war_on = {
+				target = POR
+				type = annex_everything
+			}
 		}
 	}
 	#Focus for getspain
@@ -1792,17 +1910,17 @@ type = annex_everything
 		y = 21
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_warofspain 
-			focus = ITA_controlgovernment 
+		prerequisite = {
+			focus = ITA_warofspain
+			focus = ITA_controlgovernment
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power= 150 
- add_stability= 0.05
-  add_war_support= 0.05
+			add_political_power = 150
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 	}
 	#Focus for warofturkey
@@ -1813,30 +1931,34 @@ type = annex_everything
 		y = 17
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_turkeystrategy }
-		mutually_exclusive = { focus = ITA_allianceturkey }
+		prerequisite = {
+			focus = ITA_turkeystrategy
+		}
+		mutually_exclusive = {
+			focus = ITA_allianceturkey
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_claim= 341
-  add_state_claim= 340
-  add_state_claim= 339
-  add_state_claim= 343
-  add_state_claim= 347
-  add_state_claim= 49
-  add_state_claim= 342 
- add_state_claim= 345
-  add_state_claim= 346
-  add_state_claim= 344
-  add_state_claim= 348
-  add_state_claim= 356
-  add_state_claim= 355 
- add_state_claim= 349  
-add_state_claim= 350 
- add_state_claim= 353  
-add_state_claim= 352 
- add_state_claim= 354
+			add_state_claim = 341
+			add_state_claim = 340
+			add_state_claim = 339
+			add_state_claim = 343
+			add_state_claim = 347
+			add_state_claim = 49
+			add_state_claim = 342
+			add_state_claim = 345
+			add_state_claim = 346
+			add_state_claim = 344
+			add_state_claim = 348
+			add_state_claim = 356
+			add_state_claim = 355
+			add_state_claim = 349
+			add_state_claim = 350
+			add_state_claim = 353
+			add_state_claim = 352
+			add_state_claim = 354
 		}
 	}
 	#Focus for westasiastrategy
@@ -1847,15 +1969,17 @@ add_state_claim= 352
 		y = 16
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_corebalkan }
+		prerequisite = {
+			focus = ITA_corebalkan
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power=100 
- add_stability= 0.05 
- add_war_support= 0.05
-  add_manpower= 10000
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_manpower = 10000
 		}
 	}
 	#Focus for chengestate
@@ -1866,20 +1990,24 @@ add_state_claim= 352
 		y = 17
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_iberiastrategy }
-		mutually_exclusive = { focus = ITA_defencegibraltar }
+		prerequisite = {
+			focus = ITA_iberiastrategy
+		}
+		mutually_exclusive = {
+			focus = ITA_defencegibraltar
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_claim= 290 
- add_state_claim= 461  
-add_state_claim= 462 
- add_state_claim=783 
- add_state_claim= 178  
-NSR = {
-add_state_core= 118  
-}
+			add_state_claim = 290
+			add_state_claim = 461
+			add_state_claim = 462
+			add_state_claim = 783
+			add_state_claim = 178
+			SPR = {
+				add_state_core = 118
+			}
 		}
 	}
 	#Focus for steelhungary
@@ -1890,19 +2018,19 @@ add_state_core= 118
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_attacksondogsingermany 
-			focus = ITA_hungariansubmission 
+		prerequisite = {
+			focus = ITA_attacksondogsingermany
+			focus = ITA_hungariansubmission
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_resource= { 
-type = steel
-amount = 40
-state = 43
-}
+			add_resource = {
+				type = steel
+				amount = 40
+				state = 43
+			}
 		}
 	}
 	#Focus for desertwar
@@ -1913,12 +2041,14 @@ state = 43
 		y = 17
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_westasiastrategy }
+		prerequisite = {
+			focus = ITA_westasiastrategy
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas= desert_war_italy
+			#add_ideas = desert_war_italy そのようなアイデアは存在しません
 		}
 	}
 	#Focus for alliancespain
@@ -1929,12 +2059,14 @@ state = 43
 		y = 19
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_chengstate2 }
+		prerequisite = {
+			focus = ITA_chengstate2
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_to_faction= NSR
+			add_to_faction = SPR
 		}
 	}
 	#Focus for controlgovernment
@@ -1945,12 +2077,14 @@ state = 43
 		y = 20
 		cost = 15
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_alliancespain }
+		prerequisite = {
+			focus = ITA_alliancespain
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			puppet= NSR
+			puppet = SPR
 		}
 	}
 	#Focus for claimsyria
@@ -1961,20 +2095,22 @@ state = 43
 		y = 19
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_supportinfrastructure }
+		prerequisite = {
+			focus = ITA_supportinfrastructure
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_claim= 553
-  add_state_claim= 677 
- add_state_claim= 680  
-add_state_claim= 554 
- add_state_claim= 676 
-add_state_claim= 675  
-add_state_claim= 292  
-add_state_claim= 679
-  add_state_claim= 678
+			add_state_claim = 553
+			add_state_claim = 677
+			add_state_claim = 680
+			add_state_claim = 554
+			add_state_claim = 676
+			add_state_claim = 675
+			add_state_claim = 292
+			add_state_claim = 679
+			add_state_claim = 678
 		}
 	}
 	#Focus for coreleon
@@ -1985,19 +2121,21 @@ add_state_claim= 679
 		y = 24
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_getportugal }
+		prerequisite = {
+			focus = ITA_getportugal
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_core= 171  
-add_state_core= 790
-  add_state_core= 174
-  add_state_core= 791
-  add_state_core= 788 
- add_state_core= 170
-  add_stability= -0.05 
- add_war_support= -0.05
+			add_state_core = 171
+			add_state_core = 790
+			add_state_core = 174
+			add_state_core = 791
+			add_state_core = 788
+			add_state_core = 170
+			add_stability = -0.05
+			add_war_support = -0.05
 		}
 	}
 	#Focus for warofgermany
@@ -2008,17 +2146,17 @@ add_state_core= 790
 		y = 7
 		cost = 3
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_domesticreform 
-			focus = ITA_coreoflibyan 
+		prerequisite = {
+			focus = ITA_domesticreform
+			focus = ITA_coreoflibyan
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_manpower= 10000 
- add_command_power= 50 
- add_war_support=0.05
+			add_manpower = 10000
+			add_command_power = 50
+			add_war_support = 0.05
 		}
 	}
 	#Focus for domesticreform
@@ -2029,15 +2167,15 @@ add_state_core= 790
 		y = 5
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_accesstooilresources 
-			focus = ITA_appointment 
+		prerequisite = {
+			focus = ITA_accesstooilresources
+			focus = ITA_appointment
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			remove_ideas= South_north_question
+			remove_ideas = South_north_question
 		}
 	}
 	#Focus for corearagon
@@ -2048,19 +2186,21 @@ add_state_core= 790
 		y = 24
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_getportugal }
+		prerequisite = {
+			focus = ITA_getportugal
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_core= 165
-  add_state_core= 794
-  add_state_core= 166 
- add_state_core= 167 
- add_state_core= 177 
- add_state_core=168
-add_stability= -0.05 
- add_war_support= -0.05
+			add_state_core = 165
+			add_state_core = 794
+			add_state_core = 166
+			add_state_core = 167
+			add_state_core = 177
+			add_state_core = 168
+			add_stability = -0.05
+			add_war_support = -0.05
 		}
 	}
 	#Focus for corecastile
@@ -2071,27 +2211,27 @@ add_stability= -0.05
 		y = 25
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_corearagon 
+		prerequisite = {
+			focus = ITA_corearagon
 		}
-		prerequisite = { 
-			focus = ITA_coreleon 
+		prerequisite = {
+			focus = ITA_coreleon
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_core= 792
-  add_state_core= 172
-  add_state_core= 176
-  add_state_core= 793
-  add_state_core= 41 
- add_state_core= 175
-  add_state_core= 789  
-add_state_core= 173
-  add_state_core= 169
-add_stability= -0.05 
- add_war_support= -0.05
+			add_state_core = 792
+			add_state_core = 172
+			add_state_core = 176
+			add_state_core = 793
+			add_state_core = 41
+			add_state_core = 175
+			add_state_core = 789
+			add_state_core = 173
+			add_state_core = 169
+			add_stability = -0.05
+			add_war_support = -0.05
 		}
 	}
 	#Focus for coreportugal
@@ -2102,20 +2242,22 @@ add_stability= -0.05
 		y = 26
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_corecastile }
+		prerequisite = {
+			focus = ITA_corecastile
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_state_core=180 
- add_state_core= 181 
- add_state_core= 112  
-add_state_core= 795 
- add_state_core= 179 
- add_state_core=697
-  add_state_core= 698
-add_stability= -0.05 
- add_war_support= -0.05
+			add_state_core = 180
+			add_state_core = 181
+			add_state_core = 112
+			add_state_core = 795
+			add_state_core = 179
+			add_state_core = 697
+			add_state_core = 698
+			add_stability = -0.05
+			add_war_support = -0.05
 		}
 	}
 	#Focus for defenseswitzerland
@@ -2126,33 +2268,41 @@ add_stability= -0.05
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_warofgermany }
+		prerequisite = {
+			focus = ITA_warofgermany
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			839 = {
-add_building_construction = {
-    type = bunker
-    level = 4
-    instant_build = yes
-    province = 3662
-　province = 658
-   province = 3641
-    province = 9600
-}
-}
-158 = {
-add_building_construction = {
-    type = bunker
-    level = 4
-    instant_build = yes
-    province = 6635
-province = 11570
-province = 611
-}
-}
-add_ideas = bunker_buy
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+					}
+					#province = 3662
+					#province = 658
+					#province = 3641
+					#province = 9600
+				}
+			}
+			158 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+					}
+					#province = 6635
+					#province = 11570
+					#province = 611
+				}
+			}
+			#add_ideas = bunker_buy このようなアイデアは存在しません
 		}
 	}
 	#Focus for jewishvolunteers
@@ -2163,13 +2313,15 @@ add_ideas = bunker_buy
 		y = 8
 		cost = 3
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_warofgermany }
+		prerequisite = {
+			focus = ITA_warofgermany
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_manpower= 15000  
-add_stability = -0.05
+			add_manpower = 15000
+			add_stability = -0.05
 		}
 	}
 	#Focus for warofsyria
@@ -2180,15 +2332,17 @@ add_stability = -0.05
 		y = 20
 		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_claimsyria }
+		prerequisite = {
+			focus = ITA_claimsyria
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			declare_war_on= { 
-target = LEB
-type = annex_everything 
-}
+			declare_war_on = {
+				target = LEB
+				type = annex_everything
+			}
 		}
 	}
 	#Focus for warofiraq
@@ -2199,15 +2353,17 @@ type = annex_everything
 		y = 20
 		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_claimsyria }
+		prerequisite = {
+			focus = ITA_claimsyria
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			declare_war_on= { 
-target = IRQ
-type = annex_everything 
-}
+			declare_war_on = {
+				target = IRQ
+				type = annex_everything
+			}
 		}
 	}
 	#Focus for warofsaudiarabia
@@ -2218,15 +2374,17 @@ type = annex_everything
 		y = 20
 		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_claimsyria }
+		prerequisite = {
+			focus = ITA_claimsyria
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			declare_war_on= { 
-target = SAU
-type = annex_everything 
-}
+			declare_war_on = {
+				target = SAU
+				type = annex_everything
+			}
 		}
 	}
 	#Focus for corearabia
@@ -2237,38 +2395,44 @@ type = annex_everything
 		y = 21
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_warofiraq 
+		prerequisite = {
+			focus = ITA_warofiraq
 		}
-		prerequisite = { 
-			focus = ITA_warofsyria 
+		prerequisite = {
+			focus = ITA_warofsyria
 		}
-		prerequisite = { 
-			focus = ITA_warofsaudiarabia 
+		prerequisite = {
+			focus = ITA_warofsaudiarabia
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		bypass = {
-			SAU = {exists= no }
-IRQ = {exists= no }
-LEB = {exists= no }
+			SAU = {
+				exists = no
+			}
+			IRQ = {
+				exists = no
+			}
+			LEB = {
+				exists = no
+			}
 		}
 		completion_reward = {
-			add_state_core= 454
-  add_state_core= 455
-  add_state_core= 553
- add_state_core= 677
- add_state_core= 680
-  add_state_core= 554 
-add_state_core= 676 
- add_state_core= 675 
- add_state_core= 291  
-add_state_core= 292 
- add_state_core= 679
-  add_state_core= 678
- add_stability= -0.10
- add_war_support= -0.10
+			add_state_core = 454
+			add_state_core = 455
+			add_state_core = 553
+			add_state_core = 677
+			add_state_core = 680
+			add_state_core = 554
+			add_state_core = 676
+			add_state_core = 675
+			add_state_core = 291
+			add_state_core = 292
+			add_state_core = 679
+			add_state_core = 678
+			add_stability = -0.1
+			add_war_support = -0.1
 		}
 	}
 	#Focus for efficienttraining
@@ -2279,15 +2443,17 @@ add_state_core= 292
 		y = 9
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_jewishvolunteers }
+		prerequisite = {
+			focus = ITA_jewishvolunteers
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_timed_idea= { 
-idea = Efficient_training
-days = 130
-}
+			#add_timed_idea = {
+			#	idea = Efficient_training そのようなアイデアは存在しない
+			#	days = 130
+			#}
 		}
 	}
 	#Focus for defensealps
@@ -2298,40 +2464,62 @@ days = 130
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_defenseswitzerland }
+		prerequisite = {
+			focus = ITA_defenseswitzerland
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			39 = {
-add_building_construction = {
-    type = bunker
-    level = 4
-    instant_build = yes
-    province = 6675
-　province = 9630
-   province = 11615
-}
-}
-160 = {
-add_building_construction = {
-    type = bunker
-    level = 4
-    instant_build = yes
-    province = 3657
-province = 9613 
-}
-}
- 736= {
-add_building_construction = {
-    type = bunker
-    level = 4
-    instant_build = yes
-    province = 11595
-province = 559
-}
-}
-add_ideas = bunker_buy
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 6675
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 9630
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 11615
+				}
+			}
+			160 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 3657
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 9613
+				}
+			}
+			736 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 11595
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 559
+				}
+			}
+			#add_ideas = bunker_buy そのようなアイデアは存在しない
 		}
 	}
 	#Focus for wargermany
@@ -2342,19 +2530,19 @@ add_ideas = bunker_buy
 		y = 11
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_defenseofthesuezcanal 
-			focus = ITA_defensealps 
-			focus = ITA_efficienttraining 
+		prerequisite = {
+			focus = ITA_defenseofthesuezcanal
+			focus = ITA_defensealps
+			focus = ITA_efficienttraining
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			declare_war_on= { 
-target = GER
-type = annex_everything 
-}
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+			}
 		}
 	}
 	#Focus for coresputhfranse
@@ -2365,25 +2553,29 @@ type = annex_everything
 		y = 13
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_wargermany }
+		prerequisite = {
+			focus = ITA_wargermany
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		bypass = {
-			FRA = {exists= no  }
+			FRA = {
+				exists = no
+			}
 		}
 		completion_reward = {
-			add_state_core= 31 
- add_state_core= 19 
- add_state_core= 22
-  add_state_core= 21
-  add_state_core= 32  
-add_state_core= 20  
-add_state_core= 26
-  add_state_core= 25
-  add_state_core= 23 
- add_stability= -0.10 
- add_war_support= -0.10
+			add_state_core = 31
+			add_state_core = 19
+			add_state_core = 22
+			add_state_core = 21
+			add_state_core = 32
+			add_state_core = 20
+			add_state_core = 26
+			add_state_core = 25
+			add_state_core = 23
+			add_stability = -0.1
+			add_war_support = -0.1
 		}
 	}
 	#Focus for corenorthfranse
@@ -2394,24 +2586,28 @@ add_state_core= 26
 		y = 13
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_wargermany }
+		prerequisite = {
+			focus = ITA_wargermany
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		bypass = {
-			NFR = {exists= no  }
+			NFR = {
+				exists = no
+			}
 		}
 		completion_reward = {
-			add_state_core= 14
-  add_state_core= 30
-  add_state_core= 15
-  add_state_core= 16
-  add_state_core= 785
-  add_state_core= 18
-  add_state_core= 27
-  add_state_core= 17
-  add_stability= -0.10
-  add_war_support= -0.10
+			add_state_core = 14
+			add_state_core = 30
+			add_state_core = 15
+			add_state_core = 16
+			add_state_core = 785
+			add_state_core = 18
+			add_state_core = 27
+			add_state_core = 17
+			add_stability = -0.1
+			add_war_support = -0.1
 		}
 	}
 	#Focus for coregermanstate
@@ -2422,23 +2618,25 @@ add_state_core= 26
 		y = 12
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_wargermany }
+		prerequisite = {
+			focus = ITA_wargermany
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		bypass = {
-			controls_state= 803
-  controls_state= 8
-  controls_state= 28 
- controls_state= 102
+			controls_state = 803
+			controls_state = 8
+			controls_state = 28
+			controls_state = 102
 		}
 		completion_reward = {
-			add_state_core= 803 
- add_state_core= 8 
- add_state_core= 28
-  add_state_core= 102
-  add_stability= -0.05
-  add_war_support= -0.05
+			add_state_core = 803
+			add_state_core = 8
+			add_state_core = 28
+			add_state_core = 102
+			add_stability = -0.05
+			add_war_support = -0.05
 		}
 	}
 	#Focus for coreswitzerland
@@ -2449,21 +2647,23 @@ add_state_core= 26
 		y = 14
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_wargermany }
+		prerequisite = {
+			focus = ITA_wargermany
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		bypass = {
-			controls_state= 151 
- controls_state= 3 
- controls_state= 838
+			controls_state = 151
+			controls_state = 3
+			controls_state = 838
 		}
 		completion_reward = {
-			add_state_core= 151
-  add_state_core= 3
-  add_state_core= 838 
- add_stability= -0.05
-  add_war_support= -0.05
+			add_state_core = 151
+			add_state_core = 3
+			add_state_core = 838
+			add_stability = -0.05
+			add_war_support = -0.05
 		}
 	}
 	#Focus for coreflanders
@@ -2474,23 +2674,25 @@ add_state_core= 26
 		y = 14
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_wargermany }
+		prerequisite = {
+			focus = ITA_wargermany
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		bypass = {
-			controls_state=29 
- controls_state= 34 
- controls_state= 6 
- controls_state= 35
+			controls_state = 29
+			controls_state = 34
+			controls_state = 6
+			controls_state = 35
 		}
 		completion_reward = {
-			add_state_core= 29  
-add_state_core= 34 
- add_state_core= 6 
- add_state_core= 35
-  add_stability= -0.05
-  add_war_support=-0.05
+			add_state_core = 29
+			add_state_core = 34
+			add_state_core = 6
+			add_state_core = 35
+			add_stability = -0.05
+			add_war_support = -0.05
 		}
 	}
 	#Focus for coremorocco
@@ -2501,25 +2703,27 @@ add_state_core= 34
 		y = 21
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_warofspain }
+		prerequisite = {
+			focus = ITA_warofspain
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		bypass = {
-			controls_state= 290
-  controls_state= 461
-  controls_state= 462 
- controls_state=783 
- controls_state= 178
+			controls_state = 290
+			controls_state = 461
+			controls_state = 462
+			controls_state = 783
+			controls_state = 178
 		}
 		completion_reward = {
-			add_state_core= 290 
- add_state_core= 461
-  add_state_core= 462 
- add_state_core= 783
-  add_state_core= 178
-  add_stability= -0.05 
- add_war_support= -0.05
+			add_state_core = 290
+			add_state_core = 461
+			add_state_core = 462
+			add_state_core = 783
+			add_state_core = 178
+			add_stability = -0.05
+			add_war_support = -0.05
 		}
 	}
 	#Focus for wingermany
@@ -2530,27 +2734,27 @@ add_state_core= 34
 		y = 15
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_coreflanders 
+		prerequisite = {
+			focus = ITA_coreflanders
 		}
-		prerequisite = { 
-			focus = ITA_coresputhfranse 
+		prerequisite = {
+			focus = ITA_coresputhfranse
 		}
-		prerequisite = { 
-			focus = ITA_coregermanstate 
+		prerequisite = {
+			focus = ITA_coregermanstate
 		}
-		prerequisite = { 
-			focus = ITA_corenorthfranse 
+		prerequisite = {
+			focus = ITA_corenorthfranse
 		}
-		prerequisite = { 
-			focus = ITA_coreswitzerland 
+		prerequisite = {
+			focus = ITA_coreswitzerland
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability= 0.10 
- add_war_support= 0.10
+			add_stability = 0.1
+			add_war_support = 0.1
 		}
 	}
 	#Focus for yutakanaitaria
@@ -2561,52 +2765,50 @@ add_state_core= 34
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_itariayonnkanenn }
+		prerequisite = {
+			focus = ITA_itariayonnkanenn
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			NOT = { has_idea= Italy_4_year_plan }
+			NOT = {
+				has_idea = Italy_4_year_plan
+			}
 		}
 		completion_reward = {
-			random_owned_controlled_state={
- limit = {
- free_building_slots = {
- building = arms_factory
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 4
- add_building_construction = {
- type = arms_factory
- level = 4
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- limit = {
- free_building_slots = {
- building = arms_factory
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 4
- add_building_construction = {
- type = arms_factory
- level = 4
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for kyuuzounokoujou
@@ -2617,31 +2819,32 @@ random_owned_controlled_state={
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_seisannkourituka }
-		mutually_exclusive = { focus = ITA_itariayonnkanenn }
+		prerequisite = {
+			focus = ITA_seisannkourituka
+		}
+		mutually_exclusive = {
+			focus = ITA_itariayonnkanenn
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
- limit = {
- free_building_slots = {
- building = arms_factory
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = arms_factory
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for hokubusanngyou
@@ -2656,26 +2859,25 @@ random_owned_controlled_state={
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
-prioritize = { 159 }
- limit = {
- free_building_slots = {
- building = industrial_complex
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 4
- add_building_construction = {
- type = industrial_complex
- level = 4
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					159
+				}
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for nannbusanngyou
@@ -2690,26 +2892,25 @@ prioritize = { 159 }
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
-prioritize = { 117 }
- limit = {
- free_building_slots = {
- building = industrial_complex
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 4
- add_building_construction = {
- type = industrial_complex
- level = 4
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					117
+				}
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for kougyoukibannnokakuritu
@@ -2720,40 +2921,37 @@ prioritize = { 117 }
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_hokubusanngyou 
+		prerequisite = {
+			focus = ITA_hokubusanngyou
 		}
-		prerequisite = { 
-			focus = ITA_nannbusanngyou 
+		prerequisite = {
+			focus = ITA_nannbusanngyou
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
- limit = {
- free_building_slots = {
- building = industrial_complex
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 4
- add_building_construction = {
- type = industrial_complex
- level = 4
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category = industry
-}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = industry
+			}
 		}
 	}
 	#Focus for autoraada
@@ -2764,15 +2962,17 @@ category = industry
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_kougyoukibannnokakuritu }
+		prerequisite = {
+			focus = ITA_kougyoukibannnokakuritu
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			swap_ideas= {
- remove_idea = outlarda
-add_idea = outlarda_after
-}
+			swap_ideas = {
+				remove_idea = outlarda
+				add_idea = outlarda_after
+			}
 		}
 	}
 	#Focus for tityuukaishotou
@@ -2783,171 +2983,165 @@ add_idea = outlarda_after
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_autoraada }
+		prerequisite = {
+			focus = ITA_autoraada
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
- prioritize = { 177 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 1 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 114 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 183 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 182 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 164 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 187 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 116 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					177
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					1
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					114
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					183
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					182
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					164
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					187
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					116
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for hokubusigenn
@@ -2958,19 +3152,19 @@ random_owned_controlled_state={
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_hokubusanngyou 
-			focus = ITA_nannbusanngyou 
+		prerequisite = {
+			focus = ITA_hokubusanngyou
+			focus = ITA_nannbusanngyou
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_resource= { 
-type = iron
-amount = 40
-state = 159
-}
+			add_resource = {
+				type = steel
+				amount = 40
+				state = 159
+			}
 		}
 	}
 	#Focus for nannbusigenn
@@ -2981,19 +3175,19 @@ state = 159
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_hokubusanngyou 
-			focus = ITA_nannbusanngyou 
+		prerequisite = {
+			focus = ITA_hokubusanngyou
+			focus = ITA_nannbusanngyou
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_resource= { 
-type = steel
-amount = 40
-state = 117
-}
+			add_resource = {
+				type = steel
+				amount = 40
+				state = 117
+			}
 		}
 	}
 	#Focus for zousennjinokakutyou
@@ -3008,25 +3202,22 @@ state = 117
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
- limit = {
- free_building_slots = {
- building = dockyard
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 4
- add_building_construction = {
- type = dockyard
- level = 4
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for darumatia
@@ -3037,31 +3228,32 @@ state = 117
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_zousennjinokakutyou }
+		prerequisite = {
+			focus = ITA_zousennjinokakutyou
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
-prioritize = { 103 }
- limit = {
- free_building_slots = {
- building = dockyard
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = dockyard
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					103
+				}
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for minnkannzousennjo
@@ -3072,30 +3264,29 @@ prioritize = { 103 }
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_darumatia }
+		prerequisite = {
+			focus = ITA_darumatia
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
- limit = {
- free_building_slots = {
- building = dockyard
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 4
- add_building_construction = {
- type = dockyard
- level = 4
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for shokuminntikaihatu
@@ -3106,174 +3297,166 @@ prioritize = { 103 }
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_autoraada 
-			focus = ITA_minnkannzousennjo 
+		prerequisite = {
+			focus = ITA_autoraada
+			focus = ITA_minnkannzousennjo
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
- prioritize = { 450 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 451 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 663 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 449 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 662 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 273 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 661 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 448 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					450
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					451
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					663
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					449
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					662
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					273
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					661
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					448
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for toripori
@@ -3284,31 +3467,32 @@ random_owned_controlled_state={
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_shokuminntikaihatu }
+		prerequisite = {
+			focus = ITA_shokuminntikaihatu
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
- prioritize = { 448 }
- limit = {
- free_building_slots = {
- building = industrial_complex
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = industrial_complex
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					448
+				}
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for minnkannkoujou
@@ -3319,71 +3503,70 @@ random_owned_controlled_state={
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_tityuukaishotou }
+		prerequisite = {
+			focus = ITA_tityuukaishotou
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
-prioritize = { 1 }
- limit = {
- free_building_slots = {
- building = industrial_complex
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 1
- add_building_construction = {
- type = industrial_complex
- level = 1
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
-prioritize = { 114 }
- limit = {
- free_building_slots = {
- building = industrial_complex
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 1
- add_building_construction = {
- type = industrial_complex
- level = 1
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
-prioritize = { 177 }
- limit = {
- free_building_slots = {
- building = industrial_complex
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 1
- add_building_construction = {
- type = industrial_complex
- level = 1
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					1
+				}
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					114
+				}
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					177
+				}
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for gunnjitekikaihatu
@@ -3394,51 +3577,51 @@ prioritize = { 177 }
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_minnkannkoujou }
+		prerequisite = {
+			focus = ITA_minnkannkoujou
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
-prioritize = { 115 }
- limit = {
- free_building_slots = {
- building = arms_factory
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = arms_factory
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
-prioritize = { 116 }
- limit = {
- free_building_slots = {
- building = arms_factory
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = arms_factory
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					115
+				}
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					116
+				}
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for minnkannsanngyou
@@ -3449,51 +3632,51 @@ prioritize = { 116 }
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_minnkannkoujou }
+		prerequisite = {
+			focus = ITA_minnkannkoujou
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
-prioritize = { 187 }
- limit = {
- free_building_slots = {
- building = industrial_complex
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = industrial_complex
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
-prioritize = { 183 }
- limit = {
- free_building_slots = {
- building = industrial_complex
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = industrial_complex
- level = 2
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					187
+				}
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					183
+				}
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for kuretazousennjo
@@ -3504,34 +3687,33 @@ prioritize = { 183 }
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_tityuukaishotou 
-			focus = ITA_shokuminntikaihatu 
+		prerequisite = {
+			focus = ITA_tityuukaishotou
+			focus = ITA_shokuminntikaihatu
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
-prioritize = { 182 }
- limit = {
- free_building_slots = {
- building = dockyard
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = dockyard
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					182
+				}
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for kitaafurikatetudou
@@ -3542,171 +3724,165 @@ prioritize = { 182 }
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_toripori }
+		prerequisite = {
+			focus = ITA_toripori
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
- prioritize = { 458 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 665 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 460 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 459 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 513 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 514 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 840 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
- prioritize = { 841 }
- limit = {
- free_building_slots = {
- building = infrastructure
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = infrastructure
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					458
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					665
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					460
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					459
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					513
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					514
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					840
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					841
+				}
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for etiopiakaihatu
@@ -3717,33 +3893,34 @@ random_owned_controlled_state={
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_toripori }
+		prerequisite = {
+			focus = ITA_toripori
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			NEA= {
-random_owned_controlled_state={
-prioritize = { 271 }
- limit = {
- free_building_slots = {
- building = industrial_complex
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = industrial_complex
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-}
+			NEA = {
+				random_owned_controlled_state = {
+					prioritize = {
+						271
+					}
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+			}
 		}
 	}
 	#Focus for higasiafurika5
@@ -3754,33 +3931,34 @@ prioritize = { 271 }
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_etiopiakaihatu }
+		prerequisite = {
+			focus = ITA_etiopiakaihatu
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			NEA = {
-random_owned_controlled_state={
-prioritize = { 271 }
- limit = {
- free_building_slots = {
- building = arms_factory
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 4
- add_building_construction = {
- type = arms_factory
- level = 4
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-}
+				random_owned_controlled_state = {
+					prioritize = {
+						271
+					}
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+					set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+			}
 		}
 	}
 	#Focus for juuminntonokyouryoku
@@ -3791,12 +3969,14 @@ prioritize = { 271 }
 		y = 7
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_higasiafurika5 }
+		prerequisite = {
+			focus = ITA_higasiafurika5
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=Cooperation_with_Residents
+			#add_ideas = Cooperation_with_Residents このようなアイデアは存在しません
 		}
 	}
 	#Focus for shokuminntisinnshutu
@@ -3807,31 +3987,32 @@ prioritize = { 271 }
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_kitaafurikatetudou }
+		prerequisite = {
+			focus = ITA_kitaafurikatetudou
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
-prioritize = { 449 }
- limit = {
- free_building_slots = {
- building = arms_factory
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = arms_factory
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					449
+				}
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for seisannkourituka
@@ -3842,30 +4023,29 @@ prioritize = { 449 }
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_itariasanngyoushou }
+		prerequisite = {
+			focus = ITA_itariasanngyoushou
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
- limit = {
- free_building_slots = {
- building = arms_factory
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 4
- add_building_construction = {
- type = arms_factory
- level = 4
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for itariasanngyoushou
@@ -3876,15 +4056,15 @@ prioritize = { 449 }
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_autoraada 
-			focus = ITA_minnkannzousennjo 
+		prerequisite = {
+			focus = ITA_autoraada
+			focus = ITA_minnkannzousennjo
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas= Economic_development_Ministry
+			add_ideas = Economic_development_Ministry
 		}
 	}
 	#Focus for itariasikinozousenn
@@ -3895,12 +4075,14 @@ prioritize = { 449 }
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_minnkannzousennjo }
+		prerequisite = {
+			focus = ITA_minnkannzousennjo
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=Italian_style_shipbuilding
+			add_ideas = Italian_style_shipbuilding
 		}
 	}
 	#Focus for itariayonnkanenn
@@ -3911,16 +4093,20 @@ prioritize = { 449 }
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_seisannkourituka }
-		mutually_exclusive = { focus = ITA_kyuuzounokoujou }
+		prerequisite = {
+			focus = ITA_seisannkourituka
+		}
+		mutually_exclusive = {
+			focus = ITA_kyuuzounokoujou
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_timed_idea= { 
-idea = Italy_4_year_plan 
-days =140 
-}
+			add_timed_idea = {
+				idea = Italy_4_year_plan
+				days = 140
+			}
 		}
 	}
 	#Focus for ribiaheiki
@@ -3931,31 +4117,32 @@ days =140
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_shokuminntisinnshutu }
+		prerequisite = {
+			focus = ITA_shokuminntisinnshutu
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
-prioritize = { 451 }
- limit = {
- free_building_slots = {
- building = arms_factory
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 4
- add_building_construction = {
- type = arms_factory
- level = 4
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					451
+				}
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for sekiyukaihatu
@@ -3966,19 +4153,19 @@ prioritize = { 451 }
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_tityuukaishotou 
-			focus = ITA_shokuminntikaihatu 
+		prerequisite = {
+			focus = ITA_tityuukaishotou
+			focus = ITA_shokuminntikaihatu
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_resource= { 
-type = oil 
-amount = 40
-state = 448
-}
+			add_resource = {
+				type = oil
+				amount = 40
+				state = 448
+			}
 		}
 	}
 	#Focus for takeover
@@ -3989,12 +4176,17 @@ state = 448
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_kyuuzounokoujou }
+		prerequisite = {
+			focus = ITA_kyuuzounokoujou
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_offsite_building= { type = arms_factory level = 3 }
+			add_offsite_building = {
+				type = arms_factory
+				level = 3
+			}
 		}
 	}
 	#Focus for sikinnkakusanozesei
@@ -4005,15 +4197,17 @@ state = 448
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_yutakanaitaria }
+		prerequisite = {
+			focus = ITA_yutakanaitaria
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			swap_ideas= {
- remove_idea = The_Serious_Funding_Gap
-add_idea =Corrected_funding_gap 
-}
+			swap_ideas = {
+				remove_idea = The_Serious_Funding_Gap
+				add_idea = Corrected_funding_gap
+			}
 		}
 	}
 	#Focus for makenuke
@@ -4024,21 +4218,23 @@ add_idea =Corrected_funding_gap
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_sikinnkakusanozesei }
+		prerequisite = {
+			focus = ITA_sikinnkakusanozesei
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 1
-category = nuclear
-}
-add_tech_bonus= {
- bonus = 1.5 
-uses = 2 
-category = rocketry
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = nuclear
+			}
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = rocketry
+			}
 		}
 	}
 	#Focus for aratanatikara
@@ -4049,16 +4245,18 @@ category = rocketry
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_makenuke }
+		prerequisite = {
+			focus = ITA_makenuke
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 2.0
-uses = 2 
-category = nuclear
-}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 2
+				category = nuclear
+			}
 		}
 	}
 	#Focus for greaterefficiency
@@ -4069,30 +4267,29 @@ category = nuclear
 		y = 8
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_sikinnkakusanozesei }
+		prerequisite = {
+			focus = ITA_sikinnkakusanozesei
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
- limit = {
- free_building_slots = {
- building = arms_factory
- size > 0
- include_locked = yes
- }
-
- }
-
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = arms_factory
- level = 3
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for madeinitaly
@@ -4103,12 +4300,14 @@ category = nuclear
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_greaterefficiency }
+		prerequisite = {
+			focus = ITA_greaterefficiency
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas= Made_in_Italy
+			add_ideas = Made_in_Italy
 		}
 	}
 	#Focus for acceptanceofworkers
@@ -4119,12 +4318,14 @@ category = nuclear
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_takeover }
+		prerequisite = {
+			focus = ITA_takeover
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas= South_north_question_after
+			add_ideas = South_north_question_after
 		}
 	}
 	#Focus for getthetech
@@ -4135,16 +4336,18 @@ category = nuclear
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_acceptanceofworkers }
+		prerequisite = {
+			focus = ITA_acceptanceofworkers
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.5 
-uses = 3 
-category = industry
-}
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 3
+				category = industry
+			}
 		}
 	}
 	#Focus for civilrights
@@ -4155,13 +4358,17 @@ category = industry
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_getthetech }
-		mutually_exclusive = { focus = ITA_worktillyoudie }
+		prerequisite = {
+			focus = ITA_getthetech
+		}
+		mutually_exclusive = {
+			focus = ITA_worktillyoudie
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas= Citizenship
+			add_ideas = Citizenship
 		}
 	}
 	#Focus for worktillyoudie
@@ -4172,13 +4379,17 @@ category = industry
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_getthetech }
-		mutually_exclusive = { focus = ITA_civilrights }
+		prerequisite = {
+			focus = ITA_getthetech
+		}
+		mutually_exclusive = {
+			focus = ITA_civilrights
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas= overwork
+			add_ideas = overwork
 		}
 	}
 	#Focus for morebasesontheislands
@@ -4189,106 +4400,103 @@ category = industry
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_constructionofairbase }
+		prerequisite = {
+			focus = ITA_constructionofairbase
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
-prioritize = { 114 }
- limit = {
- free_building_slots = {
- building = air_base
- size > 0
- include_locked = yes
- }
-
- }
-
- add_building_construction = {
- type = air_base
- level = 5
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
-prioritize = { 182 }
- limit = {
- free_building_slots = {
- building = air_base
- size > 0
- include_locked = yes
- }
-
- }
-
- add_building_construction = {
- type = air_base
- level = 5
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
-prioritize = { 183 }
- limit = {
- free_building_slots = {
- building = air_base
- size > 0
- include_locked = yes
- }
-
- }
-
- add_building_construction = {
- type = air_base
- level = 5
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
-prioritize = { 177 }
- limit = {
- free_building_slots = {
- building = air_base
- size > 0
- include_locked = yes
- }
-
- }
-
- add_building_construction = {
- type = air_base
- level = 5
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
-prioritize = { 116 }
- limit = {
- free_building_slots = {
- building = air_base
- size > 0
- include_locked = yes
- }
-
- }
-
- add_building_construction = {
- type = air_base
- level = 5
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					114
+				}
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					182
+				}
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					183
+				}
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					177
+				}
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					116
+				}
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for constructionofairbase
@@ -4299,68 +4507,67 @@ prioritize = { 116 }
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_greatitalianairforce }
+		prerequisite = {
+			focus = ITA_greatitalianairforce
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
-prioritize = { 2 }
- limit = {
- free_building_slots = {
- building = air_base
- size > 0
- include_locked = yes
- }
-
- }
-
- add_building_construction = {
- type = air_base
- level = 5
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
-prioritize = { 160 }
- limit = {
- free_building_slots = {
- building = air_base
- size > 0
- include_locked = yes
- }
-
- }
-
- add_building_construction = {
- type = air_base
- level = 5
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
-random_owned_controlled_state={
-prioritize = { 156 }
- limit = {
- free_building_slots = {
- building = air_base
- size > 0
- include_locked = yes
- }
-
- }
-
- add_building_construction = {
- type = air_base
- level = 5
- instant_build = yes
- }
-
- set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
- }
+			random_owned_controlled_state = {
+				prioritize = {
+					2
+				}
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					160
+				}
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state = {
+				prioritize = {
+					156
+				}
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
 		}
 	}
 	#Focus for aircombatdoctrine
@@ -4371,16 +4578,16 @@ prioritize = { 156 }
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_developmentofheavycombataircraft 
-			focus = ITA_strategicbomberupdate 
-			focus = ITA_fighterdevelopment 
+		prerequisite = {
+			focus = ITA_developmentofheavycombataircraft
+			focus = ITA_strategicbomberupdate
+			focus = ITA_fighterdevelopment
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=Improving_the_efficiency_of_fighter_production
+			add_ideas = Improving_the_efficiency_of_fighter_production
 		}
 	}
 	#Focus for greatitalianairforce
@@ -4391,22 +4598,22 @@ prioritize = { 156 }
 		y = 8
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_fighterdevelopment 
-			focus = ITA_strategicbomberupdate 
-			focus = ITA_developmentofheavycombataircraft 
+		prerequisite = {
+			focus = ITA_fighterdevelopment
+			focus = ITA_strategicbomberupdate
+			focus = ITA_developmentofheavycombataircraft
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas= the_Grand_Italian_Air_Force
-add_tech_bonus= {
- bonus = 0.5 
-uses = 2 
-category = air_doctrine
-}
-air_experience= 50
+			add_ideas = the_Grand_Italian_Air_Force
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+			air_experience = 50
 		}
 	}
 	#Focus for fighterdevelopment
@@ -4417,16 +4624,18 @@ air_experience= 50
 		y = 6
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_developmentoftacticalbombers }
+		prerequisite = {
+			focus = ITA_developmentoftacticalbombers
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category = light_fighter
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = light_fighter
+			}
 		}
 	}
 	#Focus for strategicbomberupdate
@@ -4437,16 +4646,18 @@ category = light_fighter
 		y = 6
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_developmentofsupportequipment }
+		prerequisite = {
+			focus = ITA_developmentofsupportequipment
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =cat_strategic_bomber 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_strategic_bomber
+			}
 		}
 	}
 	#Focus for developmentoftacticalbombers
@@ -4457,16 +4668,18 @@ category =cat_strategic_bomber
 		y = 5
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_flexibleairforce }
+		prerequisite = {
+			focus = ITA_flexibleairforce
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =tactical_bomber 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = tactical_bomber
+			}
 		}
 	}
 	#Focus for developmentofsupportequipment
@@ -4477,16 +4690,18 @@ category =tactical_bomber
 		y = 5
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_battlefieldsupport }
+		prerequisite = {
+			focus = ITA_battlefieldsupport
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =cas_bomber 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cas_bomber
+			}
 		}
 	}
 	#Focus for newfighteraircraft
@@ -4497,16 +4712,18 @@ category =cas_bomber
 		y = 5
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_strategicairforce }
+		prerequisite = {
+			focus = ITA_strategicairforce
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =light_fighter 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = light_fighter
+			}
 		}
 	}
 	#Focus for mobileshipupdate
@@ -4517,20 +4734,20 @@ category =light_fighter
 		y = 6
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_newnavalstrategy 
-			focus = ITA_fleetassault 
-			focus = ITA_bigshipstrategy 
+		prerequisite = {
+			focus = ITA_newnavalstrategy
+			focus = ITA_fleetassault
+			focus = ITA_bigshipstrategy
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =dd_tech 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = dd_tech
+			}
 		}
 	}
 	#Focus for massmobilizationstrategy
@@ -4541,25 +4758,27 @@ category =dd_tech
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_armyreform }
-		mutually_exclusive = { 
-			focus = ITA_maneuveringstrategy 
+		prerequisite = {
+			focus = ITA_armyreform
 		}
-		mutually_exclusive = { 
-			focus = ITA_artillerydrivenstrategy 
+		mutually_exclusive = {
+			focus = ITA_maneuveringstrategy
 		}
-		mutually_exclusive = { 
-			focus = ITA_strategyformulation 
+		mutually_exclusive = {
+			focus = ITA_artillerydrivenstrategy
+		}
+		mutually_exclusive = {
+			focus = ITA_strategyformulation
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category = cat_grand_battle_plan 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_grand_battle_plan
+			}
 		}
 	}
 	#Focus for advancedoperationalplanning
@@ -4570,12 +4789,14 @@ category = cat_grand_battle_plan
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_technicalsuperiority }
+		prerequisite = {
+			focus = ITA_technicalsuperiority
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas= Planned_Operational_Planning
+			add_ideas = Planned_Operational_Planning
 		}
 	}
 	#Focus for improvementsinbombingtechniques
@@ -4586,16 +4807,16 @@ category = cat_grand_battle_plan
 		y = 7
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_developmentofheavycombataircraft 
-			focus = ITA_strategicbomberupdate 
-			focus = ITA_fighterdevelopment 
+		prerequisite = {
+			focus = ITA_developmentofheavycombataircraft
+			focus = ITA_strategicbomberupdate
+			focus = ITA_fighterdevelopment
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=Improving_the_efficiency_of_bomber_production
+			add_ideas = Improving_the_efficiency_of_bomber_production
 		}
 	}
 	#Focus for bigshipstrategy
@@ -4606,19 +4827,19 @@ category = cat_grand_battle_plan
 		y = 5
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_newnavalstrategy 
-			focus = ITA_newship 
+		prerequisite = {
+			focus = ITA_newnavalstrategy
+			focus = ITA_newship
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =fleet_in_being_tree 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = fleet_in_being_tree
+			}
 		}
 	}
 	#Focus for newship
@@ -4629,16 +4850,18 @@ category =fleet_in_being_tree
 		y = 4
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_rebuildingtheitaliannavy }
+		prerequisite = {
+			focus = ITA_rebuildingtheitaliannavy
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =naval_equipment 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = naval_equipment
+			}
 		}
 	}
 	#Focus for armyreform
@@ -4653,7 +4876,7 @@ category =naval_equipment
 			factor = 1
 		}
 		completion_reward = {
-			army_experience= 50
+			army_experience = 50
 		}
 	}
 	#Focus for completionofmilitarypreparations.
@@ -4664,12 +4887,14 @@ category =naval_equipment
 		y = 11
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_experiencedarmy }
+		prerequisite = {
+			focus = ITA_experiencedarmy
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=Ready_for_Rome
+			add_ideas = Ready_for_Rome
 		}
 	}
 	#Focus for createairforce
@@ -4684,12 +4909,12 @@ category =naval_equipment
 			factor = 1
 		}
 		completion_reward = {
-			air_experience= 50
-add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category = air_doctrine
-}
+			air_experience = 50
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
 		}
 	}
 	#Focus for updateinfantrytech
@@ -4700,16 +4925,18 @@ category = air_doctrine
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_massmobilizationstrategy }
+		prerequisite = {
+			focus = ITA_massmobilizationstrategy
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category = infantry_tech
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = infantry_tech
+			}
 		}
 	}
 	#Focus for tankresearch
@@ -4720,16 +4947,18 @@ category = infantry_tech
 		y = 2
 		cost = 4
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_maneuveringstrategy }
+		prerequisite = {
+			focus = ITA_maneuveringstrategy
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 1
-category = armor
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = armor
+			}
 		}
 	}
 	#Focus for supporttankresearch
@@ -4740,16 +4969,18 @@ category = armor
 		y = 3
 		cost = 4
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_tankresearch }
+		prerequisite = {
+			focus = ITA_tankresearch
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.5
-uses = 1
-category = armor
-}
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				category = armor
+			}
 		}
 	}
 	#Focus for rebuildingtheitaliannavy
@@ -4764,7 +4995,7 @@ category = armor
 			factor = 1
 		}
 		completion_reward = {
-			navy_experience= 50
+			navy_experience = 50
 		}
 	}
 	#Focus for newnavalstrategy
@@ -4775,16 +5006,18 @@ category = armor
 		y = 4
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_rebuildingtheitaliannavy }
+		prerequisite = {
+			focus = ITA_rebuildingtheitaliannavy
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category = naval_doctrine
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = naval_doctrine
+			}
 		}
 	}
 	#Focus for artillerydrivenstrategy
@@ -4795,28 +5028,30 @@ category = naval_doctrine
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_armyreform }
-		mutually_exclusive = { 
-			focus = ITA_massmobilizationstrategy 
+		prerequisite = {
+			focus = ITA_armyreform
 		}
-		mutually_exclusive = { 
-			focus = ITA_maneuveringstrategy 
+		mutually_exclusive = {
+			focus = ITA_massmobilizationstrategy
 		}
-		mutually_exclusive = { 
-			focus = ITA_strategyformulation 
+		mutually_exclusive = {
+			focus = ITA_maneuveringstrategy
 		}
-		mutually_exclusive = { 
-			focus = ITA_ 
+		mutually_exclusive = {
+			focus = ITA_strategyformulation
+		}
+		mutually_exclusive = {
+			focus = ITA_
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category = cat_superior_firepower
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_superior_firepower
+			}
 		}
 	}
 	#Focus for strategyformulation
@@ -4827,28 +5062,30 @@ category = cat_superior_firepower
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_armyreform }
-		mutually_exclusive = { 
-			focus = ITA_massmobilizationstrategy 
+		prerequisite = {
+			focus = ITA_armyreform
 		}
-		mutually_exclusive = { 
-			focus = ITA_artillerydrivenstrategy 
+		mutually_exclusive = {
+			focus = ITA_massmobilizationstrategy
 		}
-		mutually_exclusive = { 
-			focus = ITA_maneuveringstrategy 
+		mutually_exclusive = {
+			focus = ITA_artillerydrivenstrategy
 		}
-		mutually_exclusive = { 
-			focus = ITA_ 
+		mutually_exclusive = {
+			focus = ITA_maneuveringstrategy
+		}
+		mutually_exclusive = {
+			focus = ITA_
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category = cat_grand_battle_plan
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_grand_battle_plan
+			}
 		}
 	}
 	#Focus for maneuveringstrategy
@@ -4859,28 +5096,30 @@ category = cat_grand_battle_plan
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_armyreform }
-		mutually_exclusive = { 
-			focus = ITA_massmobilizationstrategy 
+		prerequisite = {
+			focus = ITA_armyreform
 		}
-		mutually_exclusive = { 
-			focus = ITA_strategyformulation 
+		mutually_exclusive = {
+			focus = ITA_massmobilizationstrategy
 		}
-		mutually_exclusive = { 
-			focus = ITA_artillerydrivenstrategy 
+		mutually_exclusive = {
+			focus = ITA_strategyformulation
 		}
-		mutually_exclusive = { 
-			focus = ITA_ 
+		mutually_exclusive = {
+			focus = ITA_artillerydrivenstrategy
+		}
+		mutually_exclusive = {
+			focus = ITA_
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =cat_mobile_warfare 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_mobile_warfare
+			}
 		}
 	}
 	#Focus for artillerystrategy
@@ -4891,16 +5130,18 @@ category =cat_mobile_warfare
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_artillerydrivenstrategy }
+		prerequisite = {
+			focus = ITA_artillerydrivenstrategy
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 1
-category = artillery
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
 		}
 	}
 	#Focus for carefulscouting
@@ -4911,16 +5152,18 @@ category = artillery
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_strategyformulation }
+		prerequisite = {
+			focus = ITA_strategyformulation
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 1
-category =recon_tech 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = recon_tech
+			}
 		}
 	}
 	#Focus for cleanhospital
@@ -4931,16 +5174,18 @@ category =recon_tech
 		y = 3
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_updateinfantrytech }
+		prerequisite = {
+			focus = ITA_updateinfantrytech
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =hospital_tech 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = hospital_tech
+			}
 		}
 	}
 	#Focus for technicalsuperiority
@@ -4951,16 +5196,18 @@ category =hospital_tech
 		y = 3
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_carefulscouting }
+		prerequisite = {
+			focus = ITA_carefulscouting
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.5
-uses = 2 
-category =engineers_tech 
-}
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = engineers_tech
+			}
 		}
 	}
 	#Focus for landdoctrineresearch
@@ -4971,22 +5218,22 @@ category =engineers_tech
 		y = 2
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_massmobilizationstrategy 
-			focus = ITA_maneuveringstrategy 
-			focus = ITA_strategyformulation 
-			focus = ITA_artillerydrivenstrategy 
+		prerequisite = {
+			focus = ITA_massmobilizationstrategy
+			focus = ITA_maneuveringstrategy
+			focus = ITA_strategyformulation
+			focus = ITA_artillerydrivenstrategy
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category = land_doctrine 
-}
-army_experience= 50
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
+			army_experience = 50
 		}
 	}
 	#Focus for antitank
@@ -4997,16 +5244,18 @@ army_experience= 50
 		y = 3
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_artillerystrategy }
+		prerequisite = {
+			focus = ITA_artillerystrategy
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.5
-uses = 2 
-category =cat_anti_tank 
-}
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = cat_anti_tank
+			}
 		}
 	}
 	#Focus for transportvehicle
@@ -5017,19 +5266,19 @@ category =cat_anti_tank
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_massmobilizationstrategy 
-			focus = ITA_strategyformulation 
+		prerequisite = {
+			focus = ITA_massmobilizationstrategy
+			focus = ITA_strategyformulation
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 1
-category = motorized_equipment
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
 		}
 	}
 	#Focus for mobilevehicleoperations
@@ -5040,19 +5289,19 @@ category = motorized_equipment
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_maneuveringstrategy 
-			focus = ITA_artillerydrivenstrategy 
+		prerequisite = {
+			focus = ITA_maneuveringstrategy
+			focus = ITA_artillerydrivenstrategy
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 1
-category =cat_mechanized_equipment 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_mechanized_equipment
+			}
 		}
 	}
 	#Focus for completionofthereorganization
@@ -5063,17 +5312,17 @@ category =cat_mechanized_equipment
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_italianmobilewarfare 
-			focus = ITA_powerstrategy 
-			focus = ITA_advancedoperationalplanning 
-			focus = ITA_probabilityofmobilizationtactics 
+		prerequisite = {
+			focus = ITA_italianmobilewarfare
+			focus = ITA_powerstrategy
+			focus = ITA_advancedoperationalplanning
+			focus = ITA_probabilityofmobilizationtactics
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			remove_ideas=Weak_army
+			remove_ideas = Weak_army
 		}
 	}
 	#Focus for newitalyarmy
@@ -5084,12 +5333,14 @@ category =cat_mechanized_equipment
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_completionofthereorganization }
+		prerequisite = {
+			focus = ITA_completionofthereorganization
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=The_New_Italian_Army
+			add_ideas = The_New_Italian_Army
 		}
 	}
 	#Focus for powerstrategy
@@ -5100,12 +5351,14 @@ category =cat_mechanized_equipment
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_antitank }
+		prerequisite = {
+			focus = ITA_antitank
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas= Artillery_in_support_of_the_battlefield
+			add_ideas = Artillery_in_support_of_the_battlefield
 		}
 	}
 	#Focus for probabilityofmobilizationtactics
@@ -5116,12 +5369,14 @@ category =cat_mechanized_equipment
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_cleanhospital }
+		prerequisite = {
+			focus = ITA_cleanhospital
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=mass_mobilization_strategy
+			add_ideas = mass_mobilization_strategy
 		}
 	}
 	#Focus for strategicairforce
@@ -5132,25 +5387,27 @@ category =cat_mechanized_equipment
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_createairforce }
-		mutually_exclusive = { 
-			focus = ITA_flexibleairforce 
+		prerequisite = {
+			focus = ITA_createairforce
 		}
-		mutually_exclusive = { 
-			focus = ITA_battlefieldsupport 
+		mutually_exclusive = {
+			focus = ITA_flexibleairforce
 		}
-		mutually_exclusive = { 
-			focus = ITA_ 
+		mutually_exclusive = {
+			focus = ITA_battlefieldsupport
+		}
+		mutually_exclusive = {
+			focus = ITA_
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =strategic_destruction_tree 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = strategic_destruction_tree
+			}
 		}
 	}
 	#Focus for italianmobilewarfare
@@ -5161,12 +5418,14 @@ category =strategic_destruction_tree
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_supporttankresearch }
+		prerequisite = {
+			focus = ITA_supporttankresearch
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas= Italian_style_blitzkrieg
+			add_ideas = Italian_style_blitzkrieg
 		}
 	}
 	#Focus for battlefieldsupport
@@ -5177,22 +5436,24 @@ category =strategic_destruction_tree
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_createairforce }
-		mutually_exclusive = { 
-			focus = ITA_flexibleairforce 
+		prerequisite = {
+			focus = ITA_createairforce
 		}
-		mutually_exclusive = { 
-			focus = ITA_strategicairforce 
+		mutually_exclusive = {
+			focus = ITA_flexibleairforce
+		}
+		mutually_exclusive = {
+			focus = ITA_strategicairforce
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =battlefield_support_tree 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = battlefield_support_tree
+			}
 		}
 	}
 	#Focus for flexibleairforce
@@ -5203,25 +5464,24 @@ category =battlefield_support_tree
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_createairforce }
-		mutually_exclusive = { 
-			focus = ITA_battlefieldsupport 
+		prerequisite = {
+			focus = ITA_createairforce
 		}
-		mutually_exclusive = { 
-			focus = ITA_strategicairforce 
+		mutually_exclusive = {
+			focus = ITA_battlefieldsupport
 		}
-		mutually_exclusive = { 
-			focus = ITA_ 
+		mutually_exclusive = {
+			focus = ITA_strategicairforce
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =operational_integrity_tree 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = operational_integrity_tree
+			}
 		}
 	}
 	#Focus for developmentofheavycombataircraft
@@ -5232,16 +5492,18 @@ category =operational_integrity_tree
 		y = 6
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_newfighteraircraft }
+		prerequisite = {
+			focus = ITA_newfighteraircraft
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =heavy_air 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = heavy_air
+			}
 		}
 	}
 	#Focus for fleetassault
@@ -5252,19 +5514,19 @@ category =heavy_air
 		y = 5
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_newship 
-			focus = ITA_newnavalstrategy 
+		prerequisite = {
+			focus = ITA_newship
+			focus = ITA_newnavalstrategy
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =fleet_in_being_tree 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = fleet_in_being_tree
+			}
 		}
 	}
 	#Focus for applicationtomodernstrategy
@@ -5275,19 +5537,19 @@ category =fleet_in_being_tree
 		y = 5
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_newnavalstrategy 
-			focus = ITA_newship 
+		prerequisite = {
+			focus = ITA_newnavalstrategy
+			focus = ITA_newship
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =cat_base_strike 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_base_strike
+			}
 		}
 	}
 	#Focus for developmentoflargebattleships
@@ -5298,17 +5560,19 @@ category =cat_base_strike
 		y = 6
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_bigshipstrategy }
+		prerequisite = {
+			focus = ITA_bigshipstrategy
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =shbb_tech 
-}
-navy_experience= 30
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = shbb_tech
+			}
+			navy_experience = 30
 		}
 	}
 	#Focus for developmentofanaircraftcarrier
@@ -5319,22 +5583,22 @@ navy_experience= 30
 		y = 6
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_applicationtomodernstrategy 
-			focus = ITA_newship 
-			focus = ITA_fleetassault 
-			focus = ITA_newnavalstrategy 
+		prerequisite = {
+			focus = ITA_applicationtomodernstrategy
+			focus = ITA_newship
+			focus = ITA_fleetassault
+			focus = ITA_newnavalstrategy
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =cv_tech 
-}
-navy_experience= 30
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cv_tech
+			}
+			navy_experience = 30
 		}
 	}
 	#Focus for carrierbasedaircraftupdate
@@ -5345,18 +5609,20 @@ navy_experience= 30
 		y = 7
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_developmentofanaircraftcarrier }
+		prerequisite = {
+			focus = ITA_developmentofanaircraftcarrier
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =naval_air 
-}
-navy_experience= 30
-air_experience= 30
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = naval_air
+			}
+			navy_experience = 30
+			air_experience = 30
 		}
 	}
 	#Focus for developmentofnewbattleships
@@ -5367,16 +5633,18 @@ air_experience= 30
 		y = 6
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_bigshipstrategy }
+		prerequisite = {
+			focus = ITA_bigshipstrategy
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =bb_tech 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = bb_tech
+			}
 		}
 	}
 	#Focus for developmentofsubmarines
@@ -5387,16 +5655,18 @@ category =bb_tech
 		y = 6
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_fleetassault }
+		prerequisite = {
+			focus = ITA_fleetassault
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
- bonus = 1.0
-uses = 2 
-category =ss_tech 
-}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = ss_tech
+			}
 		}
 	}
 	#Focus for greatitalianfleet
@@ -5407,19 +5677,19 @@ category =ss_tech
 		y = 7
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_developmentofanaircraftcarrier 
-			focus = ITA_developmentofsubmarines 
-			focus = ITA_mobileshipupdate 
-			focus = ITA_developmentofnewbattleships 
-			focus = ITA_developmentoflargebattleships 
+		prerequisite = {
+			focus = ITA_developmentofanaircraftcarrier
+			focus = ITA_developmentofsubmarines
+			focus = ITA_mobileshipupdate
+			focus = ITA_developmentofnewbattleships
+			focus = ITA_developmentoflargebattleships
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=Formation_of_the_Great_Italian_Fleet
-navy_experience= 50
+			add_ideas = Formation_of_the_Great_Italian_Fleet
+			navy_experience = 50
 		}
 	}
 	#Focus for airnavalism
@@ -5430,16 +5700,18 @@ navy_experience= 50
 		y = 8
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_greatitalianfleet 
-			focus = ITA_carrierbasedaircraftupdate 
+		prerequisite = {
+			focus = ITA_greatitalianfleet
+			focus = ITA_carrierbasedaircraftupdate
 		}
-		mutually_exclusive = { focus = ITA_battleshipinitiative }
+		mutually_exclusive = {
+			focus = ITA_battleshipinitiative
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=air_naval_policy
+			add_ideas = air_naval_policy
 		}
 	}
 	#Focus for battleshipinitiative
@@ -5450,16 +5722,18 @@ navy_experience= 50
 		y = 8
 		cost = 7
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_greatitalianfleet 
-			focus = ITA_carrierbasedaircraftupdate 
+		prerequisite = {
+			focus = ITA_greatitalianfleet
+			focus = ITA_carrierbasedaircraftupdate
 		}
-		mutually_exclusive = { focus = ITA_airnavalism }
+		mutually_exclusive = {
+			focus = ITA_airnavalism
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas=battleship_policy
+			add_ideas = battleship_policy
 		}
 	}
 	#Focus for experiencedarmy
@@ -5470,19 +5744,19 @@ navy_experience= 50
 		y = 10
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = ITA_battleshipinitiative 
-			focus = ITA_airnavalism 
-			focus = ITA_newitalyarmy 
-			focus = ITA_greatitalianairforce 
+		prerequisite = {
+			focus = ITA_battleshipinitiative
+			focus = ITA_airnavalism
+			focus = ITA_newitalyarmy
+			focus = ITA_greatitalianairforce
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			remove_ideas= Weak_army
-add_ideas=The_End_of_Military_Reform
+			remove_ideas = Weak_army
+			add_ideas = The_End_of_Military_Reform
 		}
 	}
-#End of focuses 
- }
+	#End of focuses 
+}
