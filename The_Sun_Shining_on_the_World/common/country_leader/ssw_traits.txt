@@ -1,25 +1,24 @@
 leader_traits = {
 	Drug_addict = {
-	        random = no
-		political_power_factor = -0.50
+		random = no
+		political_power_factor = -0.5
 		army_morale_factor = -0.25
 		stability_factor = -0.2
 	}
 	Air_Force_founder = {
-	        random = no
-		air_doctrine_factor = -0.10
+		random = no
 	}
 	Charisma = {
-	        random = no
+		random = no
 		stability_factor = 0.2
 	}
 	commonwealth_leader = {
-	        random = no
+		random = no
 		stability_factor = 0.1
 		political_power_factor = 0.1
 	}
 	chronic_disease = {
-	        random = no
+		random = no
 		stability_factor = -0.05
 	}
 }
