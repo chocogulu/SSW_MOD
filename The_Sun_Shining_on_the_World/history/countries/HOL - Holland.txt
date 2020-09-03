@@ -1,11 +1,11 @@
 ﻿capital = 7
-
 #oob = "HOL_1950"
 set_cosmetic_tag = HOL_GER
-
 if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "HOL_1936_naval_mtg"
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "HOL_1936_naval_mtg"
 	else = {
 		set_naval_oob = "HOL_1936_naval_legacy"
 	}
@@ -14,11 +14,9 @@ if = {
 set_research_slots = 3
 set_stability = 0.75
 set_war_support = 0
-
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_recon = 1
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -33,11 +31,17 @@ if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	set_technology = { bicycle_infantry = 1 }
+	set_technology = {
+		bicycle_infantry = 1
+	}
 }
 
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	set_technology = {
 		early_submarine = 1
 		basic_destroyer = 1
@@ -48,8 +52,11 @@ if = {
 		transport = 1
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	set_technology = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
@@ -78,7 +85,10 @@ if = {
 	}
 }
 
-set_variable = { var = gateway_to_europe_influence_pp_total value = 0 }
+set_variable = {
+	var = gateway_to_europe_influence_pp_total
+	value = 0
+}
 
 add_ideas = {
 	HOL_wilhelmina
@@ -96,22 +106,19 @@ if = {
 	}
 }
 
-
-
-
 set_politics = {
 	ruling_party = nazism
 	last_election = "1935.4.26"
 	election_frequency = 48
 	elections_allowed = yes
 }
+
 set_popularities = {
 	nazism = 100
 }
 
 set_convoys = 150
 set_stability = 0.75
-
 #create_country_leader = {
 #	name = "Dirk Jan de Geer"
 #	desc = "POLITICS_DIRK_JAN_DE_GEER_DESC"
@@ -122,13 +129,12 @@ set_stability = 0.75
 #		#
 #	}
 #}
-
 create_country_leader = {
 	name = "Hendrikus Colijn"
 	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
 	picture = "GFX_portrait_holland_hendrikus_colijn"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservatism_ideology
 	traits = {
 		strict_austerity_adherent
 	}
@@ -145,17 +151,16 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Lou de Visser"
-	desc = "POLITICS_LOU_DE_VISSER_DESC"
-	picture = "GFX_portrait_HOL_lou_de_visser"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		veteran_communist
-	}
-}
-
+# create_country_leader = {
+# 	name = "Lou de Visser"
+# 	desc = "POLITICS_LOU_DE_VISSER_DESC"
+# 	picture = "GFX_portrait_HOL_lou_de_visser"
+# 	expire = "1965.1.1"
+# 	ideology = leninism
+# 	traits = {
+# 		veteran_communist
+# 	}
+# }
 create_country_leader = {
 	name = "Willem Schermerhorn"
 	desc = "POLITICS_WIM_SCHERMERHORN_DESC"
@@ -171,7 +176,11 @@ create_field_marshal = {
 	name = "Izaak Reijnders"
 	id = 980
 	gfx = "GFX_portrait_hol_izaak_reijnders"
-	traits = { old_guard inflexible_strategist trait_reckless }
+	traits = {
+		old_guard
+		inflexible_strategist
+		trait_reckless
+	}
 	skill = 2
 	attack_skill = 2
 	defense_skill = 1
@@ -182,7 +191,10 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Petrus Wilhelmus Best"
 	gfx = "GFX_portrait_hol_petrus_wilhelmus_best"
-	traits = { organizer skilled_staffer }
+	traits = {
+		organizer
+		skilled_staffer
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
@@ -193,7 +205,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Godfried van Voorst tot Voorst"
 	gfx = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
-	traits = { brilliant_strategist career_officer armor_officer politically_connected }
+	traits = {
+		brilliant_strategist
+		career_officer
+		armor_officer
+		politically_connected
+	}
 	skill = 4
 	attack_skill = 3
 	defense_skill = 4
@@ -204,7 +221,11 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Johannes Theodorus Furstner"
 	gfx = "GFX_portrait_hol_johannes_theodorus_furstner"
-	traits = { caustic_personality fly_swatter blockade_runner }
+	traits = {
+		caustic_personality
+		fly_swatter
+		blockade_runner
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
@@ -215,7 +236,12 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Conrad Helfrich"
 	gfx = "GFX_portrait_hol_conrad_helfrich"
-	traits = { seawolf superior_tactician bold navy_career_officer }
+	traits = {
+		seawolf
+		superior_tactician
+		bold
+		navy_career_officer
+	}
 	id = 981
 	skill = 4
 	attack_skill = 5
@@ -227,7 +253,11 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Karel Doorman"
 	gfx = "GFX_portrait_hol_karel_doorman"
-	traits = { fleet_protector naval_lineage bold }
+	traits = {
+		fleet_protector
+		naval_lineage
+		bold
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
@@ -235,11 +265,14 @@ create_navy_leader = {
 	coordination_skill = 2
 }
 
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	### Ship Variants ###
 	create_equipment_variant = {
 		name = "K-XIV Class"
@@ -252,10 +285,14 @@ if = {
 		}
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	# Submarines #
-	create_equipment_variant = {			# represents K II-X, O8 subs
+	create_equipment_variant = {
+		# represents K II-X, O8 subs
 		name = "K-III Class"
 		type = ship_hull_submarine_1
 		name_group = HOL_SS_KCLASS
@@ -268,7 +305,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "O9 Class"					# represents O9-15, K XI-XIII subs
+		name = "O9 Class"		# represents O9-15, K XI-XIII subs
 		type = ship_hull_submarine_1
 		name_group = HOL_SS_OCLASS
 		parent_version = 0
@@ -280,7 +317,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "K-XIV Class"				# represents K XIV-XVIII, O16 subs
+		name = "K-XIV Class"		# represents K XIV-XVIII, O16 subs
 		type = ship_hull_submarine_2
 		name_group = HOL_SS_KCLASS
 		parent_version = 0
@@ -292,7 +329,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Van Ghent Class"			
+		name = "Van Ghent Class"
 		type = ship_hull_light_1
 		name_group = HOL_DD_HISTORICAL
 		parent_version = 0
@@ -309,7 +346,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Van Galen Class"				
+		name = "Van Galen Class"
 		type = ship_hull_light_1
 		name_group = HOL_DD_HISTORICAL
 		parent_version = 0
@@ -360,7 +397,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Hertog Hendrik Class"			
+		name = "Hertog Hendrik Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = HOL_CA_HISTORICAL
 		parent_version = 0
@@ -378,7 +415,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Soerabaja Class"				# represents Soerabaja (De Zeven Provincien) and Jacob van Heemskerck 
+		name = "Soerabaja Class"		# represents Soerabaja (De Zeven Provincien) and Jacob van Heemskerck 
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = HOL_CA_HISTORICAL
 		parent_version = 0

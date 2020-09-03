@@ -1,23 +1,19 @@
 ﻿capital = 113
-
 #oob = "IRE_1950"
-
 set_research_slots = 3
-
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
 	fuel_silos = 1
 }
 
 set_convoys = 10
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1933.1.24"
 	election_frequency = 48
 	elections_allowed = yes
 }
+
 set_popularities = {
 	democratic = 98
 	fascism = 1
@@ -71,7 +67,8 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Michael Costello"
 	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
-	traits = {  }
+	traits = {
+	}
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2

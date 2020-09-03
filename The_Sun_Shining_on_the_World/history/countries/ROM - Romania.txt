@@ -1,9 +1,9 @@
 ﻿capital = 46
-
-oob = "ROM_1950"
 if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "ROM_1936_naval_mtg"
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "ROM_1936_naval_mtg"
 	else = {
 		set_naval_oob = "ROM_1936_naval_legacy"
 	}
@@ -12,30 +12,36 @@ if = {
 set_research_slots = 3
 set_stability = 0.6
 set_war_support = 0.6
-
 # Starting tech
 set_technology = {
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
 	gwtank = 1
 	basic_light_tank = 1
 	infantry_weapons = 1
-	infantry_weapons1 = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	early_fighter = 1
 }
+
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	set_technology = {
 		early_submarine = 1
 		early_destroyer = 1
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	set_technology = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
@@ -60,8 +66,8 @@ if = {
 	give_guarantee = GRE
 	give_guarantee = TUR
 }
-add_ideas = neutrality_idea
 
+add_ideas = neutrality_idea
 #Kick off kings crazy life
 if = {
 	limit = {
@@ -70,21 +76,25 @@ if = {
 	ROM = {
 		#Pick from list of the sane events first
 		random_list = {
-			100 = { country_event = { id = DOD_romania.81 days = 2 random_days = 20 } }
+			100 = {
+				# country_event = { このようなイベントは存在しません
+				# 	id = DOD_romania.81
+				# 	days = 2
+				# 	random_days = 20
+				# }
+			}
 		}
 	}
 }
 
-
-
 set_convoys = 10
-
 set_politics = {
 	ruling_party = fascism
 	last_election = "1950.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
 	conservatism = 20
 	fascism = 80
@@ -101,23 +111,22 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Constantin Ion Parhon"
-	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
-	picture = "Portrait_Romania_Constantin_Parhon.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-
+# create_country_leader = {
+# 	name = "Constantin Ion Parhon"
+# 	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
+# 	picture = "Portrait_Romania_Constantin_Parhon.dds"
+# 	expire = "1965.1.1"
+# 	ideology = leninism
+# 	traits = {
+# 		#
+# 	}
+# }
 create_country_leader = {
 	name = "Armand Calinescu"
 	desc = "POLITICS_ARMAND_CALINESCU_DESC"
 	picture = "gfx/leaders/ROM/Portrait_Romania_Armand_Calinescu.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservatism_ideology
 	traits = {
 		#
 	}
@@ -148,7 +157,10 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Petre Dumitrescu"
 	gfx = GFX_Portrait_romania_petre_dumitrescu
-	traits = { offensive_doctrine logistics_wizard }
+	traits = {
+		offensive_doctrine
+		logistics_wizard
+	}
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
@@ -159,7 +171,9 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Ion Antonescu"
 	picture = "Portrait_Romania_Ion_Antonescu.dds"
-	traits = { offensive_doctrine }
+	traits = {
+		offensive_doctrine
+	}
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
@@ -170,7 +184,9 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Ioan Mihail Racovita"
 	gfx = GFX_Portrait_romania_ioan_mihail_racovita
-	traits = { hill_fighter }
+	traits = {
+		hill_fighter
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
@@ -181,17 +197,22 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Gheorghe Avramescu"
 	gfx = GFX_Portrait_romania_gheorghe_avramescu
-	traits = { }
+	traits = {
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 3
 }
+
 create_navy_leader = {
 	name = "Horia Macellariu"
 	gfx = "GFX_Portrait_romania_horia_macellariu"
-	traits = { gentlemanly spotter }
+	traits = {
+		gentlemanly
+		spotter
+	}
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
@@ -199,11 +220,14 @@ create_navy_leader = {
 	coordination_skill = 1
 }
 
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	### Ship Variants ###
 	create_equipment_variant = {
 		name = "Regele Ferdinand Class"
@@ -216,11 +240,14 @@ if = {
 		}
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	# Submarines #
 	create_equipment_variant = {
-		name = "Delfinul Class"				
+		name = "Delfinul Class"
 		type = ship_hull_submarine_2
 		name_group = ROM_SS_HISTORICAL
 		parent_version = 0
@@ -232,7 +259,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Marasti Class"				
+		name = "Marasti Class"
 		type = ship_hull_light_1
 		name_group = ROM_DD_HISTORICAL
 		parent_version = 0
@@ -249,7 +276,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Regele Ferdinand Class"	
+		name = "Regele Ferdinand Class"
 		type = ship_hull_light_1
 		name_group = ROM_DD_HISTORICAL
 		parent_version = 0
@@ -269,10 +296,16 @@ if = {
 # 1939 Start #
 1939.1.1 = {
 	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
+		limit = {
+			not = {
+				has_dlc = "Man the Guns"
+			}
+		}
 		# Ship variants #
 	}
 	if = {
-		limit = { has_dlc = "Man the Guns" }
+		limit = {
+			has_dlc = "Man the Guns"
+		}
 	}
 }

@@ -1,31 +1,34 @@
 ﻿capital = 49
-
-oob = "TUR_1950"
 if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "TUR_1936_naval_mtg"
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "TUR_1936_naval_mtg"
 	else = {
 		set_naval_oob = "TUR_1936_naval_legacy"
 	}
 }
 
 set_research_slots = 3
-
 add_ideas = {
 	limited_conscription
 }
 
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
 	tech_mountaineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	early_fighter = 1
 	CAS1 = 1
 }
+
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	set_technology = {
 		early_submarine = 1
 		early_destroyer = 1
@@ -35,8 +38,11 @@ if = {
 		transport = 1
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	set_technology = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
@@ -60,6 +66,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
+
 set_popularities = {
 	democratic = 10
 	conservatism = 90
@@ -67,7 +74,6 @@ set_popularities = {
 
 set_convoys = 20
 set_stability = 0.55
-
 # Atatürk still alive in '36, however, Inönü was already Prime Minister (but not President)
 create_country_leader = {
 	name = "Celâl Bayar"
@@ -107,11 +113,12 @@ create_country_leader = {
 	desc = "POLITICS_CELAL_BAYAR_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservatism_ideology
 	traits = {
 		#
 	}
 }
+
 create_country_leader = {
 	name = "Fevzi Çakmak"
 	desc = "POLITICS_OGUZ_REMZI_ARIK_DESC"
@@ -126,9 +133,10 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Cemil Cahit Toydemir"
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
-	traits = { desert_fox }
+	traits = {
+		desert_fox
+	}
 	skill = 3
-
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 3
@@ -138,9 +146,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Nazmi Solok"
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-	traits = { trickster }
+	traits = {
+		trickster
+	}
 	skill = 2
-
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 2
@@ -150,9 +159,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Salih Omurtak"
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
-	traits = {  hill_fighter }
+	traits = {
+		hill_fighter
+	}
 	skill = 2
-
 	attack_skill = 2
 	defense_skill = 1
 	planning_skill = 2
@@ -162,7 +172,9 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Rauf Orbay"
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
-	traits = { bold }
+	traits = {
+		bold
+	}
 	skill = 2
 	attack_skill = 3
 	defense_skill = 1
@@ -170,11 +182,14 @@ create_navy_leader = {
 	coordination_skill = 2
 }
 
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	### Ship Variants ###
 	create_equipment_variant = {
 		name = "Kocatepe Class"
@@ -208,11 +223,14 @@ if = {
 		}
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	# Submarines #
 	create_equipment_variant = {
-		name = "Birinci Inönü Class"				
+		name = "Birinci Inönü Class"
 		type = ship_hull_submarine_1
 		name_group = TUR_SS_HISTORICAL
 		parent_version = 0
@@ -224,7 +242,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Dumlupinar Class"				
+		name = "Dumlupinar Class"
 		type = ship_hull_submarine_2
 		name_group = TUR_SS_HISTORICAL
 		parent_version = 0
@@ -235,7 +253,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Sakarya Class"								# represents Sakarya and Gur classes
+		name = "Sakarya Class"		# represents Sakarya and Gur classes
 		type = ship_hull_submarine_1
 		name_group = TUR_SS_HISTORICAL
 		parent_version = 0
@@ -247,7 +265,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Peyk Class"									# large torpedo boats		
+		name = "Peyk Class"		# large torpedo boats		
 		type = ship_hull_light_1
 		name_group = TUR_DD_HISTORICAL
 		parent_version = 0
@@ -264,7 +282,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Kocatepe Class"								# represents Kocatepe and Zafer classes
+		name = "Kocatepe Class"		# represents Kocatepe and Zafer classes
 		type = ship_hull_light_1
 		name_group = TUR_DD_HISTORICAL
 		parent_version = 0
@@ -281,7 +299,7 @@ if = {
 	}
 	# Cruisers #
 	create_equipment_variant = {
-		name = "Mecidiye Class"								# represents Mecidiye and Hamidiye protected cruisers		
+		name = "Mecidiye Class"		# represents Mecidiye and Hamidiye protected cruisers		
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = TUR_CL_HISTORICAL
 		parent_version = 0
@@ -300,7 +318,7 @@ if = {
 	}
 	# Battlecruiser #
 	create_equipment_variant = {
-		name = "Yavuz Class"	
+		name = "Yavuz Class"
 		type = ship_hull_heavy_1
 		name_group = TUR_BC_HISTORICAL
 		parent_version = 0
@@ -323,14 +341,20 @@ if = {
 # 1939 Start #
 1939.1.1 = {
 	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
+		limit = {
+			not = {
+				has_dlc = "Man the Guns"
+			}
+		}
 		# Ship variants #
 	}
 	if = {
-		limit = { has_dlc = "Man the Guns" }
+		limit = {
+			has_dlc = "Man the Guns"
+		}
 		# Submarines #
 		create_equipment_variant = {
-			name = "Saldiray Class"				
+			name = "Saldiray Class"
 			type = ship_hull_submarine_2
 			name_group = TUR_SS_HISTORICAL
 			parent_version = 0

@@ -1,14 +1,11 @@
 ﻿capital = 288
-
 #oob = "BRM_1950"
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 }
 
 set_convoys = 5
-
 1939.1.1 = {
 	#generic focuses
 	complete_national_focus = army_effort
@@ -20,19 +17,15 @@ set_convoys = 5
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
 	set_technology = {
-
 		#doctrines
 		grand_battle_plan = 1
 		trench_warfare = 1
-
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
 		radio_detection = 1
 		mechanical_computing = 1
-
 		#industry
 		basic_machine_tools = 1
 		improved_machine_tools = 1
@@ -44,19 +37,21 @@ set_convoys = 5
 		dispersed_industry2 = 1
 	}
 }
+
 set_politics = {
 	ruling_party = authoritative_democracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
+
 set_popularities = {
 	authoritative_democracy = 72
 	communism = 5
 	neutrality = 23
 }
+
 create_country_leader = {
-	
 	name = "Aung San"
 	picture = "gfx/leaders/BRM/Portrait_Aung_San"
 	expire = "1965.1.1"
@@ -65,8 +60,8 @@ create_country_leader = {
 		#
 	}
 }
+
 create_country_leader = {
-	
 	name = "Ne Win"
 	picture = "gfx/leaders/BRM/Portrait_Ne_Win.dds"
 	expire = "1965.1.1"
@@ -75,8 +70,8 @@ create_country_leader = {
 		#
 	}
 }
+
 create_country_leader = {
-	
 	name = "Ba Maw"
 	picture = "gfx/leaders/BRM/Portrait_Bar_Maw.dds"
 	expire = "1965.1.1"
@@ -85,8 +80,8 @@ create_country_leader = {
 		#
 	}
 }
+
 create_country_leader = {
-	
 	name = "Anarchism Union"
 	picture = "gfx/leaders/BRM/Portrait_Anarchism_Union.dds"
 	expire = "1965.1.1"
@@ -95,48 +90,46 @@ create_country_leader = {
 		#
 	}
 }
+
 create_country_leader = {
-	
 	name = "Walther Hinkler Stennes"
 	picture = "gfx/leaders/BRM/Portrait_Walther_Hinkler_Stennes.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = nazism_ideology
 	traits = {
 		#
 	}
 }
+
+#create_country_leader = { イデオロギーが不正です
+#	name = "San Yu"
+#	picture = "gfx/leaders/BRM/Portrait_San_Yu.dds"
+#	expire = "1965.1.1"
+#	ideology = militarism
+#	traits = {
+#		#
+#	}
+#}
+#create_country_leader = { イデオロギーが不正です
+#	name = "Thakin Soe"
+#	picture = "gfx/leaders/BRM/Portrait_Thakin_Soe.dds"
+#	expire = "1965.1.1"
+#	ideology = social_democracy
+#	traits = {
+#		#
+#	}
+#}
 create_country_leader = {
-	
-	name = "San Yu"
-	picture = "gfx/leaders/BRM/Portrait_San_Yu.dds"
-	expire = "1965.1.1"
-	ideology = militarism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	
-	name = "Thakin Soe"
-	picture = "gfx/leaders/BRM/Portrait_Thakin_Soe.dds"
-	expire = "1965.1.1"
-	ideology = social_democracy
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	
 	name = "U Nu"
 	picture = "gfx/leaders/BRM/Portrait_U_Nu.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservatism_ideology
 	traits = {
 		#
 	}
 }
+
 create_country_leader = {
-	
 	name = "Myat Phaya"
 	picture = "gfx/leaders/BRM/Portrait_Myat_Phaya_Lat.dds"
 	expire = "1965.1.1"

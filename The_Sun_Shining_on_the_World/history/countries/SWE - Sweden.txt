@@ -1,28 +1,23 @@
-﻿capital = 141	
-
-oob = "SWE_1950"
+﻿capital = 141
 if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SWE_1936_naval_mtg"
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "SWE_1936_naval_mtg"
 	else = {
 		set_naval_oob = "SWE_1936_naval_legacy"
 	}
 }
 
 set_research_slots = 3
-
-add_ideas = {
-}
 set_stability = 0.9
 set_war_support = 0.1
-
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	gwtank = 1
 	basic_light_tank = 1
@@ -32,8 +27,13 @@ set_technology = {
 	cv_naval_bomber1 = 1
 	early_bomber = 1
 }
+
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	set_technology = {
 		early_submarine = 1
 		early_destroyer = 1
@@ -43,8 +43,11 @@ if = {
 		transport = 1
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	set_technology = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
@@ -69,6 +72,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
+
 set_popularities = {
 	social_democracy = 50
 	conservatism = 42
@@ -77,27 +81,22 @@ set_popularities = {
 
 set_convoys = 25
 set_stability = 0.9
-
-
-
-
-create_country_leader = {
-	name = "Per Albin Hansson"
-	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
-	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
+# create_country_leader = {
+# 	name = "Per Albin Hansson"
+# 	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
+# 	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
+# 	expire = "1965.1.1"
+# 	ideology = socialism
+# 	traits = {
+# 		#
+# 	}
+# }
 create_country_leader = {
 	name = "Sven Olov Lindholm"
 	desc = "POLITICS_SVEN_OLOV_LINDHOLM_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = nazism_ideology
 	traits = {
 		#
 	}
@@ -139,9 +138,10 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Folke Hogberg"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { commando }
+	traits = {
+		commando
+	}
 	skill = 3
-
 	attack_skill = 1
 	defense_skill = 3
 	planning_skill = 3
@@ -151,9 +151,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Erik af Edholm"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {  hill_fighter }
+	traits = {
+		hill_fighter
+	}
 	skill = 4
-
 	attack_skill = 4
 	defense_skill = 1
 	planning_skill = 4
@@ -163,7 +164,10 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Claes Lindstrom"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { battleship_adherent blockade_runner }
+	traits = {
+		battleship_adherent
+		blockade_runner
+	}
 	skill = 4
 	attack_skill = 3
 	defense_skill = 4
@@ -171,11 +175,14 @@ create_navy_leader = {
 	coordination_skill = 3
 }
 
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	### Ship Variants ###
 	create_equipment_variant = {
 		name = "Draken Class"
@@ -188,11 +195,14 @@ if = {
 		}
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	# Submarines #
 	create_equipment_variant = {
-		name = "Hajen Class"					# represents Hajen and Bavern classes	
+		name = "Hajen Class"		# represents Hajen and Bavern classes	
 		type = ship_hull_submarine_1
 		name_group = SWE_SS_HISTORICAL
 		parent_version = 0
@@ -204,7 +214,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Valen Class"				
+		name = "Valen Class"
 		type = ship_hull_submarine_1
 		name_group = SWE_SS_HISTORICAL
 		parent_version = 0
@@ -216,7 +226,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Draken Class"				
+		name = "Draken Class"
 		type = ship_hull_submarine_2
 		name_group = SWE_SS_HISTORICAL
 		parent_version = 0
@@ -228,7 +238,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Ornen Class"					# torpedo boats		
+		name = "Ornen Class"		# torpedo boats		
 		type = ship_hull_light_1
 		name_group = SWE_DD_HISTORICAL
 		parent_version = 0
@@ -245,7 +255,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Ehrenskold Class"				# represents Ehrenskold	and Klas Horn classes
+		name = "Ehrenskold Class"		# represents Ehrenskold	and Klas Horn classes
 		type = ship_hull_light_1
 		name_group = SWE_DD_HISTORICAL
 		parent_version = 0
@@ -262,7 +272,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Clas Fleming Class"				# minelayer		
+		name = "Clas Fleming Class"		# minelayer		
 		type = ship_hull_light_1
 		name_group = SWE_DD_HISTORICAL
 		parent_version = 0
@@ -279,7 +289,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Goteborg Class"	
+		name = "Goteborg Class"
 		type = ship_hull_light_2
 		name_group = SWE_DD_HISTORICAL
 		parent_version = 0
@@ -296,7 +306,7 @@ if = {
 	}
 	# Cruisers #
 	create_equipment_variant = {
-		name = "Fylgia Class"				
+		name = "Fylgia Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = SWE_CL_HISTORICAL
 		parent_version = 0
@@ -315,7 +325,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Aran Class"				
+		name = "Aran Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = SWE_CA_HISTORICAL
 		parent_version = 0
@@ -334,7 +344,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Oscar II Class"				
+		name = "Oscar II Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = SWE_CA_HISTORICAL
 		parent_version = 0
@@ -353,7 +363,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Sverige Class"				
+		name = "Sverige Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = SWE_CA_HISTORICAL
 		parent_version = 0
@@ -393,14 +403,20 @@ if = {
 # 1939 Start #
 1939.1.1 = {
 	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
+		limit = {
+			not = {
+				has_dlc = "Man the Guns"
+			}
+		}
 		# Ship variants #
 	}
 	if = {
-		limit = { has_dlc = "Man the Guns" }
+		limit = {
+			has_dlc = "Man the Guns"
+		}
 		# Submarines #
 		create_equipment_variant = {
-			name = "Delfinen Class"				
+			name = "Delfinen Class"
 			type = ship_hull_submarine_2
 			name_group = SWE_SS_HISTORICAL
 			parent_version = 0
@@ -412,7 +428,7 @@ if = {
 			obsolete = yes
 		}
 		create_equipment_variant = {
-			name = "Sjolejonet Class"				
+			name = "Sjolejonet Class"
 			type = ship_hull_submarine_2
 			name_group = SWE_SS_HISTORICAL
 			parent_version = 0

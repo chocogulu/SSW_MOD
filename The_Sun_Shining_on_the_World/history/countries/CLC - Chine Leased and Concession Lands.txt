@@ -1,17 +1,15 @@
 capital = 814
+1950.1.1 = {
+}
 
 #obb = CLC_1950
 set_cosmetic_tag = CLC_JAPandCHI
-
 set_research_slots = 3
 set_stability = 80
 set_war_support = 50
 #set_convoys = 
-
 #add_ideas = {}
-
 #set_technology = {}
-
 set_politics = {
 	ruling_party = authoritative_democracy
 	last_election = "1950.1.1"
@@ -31,14 +29,13 @@ set_popularities = {
 	militarism = 0
 }
 
-create_country_leader = {
-		name = "土肥原賢二"
-		desc = ""
-		picture = "gfx/leaders/CLC/Doihara_Kenji.dds"
-		expire = "1965.1.1"
-		ideology = authoritative_democracy
-		traits = {
-			#
-		}
-	}
-}
+#create_country_leader = { イデオロギーが不正
+#	name = "土肥原賢二"
+#	desc = ""
+#	picture = "gfx/leaders/CLC/Doihara_Kenji.dds"
+#	expire = "1965.1.1"
+#	ideology = authoritative_democracy
+#	traits = {
+#		#
+#	}
+#}

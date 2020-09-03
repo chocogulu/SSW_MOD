@@ -1,7 +1,4 @@
 ﻿capital = 70
-
-oob = "SLO_1936"
-
 set_technology = {
 	gw_artillery = 1
 	interwar_artillery = 1
@@ -9,8 +6,6 @@ set_technology = {
 	gwtank = 1
 	basic_light_tank = 1
 	infantry_weapons = 1
-	infantry_weapons1 = 1
-	infantry_weapons2 = 1
 	support_weapons = 1
 	tech_support = 1
 	tech_recon = 1
@@ -27,6 +22,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
 	nazism = 100
 }

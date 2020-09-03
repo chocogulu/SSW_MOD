@@ -1,18 +1,26 @@
 ﻿capital = 41
-
-oob = "SPR_1950"
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 }
+
 set_war_support = 0.1
 set_stability = 0.8
 set_convoys = 5
+set_autonomy = {
+	target = RIF
+	autonomous_state = colony
+}
 
-set_autonomy = { target = RIF	autonomous_state = colony }
-set_autonomy = { target = WES	autonomous_state = colony }
-set_autonomy = { target = EQG	autonomous_state = colony }
+set_autonomy = {
+	target = WES
+	autonomous_state = colony
+}
+
+set_autonomy = {
+	target = EQG
+	autonomous_state = colony
+}
 
 set_politics = {
 	ruling_party = fascism
@@ -20,6 +28,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
 	fascism = 100
 }

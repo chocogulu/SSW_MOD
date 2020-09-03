@@ -1,22 +1,17 @@
-﻿1950.1.1 = {
-	capital = 613
+﻿capital = 613
+1950.1.1 = {
 	#oob = "CHI_1950"
-
 	# Starting tech
 	set_technology = {
 		infantry_weapons = 1
 		mass_assault = 1
 	}
-
 	add_ideas = {
-		CHI_idea_1
 		CHI_idea_2
 		CHI_idea_3
 		CHI_idea_4
 	}
-
 	set_convoys = 167
-
 	set_politics = {
 		ruling_party = democratic
 		last_election = "1936.1.1"
@@ -27,7 +22,6 @@
 		democratic = 75
 		conservatism = 25
 	}
-
 	create_country_leader = {
 		name = "陳公博"
 		desc = ""

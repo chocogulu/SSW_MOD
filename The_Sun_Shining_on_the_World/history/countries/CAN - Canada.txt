@@ -1,10 +1,10 @@
 ﻿﻿capital = 276
-
 oob = "CAN_1950"
 set_cosmetic_tag = CAN_UK
-
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	set_naval_oob = "CAN_1936_naval_mtg"
 	else = {
 		set_naval_oob = "CAN_1936_naval_legacy"
@@ -15,11 +15,9 @@ set_research_slots = 3
 set_country_flag = monroe_doctrine
 set_stability = 0.8
 set_war_support = 0.1
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
@@ -32,16 +30,24 @@ set_technology = {
 	trench_warfare = 1
 	fleet_in_being = 1
 }
+
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	set_technology = {
 		early_destroyer = 1
 		early_light_cruiser = 1
 		transport = 1
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	set_technology = {
 		basic_naval_mines = 1
 		early_ship_hull_light = 1
@@ -56,15 +62,21 @@ if = {
 }
 
 if = {
-	limit = { NOT = { has_dlc = "Together for Victory" } }
+	limit = {
+		NOT = {
+			has_dlc = "Together for Victory"
+		}
+	}
 	set_cosmetic_tag = CAN_ALY
 }
+
 if = {
-	limit = { has_dlc = "Together for Victory" }
+	limit = {
+		has_dlc = "Together for Victory"
+	}
 	add_ideas = George
 	add_ideas = CAN_idea_9
 	set_cosmetic_tag = CAN_UK
-
 	add_to_tech_sharing_group = commonwealth_research
 }
 
@@ -93,17 +105,16 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Louis_St.Laurent"
-	desc = "POLITICS_MACKENZIE_KING_DESC"
-	picture = "gfx/leaders/CAN/Portrait_Louis_St_Laurent.dds"
-	expire = "1977.1.1"
-	ideology = authoritative_democracy_ideology
-	traits = {
-		#
-	}
-}
-
+#create_country_leader = { イデオロギーが不正
+#	name = "Louis_St.Laurent"
+#	desc = "POLITICS_MACKENZIE_KING_DESC"
+#	picture = "gfx/leaders/CAN/Portrait_Louis_St_Laurent.dds"
+#	expire = "1977.1.1"
+#	ideology = authoritative_democracy_ideology
+#	traits = {
+#		#
+#	}
+#}
 create_country_leader = {
 	name = "George A. Drew"
 	desc = "POLITICS_MACKENZIE_KING_DESC"
@@ -120,7 +131,7 @@ create_country_leader = {
 	desc = "POLITICS_ADRIEN_ARCAND_DESC"
 	picture = "GFX_CAN_adrien_arcand"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = nazism_ideology
 	traits = {
 		#
 	}
@@ -150,54 +161,60 @@ create_country_leader = {
 
 set_convoys = 100
 set_stability = 0.75
-
 create_corps_commander = {
 	name = "Thomas Victor Anderson"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {  }
+	traits = {
+	}
 	skill = 4
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 5
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
 }
 
 create_field_marshal = {
 	name = "Charles Foulkes"
 	gfx = "GFX_CAN_charles_foulkes"
-	traits = { }
+	traits = {
+	}
 	skill = 4
-    attack_skill = 4
-    defense_skill = 2
-    planning_skill = 4
-    logistics_skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Percival John Montague"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { }
+	traits = {
+	}
 	skill = 3
-    attack_skill = 1
-    defense_skill = 1
-    planning_skill = 3
-    logistics_skill = 5
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 5
 }
+
 create_corps_commander = {
 	name = "Bert Hoffmeister"
 	gfx = "GFX_CAN_bert_hoffmeister"
-	traits = { hill_fighter }
+	traits = {
+		hill_fighter
+	}
 	skill = 4
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_navy_leader = {
 	name = "Leonard W. Murray"
 	gfx = "GFX_CAN_leonard_warren_murray"
-	traits = { }
+	traits = {
+	}
 	skill = 4
 	attack_skill = 4
 	defense_skill = 3
@@ -208,27 +225,36 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "H.T. Baillie-Grohman"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { spotter }
+	traits = {
+		spotter
+	}
 	skill = 4
 	attack_skill = 3
 	defense_skill = 3
 	maneuvering_skill = 3
 	coordination_skill = 4
 }
+
 create_navy_leader = {
 	name = "James D. Prentice"
 	gfx = "GFX_CAN_james_prentice"
-	traits = { spotter }
+	traits = {
+		spotter
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
 	maneuvering_skill = 3
 	coordination_skill = 2
 }
+
 create_navy_leader = {
 	name = "Harry DeWolf"
 	gfx = "GFX_CAN_harry_dewolf"
-	traits = { superior_tactician bold }
+	traits = {
+		superior_tactician
+		bold
+	}
 	skill = 4
 	attack_skill = 3
 	defense_skill = 2
@@ -239,7 +265,11 @@ create_navy_leader = {
 ### VARIANTS ###
 # 1936 Start #
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	### Ship Variants ###
 	create_equipment_variant = {
 		name = "Sanguenay Class"
@@ -254,7 +284,9 @@ if = {
 }
 
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	### Ship Variants ###
 	# Destroyers #
 	create_equipment_variant = {
@@ -295,7 +327,11 @@ if = {
 # 1939 Start #
 1939.1.1 = {
 	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
+		limit = {
+			not = {
+				has_dlc = "Man the Guns"
+			}
+		}
 		# Ship variants #
 		create_equipment_variant = {
 			name = "Athabaskan Class"
@@ -309,7 +345,9 @@ if = {
 		}
 	}
 	if = {
-		limit = { has_dlc = "Man the Guns" }
+		limit = {
+			has_dlc = "Man the Guns"
+		}
 		# Destroyers #
 		create_equipment_variant = {
 			name = "Iroquois Class"

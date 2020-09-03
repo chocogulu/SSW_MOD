@@ -1,21 +1,15 @@
 capital = 686
-
 #obb = PAC_1950
 set_cosmetic_tag = PAC_JAP
-
 set_research_slots = 3
 set_stability = 80
 set_war_support = 50
 #set_convoys = 
-
 #add_ideas = {}
-
 #set_technology = {}
-
 set_politics = {
 	ruling_party = authoritative_democracy
 	last_election = "1950.1.1"
-	last_election_frequency = 48
 	elections_allowed = no
 }
 

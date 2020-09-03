@@ -1,5 +1,4 @@
 ﻿capital = 455
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -7,13 +6,13 @@ set_technology = {
 }
 
 set_convoys = 5
-
 set_politics = {
 	ruling_party = fascism
 	last_election = "1945.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
 	fascism = 100
 }
@@ -22,7 +21,7 @@ create_country_leader = {
 	name = "Hashim Kheir"
 	desc = ""
 	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_2.dds"
-	ideology = conservatism
+	ideology = conservatism_ideology
 	traits = {
 		#
 	}
@@ -48,12 +47,12 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Fu'ad Nassar"
-	desc = ""
-	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_navy_2.dds"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Fu'ad Nassar"
+# 	desc = ""
+# 	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_navy_2.dds"
+# 	ideology = leninism
+# 	traits = {
+# 		#
+# 	}
+# }

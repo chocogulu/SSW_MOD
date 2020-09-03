@@ -1,21 +1,15 @@
 capital = 861
-
 #obb = BRN_1950
 set_cosmetic_tag = BRN_JAP
-
 set_research_slots = 3
 set_stability = 100
 set_war_support = 80
 #set_convoys = 
-
 #add_ideas = {}
-
 #set_technology = {}
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1950.1.1"
-	last_election_frequency = 48
 	elections_allowed = no
 }
 

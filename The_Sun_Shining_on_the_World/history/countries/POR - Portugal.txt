@@ -1,29 +1,32 @@
 ﻿capital = 112
-
-oob = "POR_1950"
 if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "POR_1936_naval_mtg"
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "POR_1936_naval_mtg"
 	else = {
 		set_naval_oob = "POR_1936_naval_legacy"
 	}
 }
 
 set_research_slots = 3
-
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	early_fighter = 1
 	early_bomber = 1
 	CAS1 = 1
 }
+
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	set_technology = {
 		early_submarine = 1
 		basic_submarine = 1
@@ -31,8 +34,11 @@ if = {
 		transport = 1
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	set_technology = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
@@ -48,41 +54,38 @@ if = {
 }
 
 if = {
-	limit = { has_dlc = "La Resistance" }	
+	limit = {
+		has_dlc = "La Resistance"
+	}
 	add_ideas = POR_unreliable_army
 	add_ideas = POR_unstable_republic
-	set_stability = 0.60
-	set_war_support = 0.15	
+	set_stability = 0.6
+	set_war_support = 0.15
 	set_research_slots = 2
-
 	ENG = {
 		add_opinion_modifier = {
-			target = POR 
-			modifier  = POR_anglo_portuguese_alliance
+			target = POR
+			modifier = POR_anglo_portuguese_alliance
 		}
 	}
-
 	POR = {
 		add_opinion_modifier = {
-			target = ENG 
-			modifier  = POR_anglo_portuguese_alliance
+			target = ENG
+			modifier = POR_anglo_portuguese_alliance
 		}
 	}
-
 	GER = {
 		add_opinion_modifier = {
 			target = POR
 			modifier = fascism_leanings_good
 		}
 	}
-
 	ITA = {
 		add_opinion_modifier = {
 			target = POR
 			modifier = fascism_leanings_good
 		}
 	}
-	
 }
 
 set_convoys = 50
@@ -92,18 +95,17 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
 	nazism = 100
 }
 
 set_convoys = 100
 set_stability = 0.75
-
 if = {
 	limit = {
 		has_dlc = "La Resistance"
 	}
-
 	create_country_leader = {
 		name = "Antonio de Oliveira Salazar"
 		desc = "POLITICS_ANTONIO_DE_OLIVEIRA_SALAZAR_DESC"
@@ -114,7 +116,6 @@ if = {
 			conservative_nationalist_lar
 		}
 	}
-	
 	create_country_leader = {
 		name = "Bento Goncalves"
 		desc = "POLITICS_BENTO_GONCALVES_DESC"
@@ -125,7 +126,6 @@ if = {
 			veteran_communist
 		}
 	}
-	
 	create_country_leader = {
 		name = "Francisco Rolao Preto"
 		desc = ""
@@ -136,7 +136,6 @@ if = {
 			fascist_militia_leader
 		}
 	}
-	
 	create_country_leader = {
 		name = "Jose Norton de Matos"
 		desc = "POLITICS_JOSE_NORTON_DE_MATOS_DESC"
@@ -147,48 +146,50 @@ if = {
 			democratic_reformer
 		}
 	}
-	
-	
 	create_field_marshal = {
 		name = "Jose Vicente de Freitas"
 		gfx = "GFX_portrait_por_jose_vicente_de_freitas"
-		traits = { old_guard politically_connected }
+		traits = {
+			old_guard
+			politically_connected
+		}
 		skill = 3
-	
 		attack_skill = 4
 		defense_skill = 2
 		planning_skill = 2
 		logistics_skill = 3
 	}
-	
 	create_corps_commander = {
 		name = "Luis Augusto Ferreira Martins"
 		gfx = "GFX_portrait_por_luis_augusto_ferreira_martins"
-		traits = { infantry_officer }
+		traits = {
+			infantry_officer
+		}
 		skill = 3
-	
 		attack_skill = 2
 		defense_skill = 4
 		planning_skill = 3
 		logistics_skill = 4
 	}
-	
 	create_corps_commander = {
 		name = "Raul Augusto Esteves"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-		traits = { cavalry_officer }
+		traits = {
+			cavalry_officer
+		}
 		skill = 3
-	
 		attack_skill = 4
 		defense_skill = 2
 		planning_skill = 2
 		logistics_skill = 3
 	}
-	
 	create_navy_leader = {
 		name = "Jose Mendes Cabecadas"
 		gfx = "GFX_portrait_por_jose_mendes_cabecadas"
-		traits = { gentlemanly old_guard_navy }
+		traits = {
+			gentlemanly
+			old_guard_navy
+		}
 		skill = 4
 		attack_skill = 3
 		defense_skill = 2
@@ -199,7 +200,9 @@ if = {
 
 if = {
 	limit = {
-		NOT = { has_dlc = "La Resistance" }
+		NOT = {
+			has_dlc = "La Resistance"
+		}
 	}
 	create_country_leader = {
 		name = "Antonio de Oliveira Salazar"
@@ -211,7 +214,6 @@ if = {
 			conservative_nationalist
 		}
 	}
-	
 	create_country_leader = {
 		name = "Bento Goncalves"
 		desc = "POLITICS_BENTO_GONCALVES_DESC"
@@ -222,7 +224,6 @@ if = {
 			#
 		}
 	}
-	
 	create_country_leader = {
 		name = "Francisco de Barcelos Rolao Preto"
 		desc = "POLITICS_FRANSISCO_BARCELOS_ROLAO_PRETO_DESC"
@@ -233,14 +234,12 @@ if = {
 			#
 		}
 	}
-	
-	
 	create_corps_commander = {
 		name = "Jose Vicente de Freitas"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-		traits = {  }
+		traits = {
+		}
 		skill = 3
-	
 		attack_skill = 2
 		defense_skill = 3
 		planning_skill = 2
@@ -251,14 +250,21 @@ if = {
 ### VARIANTS ###
 # 1936 Start #
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	### Ship Variants ###
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	# Submarines #
 	create_equipment_variant = {
-		name = "Delfim Class"				
+		name = "Delfim Class"
 		type = ship_hull_submarine_2
 		name_group = POR_SS_HISTORICAL
 		parent_version = 0
@@ -270,7 +276,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Guadiana Class"					
+		name = "Guadiana Class"
 		type = ship_hull_light_1
 		name_group = POR_DD_HISTORICAL
 		parent_version = 0
@@ -287,7 +293,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Douro Class"	
+		name = "Douro Class"
 		type = ship_hull_light_1
 		name_group = POR_DD_HISTORICAL
 		parent_version = 0

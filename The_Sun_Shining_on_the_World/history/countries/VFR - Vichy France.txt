@@ -1,15 +1,9 @@
 ﻿capital = 26
-
-oob = "VFR_1950"
-
 set_research_slots = 3
 set_stability = 0.5
-
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
@@ -33,9 +27,14 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
+
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
 		early_submarine = 1
 		basic_submarine = 1
 		early_destroyer = 1
@@ -51,8 +50,11 @@ if = {
 		transport = 1
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	set_technology = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
@@ -77,6 +79,7 @@ if = {
 	}
 	add_ideas = MTG_naval_treaty_adherent
 }
+
 if = {
 	limit = {
 		has_dlc = "La Resistance"
@@ -87,9 +90,15 @@ if = {
 }
 
 set_convoys = 300
+set_autonomy = {
+	target = NWA
+	autonomous_state = colony
+}
 
-set_autonomy = { target = NWA	autonomous_state = colony }
-set_autonomy = { target = EQA	autonomous_state = colony }
+set_autonomy = {
+	target = EQA
+	autonomous_state = colony
+}
 
 set_politics = {
 	ruling_party = fascism
@@ -97,6 +106,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
 	democratic = 30
 	fascism = 64
@@ -104,21 +114,17 @@ set_popularities = {
 	communism = 2
 }
 
-add_ideas = {
-}
-
 #Order matters here Daladier will start as leaders because added last
-create_country_leader = {
-	name = "Edouard Daladier"
-	desc = "POLITICS_EDOUARD_DALADIER_DESC"
-	picture = "Portrait_France_Edouard_Daladier.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		stout_defender
-	}
-}
-
+# create_country_leader = {
+# 	name = "Edouard Daladier"
+# 	desc = "POLITICS_EDOUARD_DALADIER_DESC"
+# 	picture = "Portrait_France_Edouard_Daladier.dds"
+# 	expire = "1965.1.1"
+# 	ideology = socialism
+# 	traits = {
+# 		stout_defender
+# 	}
+# }
 create_country_leader = {
 	name = "Pierre Laval"
 	desc = "POLITICS_EDOUARD_DALADIER_DESC"
@@ -135,9 +141,8 @@ create_country_leader = {
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "GFX_portrait_fra_maurice_thorez"
 	expire = "1965.1.1"
-	ideology = 	stalinism
+	ideology = stalinism
 	traits = {
-		
 	}
 }
 
@@ -148,14 +153,18 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		
 	}
 }
 
 create_corps_commander = {
 	name = "Jean de Lattre de Tassigny"
 	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
-	traits = { trickster brilliant_strategist cavalry_officer war_hero }
+	traits = {
+		trickster
+		brilliant_strategist
+		cavalry_officer
+		war_hero
+	}
 	skill = 4
 	attack_skill = 4
 	defense_skill = 2
@@ -166,7 +175,11 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Alphonse Juin"
 	picture = "Portrait_France_Alphonse_Juin.dds"
-	traits = { armor_officer career_officer trait_cautious  }
+	traits = {
+		armor_officer
+		career_officer
+		trait_cautious
+	}
 	skill = 4
 	attack_skill = 3
 	defense_skill = 2
@@ -177,7 +190,12 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Maurice Gamelin"
 	picture = "Portrait_France_Maurice_Gamelin.dds"
-	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
+	traits = {
+		defensive_doctrine
+		old_guard
+		inflexible_strategist
+		career_officer
+	}
 	skill = 2
 	attack_skill = 1
 	defense_skill = 3
@@ -188,7 +206,12 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Maxime Weygand"
 	picture = "Portrait_France_Maxime_Weygand.dds"
-	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
+	traits = {
+		defensive_doctrine
+		old_guard
+		inflexible_strategist
+		career_officer
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -199,7 +222,11 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Alphonse Georges"
 	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
-	traits = { defensive_doctrine old_guard trait_cautious }
+	traits = {
+		defensive_doctrine
+		old_guard
+		trait_cautious
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 2
@@ -210,7 +237,10 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Antoine-Marie-Benoit Besson"
 	picture = "Portrait_France_Generic_land_2.dds"
-	traits = { defensive_doctrine old_guard }
+	traits = {
+		defensive_doctrine
+		old_guard
+	}
 	skill = 2
 	attack_skill = 1
 	defense_skill = 2
@@ -221,7 +251,11 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Charles De Gaulle"
 	picture = "Portrait_France_Charles_De_Gaulle.dds"
-	traits = {  armor_officer harsh_leader media_personality }
+	traits = {
+		armor_officer
+		harsh_leader
+		media_personality
+	}
 	id = 101
 	skill = 4
 	attack_skill = 4
@@ -233,7 +267,11 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Philippe Leclerc"
 	picture = "portrait_france_philippe_leclerc.dds"
-	traits = {  armor_officer trait_reckless career_officer }
+	traits = {
+		armor_officer
+		trait_reckless
+		career_officer
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
@@ -244,7 +282,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Henri Giraud"
 	picture = "portrait_france_henri_giraud.dds"
-	traits = {  trickster trait_cautious career_officer infantry_officer }
+	traits = {
+		trickster
+		trait_cautious
+		career_officer
+		infantry_officer
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 2
@@ -255,7 +298,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Charles Huntziger"
 	picture = "portrait_france_charles_huntziger.dds"
-	traits = { old_guard infantry_officer }
+	traits = {
+		old_guard
+		infantry_officer
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 1
@@ -266,7 +312,11 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Gaston-Henri Billotte"
 	picture = "Portrait_France_Generic_land_1.dds"
-	traits = { old_guard trait_cautious infantry_officer }
+	traits = {
+		old_guard
+		trait_cautious
+		infantry_officer
+	}
 	skill = 2
 	attack_skill = 1
 	defense_skill = 3
@@ -277,7 +327,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Henry Freydenberg"
 	picture = "Portrait_France_Generic_land_3.dds"
-	traits = { old_guard infantry_officer }
+	traits = {
+		old_guard
+		infantry_officer
+	}
 	skill = 2
 	attack_skill = 1
 	defense_skill = 2
@@ -288,7 +341,11 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Rene Olry"
 	picture = "Portrait_France_Generic_land_5.dds"
-	traits = { old_guard infantry_officer trait_mountaineer }
+	traits = {
+		old_guard
+		infantry_officer
+		trait_mountaineer
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 4
@@ -299,7 +356,11 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Francois Darlan"
 	picture = "Portrait_France_Francois_Darlan.dds"
-	traits = { naval_lineage bold superior_tactician }
+	traits = {
+		naval_lineage
+		bold
+		superior_tactician
+	}
 	id = 102
 	skill = 3
 	attack_skill = 2
@@ -311,7 +372,10 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Jean-Marie Charles Abrial"
 	picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
-	traits = { chief_engineer superior_tactician }
+	traits = {
+		chief_engineer
+		superior_tactician
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
@@ -322,7 +386,9 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Jean-Pierre Esteva"
 	picture = "Portrait_France_Jean-Pierre_Esteva.dds"
-	traits = { aviation_enthusiast }
+	traits = {
+		aviation_enthusiast
+	}
 	skill = 2
 	attack_skill = 1
 	defense_skill = 2
@@ -333,7 +399,12 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Rene-Emile Godfroy"
 	picture = "Portrait_France_Rene-Emile_Godfroy.dds"
-	traits = { gentlemanly battleship_adherent old_guard_navy spotter }
+	traits = {
+		gentlemanly
+		battleship_adherent
+		old_guard_navy
+		spotter
+	}
 	skill = 2
 	attack_skill = 2
 	defense_skill = 1
@@ -344,7 +415,10 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Jean de Laborde"
 	picture = "Portrait_France_Jean_de_Laborde.dds"
-	traits = { naval_lineage aviation_enthusiast }
+	traits = {
+		naval_lineage
+		aviation_enthusiast
+	}
 	skill = 1
 	attack_skill = 1
 	defense_skill = 1
@@ -353,50 +427,68 @@ create_navy_leader = {
 }
 
 if = {
-	limit = { has_dlc = "La Resistance" }
+	limit = {
+		has_dlc = "La Resistance"
+	}
 	create_operative_leader = {
 		name = "Jeannie Rousseau"
 		GFX = GFX_portrait_jennie_rousseau
-		traits = { operative_linguist }
+		traits = {
+			operative_linguist
+		}
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { VFR }
+		nationalities = {
+			VFR
+		}
 	}
-
 	create_operative_leader = {
 		name = "Odette Samson"
 		GFX = GFX_portrait_odette_samson
-		traits = { operative_tough }
+		traits = {
+			operative_tough
+		}
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { VFR }
+		nationalities = {
+			VFR
+		}
 	}
-
 	create_operative_leader = {
 		name = "Rene Joyeuse"
 		GFX = GFX_portrait_rene_joyeuse
-		traits = { operative_infiltrator }
+		traits = {
+			operative_infiltrator
+		}
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { VFR }
+		nationalities = {
+			VFR
+		}
 	}
-
 	create_operative_leader = {
 		name = "Gilbert Renault"
 		GFX = GFX_portrait_gilbert_renault
-		traits = { }
+		traits = {
+		}
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { VFR }
+		nationalities = {
+			VFR
+		}
 	}
 }
 
 ### VARIANTS ###
 # 1936 Start #
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	### Ship Variants ###
 	create_equipment_variant = {
 		name = "630 Series"
@@ -409,7 +501,6 @@ if = {
 		}
 		obsolete = yes
 	}
-
 	create_equipment_variant = {
 		name = "Redoutable Class"
 		type = submarine_1
@@ -421,7 +512,6 @@ if = {
 		}
 		obsolete = yes
 	}
-
 	create_equipment_variant = {
 		name = "Chacal Class"
 		type = destroyer_1
@@ -433,7 +523,6 @@ if = {
 		}
 		obsolete = yes
 	}
-
 	create_equipment_variant = {
 		name = "Aigle & Vauquelin Class"
 		type = destroyer_1
@@ -444,7 +533,6 @@ if = {
 			ship_anti_air_upgrade = 2
 		}
 	}
-
 	create_equipment_variant = {
 		name = "Bretagne Class"
 		type = battleship_1
@@ -455,10 +543,14 @@ if = {
 		}
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	# Submarines #
-	create_equipment_variant = {				# represents Requin and all 600 series classes
+	create_equipment_variant = {
+		# represents Requin and all 600 series classes
 		name = "600 Series"
 		type = ship_hull_submarine_1
 		name_group = FRA_SS_HISTORICAL
@@ -471,7 +563,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "630 Series"						# represents all 630 series classes
+		name = "630 Series"		# represents all 630 series classes
 		type = ship_hull_submarine_1
 		name_group = FRA_SS_HISTORICAL
 		parent_version = 0
@@ -483,7 +575,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Saphir Class"					# minelayers
+		name = "Saphir Class"		# minelayers
 		type = ship_hull_submarine_1
 		name_group = FRA_SS_HISTORICAL
 		parent_version = 0
@@ -495,7 +587,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Redoutable Class"				# represents Surcouf, Roubtable, L'Esoire, and Agosta classes
+		name = "Redoutable Class"		# represents Surcouf, Roubtable, L'Esoire, and Agosta classes
 		type = ship_hull_submarine_2
 		name_group = FRA_SS_HISTORICAL
 		parent_version = 0
@@ -506,7 +598,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Surcouf Class"				# cruiser submarine
+		name = "Surcouf Class"		# cruiser submarine
 		type = ship_hull_cruiser_submarine
 		name_group = FRA_SS_HISTORICAL
 		parent_version = 0
@@ -519,7 +611,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Minerve Class"					
+		name = "Minerve Class"
 		type = ship_hull_submarine_1
 		name_group = FRA_SS_HISTORICAL
 		parent_version = 0
@@ -531,7 +623,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Bourrasque Class"				# represents Bourrasque and L'Adroit classes
+		name = "Bourrasque Class"		# represents Bourrasque and L'Adroit classes
 		type = ship_hull_light_1
 		name_group = FRA_DE_HISTORICAL
 		parent_version = 0
@@ -548,7 +640,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Chacal Class"				# represents Chacal, Guepard, Agile, and Vauquelin classes
+		name = "Chacal Class"		# represents Chacal, Guepard, Agile, and Vauquelin classes
 		type = ship_hull_light_1
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
@@ -565,7 +657,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Le Fantasque Class"				
+		name = "Le Fantasque Class"
 		type = ship_hull_light_1
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
@@ -581,7 +673,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Mogador Class"				
+		name = "Mogador Class"
 		type = ship_hull_light_2
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
@@ -598,7 +690,7 @@ if = {
 	}
 	# Light Cruisers #
 	create_equipment_variant = {
-		name = "Duguay-Trouin Class"			# represents Duguay-Trouin, Pluton, Jeanne d'Arc classes
+		name = "Duguay-Trouin Class"		# represents Duguay-Trouin, Pluton, Jeanne d'Arc classes
 		type = ship_hull_cruiser_1
 		name_group = FRA_CL_HISTORICAL
 		parent_version = 0
@@ -615,7 +707,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Emile Bertin Class"					# minelaying cruiser
+		name = "Emile Bertin Class"		# minelaying cruiser
 		type = ship_hull_cruiser_1
 		name_group = FRA_CL_HISTORICAL
 		parent_version = 0
@@ -632,7 +724,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "La Galissonniere Class"			
+		name = "La Galissonniere Class"
 		type = ship_hull_cruiser_1
 		name_group = FRA_CL_HISTORICAL
 		parent_version = 0
@@ -650,7 +742,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Suffren Class"				# Duquesne and Suffren classes
+		name = "Suffren Class"		# Duquesne and Suffren classes
 		type = ship_hull_cruiser_1
 		name_group = FRA_CA_HISTORICAL
 		parent_version = 0
@@ -668,7 +760,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Algerie Class"				
+		name = "Algerie Class"
 		type = ship_hull_cruiser_1
 		name_group = FRA_CA_HISTORICAL
 		parent_version = 0
@@ -686,7 +778,7 @@ if = {
 	}
 	# Battleships #
 	create_equipment_variant = {
-		name = "Courbet Class"		
+		name = "Courbet Class"
 		type = ship_hull_heavy_1
 		name_group = FRA_BB_HISTORICAL
 		parent_version = 0
@@ -706,7 +798,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Bretagne Class"				
+		name = "Bretagne Class"
 		type = ship_hull_heavy_1
 		name_group = FRA_BB_HISTORICAL
 		parent_version = 0
@@ -726,7 +818,7 @@ if = {
 	}
 	# Battlecruisers #
 	create_equipment_variant = {
-		name = "Dunkerque Class"		
+		name = "Dunkerque Class"
 		type = ship_hull_heavy_2
 		name_group = FRA_BC_HISTORICAL
 		parent_version = 0
@@ -745,25 +837,25 @@ if = {
 		}
 	}
 	# Battleships #
-		create_equipment_variant = {
-			name = "Richelieu Class"
-			type = ship_hull_heavy_2
-			name_group = FRA_BB_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries_2
-				fixed_ship_armor_slot = ship_armor_bb_2
-				front_1_custom_slot = ship_heavy_battery_2
-				mid_1_custom_slot = ship_secondaries_2
-				mid_2_custom_slot = ship_anti_air_1
-				rear_1_custom_slot = ship_airplane_launcher_1
-			}
+	create_equipment_variant = {
+		name = "Richelieu Class"
+		type = ship_hull_heavy_2
+		name_group = FRA_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = ship_secondaries_2
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_airplane_launcher_1
 		}
+	}
 	# Carriers #
 	create_equipment_variant = {
 		name = "Bearn Class"
@@ -785,7 +877,11 @@ if = {
 # 1939 Start #
 1939.1.1 = {
 	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
+		limit = {
+			not = {
+				has_dlc = "Man the Guns"
+			}
+		}
 		# Ship variants #
 		create_equipment_variant = {
 			name = "Aurore Class"
@@ -797,7 +893,6 @@ if = {
 				sub_torpedo_upgrade = 3
 			}
 		}
-
 		create_equipment_variant = {
 			name = "Le Hardi Class"
 			type = destroyer_2
@@ -808,7 +903,6 @@ if = {
 				ship_anti_air_upgrade = 1
 			}
 		}
-
 		create_equipment_variant = {
 			name = "Mogador Class"
 			type = destroyer_2
@@ -821,10 +915,12 @@ if = {
 		}
 	}
 	if = {
-		limit = { has_dlc = "Man the Guns" }
+		limit = {
+			has_dlc = "Man the Guns"
+		}
 		# Submarines #
 		create_equipment_variant = {
-			name = "Aurore Class"				
+			name = "Aurore Class"
 			type = ship_hull_submarine_2
 			name_group = FRA_SS_HISTORICAL
 			parent_version = 0

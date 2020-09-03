@@ -1,17 +1,16 @@
 ﻿capital = 110
-
-oob = "NOR_1950"
 set_cosmetic_tag = NOR_GER
 if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "NOR_1936_naval_mtg"
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "NOR_1936_naval_mtg"
 	else = {
 		set_naval_oob = "NOR_1936_naval_legacy"
 	}
 }
 
 set_research_slots = 3
-
 add_ideas = {
 	limited_conscription
 }
@@ -20,25 +19,32 @@ set_stability = 0.9
 set_war_support = 0.1
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	early_fighter = 1
 	early_bomber = 1
 	tech_recon = 1
 }
+
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	set_technology = {
 		early_destroyer = 1
 		early_submarine = 1
 		early_heavy_cruiser = 1
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	set_technology = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
@@ -53,32 +59,29 @@ if = {
 	}
 }
 
-
-
-set_convoys = 200		# biggest merchant marine in the world
+set_convoys = 200# biggest merchant marine in the world
 set_stability = 0.7
-
 set_politics = {
 	ruling_party = nazism
 	last_election = "1935.10.16"
 	election_frequency = 36
 	elections_allowed = yes
 }
+
 set_popularities = {
 	nazism = 100
 }
 
-create_country_leader = {
-	name = "Johan Nygaardsvold"
-	desc = "POLITICS_JOHAN_NYGAARDSVOLD_DESC"
-	picture = "Portrait_Norway_Johan_Nygaardsvold.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
+# create_country_leader = {
+# 	name = "Johan Nygaardsvold"
+# 	desc = "POLITICS_JOHAN_NYGAARDSVOLD_DESC"
+# 	picture = "Portrait_Norway_Johan_Nygaardsvold.dds"
+# 	expire = "1965.1.1"
+# 	ideology = socialism
+# 	traits = {
+# 		#
+# 	}
+# }
 create_country_leader = {
 	name = "Albert Viljam Hagelin"
 	desc = "POLITICS_VIDKUN_QUISLING_DESC"
@@ -115,7 +118,10 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Carl Gustav Fleischer"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {  trickster winter_specialist }
+	traits = {
+		trickster
+		winter_specialist
+	}
 	skill = 4
 	attack_skill = 3
 	defense_skill = 4
@@ -126,7 +132,11 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Elias Corneliussen"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { navy_career_officer inshore_fighter spotter }
+	traits = {
+		navy_career_officer
+		inshore_fighter
+		spotter
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 4
@@ -137,14 +147,21 @@ create_navy_leader = {
 ### VARIANTS ###
 # 1936 Start #
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	### Ship Variants ###
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	# Submarines #
 	create_equipment_variant = {
-		name = "A & B Class"						
+		name = "A & B Class"
 		type = ship_hull_submarine_1
 		parent_version = 0
 		modules = {
@@ -155,7 +172,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Draug Class"							
+		name = "Draug Class"
 		type = ship_hull_light_1
 		name_group = NOR_DD_HISTORICAL
 		parent_version = 0
@@ -171,7 +188,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Froya Class"								# minelayer		
+		name = "Froya Class"		# minelayer		
 		type = ship_hull_light_1
 		parent_version = 0
 		modules = {
@@ -187,7 +204,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Olaf Tryggvason Class"							# minelayer		
+		name = "Olaf Tryggvason Class"		# minelayer		
 		type = ship_hull_light_2
 		parent_version = 0
 		modules = {
@@ -203,7 +220,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Norge Class"				
+		name = "Norge Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = NOR_CA_HISTORICAL
 		parent_version = 0
@@ -225,14 +242,20 @@ if = {
 # 1939 Start #
 1939.1.1 = {
 	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
+		limit = {
+			not = {
+				has_dlc = "Man the Guns"
+			}
+		}
 		# Ship variants #
 	}
 	if = {
-		limit = { has_dlc = "Man the Guns" }
+		limit = {
+			has_dlc = "Man the Guns"
+		}
 		# Destroyers #
 		create_equipment_variant = {
-			name = "Sleipner & Odin Class"							
+			name = "Sleipner & Odin Class"
 			type = ship_hull_light_1
 			name_group = NOR_DD_HISTORICAL
 			parent_version = 0
