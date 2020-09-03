@@ -3120,42 +3120,27 @@ focus_tree = {
 		completion_reward = {
 			MEN = {
 				create_unit = {
-					division = "name = \"Infantry Division\"
-								division_template = \"Infantry Division\"
-								start_experience_factor	= 0.5
-								start_equipment_factor = 0.5"
+					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
 					owner = MEN
 					prioritize_location = 4801
 				}
 				create_unit = {
-					division = "name = \"Infantry Division\"
-								division_template = \"Infantry Division\"
-								start_experience_factor = 0.5
-								start_equipment_factor = 0.5"
+					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
 					owner = MEN
 					prioritize_location = 4801
 				}
 				create_unit = {
-					division = "name = \"Infantry Division\"
-									division_template = \"Infantry Division\"
-									start_experience_factor = 0.5
-									start_equipment_factor = 0.5"
+					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
 					owner = MEN
 					prioritize_location = 4801
 				}
 				create_unit = {
-					division = "name = \"Infantry Division\"
-									division_template = \"Infantry Division\"
-									start_experience_factor = 0.5
-									start_equipment_factor = 0.5"
+					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
 					owner = MEN
 					prioritize_location = 4801
 				}
 				create_unit = {
-					division = "name = \"Infantry Division\"
-									division_template = \"Infantry Division\"
-									start_experience_factor = 0.5
-									start_equipment_factor = 0.5"
+					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
 					owner = MEN
 					prioritize_location = 4801
 				}
@@ -3963,7 +3948,7 @@ focus_tree = {
 					state = 493
 				}
 			}
-			add_ideas = JAP_idea_6
+			#add_ideas = JAP_idea_6 このようなアイデアは存在しない
 		}
 	}
 	focus = {

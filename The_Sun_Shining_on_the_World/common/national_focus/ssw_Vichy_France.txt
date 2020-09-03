@@ -970,7 +970,7 @@ focus_tree = {
 							desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 							picture = GFX_portrait_fra_jacques_doriot
 							expire = "1965.1.1"
-							ideology = nazism
+							ideology = nazism_ideology
 							traits = { eager_collaborator }
 						}
 				}
