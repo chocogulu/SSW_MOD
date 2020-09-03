@@ -2,10 +2,7 @@
 state={
 	id=916
 	name="STATE_916"
-	provinces={
-		2200 8180 8246 10993 12956 
-	}
-	manpower=2000000
+
 	history={
 		add_core_of = MAD
 		owner = MAD
@@ -23,6 +20,11 @@ state={
 		}
 
 	}
+
+	provinces={
+		2200 8180 8246 10993 12956 
+	}
+	manpower=2000000
 	buildings_max_level_factor=1.000
-		state_category=rural
+	state_category=rural
 }

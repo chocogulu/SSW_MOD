@@ -7,15 +7,18 @@ state={
 		owner = TRA
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = NIN
 		add_core_of = PIN
 		add_core_of = TRA
+
 	}
 
 	provinces={
-		  7447 1238 1321
+		1238 1321 
 	}
-	manpower= 9000000
+	manpower=9000000
+	buildings_max_level_factor=1.000
 	state_category=town
 }
