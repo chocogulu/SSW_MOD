@@ -248,6 +248,8 @@
  ENG_idea_2:0 "英国病"
  ENG_idea_3:0 "英国病"
  ENG_idea_4:0 "新英派閥の活発化"
+ ENG_idea_5:0 "MI6の活性化"
+ ENG_idea_6:0 "情報化社会"
  ENG_idea_7:0 "ヴィッカース社との協力"
  ENG_idea_8:0 "ヴィッカース社との協力"
  ENG_idea_9:0 "英連邦王国での共同研究"
@@ -278,3 +280,9 @@
  ENG_PIN_military_Y:0 "インドで英連邦王国加盟の動きが活発化する"
  ENG_PIN_military_N:0 "英印安全保障条約の更新の停止を通達"
  ENG_CAN_cooperation:0 "英加によるアメリカ情勢への介入を検討"
+
+ #dicision
+ ENG_Four_eyes:0 "フォーアイズ計画"
+ ENG_Intelligence_activities:0 "大規模諜報作戦の開始"
+ ENG_Intelligence_defence:0 "防諜活動に徹底注力"
+ ENG_Intelligence_resistance:0 "反政府組織を追跡"

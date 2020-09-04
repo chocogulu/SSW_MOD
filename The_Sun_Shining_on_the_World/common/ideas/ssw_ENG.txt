@@ -59,6 +59,25 @@ ideas = {
 			modifier = {
 			}#効果
 		}
+		ENG_idea_5 = {
+
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			modifier = {
+			operative_slot = 1	
+		}#効果
+	}
+		ENG_idea_6 = {
+			allowed = { always = no }
+			removal_cost = -1
+			allowed_civil_war = { always = yes }
+			modifier = { drift_defence_factor = 0.2
+						opinion_gain_monthly_factor = 0.15}
+		}
 		ENG_idea_7 = {
 
 			allowed = {always = no}
@@ -239,6 +258,21 @@ ideas = {
 			picture = generic_goods_red_bonus#アイコンの写真
 
 			modifier = {consumer_goods_factor = 0.05
+			}#効果
+		}
+		BBC_TV = { 
+			allowed = {always = no}
+
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus#アイコンの写真
+
+			modifier = { drift_defence_factor = 0.2
+						opinion_gain_monthly_factor = 0.15
+						political_power_gain = 0.3	
+						surrender_limit = 0.3
 			}#効果
 		}
 	}

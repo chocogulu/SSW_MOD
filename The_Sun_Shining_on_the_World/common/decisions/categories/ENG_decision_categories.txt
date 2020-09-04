@@ -6,3 +6,11 @@ ENG_USA_civil_war = {
 		has_completed_focus = ENG_politics_9
 	}
 }
+ENG_Four_eyes = {
+	allowed = {
+		original_tag = ENG
+	}
+	visible = {
+		has_completed_focus = ENG_UK_1
+	}
+}

@@ -8,9 +8,8 @@ focus_tree = {
 		}
 	}
 	continuous_focus_position = { x = 100 y = 1300 }
+
 	default = no
-	#this file is made by Chiyo(DiscordID = Chiyo#4420)
-	#Please contact me in case of error.
 	focus = {
 		id = ENG_1950_vote
 		icon = GFX_focus_1950_vote
@@ -35,11 +34,11 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_1950_vote
 		}
-		x = 6
+		x = 5
 		y = 1
-		ai_will_do = {
-			factor = 160
-		}
+			ai_will_do = {
+					factor = 160
+				}
 			completion_reward = {
 					add_political_power = 150
 					country_event = {
@@ -56,11 +55,11 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_sangyou_1
 		}
-		x = 2
+		x = 1
 		y = 2
-		ai_will_do = {
-			factor = 160
-		}
+			ai_will_do = {
+					factor = 160
+				}
 			completion_reward = {
 					add_timed_idea = {
 							idea = ENG_idea_10
@@ -76,11 +75,11 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_sangyou_8
 		}
-		x = 2
+		x = 1
 		y = 3
-		ai_will_do = {
-			factor = 160
-		}
+			ai_will_do = {
+					factor = 160
+				}
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = ENG_idea_1
@@ -100,11 +99,11 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_sangyou_1
 		}
-		x = 6
+		x = 5
 		y = 2
-		ai_will_do = {
-			factor = 160
-		}
+			ai_will_do = {
+					factor = 160
+				}
 			completion_reward = {
 					country_event = {
 							id = SSW_ENG.3
@@ -120,11 +119,11 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_sangyou_9
 		}
-		x = 5
+		x = 4
 		y = 3
-		ai_will_do = {
-			factor = 160
-		}
+			ai_will_do = {
+					factor = 160
+				}
 			completion_reward = {
 					add_ideas = ENG_idea_11
 				}
@@ -137,11 +136,11 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_sangyou_9
 		}
-		x = 7
+		x = 6
 		y = 3
-		ai_will_do = {
-			factor = 160
-		}
+			ai_will_do = {
+					factor = 160
+				}
 			completion_reward = {
 					add_ideas = ENG_idea_12
 					add_tech_bonus = {
@@ -160,11 +159,11 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_sangyou_1
 		}
-		x = 10
+		x = 9
 		y = 2
-		ai_will_do = {
-			factor = 160
-		}
+			ai_will_do = {
+					factor = 160
+				}
 			completion_reward = {
 					country_event = {
 							id = SSW_ENG.5
@@ -180,14 +179,14 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_sangyou_5
 		}
-		x = 10
+		x = 9
 		y = 3
 			available = {
 					has_idea = ENG_idea_2
 				}
-		ai_will_do = {
-			factor = 160
-		}
+			ai_will_do = {
+					factor = 160
+				}
 			completion_reward = {
 					country_event = {
 							id = SSW_ENG.4
@@ -216,11 +215,11 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_sangyou_6
 		}
-		x = 6
+		x = 5
 		y = 4
-		ai_will_do = {
-			factor = 160
-		}
+			ai_will_do = {
+					factor = 160
+				}
 			completion_reward = {
 					remove_ideas = ENG_idea_3
 					country_event = {
@@ -271,20 +270,6 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 					add_ideas = free_trade
-				}
-
-	}
-	focus = {
-		id = ENG_sangyou_12
-		icon = GFX_focus_research
-		cost = 10.00
-		prerequisite = {
-			focus = ENG_sangyou_7
-		}
-		x = 5
-		y = 5
-			completion_reward = {
-					add_research_slot = 1
 				}
 
 	}
@@ -352,9 +337,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 1
-		ai_will_do = {
-			factor = 50
-		}
+			ai_will_do = {
+					factor = 50
+				}
 			completion_reward = {
 					custom_effect_tooltip = 3_ENG_tt
 				}
@@ -369,12 +354,16 @@ focus_tree = {
 		}
 		x = 14
 		y = 2
-		ai_will_do = {
-			factor = 160
-		}
-		available = { not ={		 has_idea = ENG_idea_1 
-									 has_idea = ENG_idea_2
-									 has_idea = ENG_idea_3  } }
+			ai_will_do = {
+					factor = 160
+				}
+			available = {
+					not = {
+							has_idea = ENG_idea_1
+							has_idea = ENG_idea_2
+							has_idea = ENG_idea_3
+						}
+				}
 			completion_reward = {
 					custom_effect_tooltip = 5_ENG_tt
 				}
@@ -490,9 +479,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 2
-		ai_will_do = {
-			factor = 120
-		}
+			ai_will_do = {
+					factor = 120
+				}
 			completion_reward = {
 					country_event = {
 							id = SSW_ENG.20
@@ -583,9 +572,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 2
-		ai_will_do = {
-			factor = 120
-		}
+			ai_will_do = {
+					factor = 120
+				}
 			completion_reward = {
 					country_event = {
 							id = SSW_ENG.28
@@ -610,9 +599,17 @@ focus_tree = {
 				}
 			completion_reward = {
 					custom_effect_tooltip = 4_ENG_tt
-			unlock_decision_tooltip = { decision = ENG_CAN_avoid_UTC show_effect_tooltip = yes show_modifiers = yes }
-			unlock_decision_tooltip = { decision = ENG_CAN_avoid_FSA show_effect_tooltip = yes show_modifiers = yes }
-			unlock_decision_tooltip = { decision = ENG_CAN_avoid_ALF show_effect_tooltip = yes show_modifiers = yes }
+
+					unlock_decision_tooltip = {
+							decision = ENG_CAN_avoid_FSA
+							show_effect_tooltip = yes
+							show_modifiers = yes
+						}
+					unlock_decision_tooltip = {
+							decision = ENG_CAN_avoid_ALF
+							show_effect_tooltip = yes
+							show_modifiers = yes
+						}
 				}
 
 	}
@@ -636,8 +633,12 @@ focus_tree = {
 		}
 		x = 20
 		y = 3
-		completion_reward = { country_event = { id = SSW_ENG.29 }
-		}
+			completion_reward = {
+					country_event = {
+							id = SSW_ENG.29
+						}
+				}
+
 	}
 	focus = {
 		id = ENG_politics_13
@@ -660,12 +661,15 @@ focus_tree = {
 		}
 		x = 22
 		y = 2
-		ai_will_do = {
-			factor = 120
-		}
-		completion_reward = {
-				country_event = { id = SSW_ENG.30 }
-		}
+			ai_will_do = {
+					factor = 120
+				}
+			completion_reward = {
+					country_event = {
+							id = SSW_ENG.30
+						}
+				}
+
 	}
 	focus = {
 		id = ENG_politics_14
@@ -676,20 +680,21 @@ focus_tree = {
 		}
 		x = 22
 		y = 3
-		completion_reward = {
-		521 = {
-			add_building_construction = {
-				type = naval_base
-     		   	province = 7564
-				level = 3
+			completion_reward = {
+					521 = {
+							add_building_construction = {
+									type = naval_base
+									province = 7564
+									level = 3
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 7564
+									level = 3
+								}
+						}
 				}
-			add_building_construction = {
-				type = coastal_bunker
-     		   	province = 7564
-				level = 3
-				}
-			}
-		}
+
 	}
 	focus = {
 		id = ENG_politics_16
@@ -700,10 +705,15 @@ focus_tree = {
 		}
 		x = 22
 		y = 4
-		completion_reward = { 
-			custom_effect_tooltip = 9_ENG_tt 
-			AST = { country_event = { id = SSW_ENG.31 } }
-			}
+			completion_reward = {
+					custom_effect_tooltip = 9_ENG_tt
+					AST = {
+							country_event = {
+									id = SSW_ENG.31
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = ENG_politics_17
@@ -779,53 +789,108 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ENG_politics_21
-		icon = GFX_focus_ger_oppose_hitler
-		cost = 4.00
+		id = ENG_germany_1
+		icon = GFX_focus_attack_plan_ger
+		cost = 10.00
 		prerequisite = {
 			focus = ENG_politics_20
-		}
-		x = 26
-		y = 4
-
-	}
-	focus = {
-		id = ENG_politics_23
-		icon = GFX_focus_Popular_Front_ico
-		cost = 5.00
-		prerequisite = {
-			focus = ENG_politics_21
-		}
-		mutually_exclusive = {
-			focus = ENG_politics_24
-		}
-		x = 25
-		y = 5
-
-	}
-	focus = {
-		id = ENG_politics_24
-		icon = GFX_focus_Gering_ico
-		cost = 5.00
-		prerequisite = {
-			focus = ENG_politics_21
-		}
-		mutually_exclusive = {
-			focus = ENG_politics_23
 		}
 		x = 27
 		y = 5
 
 	}
 	focus = {
-		id = ENG_germany_1
-		icon = GFX_focus_attack_plan_ger
+		id = ENG_germany_3
+		icon = GFX_focus_attack_germany
 		cost = 10.00
 		prerequisite = {
-			focus = ENG_politics_21
+			focus = ENG_germany_1
 		}
-		x = 26
+		x = 27
 		y = 6
+
+	}
+	focus = {
+		id = ENG_germany_5
+		icon = GFX_focus_ger_break
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_germany_3
+		}
+		x = 27
+		y = 7
+
+	}
+	focus = {
+		id = ENG_italy_1
+		icon = GFX_focus_generic_italy_first
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_germany_5
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = ENG_italy_3
+		icon = GFX_focus_attack_italy
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_italy_1
+		}
+		mutually_exclusive = {
+			focus = ENG_italy_4
+		}
+		x = 21
+		y = 9
+
+	}
+	focus = {
+		id = ENG_italy_4
+		icon = GFX_focus_befriend_italy
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_italy_1
+		}
+		mutually_exclusive = {
+			focus = ENG_italy_3
+		}
+		x = 25
+		y = 9
+
+	}
+	focus = {
+		id = ENG_jap_1
+		icon = GFX_focus_AST_war_japan
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_germany_5
+		}
+		x = 29
+		y = 8
+
+	}
+	focus = {
+		id = ENG_jap_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_jap_1
+		}
+		x = 27
+		y = 9
+
+	}
+	focus = {
+		id = ENG_jap_3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_jap_2
+		}
+		x = 27
+		y = 10
 
 	}
 	focus = {
@@ -862,6 +927,17 @@ focus_tree = {
 
 	}
 	focus = {
+		id = ENG_jap_4
+		icon = GFX_focus_attack_malaya
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_jap_2
+		}
+		x = 29
+		y = 10
+
+	}
+	focus = {
 		id = ENG_politics_28
 		icon = GFX_focus_hol_gateway_to_europe
 		cost = 10.00
@@ -881,6 +957,28 @@ focus_tree = {
 		}
 		x = 31
 		y = 6
+
+	}
+	focus = {
+		id = ENG_jap_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_jap_1
+		}
+		x = 31
+		y = 9
+
+	}
+	focus = {
+		id = ENG_jap_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_jap_5
+		}
+		x = 31
+		y = 10
 
 	}
 	focus = {
@@ -904,9 +1002,26 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_politics_2
 		}
+		available = { has_intelligence_agency = yes }
 		x = 32
 		y = 3
-
+		completion_reward = {
+					unlock_decision_tooltip = {
+							decision = ENG_Intelligence_activities
+							show_effect_tooltip = yes
+							show_modifiers = yes
+						}
+					unlock_decision_tooltip = {
+							decision = ENG_Intelligence_defence
+							show_effect_tooltip = yes
+							show_modifiers = yes
+						}
+					unlock_decision_tooltip = {
+							decision = ENG_Intelligence_resistance
+							show_effect_tooltip = yes
+							show_modifiers = yes
+						}
+		}
 	}
 	focus = {
 		id = ENG_UK_2
@@ -915,9 +1030,10 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_UK_1
 		}
+		available = { has_intelligence_agency = yes }
 		x = 32
 		y = 4
-
+		completion_reward = { add_ideas = ENG_idea_5 }
 	}
 	focus = {
 		id = ENG_UK_3
@@ -928,7 +1044,7 @@ focus_tree = {
 		}
 		x = 34
 		y = 3
-
+		completion_reward = { add_ideas = ENG_idea_6 }
 	}
 	focus = {
 		id = ENG_UK_4
@@ -939,18 +1055,25 @@ focus_tree = {
 		}
 		x = 34
 		y = 4
-
+		completion_reward = { 
+					swap_ideas = {
+							remove_idea = ENG_idea_6
+							add_idea = BBC_TV
+						}
+		}
 	}
 	focus = {
 		id = ENG_UK_5
 		icon = GFX_focus_eng_move_to_secure_the_dominions
-		cost = 10.00
+		cost = 4.00
 		prerequisite = {
 			focus = ENG_politics_2
 		}
 		x = 36
 		y = 4
-
+		completion_reward = { 
+					
+		}
 	}
 	focus = {
 		id = ENG_UK_6
@@ -1025,7 +1148,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_1950_vote
 		}
-		x = 51
+		x = 49
 		y = 1
 			completion_reward = {
 					air_experience = 25
@@ -1207,7 +1330,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_army_1
 		}
-		x = 51
+		x = 49
 		y = 2
 			completion_reward = {
 					air_experience = 30
@@ -1221,7 +1344,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_army_4
 		}
-		x = 50
+		x = 48
 		y = 3
 			completion_reward = {
 					add_tech_bonus = {
@@ -1240,7 +1363,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_army_4
 		}
-		x = 51
+		x = 49
 		y = 4
 			completion_reward = {
 					add_tech_bonus = {
@@ -1259,7 +1382,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_army_4
 		}
-		x = 52
+		x = 50
 		y = 3
 			completion_reward = {
 					add_tech_bonus = {
@@ -1284,7 +1407,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_army_16
 		}
-		x = 51
+		x = 49
 		y = 5
 			completion_reward = {
 					add_ideas = ENG_idea_13
@@ -1298,7 +1421,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_army_1
 		}
-		x = 56
+		x = 54
 		y = 2
 			completion_reward = {
 					army_experience = 30
@@ -1315,7 +1438,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ENG_army_20
 		}
-		x = 54
+		x = 52
 		y = 3
 			completion_reward = {
 					add_tech_bonus = {
@@ -1336,7 +1459,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ENG_army_21
 		}
-		x = 58
+		x = 56
 		y = 3
 			completion_reward = {
 					add_tech_bonus = {
@@ -1355,7 +1478,7 @@ focus_tree = {
 			focus = ENG_army_21
 			focus = ENG_army_20
 		}
-		x = 54
+		x = 52
 		y = 4
 			completion_reward = {
 					add_tech_bonus = {
@@ -1374,7 +1497,7 @@ focus_tree = {
 			focus = ENG_army_21
 			focus = ENG_army_20
 		}
-		x = 58
+		x = 56
 		y = 4
 			completion_reward = {
 					add_tech_bonus = {
@@ -1393,7 +1516,7 @@ focus_tree = {
 			focus = ENG_army_22
 			focus = ENG_army_23
 		}
-		x = 56
+		x = 54
 		y = 5
 			completion_reward = {
 					swap_ideas = {
@@ -1453,6 +1576,20 @@ focus_tree = {
 							uses = 2
 							category = naval_doctrine
 						}
+				}
+
+	}
+	focus = {
+		id = ENG_sangyou_12
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_sangyou_7
+		}
+		x = 5
+		y = 5
+			completion_reward = {
+					add_research_slot = 1
 				}
 
 	}
@@ -1854,32 +1991,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ENG_germany_3
-		icon = GFX_focus_attack_germany
-		cost = 10.00
-		prerequisite = {
-			focus = ENG_germany_1
-		}
-		mutually_exclusive = {
-			focus = ENG_germany_4
-			focus = ENG_germany_2
-		}
-		x = 26
-		y = 7
-
-	}
-	focus = {
-		id = ENG_italy_1
-		icon = GFX_focus_generic_italy_first
-		cost = 10.00
-		prerequisite = {
-			focus = ENG_germany_5
-		}
-		x = 23
-		y = 9
-
-	}
-	focus = {
 		id = ENG_italy_2
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -1887,34 +1998,6 @@ focus_tree = {
 			focus = ENG_italy_1
 		}
 		x = 23
-		y = 11
-
-	}
-	focus = {
-		id = ENG_italy_3
-		icon = GFX_focus_attack_italy
-		cost = 10.00
-		prerequisite = {
-			focus = ENG_italy_1
-		}
-		mutually_exclusive = {
-			focus = ENG_italy_4
-		}
-		x = 21
-		y = 10
-
-	}
-	focus = {
-		id = ENG_italy_4
-		icon = GFX_focus_befriend_italy
-		cost = 10.00
-		prerequisite = {
-			focus = ENG_italy_1
-		}
-		mutually_exclusive = {
-			focus = ENG_italy_3
-		}
-		x = 25
 		y = 10
 
 	}
@@ -1926,7 +2009,7 @@ focus_tree = {
 			focus = ENG_italy_3
 		}
 		x = 21
-		y = 11
+		y = 10
 
 	}
 	focus = {
@@ -1937,7 +2020,7 @@ focus_tree = {
 			focus = ENG_italy5
 		}
 		x = 21
-		y = 12
+		y = 11
 
 	}
 	focus = {
@@ -1948,86 +2031,7 @@ focus_tree = {
 			focus = ENG_italy_4
 		}
 		x = 25
-		y = 11
-
-	}
-	focus = {
-		id = ENG_jap_1
-		icon = GFX_focus_AST_war_japan
-		cost = 10.00
-		prerequisite = {
-			focus = ENG_germany_5
-		}
-		x = 29
-		y = 9
-
-	}
-	focus = {
-		id = ENG_jap_2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ENG_jap_1
-		}
-		x = 27
 		y = 10
-
-	}
-	focus = {
-		id = ENG_germany_5
-		icon = GFX_focus_ger_break
-		cost = 10.00
-		prerequisite = {
-			focus = ENG_germany_2
-			focus = ENG_germany_3
-			focus = ENG_germany_4
-		}
-		x = 26
-		y = 8
-
-	}
-	focus = {
-		id = ENG_jap_3
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ENG_jap_2
-		}
-		x = 27
-		y = 11
-
-	}
-	focus = {
-		id = ENG_jap_4
-		icon = GFX_focus_attack_malaya
-		cost = 10.00
-		prerequisite = {
-			focus = ENG_jap_2
-		}
-		x = 29
-		y = 11
-
-	}
-	focus = {
-		id = ENG_jap_5
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ENG_jap_1
-		}
-		x = 31
-		y = 10
-
-	}
-	focus = {
-		id = ENG_jap_6
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ENG_jap_5
-		}
-		x = 31
-		y = 11
 
 	}
 	focus = {
@@ -2044,7 +2048,7 @@ focus_tree = {
 			focus = ENG_jap_3
 		}
 		x = 29
-		y = 12
+		y = 11
 
 	}
 	focus = {
