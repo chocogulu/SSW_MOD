@@ -170,4 +170,52 @@ spriteTypes = {
 		name = "GFX_mechanised_infantry7_medium"
 		texturefile = "gfx/interface/technologies/mechanized_equipment_7.dds"
 	}	
+	spriteType = {
+		name = "GFX_semi_modern_light_cruiser"
+		textureFile = "gfx/interface/technologies/semi_modern_light_cruiser.dds"
+	}
+#		spriteType = {
+#		name = "GFX_semi_modern_light_carrier"
+#		textureFile = "gfx/interface/technologies/semi_modern_light_carrier.dds"
+#	}
+		spriteType = {
+		name = "GFX_semi_modern_heavy_cruiser"
+		textureFile = "gfx/interface/technologies/semi_modern_heavy_cruiser.dds"
+	}
+		spriteType = {
+		name = "GFX_semi_modern_destroyer"
+		textureFile = "gfx/interface/technologies/semi_modern_destroyer.dds"
+	}
+		spriteType = {
+		name = "GFX_semi_modern_carrier"
+		textureFile = "gfx/interface/technologies/semi_modern_carrier.dds"
+	}
+		spriteType = {
+		name = "GFX_semi_modern_battleship"
+		textureFile = "gfx/interface/technologies/semi_modern_battleship.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_weapons5_medium"
+		texturefile = "gfx/interface/technologies/support_weapons5.dds"
+	}	
+	SpriteType = {
+		name = "GFX_infantry_at3_medium"
+		texturefile = "gfx/interface/technologies/infantry_at3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_infantry_at4_medium"
+		texturefile = "gfx/interface/technologies/infantry_at4.dds"
+	}
+	SpriteType = {
+		name = "GFX_ssw_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_ssw_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_ssw_infantry_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_6.dds"
+	}
 }
