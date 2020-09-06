@@ -101,3 +101,18 @@ ENG_Four_eyes = {
 			modifier = { civilian_factory_use = 3 }	
 	}
 }
+
+ENG_commonwealth = { 
+	ENG_commonwealth_speech = {
+		icon = generic_political_discourse
+		ai_will_do = { factor = 1 }
+		remove_effect = { 
+			ENG = { set_variable = { var = commonwealth_Cooperation value = 0 } } 
+		}
+		visible = {
+			always = yes
+		}
+	}
+
+
+}

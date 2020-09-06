@@ -362,4 +362,25 @@ spriteTypes = {
 		name = "GFX_focus_Macarthur"
 		texturefile = "gfx/interface/goals/ENG/focus_Macarthur.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_north_sea"
+		texturefile = "gfx/interface/goals/ENG/focus_north_sea.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Italy_territory"
+		texturefile = "gfx/interface/goals/ENG/focus_Italy_territory.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Gibraltar"
+		texturefile = "gfx/interface/goals/ENG/focus_Gibraltar.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Britain_defense"
+		texturefile = "gfx/interface/goals/ENG/focus_Britain_defense.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Australia_federation"
+		texturefile = "gfx/interface/goals/ENG/focus_Australia_federation.dds"
+	}
+
 }

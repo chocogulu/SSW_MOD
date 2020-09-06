@@ -129,7 +129,7 @@ ideas = {
 
 			picture = FRA_factory_strikes#アイコンの写真
 
-			modifier = {consumer_goods_factor = 0.05
+			modifier = {consumer_goods_factor = -0.05
 			}#効果
 		}
 		ENG_idea_11 = {
@@ -281,6 +281,28 @@ ideas = {
 		allowed_civil_war = { always = yes }
 		picture = jap_supremacy_of_technology
 		modifier = { research_speed_factor = 0.075 }
+		}
+	Oxford = {
+		allowed = {always = no }
+		removal_cost = -1 
+		allowed_civil_war = { always = yes }
+		picture = jap_supremacy_of_technology
+		modifier = { research_speed_factor = 0.1
+					 political_advisor_cost_factor = -0.3 }
+		}
+	economy_revolution = {
+		allowed = {always = no }
+		removal_cost = -1 
+		allowed_civil_war = { always = yes }
+		picture = generic_production_bonus
+		modifier = { consumer_goods_factor = -0.05 }
+		}
+	UK_Staff = { 
+		allowed = { always = yes }
+		removal_cost = -1 
+		allowed_civil_war = { always = yes }
+		picture = cze_planning_bonus
+		modifier = { training_time_factor = -0.1 army_core_attack_factor = 0.1	planning_speed = 0.10	}
 		}
 	}
 }

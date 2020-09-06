@@ -173,8 +173,8 @@ set_technology = {
 }
 
 set_variable = {
-	var = eng_gateway_to_europe_influence
-	value = 0
+	var = commonwealth_Cooperation
+	value = 100
 }
 
 add_ideas = {

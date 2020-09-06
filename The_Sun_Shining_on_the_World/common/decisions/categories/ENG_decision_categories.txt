@@ -8,9 +8,25 @@ ENG_USA_civil_war = {
 }
 ENG_Four_eyes = {
 	allowed = {
-		original_tag = ENG
+		tag = ENG
 	}
 	visible = {
 		has_completed_focus = ENG_UK_1
 	}
+}
+ENG_commonwealth = {
+		icon = hol_gateway_to_europe
+	allowed = {
+		tag = ENG
+	}
+	picture = GFX_decision_cat_picture_gateway_to_europe
+	visible = {
+		OR = { 
+		is_in_faction_with = NZL
+		is_in_faction_with = CAN
+		is_in_faction_with = AST
+		is_in_faction_with = NFL
+		}
+	}
+
 }
