@@ -72,6 +72,9 @@ country_event = {
 			hidden_effect = {
 				remove_ideas = GER_idea_1
 				remove_ideas = Air_force_conspiracy
+				clr_global_flag = GER_civil_war
+			ENG = { set_global_flag = GER_civil_war }
+			VFR = { set_global_flag = GER_civil_war }
 			GER = { country_event = { id = SSW_GER.5 days = 1 } }
 			GER = { remove_state_core = 56 }
 			GER = { remove_state_core = 57 }
