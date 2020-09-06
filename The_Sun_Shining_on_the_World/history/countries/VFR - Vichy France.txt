@@ -155,7 +155,37 @@ create_country_leader = {
 	traits = {
 	}
 }
+create_navy_leader = {
+	name = "François Darlan" #フランソワダルラン
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		indecisive
+	}
 
+}
+create_country_leader = {
+	name = "Jacques Doriot" #ジャックドリオ
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		conservative_nationalist_lar
+	}
+}
+create_country_leader = {
+	name = "Henri d'Orléans" #アンリ6世
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		fascist_sympathies
+	}
+}
 create_corps_commander = {
 	name = "Jean de Lattre de Tassigny"
 	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"

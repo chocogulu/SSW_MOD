@@ -358,4 +358,8 @@ spriteTypes = {
 		name = "GFX_focus_Oxford"
 		texturefile = "gfx/interface/goals/ENG/focus_Oxford.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_Macarthur"
+		texturefile = "gfx/interface/goals/ENG/focus_Macarthur.dds"
+	}
 }
