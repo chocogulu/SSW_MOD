@@ -884,7 +884,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_jap_3
-		icon = GFX_focus_Macarthur
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = ENG_jap_2
@@ -1106,7 +1106,7 @@ focus_tree = {
 		}
 		x = 38
 		y = 3
-		completion_reward = { add_ideas = think_tank_UK  }
+
 	}
 	focus = {
 		id = ENG_UK_9
