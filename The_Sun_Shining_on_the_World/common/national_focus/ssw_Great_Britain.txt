@@ -1106,7 +1106,7 @@ focus_tree = {
 		}
 		x = 38
 		y = 3
-
+		completion_reward = { add_ideas = think_tank_UK  }
 	}
 	focus = {
 		id = ENG_UK_9
