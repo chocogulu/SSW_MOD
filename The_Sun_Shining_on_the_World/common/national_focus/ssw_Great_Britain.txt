@@ -884,7 +884,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_jap_3
-		icon = GFX_goal_unknown
+		icon = GFX_focus_Macarthur
 		cost = 10.00
 		prerequisite = {
 			focus = ENG_jap_2
