@@ -20,7 +20,10 @@ set_politics = {
 set_popularities = {
 	authoritative_democracy = 100
 }
-
+set_variable = {
+	var = commonwealth_Cooperation
+	value = 50
+}
 create_country_leader = {
 	name = "Leverett Saltonstall"
 	desc = ""

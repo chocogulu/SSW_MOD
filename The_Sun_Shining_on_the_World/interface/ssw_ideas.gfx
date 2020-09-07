@@ -109,4 +109,8 @@ spriteTypes = {
 		name = "GFX_idea_hudson_avoid"
 		texturefile = "gfx/interface/ideas/ENG/hudson_avoid.dds"
 	}
+	spriteType = {
+		name = "GFX_BBC_tv"
+		texturefile = "gfx/interface/ideas/ENG/BBC_tv.dds"
+	}
 }

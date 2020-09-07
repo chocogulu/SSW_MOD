@@ -1159,7 +1159,7 @@ focus_tree = {
 		x = 10
 		y = 11
 			completion_reward = {
-					remove_ideas = Pétain_Law
+					remove_ideas = Petain_Law
 				}
 
 	}
@@ -1176,7 +1176,7 @@ focus_tree = {
 		x = 12
 		y = 11
 			completion_reward = {
-					remove_ideas = Pétain_Law
+					remove_ideas = Petain_Law
 					add_ideas = Amended_Petan_Law
 				}
 

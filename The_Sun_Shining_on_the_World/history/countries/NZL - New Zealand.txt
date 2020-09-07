@@ -43,7 +43,10 @@ if = {
 		mtg_transport = 1
 	}
 }
-
+set_variable = {
+	var = commonwealth_Cooperation
+	value = 50
+}
 if = {
 	limit = {
 		has_dlc = "Together for Victory"

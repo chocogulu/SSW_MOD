@@ -19,7 +19,64 @@ ENG_commonwealth = {
 	allowed = {
 		tag = ENG
 	}
-	picture = GFX_decision_cat_picture_gateway_to_europe
+	picture = GFX_common_wealth_decision
+	desc = ENG_commonwealth_desc
+	custom_icon = {
+	visible = {
+		is_in_faction_with = ENG
+	}
+		tag = ENG
+		desc = commonwealth_Cooperation_ENG
+	}
+	custom_icon = {
+	visible = {
+		is_in_faction_with = CAN
+	}
+		tag = CAN
+		value = commonwealth_Cooperation_value
+		desc = commonwealth_Cooperation
+	}
+	custom_icon = {
+	visible = {
+		is_in_faction_with = AST
+	}
+		tag = AST
+		value = commonwealth_Cooperation_value
+		desc = commonwealth_Cooperation
+	}
+	custom_icon = {
+	visible = {
+		is_in_faction_with = NZL
+	}
+		tag = NZL
+		value = commonwealth_Cooperation_value
+		desc = commonwealth_Cooperation
+	}
+	custom_icon = {
+	visible = {
+		is_in_faction_with = NEL
+	}
+		tag = NEL
+		value = commonwealth_Cooperation_value
+		desc = commonwealth_Cooperation
+	}
+	custom_icon = {
+	visible = {
+		is_in_faction_with = NFL
+	}
+		tag = NFL
+		value = commonwealth_Cooperation_value
+		desc = commonwealth_Cooperation
+	}
+		custom_icon = {
+	}
+		custom_icon = {
+	}
+		custom_icon = {
+	}
+		custom_icon = {
+	}
+
 	visible = {
 		OR = { 
 		is_in_faction_with = NZL

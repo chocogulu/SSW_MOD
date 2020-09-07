@@ -107,11 +107,16 @@ ENG_commonwealth = {
 		icon = generic_political_discourse
 		ai_will_do = { factor = 1 }
 		remove_effect = { 
-			ENG = { set_variable = { var = commonwealth_Cooperation value = 0 } } 
+			CAN = { country_event = { id = SSW_ENG.32 } } 
+			AST = { country_event = { id = SSW_ENG.32 } } 
+			NZL = { country_event = { id = SSW_ENG.32 } } 
+			NEL = { country_event = { id = SSW_ENG.32 } } 
+			NFL = { country_event = { id = SSW_ENG.32 } } 
 		}
 		visible = {
 			always = yes
 		}
+		cost = 75
 	}
 
 

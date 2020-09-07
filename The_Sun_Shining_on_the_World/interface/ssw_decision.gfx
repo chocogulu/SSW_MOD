@@ -1,0 +1,7 @@
+spriteTypes = {
+#decision
+    SpriteType = { 
+		name = "GFX_common_wealth_decision"
+		texturefile = "gfx/interface/decisions/common_wealth_decision.dds"
+	}
+}

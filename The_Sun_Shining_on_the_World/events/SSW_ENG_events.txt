@@ -685,3 +685,48 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = SSW_ENG.32
+	title = SSW_ENG.32.t
+	desc = SSW_ENG.32.d
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.32.a
+		ai_chance = {
+			factor = 160
+		}
+		ENG = { country_event = { id = SSW_ENG.33 } }
+			ROOT = { add_to_variable = { var = commonwealth_Cooperation value = 10 } } 
+	}
+	option = {
+		name = SSW_ENG.32.b
+		ai_chance = {
+			factor = 1
+		}
+		ENG = { country_event = { id = SSW_ENG.34 } }
+			ROOT = { add_to_variable = { var = commonwealth_Cooperation value = -5 } } 
+	}
+}
+country_event = {
+	id = SSW_ENG.33
+	title = SSW_ENG.33.t
+	desc = SSW_ENG.33.d
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.33.a
+	}
+}
+
+country_event = {
+	id = SSW_ENG.34
+	title = SSW_ENG.34.t
+	desc = SSW_ENG.34.d
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_ENG.34.a
+	}
+}
