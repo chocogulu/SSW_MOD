@@ -104,7 +104,7 @@ ENG_Four_eyes = {
 
 ENG_commonwealth = { 
 	ENG_commonwealth_speech = {
-		icon = generic_political_discourse
+		icon = eng_ally_imperialist_coup
 		ai_will_do = { factor = 1 }
 		remove_effect = { 
 			CAN = { country_event = { id = SSW_ENG.32 } } 
@@ -118,6 +118,31 @@ ENG_commonwealth = {
 		}
 		cost = 75
 	}
-
+	ENG_CAN_economy_avoid = {
+		icon = generic_construction
+		ai_will_do = { factor = 1 }
+		remove_effect = { 
+			custom_effect_tooltip = 13_ENG_tt
+			CAN = { country_event = { id = SSW_ENG.35 } } 
+			CAN = { add_to_variable = { var = commonwealth_Cooperation value = -20 } }
+		}
+		visible = {
+			always = yes
+		}
+		cost = 100
+	}
+	ENG_AST_economy_avoid = {
+		icon = generic_construction
+		ai_will_do = { factor = 1 }
+		remove_effect = { 
+			custom_effect_tooltip = 14_ENG_tt
+			AST = { country_event = { id = SSW_ENG.35 } } 
+			AST = { add_to_variable = { var = commonwealth_Cooperation value = -20 } }
+		}
+		visible = {
+			always = yes
+		}
+		cost = 100
+	}
 
 }

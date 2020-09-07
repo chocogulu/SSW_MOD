@@ -239,6 +239,20 @@
  SSW_ENG.34.t:0 "[FROM.GetName]が我々に異を唱える"
  SSW_ENG.34.d:0 "彼らは我々の演説に耳を傾けたが、一定の支持はするものの同調はできないと発表した。我々は一丸となって我々が抱えている問題に対処していかなければならないはずなのだが..."
  SSW_ENG.34.a:0 "残念だ"
+ SSW_ENG.35.t:0 "[FROM.GetName]が経済支援を要求"
+ SSW_ENG.35.d:0 "[FROM.GetName]は経済状況の不安定化に伴い、我々に支援を要請してきた。"
+ SSW_ENG.35.a:0 "もちろん"
+ SSW_ENG.35.b:0 "我々は独立国だ。貴国の衛星国ではない。"
+ SSW_ENG.36.t:0 "[FROM.GetName]が経済支援を要求"
+ SSW_ENG.36.d:0 "[FROM.GetName]は経済状況の不安定化に伴い、我々に支援を要請してきた。"
+ SSW_ENG.36.a:0 "もちろん"
+ SSW_ENG.36.b:0 "我々は独立国だ。貴国の衛星国ではない。"
+ SSW_ENG.37.t:0 "[FROM.GetName]が承諾"
+ SSW_ENG.37.d:0 "我々が苦肉の策として行った今回の選択は成功に終わった。[FROM.GetName]による経済援助が明日届く。"
+ SSW_ENG.37.a:0 "まさか承諾してくれるとは"
+ SSW_ENG.38.t:0 "[FROM.GetName]が拒否"
+ SSW_ENG.38.d:0 "我々が苦肉の策として行った今回の選択は失敗に終わった。[FROM.GetName]による経済援助の望みは薄い。"
+ SSW_ENG.38.a:0 "残念だ"
 
 #news_event
  england_news.1.t:0 "[ENG.GetNameDef]庶民院選挙で保守党が圧勝"
@@ -297,6 +311,8 @@
  10_ENG_tt:0 "§G続く国家方針を取得することで欧州での革命によってドイツを弱体化させることができる。§!"
  11_ENG_tt:0 "§G我々の祈願、そして宿命を果たす§!"
  12_ENG_tt:0 "§R[GER.GetName]のレジスタンスを鎮圧する"
+ 13_ENG_tt:0 "§G[CAN.GetName]から民需工場を受けとる§!"
+ 14_ENG_tt:0 "§G[AST.GetName]から民需工場を受けとる§!"
 
 #flag
  ENG_PIN_military:0 "インドがイギリスとの軍事協力を約束"
