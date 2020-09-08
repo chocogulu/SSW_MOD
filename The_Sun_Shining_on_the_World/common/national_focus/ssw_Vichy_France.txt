@@ -1540,4 +1540,8 @@ focus_tree = {
 				}
 
 	}
+	continuous_focus_position = {
+		x = 10
+		y = 2000
+	}
 }
