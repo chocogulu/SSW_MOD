@@ -7,12 +7,12 @@ state={
 	state_category = rural
 
 	history={
-		owner = PAK
+		owner = JAK
+		add_core_of = JAK
+		add_core_of = NIN
 		add_core_of = PIN
 		add_claim_by = PAK
-		add_core_of = NIN
 		add_core_of = RCH
-		add_core_of = PIN
 		buildings = {
 			infrastructure = 2
 		}

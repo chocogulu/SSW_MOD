@@ -258,3 +258,4 @@ BAL = "countries/Balt.txt"				#バルト
 LES = "countries/Lesotho.txt"			#レソト
 SWL = "countries/Swaziland.txt"			#スワジランド(現:エスワティニ)
 MYS = "countries/Mysore.txt"            #マイソール
+JAK = "countries/Jammu and Kashmir.txt" #ジャンムー・カシミール

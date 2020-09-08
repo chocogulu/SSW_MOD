@@ -1454,6 +1454,11 @@ SWL = {	#スワジランド
 	color_ui = rgb { 62 94 185 }
 }
 
+JAK = {	#ジャンムー・カシミール
+	color = rgb { 153 0 48 }
+	color_ui = rgb { 153 0 48 }
+}
+
 HGR = {
 	color = rgb { 50 0 75 }
 	color_ui = rgb { 50 0 75 }
