@@ -106,7 +106,10 @@ ENG_commonwealth = {
 	ENG_commonwealth_speech = {
 		icon = eng_ally_imperialist_coup
 		ai_will_do = { factor = 1 }
-		remove_effect = { 
+		complete_effect = { 
+			custom_effect_tooltip = commonwealth_Cooperation10
+		}
+		targeted_modifier = { 
 			CAN = { country_event = { id = SSW_ENG.32 } } 
 			AST = { country_event = { id = SSW_ENG.32 } } 
 			NZL = { country_event = { id = SSW_ENG.32 } } 
@@ -118,31 +121,143 @@ ENG_commonwealth = {
 		}
 		cost = 75
 	}
+
+}
+ENG_CEDC = { 
 	ENG_CAN_economy_avoid = {
 		icon = generic_construction
 		ai_will_do = { factor = 1 }
-		remove_effect = { 
+		complete_effect = { 
 			custom_effect_tooltip = 13_ENG_tt
 			CAN = { country_event = { id = SSW_ENG.35 } } 
 			CAN = { add_to_variable = { var = commonwealth_Cooperation value = -20 } }
 		}
 		visible = {
 			always = yes
+		is_in_faction_with = CAN
 		}
+		days_remove = 365
 		cost = 100
 	}
 	ENG_AST_economy_avoid = {
 		icon = generic_construction
 		ai_will_do = { factor = 1 }
-		remove_effect = { 
+		complete_effect = { 
 			custom_effect_tooltip = 14_ENG_tt
 			AST = { country_event = { id = SSW_ENG.35 } } 
 			AST = { add_to_variable = { var = commonwealth_Cooperation value = -20 } }
 		}
 		visible = {
 			always = yes
+			is_in_faction_with = AST
 		}
 		cost = 100
+		days_remove = 365
+	}
+	ENG_NZL_economy_avoid = {
+		icon = generic_construction
+		ai_will_do = { factor = 1 }
+		complete_effect = { 
+			custom_effect_tooltip = 14_ENG_tt
+			NZL = { country_event = { id = SSW_ENG.35 } } 
+			NZL = { add_to_variable = { var = commonwealth_Cooperation value = -20 } }
+		}
+		visible = {
+			always = yes
+			is_in_faction_with = NZL
+		}
+		cost = 100
+		days_remove = 365
+	}
+	ENG_NEL_economy_avoid = {
+		icon = generic_construction
+		ai_will_do = { factor = 1 }
+		complete_effect = { 
+			custom_effect_tooltip = 14_ENG_tt
+			NEL = { country_event = { id = SSW_ENG.35 } } 
+			NEL = { add_to_variable = { var = commonwealth_Cooperation value = -20 } }
+		}
+		visible = {
+			always = yes
+			is_in_faction_with = NEL
+		}
+		cost = 100
+		days_remove = 365
+	}
+	CAN_ENG_economy_avoid = {
+		icon = generic_construction
+		ai_will_do = { factor = 1 }
+		complete_effect = { 
+			custom_effect_tooltip = commonwealth_Cooperation40a
+			CAN = { country_event = { id = SSW_ENG.38 days = 1 } } 
+			CAN = { add_to_variable = { var = commonwealth_Cooperation value = 40 } }
+		}
+		visible = {
+			always = yes
+			is_in_faction_with = CAN
+		}
+		cost = 0
+		days_remove = 365
+	}
+	AST_ENG_economy_avoid = {
+		icon = generic_construction
+		ai_will_do = { factor = 1 }
+		complete_effect = { 
+			custom_effect_tooltip = commonwealth_Cooperation40b
+			AST = { country_event = { id = SSW_ENG.38 days = 1 } } 
+			AST = { add_to_variable = { var = commonwealth_Cooperation value = 40 } }
+		}
+		visible = {
+			always = yes
+			is_in_faction_with = AST
+		}
+		cost = 0
+		days_remove = 365
+	}
+	NZL_ENG_economy_avoid = {
+		icon = generic_construction
+		ai_will_do = { factor = 1 }
+		complete_effect = { 
+			custom_effect_tooltip = commonwealth_Cooperation40c
+			NZL = { country_event = { id = SSW_ENG.38 days = 1 } } 
+			NZL = { add_to_variable = { var = commonwealth_Cooperation value = 40 } }
+		}
+		visible = {
+			always = yes
+			is_in_faction_with = NZL
+		}
+		cost = 0
+		days_remove = 365
+	}
+	NEL_ENG_economy_avoid = {
+		icon = generic_construction
+		ai_will_do = { factor = 1 }
+		complete_effect = { 
+			custom_effect_tooltip = commonwealth_Cooperation40e
+			NEL = { country_event = { id = SSW_ENG.38 days = 1 } } 
+			NEL = { add_to_variable = { var = commonwealth_Cooperation value = 40 } }
+		}
+		visible = {
+			always = yes
+			is_in_faction_with = NEL
+		}
+		cost = 0
+		days_remove = 365
+	}
+	NFL_ENG_economy_avoid = {
+		icon = generic_construction
+		ai_will_do = { factor = 1 }
+		complete_effect = { 
+			custom_effect_tooltip = commonwealth_Cooperation40d
+			NFL = { country_event = { id = SSW_ENG.38 days = 1 } } 
+			NFL = { add_to_variable = { var = commonwealth_Cooperation value = 40 } }
+		}
+		visible = {
+			always = yes
+		is_in_faction_with = NFL
+		}
+		cost = 0
+		days_remove = 365
 	}
 
 }

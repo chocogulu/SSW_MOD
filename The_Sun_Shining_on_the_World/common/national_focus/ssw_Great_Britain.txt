@@ -1239,7 +1239,7 @@ focus_tree = {
 		}
 		x = 40
 		y = 4
-
+	completion_reward = { custom_effect_tooltip = 15_ENG_tt }
 	}
 	focus = {
 		id = ENG_army_1
