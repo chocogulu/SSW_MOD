@@ -71,14 +71,6 @@ ENG_commonwealth = {
 		value = commonwealth_Cooperation_value
 		desc = commonwealth_Cooperation
 	}
-	custom_icon = {
-	visible = {
-		is_in_faction_with = PIN
-	}
-		tag = PIN
-		value = commonwealth_Cooperation_value
-		desc = commonwealth_Cooperation
-	}
 		custom_icon = {
 	}
 		custom_icon = {
@@ -87,7 +79,6 @@ ENG_commonwealth = {
 	}
 		custom_icon = {
 	}
-
 
 	visible = {
 		OR = { 

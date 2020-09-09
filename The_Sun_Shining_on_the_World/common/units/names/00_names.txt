@@ -10,14 +10,6 @@ generic = {
 		unique = {
 		}
 	}
-	frigate = {
-		prefix = ""
-		generic = {
-			"frigate"
-		}
-		unique = {
-		}
-	}
 	destroyer = {
 		prefix = ""
 		generic = {
