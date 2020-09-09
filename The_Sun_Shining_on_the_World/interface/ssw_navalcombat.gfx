@@ -30,5 +30,15 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_submarine_6_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/submarine_VI.dds"			noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_submarine_7_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/submarine_VII.dds"			noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_submarine_8_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/submarine_VIII.dds"			noOfFrames = 2 }
-	
+	spriteType = { name = "GFX_unit_frigate_icon_medium"			texturefile = "gfx/interface/navalcombat/ships/frigate.dds"			noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_frigate_1_icon_medium"			texturefile = "gfx/interface/navalcombat/ships/frigate_I.dds"			noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_frigate_2_icon_medium"			texturefile = "gfx/interface/navalcombat/ships/frigate_II.dds" }			noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_frigate_3_icon_medium"			texturefile = "gfx/interface/navalcombat/ships/frigate_Ⅲ.dds" 				noOfFrames = 2 }
+
+
+	spriteType = { name = "GFX_unit_frigate_icon_medium_white"						texturefile = "gfx/interface/counters/ships_small/onmap_frigate.dds" }
+
+	spriteType = { name = "GFX_unit_frigate_icon_medium_black"						texturefile = "gfx/interface/counters/ships_small/onmap_frigate_inverted.dds" }
+
+
 }

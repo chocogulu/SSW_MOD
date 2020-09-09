@@ -159,7 +159,7 @@
  SSW_ENG.10.d:0 "先の大戦後に行われた庶民院選挙では。我々労働党は23年ぶりに政権を獲得した。それ以降8年が経過した今、保守党はかつての勢力を取り戻しつつある。我々もそれに対抗し今回の選挙公約では「英国病」の脱却を約束した。"
  SSW_ENG.10.a:0 "労働党には8年間のツケを払ってもらおう"
  SSW_ENG.11.t:0 "オタワ会議一日目"
- SSW_ENG.11.d:0 "カナダの首都オタワにあるカナダ国会議事堂にてイギリス・カナダ・オーストラリア・ニュージーランド・ニューイングランド五か国の全権大使または国家首脳、軍将校が集まり、第二次オタワ会議が行われた。 一日目の会議では、英連邦王国そのものの在り方についてが議題となっている。"
+ SSW_ENG.11.d:0 "カナダの首都オタワにあるカナダ国会議事堂にてイギリス・カナダ・オーストラリア・ニュージーランド・ニューイングランドそしてニューファンドランド六か国の全権大使または国家首脳、軍将校が集まり、第二次オタワ会議が行われた。 一日目の会議では、英連邦王国そのものの在り方についてが議題となっている。"
  SSW_ENG.11.a:0 "英連邦王国内で結束を深めていくべきだ。"
  SSW_ENG.11.b:0 "英連邦王国とはただの同君連合ではないのか?"
  SSW_ENG.12.t:0 "オタワ会議二日目"
@@ -317,12 +317,13 @@
  14_ENG_tt:0 "§G[AST.GetName]から民需工場を受けとる§!\n§Y[AST.GetName]§!の英連邦王国に対する協力度が§R20§!減少する。§!"
  15_ENG_tt:0 "ディシジョン「§YCEDCでの活動§!」を解禁する"
 
- commonwealth_Cooperation10:0 "[Root.GetFactionName]加盟国の§H英連邦王国に対する協力度§!が§G10§!高まる選択肢を含むイベントが発生する\n"
+ commonwealth_Cooperation10:0 "§Y[Root.GetFactionName]§!加盟国の§H英連邦王国に対する協力度§!が§G10§!高まる選択肢を含むイベントが発生する\n"
  commonwealth_Cooperation40a:0 "§Y[CAN.GetName]§!に対し民需工場を譲渡する§!\n§Y[CAN.GetName]§!§!の英連邦王国に対する協力度が§G40§!増加する。§!"
  commonwealth_Cooperation40b:0 "§Y[AST.GetName]§!に対し民需工場を譲渡する§!\n§Y[AST.GetName]§!§!の英連邦王国に対する協力度が§G40§!増加する。§!"
  commonwealth_Cooperation40c:0 "§Y[NZL.GetName]§!に対し民需工場を譲渡する§!\n§Y[NZL.GetName]§!§!の英連邦王国に対する協力度が§G40§!増加する。§!"
  commonwealth_Cooperation40d:0 "§Y[NFL.GetName]§!に対し民需工場を譲渡する§!\n§Y[NFL.GetName]§!§!の英連邦王国に対する協力度が§G40§!増加する。§!"
  commonwealth_Cooperation40e:0 "§Y[NEL.GetName]§!に対し民需工場を譲渡する§!\n§Y[NEL.GetName]§!§!の英連邦王国に対する協力度が§G40§!増加する。§!"
+ commonwealth_Cooperation-30:0 "§Y[Root.GetFactionName]§!加盟国の§H英連邦王国に対する協力度§!が§R-30§!減少する\n"
 
 #flag
  ENG_PIN_military:0 "インドがイギリスとの軍事協力を約束"
@@ -342,6 +343,8 @@
  commonwealth_Cooperation_ENG:0 "[ENG.GetName]は[Root.GetFactionName]の盟主である"
  ENG_commonwealth_speech:0 "英連邦王国加盟国に対する演説"
  ENG_CEDC:0 "CEDCでの活動"
+ CW_tank_research:0 "機甲技術研究の統合"
+ CW_industry_research:0 "連邦の産業研究機関"
  ENG_CAN_economy_avoid:0 "[CAN.GetName]に経済支援を要求"
  ENG_AST_economy_avoid:0 "[AST.GetName]に経済支援を要求"
  ENG_NZL_economy_avoid:0 "[NZL.GetName]に経済支援を要求"
