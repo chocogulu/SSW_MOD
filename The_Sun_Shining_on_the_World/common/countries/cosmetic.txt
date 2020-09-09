@@ -1,189 +1,189 @@
-Great_Mongol = {	#‘å–ÖŒÃ
+Great_Mongol = {	#å¤§è’™å¤
 	color = rgb { 92 92 92 }
 	color_ui = rgb { 92 92 92 }
 }
 
-KOR_JAP = {	#“ú–{—Ì’©‘N
+KOR_JAP = {	#æ—¥æœ¬é ˜æœé®®
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-JAM_JAP = {	#“ú–{—ÌƒWƒƒƒ}ƒCƒJ
+JAM_JAP = {	#æ—¥æœ¬é ˜ã‚¸ãƒ£ãƒžã‚¤ã‚«
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-SIN_JAP = {	#“ú–{—Ìº“ì“‡
+SIN_JAP = {	#æ˜­å—å³¶
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-BRN_JAP = {	#“ú–{—Ì•¶—‰
+BRN_JAP = {	#æ—¥æœ¬é ˜ãƒ–ãƒ«ãƒã‚¤
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-HAW_JAP = {	#“ú–{—Ì•z™õ
+HAW_JAP = {	#æ—¥æœ¬é ˜å¸ƒå“‡
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-ARC_JAP = {	#“ú–{—Ì–k‹ÉŒ—
+ARC_JAP = {	#æ—¥æœ¬é ˜åŒ—æ¥µ
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-PAO_JAP = {	#“ú–{—Ì‘¾•½—m
+PAO_JAP = {	#æ—¥æœ¬é ˜å¤§å—æ´‹
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-INO_JAP = {	#“ú–{—ÌƒCƒ“ƒh—m
+INO_JAP = {	#æ—¥æœ¬é ˜å°åº¦æ´‹
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-PAC_JAP = {	#“ú–{—Ìƒpƒiƒ}‰^‰Í
+PAC_JAP = {	#æ—¥æœ¬é ˜ãƒ‘ãƒŠãƒžé‹æ²³
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-CLC_JAPandCHI = {	#“ú’†‹¤“¯“Ž¡‹æ
+CLC_JAPandCHI = {	#
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-CZE_GER = {	#“Æ—Ìƒ`ƒFƒR
+CZE_GER = {	#ç‹¬é ˜ãƒã‚§ã‚³
+color = rgb { 60 60 60 }
+	color_ui = rgb { 60 60 60 }
+}
+
+POL_GER = {	#ç‹¬é ˜ãƒãƒ¼ãƒ©ãƒ³ãƒ‰
 	color = rgb { 60 60 60 }
-	color_ui = rgb { 138 155 116 }
+	color_ui = rgb { 60 60 60 }
 }
 
-POL_GER = {	#“Æ—Ìƒ|[ƒ‰ƒ“ƒh
-	color = rgb { 60 60 60 }
-	color_ui = rgb { 138 155 116 }
-}
-
-HOL_GER = {	#“Æ—ÌƒIƒ‰ƒ“ƒ_
+HOL_GER = {	#ç‹¬é ˜ãƒ‹ãƒ¼ãƒ€ãƒ¼ãƒ©ãƒ³ãƒˆ
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 138 155 116 }
+	color_ui = rgb { 102 89 86 }
 }
 
-BEL_GER = {	#“Æ—Ìƒxƒ‹ƒM[
+BEL_GER = {	#ç‹¬é ˜ãƒ™ãƒ«ã‚®ã‚¨ãƒ³
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 138 155 116 }
+	color_ui = rgb { 102 89 86 }
 }
 
-NFR_GER = {	#“Æ—Ì–kƒtƒ‰ƒ“ƒX
+NFR_GER = {	#ç‹¬è»çµ±æ²»ä¸‹åŒ—ãƒ•ãƒ©ãƒ³ã‚¹
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 138 155 116 }
+	color_ui = rgb { 102 89 86 }
 }
 
-NOR_GER = {	#“Æ—Ìƒmƒ‹ƒEƒF[
+NOR_GER = {	#ç‹¬é ˜ãƒŽãƒ«ã‚¦ã‚§ãƒ¼
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 138 155 116 }
+	color_ui = rgb { 102 89 86 }
 }
 
-BAL_GER = {	#“Æ—ÌƒIƒXƒgƒ‰ƒ“ƒh
+BAL_GER = {	#ç‹¬é ˜ã‚ªã‚¹ãƒˆãƒ©ãƒ³ãƒˆ
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 138 155 116 }
+	color_ui = rgb { 102 89 86 }
 }
 
-UKR_GER = {	#“Æ—ÌƒEƒNƒ‰ƒCƒi
+UKR_GER = {	#ç‹¬é ˜ã‚¦ã‚¯ãƒ©ã‚¤ãƒŠ
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 138 155 116 }
+	color_ui = rgb { 102 89 86 }
 }
 
-MOS_GER = {	#“Æ—Ìƒ‚ƒXƒNƒ
+MOS_GER = {	#ç‹¬é ˜ãƒ¢ã‚¹ã‚¯ãƒ¯
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 138 155 116 }
+	color_ui = rgb { 102 89 86 }
 }
 
-CCS_GER = {	#“Æ—ÌƒR[ƒJƒTƒX
+CCS_GER = {	#ç‹¬é ˜ã‚«ãƒ•ã‚«ãƒ¼ã‚¹
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 138 155 116 }
+	color_ui = rgb { 102 89 86 }
 }
 
-TOG_GER = {	#“Æ—Ìƒg[ƒS
+TOG_GER = {	#ç‹¬é ˜ãƒˆãƒ¼ã‚´
+color = rgb { 102 89 86 }
+	color_ui = rgb { 102 89 86 }
+}
+
+WAF_GER = {	#ç‹¬é ˜è¥¿ã‚¢ãƒ•ãƒªã‚«
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 138 155 116 }
+	color_ui = rgb { 102 89 86 }
 }
 
-WAF_GER = {	#“Æ—Ì¼ƒAƒtƒŠƒJ
+MAF_GER = {	#ç‹¬é ˜ãƒŸãƒƒãƒ†ãƒ«ã‚¢ãƒ•ãƒªã‚«
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 138 155 116 }
+	color_ui = rgb { 102 89 86 }
 }
 
-MAF_GER = {	#“Æ—Ì’†•”ƒAƒtƒŠƒJ
+MAD_GER = {	#ç‹¬é ˜ãƒžãƒ€ã‚¬ã‚¹ã‚«ãƒ«
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 138 155 116 }
+	color_ui = rgb { 102 89 86 }
 }
 
-MAD_GER = {	#“Æ—Ìƒ}ƒ_ƒKƒXƒJƒ‹
+ATL_GER = {	#ç‹¬é ˜å¤§è¥¿æ´‹
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 138 155 116 }
+	color_ui = rgb { 102 89 86 }
 }
 
-ATL_GER = {	#“Æ—Ì‘å¼—m
-	color = rgb { 102 89 86 }
-	color_ui = rgb { 138 155 116 }
-}
-
-RIF_SPR = {	#¼—Ìƒ‚ƒƒbƒR
+RIF_SPR = {	#è¥¿é ˜ãƒ¢ãƒ­ãƒƒã‚³
 	color = rgb { 200 100 31 }
-	color_ui = rgb { 245 123 38 }
+	color_ui = rgb { 200 100 31 }
 }
 
-WES_SPR = {	#¼—ÌƒTƒnƒ‰
+WES_SPR = {	#ï¿½ï¿½ï¿½ÌƒTï¿½nï¿½ï¿½
 	color = rgb { 200 100 31 }
-	color_ui = rgb { 245 123 38 }
+	color_ui = rgb { 200 100 31 }
 }
 
-EQG_SPR = {	#¼—ÌƒMƒjƒA
+EQG_SPR = {	#ï¿½ï¿½ï¿½ÌƒMï¿½jï¿½A
 	color = rgb { 200 100 31 }
-	color_ui = rgb { 245 123 38 }
+	color_ui = rgb { 200 100 31 }
 }
 
-NWA_VFR = {	#ƒ”ƒBƒV[—Ì¼ƒAƒtƒŠƒJ
+NWA_VFR = {	#ï¿½ï¿½ï¿½Bï¿½Vï¿½[ï¿½Ìï¿½ï¿½Aï¿½tï¿½ï¿½ï¿½J
 	color = rgb { 80 168 181 }
-	color_ui = rgb {115 185 196 }
+	color_ui = rgb {80 168 181 }
 }
 
-EQA_VFR = {	#ƒ”ƒBƒV[—ÌÔ“¹ƒAƒtƒŠƒJ
+EQA_VFR = {	#ï¿½ï¿½ï¿½Bï¿½Vï¿½[ï¿½ÌÔ“ï¿½ï¿½Aï¿½tï¿½ï¿½ï¿½J
 	color = rgb { 80 168 181 }
-	color_ui = rgb {115 185 196 }
+	color_ui = rgb {80 168 181 }
 }
 
-SUD_ITAandEGY = {	#ˆÉšº—ÌƒX[ƒ_ƒ“
+SUD_ITAandEGY = {	#ï¿½Éšï¿½ï¿½ÌƒXï¿½[ï¿½_ï¿½ï¿½
 	color = rgb { 230 230 70 }
 	color_ui = rgb { 230 230 70 }
 }
 
-LBA_ITA = {	#ˆÉ—ÌƒŠƒrƒA
+LBA_ITA = {	#ï¿½É—Ìƒï¿½ï¿½rï¿½A
 	color = rgb { 67 127 63 }
-	color_ui = rgb { 87 165 82 }
+	color_ui = rgb { 67 127 63 }
 }
 
-TUN_ITA = {	#ˆÉ—Ìƒ`ƒ…ƒjƒWƒA
+TUN_ITA = {	#ï¿½É—Ìƒ`ï¿½ï¿½ï¿½jï¿½Wï¿½A
 	color = rgb { 67 127 63 }
-	color_ui = rgb { 87 165 82 }
+	color_ui = rgb { 67 127 63 }
 }
 
-NEA_ITA = {	#ˆÉ—Ì“ŒƒAƒtƒŠƒJ
+NEA_ITA = {	#ï¿½É—Ì“ï¿½ï¿½Aï¿½tï¿½ï¿½ï¿½J
 	color = rgb { 67 127 63 }
-	color_ui = rgb { 87 165 82 }
+	color_ui = rgb { 67 127 63 }
 }
 
-SUC_ITA = {	#ˆÉ—ÌƒXƒGƒY‰^‰Í
+SUC_ITA = {	#ï¿½É—ÌƒXï¿½Gï¿½Yï¿½^ï¿½ï¿½
 	color = rgb { 67 127 63 }
-	color_ui = rgb { 87 165 82 }
+	color_ui = rgb { 67 127 63 }
 }
 
-GIB_ITA = {	#ˆÉ—ÌƒWƒuƒ‰ƒ‹ƒ^ƒ‹
+GIB_ITA = {	#ï¿½É—ÌƒWï¿½uï¿½ï¿½ï¿½ï¿½ï¿½^ï¿½ï¿½
 	color = rgb { 67 127 63 }
-	color_ui = rgb { 87 165 82 }
+	color_ui = rgb { 67 127 63 }
 }
 
-MOR_AFR = {	#ƒAƒ‹ƒWƒF•§—Ìƒ‚ƒƒbƒR
+MOR_AFR = {	#ï¿½Aï¿½ï¿½ï¿½Wï¿½Fï¿½ï¿½ï¿½Ìƒï¿½ï¿½ï¿½ï¿½bï¿½R
 	color = rgb { 0 18 127 }
 	color_ui = rgb { 0 18 127 }
 }

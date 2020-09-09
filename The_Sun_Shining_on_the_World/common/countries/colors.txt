@@ -1,21 +1,21 @@
 GER = {	#ドイツ
 	color = rgb { 60 60 60 }
-	color_ui = rgb { 138 155 116 }
+	color_ui = rgb { 60 60 60 }
 }
 
 ENG = {	#イギリス
 	color = rgb { 201 56 93 }
-	color_ui = rgb { 255 73 121 }
+	color_ui = rgb { 201 56 93 }
 }
 
 SOV = {	#ソビエト
 	color = rgb { 125 13 24 }
-	color_ui = rgb { 163 17 31 }
+	color_ui = rgb { 125 13 24 }
 }
 
 SWE = {	#スウェーデン
 	color = rgb { 36 132 247 }
-	color_ui = rgb { 47 172 255 }
+	color_ui = rgb { 36 132 247 }
 }
 
 FRA = {	#フランス
@@ -25,67 +25,67 @@ FRA = {	#フランス
 
 LUX = {	#ルクセンブルク
 	color = rgb { 65 175 179 }
-	color_ui = rgb { 85 228 233 }
+	color_ui = rgb { 65 175 179 }
 }
 
 BEL = {	#ベルギー
-	color = rgb { 193 171 8  }
-	color_ui = rgb { 251 222 10 }
+	color = rgb { 193 171 8 }
+	color_ui = rgb { 193 171 8 }
 }
 
 HOL = {	#オランダ
 	color = rgb { 203 138 74 }
-	color_ui = rgb { 255 179 96 }
+	color_ui = rgb { 203 138 74 }
 }
 
 CZE = {	#チェコ
 	color = rgb { 54 167 156 }
-	color_ui = rgb { 70 217 203 }
+	color_ui = rgb { 54 167 156 }
 }
 
 POL = {	#ポーランド
 	color = rgb { 197 92 106 }
-	color_ui = rgb { 255 120 138 }
+	color_ui = rgb { 197 92 106 }
 }
 
 AUS = {	#オーストリア
 	color = rgb { 194 198 215 }
-	color_ui = rgb { 255 255 255 }
+	color_ui = rgb { 194 198 215 }
 }
 
 LIT = {	#リトアニア
 	color = rgb { 219 219 119 }
-	color_ui = rgb { 255 255 155 }
+	color_ui = rgb { 219 219 119 }
 }
 
 EST = {	#エストニア
 	color = rgb { 50 135 175 }
-	color_ui = rgb { 99 204 254 }
+	color_ui = rgb { 50 135 175 }
 }
 
 LAT = {	#ラトビア
 	color = rgb { 75 77 186 }
-	color_ui = rgb { 124 125 184 }
+	color_ui = rgb { 75 77 186 }
 }
 
 SPR = {	#スペイン
 	color = rgb { 200 100 31 }
-	color_ui = rgb { 245 123 38 }
+	color_ui = rgb { 200 100 31 }
 }
 
 ITA = {	#イタリア
 	color = rgb { 67 127 63 }
-	color_ui = rgb { 87 165 82 }
+	color_ui = rgb { 67 127 63 }
 }
 
 ROM = {	#ルーマニア
 	color = rgb { 215 196 72 }
-	color_ui = rgb { 255 255 120 }
+	color_ui = rgb { 215 196 720 }
 }
 
 YUG = {	#ユーゴスラビア
 	color = rgb { 72 73 126 }
-	color_ui = rgb { 94 95 164 }
+	color_ui = rgb { 72 73 126 }
 }
 
 SER = {	#セルビア
@@ -95,7 +95,7 @@ SER = {	#セルビア
 
 SWI = {	#スイス
 	color = rgb { 224 5 5 }
-	color_ui = rgb { 193 81 81 }
+	color_ui = rgb { 224 5 5 }
 }
 
 TUR = {	#トルコ
@@ -105,27 +105,27 @@ TUR = {	#トルコ
 
 GRE = {	#ギリシャ
 	color = rgb { 93 181 227 }
-	color_ui = rgb { 121 235 255 }
+	color_ui = rgb { 93 181 227 }
 }
 
 ALB = {	#アルバニア
 	color = rgb { 149 45 102 }
-	color_ui = rgb { 194 59 133 }
+	color_ui = rgb { 149 45 102 }
 }
 
 NOR = {	#ノルウェー
 	color = rgb { 111 71 71 }
-	color_ui = rgb { 144 92 92 }
+	color_ui = rgb { 111 71 71 }
 }
 
 DEN = {	#デンマーク
 	color = rgb { 153 116 93 }
-	color_ui = rgb { 199 151 121 }
+	color_ui = rgb { 153 116 93 }
 }
 
 BUL = {	#ブルガリア
 	color = rgb { 51 155 0 }
-	color_ui = rgb { 210 147 217 }
+	color_ui = rgb { 51 155 0 }
 }
 
 POR = {	#ポルトガル
@@ -135,32 +135,32 @@ POR = {	#ポルトガル
 
 FIN = {	#フィンランド
 	color = rgb { 205 212 228 }
-	color_ui = rgb { 255 255 255 }
+	color_ui = rgb { 205 212 228 }
 }
 
 IRE = {	#アイルランド
 	color = rgb { 80 159 90 }
-	color_ui = rgb { 104 207 117 }
+	color_ui = rgb { 80 159 90 }
 }
 
 HUN = {	#ハンガリー
 	color = rgb { 249 126 98 }
-	color_ui = rgb { 255 164 127 }
+	color_ui = rgb { 249 126 98 }
 }
 
 AFG = {	#アフガニスタン
 	color = rgb { 64 160 167 }
-	color_ui = rgb { 83 208 217 }
+	color_ui = rgb { 64 160 167 }
 }
 
 ARG = {	#アルゼンチン
 	color = rgb { 145 157 236 }
-	color_ui = rgb { 189 204 255 }
+	color_ui = rgb { 145 157 236 }
 }
 
 AST = {	#オーストラリア
 	color = rgb { 57 143 97 }
-	color_ui = rgb { 74 186 126 }
+	color_ui = rgb { 57 143 97 }
 }
 
 BHU = {	#ブータン
@@ -170,17 +170,17 @@ BHU = {	#ブータン
 
 BOL = {	#ボリビア
 	color = rgb { 255 180 136 } 
-	color_ui = rgb { 255 234 177 }
+	color_ui = rgb { 255 180 136 }
 }
 
 BRA = {	#ブラジル
 	color = rgb { 76 145 63 }
-	color_ui = rgb { 99 189 82 }
+	color_ui = rgb { 76 145 63 }
 }
 
 CAN = {	#カナダ
 	color = rgb { 119 48 39 }
-	color_ui = rgb { 155 62 51 }
+	color_ui = rgb { 119 48 39 }
 }
 
 CHI = {	#中国
@@ -190,12 +190,12 @@ CHI = {	#中国
 
 CHL = {	#チリ
 	color = rgb { 200 140 120 }
-	color_ui = rgb { 202 131 139 }
+	color_ui = rgb { 200 140 120 }
 }
 
 COL = {	#コロンビア
 	color = rgb { 222 187 91 }
-	color_ui = rgb { 255 243 118 }
+	color_ui = rgb { 222 187 91 }
 }
 
 COS = {	#コスタリカ
@@ -205,17 +205,17 @@ COS = {	#コスタリカ
 
 ECU = {	#エクアドル
 	color = rgb { 249 146 98 }
-	color_ui = rgb { 255 190 127 }
+	color_ui = rgb { 249 146 98 }
 }
 
 ELS = {	#エルサルバドル
 	color = rgb { 0 70 170 }
-	color_ui = rgb { 198 169 248 }
+	color_ui = rgb { 0 70 170 }
 }
 
 ETH = {	#エチオピア
 	color = rgb { 170 190 20 }
-	color_ui = rgb { 198 169 248 }
+	color_ui = rgb { 170 190 20 }
 }
 
 GUA = {	#グアテマラ
@@ -230,7 +230,7 @@ HON = {	#ホンジュラス
 
 IRQ = {	#イラク
 	color = rgb { 178 114 99 }
-	color_ui = rgb { 231 148 129 }
+	color_ui = rgb { 178 114 99 }
 }
 
 JAP = {	#日本
@@ -245,22 +245,22 @@ KOR = {	#朝鮮
 
 LIB = {	#リベリア
 	color = rgb { 70 30 85 }
-	color_ui = rgb { 198 169 248 }
+	color_ui = rgb { 70 30 85 }
 }
 
 MEX = {	#メキシコ
 	color = rgb { 104 152 83 }
-	color_ui = rgb { 135 198 108 }
+	color_ui = rgb { 104 152 83 }
 }
 
 MEN = {	#蒙古
-	color = rgb { 185  255  152 }
-	color_ui = rgb { 165  230  132 }
+	color = rgb { 185 255 152 }
+	color_ui = rgb { 185 255 152 }
 }
 
 NEP = {	#ネパール
 	color = rgb { 152 130 191 }
-	color_ui = rgb { 198 169 248 }
+	color_ui = rgb { 152 130 191 }
 }
 
 NIC = {	#ニカラグア
@@ -270,87 +270,87 @@ NIC = {	#ニカラグア
 
 NZL = {	#ニュージーランド
 	color = rgb { 148 139 177 }
-	color_ui = rgb { 198 169 248 }
+	color_ui = rgb { 148 139 177 }
 }
 
 PAN = {	#パナマ
 	color = rgb { 0 80 150 }
-	color_ui = rgb { 198 169 248 }
+	color_ui = rgb { 0 80 150 }
 }
 
 PER = {	#イラン
 	color = rgb { 71 113 97 }
-	color_ui = rgb { 92 147 126 }
+	color_ui = rgb { 71 113 97 }
 }
 
 PHI = {	#フィリピン
 	color = rgb { 144 98 134 }
-	color_ui = rgb { 198 169 248 }
+	color_ui = rgb { 144 98 134 }
 }
 
 PRU = {	#ペルー
 	color = rgb { 196 189 204 }
-	color_ui = rgb { 255 246 255 }
+	color_ui = rgb { 196 189 204 }
 }
 
 SAF = {	#南アフリカ
 	color = rgb { 195 107 160 }
-	color_ui = rgb { 198 169 248 }
+	color_ui = rgb { 195 107 160 }
 }
 
 SAU = {	#サウジアラビア
 	color = rgb { 0 108 53 }
-	color_ui = rgb { 222 247 198 }
+	color_ui = rgb { 0 108 53 }
 }
 
 SIA = {	#シャム
 	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color_ui = rgb { 171 190 152 }
 }
 
 SIK = {	#新彊
 	color = rgb { 71 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color_ui = rgb { 71 190 152 }
 }
 
 TIB = {	#チベット
 	color = rgb { 80 115 45 }
-	color_ui = rgb { 222 247 198 }
+	color_ui = rgb { 80 115 45 }
 }
 
 URG = {	#ウルグアイ
 	color = rgb { 0 56 168 }
-	color_ui = rgb { 222 247 198 }
+	color_ui = rgb { 0 56 168 }
 }
 
 VEN = {	#ベネズエラ
 	color = rgb { 80 104 122 }
-	color_ui = rgb { 222 247 198 }
+	color_ui = rgb { 80 104 122 }
 }
 
 YUN = {	#雲南
 	color = rgb { 114 148 80 }
-	color_ui = rgb { 222 247 198 }
+	color_ui = rgb { 114 148 80 }
 }
 
 USA = {	#アメリカ
 	color = rgb { 20 133 237 }
-	color_ui = rgb { 87 160 255 }
+	color_ui = rgb { 20 133 237 }
 }
 
 MON = {	#モンゴル
 	color = rgb { 108 140 42 }
-	color_ui = rgb { 209 247 133 }
+	color_ui = rgb { 108 140 42 }
 }
 
 TUV = {	#トゥヴァ
 	color = rgb { 120 180 200 }
-	color_ui = rgb { 198 169 248 }
+	color_ui = rgb { 120 180 200 }
 }
 
 PAR = {	#パラグアイ
 	color = rgb { 163 113 177 }
-	color_ui = rgb { 74 147 255 }
+	color_ui = rgb { 163 113 177 }
 }
 
 CUB = {	#キューバ
@@ -360,7 +360,7 @@ CUB = {	#キューバ
 
 DOM = {	#ドミニカ
 	color = rgb { 50 85 130 }
-	color_ui = rgb { 198 169 248 }
+	color_ui = rgb { 50 85 130 }
 }
 
 HAI = {	#ハイチ
@@ -370,17 +370,17 @@ HAI = {	#ハイチ
 
 YEM = {	#イエメン
 	color = rgb { 155 101 107 }
-	color_ui = rgb { 202 131 139 }
+	color_ui = rgb { 155 101 107 }
 }
 
 OMA = {	#オマーン
 	color = rgb { 180 150 120 }
-	color_ui = rgb { 202 131 139 }
+	color_ui = rgb { 180 150 120 }
 }
 
 SLO = {	#スロヴァキア
 	color = rgb { 158 161 188 }
-	color_ui = rgb { 255 255 255 }
+	color_ui = rgb { 158 161 188 }
 }
 
 IND = {	#インド
@@ -389,23 +389,23 @@ IND = {	#インド
 }
 
 CRO = {	#クロアチア
-	color = rgb { 230  70  180 }
-	color_ui = rgb { 230 255 122 }
+	color = rgb { 230 70 180 }
+	color_ui = rgb { 230 70 180 }
 }
 
 GXC = {	#広西
 	color = rgb { 9 171 190 }
-	color_ui = rgb { 71 113 97 }
+	color_ui = rgb { 9 171 190 }
 }
 
 PCH = {	#人民中国
 	color = rgb { 245 12 55 }
-	color_ui = rgb { 178 34 60 }
+	color_ui = rgb { 245 12 55 }
 }
 
 SHX = {	#山西
 	color = rgb { 82 2 15 }
-	color_ui = rgb { 101  30  41 }
+	color_ui = rgb { 82 2 15 }
 }
 
 XSM = {	#馬家
@@ -445,12 +445,12 @@ LBA = {	#リビア
 
 WGR = {	#西ドイツ
     color = rgb { 195 236 230 }
-    color_ui = rgb { 225 255 255 }
+    color_ui = rgb { 195 236 230 }
 }
 
 EGR = {	#東ドイツ
     color = rgb { 120 150 80 }
-    color_ui = rgb { 150 180 120 }
+    color_ui = rgb { 120 150 80 }
 }
 
 PAL = {	#パレスチナ
@@ -475,7 +475,7 @@ CAM = {	#カンボジア
 
 MAL = {	#マレーシア
 	color = rgb { 197 96 100 }
-	color_ui = rgb { 213  169  121 }
+	color_ui = rgb { 197 96 100 }
 }
 
 INS = {	#インドネシア
@@ -505,7 +505,7 @@ ARM = {	#アルメニア
 
 GEO = {	#ジョージア
 	color = rgb { 255 150 150 }
-	color_ui = rgb { 255  204  204 }
+	color_ui = rgb { 255 150 150 }
 }
 
 KAZ = {	#カザフスタン
@@ -634,8 +634,8 @@ QAT = {	#カタール
 }
 
 SCO = {	#スコットランド
-	color = rgb { 232 232 0 }
-	color_ui = rgb { 232 232 0 }
+	color = rgb { 0 101 189 }
+	color_ui = rgb { 0 101 189 }
 }
 
 SRL = {	#スリランカ
@@ -855,7 +855,7 @@ NGR = {	#ニジェール
 
 CSA = {	#
 	color = rgb { 145 163 176  }
-	color_ui = rgb { 186 205 219 }
+	color_ui = rgb { 145 163 176 }
 }
 
 USB = {	#
@@ -949,13 +949,13 @@ NIR = {	#北アイルランド
 }
 
 BAY = {	#バイエルン
-	color = rgb { 233  231  246 }
-	color_ui = rgb { 233  231  246 }
+	color = rgb { 0 152 212 }
+	color_ui = rgb { 0 152 212 }
 }
 
 MEK = {	#メクレンブルク
-	color = rgb { 186 245 86 }
-	color_ui = rgb { 186 245 86 }
+	color = rgb { 252 195 0 }
+	color_ui = rgb { 252 195 0 }
 }
 
 PRE = {	#プロイセン
@@ -964,13 +964,13 @@ PRE = {	#プロイセン
 }
 
 SAX = {	#ザクセン
-	color = rgb { 0 153 0 }
-	color_ui = rgb { 0 153 0 }
+	color = rgb { 22 108 35 }
+	color_ui = rgb { 22 108 35 }
 }
 
 HAN = {	#ハノーファー
-	color = rgb { 255 0 0 }
-	color_ui = rgb { 255 0 0 }
+	color = rgb { 0 0 255 }
+	color_ui = rgb { 0 0 255 }
 }
 
 WUR = {	#ヴュルテンベルク
@@ -1391,7 +1391,7 @@ FFR = {	#自由フランス
 
 VFR = {	#ヴィシー・フランス
 	color = rgb { 80 168 181 }
-	color_ui = rgb {115 185 196 }
+	color_ui = rgb { 80 168 181 }
 }
 
 AFR = {	#アルジェ・フランス
