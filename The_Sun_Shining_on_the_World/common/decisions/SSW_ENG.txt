@@ -108,20 +108,111 @@ ENG_commonwealth = {
 		ai_will_do = { factor = 1 }
 		complete_effect = { 
 			custom_effect_tooltip = commonwealth_Cooperation10
-		}
-		targeted_modifier = { 
 			CAN = { country_event = { id = SSW_ENG.32 } } 
 			AST = { country_event = { id = SSW_ENG.32 } } 
 			NZL = { country_event = { id = SSW_ENG.32 } } 
 			NEL = { country_event = { id = SSW_ENG.32 } } 
 			NFL = { country_event = { id = SSW_ENG.32 } } 
+		if = { limit = {
+		PIN = { is_in_faction_with = ENG } }
+		PIN = { country_event = { id = SSW_ENG.32 } } } 
 		}
 		visible = {
 			always = yes
++			tag = ENG
 		}
 		cost = 75
 	}
-
+	ENG_CAN_destroyer = { 
+		icon = 
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+		custom_effect_tooltip = 
+		    transfer_ship = {
+					prefer_name = HMS Duchess
+			        type = destroyer
+			        target = AST
+			    }
+		}
+	}
+	CW_tank_research = { 
+		icon = generic_tank
+		ai_will_do = { factor = 1 }
+		complete_effect = { 
+			custom_effect_tooltip = commonwealth_Cooperation-30
+				add_tech_bonus = {
+			name = cat_medium_armor
+			bonus = 1.0
+			uses = 1
+		category = cat_medium_armor
+			}			
+		if = { limit = {
+		CAN = { is_in_faction_with = ENG } }
+		CAN = { add_to_variable = { var = commonwealth_Cooperation value = -30 } } 
+		}
+		if = { limit = {
+		AST = { is_in_faction_with = ENG } }
+		AST = { add_to_variable = { var = commonwealth_Cooperation value = -30 } } 
+		}
+		if = { limit = {
+		NZL = { is_in_faction_with = ENG } }
+		NZL = { add_to_variable = { var = commonwealth_Cooperation value = -30 } } 
+		}
+		if = { limit = {
+		NEL = { is_in_faction_with = ENG } }
+		NEL = { add_to_variable = { var = commonwealth_Cooperation value = -30 } } 
+		}
+		if = { limit = {
+		NFL = { is_in_faction_with = ENG } }
+		NFL = { add_to_variable = { var = commonwealth_Cooperation value = -30 } } 
+		}
+		if = { limit = {
+		PIN = { is_in_faction_with = ENG } }
+		PIN = { add_to_variable = { var = commonwealth_Cooperation value = -30 } } 
+			}
+		}
+		days_remove = 365
+		cost = 75
+	}
+CW_industry_research = { 
+		icon = decision_ger_mefo_bills
+		ai_will_do = { factor = 1 }
+		complete_effect = { 
+			custom_effect_tooltip = commonwealth_Cooperation-30
+				add_tech_bonus = {
+			name = industry
+			bonus = 1.0
+			uses = 1
+		category = industry
+			}			
+		if = { limit = {
+		CAN = { is_in_faction_with = ENG } }
+		CAN = { add_to_variable = { var = commonwealth_Cooperation value = -30 } } 
+		}
+		if = { limit = {
+		AST = { is_in_faction_with = ENG } }
+		AST = { add_to_variable = { var = commonwealth_Cooperation value = -30 } } 
+		}
+		if = { limit = {
+		NZL = { is_in_faction_with = ENG } }
+		NZL = { add_to_variable = { var = commonwealth_Cooperation value = -30 } } 
+		}
+		if = { limit = {
+		NEL = { is_in_faction_with = ENG } }
+		NEL = { add_to_variable = { var = commonwealth_Cooperation value = -30 } } 
+		}
+		if = { limit = {
+		NFL = { is_in_faction_with = ENG } }
+		NFL = { add_to_variable = { var = commonwealth_Cooperation value = -30 } } 
+		}
+		if = { limit = {
+		PIN = { is_in_faction_with = ENG } }
+		PIN = { add_to_variable = { var = commonwealth_Cooperation value = -30 } } 
+			}
+		}
+		days_remove = 365
+		cost = 75
+	}
 }
 ENG_CEDC = { 
 	ENG_CAN_economy_avoid = {
