@@ -1,0 +1,7 @@
+spriteTypes = {
+	#Italian Ideas
+    SpriteType = { 
+		name = "GFX_idea_umberto_ii"
+		texturefile = "gfx/interface/ideas/ITA/umberto_ii.tga"
+	}
+}

@@ -4,7 +4,7 @@ set_research_slots = 4
 set_stability = 0.6
 set_war_support = 0.7
 add_ideas = {
-	victor_emmanuel
+	ITA_Umberto_II_king
 	vittoria_mutilata
 	limited_exports
 	limited_conscription

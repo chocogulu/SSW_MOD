@@ -1,5 +1,14 @@
 ideas = {
 	country = {
+		ITA_Umberto_II_king = {
+			picture = umberto_ii
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				political_power_factor = -0.1
+			}
+		}
 		#アウトラーダ
 		outlarda = {
 			allowed = {
