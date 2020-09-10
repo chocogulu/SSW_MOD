@@ -79,10 +79,12 @@ if = {
 	set_cosmetic_tag = CAN_UK
 	add_to_tech_sharing_group = commonwealth_research
 }
+
 set_variable = {
 	var = commonwealth_Cooperation
 	value = 50
 }
+
 set_politics = {
 	ruling_party = social_democracy
 	last_election = "1945.2.14"

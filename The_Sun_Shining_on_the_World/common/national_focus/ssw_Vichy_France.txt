@@ -11,51 +11,47 @@ focus_tree = {
 	focus = {
 		id = VFR_1
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		cost = 10.00
+		cost = 10
 		x = 11
 		y = 0
-			completion_reward = {
-					add_ideas = Review_of_the_French_economy
-				}
-
+		completion_reward = {
+			add_ideas = Review_of_the_French_economy
+		}
 	}
 	focus = {
 		id = VFR_69
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 10
 		x = 21
 		y = 0
-			completion_reward = {
-					army_experience = 25
-				}
-
+		completion_reward = {
+			army_experience = 25
+		}
 	}
 	focus = {
 		id = VFR_79
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 5.00
+		cost = 5
 		x = 30
 		y = 0
-			completion_reward = {
-					add_ideas = French_mediterranean_fleet
-				}
-
+		completion_reward = {
+			add_ideas = French_mediterranean_fleet
+		}
 	}
 	focus = {
 		id = VFR_85
 		icon = GFX_goal_generic_build_airforce
-		cost = 5.00
+		cost = 5
 		x = 36
 		y = 0
-			completion_reward = {
-					air_experience = 30
-				}
-
+		completion_reward = {
+			air_experience = 30
+		}
 	}
 	focus = {
 		id = VFR_2
 		icon = GFX_focus_chi_mission_to_germany
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_1
 		}
@@ -64,58 +60,54 @@ focus_tree = {
 		}
 		x = 9
 		y = 1
-
 	}
 	focus = {
 		id = VFR_3
 		icon = GFX_focus_mex_privatisation
-		cost = 4.00
+		cost = 4
 		prerequisite = {
 			focus = VFR_2
 		}
 		x = 6
 		y = 2
-			completion_reward = {
-					add_ideas = Reichsbank
-				}
-
+		completion_reward = {
+			add_ideas = Reichsbank
+		}
 	}
 	focus = {
 		id = VFR_4
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 4.00
+		cost = 4
 		prerequisite = {
 			focus = VFR_2
 		}
 		x = 8
 		y = 2
-			completion_reward = {
-					diplomatic_relation = {
-							country = GER
-							relation = military_access
-							active = yes
-						}
-				}
-
+		completion_reward = {
+			diplomatic_relation = {
+				country = GER
+				relation = military_access
+				active = yes
+			}
+		}
 	}
 	focus = {
 		id = VFR_6
 		icon = GFX_focus_research2
-		cost = 4.00
+		cost = 4
 		prerequisite = {
 			focus = VFR_2
 		}
 		x = 10
 		y = 2
-			completion_reward = {
-					add_ideas = Technical_agreement
-				}
-
+		completion_reward = {
+			add_ideas = Technical_agreement
+		}
 	}
 	focus = {
 		id = VFR_7
 		icon = GFX_goal_generic_improve_relations
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_4
 			focus = VFR_6
@@ -123,47 +115,44 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
-			completion_reward = {
-					diplomatic_relation = {
-							country = GER
-							relation = non_aggression_pact
-							active = yes
-						}
-				}
-
+		completion_reward = {
+			diplomatic_relation = {
+				country = GER
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
 	}
 	focus = {
 		id = VFR_8
 		icon = GFX_goal_generic_territory_or_war
-		cost = 8.00
+		cost = 8
 		prerequisite = {
 			focus = VFR_7
 		}
 		x = 9
 		y = 4
-			completion_reward = {
-					add_ideas = Slave_to_germany
-				}
-
+		completion_reward = {
+			add_ideas = Slave_to_germany
+		}
 	}
 	focus = {
 		id = VFR_9
 		icon = GFX_focus_ger_reichskommisariats
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_8
 		}
 		x = 9
 		y = 5
-			completion_reward = {
-					add_ideas = France_nazism
-				}
-
+		completion_reward = {
+			add_ideas = France_nazism
+		}
 	}
 	focus = {
 		id = VFR_10
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 4.00
+		cost = 4
 		prerequisite = {
 			focus = VFR_1
 		}
@@ -172,15 +161,14 @@ focus_tree = {
 		}
 		x = 13
 		y = 1
-			completion_reward = {
-					add_ideas = Petan_Law
-				}
-
+		completion_reward = {
+			add_ideas = Petan_Law
+		}
 	}
 	focus = {
 		id = VFR_11
 		icon = GFX_goal_generic_consumer_goods
-		cost = 7.00
+		cost = 7
 		prerequisite = {
 			focus = VFR_10
 		}
@@ -189,24 +177,23 @@ focus_tree = {
 		}
 		x = 12
 		y = 2
-			completion_reward = {
-					add_tech_bonus = {
-							name = assembly_bonus
-							bonus = 1
-							uses = 2
-							technology = improved_machine_tools
-							technology = advanced_machine_tools
-							technology = assembly_line_production
-							technology = flexible_line
-							technology = streamlined_line
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = assembly_bonus
+				bonus = 1
+				uses = 2
+				technology = improved_machine_tools
+				technology = advanced_machine_tools
+				technology = assembly_line_production
+				technology = flexible_line
+				technology = streamlined_line
+			}
+		}
 	}
 	focus = {
 		id = VFR_12
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 7.00
+		cost = 7
 		prerequisite = {
 			focus = VFR_10
 		}
@@ -215,65 +202,61 @@ focus_tree = {
 		}
 		x = 14
 		y = 2
-			completion_reward = {
-					add_tech_bonus = {
-							name = GER_autarky
-							bonus = 1.0
-							uses = 2
-							technology = excavation1
-							technology = excavation2
-							technology = excavation3
-							technology = excavation4
-							technology = excavation5
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_autarky
+				bonus = 1
+				uses = 2
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+		}
 	}
 	focus = {
 		id = VFR_13
 		icon = GFX_focus_research
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_11
 			focus = VFR_12
 		}
 		x = 13
 		y = 3
-			completion_reward = {
-					add_ideas = Technical_agreement
-				}
-
+		completion_reward = {
+			add_ideas = Technical_agreement
+		}
 	}
 	focus = {
 		id = VFR_14
 		icon = GFX_goal_generic_positive_trade_relations
-		cost = 8.00
+		cost = 8
 		prerequisite = {
 			focus = VFR_13
 		}
 		x = 13
 		y = 4
-			completion_reward = {
-					add_ideas = Economic_revolution
-				}
-
+		completion_reward = {
+			add_ideas = Economic_revolution
+		}
 	}
 	focus = {
 		id = VFR_next
 		icon = GFX_focus_generic_treaty
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_9
 			focus = VFR_14
 		}
 		x = 11
 		y = 6
-
 	}
 	focus = {
 		id = VFR_15
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 2.00
+		cost = 2
 		prerequisite = {
 			focus = VFR_next
 		}
@@ -283,65 +266,65 @@ focus_tree = {
 		}
 		x = 4
 		y = 7
+		completion_reward = {
 			create_navy_leader = {
-					name = "François Darlan"
-					desc = ""
-					picture = ""
-					expire = "1965.1.1"
-					ideology = fascism_ideology
-					traits = { indecisive }
+				name = "François Darlan"
+				desc = ""
+				picture = ""
+				# expire = "1965.1.1" このような機能はcreate_navy_leaderに存在しません
+				# ideology = fascism_ideology このような機能はcreate_navy_leaderに存在しません
+				traits = {
+					# indecisive このような特性は存在しません
 				}
-
+			}
+		}
 	}
 	focus = {
 		id = VFR_16
 		icon = GFX_focus_ger_bulwark_against_bolshevism
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_15
 		}
 		x = 3
 		y = 8
-			completion_reward = {
-					add_popularity = {
-							ideology = communism
-							popularity = -1
-						}
-				}
-
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+			}
+		}
 	}
 	focus = {
 		id = VFR_17
 		icon = GFX_focus_chi_mission_to_germany
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_15
 		}
 		x = 5
 		y = 8
-			completion_reward = {
-					add_ideas = CZE_national_fascism_idea
-				}
-
+		completion_reward = {
+			add_ideas = CZE_national_fascism_idea
+		}
 	}
 	focus = {
 		id = VFR_14_2
 		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_13
 		}
 		x = 13
 		y = 5
-			completion_reward = {
-					add_war_support = 0.3
-				}
-
+		completion_reward = {
+			add_war_support = 0.3
+		}
 	}
 	focus = {
 		id = VFR_38
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 2.00
+		cost = 2
 		prerequisite = {
 			focus = VFR_next
 		}
@@ -351,54 +334,50 @@ focus_tree = {
 		}
 		x = 18
 		y = 7
-
 	}
 	focus = {
 		id = VFR_39
 		icon = GFX_goal_generic_dangerous_deal
-		cost = 4.00
+		cost = 4
 		prerequisite = {
 			focus = VFR_38
 		}
 		x = 17
 		y = 8
-			completion_reward = {
-					add_war_support = 0.2
-				}
-
+		completion_reward = {
+			add_war_support = 0.2
+		}
 	}
 	focus = {
 		id = VFR_40
 		icon = GFX_focus_usa_voter_registration_act
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_39
 		}
 		x = 17
 		y = 9
-			completion_reward = {
-					add_stability = 0.4
-				}
-
+		completion_reward = {
+			add_stability = 0.4
+		}
 	}
 	focus = {
 		id = VFR_41
 		icon = GFX_goal_generic_attack_allies
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_40
 		}
 		x = 16
 		y = 10
-			completion_reward = {
-					add_ideas = dictator
-				}
-
+		completion_reward = {
+			add_ideas = dictator
+		}
 	}
 	focus = {
 		id = VFR_70
 		icon = GFX_goal_generic_army_artillery2
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_69
 		}
@@ -408,68 +387,64 @@ focus_tree = {
 		}
 		x = 18
 		y = 1
-			completion_reward = {
-					add_tech_bonus = {
-							name = arty_bonus
-							bonus = 1.0
-							uses = 2
-							category = artillery
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = arty_bonus
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+		}
 	}
 	focus = {
 		id = VFR_71
 		icon = GFX_goal_generic_army_artillery
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_70
 		}
 		x = 18
 		y = 2
-			completion_reward = {
-					add_tech_bonus = {
-							name = RAJ_vickers_berthier_gun
-							bonus = 1.0
-							uses = 1
-							category = infantry_weapons
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = RAJ_vickers_berthier_gun
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
 	}
 	focus = {
 		id = VFR_42
 		icon = GFX_goal_generic_propaganda
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_40
 		}
 		x = 18
 		y = 10
-			completion_reward = {
-					add_ideas = Religious_government
-				}
-
+		completion_reward = {
+			add_ideas = Religious_government
+		}
 	}
 	focus = {
 		id = VFR_43
 		icon = GFX_focus_usa_focus_on_europe
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_41
 			focus = VFR_42
 		}
 		x = 18
 		y = 11
-			completion_reward = {
-					add_political_power = 100
-				}
-
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 	focus = {
 		id = VFR_44
 		icon = GFX_focus_intervention_spain_republic
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_43
 		}
@@ -478,18 +453,17 @@ focus_tree = {
 		}
 		x = 15
 		y = 12
-			completion_reward = {
-					add_opinion_modifier = {
-							target = SPR
-							modifier = medium_increase
-						}
-				}
-
+		completion_reward = {
+			add_opinion_modifier = {
+				target = SPR
+				modifier = medium_increase
+			}
+		}
 	}
 	focus = {
 		id = VFR_45
 		icon = GFX_focus_befriend_italy
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_43
 		}
@@ -498,44 +472,41 @@ focus_tree = {
 		}
 		x = 21
 		y = 12
-			completion_reward = {
-					add_opinion_modifier = {
-							target = ITA
-							modifier = medium_increase
-						}
-				}
-
+		completion_reward = {
+			add_opinion_modifier = {
+				target = ITA
+				modifier = medium_increase
+			}
+		}
 	}
 	focus = {
 		id = VFR_46
 		icon = GFX_goal_anschluss
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_44
 			focus = VFR_45
 		}
 		x = 18
 		y = 13
-
 	}
 	focus = {
 		id = VFR_93
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_38
 		}
 		x = 20
 		y = 8
-			completion_reward = {
-					add_ideas = SPR_the_threats_abound_1
-				}
-
+		completion_reward = {
+			add_ideas = SPR_the_threats_abound_1
+		}
 	}
 	focus = {
 		id = VFR_47
 		icon = GFX_goal_generic_improve_relations
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_45
 		}
@@ -547,15 +518,14 @@ focus_tree = {
 		}
 		x = 20
 		y = 14
-			completion_reward = {
-					create_faction = Magenta_alliance
-				}
-
+		completion_reward = {
+			create_faction = Magenta_alliance
+		}
 	}
 	focus = {
 		id = VFR_72
 		icon = GFX_goal_generic_army_tanks
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_69
 		}
@@ -565,39 +535,37 @@ focus_tree = {
 		}
 		x = 21
 		y = 1
-			completion_reward = {
-					add_tech_bonus = {
-							name = armor_bonus
-							bonus = 1.0
-							uses = 1
-							category = motorized_equipment
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
+		}
 	}
 	focus = {
 		id = VFR_73
 		icon = GFX_focus_generic_tank_production
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_72
 		}
 		x = 21
 		y = 2
-			completion_reward = {
-					add_tech_bonus = {
-							name = armor_bonus
-							bonus = 1.0
-							uses = 2
-							category = armor
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1
+				uses = 2
+				category = armor
+			}
+		}
 	}
 	focus = {
 		id = VFR_74
 		icon = GFX_goal_rhineland
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_69
 		}
@@ -607,55 +575,52 @@ focus_tree = {
 		}
 		x = 24
 		y = 1
-			completion_reward = {
-					add_tech_bonus = {
-							name = land_doc_bonus
-							bonus = 1.0
-							uses = 2
-							category = land_doctrine
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
+		}
 	}
 	focus = {
 		id = VFR_80
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_79
 		}
 		x = 30
 		y = 1
-			completion_reward = {
-					add_ideas = Expansion_of_shipyards
-				}
-
+		completion_reward = {
+			add_ideas = Expansion_of_shipyards
+		}
 	}
 	focus = {
 		id = VFR_81
 		icon = GFX_goal_generic_navy_cruiser
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_80
 		}
 		x = 30
 		y = 2
-			completion_reward = {
-					navy_experience = 25
-					add_tech_bonus = {
-							name = cr_bonus
-							bonus = 1.0
-							uses = 2
-							category = cl_tech
-							category = ca_tech
-						}
-				}
-
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1
+				uses = 2
+				category = cl_tech
+				category = ca_tech
+			}
+		}
 	}
 	focus = {
 		id = VFR_82
 		icon = GFX_goal_generic_navy_battleship
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_81
 		}
@@ -664,61 +629,58 @@ focus_tree = {
 		}
 		x = 28
 		y = 3
-			completion_reward = {
-					navy_experience = 25
-					add_tech_bonus = {
-							name = bb_bonus
-							bonus = 1.0
-							uses = 2
-							category = bb_tech
-							category = bc_tech
-						}
-				}
-
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = bb_bonus
+				bonus = 1
+				uses = 2
+				category = bb_tech
+				category = bc_tech
+			}
+		}
 	}
 	focus = {
 		id = VFR_86
 		icon = GFX_goal_generic_CAS
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_85
 		}
 		x = 34
 		y = 1
-			completion_reward = {
-					add_tech_bonus = {
-							name = JAP_bomber_modernization
-							bonus = 1.0
-							uses = 1
-							category = cas_bomber
-							category = tactical_bomber
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_bomber_modernization
+				bonus = 1
+				uses = 1
+				category = cas_bomber
+				category = tactical_bomber
+			}
+		}
 	}
 	focus = {
 		id = VFR_87
 		icon = GFX_goal_generic_air_naval_bomber
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_86
 		}
 		x = 33
 		y = 2
-			completion_reward = {
-					add_tech_bonus = {
-							name = JAP_carrier_warfare_experiments
-							bonus = 1.00
-							uses = 2
-							category = cat_base_strike
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_carrier_warfare_experiments
+				bonus = 1
+				uses = 2
+				category = cat_base_strike
+			}
+		}
 	}
 	focus = {
 		id = VFR_83
 		icon = GFX_goal_generic_navy_carrier
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_81
 		}
@@ -730,95 +692,90 @@ focus_tree = {
 		}
 		x = 32
 		y = 3
-			completion_reward = {
-					add_tech_bonus = {
-							name = cv_bonus
-							bonus = 1.0
-							uses = 2
-							category = cv_tech
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = cv_bonus
+				bonus = 1
+				uses = 2
+				category = cv_tech
+			}
+		}
 	}
 	focus = {
 		id = VFR_84
 		icon = GFX_focus_generic_cruiser2
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_82
 			focus = VFR_83
 		}
 		x = 30
 		y = 4
-			completion_reward = {
-					add_ideas = Beyond_the_Atlantic
-				}
-
+		completion_reward = {
+			add_ideas = Beyond_the_Atlantic
+		}
 	}
 	focus = {
 		id = VFR_88
 		icon = GFX_goal_generic_air_bomber
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_86
 		}
 		x = 34
 		y = 4
-			completion_reward = {
-					add_tech_bonus = {
-							name = JAP_strategic_bomber_effort
-							bonus = 1.0
-							uses = 2
-							category = cat_strategic_bomber
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_strategic_bomber_effort
+				bonus = 1
+				uses = 2
+				category = cat_strategic_bomber
+			}
+		}
 	}
 	focus = {
 		id = VFR_94
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_93
 		}
 		x = 19
 		y = 9
-			completion_reward = {
-					add_tech_bonus = {
-							name = SPA_doctrinal_advancements
-							bonus = 1.0
-							uses = 1
-							category = land_doctrine
-						}
-					swap_ideas = {
-							remove_idea = SPR_the_threats_abound_2
-							add_idea = SPR_the_threats_abound_3
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_doctrinal_advancements
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+			swap_ideas = {
+				remove_idea = SPR_the_threats_abound_2
+				add_idea = SPR_the_threats_abound_3
+			}
+		}
 	}
 	focus = {
 		id = VFR_95
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_93
 		}
 		x = 21
 		y = 9
-			completion_reward = {
-					add_ideas = SPR_torchbearers_of_tomorrow
-					swap_ideas = {
-							remove_idea = SPR_the_threats_abound_1
-							add_idea = SPR_the_threats_abound_2
-						}
-				}
-
+		completion_reward = {
+			add_ideas = SPR_torchbearers_of_tomorrow
+			swap_ideas = {
+				remove_idea = SPR_the_threats_abound_1
+				add_idea = SPR_the_threats_abound_2
+			}
+		}
 	}
 	focus = {
 		id = VFR_48
 		icon = GFX_focus_generic_treaty
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_45
 		}
@@ -827,15 +784,14 @@ focus_tree = {
 		}
 		x = 23
 		y = 14
-			completion_reward = {
-					transfer_state = 745
-				}
-
+		completion_reward = {
+			transfer_state = 745
+		}
 	}
 	focus = {
 		id = VFR_49
 		icon = GFX_focus_fra_le_deluge
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_48
 		}
@@ -844,35 +800,35 @@ focus_tree = {
 		}
 		x = 21
 		y = 15
-			completion_reward = {
-					add_ideas = { FRA_la_deluge }
-				}
-
+		completion_reward = {
+			add_ideas = {
+				FRA_la_deluge
+			}
+		}
 	}
 	focus = {
 		id = VFR_75
 		icon = GFX_goal_generic_small_arms
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_74
 		}
 		x = 24
 		y = 1
-			completion_reward = {
-					add_tech_bonus = {
-							name = CZE_inf_and_artillery_advancement
-							bonus = 1.0
-							ahead_reduction = 2
-							uses = 2
-							category = infantry_weapons
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = CZE_inf_and_artillery_advancement
+				bonus = 1
+				ahead_reduction = 2
+				uses = 2
+				category = infantry_weapons
+			}
+		}
 	}
 	focus = {
 		id = VFR_76
 		icon = GFX_goal_generic_axis_build_infantry
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_73
 			focus = VFR_75
@@ -880,103 +836,96 @@ focus_tree = {
 		}
 		x = 21
 		y = 3
-			completion_reward = {
-					army_experience = 35
-					add_ideas = Military_reform
-				}
-
+		completion_reward = {
+			army_experience = 35
+			add_ideas = Military_reform
+		}
 	}
 	focus = {
 		id = VFR_78
 		icon = GFX_focus_up_joan_of_arc
-		cost = 20.00
+		cost = 20
 		prerequisite = {
 			focus = VFR_76
 		}
 		x = 19
 		y = 4
-			completion_reward = {
-					add_ideas = Seeking_freedom
-				}
-
+		completion_reward = {
+			add_ideas = Seeking_freedom
+		}
 	}
 	focus = {
 		id = VFR_77
 		icon = GFX_focus_focus_fra_revolution_upmost
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_76
 		}
 		x = 23
 		y = 4
-			completion_reward = {
-					add_ideas = Determination
-				}
-
+		completion_reward = {
+			add_ideas = Determination
+		}
 	}
 	focus = {
 		id = VFR_18
 		icon = GFX_goal_support_fascism
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_17
 			focus = VFR_16
 		}
 		x = 4
 		y = 9
-			completion_reward = {
-					add_popularity = {
-							ideology = Nazism
-							popularity = 0.3
-						}
-				}
-
+		completion_reward = {
+			add_popularity = {
+				ideology = Nazism
+				popularity = 0.3
+			}
+		}
 	}
 	focus = {
 		id = VFR_19
 		icon = GFX_goal_generic_improve_relations
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_18
 		}
 		x = 3
 		y = 10
-
 	}
 	focus = {
 		id = VFR_20
 		icon = GFX_goal_generic_territory_or_war
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_19
 		}
 		x = 2
 		y = 11
-			available = {
-					VFR = {
-							has_global_flag = GER_civil_war
-						}
-				}
-
+		available = {
+			VFR = {
+				has_global_flag = GER_civil_war
+			}
+		}
 	}
 	focus = {
 		id = VFR_21
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_19
 		}
 		x = 4
 		y = 11
-			completion_reward = {
-					add_political_power = 100
-				}
-
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 	focus = {
 		id = VFR_23
 		icon = GFX_focus_renounce_the_treaty_of_triannon
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_21
 		}
@@ -985,83 +934,75 @@ focus_tree = {
 		}
 		x = 4
 		y = 12
-			completion_reward = {
-					news_event = {
-
-}
-				}
-
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = VFR_25
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_18
 		}
 		x = 7
 		y = 10
-			completion_reward = {
-					add_ideas = SPA_mandatory_pre_military_training_1
-				}
-
+		completion_reward = {
+			add_ideas = SPA_mandatory_pre_military_training_1
+		}
 	}
 	focus = {
 		id = VFR_26
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_25
 		}
 		x = 6
 		y = 11
-			completion_reward = {
-					add_war_support = 0.1
-					swap_ideas = {
-							remove_idea = SPA_mandatory_pre_military_training_1
-							add_idea = SPA_mandatory_pre_military_training_2
-						}
-				}
-
+		completion_reward = {
+			add_war_support = 0.1
+			swap_ideas = {
+				remove_idea = SPA_mandatory_pre_military_training_1
+				add_idea = SPA_mandatory_pre_military_training_2
+			}
+		}
 	}
 	focus = {
 		id = VFR_28
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_25
 		}
 		x = 7
 		y = 12
-			completion_reward = {
-					add_ideas = SPR_professional_military_1
-				}
-
+		completion_reward = {
+			add_ideas = SPR_professional_military_1
+		}
 	}
 	focus = {
 		id = VFR_27
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_25
 		}
 		x = 8
 		y = 11
-			completion_reward = {
-					army_experience = 15
-					add_tech_bonus = {
-							name = SPR_engineering_advances
-							bonus = 1
-							uses = 2
-							category = land_doctrine
-						}
-				}
-
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = SPR_engineering_advances
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
+		}
 	}
 	focus = {
 		id = VFR_29
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 2.00
+		cost = 2
 		prerequisite = {
 			focus = VFR_next
 		}
@@ -1071,66 +1012,64 @@ focus_tree = {
 		}
 		x = 11
 		y = 7
-			completion_reward = {
-					add_stability = -0.05
-					create_country_leader = {
-							name = "Jacques Doriot"
-							desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-							picture = GFX_portrait_fra_jacques_doriot
-							expire = "1965.1.1"
-							ideology = nazism
-							traits = { eager_collaborator }
-						}
+		completion_reward = {
+			add_stability = -0.05
+			create_country_leader = {
+				name = "Jacques Doriot"
+				desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+				picture = GFX_portrait_fra_jacques_doriot
+				expire = "1965.1.1"
+				ideology = nazism_ideology
+				traits = {
+					eager_collaborator
 				}
-
+			}
+		}
 	}
 	focus = {
 		id = VFR_30
 		icon = GFX_goal_generic_war_with_comintern
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_29
 		}
 		x = 11
 		y = 8
-			completion_reward = {
-					add_ideas = French_Peoples_Front
-				}
-
+		completion_reward = {
+			add_ideas = French_Peoples_Front
+		}
 	}
 	focus = {
 		id = VFR_31
 		icon = GFX_goal_generic_military_deal
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_30
 		}
 		x = 9
 		y = 9
-			completion_reward = {
-					add_ideas = Integrated_french_government
-				}
-
+		completion_reward = {
+			add_ideas = Integrated_french_government
+		}
 	}
 	focus = {
 		id = VFR_32
 		icon = GFX_focus_spr_crush_the_revolution
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_30
 		}
 		x = 11
 		y = 9
-			completion_reward = {
-					add_manpower = -10000
-					add_stability = 0.1
-				}
-
+		completion_reward = {
+			add_manpower = -10000
+			add_stability = 0.1
+		}
 	}
 	focus = {
 		id = VFR_33
 		icon = GFX_goal_generic_improve_relations
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_32
 		}
@@ -1139,17 +1078,16 @@ focus_tree = {
 		}
 		x = 11
 		y = 10
-			completion_reward = {
-					add_political_power = -100
-					add_stability = -0.1
-					add_war_support = 0.1
-				}
-
+		completion_reward = {
+			add_political_power = -100
+			add_stability = -0.1
+			add_war_support = 0.1
+		}
 	}
 	focus = {
 		id = VFR_34
 		icon = GFX_focus_renounce_the_treaty_of_triannon
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_33
 		}
@@ -1158,15 +1096,14 @@ focus_tree = {
 		}
 		x = 10
 		y = 11
-			completion_reward = {
-					remove_ideas = Petain_Law
-				}
-
+		completion_reward = {
+			# remove_ideas = Petain_Law このようなアイデアは存在しません
+		}
 	}
 	focus = {
 		id = VFR_35
 		icon = GFX_focus_generic_treaty
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_33
 		}
@@ -1175,30 +1112,28 @@ focus_tree = {
 		}
 		x = 12
 		y = 11
-			completion_reward = {
-					remove_ideas = Petain_Law
-					add_ideas = Amended_Petan_Law
-				}
-
+		completion_reward = {
+			# remove_ideas = Petain_Law このようなアイデアは存在しません
+			add_ideas = Amended_Petan_Law
+		}
 	}
 	focus = {
 		id = VFR_36
 		icon = GFX_focus_fra_devalue_the_franc
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_35
 		}
 		x = 12
 		y = 12
-			completion_reward = {
-					add_idea = Devaluation_of_interest
-				}
-
+		completion_reward = {
+			add_ideas = Devaluation_of_interest
+		}
 	}
 	focus = {
 		id = VFR_37
 		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_34
 		}
@@ -1207,84 +1142,80 @@ focus_tree = {
 		}
 		x = 11
 		y = 13
-			completion_reward = {
-					add_stability = 0.3
-					add_named_threat = {
-							Threat = 10
-						}
-				}
-
+		completion_reward = {
+			add_stability = 0.3
+			add_named_threat = {
+				name = "驚異的な胸囲"				#修正して下さい
+				Threat = 10
+			}
+		}
 	}
 	focus = {
 		id = VFR_91
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_30
 		}
 		x = 13
 		y = 9
-			completion_reward = {
-					add_ideas = SPR_provide_for_the_people
-				}
-
+		completion_reward = {
+			add_ideas = SPR_provide_for_the_people
+		}
 	}
 	focus = {
 		id = VFR_92
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_91
 		}
 		x = 13
 		y = 10
-			completion_reward = {
-					add_ideas = SPR_wealth_redistribution
-				}
-
+		completion_reward = {
+			add_ideas = SPR_wealth_redistribution
+		}
 	}
 	focus = {
 		id = VFR_89
 		icon = GFX_goal_generic_air_fighter
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_85
 		}
 		x = 38
 		y = 1
-			completion_reward = {
-					add_tech_bonus = {
-							name = light_air
-							bonus = 1.0
-							uses = 1
-							category = light_fighter
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = light_air
+				bonus = 1
+				uses = 1
+				category = light_fighter
+			}
+		}
 	}
 	focus = {
 		id = VFR_90
 		icon = GFX_goal_generic_air_fighter2
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_89
 		}
 		x = 38
 		y = 4
-			completion_reward = {
-					add_tech_bonus = {
-							name = fighter_modernization
-							bonus = 1.0
-							uses = 1
-							category = cat_heavy_fighter
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_modernization
+				bonus = 1
+				uses = 1
+				category = cat_heavy_fighter
+			}
+		}
 	}
 	focus = {
 		id = VFR_22
 		icon = GFX_focus_chi_reach_out_to_france
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_21
 		}
@@ -1293,17 +1224,13 @@ focus_tree = {
 		}
 		x = 2
 		y = 12
-			completion_reward = {
-					news_event = {
-
-}
-				}
-
+		completion_reward = {
+		}
 	}
 	focus = {
 		id = VFR_51
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_46
 			focus = VFR_37
@@ -1311,32 +1238,30 @@ focus_tree = {
 		}
 		x = 14
 		y = 14
-
 	}
 	focus = {
 		id = VFR_24
 		icon = GFX_focus_SAF_colonialist_crusade
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_23
 			focus = VFR_22
 		}
 		x = 3
 		y = 13
-			completion_reward = {
-					GER = {
-							add_opinion_modifier = {
-									target = FRA
-									modifier = HOL_germany_is_the_greater_threat
-								}
-						}
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = HOL_germany_is_the_greater_threat
 				}
-
+			}
+		}
 	}
 	focus = {
 		id = VFR_50
 		icon = GFX_goal_generic_construct_military
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_37
 			focus = VFR_24
@@ -1344,12 +1269,11 @@ focus_tree = {
 		}
 		x = 8
 		y = 14
-
 	}
 	focus = {
 		id = VFR_52
 		icon = GFX_VFR_icon_1
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_51
 		}
@@ -1358,187 +1282,204 @@ focus_tree = {
 		}
 		x = 11
 		y = 15
-			completion_reward = {
-					set_capital = 11506
-				}
-
+		completion_reward = {
+			# set_capital = 11506 ステートIDに対して設定して下さい
+		}
 	}
 	focus = {
 		id = VFR_53
 		icon = GFX_goal_generic_major_war
-		cost = 4.00
+		cost = 4
 		prerequisite = {
 			focus = VFR_52
 		}
 		x = 9
 		y = 16
-			completion_reward = {
-					if = {
-							limit = {
-									country_exists = BEL
-									NOT = {
-											BEL = {
-													is_in_faction_with = GER
-												}
-										}
-									NOT = {
-											has_war_with = BEL
-										}
-								}
-							create_wargoal = {
-									type = take_state_focus
-									target = BEL
-									expire = 0
-									generator = { 6 }
-								}
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = BEL
+					NOT = {
+						BEL = {
+							is_in_faction_with = GER
 						}
-					if = {
-							limit = {
-									country_exists = HOL
-									NOT = {
-											HOL = {
-													is_in_faction_with = GER
-												}
-										}
-									NOT = {
-											has_war_with = HOL
-										}
-									NOT = {
-											HOL = {
-													has_completed_focus = HOL_cave_to_the_germans
-												}
-										}
-								}
-							create_wargoal = {
-									type = take_state_focus
-									target = HOL
-									expire = 0
-									generator = { 7 }
-								}
-						}
-					if = {
-							limit = {
-									country_exists = HOL
-									NOT = {
-											HOL = {
-													is_in_faction_with = GER
-												}
-										}
-									NOT = {
-											has_war_with = HOL
-										}
-									HOL = {
-											has_completed_focus = HOL_cave_to_the_germans
-										}
-									NOT = {
-											HOL = {
-													has_completed_focus = HOL_the_netherlands_first
-												}
-										}
-								}
-							HOL = {
-									country_event = {
-											id = mtg_germany.1
-											hours = 6
-										}
-								}
-						}
-					if = {
-							limit = {
-									country_exists = LUX
-									NOT = {
-											LUX = {
-													is_in_faction_with = GER
-												}
-										}
-									NOT = {
-											has_war_with = LUX
-										}
-								}
-							create_wargoal = {
-									type = take_state_focus
-									target = LUX
-									expire = 0
-									generator = { 8 }
-								}
-						}
-					hidden_effect = {
-							news_event = {
-									hours = 6
-									id = news.234
-								}
-						}
+					}
+					NOT = {
+						has_war_with = BEL
+					}
 				}
-
+				create_wargoal = {
+					type = take_state_focus
+					target = BEL
+					expire = 0
+					generator = {
+						6
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = HOL
+					NOT = {
+						HOL = {
+							is_in_faction_with = GER
+						}
+					}
+					NOT = {
+						has_war_with = HOL
+					}
+					NOT = {
+						HOL = {
+							# has_completed_focus = HOL_cave_to_the_germans このようなフォーカスIDは存在しません
+						}
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = HOL
+					expire = 0
+					generator = {
+						7
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = HOL
+					NOT = {
+						HOL = {
+							is_in_faction_with = GER
+						}
+					}
+					NOT = {
+						has_war_with = HOL
+					}
+					HOL = {
+						# has_completed_focus = HOL_cave_to_the_germans このようなフォーカスIDは存在しません
+					}
+					NOT = {
+						HOL = {
+							# has_completed_focus = HOL_the_netherlands_first このようなフォーカスIDは存在しません
+						}
+					}
+				}
+				HOL = {
+					# country_event = {
+					# 	id = mtg_germany.1 このようなイベントは存在しません
+					# 	hours = 6
+					# }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = LUX
+					NOT = {
+						LUX = {
+							is_in_faction_with = GER
+						}
+					}
+					NOT = {
+						has_war_with = LUX
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = LUX
+					expire = 0
+					generator = {
+						8
+					}
+				}
+			}
+			hidden_effect = {
+				# news_event = {
+				# 	hours = 6
+				# 	id = news.234 このようなイベントは存在しません
+				# }
+			}
+		}
 	}
 	focus = {
 		id = VFR_54
 		icon = GFX_focus_attack_germany
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = VFR_52
 		}
 		x = 13
 		y = 16
-			completion_reward = {
-					create_wargoal = {
-							target = ger
-							type = take_state_focus
-							expire = 0
-							generator = { 1  735  458 }
-						}
+		completion_reward = {
+			create_wargoal = {
+				target = ger
+				type = take_state_focus
+				expire = 0
+				generator = {
+					1
+					735
+					458
 				}
-
+			}
+		}
 	}
 	focus = {
 		id = VFR_55
 		icon = GFX_goal_generic_position_armies
-		cost = 4.00
+		cost = 4
 		prerequisite = {
 			focus = VFR_54
 			focus = VFR_53
 		}
 		x = 11
 		y = 17
-			completion_reward = {
-					state_core = 28
-					state_core = 6583
-					state_core = 4
-					state_core = 6
-					state_core = 29
-				}
-
+		completion_reward = {
+			add_state_core = 28
+			# add_state_core = 6583 ステートIDを指定してください
+			add_state_core = 4
+			add_state_core = 6
+			add_state_core = 29
+		}
 	}
 	focus = {
 		id = VFR_56
 		icon = GFX_VFR_icon_1
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = VFR_55
 		}
 		x = 11
 		y = 18
-			completion_reward = {
-					create_wargoal = {
-							target = ITA
-							type = take_state_focus
-							expire = 0
-							generator = { 1  735  458 }
-						}
-					create_wargoal = {
-							target = JAP
-							type = take_state_focus
-							expire = 0
-							generator = { 1  735  458 }
-						}
-					create_wargoal = {
-							target = ENG
-							type = take_state_focus
-							expire = 0
-							generator = { 1  735  458 }
-						}
+		completion_reward = {
+			create_wargoal = {
+				target = ITA
+				type = take_state_focus
+				expire = 0
+				generator = {
+					1
+					735
+					458
 				}
-
+			}
+			create_wargoal = {
+				target = JAP
+				type = take_state_focus
+				expire = 0
+				generator = {
+					1
+					735
+					458
+				}
+			}
+			create_wargoal = {
+				target = ENG
+				type = take_state_focus
+				expire = 0
+				generator = {
+					1
+					735
+					458
+				}
+			}
+		}
 	}
 	continuous_focus_position = {
 		x = 10
