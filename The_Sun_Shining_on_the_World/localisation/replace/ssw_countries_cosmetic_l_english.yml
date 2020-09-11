@@ -8,9 +8,9 @@
  SOV_provisional_ADJ:0 "ソビエト"
  
 #共同管理国家
- CLC_JAPandCHI:0 "日本・中国共同管理特別地区"
- CLC_JAPandCHI_DEF:0 "日本・中国共同管理特別地区"
- CLC_JAPandCHI_ADJ:0 "日中共同管理区"
+ CLC_JAPandCHI:0 "日本沿岸租借地"
+ CLC_JAPandCHI_DEF:0 "日本沿岸租借地"
+ CLC_JAPandCHI_ADJ:0 "沿岸租借地"
  SUD_ITAandEGY:0 "イタリア・エジプト領スーダン"
  SUD_ITAandEGY_DEF:0 "イタリア・エジプト領スーダン"
  SUD_ITAandEGY_ADJ:0 "伊埃領スーダン"
@@ -138,9 +138,11 @@
  TUN_ITA:0 "イタリア領チュニジア"
  TUN_ITA_DEF:0 "イタリア領チュニジア"
  TUN_ITA_ADJ:0 "伊領チュニジア"
- MOR_ITA:0 "イタリア保護領モロッコ"
- MOR_ITA_DEF:0 "イタリア保護領モロッコ"
- MOR_ITA_ADJ:0 "伊領モロッコ"
+ MOR_AFR:0 "フランス保護領モロッコ王国"
+ MOR_AFR_DEF:0 "フランス保護領モロッコ王国"
+ MOR_AFR_ADJ:0 "仏領モロッコ王国"
+
+
 
 #英連邦王国
  CAN_UK:0 "カナダ連邦"
