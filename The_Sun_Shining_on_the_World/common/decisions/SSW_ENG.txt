@@ -69,11 +69,11 @@ ENG_Four_eyes = {
 		days_remove = 70
 		targeted_modifier = {
 			tag = ENG
-			add_ideas = ENG_idea_5
 			intel_network_gain_factor = 0.2	
 			intel_from_operatives_factor = 0.3
 		}
-			modifier = { civilian_factory_use = 5 }	
+			modifier = { civilian_factory_use = 5 
+				}	
 	}
 
 	ENG_Intelligence_defence = {
@@ -113,9 +113,10 @@ ENG_commonwealth = {
 			NZL = { country_event = { id = SSW_ENG.32 } } 
 			NEL = { country_event = { id = SSW_ENG.32 } } 
 			NFL = { country_event = { id = SSW_ENG.32 } } 
-		if = { limit = {
-		PIN = { is_in_faction_with = ENG } }
-		PIN = { country_event = { id = SSW_ENG.32 } } } 
+		if = { 
+			limit = {
+				PIN = { is_in_faction_with = ENG } }
+				PIN = { country_event = { id = SSW_ENG.32 } } } 
 		}
 		visible = {
 			always = yes
@@ -129,7 +130,7 @@ ENG_commonwealth = {
 		complete_effect = {
 		custom_effect_tooltip = 
 		    transfer_ship = {
-					prefer_name = HMS Duchess
+					prefer_name = HMSあいうえお
 			        type = destroyer
 			        target = AST
 			    }
