@@ -1,27 +1,24 @@
-state = {
-	id = 437
-	name = "STATE_437"
-	history = {
+
+state={
+	id=437
+	name="STATE_437"
+
+	history={
 		owner = PIN
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
+
 		}
 		add_core_of = NIN
 		add_core_of = PIN
+
 	}
-	provinces = {
-		2092
-		2105
-		4106
-		7205
-		8076
-		10816
-		11993
-		11995
-		12080
+
+	provinces={
+		2092 2092 2105 4106 7205 8076 10816 11993 11995 12080 
 	}
-	manpower = 9002500
-	buildings_max_level_factor = 1
-	state_category = rural
+	manpower=9002500
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

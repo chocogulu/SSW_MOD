@@ -1,11 +1,12 @@
 state = {
 	id = 861
 	name = "STATE_861"
-	provinces = {
+	provinces={
+		 7387 7371
 	}
 	state_category = town
 	manpower = 49000
-	history = {
+	history={
 		owner = BRN
 		add_core_of = BRN
 		buildings = {
@@ -14,8 +15,7 @@ state = {
 			}
 		}
 		victory_points = {
-			7371
-			1
+			7371 1
 		}
 	}
 }

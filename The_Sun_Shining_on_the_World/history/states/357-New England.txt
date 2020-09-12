@@ -1,10 +1,12 @@
-state = {
-	id = 357
-	name = "STATE_357"
-	resources = {
-		steel = 25
+
+state={
+	id=357
+	name="STATE_357"
+	resources={
+		steel=25.000
 	}
-	history = {
+
+	history={
 		owner = NEL
 		buildings = {
 			infrastructure = 7
@@ -14,49 +16,31 @@ state = {
 			air_base = 10
 			6732 = {
 				naval_base = 8
+
 			}
 			9832 = {
 				naval_base = 3
+
 			}
+
 		}
 		add_core_of = NEL
 		victory_points = {
-			6732
-			20
+			6732 20 
 		}
 		victory_points = {
-			12459
-			1
+			12459 1 
 		}
 		victory_points = {
-			9832
-			1
+			9832 1 
 		}
+
 	}
-	provinces = {
-		715
-		718
-		733
-		905
-		908
-		3710
-		3712
-		3715
-		3732
-		3906
-		4445
-		6732
-		6909
-		7629
-		9675
-		9832
-		9847
-		9850
-		10481
-		11830
-		13158
+
+	provinces={
+		715 718 733 905 908 3710 3712 3715 3732 3732 3906 4445 6732 6909 7629 9675 9832 9847 9850 10481 11830 13158 
 	}
-	manpower = 10204713
-	buildings_max_level_factor = 1
-	state_category = metropolis
+	manpower=10204713
+	buildings_max_level_factor=1.000
+	state_category=metropolis
 }

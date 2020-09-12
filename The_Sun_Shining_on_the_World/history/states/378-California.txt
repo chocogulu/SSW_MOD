@@ -1,11 +1,13 @@
-state = {
-	id = 378
-	name = "STATE_378"
-	resources = {
-		oil = 180
-		aluminium = 8
+
+state={
+	id=378
+	name="STATE_378"
+	resources={
+		oil=180.000
+		aluminium=8.000
 	}
-	history = {
+
+	history={
 		owner = ALF
 		buildings = {
 			infrastructure = 6
@@ -15,57 +17,49 @@ state = {
 			air_base = 10
 			1562 = {
 				naval_base = 10
+
 			}
 			9671 = {
 				naval_base = 4
+
 			}
 			9814 = {
 				naval_base = 5
+
 			}
 			610 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = ALF
 		victory_points = {
-			9814
-			30
+			9814 30 
 		}
 		victory_points = {
-			1562
-			15
+			1562 15 
 		}
 		victory_points = {
-			9671
-			25
+			9671 25 
 		}
 		victory_points = {
-			9713
-			15
+			9713 15 
 		}
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 7
+
 			}
+
 		}
+
 	}
-	provinces = {
-		823
-		1562
-		1651
-		4657
-		4727
-		7517
-		7986
-		9855
-		10387
-		10483
-		11757
-		11795
-		12303
-		12374
+
+	provinces={
+		823 1562 1651 4657 4727 7517 7986 9671 9814 9855 9855 10387 10483 11757 11795 12303 12374 
 	}
-	manpower = 5777248
-	buildings_max_level_factor = 1
-	state_category = metropolis
+	manpower=5777248
+	buildings_max_level_factor=1.000
+	state_category=metropolis
 }

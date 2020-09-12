@@ -1,26 +1,28 @@
-state = {
-	id = 322
-	name = "STATE_322"
-	resources = {
-		tungsten = 2
+
+state={
+	id=322
+	name="STATE_322"
+	resources={
+		tungsten=2.000
 	}
-	history = {
+
+	history={
 		owner = TIB
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
+
 		}
 		add_core_of = TIB
 		add_core_of = RCH
 		add_core_of = CHI
+
 	}
-	provinces = {
-		2010
-		2093
-		5011
-		8068
+
+	provinces={
+		2010 2093 2093 5011 7926 8068 
 	}
-	manpower = 2022000
-	buildings_max_level_factor = 1
-	state_category = pastoral
+	manpower=2022000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
 }
