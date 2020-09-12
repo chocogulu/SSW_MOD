@@ -1,12 +1,11 @@
-state={
-	id=896
-	name="STATE_896"
-	provinces={
-		9671 
+state = {
+	id = 896
+	name = "STATE_896"
+	provinces = {
 	}
-		state_category = megalopolis
-	manpower=230000
-	history={
+	state_category = megalopolis
+	manpower = 230000
+	history = {
 		owner = ALF
 		buildings = {
 			infrastructure = 8
@@ -18,9 +17,10 @@ state={
 			}
 		}
 		victory_points = {
-			9671 25
+			9671
+			25
 		}
 		add_core_of = ALF
 	}
-	buildings_max_level_factor=1.000
+	buildings_max_level_factor = 1
 }

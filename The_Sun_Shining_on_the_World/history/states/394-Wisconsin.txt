@@ -1,29 +1,35 @@
-
-state={
-	id=394
-	name="STATE_394"
-	resources={
-		steel=53.000
+state = {
+	id = 394
+	name = "STATE_394"
+	resources = {
+		steel = 53
 	}
-
-	history={
+	history = {
 		owner = UTC
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
-
 		}
 		add_core_of = UTC
 		victory_points = {
-			12357 5 
+			12357
+			5
 		}
-
 	}
-
-	provinces={
-		703 926 1560 1760 1760 4166 4738 4834 9657 10341 12357 12456 
+	provinces = {
+		703
+		926
+		1560
+		1760
+		4166
+		4738
+		4834
+		9657
+		10341
+		12357
+		12456
 	}
-	manpower=3039004
-	buildings_max_level_factor=1.000
-	state_category=city
+	manpower = 3039004
+	buildings_max_level_factor = 1
+	state_category = city
 }

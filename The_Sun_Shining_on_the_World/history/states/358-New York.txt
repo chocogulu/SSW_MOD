@@ -1,12 +1,10 @@
-
-state={
-	id=358
-	name="STATE_358"
-	resources={
-		steel=13.000
+state = {
+	id = 358
+	name = "STATE_358"
+	resources = {
+		steel = 13
 	}
-
-	history={
+	history = {
 		owner = NEL
 		buildings = {
 			infrastructure = 8
@@ -16,24 +14,47 @@ state={
 			air_base = 10
 			3878 = {
 				naval_base = 6
-
 			}
-
 		}
 		add_core_of = NEL
 		victory_points = {
-			3878 30.0 
+			3878
+			30
 		}
 		victory_points = {
-			11654 3 
+			11654
+			3
 		}
-
 	}
-
-	provinces={
-		598 706 859 1436 3602 3806 3878 3894 6717 6778 6795 6911 6916 9673 9693 9708 9721 9754 9774 10381 11650 11650 11660 11662 11665 11722 13157 
+	provinces = {
+		598
+		706
+		859
+		1436
+		3602
+		3806
+		3878
+		3894
+		6717
+		6778
+		6795
+		6911
+		6916
+		9673
+		9693
+		9708
+		9721
+		9754
+		9774
+		10381
+		11650
+		11660
+		11662
+		11665
+		11722
+		13157
 	}
-	manpower=12588061
-	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	manpower = 12588061
+	buildings_max_level_factor = 1
+	state_category = megalopolis
 }

@@ -1,9 +1,7 @@
-
-state={
-	id=888
-	name="STATE_888"
-
-	history={
+state = {
+	id = 888
+	name = "STATE_888"
+	history = {
 		owner = MYS
 		add_core_of = PIN
 		add_core_of = NIN
@@ -12,15 +10,19 @@ state={
 			infrastructure = 4
 			industrial_complex = 3
 			air_base = 1
-
 		}
-
 	}
-
-	provinces={
-		4315 7363 7391 7447 8067 10130 10274 10808 12247 12275 
+	provinces = {
+		4315
+		7363
+		7391
+		7447
+		8067
+		10130
+		12247
+		12275
 	}
-	manpower=4323943
-	buildings_max_level_factor=1.000
-	state_category=rural
+	manpower = 4323943
+	buildings_max_level_factor = 1
+	state_category = rural
 }
