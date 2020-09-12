@@ -1,710 +1,775 @@
-# focus_tree = { COAという国家は存在しません
-# 	id = COA
-# 	country = {
-# 		factor = 0
-# 		modifier = {
-# 			add = 10
-# 			tag = COA
-# 		}
-# 	}
-# 	default = no
-# 	focus = {
-# 		id = 第二次アメリカ内戦の開始
-# 		icon = GFX_goal_generic_forceful_treaty
-# 		cost = 5
-# 		x = 12
-# 		y = 0
-# 	}
-# 	focus = {
-# 		id = 内戦に勝利!
-# 		icon = GFX_goal_generic_demand_territory
-# 		cost = 5
-# 		x = 36
-# 		y = 0
-# 	}
-# 	focus = {
-# 		id = アメリカ陸軍の再編
-# 		icon = GFX_goal_unknown
-# 		cost = 10
-# 		x = 47
-# 		y = 1
-# 	}
-# 	focus = {
-# 		id = 太平洋艦隊
-# 		icon = GFX_goal_unknown
-# 		cost = 10
-# 		x = 55
-# 		y = 1
-# 	}
-# 	focus = {
-# 		id = 空を統べる
-# 		icon = GFX_goal_unknown
-# 		cost = 10
-# 		x = 51
-# 		y = 1
-# 	}
-# 	focus = {
-# 		id = 民兵の徴募
-# 		icon = GFX_goal_rhineland
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 第二次アメリカ内戦の開始
-# 		}
-# 		x = 12
-# 		y = 1
-# 	}
-# 	focus = {
-# 		id = 装備の購入先
-# 		icon = GFX_goal_generic_army_artillery
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 民兵の徴募
-# 		}
-# 		x = 12
-# 		y = 2
-# 	}
-# 	focus = {
-# 		id = デヴァースプランを採用
-# 		icon = GFX_focus_hol_the_foundations_of_defense
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 装備の購入先
-# 		}
-# 		mutually_exclusive = {
-# 			focus = モーズレープラン
-# 		}
-# 		x = 7
-# 		y = 3
-# 	}
-# 	focus = {
-# 		id = ドイツに支援を求める
-# 		icon = GFX_focus_chi_mission_to_germany
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 装備の購入先
-# 		}
-# 		mutually_exclusive = {
-# 			focus = イギリスに支援を求める
-# 		}
-# 		x = 10
-# 		y = 4
-# 	}
-# 	focus = {
-# 		id = ドイツ兵器の購入
-# 		icon = GFX_goal_generic_small_arms
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = ドイツに支援を求める
-# 		}
-# 		x = 10
-# 		y = 5
-# 	}
-# 	focus = {
-# 		id = イギリスに支援を求める
-# 		icon = GFX_focus_chi_british_cooperation
-# 		cost = 3
-# 		prerequisite = {
-# 			focus = 装備の購入先
-# 		}
-# 		mutually_exclusive = {
-# 			focus = ドイツに支援を求める
-# 		}
-# 		x = 14
-# 		y = 4
-# 	}
-# 	focus = {
-# 		id = イギリス兵器の購入
-# 		icon = GFX_goal_generic_small_arms
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = イギリスに支援を求める
-# 		}
-# 		x = 14
-# 		y = 5
-# 	}
-# 	focus = {
-# 		id = 自国での兵器生産
-# 		icon = GFX_goal_generic_small_arms
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = イギリス兵器の購入
-# 			focus = ドイツ兵器の購入
-# 		}
-# 		x = 12
-# 		y = 7
-# 	}
-# 	focus = {
-# 		id = モーズレープラン
-# 		icon = GFX_focus_hol_the_foundations_of_defense
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 装備の購入先
-# 		}
-# 		mutually_exclusive = {
-# 			focus = デヴァースプランを採用
-# 		}
-# 		x = 17
-# 		y = 3
-# 	}
-# 	focus = {
-# 		id = すべての兵士に銃を
-# 		icon = GFX_goal_generic_political_pressure
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = モーズレープラン
-# 		}
-# 		x = 17
-# 		y = 5
-# 	}
-# 	focus = {
-# 		id = 総合参謀本部
-# 		icon = GFX_goal_generic_army_doctrines
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = すべての兵士に銃を
-# 		}
-# 		x = 15
-# 		y = 6
-# 	}
-# 	focus = {
-# 		id = 優秀な将校達
-# 		icon = GFX_goal_generic_national_unity
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = すべての兵士に銃を
-# 		}
-# 		x = 19
-# 		y = 6
-# 	}
-# 	focus = {
-# 		id = 新型歩兵装備の開発
-# 		icon = GFX_goal_generic_army_artillery
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 優秀な将校達
-# 		}
-# 		prerequisite = {
-# 			focus = 総合参謀本部
-# 		}
-# 		x = 17
-# 		y = 7
-# 	}
-# 	focus = {
-# 		id = 大規模な戦闘計画
-# 		icon = GFX_goal_generic_cavalry
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 新型歩兵装備の開発
-# 		}
-# 		x = 17
-# 		y = 8
-# 	}
-# 	focus = {
-# 		id = 国際社会への復帰
-# 		icon = GFX_goal_generic_national_unity
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 内戦に勝利!
-# 		}
-# 		x = 29
-# 		y = 1
-# 	}
-# 	focus = {
-# 		id = 厳正中立
-# 		icon = GFX_goal_generic_neutrality_focus
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 国際社会への復帰
-# 		}
-# 		mutually_exclusive = {
-# 			focus = ドイツへ接近
-# 			focus = イギリスへ接近
-# 			focus = 日本へ接近
-# 		}
-# 		x = 23
-# 		y = 2
-# 	}
-# 	focus = {
-# 		id = 中立法の可決
-# 		icon = GFX_focus_hol_the_foundations_of_defense
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 厳正中立
-# 		}
-# 		x = 23
-# 		y = 4
-# 	}
-# 	focus = {
-# 		id = 中立を保つ為の力
-# 		icon = GFX_goal_generic_military_sphere
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 中立法の可決
-# 		}
-# 		x = 23
-# 		y = 5
-# 	}
-# 	focus = {
-# 		id = アメリカ国防軍の拡張
-# 		icon = GFX_goal_generic_political_pressure
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 中立を保つ為の力
-# 		}
-# 		x = 22
-# 		y = 6
-# 	}
-# 	focus = {
-# 		id = アメリカ海軍の再建
-# 		icon = GFX_goal_generic_navy_doctrines_tactics
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 中立を保つ為の力
-# 		}
-# 		x = 24
-# 		y = 6
-# 	}
-# 	focus = {
-# 		id = 永世中立宣言
-# 		icon = GFX_goal_generic_demand_territory
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = アメリカ海軍の再建
-# 		}
-# 		prerequisite = {
-# 			focus = アメリカ国防軍の拡張
-# 		}
-# 		x = 23
-# 		y = 7
-# 	}
-# 	focus = {
-# 		id = ドイツへ接近
-# 		icon = GFX_goal_generic_improve_relations
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 国際社会への復帰
-# 		}
-# 		mutually_exclusive = {
-# 			focus = 日本へ接近
-# 			focus = イギリスへ接近
-# 			focus = 厳正中立
-# 		}
-# 		x = 27
-# 		y = 2
-# 	}
-# 	focus = {
-# 		id = ドイツ指導部の招待
-# 		icon = GFX_goal_support_fascism
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = ドイツへ接近
-# 		}
-# 		x = 26
-# 		y = 4
-# 	}
-# 	focus = {
-# 		id = ナチズムを崇拝
-# 		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = ドイツへ接近
-# 		}
-# 		x = 28
-# 		y = 4
-# 	}
-# 	focus = {
-# 		id = 宗教化された政府
-# 		icon = GFX_focus_generic_strike_at_democracy1
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = ナチズムを崇拝
-# 		}
-# 		prerequisite = {
-# 			focus = ドイツ指導部の招待
-# 		}
-# 		x = 27
-# 		y = 5
-# 	}
-# 	focus = {
-# 		id = 民主主義を禁止
-# 		icon = GFX_focus_spr_masters_of_our_own_fate
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 宗教化された政府
-# 		}
-# 		x = 26
-# 		y = 6
-# 	}
-# 	focus = {
-# 		id = 共産主義を禁止
-# 		icon = GFX_focus_spr_masters_of_our_own_fate
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 宗教化された政府
-# 		}
-# 		x = 28
-# 		y = 6
-# 	}
-# 	focus = {
-# 		id = 枢軸国に加盟
-# 		icon = GFX_focus_chi_mission_to_germany
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 共産主義を禁止
-# 		}
-# 		prerequisite = {
-# 			focus = 民主主義を禁止
-# 		}
-# 		x = 27
-# 		y = 7
-# 	}
-# 	focus = {
-# 		id = 日本へ接近
-# 		icon = GFX_goal_generic_improve_relations
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 国際社会への復帰
-# 		}
-# 		mutually_exclusive = {
-# 			focus = ドイツへ接近
-# 			focus = イギリスへ接近
-# 			focus = 厳正中立
-# 		}
-# 		x = 31
-# 		y = 2
-# 	}
-# 	focus = {
-# 		id = 太平洋を統べる者
-# 		icon = GFX_focus_jap_pacific_guardian
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 日本へ接近
-# 		}
-# 		x = 31
-# 		y = 4
-# 	}
-# 	focus = {
-# 		id = 日本の海軍設計者を採用
-# 		icon = GFX_focus_generic_cruiser2
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 太平洋を統べる者
-# 		}
-# 		x = 31
-# 		y = 5
-# 	}
-# 	focus = {
-# 		id = ハワイ交渉
-# 		icon = GFX_goal_generic_intelligence_exchange
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 日本の海軍設計者を採用
-# 		}
-# 		x = 30
-# 		y = 6
-# 	}
-# 	focus = {
-# 		id = 太平洋の一部地域の管轄を要求
-# 		icon = GFX_goal_generic_intelligence_exchange
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 日本の海軍設計者を採用
-# 		}
-# 		x = 32
-# 		y = 6
-# 	}
-# 	focus = {
-# 		id = 大東亜共栄圏に加盟
-# 		icon = GFX_focus_chi_collaboration_with_the_japanese
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 太平洋の一部地域の管轄を要求
-# 		}
-# 		prerequisite = {
-# 			focus = ハワイ交渉
-# 		}
-# 		x = 31
-# 		y = 7
-# 	}
-# 	focus = {
-# 		id = イギリスへ接近
-# 		icon = GFX_goal_generic_improve_relations
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 国際社会への復帰
-# 		}
-# 		mutually_exclusive = {
-# 			focus = ドイツへ接近
-# 			focus = 日本へ接近
-# 			focus = 厳正中立
-# 		}
-# 		x = 35
-# 		y = 2
-# 	}
-# 	focus = {
-# 		id = 相互経済援助
-# 		icon = GFX_goal_generic_national_unity
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = イギリスへ接近
-# 		}
-# 		x = 34
-# 		y = 4
-# 	}
-# 	focus = {
-# 		id = 民主主義を採用
-# 		icon = GFX_goal_generic_propaganda
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = イギリスへ接近
-# 		}
-# 		x = 36
-# 		y = 4
-# 	}
-# 	focus = {
-# 		id = 平和の砦
-# 		icon = GFX_goal_generic_fortify_city
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 民主主義を採用
-# 		}
-# 		prerequisite = {
-# 			focus = 相互経済援助
-# 		}
-# 		x = 35
-# 		y = 5
-# 	}
-# 	focus = {
-# 		id = 自由を掲げろ
-# 		icon = GFX_goal_support_democracy
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 平和の砦
-# 		}
-# 		x = 35
-# 		y = 6
-# 	}
-# 	focus = {
-# 		id = コモンウェルスに加盟
-# 		icon = GFX_focus_chi_british_cooperation
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 自由を掲げろ
-# 		}
-# 		x = 35
-# 		y = 7
-# 	}
-# 	focus = {
-# 		id = アメリカ連合国
-# 		icon = GFX_focus_usa_honor_the_confederacy
-# 		cost = 20
-# 		prerequisite = {
-# 			focus = 枢軸国に加盟
-# 			focus = 永世中立宣言
-# 			focus = 大東亜共栄圏に加盟
-# 			focus = コモンウェルスに加盟
-# 		}
-# 		x = 29
-# 		y = 8
-# 	}
-# 	focus = {
-# 		id = 内戦の傷
-# 		icon = GFX_focus_spa_the_war_of_vengeance
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 内戦に勝利!
-# 		}
-# 		x = 42
-# 		y = 1
-# 	}
-# 	focus = {
-# 		id = 南部地域の工業化
-# 		icon = GFX_goal_generic_construct_mil_factory
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 内戦の傷
-# 		}
-# 		x = 41
-# 		y = 2
-# 	}
-# 	focus = {
-# 		id = 優秀な研究者を地方から招集
-# 		icon = GFX_goal_generic_scientific_exchange
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 内戦の傷
-# 		}
-# 		x = 43
-# 		y = 2
-# 	}
-# 	focus = {
-# 		id = 占領地の再統合
-# 		icon = GFX_focus_generic_treaty
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 優秀な研究者を地方から招集
-# 		}
-# 		prerequisite = {
-# 			focus = 南部地域の工業化
-# 		}
-# 		x = 42
-# 		y = 3
-# 	}
-# 	focus = {
-# 		id = 穏やかな回復
-# 		icon = GFX_goal_generic_consumer_goods
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 占領地の再統合
-# 		}
-# 		x = 42
-# 		y = 4
-# 	}
-# 	focus = {
-# 		id = 景気回復
-# 		icon = GFX_goal_generic_positive_trade_relations
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 穏やかな回復
-# 		}
-# 		x = 42
-# 		y = 5
-# 	}
-# 	focus = {
-# 		id = 統一されたアメリカ政府
-# 		icon = GFX_focus_generic_diplomatic_treaty
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 景気回復
-# 		}
-# 		x = 42
-# 		y = 6
-# 	}
-# 	focus = {
-# 		id = 火力集中計画
-# 		icon = GFX_goal_generic_position_armies
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = デヴァースプランを採用
-# 		}
-# 		x = 7
-# 		y = 5
-# 	}
-# 	focus = {
-# 		id = 野砲生産ラインの見直し
-# 		icon = GFX_goal_generic_production2
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 火力集中計画
-# 		}
-# 		x = 5
-# 		y = 6
-# 	}
-# 	focus = {
-# 		id = 高度に組織化された軍隊
-# 		icon = GFX_goal_rhineland
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 火力集中計画
-# 		}
-# 		x = 9
-# 		y = 6
-# 	}
-# 	focus = {
-# 		id = 新型野砲の開発
-# 		icon = GFX_goal_generic_army_artillery
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 高度に組織化された軍隊
-# 		}
-# 		prerequisite = {
-# 			focus = 野砲生産ラインの見直し
-# 		}
-# 		x = 7
-# 		y = 7
-# 	}
-# 	focus = {
-# 		id = 圧倒的火力
-# 		icon = GFX_goal_generic_army_artillery2
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 新型野砲の開発
-# 		}
-# 		x = 7
-# 		y = 8
-# 	}
-# 	focus = {
-# 		id = 生まれ変わった軍隊
-# 		icon = GFX_goal_generic_axis_build_infantry
-# 		cost = 5
-# 		prerequisite = {
-# 			focus = 大規模な戦闘計画
-# 			focus = 圧倒的火力
-# 		}
-# 		x = 12
-# 		y = 9
-# 	}
-# 	focus = {
-# 		id = バハカルフォルニアの要求
-# 		icon = GFX_goal_generic_major_war
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 生存圏の主張
-# 		}
-# 		x = 29
-# 		y = 10
-# 	}
-# 	focus = {
-# 		id = メキシコの解体
-# 		icon = GFX_focus_attack_mexico
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = バハカルフォルニアの要求
-# 		}
-# 		x = 29
-# 		y = 11
-# 	}
-# 	focus = {
-# 		id = 生存圏の主張
-# 		icon = GFX_focus_generic_strike_at_democracy2
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = アメリカ連合国
-# 		}
-# 		x = 29
-# 		y = 9
-# 	}
-# 	focus = {
-# 		id = 中央アメリカを統合
-# 		icon = GFX_focus_mex_jefe_maximo
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = メキシコの解体
-# 		}
-# 		x = 27
-# 		y = 12
-# 	}
-# 	focus = {
-# 		id = 南アメリカを統合
-# 		icon = GFX_focus_por_recover_latin_america
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = メキシコの解体
-# 		}
-# 		x = 31
-# 		y = 12
-# 	}
-# 	focus = {
-# 		id = 大陸の覇者
-# 		icon = GFX_focus_SAF_colonialist_crusade
-# 		cost = 10
-# 		prerequisite = {
-# 			focus = 南アメリカを統合
-# 		}
-# 		prerequisite = {
-# 			focus = 中央アメリカを統合
-# 		}
-# 		x = 29
-# 		y = 13
-# 	}
-# }
+focus_tree = {
+	id = COA
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = COA
+		}
+	}
+	default = no
+	focus = {
+		id = 第二次アメリカ内戦の開始
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5.00
+		x = 12
+		y = 0
+
+	}
+	focus = {
+		id = 内戦に勝利！
+		icon = GFX_goal_generic_demand_territory
+		cost = 5.00
+		x = 36
+		y = 0
+
+	}
+	focus = {
+		id = アメリカ陸軍の再編
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 47
+		y = 1
+
+	}
+	focus = {
+		id = 太平洋艦隊
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 55
+		y = 1
+
+	}
+	focus = {
+		id = 空を統べる
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 51
+		y = 1
+
+	}
+	focus = {
+		id = 民兵の徴募
+		icon = GFX_goal_rhineland
+		cost = 5.00
+		prerequisite = {
+			focus = 第二次アメリカ内戦の開始
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = 装備の購入先
+		icon = GFX_goal_generic_army_artillery
+		cost = 5.00
+		prerequisite = {
+			focus = 民兵の徴募
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = デヴァースプランを採用
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 5.00
+		prerequisite = {
+			focus = 装備の購入先
+		}
+		mutually_exclusive = {
+			focus = モーズレープラン
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = ドイツに支援を求める
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 5.00
+		prerequisite = {
+			focus = 装備の購入先
+		}
+		mutually_exclusive = {
+			focus = イギリスに支援を求める
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = ドイツ兵器の購入
+		icon = GFX_goal_generic_small_arms
+		cost = 5.00
+		prerequisite = {
+			focus = ドイツに支援を求める
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = イギリスに支援を求める
+		icon = GFX_focus_chi_british_cooperation
+		cost = 3.00
+		prerequisite = {
+			focus = 装備の購入先
+		}
+		mutually_exclusive = {
+			focus = ドイツに支援を求める
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = イギリス兵器の購入
+		icon = GFX_goal_generic_small_arms
+		cost = 5.00
+		prerequisite = {
+			focus = イギリスに支援を求める
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = 自国での兵器生産
+		icon = GFX_goal_generic_small_arms
+		cost = 5.00
+		prerequisite = {
+			focus = イギリス兵器の購入
+			focus = ドイツ兵器の購入
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = モーズレープラン
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 5.00
+		prerequisite = {
+			focus = 装備の購入先
+		}
+		mutually_exclusive = {
+			focus = デヴァースプランを採用
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = すべての兵士に銃を
+		icon = GFX_goal_generic_political_pressure
+		cost = 5.00
+		prerequisite = {
+			focus = モーズレープラン
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = 総合参謀本部
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5.00
+		prerequisite = {
+			focus = すべての兵士に銃を
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = 優秀な将校達
+		icon = GFX_goal_generic_national_unity
+		cost = 5.00
+		prerequisite = {
+			focus = すべての兵士に銃を
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = 新型歩兵装備の開発
+		icon = GFX_goal_generic_army_artillery
+		cost = 5.00
+		prerequisite = {
+			focus = 優秀な将校達
+		}
+		prerequisite = {
+			focus = 総合参謀本部
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = 大規模な戦闘計画
+		icon = GFX_goal_generic_cavalry
+		cost = 5.00
+		prerequisite = {
+			focus = 新型歩兵装備の開発
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = 国際社会への復帰
+		icon = GFX_goal_generic_national_unity
+		cost = 5.00
+		prerequisite = {
+			focus = 内戦に勝利！
+		}
+		x = 29
+		y = 1
+
+	}
+	focus = {
+		id = 厳正中立
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 5.00
+		prerequisite = {
+			focus = 国際社会への復帰
+		}
+		mutually_exclusive = {
+			focus = ドイツへ接近
+			focus = イギリスへ接近
+			focus = 日本へ接近
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = 中立法の可決
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10.00
+		prerequisite = {
+			focus = 厳正中立
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = 中立を保つ為の力
+		icon = GFX_goal_generic_military_sphere
+		cost = 5.00
+		prerequisite = {
+			focus = 中立法の可決
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = アメリカ国防軍の拡張
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = 中立を保つ為の力
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = アメリカ海軍の再建
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = 中立を保つ為の力
+		}
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = 永世中立宣言
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		prerequisite = {
+			focus = アメリカ海軍の再建
+		}
+		prerequisite = {
+			focus = アメリカ国防軍の拡張
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = ドイツへ接近
+		icon = GFX_goal_generic_improve_relations
+		cost = 5.00
+		prerequisite = {
+			focus = 国際社会への復帰
+		}
+		mutually_exclusive = {
+			focus = 日本へ接近
+			focus = イギリスへ接近
+			focus = 厳正中立
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = ドイツ指導部の招待
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = ドイツへ接近
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = ナチズムを崇拝
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		cost = 10.00
+		prerequisite = {
+			focus = ドイツへ接近
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = 宗教化された政府
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10.00
+		prerequisite = {
+			focus = ナチズムを崇拝
+		}
+		prerequisite = {
+			focus = ドイツ指導部の招待
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = 民主主義を禁止
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		cost = 10.00
+		prerequisite = {
+			focus = 宗教化された政府
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = 共産主義を禁止
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		cost = 10.00
+		prerequisite = {
+			focus = 宗教化された政府
+		}
+		x = 28
+		y = 6
+
+	}
+	focus = {
+		id = 枢軸国に加盟
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 10.00
+		prerequisite = {
+			focus = 共産主義を禁止
+		}
+		prerequisite = {
+			focus = 民主主義を禁止
+		}
+		x = 27
+		y = 7
+
+	}
+	focus = {
+		id = 日本へ接近
+		icon = GFX_goal_generic_improve_relations
+		cost = 5.00
+		prerequisite = {
+			focus = 国際社会への復帰
+		}
+		mutually_exclusive = {
+			focus = ドイツへ接近
+			focus = イギリスへ接近
+			focus = 厳正中立
+		}
+		x = 31
+		y = 2
+
+	}
+	focus = {
+		id = 太平洋を統べる者
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 10.00
+		prerequisite = {
+			focus = 日本へ接近
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = {
+		id = 日本の海軍設計者を採用
+		icon = GFX_focus_generic_cruiser2
+		cost = 10.00
+		prerequisite = {
+			focus = 太平洋を統べる者
+		}
+		x = 31
+		y = 5
+
+	}
+	focus = {
+		id = ハワイ交渉
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = 日本の海軍設計者を採用
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = 太平洋の一部地域の管轄を要求
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = 日本の海軍設計者を採用
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = 大東亜共栄圏に加盟
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 10.00
+		prerequisite = {
+			focus = 太平洋の一部地域の管轄を要求
+		}
+		prerequisite = {
+			focus = ハワイ交渉
+		}
+		x = 31
+		y = 7
+
+	}
+	focus = {
+		id = イギリスへ接近
+		icon = GFX_goal_generic_improve_relations
+		cost = 5.00
+		prerequisite = {
+			focus = 国際社会への復帰
+		}
+		mutually_exclusive = {
+			focus = ドイツへ接近
+			focus = 日本へ接近
+			focus = 厳正中立
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = 相互経済援助
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = イギリスへ接近
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = 民主主義を採用
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = イギリスへ接近
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = 平和の砦
+		icon = GFX_goal_generic_fortify_city
+		cost = 10.00
+		prerequisite = {
+			focus = 民主主義を採用
+		}
+		prerequisite = {
+			focus = 相互経済援助
+		}
+		x = 35
+		y = 5
+
+	}
+	focus = {
+		id = 自由を掲げろ
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = 平和の砦
+		}
+		x = 35
+		y = 6
+
+	}
+	focus = {
+		id = コモンウェルスに加盟
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10.00
+		prerequisite = {
+			focus = 自由を掲げろ
+		}
+		x = 35
+		y = 7
+
+	}
+	focus = {
+		id = アメリカ連合国
+		icon = GFX_focus_usa_honor_the_confederacy
+		cost = 20.00
+		prerequisite = {
+			focus = 枢軸国に加盟
+			focus = 永世中立宣言
+			focus = 大東亜共栄圏に加盟
+			focus = コモンウェルスに加盟
+		}
+		x = 29
+		y = 8
+
+	}
+	focus = {
+		id = 内戦の傷
+		icon = GFX_focus_spa_the_war_of_vengeance
+		cost = 10.00
+		prerequisite = {
+			focus = 内戦に勝利！
+		}
+		x = 42
+		y = 1
+
+	}
+	focus = {
+		id = 南部地域の工業化
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = 内戦の傷
+		}
+		x = 41
+		y = 2
+
+	}
+	focus = {
+		id = 優秀な研究者を地方から招集
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = 内戦の傷
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = 占領地の再統合
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = 優秀な研究者を地方から招集
+		}
+		prerequisite = {
+			focus = 南部地域の工業化
+		}
+		x = 42
+		y = 3
+
+	}
+	focus = {
+		id = 穏やかな回復
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		prerequisite = {
+			focus = 占領地の再統合
+		}
+		x = 42
+		y = 4
+
+	}
+	focus = {
+		id = 景気回復
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = {
+			focus = 穏やかな回復
+		}
+		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = 統一されたアメリカ政府
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = 景気回復
+		}
+		x = 42
+		y = 6
+
+	}
+	focus = {
+		id = 火力集中計画
+		icon = GFX_goal_generic_position_armies
+		cost = 5.00
+		prerequisite = {
+			focus = デヴァースプランを採用
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = 野砲生産ラインの見直し
+		icon = GFX_goal_generic_production2
+		cost = 5.00
+		prerequisite = {
+			focus = 火力集中計画
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = 高度に組織化された軍隊
+		icon = GFX_goal_rhineland
+		cost = 5.00
+		prerequisite = {
+			focus = 火力集中計画
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = 新型野砲の開発
+		icon = GFX_goal_generic_army_artillery
+		cost = 5.00
+		prerequisite = {
+			focus = 高度に組織化された軍隊
+		}
+		prerequisite = {
+			focus = 野砲生産ラインの見直し
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = 圧倒的火力
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5.00
+		prerequisite = {
+			focus = 新型野砲の開発
+		}
+		x = 7
+		y = 8
+
+	}
+	focus = {
+		id = 生まれ変わった軍隊
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 5.00
+		prerequisite = {
+			focus = 大規模な戦闘計画
+			focus = 圧倒的火力
+		}
+		x = 12
+		y = 9
+
+	}
+	focus = {
+		id = バハ・カルフォルニアの要求
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = 生存圏の主張
+		}
+		x = 29
+		y = 10
+
+	}
+	focus = {
+		id = メキシコの解体
+		icon = GFX_focus_attack_mexico
+		cost = 10.00
+		prerequisite = {
+			focus = バハ・カルフォルニアの要求
+		}
+		x = 29
+		y = 11
+
+	}
+	focus = {
+		id = 生存圏の主張
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		prerequisite = {
+			focus = アメリカ連合国
+		}
+		x = 29
+		y = 9
+
+	}
+	focus = {
+		id = 中央アメリカを統合
+		icon = GFX_focus_mex_jefe_maximo
+		cost = 10.00
+		prerequisite = {
+			focus = メキシコの解体
+		}
+		x = 27
+		y = 12
+
+	}
+	focus = {
+		id = 南アメリカを統合
+		icon = GFX_focus_por_recover_latin_america
+		cost = 10.00
+		prerequisite = {
+			focus = メキシコの解体
+		}
+		x = 31
+		y = 12
+
+	}
+	focus = {
+		id = 大陸の覇者
+		icon = GFX_focus_SAF_colonialist_crusade
+		cost = 10.00
+		prerequisite = {
+			focus = 南アメリカを統合
+		}
+		prerequisite = {
+			focus = 中央アメリカを統合
+		}
+		x = 29
+		y = 13
+
+	}
+}
