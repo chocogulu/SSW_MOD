@@ -1,0 +1,443 @@
+focus_tree = {
+	id = New_file
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ltv
+		}
+	}
+	default = no
+	focus = {
+		id = LTV_syogun_sinu
+		icon = GFX_focus_ger_oppose_hitler
+		cost = 5.00
+		x = 13
+		y = 0
+		completion_reward = {
+			56 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			59 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			
+					country_event = { id = SSW_LTV.2 days = 7 }
+		}
+
+	}
+	focus = {
+		id = LTV_jap_enjyo
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 7.00
+		prerequisite = {
+			focus = LTV_syogun_sinu
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			LTV = {
+				add_timed_idea = { idea = ltv_ideas_07 days = 120 }
+			}
+		}
+
+	}
+	focus = {
+		id = LTV_jap_sentouki
+		icon = GFX_focus_jap_zero
+		cost = 4.00
+		prerequisite = {
+			focus = LTV_jap_enjyo
+		}
+		x = 1
+		y = 3
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = cv_fighter_equipment_0
+				amount = 260
+				producer = JAP
+			}
+		}
+
+	}
+	focus = {
+		id = LTV_eng_enjyo
+		icon = GFX_focus_chi_british_cooperation
+		cost = 7.00
+		prerequisite = {
+			focus = LTV_syogun_sinu
+		}
+		x = 5
+		y = 1
+		completion_reward = {
+			LTV = {
+				add_timed_idea = { idea = ltv_ideas_08 days = 120 }
+			}
+		}
+
+	}
+	focus = {
+		id = LTV_kominn_enjyo
+		icon = GFX_goal_support_communism
+		cost = 7.00
+		prerequisite = {
+			focus = LTV_jap_enjyo
+		}
+		prerequisite = {
+			focus = LTV_eng_enjyo
+		}
+		x = 3
+		y = 2
+		completion_reward = {
+			LTV = {
+				add_timed_idea = { idea = ltv_ideas_09 days = 120 }
+			}
+		}
+
+	}
+	focus = {
+		id = LTV_giyugun
+		icon = GFX_focus_focus_fra_revolution_utmost
+		cost = 4.00
+		prerequisite = {
+			focus = LTV_kominn_enjyo
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+			load_oob = "LTV_kokusairyodan"
+		}
+
+	}
+	focus = {
+		id = LTV_eng_sentouki
+		icon = GFX_focus_fra_regiment_normandie
+		cost = 4.00
+		prerequisite = {
+			focus = LTV_eng_enjyo
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_1
+				amount = 160
+				producer = ENG
+			}
+		}
+
+	}
+	focus = {
+		id = LTV_totugeki_hohei
+		icon = GFX_focus_prc_infiltration
+		cost = 5.00
+		prerequisite = {
+			focus = LTV_syogun_sinu
+		}
+		x = 10
+		y = 1
+		completion_reward = {
+			LTV = {
+				add_ideas = ltv_ideas_01
+			}
+	}
+
+
+	}
+	focus = {
+		id = LTV_dokutorin
+		icon = GFX_goal_generic_army_doctrines
+		cost = 4.00
+		prerequisite = {
+			focus = LTV_syogun_sinu
+		}
+		x = 13
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = land_doctrine
+				}
+		}
+
+	}
+	focus = {
+		id = LTV_hoheisoubi
+		icon = GFX_goal_generic_small_arms
+		cost = 3.00
+		prerequisite = {
+			focus = LTV_dokutorin
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = infantry_weapons
+				}
+		}
+
+	}
+	focus = {
+		id = LTV_tank
+		icon = GFX_focus_generic_tank_production
+		cost = 3.00
+		prerequisite = {
+			focus = LTV_hoheisoubi
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = armor
+				}
+		}
+
+	}
+	focus = {
+		id = LTV_sentouki
+		icon = GFX_focus_chi_flying_tigers
+		cost = 3.00
+		prerequisite = {
+			focus = LTV_dokutorin
+		}
+		x = 16
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = light_fighter
+				}
+		}
+
+	}
+	focus = {
+		id = LTV_sinsyougun
+		icon = GFX_focus_generic_military_mission
+		cost = 7.00
+		prerequisite = {
+			focus = LTV_hoheisoubi
+		}
+		prerequisite = {
+			focus = LTV_sentouki
+		}
+		x = 13
+		y = 4
+		completion_reward = {
+			LTV = {
+				add_ideas = ltv_ideas_03
+			}
+					country_event = { id = SSW_LTV.3 days = 1 }
+		}
+
+	}
+	focus = {
+		id = LTV_soubizousan
+		icon = GFX_focus_generic_combined_arms
+		cost = 7.00
+		prerequisite = {
+			focus = LTV_sinsyougun
+		}
+		x = 11
+		y = 5
+		completion_reward = {
+			LTV = {
+				add_ideas = ltv_ideas_04
+			}
+		}
+
+	}
+	focus = {
+		id = LTV_soubikousin
+		icon = GFX_focus_generic_license_production
+		cost = 7.00
+		prerequisite = {
+			focus = LTV_sinsyougun
+		}
+		x = 15
+		y = 5
+		completion_reward = {
+			LTV = {
+				add_ideas = ltv_ideas_05
+			}
+		}
+
+	}
+	focus = {
+		id = LTV_douinn
+		icon = GFX_focus_generic_little_entente
+		cost = 5.00
+		prerequisite = {
+			focus = LTV_syogun_sinu
+
+		}
+		x = 16
+		y = 1
+		completion_reward = {
+			LTV = {
+				add_ideas = ltv_ideas_02
+			}
+	}
+
+	}
+	focus = {
+		id = LTV_cas
+		icon = GFX_goal_generic_secret_weapon
+		cost = 3.00
+		prerequisite = {
+			focus = LTV_sentouki
+		}
+		x = 19
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = cas_bomber
+				}
+		}
+
+	}
+	focus = {
+		id = LTV_kaiza_sien
+		icon = GFX_focus_ger_return_of_the_kaiser
+		cost = 7.00
+		prerequisite = {
+			focus = LTV_syogun_sinu
+		}
+		x = 21
+		y = 1
+		completion_reward = {
+			LTV = {
+				add_timed_idea = { idea = ltv_ideas_10 days = 120 }
+			}
+		}
+
+	}
+	focus = {
+		id = LTV_kaizapawar
+		icon = GFX_focus_ger_revive_kaiserreich
+		cost = 4.00
+		prerequisite = {
+			focus = LTV_kaiza_sien
+		}
+		x = 21
+		y = 3
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 4400
+				producer = GER
+			}
+		}
+
+	}
+	focus = {
+		id = LTV_minsyusyugisien
+		icon = GFX_goal_support_democracy
+		cost = 7.00
+		prerequisite = {
+			focus = LTV_syogun_sinu
+		}
+		x = 25
+		y = 1
+		completion_reward = {
+			LTV = {
+				add_timed_idea = { idea = ltv_ideas_11 days = 120 }
+			}
+		}
+
+	}
+	focus = {
+		id = LVT_marukususien
+		icon = GFX_focus_spr_unify_the_london_bureau
+		cost = 7.00
+		prerequisite = {
+			focus = LTV_kaiza_sien
+		}
+		prerequisite = {
+			focus = LTV_minsyusyugisien
+		}
+		x = 23
+		y = 2
+		completion_reward = {
+			LTV = {
+				add_timed_idea = { idea = ltv_ideas_12  days = 120 }
+			}
+		}
+
+	}
+	focus = {
+		id = LTV_kyousansyugisya
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 4.00
+		prerequisite = {
+			focus = LVT_marukususien
+		}
+		x = 23
+		y = 4
+		completion_reward = {
+			add_manpower = 42200
+		}
+
+	}
+	focus = {
+		id = LTV_naisensyouri
+		icon = GFX_goal_generic_demand_territory
+		cost = 2.00
+		prerequisite = {
+			focus = LTV_sinsyougun
+		}
+		x = 13
+		y = 6
+		completion_reward = {
+			load_focus_tree = LTV_second_focus
+		}
+
+	}
+	focus = {
+		id = LTV_kane
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 4.00
+		prerequisite = {
+			focus = LTV_minsyusyugisien
+		}
+		x = 25
+		y = 3
+		completion_reward = {
+			56 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+			}
+			59 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			
+		}
+
+	}
+}
