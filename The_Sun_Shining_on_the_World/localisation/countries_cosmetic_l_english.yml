@@ -8,9 +8,9 @@
  SOV_provisional_ADJ:0 "ソビエト"
  
 #共同管理国家
- CLC_JAPandCHI:0 "日本沿岸租借地"
- CLC_JAPandCHI_DEF:0 "日本沿岸租借地"
- CLC_JAPandCHI_ADJ:0 "沿岸租借地"
+ CLC_JAPandCHI:0 "日華共同港都市"
+ CLC_JAPandCHI_DEF:0 "日華共同港都市"
+ CLC_JAPandCHI_ADJ:0 "日華共同港都市"
  SUD_ITAandEGY:0 "イタリア・エジプト領スーダン"
  SUD_ITAandEGY_DEF:0 "イタリア・エジプト領スーダン"
  SUD_ITAandEGY_ADJ:0 "伊埃領スーダン"
@@ -47,9 +47,6 @@
  ARC_JAP:0 "日本領北極圏"
  ARC_JAP_DEF:0 "日本領北極圏"
  ARC_JAP_ADJ:0 "日領北極"
- INS_JAP:0 "インドネシア共和国"
- INS_JAP_DEF:0 "インドネシア共和国"
- INS_JAP_ADJ:0 "インドネシア"
  
 #中華民国
  CLC_CHI:0 "中華民国特別行政区"
