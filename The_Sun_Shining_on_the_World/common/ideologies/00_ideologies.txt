@@ -1,4 +1,5 @@
 ideologies = {
+	#無政府主義
 	anarchism = {
 		types = {
 			social_anarchism = {
@@ -17,7 +18,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 		color = {
-			100
+			25
 			0
 			0
 		}
@@ -45,15 +46,10 @@ ideologies = {
 		}
 		ai_democratic = yes		# uses the democratic AI behaviour
 	}
+	#共産主義
 	communism = {
 		types = {
-			marxism = {
-			}
-			permanent_revolution = {
-			}
 			stalinism = {
-			}
-			syndicalism = {
 			}
 			maoism = {
 			}
@@ -84,6 +80,100 @@ ideologies = {
 		faction_modifiers = {
 		}
 	}
+
+	#サンディカリズム
+	syndicalism = {
+		types = {
+			Anarcho_syndicalism = { #アナルコサンディカリズム
+			}
+
+			syndicalism_ideology = { #サンディカリズム
+
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		color = {
+			25
+			0
+			0
+		}
+		war_impact_on_world_tension = 0.75		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+		ai_communist = yes		# uses the commie AI behaviour
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		modifiers = {
+			puppet_cost_factor = -0.3
+		}
+		faction_modifiers = {
+		}
+	}
+
+	#社会主義
+	socialism = {
+		types = {
+			marxism = { #マルクス主義
+			}
+
+			New_Left = { #新左翼
+			}
+
+			Trotskyism = { #トロツキズム
+			}
+
+			Marxism_Leninism = { #マルクス・レーニン主義
+			}
+
+			Leninism = { #レーニン主義
+			}
+
+			Buddhist_socialism = { #仏教社会主義
+			}
+
+			Christian_socialism = { #キリスト教社会主義
+			}
+
+			Islamic_socialism = { #イスラム教社会主義
+			}
+
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		color = {
+			100
+			0
+			0
+		}
+		war_impact_on_world_tension = 0.75		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+		ai_communist = yes		# uses the commie AI behaviour
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		modifiers = {
+			puppet_cost_factor = -0.3
+		}
+		faction_modifiers = {
+		}
+	}
+
+	#社会民主主義
 	social_democracy = {
 		types = {
 			social_democracy_ideology = {
@@ -127,17 +217,15 @@ ideologies = {
 		}
 		ai_democratic = yes		# uses the democratic AI behaviour
 	}
+
+	#社会自由主義
 	democratic = {
 		types = {
-			liberalism = {
+			social_liberalism = { #社会自由主義
 			}
-			conservative_liberalism = {
+			indirect_democracy = { #間接民主主義
 			}
-			liberal_democracy = {
-			}
-			indirect_democracy = {
-			}
-			direct_democracy = {
+			direct_democracy = { #直接民主主義
 			}
 		}
 		dynamic_faction_names = {
@@ -178,6 +266,53 @@ ideologies = {
 		}
 		ai_democratic = yes		# uses the democratic AI behaviour
 	}
+
+	#新自由主義
+	neoliberalism = {
+		types = {
+			neoliberalism = { #新自由主義
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		color = {
+			100
+			150
+			100
+		}
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = no
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		modifiers = {
+			generate_wargoal_tension = 1
+			join_faction_tension = 0.8
+			lend_lease_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.25
+			annex_cost_factor = 0.5
+		}
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.5			#plus 50% trade opinion
+		}
+		ai_democratic = yes		# uses the democratic AI behaviour
+	}
+
+	#社会保守主義
 	conservatism = {
 		types = {
 			conservatism_ideology = {
@@ -223,13 +358,11 @@ ideologies = {
 		}
 		ai_democratic = yes		# uses the democratic AI behaviour
 	}
-	authoritative_democracy = {
+
+	#権威主義
+	authoritarianism = {
 		types = {
-			dictatorship = {
-			}
-			illiberal_democracy = {
-			}
-			despotism = {
+			authoritarianism_ideology = { #権威主義
 			}
 		}
 		dynamic_faction_names = {
@@ -270,6 +403,149 @@ ideologies = {
 		}
 		ai_democratic = yes		# uses the democratic AI behaviour
 	}
+
+	#大衆主義
+	authoritative_democracy = {
+		types = {
+			authoritative_democracy_ideology = { #大衆主義
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		color = {
+			43
+			58
+			78
+		}
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		modifiers = {
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.2
+			lend_lease_tension = 0.2
+			send_volunteers_tension = 0
+			guarantee_tension = 0
+			annex_cost_factor = 0.5
+		}
+		ai_democratic = yes		# uses the democratic AI behaviour
+	}
+
+	#独裁主義
+	despotism = {
+		types = {
+			despotism_ideology = { #独裁主義
+			}
+
+			liberal_autocracy = { #自由主義的専制
+			}
+
+			Oligarchy = { #寡頭政
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		color = {
+			0
+			0
+			100
+		}
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		modifiers = {
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.2
+			lend_lease_tension = 0.2
+			send_volunteers_tension = 0
+			guarantee_tension = 0
+			annex_cost_factor = 0.5
+		}
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.5			#plus 50% trade opinion
+		}
+		ai_democratic = yes		# uses the democratic AI behaviour
+	}
+
+	#ベネッティズム
+	bennettism = {
+		types = {
+			bennettism_ideology = { #ベネッティズム
+			}
+
+			bennetty_democratism = { #企業民主制##指導者を国民が、企業の中から選ぶ
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		color = {
+			255
+			255
+			255
+		}
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		modifiers = {
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.2
+			lend_lease_tension = 0.2
+			send_volunteers_tension = 0
+			guarantee_tension = 0
+			annex_cost_factor = 0.5
+		}
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.5			#plus 50% trade opinion
+		}
+		ai_democratic = yes		# uses the democratic AI behaviour
+	}
+
+	#ファシズム
 	fascism = {
 		types = {
 			fascism_ideology = {
@@ -303,6 +579,8 @@ ideologies = {
 		}
 		ai_fascist = yes		# uses the fascist AI behaviour
 	}
+
+	#ナチズム
 	nazism = {
 		types = {
 			nazism_ideology = {
@@ -346,6 +624,8 @@ ideologies = {
 		}
 		ai_democratic = yes		# uses the democratic AI behaviour
 	}
+
+	#王党派
 	neutrality = {
 		types = {
 			monarchy = {
@@ -391,6 +671,8 @@ ideologies = {
 		can_collaborate = yes
 		ai_neutral = yes		# 
 	}
+
+	#軍事政権
 	militarism = {
 		types = {
 			military = {
