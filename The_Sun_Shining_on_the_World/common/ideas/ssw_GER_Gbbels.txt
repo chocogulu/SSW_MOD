@@ -1,18 +1,14 @@
 ideas = {
-    country = {
+	country = {
 		local_war_claims = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = no
 			}
-
 			removal_cost = -1
-			
 			picture = anti_soviet_pact
-
 			modifier = {
 				consumer_goods_factor = -15
 			}
@@ -21,15 +17,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = no
 			}
-
 			removal_cost = -1
-			
 			picture = anti_soviet_pact
-
 			modifier = {
 				consumer_goods_factor = -20
 			}
@@ -38,15 +30,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = no
 			}
-
 			removal_cost = -1
-			
 			picture = anti_soviet_pact
-
 			modifier = {
 				army_org_Factor = -10
 			}
@@ -55,15 +43,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = no
 			}
-
 			removal_cost = -1
-			
 			picture = anti_soviet_pact
-
 			modifier = {
 				consumer_goods_factor = -10
 				stability_weekly = -20
@@ -74,15 +58,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = no
 			}
-
 			removal_cost = -1
-			
 			picture = anti_soviet_pact
-
 			modifier = {
 				consumer_goods_factor = -10
 				stability_weekly = -10
@@ -93,58 +73,56 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = no
 			}
-
 			removal_cost = -1
-			
 			picture = anti_soviet_pact
-
-			targeted_modifier = { tag = LTV attack_bonus_against = 0.1 }
-			targeted_modifier = { tag = HLH attack_bonus_against = 0.1 }
-			targeted_modifier = { tag = HGR attack_bonus_against = 0.1 }
+			targeted_modifier = {
+				tag = LTV
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = HLH
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = HGR
+				attack_bonus_against = 0.1
+			}
 		}
 		Scars_of_the_civil_war = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = no
 			}
-
 			removal_cost = -1
-			
 			picture = anti_soviet_pact
-
 			modifier = {
-				stability_factor = -0.50
-				war_support_factor = -0.30
-				consumer_goods_factor = 0.20
-				research_speed_factor = -0.10	
+				stability_factor = -0.5
+				war_support_factor = -0.3
+				consumer_goods_factor = 0.2
+				research_speed_factor = -0.1
 			}
 		}
 		Scars_of_the_civil_war_2 = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = no
 			}
-
 			removal_cost = -1
 			picture = anti_soviet_pact
 			modifier = {
-				stability_factor = -0.20
-				war_support_factor = -0.10
-				consumer_goods_factor = 0.20
-				research_speed_factor = -0.10	
+				stability_factor = -0.2
+				war_support_factor = -0.1
+				consumer_goods_factor = 0.2
+				research_speed_factor = -0.1
 			}
 		}
-		
 		Scars_of_the_civil_war_3 = {
 			allowed = {
 				always = no
@@ -152,15 +130,14 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
-	
 			removal_cost = -1
 			picture = anti_soviet_pact
 			modifier = {
 				stability_factor = -0.5
 				war_support_factor = -0.5
-				consumer_goods_factor = 0.10
-				research_speed_factor = -0.10	
-			}		
+				consumer_goods_factor = 0.1
+				research_speed_factor = -0.1
+			}
 		}
 		Scars_of_the_civil_war_4 = {
 			allowed = {
@@ -169,12 +146,11 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
-	
 			removal_cost = -1
-			picture = anti_soviet_pact	
+			picture = anti_soviet_pact
 			modifier = {
 				stability_factor = 0.05
-				war_support_factor = 0.10
+				war_support_factor = 0.1
 				consumer_goods_factor = 0.05
 			}
 		}
@@ -185,12 +161,11 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
-	
 			removal_cost = -1
-			picture = anti_soviet_pact	
+			picture = anti_soviet_pact
 			modifier = {
-				stability_factor = 0.10
-				war_support_factor = 0.10
+				stability_factor = 0.1
+				war_support_factor = 0.1
 				consumer_goods_factor = 0.01
 			}
 		}
@@ -198,14 +173,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-	
 			allowed_civil_war = {
 				always = no
 			}
-	
 			removal_cost = -1
-			picture = FRA_matignon_agreements	
-
+			picture = FRA_matignon_agreements
 			equipment_bonus = {
 				fighter_equipment = {
 					build_cost_ic = 5
@@ -224,27 +196,23 @@ ideas = {
 					instant = yes
 				}
 			}
-
 			modifier = {
 				air_chief_cost_factor = 0.5
 				air_equipment_upgrade_xp_cost = 2.2
 				experience_gain_air = -0.05
-				air_accidents_factor = 0.10
-				army_bonus_air_superiority_factor = -0.10
+				air_accidents_factor = 0.1
+				army_bonus_air_superiority_factor = -0.1
 			}
 		}
 		Resistance_Gering_2 = {
 			allowed = {
 				always = no
 			}
-	
 			allowed_civil_war = {
 				always = no
 			}
-	
 			removal_cost = -1
 			picture = FRA_matignon_agreements
-			
 			equipment_bonus = {
 				fighter_equipment = {
 					build_cost_ic = 0.1
@@ -263,7 +231,6 @@ ideas = {
 					instant = yes
 				}
 			}
-
 			modifier = {
 				air_chief_cost_factor = 0.5
 				air_equipment_upgrade_xp_cost = 2.2
@@ -273,30 +240,26 @@ ideas = {
 			allowed = {
 				always = no
 			}
-	
 			allowed_civil_war = {
 				always = no
 			}
-	
 			removal_cost = -1
-			picture = FRA_scw_intervention_republicans_focus	
+			picture = FRA_scw_intervention_republicans_focus
 			modifier = {
-				training_time_factor = 0.10
-				conscription = -0.10
-				high_command_cost_factor = 0.50
+				training_time_factor = 0.1
+				conscription = -0.1
+				high_command_cost_factor = 0.5
 			}
 		}
 		Resistance_himmler_2 = {
 			allowed = {
 				always = no
 			}
-	
 			allowed_civil_war = {
 				always = no
 			}
-	
 			removal_cost = -1
-			picture = FRA_scw_intervention_republicans_focus	
+			picture = FRA_scw_intervention_republicans_focus
 			modifier = {
 				training_time_factor = 0.05
 				conscription = -0.05
@@ -306,31 +269,27 @@ ideas = {
 			allowed = {
 				always = no
 			}
-	
 			allowed_civil_war = {
 				always = no
 			}
-	
 			removal_cost = -1
-			picture = generic_democratic_drift_bonus	
+			picture = generic_democratic_drift_bonus
 			modifier = {
 				production_factory_max_efficiency_factor = -0.3
 				production_speed_buildings_factor = -0.1
 				production_factory_start_efficiency_factor = -0.05
-				local_resources_factor = -0.10
+				local_resources_factor = -0.1
 			}
 		}
 		Resistance_Popular_Front_2 = {
 			allowed = {
 				always = no
 			}
-	
 			allowed_civil_war = {
 				always = no
 			}
-	
 			removal_cost = -1
-			picture = generic_democratic_drift_bonus	
+			picture = generic_democratic_drift_bonus
 			modifier = {
 				production_factory_max_efficiency_factor = -0.1
 				production_speed_buildings_factor = -0.5
@@ -340,16 +299,14 @@ ideas = {
 			allowed = {
 				always = no
 			}
-	
 			allowed_civil_war = {
 				always = no
 			}
-	
 			removal_cost = -1
-			picture = generic_fascism_drift_bonus	
+			picture = generic_fascism_drift_bonus
 			modifier = {
-				non_core_manpower = -0.10
-				planning_speed = -0.10
+				non_core_manpower = -0.1
+				planning_speed = -0.1
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
 			}
@@ -358,35 +315,31 @@ ideas = {
 			allowed = {
 				always = no
 			}
-	
 			allowed_civil_war = {
 				always = no
 			}
-	
 			removal_cost = -1
-			picture = generic_fascism_drift_bonus	
+			picture = generic_fascism_drift_bonus
 			modifier = {
-				non_core_manpower = -0.10
+				non_core_manpower = -0.1
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
-				army_org_Factor = 0.10
-				land_reinforce_rate = 0.10
+				army_org_Factor = 0.1
+				land_reinforce_rate = 0.1
 			}
 		}
 		recessive_Army = {
 			allowed = {
 				always = no
 			}
-	
 			allowed_civil_war = {
 				always = no
 			}
-	
 			removal_cost = -1
-			picture = great_depression	
+			picture = great_depression
 			modifier = {
 				training_time_factor = 0.1
-				planning_speed = -0.10
+				planning_speed = -0.1
 				army_org_Factor = -0.05
 			}
 		}
@@ -394,40 +347,35 @@ ideas = {
 			allowed = {
 				always = no
 			}
-	
 			allowed_civil_war = {
 				always = no
 			}
-	
 			removal_cost = -1
-			picture = generic_manpower_bonus	
+			picture = generic_manpower_bonus
 			modifier = {
 				army_leader_start_level = 1
 				army_leader_start_attack_level = 1
 				army_leader_start_planning_level = 1
-				army_leader_start_defense_level = 1	
+				army_leader_start_defense_level = 1
 			}
 		}
 		Allied_forces_2 = {
 			allowed = {
 				always = no
 			}
-	
 			allowed_civil_war = {
 				always = no
 			}
-	
 			removal_cost = -1
-			picture = generic_manpower_bonus	
+			picture = generic_manpower_bonus
 			modifier = {
 				army_leader_start_level = 1
 				army_leader_start_attack_level = 1
 				army_leader_start_planning_level = 1
 				army_leader_start_defense_level = 1
-				planning_speed = 0.10
-				max_planning = 0.25	
+				planning_speed = 0.1
+				max_planning = 0.25
 			}
 		}
-		
 	}
 }
