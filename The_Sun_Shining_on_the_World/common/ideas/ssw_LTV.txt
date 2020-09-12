@@ -1,0 +1,187 @@
+ideas = {
+	country = {
+		ltv_ideas_01 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = chi_army_corruption3
+			
+			modifier = {
+				army_core_attack_factor = 0.1
+			}
+			
+		}
+		ltv_ideas_02 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = eng_imperial_conscription
+			
+			modifier = {
+				mobilization_speed = 0.2			
+			}
+			
+		}
+		ltv_ideas_03 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = general_staff
+			
+			modifier = {
+				max_command_power = 50	
+			}
+			
+		}
+
+		ltv_ideas_04 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = MEX_politicised_army
+			
+			equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				motorized_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+		}
+			
+		}
+		ltv_ideas_05 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_speed_factor = 0.07
+				}
+			
+		}
+
+		ltv_ideas_07 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.12
+				}
+			
+		}
+
+		ltv_ideas_08 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_local_self_management
+			
+			modifier = {
+				production_speed_buildings_factor = 0.12
+				}
+			
+		}
+
+		ltv_ideas_09 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_exploit_mines
+			
+			modifier = {
+				industrial_capacity_factory = 0.12
+				}
+			
+		}
+		ltv_ideas_10 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = ger_revive_the_kaiserreich
+			
+			modifier = {
+				war_support_factor = 0.12
+				neutrality_drift = 0.10	
+				}
+			
+		}
+
+		ltv_ideas_11 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				stability_factor = 0.12
+				democratic_drift = 0.10	
+				}
+			
+		}
+
+		ltv_ideas_12 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = home_of_revolution
+			
+			modifier = {
+				industrial_capacity_factory = 0.12
+				communism_drift = 0.10	
+							}
+			
+		}
+
+
+
+		
+	}
+}
