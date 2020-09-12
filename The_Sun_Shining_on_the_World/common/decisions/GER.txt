@@ -1,0 +1,26 @@
+GER_attack_the_rebels = {
+	attack_rebel = {
+		icon = generic_operation
+		available = {
+			has_country_flag = attack_rebels
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 70
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 75
+
+		modifier = {
+			army_attack_factor = 0.1
+			army_speed_factor = 0.1
+		}
+
+	}
+}

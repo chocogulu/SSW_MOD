@@ -420,6 +420,8 @@ country_event = {
 	}
 }
 
+
+
 country_event = {
 	id = SSW_GER.9
 	title = SSW_GER.9.t
