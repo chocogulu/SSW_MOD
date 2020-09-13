@@ -55,7 +55,7 @@ create_country_leader = {
 	name = "Aung San"
 	picture = "gfx/leaders/BRM/Portrait_Aung_San"
 	expire = "1965.1.1"
-	ideology = social_liberalism
+	ideology = liberalism
 	traits = {
 		#
 	}
@@ -75,7 +75,7 @@ create_country_leader = {
 	name = "Ba Maw"
 	picture = "gfx/leaders/BRM/Portrait_Bar_Maw.dds"
 	expire = "1965.1.1"
-	ideology = social_liberalism
+	ideology = illiberal_democracy
 	traits = {
 		#
 	}

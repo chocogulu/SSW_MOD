@@ -27,7 +27,7 @@
 		desc = ""
 		picture = "gfx/leaders/CHI/Portrait_Chen_Gongbo.dds"
 		expire = "1965.1.1"
-		ideology = social_liberalism
+		ideology = liberalism
 		traits = {
 			#
 		}

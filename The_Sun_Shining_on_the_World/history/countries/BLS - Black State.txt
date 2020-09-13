@@ -24,7 +24,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/BLS/Portrait_Kwame_Nkrumah.dds"
 	expire = "1965.1.1"
-	ideology = social_liberalism
+	ideology = liberalism
 	traits = {
 		#
 	}
