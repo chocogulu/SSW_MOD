@@ -1,0 +1,53 @@
+add_namespace = SSW_VFR
+ #add_namespaceでidの数字の前に置く文字を指定＝SSW_ENG.1のようにする
+country_event = {
+	id = SSW_VFR.1 #イベントのid add_namespaceに書いたものに準ずる
+	title = SSW_VFR.1.t #イベントのタイトル部分。localisationで定義する
+	desc = SSW_VFR.1.d  #イベントの本文。localisationで定義する
+	picture = GFX_news_event_generic_read_write　#イベントの画像をここで指定。interfaceに記述した通りに入力する。ファイル名ではない。本家ファイルの場合は"GFX_"をつけることで使用可能。
+    
+	is_triggered_only = yes #これを付けないと条件を満たした場合に毎日起こる事になる。つけよう。
+
+	option = { #選択肢a
+        name = SSW_VFR.1.a #選択肢のタイトル localisationで定義する。
+        add_political_power = 100
+	}
+}
+country_event = {
+    id = SSW_VFR.2
+    title = SSW_VFR.2.t
+    desc = SSW_VFR.2.d
+    picture = GFX_Petan_dead
+    fire_only_once = yes
+        trigger = { #イベントが起きるきっかけ
+        tag = VFR
+        date > 1950.1.10 #1951.7.10　#日にち
+        }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = SSW_VFR.2.a
+    VFR = {add_stability = -0.5
+           kill_country_leader = VFR
+          }
+
+    }
+}
+country_event = {
+    id = SSW_VFR.3 #イベントのid add_namespaceに書いたものに準ずる
+    title = SSW_VFR.3.t #イベントのタイトル部分。localisationで定義する
+    desc = SSW_VFR.3.d  #イベントの本文。localisationで定義する
+    picture = news_event_051　#イベントの画像をここで指定。interfaceに記述した通りに入力する。ファイル名ではない。本家ファイルの場合は"GFX"をつけることで使用可能。
+
+    is_triggered_only = yes #これを付けないと条件を満たした場合に毎日起こる事になる。つけよう。
+
+    option = { #選択肢a
+        name = SSW_VFR.3.a #選択肢のタイトル localisationで定義する。
+        add_stability = 0.2
+        add_political_power = 200
+        add_ideas = Keep_going
+        set_capital = 16
+    }
+}
+

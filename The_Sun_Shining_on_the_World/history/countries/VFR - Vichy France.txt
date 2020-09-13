@@ -87,7 +87,12 @@ if = {
 		armored_car1 = 1
 	}
 }
-
+add_ideas = {
+	Unstable_regime
+	volunteer_only
+	civilian_economy
+	export_focus
+}
 set_convoys = 300
 set_autonomy = {
 	target = NWA
