@@ -1,0 +1,1522 @@
+focus_tree = {
+	id = ssw_manchukuo_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAN
+		}
+	}
+	#Focus for 外満州の要求 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_HswkXaph
+		icon = GFX_goal_unknown
+		x = 20
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_ZYkwTetb 
+			focus = MAN_BmfQXljJ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 中華統一 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_ZYhHJXub
+		icon = GFX_goal_unknown
+		x = 19
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_JYsNZHMW 
+		}
+		prerequisite = { 
+			focus = MAN_HswkXaph 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 新帝政 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_kciEWIjB
+		icon = GFX_goal_unknown
+		x = 27
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_VtrYnCmW }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ハニートラップ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_KXzOmHWr
+		icon = GFX_goal_unknown
+		x = 24
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_fYSNyuhq 
+		}
+		prerequisite = { 
+			focus = MAN_aYIHizou 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ゲリラのフィクサー - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_aYIHizou
+		icon = GFX_goal_unknown
+		x = 25
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_ojdcQtfT 
+			focus = MAN_fwtHxcld 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 暗部の活用 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_ojdcQtfT
+		icon = GFX_goal_unknown
+		x = 24
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_VZnwsrNU }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 仮面の女 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_fYSNyuhq
+		icon = GFX_goal_unknown
+		x = 23
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_ojdcQtfT 
+		}
+		prerequisite = { 
+			focus = MAN_ybduSgNT 
+		}
+		mutually_exclusive = { focus = MAN_OUGJiaZB }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 蒙古合併 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_JYsNZHMW
+		icon = GFX_goal_unknown
+		x = 18
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_ZYkwTetb 
+			focus = MAN_BmfQXljJ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 新憲法の制定 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_VAbgjaxB
+		icon = GFX_goal_unknown
+		x = 21
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_sUFicPar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 満州の安定化 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_VtrYnCmW
+		icon = GFX_goal_unknown
+		x = 27
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_CVnSibJF 
+			focus = MAN_kFPrAZoD 
+		}
+		mutually_exclusive = { focus = MAN_KTdnYDWE }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 生活保護の導入 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_dxywIUTJ
+		icon = GFX_goal_unknown
+		x = 15
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_OBqklwNm }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ベルナドッテ家との会談 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_EvhfJzrZ
+		icon = GFX_goal_unknown
+		x = 15
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_dxywIUTJ }
+		mutually_exclusive = { focus = MAN_VMAQPNip }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 離婚手続 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_zVPOFKiZ
+		icon = GFX_goal_unknown
+		x = 21
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_OUGJiaZB }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 日満関係の強化 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_PExzhSFl
+		icon = GFX_goal_unknown
+		x = 17
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_sUFicPar 
+			focus = MAN_XCIPUZjk 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 共産党の禁止 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_VZedPuko
+		icon = GFX_goal_unknown
+		x = 20
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_BpbGKFzc 
+		}
+		prerequisite = { 
+			focus = MAN_VAbgjaxB 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for サケとタバコとそれからアヘン - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_RihaJdkS
+		icon = GFX_goal_unknown
+		x = 15
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_1960 
+		}
+		prerequisite = { 
+			focus = MAN_EvhfJzrZ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 王権の強化 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_rcVeUwuA
+		icon = GFX_goal_unknown
+		x = 23
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_sUFicPar }
+		mutually_exclusive = { focus = MAN_ulaRVPOs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 1960ビジョン
+	focus = {
+		id = MAN_1960
+		icon = GFX_goal_unknown
+		x = 16
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_EvhfJzrZ 
+			focus = MAN_noQsqDEG 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 新政府への反対運動 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_KTdnYDWE
+		icon = GFX_goal_unknown
+		x = 25
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_CVnSibJF 
+			focus = MAN_kFPrAZoD 
+		}
+		mutually_exclusive = { focus = MAN_VtrYnCmW }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 宮廷の帝位争い - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_VZnwsrNU
+		icon = GFX_goal_unknown
+		x = 23
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_VAbgjaxB 
+		}
+		prerequisite = { 
+			focus = MAN_rcVeUwuA 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 独立記念日 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_sUFicPar
+		icon = GFX_goal_unknown
+		x = 23
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = MAN_XCIPUZjk 
+		}
+		mutually_exclusive = { 
+			focus = MAN_SVxbUzOi 
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	#Focus for 人権保障法を制定 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_pwqROxJN
+		icon = GFX_goal_unknown
+		x = 8
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_nAuBdTfj 
+			focus = MAN_URsSckWz 
+		}
+		mutually_exclusive = { 
+			focus = MAN_yQkGiKtH 
+		}
+		mutually_exclusive = { 
+			focus = MAN_xzwfRNcv 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 不正選挙の告発 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_SVxbUzOi
+		icon = GFX_goal_unknown
+		x = 5
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = MAN_XCIPUZjk 
+		}
+		mutually_exclusive = { 
+			focus = MAN_sUFicPar 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 約束の履行 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_BpbGKFzc
+		icon = GFX_goal_unknown
+		x = 19
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_PExzhSFl 
+			focus = MAN_VAbgjaxB 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 報復の完遂 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_uLPmJRSi
+		icon = GFX_goal_unknown
+		x = 26
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_YnTwpgbu 
+			focus = MAN_aYIHizou 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 大東亜におけるたち位置を確認 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_noQsqDEG
+		icon = GFX_goal_unknown
+		x = 17
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_PExzhSFl 
+		}
+		prerequisite = { 
+			focus = MAN_BpbGKFzc 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 溥儀の進退 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_ybduSgNT
+		icon = GFX_goal_unknown
+		x = 22
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_VZnwsrNU }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 作物の安全保障 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_MLfDwcxQ
+		icon = GFX_goal_unknown
+		x = 17
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_noQsqDEG 
+		}
+		prerequisite = { 
+			focus = MAN_1960 
+		}
+		mutually_exclusive = { focus = MAN_rZOkgSKH }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 王党派（婉容の子） - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_kFPrAZoD
+		icon = GFX_goal_unknown
+		x = 25
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_KXzOmHWr 
+		}
+		prerequisite = { 
+			focus = MAN_uLPmJRSi 
+		}
+		mutually_exclusive = { 
+			focus = MAN_SntrdcUW 
+		}
+		mutually_exclusive = { 
+			focus = MAN_CVnSibJF 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 改良レーニン主義 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_BIloNFEK
+		icon = GFX_goal_unknown
+		x = 9
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_hFZtmIeR }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ファシズム - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_CgeNBaSV
+		icon = GFX_goal_unknown
+		x = 1
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_wvntWrlY }
+		mutually_exclusive = { 
+			focus = MAN_vxFrkiDh 
+			focus = MAN_iGRmWpew 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ナチズム - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_vxFrkiDh
+		icon = GFX_goal_unknown
+		x = 3
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_JiuOtjqI }
+		mutually_exclusive = { 
+			focus = MAN_iGRmWpew 
+		}
+		mutually_exclusive = { 
+			focus = MAN_CgeNBaSV 
+		}
+		mutually_exclusive = { 
+			focus = MAN_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 汎民族戦線の結成 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_UCjdBaiS
+		icon = GFX_goal_unknown
+		x = 11
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_NzbnSoWj }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 社会民主主義 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_MmsSXKzU
+		icon = GFX_goal_unknown
+		x = 15
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_RihaJdkS }
+		mutually_exclusive = { focus = MAN_gKVNdXwE }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 世界における自由民主主義の前哨地 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_XVNhPiBn
+		icon = GFX_goal_unknown
+		x = 13
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_JIxeZRcs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 権威的民主主義 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_gKVNdXwE
+		icon = GFX_goal_unknown
+		x = 17
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_MLfDwcxQ }
+		mutually_exclusive = { focus = MAN_MmsSXKzU }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 保守主義 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_ZYkwTetb
+		icon = GFX_goal_unknown
+		x = 19
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_rZOkgSKH }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 王党派（李玉琴） - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_SntrdcUW
+		icon = GFX_goal_unknown
+		x = 23
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_KXzOmHWr }
+		mutually_exclusive = { 
+			focus = MAN_kFPrAZoD 
+		}
+		mutually_exclusive = { 
+			focus = MAN_CVnSibJF 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 軍事独裁 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_NdIDToRw
+		icon = GFX_goal_unknown
+		x = 25
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_KTdnYDWE }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 王党派（溥儀） - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_BmfQXljJ
+		icon = GFX_goal_unknown
+		x = 21
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_zVPOFKiZ }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 対日融和 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_ozwhTYrU
+		icon = GFX_goal_unknown
+		x = 23
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_SntrdcUW }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ユナイテッド・キングダム・オブ・イーストアジア - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_mzTBCAlk
+		icon = GFX_goal_unknown
+		x = 16
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_MmsSXKzU 
+			focus = MAN_gKVNdXwE 
+		}
+		mutually_exclusive = { focus = MAN_qFXKDOSR }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 東アジアの合衆国構想復活 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_VMAQPNip
+		icon = GFX_goal_unknown
+		x = 13
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_xzwfRNcv }
+		mutually_exclusive = { focus = MAN_EvhfJzrZ }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ユナイテッド・ステーツ・オブ・イーストアジア - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_qFXKDOSR
+		icon = GFX_goal_unknown
+		x = 14
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_XVNhPiBn 
+			focus = MAN_MmsSXKzU 
+		}
+		mutually_exclusive = { focus = MAN_mzTBCAlk }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for アメリカ合衆国の建国理念を導入 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_OBqklwNm
+		icon = GFX_goal_unknown
+		x = 14
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_XCIPUZjk }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for アメリカ人ディアスポラ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_xzwfRNcv
+		icon = GFX_goal_unknown
+		x = 13
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_xNgfmVrK 
+		}
+		prerequisite = { 
+			focus = MAN_OBqklwNm 
+		}
+		mutually_exclusive = { 
+			focus = MAN_yQkGiKtH 
+			focus = MAN_pwqROxJN 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ソビエト人ディアスポラ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_hFZtmIeR
+		icon = GFX_goal_unknown
+		x = 9
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_pwqROxJN }
+		mutually_exclusive = { focus = MAN_NHnOZpvV }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 第二次ソビエト連邦 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_ZkNAKgBb
+		icon = GFX_goal_unknown
+		x = 9
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_XNKaZQeq 
+		}
+		prerequisite = { 
+			focus = MAN_GoEzbZCa 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 農民同盟の煽動 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_yQkGiKtH
+		icon = GFX_goal_unknown
+		x = 11
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_URsSckWz 
+		}
+		prerequisite = { 
+			focus = MAN_xNgfmVrK 
+		}
+		mutually_exclusive = { 
+			focus = MAN_pwqROxJN 
+		}
+		mutually_exclusive = { 
+			focus = MAN_xzwfRNcv 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ソビエトの名は我々のものだ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_XNKaZQeq
+		icon = GFX_goal_unknown
+		x = 9
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_PEnHfGeB }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 農民同盟の排除 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_tqypRofH
+		icon = GFX_goal_unknown
+		x = 7
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_NHnOZpvV }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 官僚体制の再考 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_URsSckWz
+		icon = GFX_goal_unknown
+		x = 10
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_XCIPUZjk }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 自由の内省 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_XCIPUZjk
+		icon = GFX_goal_unknown
+		x = 12
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = MAN_SVxbUzOi 
+		}
+		mutually_exclusive = { 
+			focus = MAN_sUFicPar 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 選挙制度への攻撃 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_nAuBdTfj
+		icon = GFX_goal_unknown
+		x = 7
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_SVxbUzOi }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 選挙の自称勝者を脅迫 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_CqMRTOft
+		icon = GFX_goal_unknown
+		x = 3
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_SVxbUzOi }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for イタリアに学べ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_wvntWrlY
+		icon = GFX_goal_unknown
+		x = 1
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_ZYxzUcPp 
+		}
+		prerequisite = { 
+			focus = MAN_QyEabvgJ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ドイツに学べ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_JiuOtjqI
+		icon = GFX_goal_unknown
+		x = 3
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_ZYxzUcPp 
+		}
+		prerequisite = { 
+			focus = MAN_QyEabvgJ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 蒋介石派の登用 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_leXHxiQf
+		icon = GFX_focus_prc_remove_chiang_kai_shek
+		x = 3
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_wafSLYOr 
+		}
+		prerequisite = { 
+			focus = MAN_ZWLUpnJG 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 皇帝の排除 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_wafSLYOr
+		icon = GFX_goal_unknown
+		x = 2
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_CqMRTOft }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for マオイストの農民 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_yDglQwrv
+		icon = GFX_goal_unknown
+		x = 7
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_tqypRofH }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 刑法改正 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_ZWLUpnJG
+		icon = GFX_goal_unknown
+		x = 4
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_CqMRTOft }
+		mutually_exclusive = { focus = MAN_EiXVfgMJ }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 中華ファシズム - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_iGRmWpew
+		icon = GFX_goal_unknown
+		x = 5
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_fXTAkjrN }
+		mutually_exclusive = { 
+			focus = MAN_vxFrkiDh 
+		}
+		mutually_exclusive = { 
+			focus = MAN_CgeNBaSV 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 敗戦国の在り方 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_fXTAkjrN
+		icon = GFX_goal_unknown
+		x = 5
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_PiSYoJHr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 柳葉刀の夜 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_ZYxzUcPp
+		icon = GFX_goal_unknown
+		x = 3
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_leXHxiQf }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for チャハル進駐 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_QyEabvgJ
+		icon = GFX_goal_unknown
+		x = 1
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_leXHxiQf }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 中国共産党満州派の解放 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_IwvfqZsg
+		icon = GFX_goal_unknown
+		x = 7
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_yDglQwrv 
+		}
+		prerequisite = { 
+			focus = MAN_fXTAkjrN 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 毛沢東思想の後継者 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_NHnOZpvV
+		icon = GFX_focus_prc_maoism
+		x = 7
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_pwqROxJN 
+		}
+		prerequisite = { 
+			focus = MAN_EiXVfgMJ 
+		}
+		mutually_exclusive = { focus = MAN_hFZtmIeR }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 朝鮮の確保 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_lSgWiZyN
+		icon = GFX_goal_unknown
+		x = 6
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_GoEzbZCa }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 外満州の回収 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_kXdzOSwy
+		icon = GFX_goal_unknown
+		x = 2
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_GoEzbZCa }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for アルファ・コンプレックス - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_GoEzbZCa
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 5
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_iGRmWpew 
+			focus = MAN_CgeNBaSV 
+			focus = MAN_vxFrkiDh 
+			focus = MAN_IwvfqZsg 
+			focus = MAN_XNKaZQeq 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 大中華 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_dnFTaYUm
+		icon = GFX_focus_chi_one_china_policy
+		x = 4
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_kXdzOSwy 
+		}
+		prerequisite = { 
+			focus = MAN_lSgWiZyN 
+		}
+		prerequisite = { 
+			focus = MAN_dbilwUpz 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 文化の排除 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_EiXVfgMJ
+		icon = GFX_goal_unknown
+		x = 6
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_nAuBdTfj }
+		mutually_exclusive = { focus = MAN_ZWLUpnJG }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 独裁権の確立 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_PiSYoJHr
+		icon = GFX_goal_unknown
+		x = 5
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_NHnOZpvV 
+			focus = MAN_leXHxiQf 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 中原の争いの解決 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_dbilwUpz
+		icon = GFX_goal_unknown
+		x = 4
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_GoEzbZCa }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 康徳自由民権運動 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_crWngOPF
+		icon = GFX_goal_unknown
+		x = 13
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_VMAQPNip }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 人は皆、自身の統治者である - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_xNgfmVrK
+		icon = GFX_goal_unknown
+		x = 12
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_XCIPUZjk }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 王党派（完顔派） - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_CVnSibJF
+		icon = GFX_goal_unknown
+		x = 27
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_YnTwpgbu 
+		}
+		prerequisite = { 
+			focus = MAN_uLPmJRSi 
+		}
+		mutually_exclusive = { 
+			focus = MAN_SntrdcUW 
+		}
+		mutually_exclusive = { 
+			focus = MAN_kFPrAZoD 
+		}
+		mutually_exclusive = { 
+			focus = MAN_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 続・間島暴動 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_SVprtOsW
+		icon = GFX_goal_unknown
+		x = 11
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_QwzvrbHZ }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 全国蜂起 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_NzbnSoWj
+		icon = GFX_goal_unknown
+		x = 11
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_SVprtOsW }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 蒙古人への権限移譲 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_PEnHfGeB
+		icon = GFX_goal_unknown
+		x = 9
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_BIloNFEK }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 朝鮮の無政府主義者に倣え - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_QwzvrbHZ
+		icon = GFX_goal_unknown
+		x = 11
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_yQkGiKtH }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 軍の漢人の支持を取り付ける - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_EJKcGAmR
+		icon = GFX_goal_unknown
+		x = 27
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_ulaRVPOs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 静かな小日本主義 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_JIxeZRcs
+		icon = GFX_goal_unknown
+		x = 13
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_crWngOPF }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 地方選挙の明派閥 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_IakxGfeM
+		icon = GFX_goal_unknown
+		x = 25
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_ulaRVPOs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 満州弱体化の時を狙え - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_ulaRVPOs
+		icon = GFX_goal_unknown
+		x = 26
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_sUFicPar }
+		mutually_exclusive = { focus = MAN_rcVeUwuA }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 日本人の再優遇 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_rZOkgSKH
+		icon = GFX_goal_unknown
+		x = 19
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_QWgUjXnf }
+		mutually_exclusive = { focus = MAN_MLfDwcxQ }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 亡命者の帰還事業 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_QWgUjXnf
+		icon = GFX_goal_unknown
+		x = 19
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_VZedPuko }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 挙兵の準備 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_fwtHxcld
+		icon = GFX_goal_unknown
+		x = 26
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MAN_IakxGfeM 
+		}
+		prerequisite = { 
+			focus = MAN_EJKcGAmR 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 共産党のネットワークとの同盟 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_YnTwpgbu
+		icon = GFX_goal_unknown
+		x = 27
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_fwtHxcld }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 政治家の支持を取り付ける - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_OUGJiaZB
+		icon = GFX_goal_unknown
+		x = 21
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_ybduSgNT }
+		mutually_exclusive = { focus = MAN_fYSNyuhq }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 対日攻勢 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = MAN_gyxHJjBU
+		icon = GFX_goal_unknown
+		x = 21
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MAN_BmfQXljJ }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }
