@@ -8,7 +8,6 @@ set_technology = {
 	mass_assault = 1
 }
 
-add_ideas = { UTC_idea_1 }
 set_convoys = 5
 
 set_politics = {

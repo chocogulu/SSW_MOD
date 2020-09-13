@@ -249,19 +249,6 @@ spriteTypes = {
 		name = "GFX_focus_Greim_ico"
 		texturefile = "gfx/interface/goals/GER/focus_Greim_ico.dds"
 	}
-#ビルマ
-	SpriteType = {
-		name = "GFX_focus_BRM_sinniti"
-		texturefile = "gfx/interface/goals/BRM/focus_BRM_sinniti.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_BRM_dokuritu_ha"
-		texturefile = "gfx/interface/goals/BRM/focus_BRM_dokuritu_ha.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_LTV_kokki"
-		texturefile = "gfx/interface/goals/BRM/focus_LTV_kokki.dds"
-	}
 #イギリス
 	SpriteType = {
 		name = "GFX_focus_1950_vote"
