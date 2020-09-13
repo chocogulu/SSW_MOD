@@ -25,7 +25,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/ALF/Portrait_Entin_Roosevelt_II.dds"
 	expire = "1965.1.1"
-	ideology = illiberal_democracy
+	ideology = authoritative_democracy_ideology
 	traits = {
 	}
 }
