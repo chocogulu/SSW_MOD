@@ -1,0 +1,1536 @@
+add_namespace = ssw_spr
+
+country_event = {
+	id = ssw_spr.1
+	title = ssw_spr.1.title
+	desc = ssw_spr.1.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.1.a
+                ITA = {
+					annex_country = { 
+						target = AFR
+						transfer_troops = yes 
+					}
+				}
+				RIF = {
+					annex_country = { 
+						target = MOR
+						transfer_troops = yes 
+					}
+				}
+		ai_chance = { factor = 10}
+		news_event = { id = ssw_spr.27 }
+				
+			}
+
+    option = {
+		name = ssw_spr.1.b
+		ai_chance = { factor = 1}
+		SPR = {
+		country_event = { id = ssw_spr.28 }
+				}
+			}
+}
+
+	news_event = {
+		id = ssw_spr.27
+		title = ssw_spr.27.title
+		desc = ssw_spr.27.desc
+		picture = GFX_news_event_001
+		fire_only_once = yes
+		is_triggered_only = yes
+		mean_time_to_happen = {
+			days = 7
+		}
+		option = {
+			name = ssw_spr.27.a
+			trigger = {
+				NOT = {
+					TAG = SPR
+					is_in_faction_with = SPR
+				}
+			}
+		}
+		option = {
+			name = ssw_spr.27.b
+			trigger = { TAG = SPR }
+		}
+		option = {
+			name = ssw_spr.27.c
+			trigger = {
+				NOT = {
+					TAG = SPR
+				}
+				is_in_faction_with = SPR
+		}
+	}
+}
+
+country_event = {
+		id = ssw_spr.28
+		title = ssw_spr.28.title
+		desc = ssw_spr.28.desc
+		picture = GFX_report_event_second_vienna_award_pact
+	
+		fire_only_once = yes
+		is_triggered_only = yes
+		mean_time_to_happen = {
+			days = 7
+		}
+	
+		option = {
+			name = ssw_spr.28.a
+			ai_chance = { factor = 1 }				
+				}
+}
+
+country_event = {
+	id = ssw_spr.2
+	title = ssw_spr.2.title
+	desc = ssw_spr.2.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.2.a
+                GER = {
+					add_to_faction = SPR
+				}
+		ai_chance = { factor = 10}
+		news_event = { id = ssw_spr.29 }	
+			}
+
+    option = {
+		name = ssw_spr.2.b
+		ai_chance = { factor = 1}
+		SPR = {
+		country_event = { id = ssw_spr.30 }
+				}
+			}
+}
+
+news_event = {
+	id = ssw_spr.29
+	title = ssw_spr.29.title
+	desc = ssw_spr.29.desc
+	picture = GFX_news_event_001
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = ssw_spr.29.a
+		trigger = {
+			NOT = {
+				TAG = SPR
+				is_in_faction_with = SPR
+			}
+		}
+	}
+	option = {
+		name = ssw_spr.29.b
+		trigger = { TAG = SPR }
+	}
+	option = {
+		name = ssw_spr.29.c
+		trigger = {
+			NOT = {
+				TAG = SPR
+			}
+			is_in_faction_with = SPR
+	}
+}
+}
+
+country_event = {
+	id = ssw_spr.30
+	title = ssw_spr.30.title
+	desc = ssw_spr.30.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.30.a
+		ai_chance = { factor = 1 }				
+			}
+}
+
+country_event = {
+	id = ssw_spr.3
+	title = ssw_spr.3.title
+	desc = ssw_spr.3.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.3.a
+                GER = {
+					add_ideas = spr_ger_ideas_01
+				}
+				SPR = {
+					
+					country_event = { id = ssw_spr.31 }
+							}
+		ai_chance = { factor = 10}
+			}
+
+    option = {
+		name = ssw_spr.3.b
+		ai_chance = { factor = 1}
+		SPR = {
+			country_event = { id = ssw_spr.32 }
+					}
+			}
+}
+
+country_event = {
+	id = ssw_spr.31
+	title = ssw_spr.31.title
+	desc = ssw_spr.31.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.31.a
+		ai_chance = { factor = 1 }	
+		SPR = {
+		add_ideas = spr_ger_ideas_01
+		}		
+	}
+}
+
+
+country_event = {
+	id = ssw_spr.32
+	title = ssw_spr.32.title
+	desc = ssw_spr.32.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.32.a
+		ai_chance = { factor = 1 }				
+			}
+}
+
+country_event = {
+	id = ssw_spr.111
+	title = ssw_spr.111.title
+	desc = ssw_spr.111.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.111.a
+                SPR = {
+					set_state_owner = 177
+					country_event = { id = ssw_spr.34 }
+				}
+		ai_chance = { factor = 10}
+			}
+
+    option = {
+		name = ssw_spr.111.b
+		ai_chance = { factor = 1}
+		news_event = { id = ssw_spr.33 }
+		ITA = {
+			create_wargoal = { 
+				type = puppet_wargoal_focus 
+				target = SPR
+			}
+					}
+			}
+}
+
+country_event = {
+	id = ssw_spr.34
+	title = ssw_spr.34.title
+	desc = ssw_spr.34.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.34.a
+		ai_chance = { factor = 1 }				
+			}
+}
+
+news_event = {
+	id = ssw_spr.33
+	title = ssw_spr.33.title
+	desc = ssw_spr.33.desc
+	picture = GFX_news_event_001
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = ssw_spr.33.a
+		trigger = {
+			NOT = {
+				TAG = SPR
+				is_in_faction_with = SPR
+			}
+		}
+	}
+	option = {
+		name = ssw_spr.33.b
+		trigger = { TAG = SPR }
+	}
+	option = {
+		name = ssw_spr.33.c
+		trigger = {
+			NOT = {
+				TAG = SPR
+			}
+			is_in_faction_with = SPR
+	}
+}
+}
+
+country_event = {
+	id = ssw_spr.4
+	title = ssw_spr.4.title
+	desc = ssw_spr.4.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.4.a
+                ITA = {
+					add_to_faction = SPR
+				}
+		ai_chance = { factor = 10}
+		news_event = { id = ssw_spr.35 }	
+			}
+
+    option = {
+		name = ssw_spr.4.b
+		ai_chance = { factor = 1}
+		SPR = {
+		country_event = { id = ssw_spr.36 }
+				}
+			}
+}
+
+news_event = {
+	id = ssw_spr.35
+	title = ssw_spr.35.title
+	desc = ssw_spr.35.desc
+	picture = GFX_news_event_001
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = ssw_spr.35.a
+		trigger = {
+			NOT = {
+				TAG = SPR
+				is_in_faction_with = SPR
+			}
+		}
+	}
+	option = {
+		name = ssw_spr.35.b
+		trigger = { TAG = SPR }
+	}
+	option = {
+		name = ssw_spr.35.c
+		trigger = {
+			NOT = {
+				TAG = SPR
+			}
+			is_in_faction_with = SPR
+	}
+}
+}
+
+country_event = {
+	id = ssw_spr.36
+	title = ssw_spr.36.title
+	desc = ssw_spr.36.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.36.a
+		ai_chance = { factor = 1 }				
+			}
+}
+
+country_event = {
+	id = ssw_spr.5
+	title = ssw_spr.5.title
+	desc = ssw_spr.5.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.5.a
+                SPR = {
+					set_state_owner = 177
+					country_event = { id = ssw_spr.37 }
+				}
+		ai_chance = { factor = 10}
+			}
+
+    option = {
+		name = ssw_spr.5.b
+		ai_chance = { factor = 1}
+		SPR = {
+			country_event = { id = ssw_spr.38 }
+		}
+			}
+}
+
+country_event = {
+	id = ssw_spr.37
+	title = ssw_spr.37.title
+	desc = ssw_spr.37.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.37.a
+		ai_chance = { factor = 1 }				
+			}
+}
+country_event = {
+	id = ssw_spr.38
+	title = ssw_spr.38.title
+	desc = ssw_spr.38.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.38.a
+		ai_chance = { factor = 1 }				
+			}
+}
+
+country_event = {
+	id = ssw_spr.6
+	title = ssw_spr.6.title
+	desc = ssw_spr.6.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.6.a
+		ITA = {
+			annex_country = { 
+				target = AFR
+				transfer_troops = yes 
+			}
+		}
+		RIF = {
+			annex_country = { 
+				target = MOR
+				transfer_troops = yes 
+			}
+		}
+		ai_chance = { factor = 10}
+		news_event = { id = ssw_spr.39 }
+			}
+
+    option = {
+		name = ssw_spr.6.b
+		ai_chance = { factor = 1}
+		SPR = {
+			country_event = { id = ssw_spr.40 }
+		}
+			}
+}
+
+news_event = {
+	id = ssw_spr.39
+	title = ssw_spr.39.title
+	desc = ssw_spr.39.desc
+	picture = GFX_news_event_001
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = ssw_spr.39.a
+		trigger = {
+			NOT = {
+				TAG = SPR
+				is_in_faction_with = SPR
+			}
+		}
+	}
+	option = {
+		name = ssw_spr_news.39.b
+		trigger = { TAG = SPR }
+	}
+	option = {
+		name = ssw_spr_news.39.c
+		trigger = {
+			NOT = {
+				TAG = SPR
+			}
+			is_in_faction_with = SPR
+	}
+}
+}
+
+
+country_event = {
+	id = ssw_spr.40
+	title = ssw_spr.40.title
+	desc = ssw_spr.40.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.40.a
+		ai_chance = { factor = 1 }				
+			}
+}
+
+country_event = {
+	id = ssw_spr.7
+	title = ssw_spr.7.title
+	desc = ssw_spr.7.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.7.a
+		ITA = {
+			set_state_owner = 20
+			set_state_owner = 32
+			set_state_owner = 23
+			set_state_owner = 25
+			set_state_owner = 21
+		}
+		SPR = {
+			set_state_owner = 19
+			set_state_owner = 31
+			set_state_owner = 26
+			set_state_owner = 22
+			set_state_owner = 33
+		}
+		ai_chance = { factor = 10}
+		news_event = { id = ssw_spr.41 }
+		VFR = {
+			country_event = { id = ssw_spr.42 }
+		}
+			}
+
+    option = {
+		name = ssw_spr.7.b
+		ai_chance = { factor = 1}
+		SPR = {
+			country_event = { id = ssw_spr.43 }
+		}
+			}
+}
+
+news_event = {
+	id = ssw_spr.41
+	title = ssw_spr.41.title
+	desc = ssw_spr.41.desc
+	picture = GFX_news_event_001
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = ssw_spr.41.a
+		trigger = {
+			NOT = {
+				TAG = SPR
+				is_in_faction_with = SPR
+			}
+		}
+	}
+	option = {
+		name = ssw_spr.41.b
+		trigger = { TAG = SPR }
+	}
+	option = {
+		name = ssw_spr.41.c
+		trigger = {
+			NOT = {
+				TAG = SPR
+			}
+			is_in_faction_with = SPR
+	}
+}
+}
+
+country_event = {
+	id = ssw_spr.42
+	title = ssw_spr.42.title
+	desc = ssw_spr.42.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.42.a
+		GER = {
+			puppet = VFR
+		}
+		ai_chance = { factor = 1 }				
+			}
+}
+
+country_event = {
+	id = ssw_spr.43
+	title = ssw_spr.43.title
+	desc = ssw_spr.43.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.43.a
+		ai_chance = { factor = 1 }				
+			}
+}
+
+country_event = {
+	id = ssw_spr.77
+	title = ssw_spr.77.title
+	desc = ssw_spr.77.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.77.a
+		ITA = {
+			add_to_faction = POR
+		}
+		ai_chance = { factor = 10}
+			}
+
+    option = {
+		name = ssw_spr.77.b
+		SPR = {
+			country_event = { id = ssw_spr.44 }
+		}
+		ai_chance = { factor = 1}
+			}
+}
+
+country_event = {
+	id = ssw_spr.44
+	title = ssw_spr.44.title
+	desc = ssw_spr.44.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.44.a
+		ai_chance = { factor = 1 }				
+			}
+}
+
+country_event = {
+	id = ssw_spr.8
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = IRE
+		}
+		ai_chance = { factor = 3 }
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 1 }
+			}
+}
+
+country_event = {
+	id = ssw_spr.9
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = BRA
+		}
+		ai_chance = { factor = 1 }
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 1 }
+			}
+}
+country_event = {
+	id = ssw_spr.10
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = VEN
+		}
+		ai_chance = { factor = 1 }
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 1 }
+			}
+}
+country_event = {
+	id = ssw_spr.11
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = COL
+		}
+		ai_chance = { factor = 1}
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 5 }
+			}
+}
+country_event = {
+	id = ssw_spr.12
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = PRU
+		}
+		ai_chance = { factor = 1}
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 1 }
+			}
+}
+country_event = {
+	id = ssw_spr.13
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = BOL
+		}
+		ai_chance = { factor = 3 }
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 1 }
+			}
+}
+country_event = {
+	id = ssw_spr.14
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = PAR
+		}
+		ai_chance = { factor = 3 }
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 1 }
+			}
+}
+country_event = {
+	id = ssw_spr.15
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = ARG
+		}
+		ai_chance = { factor = 3 }
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 1 }
+			}
+}
+country_event = {
+	id = ssw_spr.16
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = URG
+		}
+		ai_chance = { factor = 1}
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 5 }
+			}
+}
+country_event = {
+	id = ssw_spr.17
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = PAN
+		}
+		ai_chance = { factor = 1}
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 5 }
+			}
+}
+country_event = {
+	id = ssw_spr.18
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = COS
+		}
+		ai_chance = { factor = 1}
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 5 }
+			}
+}
+country_event = {
+	id = ssw_spr.19
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = NIC
+		}
+		ai_chance = { factor = 3}
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 1 }
+			}
+}
+country_event = {
+	id = ssw_spr.20
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = HON
+		}
+		ai_chance = { factor = 1}
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 5 }
+			}
+}
+country_event = {
+	id = ssw_spr.21
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = ELS
+		}
+		ai_chance = { factor = 1}
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 1 }
+			}
+}
+country_event = {
+	id = ssw_spr.22
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = GUA
+		}
+		ai_chance = { factor = 3 }
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 1 }
+			}
+}
+country_event = {
+	id = ssw_spr.23
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = MEX
+		}
+		ai_chance = { factor = 1}
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 7 }
+			}
+}
+country_event = {
+	id = ssw_spr.24
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = CUB
+		}
+		ai_chance = { factor = 1}
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 5 }
+			}
+}
+country_event = {
+	id = ssw_spr.25
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = HAI
+		}
+		ai_chance = { factor = 1}
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 5 }
+			}
+}
+country_event = {
+	id = ssw_spr.26
+	title = ssw_spr.8.title
+	desc = ssw_spr.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.8.a
+		ITA = {
+			add_to_faction = IRE
+		}
+		ai_chance = { factor = 1}
+			}
+
+    option = {
+		name = ssw_spr.8.b
+		ai_chance = { factor = 1 }
+			}
+}
+
+country_event = {
+	id = ssw_spr.47
+	title = ssw_spr.47.title
+	desc = ssw_spr.47.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.47.a
+		170 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+		}
+		788 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+		}
+		ai_chance = { factor = 1 }
+			}
+
+    option = {
+		name = ssw_spr.47.b
+		166 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+		}
+		176 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+		}
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = ssw_spr.47.c
+		171 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+		}
+		167 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+		}
+		ai_chance = { factor = 1 }
+	}
+		
+}
+
+country_event = {
+	id = ssw_spr.48
+	title = ssw_spr.48.title
+	desc = ssw_spr.48.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.48.a
+		add_political_power = 240
+		ai_chance = { factor = 1 }
+			}
+}
+
+country_event = {
+	id = ssw_spr.49
+	title = ssw_spr.49.title
+	desc = ssw_spr.49.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+    option = {
+		name = ssw_spr.49.a
+		SPR = {
+			country_event = { id = ssw_spr.491 }
+		}
+		ai_chance = { factor = 1 }
+			}
+			option = {
+		name = ssw_spr.49.b
+		SPR = {
+			country_event = { id = ssw_spr.492 }
+		}
+		ai_chance = { factor = 1 }
+			}
+}
+
+country_event = {
+	id = ssw_spr.491
+	title = ssw_spr.491.title
+	desc = ssw_spr.491.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.491.a
+		SPR = {
+		set_state_owner = 626
+		}
+		ai_chance = { factor = 1 }				
+			}
+}
+country_event = {
+	id = ssw_spr.492
+	title = ssw_spr.492.title
+	desc = ssw_spr.492.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.492.a
+		ai_chance = { factor = 1 }				
+			}
+}
+
+country_event = {
+	id = ssw_spr.51
+	title = ssw_spr.51.title
+	desc = ssw_spr.51.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.51.a
+		add_stability = 0.2
+		ai_chance = { factor = 1 }				
+			}
+}
+
+
+country_event = {
+	id = ssw_spr.52
+	title = ssw_spr.52.title
+	desc = ssw_spr.52.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.52.a
+		ENG = {
+		diplomatic_relation = {
+			country = SPR
+			relation = guarantee
+			active = no
+			}
+		}
+		SPR = {
+			country_event = { id = ssw_spr.53 }
+		}
+		ai_chance = { factor = 5 }				
+			}
+			option = {
+				name = ssw_spr.52.b
+				SPR = {
+					country_event = { id = ssw_spr.54 }
+				}
+				ai_chance = { factor = 1 }				
+					}
+}
+
+country_event = {
+	id = ssw_spr.53
+	title = ssw_spr.53.title
+	desc = ssw_spr.53.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.53.a
+		ai_chance = { factor = 1 }				
+			}
+}
+
+country_event = {
+	id = ssw_spr.54
+	title = ssw_spr.54.title
+	desc = ssw_spr.54.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.54.a
+		ai_chance = { factor = 1 }				
+			}
+}
+
+country_event = {
+	id = ssw_spr.55
+	title = ssw_spr.55.title
+	desc = ssw_spr.55.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.55.a
+		GER = {
+			add_political_power = 220
+		}
+		SPR = {
+			annex_country = { 
+				target = ATL
+				transfer_troops = yes 
+			}
+			add_political_power = -220
+			country_event = { id = ssw_spr.56 }
+		}
+		ai_chance = { factor = 5 }				
+			}
+			option = {
+				name = ssw_spr.55.b
+				SPR = {
+					country_event = { id = ssw_spr.57 }
+				}
+				ai_chance = { factor = 1 }				
+					}
+}
+country_event = {
+	id = ssw_spr.56
+	title = ssw_spr.56.title
+	desc = ssw_spr.56.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.56.a
+		ai_chance = { factor = 1 }				
+			}
+}
+country_event = {
+	id = ssw_spr.57
+	title = ssw_spr.57.title
+	desc = ssw_spr.57.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = ssw_spr.57.a
+		ai_chance = { factor = 1 }				
+			}
+}

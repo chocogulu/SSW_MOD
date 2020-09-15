@@ -1,0 +1,807 @@
+ideas = {
+	country = {
+		spr_debahu_02 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = HUN_hungarian_monarchy_democratic
+			
+			modifier = {
+				neutrality_drift = 0.10
+							}
+						}
+
+		spr_ideas_01 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = SPR_crush_the_revolution
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				command_power_gain = 1.0
+							}
+						}
+		spr_ideas_02 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_gain = -0.15
+				political_advisor_cost_factor = 0.15
+				trade_laws_cost_factor = 0.15
+				mobilization_laws_cost_factor = 0.15
+				economy_cost_factor = 0.15
+				consumer_goods_factor = -0.1
+							}
+						}
+		spr_ideas_03 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				research_speed_factor = 0.1
+							}
+						}
+		spr_ideas_04 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				justify_war_goal_time = -0.25
+							}
+		}
+		spr_ideas_05 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = german_advisors
+			
+			modifier = {
+				military_leader_cost_factor = -0.25
+				army_leader_start_level = 1	
+				conscription_factor = 0.1	
+							}
+		}
+		spr_ideas_06 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = german_advisors
+			
+			modifier = {
+				military_leader_cost_factor = -0.25
+				army_leader_start_level = 1	
+				conscription_factor = 0.1	
+					special_forces_cap = 0.05	
+					}
+		}
+		spr_ideas_07 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = german_advisors
+			
+			modifier = {
+				military_leader_cost_factor = -0.25
+				army_leader_start_level = 1	
+				conscription_factor = 0.1	
+				special_forces_cap = 0.05	
+				production_speed_arms_factory_factor = 0.1	
+					}
+		}
+		spr_ideas_08 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+					}
+		}
+		spr_ideas_09 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_coastal_defense_ships2
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+					}
+		}
+		spr_ideas_10 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = german_advisors
+			
+			modifier = {
+				training_time_army_factor = -0.1	
+				minimum_training_level = -0.1	
+					}
+		}
+		spr_ideas_11 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_war_preparation
+			
+			equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = -0.15 instant = yes
+				}
+		}
+	}
+		spr_ideas_12 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_war_preparation
+			
+			equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				artillery = {
+					build_cost_ic = -0.15 instant = yes
+				}
+		}
+	}
+		spr_ideas_13 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_war_preparation
+			
+			equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				artillery = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				armor = {
+					build_cost_ic = -0.15 instant = yes
+				}
+		}
+	}
+		spr_ideas_14 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_reserve_divisions
+			
+			modifier = {
+				conscription = 0.01	
+				training_time_army_factor = -0.1	
+				minimum_training_level = -0.1	
+					}
+		}
+		spr_ideas_15 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_local_self_management
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+					}
+		}
+		spr_ideas_16 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = FRA_motorized_focus
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+					}
+			equipment_bonus = {
+				motorized_equipment = {
+				build_cost_ic = -0.15 instant = yes
+						}
+				}
+		}
+		spr_ideas_17 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = FRA_motorized_focus
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1	
+				industrial_capacity_factory = 0.2
+					}
+			equipment_bonus = {
+				motorized_equipment = {
+				build_cost_ic = -0.2 instant = yes
+						}
+				}
+		}
+		spr_ideas_18 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = FRA_motorized_focus
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1	
+				industrial_capacity_factory = 0.2
+				consumer_goods_factor = -0.1
+					}
+			equipment_bonus = {
+				motorized_equipment = {
+				build_cost_ic = -0.25 instant = yes
+						}
+				}
+		}
+		spr_ideas_199 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_monarchist_uprising
+			
+			modifier = {
+				stability_factor = 0.2
+				neutrality_acceptance = 85
+				drift_defence_factor = 0.2		
+					}
+		}
+		spr_ideas_19 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = SPA_disjointed_carlist_juntas
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1	
+				army_org_Factor = 0.1		
+					}
+		}
+		spr_ideas_20 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = SPA_disjointed_carlist_juntas
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1	
+				army_org_Factor = 0.1	
+				justify_war_goal_time = -0.25	
+				subjects_autonomy_gain = 1	
+				consumer_goods_factor = 0.05	
+					}
+		}
+		spr_ideas_21 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = SPR_appropriate_church_riches
+			
+			modifier = {
+				war_support_factor = 0.15
+				MONTHLY_POPULATION = 0.5		
+					}
+		}
+		spr_ideas_22 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = SPR_appropriate_church_riches
+			
+			modifier = {
+				war_support_factor = 0.15
+				MONTHLY_POPULATION = 0.5	
+				surrender_limit = 0.5
+				army_morale_factor = 0.1
+				research_speed_factor = -0.05		
+					}
+		}
+		spr_ideas_23 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_flexible_foreign_policy2
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05	
+					}
+		}
+		spr_ideas_24 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_flexible_foreign_policy
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+					}
+		}
+		spr_ideas_25 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_constitutional_guarantees
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.07
+				industrial_capacity_factory = 0.25
+					}
+		}
+		spr_ideas_26 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.05	
+				army_org_Factor = 0.1
+				army_morale_factor = 0.1	
+					}
+		}
+		spr_ideas_27 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.1
+				local_resources_factor = 0.1	
+				research_speed_factor = 0.1
+					}
+		}
+		spr_ideas_28 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = SPA_carlism
+			
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				training_time_army_factor = -0.25
+								}
+		}
+		spr_ideas_29 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = SPA_carlism
+			
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				training_time_army_factor = -0.25
+				army_org_Factor = 0.15
+				army_morale_factor = 0.15
+								}
+		}
+		spr_ideas_30 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = SPA_carlism
+			
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				training_time_army_factor = -0.25
+				army_org_Factor = 0.15
+				army_morale_factor = 0.15
+				surrender_limit = 0.7
+				generate_wargoal_tension = -0.5
+				justify_war_goal_time = -0.5
+								}
+		}
+
+		spr_ideas_32 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = SPA_disjointed_carlist_juntas
+			
+			modifier = {
+				army_attack_factor = 0.3
+				army_defence_factor = 0.3
+				army_morale_factor = 0.3
+								}
+		}
+		spr_ideas_33 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = SPA_disjointed_carlist_juntas
+			
+			modifier = {
+				army_attack_factor = 0.3
+				army_defence_factor = 0.3
+				army_morale_factor = 0.3
+				conscription_factor = 0.5
+								}
+		}
+		spr_ideas_34 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = SPA_embrace_the_spanish_destiny
+			
+			modifier = {
+				consumer_goods_factor = 0.05	
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15	
+				global_building_slots_factor = 0.15
+								}
+		}
+		spr_ideas_35 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = SPA_crusade_against_democracy
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = 0.15
+			
+			}
+		}
+		spr_ideas_36 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = SPA_crusade_against_democracy
+			
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_anti_air_building_factor = 0.2	
+				production_speed_air_base_factor = 0.2
+								}
+		}
+		spr_ideas_37 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = vittoria_mutilata
+			
+			modifier = {
+				recon_factor = 0.05	
+								}
+		}
+		spr_ideas_38 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = SPA_la_division_azul
+			
+			modifier = {
+				special_forces_cap = 0.05	
+								}
+		}
+		spr_ideas_39 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = SPR_nationalist_remnants
+			
+			modifier = {
+				army_infantry_attack_factor = 0.1	
+				army_infantry_defence_factor = 0.1
+								}
+		}
+		spr_ideas_40 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = _generic_artillery_regiments
+			
+			modifier = {
+				army_artillery_attack_factor = 0.1	
+				army_artillery_defence_factor = 0.1
+								}
+		}
+		spr_ideas_41 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_acquire_tanks
+			
+			modifier = {
+				army_armor_attack_factor = 0.1	
+				army_armor_defence_factor = 0.1
+				army_armor_speed_factor = 0.1
+								}
+		}
+		spr_ideas_42 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = FRA_army_of_aggression_focus
+			
+			equipment_bonus = {
+				submarine = {
+					build_cost_ic = -0.15 instant = yes
+				}
+		}
+		}
+		spr_ideas_43 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = the_long_lance
+			
+			equipment_bonus = {
+				cv_fighter_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				cv_CAS_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				cv_nav_bomber_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+		}
+		}
+		spr_ideas_44 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_naval_manufacturer_1
+			
+			modifier = {
+				special_forces_cap = 0.05	
+								}
+		}
+		spr_ideas_45 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = usa_magic
+			
+			modifier = {
+				production_speed_radar_station_factor = 0.25		
+								}
+		}
+		spr_ideas_46 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = air_war_plans_division_focus
+			
+			equipment_bonus = {	
+				CAS_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+		}
+		}
+
+		spr_ger_ideas_01 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				research_speed_factor = 0.07		
+								}
+		}
+
+
+
+
+
+
+
+
+
+
+
+		}
+		
+}

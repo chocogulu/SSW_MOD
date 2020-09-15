@@ -382,5 +382,13 @@ spriteTypes = {
 		name = "GFX_focus_Australia_federation"
 		texturefile = "gfx/interface/goals/ENG/focus_Australia_federation.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_BRM_sinniti"
+		texturefile = "gfx/interface/goals/BRM/focus_BRM_sinniti.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_BRM_dokuritu_ha"
+		texturefile = "gfx/interface/goals/BRM/focus_BRM_dokuritu_ha.dds"
+	}
 
 }

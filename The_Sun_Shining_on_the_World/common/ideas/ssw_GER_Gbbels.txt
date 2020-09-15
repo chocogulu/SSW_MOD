@@ -10,7 +10,7 @@ ideas = {
 			removal_cost = -1
 			picture = anti_soviet_pact
 			modifier = {
-				consumer_goods_factor = -15
+				consumer_goods_factor = -1.5
 			}
 		}
 		timed_gold_standard = {
@@ -23,7 +23,7 @@ ideas = {
 			removal_cost = -1
 			picture = anti_soviet_pact
 			modifier = {
-				consumer_goods_factor = -20
+				consumer_goods_factor = -2.0
 			}
 		}
 		missing_upper_echelon = {
