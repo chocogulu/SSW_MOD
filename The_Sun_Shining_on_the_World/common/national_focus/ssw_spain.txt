@@ -1,0 +1,3679 @@
+focus_tree = {
+	id = ssw_spain
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SPR
+		}
+	}
+	default = no
+	focus = {
+		id = SPR_seihu
+		icon = GFX_goal_generic_demand_territory
+		cost = 2.00
+		x = 31
+		y = 0
+		completion_reward = {
+            add_political_power = 60
+        }
+
+	}
+	focus = {
+		id = SPR_kougyou_kougyouka
+		icon = GFX_focus_generic_industry_1
+		cost = 5.00
+		x = 5
+		y = 0
+		completion_reward = {
+			
+			793 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai
+		icon = GFX_goal_rhineland
+		cost = 5.00
+		x = 39
+		y = 10
+		completion_reward = {
+			SPR = {
+				army_experience = 50
+				navy_experience = 50
+				air_experience = 50
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_kougyou_kikai
+		icon = GFX_goal_generic_construction
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_kougyou_kougyouka
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = construction_tech
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_sekitan
+		icon = GFX_goal_generic_oil_refinery
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_kougyou_kikai
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+			add_resource = {
+					type = oil
+					amount = 18
+					state = 790
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_kougyou_kouzan
+		icon = GFX_focus_generic_steel
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_faranhe_sekitan
+		}
+		x = 1
+		y = 4
+		completion_reward = {
+			add_resource = {
+					type = steel
+					amount = 14
+					state = 792
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_kougyou_hokubuzousen
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_kougyou_kougyouka
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+			
+			790 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_faraneh_hondokougyouka
+		icon = GFX_focus_generic_industry_2
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_kougyou_kikai
+		}
+		x = 4
+		y = 3
+		completion_reward = {
+			
+			176 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_kougyou_hondomottokougyou
+		icon = GFX_focus_generic_industry_3
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_faraneh_hondokougyouka
+		}
+		x = 4
+		y = 4
+		completion_reward = {
+			
+			788 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_kougyou_nouti
+		icon = GFX_focus_NZL_bob_semple_tank
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_kougyou_hondomottokougyou
+		}
+		x = 3
+		y = 5
+		completion_reward = {
+			
+			167 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			168 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			175 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			170 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_kougyou_saikutu
+		icon = GFX_goal_generic_construction2
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_kougyou_kougyouka
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = excavation_tech
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_syokumintikougyouka
+		icon = GFX_focus_generic_industry_2
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_kougyou_saikutu
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+			
+			290 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_syokumintimottokougyou
+		icon = GFX_focus_generic_industry_3
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_faranhe_syokumintikougyouka
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+			
+			699 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_kougyou_kenkyuu
+		icon = GFX_focus_research
+		cost = 8.00
+		prerequisite = {
+			focus = SPR_faranhe_syokumintimottokougyou
+			focus = SPR_kougyou_hondomottokougyou
+		}
+		x = 5
+		y = 6
+		completion_reward = {
+			SPR = {
+					add_research_slot = 1
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_kougyou_nannbuzousen
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_kougyou_kougyouka
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+			
+			169 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_kougyou_yuden
+		icon = GFX_goal_generic_oil_refinery
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_faranhe_syokumintimottokougyou
+		}
+		x = 7
+		y = 5
+		completion_reward = {
+			add_resource = {
+					type = oil
+					amount = 29
+					state = 178
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_kougyou_gomu
+		icon = GFX_focus_generic_rubber
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_kougyou_yuden
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+			add_resource = {
+					type = rubber
+					amount = 22
+					state = 290
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_kougyou_boukisaito
+		icon = GFX_focus_generic_aluminum
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_kougyou_saikutu
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+			add_resource = {
+					type = aluminum
+					amount = 25
+					state = 297
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_kougyou_reametaru
+		icon = GFX_focus_generic_tungsten
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_kougyou_boukisaito
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+			add_resource = {
+					type = tungsten
+					amount = 31
+					state = 462
+				}
+		}
+
+
+	}
+	focus = {
+		id = SPR_kougyou_morokko
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_kougyou_reametaru
+		}
+		x = 9
+		y = 5
+		available = {
+			OR = {
+					SPR = {
+							owns_state = 461
+						
+		
+						461 = {
+							is_puppet_of = SPR
+						}
+					}
+				}
+		}
+		completion_reward = {
+			
+			461 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_hurankohaijyo
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 1.00
+		prerequisite = {
+			focus = SPR_seihu
+		}
+		mutually_exclusive = {
+			focus = SPR_huranksiji
+		}
+		x = 29
+		y = 1
+		completion_reward = {
+            add_political_power = 40
+        }
+
+	}
+	focus = {
+		id = SPR_faranhe
+		icon = GFX_focus_spa_the_phalanx_ascendant
+		cost = 1.00
+		prerequisite = {
+			focus = SPR_hurankohaijyo
+		}
+		x = 17
+		y = 2
+		completion_reward = {
+			SPR = {
+					set_politics = {
+					ruling_party = militarism 
+				}
+			add_popularity = {
+					ideology = militarism 
+					popularity = 0.61
+				}
+	add_political_power = 40
+	create_country_leader = {
+		name = "Military Junta"
+		desc = "POLITICS_MILITARY_JUNTA_DESC"
+		picture = "GFX_portrait_SPA_military_junta"
+		expire = "1965.1.1"
+		ideology = militarism   
+		traits = {
+			divided_interests
+		}
+	}
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_minzokudanatu
+		icon = GFX_goal_continuous_suppression
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_faranhe
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+			add_timed_idea = { idea = spr_ideas_01 days = 365 }
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_danatukanryou
+		icon = GFX_focus_CZE_german_puppet
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_faranhe_minzokudanatu
+		}
+		x = 13
+		y = 4
+		available = {
+			has_idea = {
+				spr_ideas_01 
+				}
+				remove_ideas = { brm_debahu_01 }
+		}
+
+
+	}
+	focus = {
+		id = SPR_faranhe_basukusyokumin
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_faranhe_danatukanryou
+		}
+		x = 12
+		y = 5
+		completion_reward = {
+			
+			172 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_hurankokorosu
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_faranhe
+		}
+		x = 16
+		y = 3
+		completion_reward = {
+			add_timed_idea = { idea = spr_ideas_02 days = 240 }
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_outouhakorosu
+		icon = GFX_focus_spa_eliminate_the_carlists
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_faranhe
+		}
+		x = 18
+		y = 3
+		completion_reward = {
+			add_timed_idea = { idea = spr_ideas_03 days = 240 }
+			remove_ideas = { spr_debahu_02 }
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_ittoudokusai
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_faranhe_hurankokorosu
+		}
+		prerequisite = {
+			focus = SPR_faranhe_outouhakorosu
+		}
+		x = 17
+		y = 4
+		completion_reward = {
+			SPR = {
+			add_popularity = {
+					ideology = militarism 
+					popularity = 1
+				}
+	add_political_power = 60
+				}
+		}
+		
+
+	}
+	focus = {
+		id = SPR_faranhe_sensouseisaku
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_faranhe_ittoudokusai
+		}
+		x = 17
+		y = 5
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_04
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_huransukorosu
+		icon = GFX_focus_attack_france
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_faranhe_sensouseisaku
+		}
+		x = 15
+		y = 6
+		bypass = {		
+			has_war_with = VFR
+		}
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = VFR
+				}
+			}
+
+	}
+	focus = {
+		id = SPR_faranhe_porutokorosu
+		icon = GFX_focus_generic_attack_portugal
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_faranhe_sensouseisaku
+		}
+		x = 19
+		y = 6
+		bypass = {		
+			has_war_with = POR
+		}
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = POR
+				}
+			}
+
+	}
+	focus = {
+		id = SPR_faranhe_ahurikabunkatu
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 3.00
+		prerequisite = {
+			focus = SPR_faranhe_huransukorosu
+		}
+		prerequisite = {
+			focus = SPR_faranhe_porutokorosu
+		}
+		x = 17
+		y = 7
+		completion_reward = {
+			ITA = {
+					country_event = { id = ssw_spr.1 days = 1 }
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_barearesusintyuu
+		icon = GFX_goal_generic_major_war
+		cost = 7.00
+		prerequisite = {
+			focus = SPR_faranhe_ahurikabunkatu
+		}
+		x = 17
+		y = 8
+		completion_reward = {
+			ITA = {
+					country_event = { id = ssw_spr.111 days = 1 }
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_itariakorosu
+		icon = GFX_focus_attack_italy
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_faranhe_barearesusintyuu
+		}
+		x = 17
+		y = 9
+		bypass = {		
+			has_war_with = ITA
+		}
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = ITA
+				}
+			}
+
+	}
+	focus = {
+		id = SPR_faranhe_doitugijyutu
+		icon = GFX_goal_continuous_research
+		cost = 9.00
+		prerequisite = {
+			focus = SPR_faranhe_ahurikabunkatu
+		}
+		x = 19
+		y = 8
+		completion_reward = {
+			GER = {
+					country_event = { id = ssw_spr.3 days = 1 }
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_igirisu
+		icon = GFX_focus_attack_britain
+		cost = 8.00
+		prerequisite = {
+			focus = SPR_faranhe_itariakorosu
+		}
+		x = 19
+		y = 10
+		bypass = {		
+			has_war_with = ENG
+		}
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = ENG
+				}
+			}
+
+	}
+	focus = {
+		id = SPR_faranhe_kokkanoguntaika
+		icon = GFX_focus_generic_little_entente
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_faranhe
+		}
+		x = 20
+		y = 3
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_05
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_sangakuhei
+		icon = GFX_goal_generic_special_forces
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_faranhe_kokkanoguntaika
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spr_ideas_05
+				add_idea = spr_ideas_06
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_gunkakudai
+		icon = GFX_focus_generic_military_academy
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_faranhe_kokkanoguntaika
+		}
+		x = 22
+		y = 4
+		completion_reward = {
+			
+			174 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_kensetukyouka
+		icon = GFX_goal_generic_construct_civilian
+		cost = 8.00
+		prerequisite = {
+			focus = SPR_faranhe_sangakuhei
+		}
+		prerequisite = {
+			focus = SPR_faranhe_gunkakudai
+		}
+		x = 21
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spr_ideas_06
+				add_idea = spr_ideas_07
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_kaigungunkaku
+		icon = GFX_goal_generic_build_navy
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_faranhe_porutokorosu
+		}
+		x = 21
+		y = 7
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_09
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_umidoku
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_faranhe_kaigungunkaku
+		}
+		x = 21
+		y = 8
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = naval_doctrine
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_zousenjyotukure
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 7.00
+		prerequisite = {
+			focus = SPR_faranhe_kaigungunkaku
+		}
+		x = 23
+		y = 8
+		completion_reward = {
+			
+			173 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_huranksiji
+		icon = GFX_goal_generic_major_alliance
+		cost = 1.00
+		prerequisite = {
+			focus = SPR_seihu
+		}
+		mutually_exclusive = {
+			focus = SPR_hurankohaijyo
+		}
+		x = 33
+		y = 1
+		completion_reward = {
+            add_political_power = 40
+        }
+
+	}
+	focus = {
+		id = SPR_franco
+		icon = GFX_focus_spa_caudillo_of_spain
+		cost = 1.00
+		prerequisite = {
+			focus = SPR_huranksiji
+		}
+		mutually_exclusive = {
+			focus = SPR_outouha
+		}
+		x = 31
+		y = 2
+		completion_reward = {
+            add_political_power = 30
+        }
+
+	}
+	focus = {
+		id = SPR_franco_gunhenotyuusei
+		icon = GFX_focus_generic_manpower
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_franco
+		}
+		x = 26
+		y = 3
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_10
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_hoheijyuu
+		icon = GFX_focus_secret_rearmament
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_franco_gunhenotyuusei
+		}
+		x = 25
+		y = 4
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_11
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_gunkoujyou
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_franco_gunhenotyuusei
+		}
+		x = 27
+		y = 4
+		completion_reward = {
+			
+			174 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_itariadoumei
+		icon = GFX_focus_befriend_italy
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_franco
+		}
+		x = 31
+		y = 3
+		completion_reward = {
+			ITA = {
+					country_event = { id = ssw_spr.4 days = 1 }
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_kaigunensyuu
+		icon = GFX_goal_generic_navy_battleship
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_franco_itariadoumei
+		}
+		x = 30
+		y = 4
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = naval_doctrine
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_kokusakujidousya
+		icon = GFX_goal_generic_army_motorized
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_franco_itariadoumei
+		}
+		x = 31
+		y = 5
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_16
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_ahurikabunkatu
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 8.00
+		prerequisite = {
+			focus = SPR_franco_kokusakujidousya
+		}
+		x = 29
+		y = 6
+		completion_reward = {
+			ITA = {
+					country_event = { id = ssw_spr.6 days = 1 }
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_itariasyussi
+		icon = GFX_focus_mex_privatisation
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_franco_kokusakujidousya
+		}
+		x = 31
+		y = 7
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spr_ideas_16
+				add_idea = spr_ideas_17
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_barearesu
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_franco_itariadoumei
+		}
+		x = 32
+		y = 4
+		completion_reward = {
+			ITA = {
+					country_event = { id = ssw_spr.5 days = 1 }
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_jidousyahanbai
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_franco_itariasyussi
+		}
+		x = 32
+		y = 8
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spr_ideas_17
+				add_idea = spr_ideas_18
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_rikugun
+		icon = GFX_goal_generic_army_doctrines
+		cost = 3.00
+		prerequisite = {
+			focus = SPR_guntai
+		}
+		x = 34
+		y = 11
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = land_doctrine
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_daikibosakusen
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_guntai_rikugun
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_yuuseikaryoku
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_kidousen
+		}
+		x = 32
+		y = 12
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = cat_grand_battle_plan
+				}
+		}
+
+	}
+
+	focus = {
+		id = SPR_guntai_kihei
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_guntai_rikugun
+		}
+
+		x = 29
+		y = 12
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_37
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = recon_tech
+			
+	}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_arupine
+		icon = GFX_goal_generic_special_forces
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_guntai_kihei
+		}
+
+		x = 29
+		y = 13
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_38
+			}
+		
+				add_tech_bonus = {
+						bonus = 1
+						uses = 1
+						category = mountaineers_tech
+					
+			}
+		}
+
+	}
+
+
+	focus = {
+		id = SPR_franco_huransubunaktu
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 8.00
+		prerequisite = {
+			focus = SPR_franco_kokusakujidousya
+		}
+		x = 33
+		y = 6
+		completion_reward = {
+			ITA = {
+					country_event = { id = ssw_spr.7 days = 1 }
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_yuuseikaryoku
+		icon = GFX_goal_generic_army_artillery2
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_guntai_rikugun
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_hoheidokutorin
+			focus = SPR_guntai_kidousen
+		}
+		x = 34
+		y = 12
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = cat_superior_firepower
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_houhei
+		icon = GFX_goal_generic_army_artillery
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_guntai_daikibosakusen
+		}
+		prerequisite = {
+			focus = SPR_guntai_yuuseikaryoku
+		}
+		x = 33
+		y = 13
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = artillery
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_tetunosyuukyou
+		icon = GFX_focus_spa_fuse_the_parties
+		cost = 3.00
+		prerequisite = {
+			focus = SPR_franco
+		}
+		x = 36
+		y = 3
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_19
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_katorikkukyouryoku
+		icon = GFX_focus_por_concordat
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_franco_tetunosyuukyou
+		}
+		x = 35
+		y = 4
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spr_ideas_19
+				add_idea = spr_ideas_20
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_outouha
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_franco_tetunosyuukyou
+		}
+		x = 37
+		y = 4
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spr_debahu_02
+				add_idea = spr_ideas_199
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_kyoukaidoumei
+		icon = GFX_focus_por_iberian_summit
+		cost = 2.00
+		prerequisite = {
+			focus = SPR_franco_katorikkukyouryoku
+		}
+		prerequisite = {
+			focus = SPR_franco_outouha
+		}
+		x = 36
+		y = 5
+		completion_reward = {
+			POR = {
+					country_event = { id = ssw_spr.77 days = 1 }
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_youroppa
+		icon = GFX_goal_continuous_increase_nu
+		cost = 8.00
+		prerequisite = {
+			focus = SPR_franco_kyoukaidoumei
+		}
+		x = 36
+		y = 6
+		completion_reward = {
+			IRE = {
+					country_event = { id = ssw_spr.8 days = 1 }
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_amerika
+		icon = GFX_goal_generic_national_unity
+		cost = 8.00
+		prerequisite = {
+			focus = SPR_franco_youroppa
+		}
+		x = 35
+		y = 7
+		completion_reward = {
+			BRA = {
+					country_event = { id = ssw_spr.9 days = 1 }
+				}
+				VEN = {
+					country_event = { id = ssw_spr.10 days = 1 }
+				}
+				COL = {
+					country_event = { id = ssw_spr.11 days = 1 }
+				}
+				PRU = {
+					country_event = { id = ssw_spr.12 days = 1 }
+				}
+				BOL = {
+					country_event = { id = ssw_spr.13 days = 1 }
+				}
+				PAR = {
+					country_event = { id = ssw_spr.14 days = 1 }
+				}
+				ARG = {
+					country_event = { id = ssw_spr.15 days = 1 }
+				}
+				URG = {
+					country_event = { id = ssw_spr.16 days = 1 }
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_tyuubei
+		icon = GFX_goal_generic_national_unity
+		cost = 8.00
+		prerequisite = {
+			focus = SPR_franco_youroppa
+		}
+		x = 37
+		y = 7
+		completion_reward = {
+			PAN = {
+					country_event = { id = ssw_spr.17 days = 1 }
+				}
+				COS = {
+					country_event = { id = ssw_spr.18 days = 1 }
+				}
+				NIC = {
+					country_event = { id = ssw_spr.19 days = 1 }
+				}
+				HON = {
+					country_event = { id = ssw_spr.20 days = 1 }
+				}
+				ELS = {
+					country_event = { id = ssw_spr.21 days = 1 }
+				}
+				GUA = {
+					country_event = { id = ssw_spr.22 days = 1 }
+				}
+				MEX = {
+					country_event = { id = ssw_spr.23 days = 1 }
+				}
+				CUB = {
+					country_event = { id = ssw_spr.24 days = 1 }
+				}
+				HAI = {
+					country_event = { id = ssw_spr.25 days = 1 }
+				}
+				DOM = {
+					country_event = { id = ssw_spr.26 days = 1 }
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_nihon
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_franco_amerika
+		}
+		prerequisite = {
+			focus = SPR_franco_tyuubei
+		}
+		x = 36
+		y = 8
+		completion_reward = {
+			SPR = {
+				country_event = { id = ssw_spr.49 days = 1 }
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_banpaku
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_franco_jidousyahanbai
+		}
+		prerequisite = {
+			focus = SPR_faranhe_nihon
+		}
+		x = 34
+		y = 9
+		completion_reward = {
+			SPR = {
+					country_event = { id = ssw_spr.48 days = 1 }
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_kidousen
+		icon = GFX_goal_generic_army_tanks
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_guntai_rikugun
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_yuuseikaryoku
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_daikibosakusen
+		}
+		x = 36
+		y = 12
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = cat_mobile_warfare
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_sensya
+		icon = GFX_goal_continuous_armor_production
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_guntai_kidousen
+		}
+		x = 37
+		y = 13
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = armor
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_kyoukainoeenjyo
+		icon = GFX_focus_generic_self_management
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_franco_tetunosyuukyou
+		}
+		x = 39
+		y = 4
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_21
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_katorikkukyouiku
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_franco_kyoukainoeenjyo
+		}
+		x = 39
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spr_ideas_21
+				add_idea = spr_ideas_22
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_kyoukainokosyo
+		icon = GFX_focus_research2
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_franco_katorikkukyouiku
+		}
+		x = 39
+		y = 6
+		completion_reward = {
+			SPR = {
+					add_research_slot = 1
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_kaigun
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 3.00
+		prerequisite = {
+			focus = SPR_guntai
+		}
+		x = 44
+		y = 11
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = naval_doctrine
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_kaiheitai
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10.00
+		prerequisite = {
+			focus = SPR_guntai_rikugun
+		}
+		prerequisite = {
+			focus = SPR_guntai_kaigun
+		}
+		x = 39
+		y = 12
+		completion_reward = {
+			add_ideas = spr_ideas_44
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = marine_tech
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_jyouriksuen
+		icon = GFX_goal_continuous_naval_production
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_guntai_kaiheitai
+		}
+		x = 39
+		y = 13
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = tp_tech
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha
+		icon = GFX_focus_spr_maintain_the_republic
+		cost = 1.00
+		prerequisite = {
+			focus = SPR_huranksiji
+		}
+		mutually_exclusive = {
+			focus = SPR_franco
+		}
+		x = 49
+		y = 2
+		completion_reward = {
+			SPR = {
+					set_politics = {
+					ruling_party = neutrality  
+				}
+			add_popularity = {
+					ideology = neutrality  
+					popularity = 0.87
+				}
+	add_political_power = 40
+	create_country_leader = {
+		name = "Juan III"
+		desc = "POLITICS_JUAN_III_DESC"
+		picture = ""
+		expire = "1965.1.1"
+		ideology = neutrality 
+		traits = {
+			
+		}
+	}
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_keizaiseisaku
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 3.00
+		prerequisite = {
+			focus = SPR_outouha
+		}
+		x = 43
+		y = 3
+		completion_reward = {
+			
+			794 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_noumin
+		icon = GFX_focus_generic_military_academy
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_outouha_keizaiseisaku
+		}
+		x = 42
+		y = 4
+		completion_reward = {
+			add_political_power = -60
+			SPR = {
+				add_ideas = spr_ideas_23
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_hinnou
+		icon = GFX_focus_generic_concessions
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_outouha_keizaiseisaku
+		}
+		x = 44
+		y = 4
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_24
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_totinoumin
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 2.00
+		prerequisite = {
+			focus = SPR_outouha_hinnou
+		}
+		prerequisite = {
+			focus = SPR_outouha_noumin
+		}
+		x = 43
+		y = 5
+		completion_reward = {
+			SPR = {
+				remove_ideas = { spr_ideas_23 }
+				remove_ideas = { spr_ideas_24 }
+				add_ideas = spr_ideas_25
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_koujyoukyoukai
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_outouha_totinoumin
+		}
+		x = 41
+		y = 6
+		completion_reward = {
+			172 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_outouha_ouritutosyo
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 8.00
+		prerequisite = {
+			focus = SPR_outouha_totinoumin
+		}
+		x = 43
+		y = 6
+		completion_reward = {
+			SPR = {
+					add_research_slot = 1
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_bouekisosi
+		icon = GFX_goal_generic_wolf_pack
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_guntai_kaigun
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_kitikougeki
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_kantaihozen
+		}
+		x = 44
+		y = 12
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = cat_trade_interdiction
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_kantaihozen
+		icon = GFX_goal_generic_navy_battleship
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_guntai_kaigun
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_bouekisosi
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_kitikougeki
+		}
+		x = 42
+		y = 12
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = cat_fleet_in_being
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_kutikukan
+		icon = GFX_focus_generic_destroyer
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_guntai_bouekisosi
+		}
+		prerequisite = {
+			focus = SPR_guntai_kantaihozen
+		}
+		x = 43
+		y = 13
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = dd_tech
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_koujyououke
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_outouha_totinoumin
+		}
+		x = 45
+		y = 6
+		completion_reward = {
+			
+			174 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_kitikougeki
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_guntai_kaigun
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_bouekisosi
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_kantaihozen
+		}
+		x = 46
+		y = 12
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = cat_base_strike
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_kokuoukikan
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 2.00
+		prerequisite = {
+			focus = SPR_outouha
+		}
+		x = 49
+		y = 3
+		completion_reward = {
+			SPR = {
+				country_event = { id = ssw_spr.51 days = 1 }
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_kizokunokikan
+		icon = GFX_focus_generic_royal_wedding
+		cost = 2.00
+		prerequisite = {
+			focus = SPR_outouha_kokuoukikan
+		}
+		x = 47
+		y = 4
+		completion_reward = {
+			SPR = {
+				add_manpower = 37000
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_tougyuujyou
+		icon = GFX_goal_demand_sudetenland
+		cost = 8.00
+		prerequisite = {
+			focus = SPR_outouha_kokuoukikan
+		}
+		x = 49
+		y = 4
+		completion_reward = {
+			add_political_power = -120
+		SPR = {
+			add_ideas = spr_ideas_26
+		}
+	}
+
+	}
+	focus = {
+		id = SPR_outouha_ouryou
+		icon = GFX_focus_generic_monarchy_2
+		cost = 2.00
+		prerequisite = {
+			focus = SPR_outouha_kokuoukikan
+		}
+		x = 51
+		y = 4
+		completion_reward = {
+			41 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_mutekikantai
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = SPR_outouha_kizokunokikan
+		}
+		prerequisite = {
+			focus = SPR_outouha_ouryou
+		}
+		x = 49
+		y = 5
+		completion_reward = {
+			169 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+			790 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_igirisu
+		icon = GFX_focus_chi_british_cooperation
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_outouha_mutekikantai
+		}
+		x = 48
+		y = 6
+		completion_reward = {
+			ENG = {
+				country_event = { id = ssw_spr.52 days = 1 }
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_porutoseihuku
+		icon = GFX_focus_generic_attack_portugal
+		cost = 8.00
+		prerequisite = {
+			focus = SPR_outouha_mutekikantai
+		}
+		x = 50
+		y = 6
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = POR
+				}
+			}
+
+	}
+	focus = {
+		id = SPR_outouha_taiseiyouseiha
+		icon = GFX_focus_generic_coastal_fort
+		cost = 7.00
+		prerequisite = {
+			focus = SPR_outouha_porutoseihuku
+		}
+		prerequisite = {
+			focus = SPR_outouha_igirisu
+		}
+		x = 49
+		y = 7
+		completion_reward = {
+			
+			165 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+						type = dockyard
+						level = 4
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_doitusyokuminti
+		icon = GFX_goal_tripartite_pact
+		cost = 7.00
+		prerequisite = {
+			focus = SPR_outouha_igirisu
+		}
+		prerequisite = {
+			focus = SPR_outouha_porutoseihuku
+		}
+		x = 47
+		y = 7
+		completion_reward = {
+			GER = {
+				country_event = { id = ssw_spr.55 days = 1 }
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_amerikasyokumintika
+		icon = GFX_focus_mex_jefe_maximo
+		cost = 7.00
+		prerequisite = {
+			focus = SPR_outouha_doitusyokuminti
+		}
+		prerequisite = {
+			focus = SPR_outouha_taiseiyouseiha
+		}
+		x = 48
+		y = 8
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = BRA
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = VEN
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = COL
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = PRU
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = ECU
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = BOL
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = PRA
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = ARG
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = URG
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CHL
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = ATL
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = PAN
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = COS
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = NIC
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = HON
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = ELS
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = GUA
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MEX
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = ELS
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = ALF
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = TEX
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = LUI
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CUB
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = HAI
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = DOM
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = JAM
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = PAC
+				}
+				
+			}
+
+	}
+	focus = {
+		id = nuebakasutera
+		icon = GFX_goal_generic_territory_or_war
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_outouha_amerikasyokumintika
+		}
+		x = 49
+		y = 9
+		available = {
+			OR = {
+					SPR = {
+							owns_state = 278
+							owns_state = 493
+							owns_state = 307
+							owns_state = 305
+					}
+						
+					SPR = {
+						278 = {
+							is_puppet_of = SPR
+						}
+						493 = {
+							is_puppet_of = SPR
+						}
+						307 = {
+							is_puppet_of = SPR
+						}
+						305 = {
+							is_puppet_of = SPR
+						}
+						
+					}
+				}
+		}
+		completion_reward = {
+			
+			278 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+			493 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+			307 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+			305 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_rioderapurata
+		icon = GFX_goal_generic_territory_or_war
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_outouha_amerikasyokumintika
+		}
+		x = 45
+		y = 9
+		available = {
+			OR = {
+					SPR = {
+							owns_state = 278
+							owns_state = 300
+							owns_state = 301
+							owns_state = 302
+					}
+						
+					SPR = {
+						278 = {
+							is_puppet_of = SPR
+						}
+						300 = {
+							is_puppet_of = SPR
+						}
+						301 = {
+							is_puppet_of = SPR
+						}
+						302 = {
+							is_puppet_of = SPR
+						}
+						
+					}
+				}
+		}
+		completion_reward = {
+			
+			278 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			300 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			301 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			302 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_kuugun
+		icon = GFX_goal_generic_air_doctrine
+		cost = 3.00
+		prerequisite = {
+			focus = SPR_guntai
+		}
+		x = 54
+		y = 11
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = air_doctrine
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_kaigunkoukuutai
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_guntai_kaigun
+		}
+		prerequisite = {
+			focus = SPR_guntai_kuugun
+		}
+		x = 49
+		y = 12
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = naval_bomber
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_reedaa
+		icon = GFX_focus_generic_cryptologic_bomb
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_guntai_kaigunkoukuutai
+		}
+		x = 49
+		y = 13
+		completion_reward = {
+			add_ideas = spr_ideas_45
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = radar_tech
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_peruu
+		icon = GFX_goal_generic_territory_or_war
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_outouha_amerikasyokumintika
+		}
+		x = 51
+		y = 9
+		available = {
+			OR = {
+					SPR = {
+							owns_state = 303
+							owns_state = 492
+							owns_state = 506
+							owns_state = 649
+					}
+						
+					SPR = {
+						303 = {
+							is_puppet_of = SPR
+						}
+						492 = {
+							is_puppet_of = SPR
+						}
+						506 = {
+							is_puppet_of = SPR
+						}
+						649 = {
+							is_puppet_of = SPR
+						}
+						
+					}
+				}
+		}
+		completion_reward = {
+			
+			303 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+			492 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+			506 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+			649 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_senryakuhakai
+		icon = GFX_focus_CZE_military_aeronautical_institute
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_guntai_kuugun
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_senjyousien
+			focus = SPR_guntai_sakusenseigou
+		}
+		x = 52
+		y = 12
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = strategic_destruction_tree
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_ryakubaku
+		icon = GFX_goal_generic_air_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_guntai_senryakuhakai
+		}
+		x = 51
+		y = 13
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = tactical_bomber
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_senjyousien
+		icon = GFX_focus_YUG_ikarus
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_guntai_kuugun
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_senryakuhakai
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_sakusenseigou
+		}
+		x = 54
+		y = 12
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = battlefield_support_tree
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_jyusen
+		icon = GFX_focus_usa_escort_fighters
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_guntai_senjyousien
+		}
+		prerequisite = {
+			focus = SPR_guntai_senryakuhakai
+		}
+		x = 53
+		y = 13
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = cat_heavy_fighter
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_kyoukairengou
+		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
+		cost = 2.00
+		prerequisite = {
+			focus = SPR_outouha
+		}
+		x = 55
+		y = 3
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_28
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_kokuounosinnsei
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_outouha_kyoukairengou
+		}
+		x = 54
+		y = 4
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spr_ideas_28
+				add_idea = spr_ideas_29
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_kamigasorewo
+		icon = GFX_focus_AST_squander_bug
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_outouha_kokuounosinnsei
+		}
+		x = 54
+		y = 6
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spr_ideas_29
+				add_idea = spr_ideas_30
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_jinei
+		icon = GFX_focus_spa_supremacy_of_the_communion
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_outouha_porutoseihuku
+		}
+		prerequisite = {
+			focus = SPR_outouha_kamigasorewo
+		}
+		prerequisite = {
+			focus = SPR_outouha_igirisu
+		}
+		x = 52
+		y = 7
+		completion_reward = {
+			create_faction = santa_alianza
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_ikyouseibatu
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 9.00
+		prerequisite = {
+			focus = SPR_outouha_jinei
+		}
+		x = 54
+		y = 8
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_35
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_toruko
+		icon = GFX_focus_attack_japan
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_outouha_ikyouseibatu
+		}
+		x = 54
+		y = 9
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = JAP
+				}
+			}
+
+	}
+	focus = {
+		id = SPR_guntai_sakusenseigou
+		icon = GFX_focus_chi_flying_tigers
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_guntai_kuugun
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_senryakuhakai
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_senjyousien
+		}
+		x = 56
+		y = 12
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = operational_integrity_tree
+				}
+		}
+
+
+	}
+	focus = {
+		id = SPR_guntai_jyutubaku
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_guntai_senjyousien
+		}
+		prerequisite = {
+			focus = SPR_guntai_sakusenseigou
+		}
+		x = 55
+		y = 13
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = cat_strategic_bomber
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_kyoukaiseisin
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 9.00
+		prerequisite = {
+			focus = SPR_outouha_kyoukairengou
+		}
+		x = 56
+		y = 4
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_32
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_jyuujigun
+		icon = GFX_focus_generic_manpower
+		cost = 9.00
+		prerequisite = {
+			focus = SPR_outouha_kyoukaiseisin
+		}
+		x = 56
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spr_ideas_32
+				add_idea = spr_ideas_33
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_kyoukouryou
+		icon = GFX_focus_attack_italy
+		cost = 8.00
+		prerequisite = {
+			focus = SPR_outouha_kamigasorewo
+		}
+		x = 56
+		y = 7
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = ITA
+				}
+			}
+
+	}
+	focus = {
+		id = SPR_outouha_itanseibatu
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 9.00
+		prerequisite = {
+			focus = SPR_outouha_jinei
+		}
+		x = 57
+		y = 8
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_36
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_doituoui
+		icon = GFX_focus_attack_germany
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_outouha_itanseibatu
+		}
+		x = 57
+		y = 9
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = GER
+				}
+			}
+
+	}
+	focus = {
+		id = SPR_guntai_keisen
+		icon = GFX_goal_generic_air_fighter
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_guntai_sakusenseigou
+		}
+		x = 57
+		y = 13
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = light_fighter
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_sebiriadaiseidou
+		icon = GFX_focus_spa_save_the_alcazar
+		cost = 3.00
+		prerequisite = {
+			focus = SPR_outouha_kyoukairengou
+		}
+		x = 58
+		y = 4
+		completion_reward = {			
+			169 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_reondaiseidou
+		icon = GFX_focus_spa_save_the_alcazar
+		cost = 3.00
+		prerequisite = {
+			focus = SPR_outouha_sebiriadaiseidou
+		}
+		x = 58
+		y = 5
+		completion_reward = {			
+			174 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_arumudena
+		icon = GFX_focus_spa_save_the_alcazar
+		cost = 3.00
+		prerequisite = {
+			focus = SPR_outouha_reondaiseidou
+		}
+		x = 58
+		y = 6
+		completion_reward = {			
+			41 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_kougyou_toti
+		icon = GFX_goal_generic_construct_civilian
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_kougyou_nouti
+		}
+		x = 3
+		y = 6
+		completion_reward = {
+			
+			166 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			172 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			176 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			791 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_kougyou_porutogaru
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_kougyou_kouzan
+		}
+		x = 1
+		y = 5
+		available = {
+			OR = {
+					SPR = {
+							owns_state = 112
+						
+		
+						112 = {
+							is_puppet_of = SPR
+						}
+					}
+				}
+		}
+		completion_reward = {
+			
+			112 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_katarunyasyokumin
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_faranhe_danatukanryou
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+			
+			165 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_doitudoumei
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 9.00
+		prerequisite = {
+			focus = SPR_faranhe_ahurikabunkatu
+		}
+		x = 15
+		y = 8
+		completion_reward = {
+			GER = {
+					country_event = { id = ssw_spr.2 days = 1 }
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_rikugungunkaku
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_faranhe_huransukorosu
+		}
+		x = 13
+		y = 7
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_08
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_taihou
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_franco_hoheijyuu
+		}
+		x = 25
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spr_ideas_11
+				add_idea = spr_ideas_12
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_seisanzouka
+		icon = GFX_focus_generic_combined_arms
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_franco_gunkoujyou
+		}
+		x = 27
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = concentrated_industry_category
+					category = dispersed_industry_category
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_sensya
+		icon = GFX_focus_generic_tank_production
+		cost = 7.00
+		prerequisite = {
+			focus = SPR_franco_taihou
+		}
+		x = 24
+		y = 6
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spr_ideas_12
+				add_idea = spr_ideas_13
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_jidousyadou
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_franco_itariasyussi
+		}
+		x = 30
+		y = 8
+		completion_reward = {
+			
+			41 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+			}
+			175 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+			}
+			793 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+			}
+			167 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_suiryoku
+		icon = GFX_goal_continuous_non_factory_construct
+		cost = 3.00
+		prerequisite = {
+			focus = SPR_franco_seisanzouka
+		}
+		x = 27
+		y = 7
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_15
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_rosutyairudo
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 3.00
+		prerequisite = {
+			focus = SPR_franco_suiryoku
+		}
+		x = 27
+		y = 8
+		completion_reward = {
+			add_resource = {
+					type = chromium
+					amount = 29
+					state = 175
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_franco_kokusaitousikaigi
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_franco_rosutyairudo
+		}
+		prerequisite = {
+			focus = SPR_faranhe_nannbeiyusyutu
+		}
+		prerequisite = {
+			focus = SPR_franco_jidousyadou
+		}
+		x = 28
+		y = 9
+		completion_reward = {
+		SPR = {
+			country_event = { id = ssw_spr.47 days = 1 }
+		}
+	}
+
+	}
+	focus = {
+		id = SPR_franco_orinpia
+		icon = GFX_focus_spa_unify_the_nationalist_front
+		cost = 10.00
+		prerequisite = {
+			focus = SPR_franco_kokusaitousikaigi
+		}
+		prerequisite = {
+			focus = SPR_franco_banpaku
+		}
+		x = 31
+		y = 10
+		completion_reward = {
+			SPR = {
+				country_event = { id = ssw_spr.50 days = 1 }
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_santaeria
+		icon = GFX_focus_spa_the_spanish_miracle
+		cost = 3.00
+		prerequisite = {
+			focus = SPR_outouha_kyoukairengou
+		}
+		x = 60
+		y = 4
+		completion_reward = {			
+			165 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_toredo
+		icon = GFX_focus_spa_the_spanish_miracle
+		cost = 3.00
+		prerequisite = {
+			focus = SPR_outouha_santaeria
+		}
+		x = 60
+		y = 5
+
+	}
+	focus = {
+		id = SPR_outouha_burugosu
+		icon = GFX_focus_spa_the_spanish_miracle
+		cost = 3.00
+		prerequisite = {
+			focus = SPR_outouha_toredo
+		}
+		x = 60
+		y = 6
+		completion_reward = {			
+			41 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_kokkanokyoukaika
+		icon = GFX_focus_spa_unify_the_nationalist_front
+		cost = 8.00
+		prerequisite = {
+			focus = SPR_outouha_arumudena
+		}
+		prerequisite = {
+			focus = SPR_outouha_burugosu
+		}
+		x = 59
+		y = 7
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_34
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_nuebaguranada
+		icon = GFX_focus_mex_redeem_aztlan
+		cost = 4.00
+		prerequisite = {
+			focus = SPR_outouha_amerikasyokumintika
+		}
+		x = 47
+		y = 9
+		available = {
+			OR = {
+					SPR = {
+							owns_state = 375
+							owns_state = 277
+							owns_state = 378
+							owns_state = 316
+					}
+						
+					SPR = {
+						375 = {
+							is_puppet_of = SPR
+						}
+						277 = {
+							is_puppet_of = SPR
+						}
+						378 = {
+							is_puppet_of = SPR
+						}
+						316 = {
+							is_puppet_of = SPR
+						}
+						
+					}
+				}
+		}
+		completion_reward = {
+			
+			375 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			277 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			378 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+			316 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_outouha_indeliasu
+		icon = GFX_focus_generic_self_management
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_outouha_peruu
+		}
+		prerequisite = {
+			focus = nuebakasutera
+		}
+		prerequisite = {
+			focus = SPR_outouha_nuebaguranada
+		}
+		prerequisite = {
+			focus = SPR_outouha_rioderapurata
+		}
+		x = 48
+		y = 10
+		completion_reward = {
+			SPR = {
+				add_ideas = spr_ideas_27
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_hohei
+		icon = GFX_focus_prc_infiltration
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_guntai_daikibosakusen
+		}
+		x = 31
+		y = 13
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = infantry_weapons
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_jidousya
+		icon = GFX_goal_generic_army_motorized
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_guntai_yuuseikaryoku
+		}
+		prerequisite = {
+			focus = SPR_guntai_kidousen
+		}
+		x = 35
+		y = 13
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = motorized_equipment
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_dengekisen
+		icon = GFX_focus_generic_army_tanks2
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_guntai_sensya
+		}
+		prerequisite = {
+			focus = SPR_guntai_jidousya
+		}
+		x = 36
+		y = 14
+		completion_reward = {
+			add_ideas = spr_ideas_41
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = cat_mobile_warfare
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_hougekisen
+		icon = GFX_goal_generic_army_doctrines
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_guntai_jidousya
+		}
+		prerequisite = {
+			focus = SPR_guntai_houhei
+		}
+		x = 34
+		y = 14
+		completion_reward = {
+			add_ideas = spr_ideas_40
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = cat_superior_firepower
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_zangousen
+		icon = GFX_focus_spr_no_pasaran
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_guntai_houhei
+		}
+		prerequisite = {
+			focus = SPR_guntai_hohei
+		}
+		x = 32
+		y = 14
+		completion_reward = {
+			add_ideas = spr_ideas_39
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = cat_grand_battle_plan
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_senkan
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_guntai_kantaihozen
+		}
+		x = 41
+		y = 13
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = bb_tech
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_sensuikan
+		icon = GFX_goal_generic_navy_submarine
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_guntai_bouekisosi
+		}
+		x = 44
+		y = 14
+		completion_reward = {
+			add_ideas = spr_ideas_42
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = ss_tech
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_kuubo
+		icon = GFX_goal_generic_navy_carrier
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_guntai_kitikougeki
+		}
+		x = 47
+		y = 13
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = cv_tech
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_jyunyoukan
+		icon = GFX_focus_generic_cruiser2
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_guntai_bouekisosi
+		}
+		prerequisite = {
+			focus = SPR_guntai_kitikougeki
+		}
+		x = 45
+		y = 13
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = cl_tech
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_santelisima
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = SPR_guntai_kantaihozen
+		}
+		x = 42
+		y = 14
+		completion_reward = {
+			
+				create_equipment_variant = {
+					name = "Nuestra Señora de la Santísima Trinidad Class"
+					type = ship_hull_super_heavy_1
+					name_group = SPR_BB_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_super_heavy_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_shbb
+						front_1_custom_slot = ship_anti_air_1
+						front_2_custom_slot = empty
+						mid_1_custom_slot = empty
+						mid_2_custom_slot = ship_secondaries_2
+						mid_3_custom_slot = ship_secondaries_2
+						rear_1_custom_slot = ship_super_heavy_battery_1
+						rear_2_custom_slot = ship_airplane_launcher_1
+					}
+				}
+				hidden_effect = {
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_super_heavy_1
+							creator = "SPR" 
+							version_name = "Nuestra Señora de la Santísima Trinidad Class"
+						}
+						name = "Nuestra Señora de la Santísima Trinidad" 
+						requested_factories = 1
+						progress = 0.75
+						amount = 1
+					}
+				}
+			}
+		
+
+	}
+	focus = {
+		id = SPR_guntai_kansaiki
+		icon = GFX_focus_generic_air_defense
+		cost = 10.00
+		prerequisite = {
+			focus = SPR_guntai_kitikougeki
+		}
+		x = 46
+		y = 14
+		completion_reward = {
+			add_ideas = spr_ideas_43
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = naval_air
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_kinsetuki
+		icon = GFX_goal_generic_CAS
+		cost = 9.00
+		prerequisite = {
+			focus = SPR_guntai_jyusen
+		}
+		prerequisite = {
+			focus = SPR_guntai_jyutubaku
+		}
+		x = 54
+		y = 14
+		completion_reward = {
+			add_ideas = spr_ideas_46
+			add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = cas_bomber
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_seikuusen
+		icon = GFX_focus_rocketry
+		cost = 9.00
+		prerequisite = {
+			focus = SPR_guntai_jyutubaku
+		}
+		prerequisite = {
+			focus = SPR_guntai_keisen
+		}
+		x = 56
+		y = 14
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = jet_technology
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_guntai_ryakubakukyori
+		icon = GFX_focus_wonderweapons
+		cost = 9.00
+		prerequisite = {
+			focus = SPR_guntai_ryakubaku
+		}
+		prerequisite = {
+			focus = SPR_guntai_jyusen
+		}
+		x = 52
+		y = 14
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = nuclear
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_kougekisen
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5.00
+		prerequisite = {
+			focus = SPR_faranhe_rikugungunkaku
+		}
+		x = 13
+		y = 8
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = land_doctrine
+				}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_doitu
+		icon = GFX_focus_attack_germany
+		cost = 8.00
+		prerequisite = {
+			focus = SPR_faranhe_itariakorosu
+		}
+		x = 15
+		y = 10
+		bypass = {		
+			has_war_with = GER
+		}
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = GER
+				}
+			}
+
+	}
+	focus = {
+		id = SPR_faranhe_koujyoutukure
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 7.00
+		prerequisite = {
+			focus = SPR_faranhe_rikugungunkaku
+		}
+		x = 11
+		y = 8
+		completion_reward = {
+			
+			791 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_faranhe_nannbeiyusyutu
+		icon = GFX_goal_generic_trade
+		cost = 3.00
+		prerequisite = {
+			focus = SPR_franco_taihou
+		}
+		x = 25
+		y = 8
+		completion_reward = {
+			
+			166 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+			}
+			ARG = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 700
+					producer = SPA
+				}
+			}
+			VEN = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 700
+					producer = SPA
+				}
+			}
+			PRU = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 700
+					producer = SPA
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SPR_fanco_tyouhei
+		icon = GFX_focus_prc_infiltration
+		cost = 6.00
+		prerequisite = {
+			focus = SPR_franco_gunhenotyuusei
+		}
+		x = 26
+		y = 6
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spr_ideas_10
+				add_idea = spr_ideas_14
+			}
+		}
+
+	}
+}
