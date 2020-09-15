@@ -535,3 +535,24 @@ JAP_cat_the_kanto_industry_region_plan = {
 		}
 	}
 }
+JAP_signs_of_disarmament = {
+		JAP_dec_signs_of_disarmament = { #軍縮の兆し
+			icon = generic_industry
+			available = {
+				has_completed_focus = JAP_the_nigata_large_factory
+			}
+			days_mission_timeout = 200
+
+			fire_only_once = no
+
+			timeout_effect = {
+				country_event = {
+					id = SSW_JAP.1
+					days = 1
+				}
+			}
+
+			remove_effect = {
+			}
+		}
+}

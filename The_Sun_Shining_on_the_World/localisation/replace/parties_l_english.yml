@@ -59,8 +59,8 @@
  neoliberalism:0 "新自由主義"
  neoliberalism_noun:0 "新自由主義"
  neoliberalism_desc:0 "新自由主義"
- neoliberalism:0 "新自由主義"
- neoliberalism_desc:0 "新自由主義とは、政治や経済の分野で「新しい自由主義」を意味する思想や概念。"
+ neoliberalism_ideology:0 "新自由主義"
+ neoliberalism_ideology_desc:0 "新自由主義とは、政治や経済の分野で「新しい自由主義」を意味する思想や概念。"
 
  conservatism:0 "社会保守主義"
  conservatism_noun:0 "社会保守主義"

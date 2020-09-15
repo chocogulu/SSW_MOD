@@ -270,7 +270,7 @@ ideologies = {
 	#新自由主義
 	neoliberalism = {
 		types = {
-			neoliberalism = { #新自由主義
+			neoliberalism_ideology = { #新自由主義
 			}
 		}
 		dynamic_faction_names = {

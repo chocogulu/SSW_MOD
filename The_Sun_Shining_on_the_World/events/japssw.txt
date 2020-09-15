@@ -1,0 +1,77 @@
+add_namespace = SSW_JAP
+
+country_event = { #国民軍縮運動の発生
+	id = SSW_JAP.1
+	title = SSW_JAP.1.t
+	desc = SSW_JAP.1.d
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.1.a
+		add_political_power = -25
+		ai_chance = { factor = 10}
+	}
+}
+
+country_event = { #国民軍縮運動の拡大
+	id = SSW_JAP.2
+	title = SSW_JAP.2.t
+	desc = SSW_JAP.2.d
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.2.a
+		add_political_power = -50
+		ai_chance = { factor = 10}
+		add_popularity = { ideology = neoliberalism popularity = 0.12 }
+		remove_popularity = { ideology = conservatism popularity = 0.12 }
+	}
+}
+
+country_event = { #久原首相の辞任
+	id = SSW_JAP.3
+	title = SSW_JAP.3.t
+	desc = SSW_JAP.3.d
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.3.a
+		add_political_power = 25
+		ai_chance = { factor = 10}
+		add_popularity = { ideology = neoliberalism popularity = 0.12 }
+		remove_popularity = { ideology = conservatism popularity = 0.12 }
+	}
+}
+
+country_event = { #自由党の台頭
+	id = SSW_JAP.4
+	title = SSW_JAP.4.t
+	desc = SSW_JAP.4.d
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		name = japssw.4.a
+		add_political_power = 50
+		ai_chance = { factor = 10}
+		add_popularity = { ideology = neoliberalism popularity = 0.12 }
+		remove_popularity = { ideology = conservatism popularity = 0.12 }
+		set_politics = {
+		ruling_party = neoliberalism
+			election_frequency = 60
+			elections_allowed = yes
+		}
+	}
+}
+

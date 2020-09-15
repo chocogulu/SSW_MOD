@@ -18,3 +18,9 @@ JAP_cat_the_kanto_industry_region_plan = {
 		original_tag = JAP
 	}
 }
+
+JAP_signs_of_disarmament = {
+	allowed = {
+		original_tag = JAP
+	}
+}

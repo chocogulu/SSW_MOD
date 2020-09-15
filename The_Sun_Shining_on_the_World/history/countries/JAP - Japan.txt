@@ -342,6 +342,16 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "賀川豊彦"
+	desc = ""
+	picture = "Mokichi_Kagawa.dds"
+	expire = "1989.1.1"
+	ideology = neoliberalism_ideology
+	traits = {
+	}
+}
+
 ###陸軍指揮官###
 create_field_marshal = {
 	name = "山下奉文"	#陸軍元帥
