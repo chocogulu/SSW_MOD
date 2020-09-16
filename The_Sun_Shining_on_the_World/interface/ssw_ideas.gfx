@@ -91,6 +91,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_Emergency_conscription"
 		texturefile = "gfx/interface/ideas/GER/Emergency_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_air_conspiracy"
+		texturefile = "gfx/interface/ideas/GER/air_conspiracy.dds"
     }
 #イギリス
     spriteType = {

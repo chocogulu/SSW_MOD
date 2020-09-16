@@ -54,6 +54,8 @@ ideas = {
 				always = no
 			}
 
+			picture = air_conspiracy
+
 			equipment_bonus = {
 				fighter_equipment = {
 					build_cost_ic = 100
@@ -73,7 +75,6 @@ ideas = {
 				}
 			}
 
-			picture = ast_classify_alients
 			modifier = {
 				custom_modifier_tooltip = Air_force_conspiracy.d
 			}
