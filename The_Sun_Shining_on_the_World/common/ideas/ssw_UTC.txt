@@ -1,0 +1,26 @@
+ideas = {
+	country = {
+		UTC_idea_1 = {
+			
+			allowed = {always = no }
+			
+			removal_cost = -1# わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = idea_eng_imperial_conscription #アイコンの写真
+			
+
+			equipment_bonus = {
+				motorized_equipment = {
+					reliability = -0.1
+					build_cost_ic = -0.7
+				}
+			}
+			
+			modifier = {
+
+			}
+		}
+	}
+}
