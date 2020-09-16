@@ -347,7 +347,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_resource = {
-					type = aluminum
+					type = aluminium
 					amount = 25
 					state = 297
 				}
@@ -383,26 +383,24 @@ focus_tree = {
 		x = 9
 		y = 5
 		available = {
-			OR = {
-					SPR = {
-							owns_state = 461
-						
-		
-						461 = {
-							is_puppet_of = SPR
-						}
+			any_country = {
+				limit = {
+					OR = {
+						is_puppet_of = SPR
+						tag = SPR
 					}
 				}
+				owns_state = 461
+			}
 		}
 		completion_reward = {
-			
 			461 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-						type = arms_factory
-						level = 3
-						instant_build = yes
-					}
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
 			}
 		}
 
@@ -448,7 +446,7 @@ focus_tree = {
 		desc = "POLITICS_MILITARY_JUNTA_DESC"
 		picture = "GFX_portrait_SPA_military_junta"
 		expire = "1965.1.1"
-		ideology = militarism   
+		ideology = military
 		traits = {
 			divided_interests
 		}
@@ -482,9 +480,11 @@ focus_tree = {
 		y = 4
 		available = {
 			has_idea = {
-				spr_ideas_01 
-				}
-				remove_ideas = { brm_debahu_01 }
+				spr_ideas_01
+			}
+		}
+		completion_reward = {
+			remove_ideas = brm_debahu_01
 		}
 
 
@@ -1068,6 +1068,9 @@ focus_tree = {
 	focus = {
 		id = SPR_guntai_daikibosakusen
 		icon = GFX_goal_generic_axis_build_infantry
+		x = 32
+		y = 12
+
 		cost = 4.00
 		prerequisite = {
 			focus = SPR_guntai_rikugun
@@ -1078,8 +1081,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SPR_guntai_kidousen
 		}
-		x = 32
-		y = 12
 		completion_reward = {
 			add_tech_bonus = {
 					bonus = 1
@@ -2128,28 +2129,18 @@ focus_tree = {
 		y = 9
 		available = {
 			OR = {
-					SPR = {
+					any_country = {
+							limit = {
+								OR = {
+									is_puppet_of = SPR
+									tag = SPR
+								}
+							}
 							owns_state = 278
 							owns_state = 493
 							owns_state = 307
 							owns_state = 305
-					}
-						
-					SPR = {
-						278 = {
-							is_puppet_of = SPR
-						}
-						493 = {
-							is_puppet_of = SPR
-						}
-						307 = {
-							is_puppet_of = SPR
-						}
-						305 = {
-							is_puppet_of = SPR
-						}
-						
-					}
+					}	
 				}
 		}
 		completion_reward = {
@@ -2199,30 +2190,18 @@ focus_tree = {
 		x = 45
 		y = 9
 		available = {
-			OR = {
-					SPR = {
-							owns_state = 278
-							owns_state = 300
-							owns_state = 301
-							owns_state = 302
-					}
-						
-					SPR = {
-						278 = {
-							is_puppet_of = SPR
-						}
-						300 = {
-							is_puppet_of = SPR
-						}
-						301 = {
-							is_puppet_of = SPR
-						}
-						302 = {
-							is_puppet_of = SPR
-						}
-						
+			any_country = {						
+				limit = {
+					OR = {
+						tag = SPR
+						is_puppet_of = SPR
 					}
 				}
+				owns_state = 278
+				owns_state = 300
+				owns_state = 301
+				owns_state = 302
+			}
 		}
 		completion_reward = {
 			
@@ -2359,34 +2338,34 @@ focus_tree = {
 			303 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 			}
 			492 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 			}
 			506 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 			}
 			649 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 
@@ -3185,34 +3164,34 @@ focus_tree = {
 			375 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 			}
 			277 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 			}
 			378 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 			}
 			316 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 
@@ -3435,7 +3414,7 @@ focus_tree = {
 		completion_reward = {
 			
 				create_equipment_variant = {
-					name = "Nuestra Señora de la Santísima Trinidad Class"
+					name = "Nuestra Senora de la Santisima Trinidad Class"
 					type = ship_hull_super_heavy_1
 					name_group = SPR_BB_HISTORICAL
 					parent_version = 0
@@ -3461,9 +3440,9 @@ focus_tree = {
 						equipment = {
 							type = ship_hull_super_heavy_1
 							creator = "SPR" 
-							version_name = "Nuestra Señora de la Santísima Trinidad Class"
+							version_name = "Nuestra Senora de la Santisima Trinidad Class"
 						}
-						name = "Nuestra Señora de la Santísima Trinidad" 
+						name = "Nuestra Senora de la Santisima Trinidad" 
 						requested_factories = 1
 						progress = 0.75
 						amount = 1
