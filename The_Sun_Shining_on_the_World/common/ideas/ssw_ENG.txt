@@ -4,75 +4,75 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = British_sick			#アイコンの写真
+			picture = British_sick			
 			modifier = {
 				consumer_goods_factor = 0.2
 				production_speed_arms_factory_factor = -0.3
 				production_speed_industrial_complex_factor = -0.3
 			}
-			#効果
+			
 		}
 		ENG_idea_2 = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = British_sick			#アイコンの写真
+			picture = British_sick			
 			modifier = {
 				consumer_goods_factor = 0.15
 				production_speed_arms_factory_factor = -0.2
 				production_speed_industrial_complex_factor = -0.2
 			}
-			#効果
+			
 		}
 		ENG_idea_3 = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = British_sick			#アイコンの写真
+			picture = British_sick			
 			modifier = {
 				consumer_goods_factor = 0.1
 				production_speed_arms_factory_factor = 0.05
 				production_speed_industrial_complex_factor = 0.05
 			}
-			#効果
+			
 		}
 		ENG_idea_4 = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = stiff_upper_lip			#アイコンの写真
+			picture = stiff_upper_lip			
 			modifier = {
 			}
-			#効果
+			
 		}
 		ENG_idea_5 = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
 			modifier = {
 				operative_slot = 1
 			}
-			#効果
+			
 		}
 		ENG_idea_6 = {
 			allowed = {
@@ -91,11 +91,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = vickers_armstrong_eng			#アイコンの写真
+			picture = vickers_armstrong_eng			
 			modifier = {
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
@@ -105,11 +105,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = vickers_armstrong_eng			#アイコンの写真
+			picture = vickers_armstrong_eng			
 			modifier = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
@@ -119,57 +119,57 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_research_bonus			#アイコンの写真
+			picture = generic_research_bonus			
 			modifier = {
 				research_speed_factor = 0.05
 			}
-			#効果
+			
 		}
 		ENG_idea_10 = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = FRA_factory_strikes			#アイコンの写真
+			picture = FRA_factory_strikes			
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
-			#効果
+			
 		}
 		ENG_idea_11 = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = ast_all_in			#アイコンの写真
+			picture = ast_all_in			
 			modifier = {
 				local_resources_factor = 0.1
 			}
-			#効果
+			
 		}
 		ENG_idea_12 = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = man_five_year_plan_industry			#アイコンの写真
+			picture = man_five_year_plan_industry			
 			modifier = {
 				production_speed_industrial_complex_factor = 0.1
 			}
-			#効果
+			
 		}
 		ENG_idea_13 = {
 			allowed = {
@@ -191,11 +191,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = Elizabeth			#アイコンの写真
+			picture = Elizabeth			
 			modifier = {
 				research_speed_factor = 0.05
 			}
@@ -204,11 +204,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = george_vi			#アイコンの写真
+			picture = george_vi			
 			traits = {
 				commonwealth_leader
 				chronic_disease
@@ -218,11 +218,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = hol_caved_to_the_british			#アイコンの写真
+			picture = hol_caved_to_the_british			
 			modifier = {
 				stability_factor = -0.1
 				conscription_factor = -0.3
@@ -233,60 +233,60 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = Welfare_state			#アイコンの写真
+			picture = Welfare_state			
 			modifier = {
 				consumer_goods_factor = 0.05
 			}
-			#効果
+			
 		}
 		UKR_economy = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_goods_red_bonus			#アイコンの写真
+			picture = generic_goods_red_bonus			
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
-			#効果
+			
 		}
 		UK_economy = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_goods_red_bonus			#アイコンの写真
+			picture = generic_goods_red_bonus			
 			modifier = {
 				consumer_goods_factor = 0.05
 			}
-			#効果
+			
 		}
 		BBC_TV = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			#わかんね
+			removal_cost = -1			
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = BBC_tv			#アイコンの写真
+			picture = BBC_tv			
 			modifier = {
 				drift_defence_factor = 0.2
 				opinion_gain_monthly_factor = 0.15
 				political_power_gain = 0.3
 				surrender_limit = 0.3
 			}
-			#効果
+			
 		}
 		think_tank_UK = {
 			allowed = {
