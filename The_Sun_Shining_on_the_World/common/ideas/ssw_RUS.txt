@@ -44,5 +44,794 @@ ideas = {
 			modifier = {
 			}
 		}
+		rus_ideas_01 = {
+			allowed = {
+                original_tag = RUS
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            picture = generic_production_bonus
+
+            modifier = {
+				production_factory_max_efficiency_factor = 0.1
+            }
+		}
+		rus_ideas_02 = {
+			allowed = {
+                original_tag = RUS
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            picture = chi_army_corruption3
+
+					equipment_bonus = {
+						infantry_weapons = {
+							build_cost_ic = -0.2 instant = yes
+						}
+				}
+		}
+		rus_ideas_03 = {
+			allowed = {
+                original_tag = RUS
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            picture = generic_goods_red_bonus
+
+            modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		rus_ideas_04 = {
+			allowed = {
+                original_tag = RUS
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            picture = man_five_year_plan_air
+
+            modifier = {
+				production_speed_buildings_factor = 0.1	
+				}
+			}
+			
+				rus_ideas_05 = {
+					allowed = {
+						original_tag = RUS
+					}
+		
+					allowed_civil_war = {
+						always = yes
+					}
+		
+					removal_cost = -1
+		
+					picture = man_five_year_plan_industry
+		
+					modifier = {
+						production_factory_max_efficiency_factor = 0.15
+						industrial_capacity_factory = 0.15
+						}
+					}
+					rus_ideas_05A = {
+						allowed = {
+							original_tag = RUS
+						}
+			
+						allowed_civil_war = {
+							always = yes
+						}
+			
+						removal_cost = -1
+			
+						picture = jap_supremacy_of_technology
+			
+						modifier = {
+							research_speed_factor = 0.05
+							}
+						}
+						rus_ideas_06 = {
+							allowed = {
+								original_tag = RUS
+							}
+				
+							allowed_civil_war = {
+								always = yes
+							}
+				
+							removal_cost = -1
+				
+							picture = generic_infantry_bonus
+				
+							modifier = {
+								mobilization_speed = 0.2
+								}
+							}
+							rus_ideas_07 = {
+								allowed = {
+									original_tag = RUS
+								}
+					
+								allowed_civil_war = {
+									always = yes
+								}
+					
+								removal_cost = -1
+					
+								picture = generic_army_war_college
+					
+								modifier = {
+									justify_war_goal_time = -0.25
+									}
+								}
+
+				rus_ideas_08 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_neutrality_drift_bonus
+						
+							modifier = {
+								min_export = -0.1
+								stability_factor = -0.1
+							}
+				}
+				rus_ideas_09 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_political_support
+						
+							modifier = {
+								political_power_gain = 0.15
+							}
+				}
+				rus_ideas_09A = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = political_violence
+						
+							modifier = {
+								intelligence_agency_defense = 0.25
+							}
+				}
+				rus_ideas_10 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_political_support
+						
+							modifier = {
+								stability_factor = 0.05
+								political_power_gain = 0.2
+							}
+				}
+				rus_ideas_11 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = victors_of_the_great_War
+						
+							modifier = {
+								stability_factor = 0.1
+								political_power_gain = 0.25
+								send_volunteer_size = 3
+							}
+				}
+				rus_ideas_12 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = hol_expand_the_colonial_army
+						
+							modifier = {
+								training_time_factor = -0.2
+							}
+				}
+				rus_ideas_12A = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_intel_bonus
+						
+						equipment_bonus = {
+							motorized_equipment = {
+								build_cost_ic = -0.15 instant = yes
+							}
+					}
+				}
+				rus_ideas_12B = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_intel_bonus
+						
+						equipment_bonus = {
+							infantry_weapons = {
+								build_cost_ic = -0.15 instant = yes
+							}
+							motorized_equipment = {
+								build_cost_ic = -0.15 instant = yes
+							}
+					}
+				}
+				rus_ideas_13 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_volunteer_expedition_bonus
+						
+							modifier = {
+								stability_weekly = 0.05
+							}
+				}
+				rus_ideas_14 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_volunteer_expedition_bonus
+						
+							modifier = {
+								stability_weekly = 0.05
+								political_advisor_cost_factor = -0.2
+							}
+				}
+				rus_ideas_15 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_volunteer_expedition_bonus
+						
+							modifier = {
+								stability_weekly = 0.05
+								political_advisor_cost_factor = -0.2
+								trade_laws_cost_factor = -0.2
+								mobilization_laws_cost_factor = -0.2
+								economy_cost_factor = -0.2
+							}
+				}
+				rus_ideas_16 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_democratic_drift_bonus
+						
+							modifier = {
+								stability_weekly = 0.05
+								political_advisor_cost_factor = -0.25
+								trade_laws_cost_factor = -0.25
+								mobilization_laws_cost_factor = -0.25
+								economy_cost_factor = -0.25
+								global_building_slots_factor = 0.25
+							}
+				}
+				rus_ideas_17 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = deluge
+						
+							
+								targeted_modifier = { tag = MOS attack_bonus_against = 0.2 }
+								targeted_modifier = { tag = UKR attack_bonus_against = 0.2 }
+								targeted_modifier = { tag = BAL attack_bonus_against = 0.2 }
+								targeted_modifier = { tag = WTR attack_bonus_against = 0.2 }
+								targeted_modifier = { tag = SIB attack_bonus_against = 0.2 }
+								targeted_modifier = { tag = SOV attack_bonus_against = 0.2 }
+								targeted_modifier = { tag = MAN attack_bonus_against = 0.2 }
+								targeted_modifier = { tag = ARC attack_bonus_against = 0.2 }
+							
+				}
+				rus_ideas_18 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = general_staff
+						
+							modifier = {
+								military_leader_cost_factor = -0.50	
+								army_leader_start_level = 1
+							}
+				}
+				rus_ideas_19 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = air_support_focus
+						
+							modifier = {
+								army_speed_factor = 0.1
+							}
+				}
+				rus_ideas_20 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_navy_carrier_bonus
+						
+							modifier = {
+								sortie_efficiency = 0.2
+							}
+				}
+				rus_ideas_21 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_navy_carrier_bonus
+						
+							modifier = {
+								sortie_efficiency = 0.2
+								experience_gain_navy_factor = 0.2
+							}
+				}
+				rus_ideas_22 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = the_long_lance
+						
+						equipment_bonus = {
+							submarine = {
+								build_cost_ic = -0.15 instant = yes
+							}
+					}
+				}
+				rus_ideas_23 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = the_long_lance
+
+						modifier = {
+							production_speed_naval_base_factor = 0.2	
+							production_speed_dockyard_factor  = 0.2
+						}
+						equipment_bonus = {
+							submarine = {
+								build_cost_ic = -0.15 instant = yes
+							}
+					}
+				}
+				rus_ideas_24 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_naval_manufacturer_1
+
+						modifier = {
+							repair_speed_factor = 0.25
+						}
+				}
+				rus_ideas_25 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = eng_special_air_service
+
+						modifier = {
+							air_ace_generation_chance_factor = 0.10
+						}
+				}
+				rus_ideas_26 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_central_management
+
+						modifier = {
+							industry_free_repair_factor = 1	
+						}
+				}
+				rus_ideas_27 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_pp_unity_bonus
+
+						modifier = {
+							line_change_production_efficiency_factor = 0.15
+						}
+				}
+				rus_ideas_28 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_pp_unity_bonus
+
+						modifier = {
+							local_resources_factor = 0.15
+						}
+				}
+				rus_ideas_29 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_pp_unity_bonus
+
+						modifier = {
+							industrial_capacity_factory = 0.15
+						}
+				}
+				rus_ideas_30 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_pp_unity_bonus
+
+						modifier = {
+							industrial_capacity_dockyard = 0.15
+						}
+				}
+				rus_ideas_31 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_pp_unity_bonus
+
+						modifier = {
+							research_speed_factor = 0.05
+						}
+				}
+				rus_ideas_32 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_pp_unity_bonus
+
+						modifier = {
+							production_speed_buildings_factor = 0.15
+						}
+				}
+				rus_ideas_33 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_agrarian_reform
+
+						modifier = {
+							line_change_production_efficiency_factor = 0.25
+							local_resources_factor = 0.25
+							industrial_capacity_factory = 0.25
+							industrial_capacity_dockyard = 0.25
+							production_speed_buildings_factor = 0.25
+							research_speed_factor = 0.12				
+							}
+				}
+				rus_ideas_34 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = forced_conscription
+
+						modifier = {
+							conscription = 0.05			
+							}
+				}
+				rus_ideas_35 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_coastal_defense_ships2
+
+						modifier = {
+							naval_speed_factor = 0.1		
+							}
+				}
+				rus_ideas_36 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_bomber_production_diverted
+
+						modifier = {
+							air_cas_present_factor = 0.1			
+							}
+				}
+				rus_ideas_37 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = eng_service_overseas
+
+						modifier = {
+							army_attack_factor = 0.1			
+							}
+				}
+				rus_debahu1 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = great_depression
+
+						modifier = {
+							production_speed_buildings_factor = -0.3
+							consumer_goods_factor = 0.1
+							}
+				}
+				rus_debahu2 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = generic_disjointed_gov
+
+						modifier = {
+
+							stability_factor = -0.2
+							war_support_factor = -0.2
+							political_power_factor = -0.2
+							training_time_factor = 0.2
+							}
+				}
+				rus_debahu3 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = chi_incompetent_officers
+
+						modifier = {
+							army_org_Factor = -0.1
+							mobilization_laws_cost_factor = 3
+							economy_cost_factor = 3
+							}
+				}
+				rus_debahu4 = {
+					allowed = {
+						original_tag = RUS
+						}
+			
+					allowed_civil_war = {
+						always = yes
+						}
+						
+					removal_cost = -1
+						picture = anti_soviet_pact
+
+						modifier = {
+							conscription_factor = -0.3
+							stability_factor = -0.2
+							}
+				}
+
+
+
+
+
 	}
 }
