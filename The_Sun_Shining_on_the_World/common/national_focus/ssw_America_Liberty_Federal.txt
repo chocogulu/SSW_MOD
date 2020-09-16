@@ -133,7 +133,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = democracy
+				ideology = democratic
 				popularity = -0.3
 			}
 		}
