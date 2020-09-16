@@ -40,6 +40,31 @@ ideas = {
             modifier = {production_speed_buildings_factor = 0.1}
         }
 
+        Unstable_regime = {
+
+          allowed = {always = no}
+
+          removal_cost = -1
+
+         allowed_civil_war = {always = yes}
+
+         picture = anti_soviet_pact
+
+         modifier = {political_power_cost = -0.25}
+    }
+          Keep_going = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+           allowed_civil_war = {always = yes}
+
+           picture = FRA_motorized_focus
+
+           modifier = {army_speed_factor = 0.2}
+      }
+
           Repression = {
 
             allowed = {always = no}
