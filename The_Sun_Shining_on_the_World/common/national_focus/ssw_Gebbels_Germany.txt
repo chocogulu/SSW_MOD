@@ -10,7 +10,6 @@ focus_tree = {
 	default = no
 	focus = {
 		id = GER_Rebuild
-		text = 再建
 		icon = GFX_focus_ger_revive_kaiserreich
 		cost = 5
 		x = 16
@@ -24,7 +23,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Remnants
-		text = 残党への対処
 		icon = GFX_focus_ger_oppose_hitler
 		cost = 5
 		prerequisite = {
@@ -44,7 +42,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Gering
-		text = ナチ党穏健派への対処
 		icon = GFX_focus_Gering_ico
 		cost = 5
 		prerequisite = {
@@ -67,7 +64,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Giving_In_Gering
-		text = ゲーリング派との妥協
 		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 5
 		prerequisite = {
@@ -100,7 +96,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Moderate
-		text = 穏健主義を擁護
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 5
 		prerequisite = {
@@ -165,7 +160,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Hard_Posture_To_Gering
-		text = ゲーリング派への強硬姿勢
 		icon = GFX_focus_eng_move_to_secure_the_dominions
 		cost = 5
 		prerequisite = {
@@ -184,7 +178,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_New_Luftwaffe
-		text = 新たな空軍長官
 		icon = GFX_focus_generic_military_mission
 		cost = 5
 		prerequisite = {
@@ -200,7 +193,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Anything
-		text = 全ては
 		icon = GFX_focus_generic_strike_at_democracy1
 		cost = 5
 		prerequisite = {
@@ -250,7 +242,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Himmler
-		text = 過激派SS将校への対処
 		icon = GFX_focus_Himmler_ico
 		cost = 5
 		prerequisite = {
@@ -271,7 +262,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Giving_In_Himmler
-		text = ヒムラー派との妥協
 		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
 		cost = 5
 		prerequisite = {
@@ -293,8 +283,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = newfocus_8
-		text = 蜂起したSSの再雇用
+		id = GER_rehire
 		icon = GFX_focus_spa_the_spanish_miracle
 		cost = 5
 		prerequisite = {
@@ -371,7 +360,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Hard_Posture_To_Himmler
-		text = ヒムラー派への強硬姿勢
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		cost = 5
 		prerequisite = {
@@ -390,7 +378,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Himmler_Treatment
-		text = ヒムラーの処遇
 		icon = GFX_focus_eng_imperial_federation
 		cost = 5
 		prerequisite = {
@@ -406,11 +393,10 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_completely
-		text = 完全に
 		icon = GFX_focus_generic_strike_at_democracy1
 		cost = 5
 		prerequisite = {
-			focus = newfocus_8
+			focus = GER_rehire
 			focus = JGB_Himmler_Treatment
 		}
 		x = 7
@@ -456,7 +442,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Popular_Front
-		text = 人民戦線への対処
 		icon = GFX_focus_Popular_Front_ico
 		cost = 5
 		prerequisite = {
@@ -477,14 +462,13 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Giving_To_Vorbeck
-		text = フォルベックとの妥協
 		icon = GFX_focus_generic_concessions
 		cost = 5
 		prerequisite = {
 			focus = JGB_Popular_Front
 		}
 		mutually_exclusive = {
-			focus = newfocus_14
+			focus = GER_Cleanup_of_the_popular_front
 		}
 		x = 10
 		y = 3
@@ -499,8 +483,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = newfocus_13
-		text = 一部の他政党を存続許可
+		id = GER_Allow_continuation
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		cost = 5
 		prerequisite = {
@@ -546,8 +529,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = newfocus_14
-		text = 人民戦線の掃討
+		id = GER_Cleanup_of_the_popular_front
 		icon = GFX_goal_generic_war_with_comintern
 		cost = 5
 		prerequisite = {
@@ -565,12 +547,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = newfocus_15
-		text = 関係者を抹殺
+		id = GER_kill_Participants
 		icon = GFX_goal_continuous_boost_freedom
 		cost = 5
 		prerequisite = {
-			focus = newfocus_14
+			focus = GER_Cleanup_of_the_popular_front
 		}
 		x = 12
 		y = 4
@@ -582,12 +563,11 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Settled
-		text = 解決された
 		icon = GFX_focus_generic_strike_at_democracy1
 		cost = 5
 		prerequisite = {
-			focus = newfocus_13
-			focus = newfocus_15
+			focus = GER_Allow_continuation
+			focus = GER_kill_Participants
 		}
 		x = 11
 		y = 5
@@ -632,7 +612,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Review_of_our_Armament
-		text = 軍備の見直し
 		icon = GFX_focus_generic_license_production
 		cost = 5
 		prerequisite = {
@@ -651,7 +630,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Military_Exercise
-		text = 他ヘーアとの合同演習
 		icon = GFX_focus_generic_little_entente
 		cost = 1
 		prerequisite = {
@@ -669,7 +647,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Low_Rank_Army
-		text = 植民地軍と正規軍
 		icon = GFX_focus_cze_german_puppet
 		cost = 5
 		prerequisite = {
@@ -719,7 +696,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Equality
-		text = 同盟国の陸軍
 		icon = GFX_goal_generic_army_doctrines
 		cost = 5
 		prerequisite = {
@@ -769,7 +745,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Weapon_Research
-		text = 合同兵器研究
 		icon = GFX_focus_research2
 		cost = 5
 		prerequisite = {
@@ -783,7 +758,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Equality_2
-		text = 脳は多いほど良い
 		icon = GFX_focus_hol_liberation
 		cost = 5
 		prerequisite = {
@@ -800,7 +774,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Low_Rank_Army_2
-		text = 統一された参謀
 		icon = GFX_focus_eng_move_to_secure_the_dominions
 		cost = 5
 		prerequisite = {
@@ -817,7 +790,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_German_Tank
-		text = ドイツの戦車
 		icon = GFX_focus_generic_army_tanks2
 		cost = 5
 		prerequisite = {
@@ -830,15 +802,14 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
-				technology = land_doctrine
-				technology = medium_tank
+				technology = mobile_warfare
+				technology = main_battle_tank
 				technology = mechanised_infantry
 			}
 		}
 	}
 	focus = {
 		id = JGB_Panzer_Leopard
-		text = "パンツァー・レオパルド"
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -853,13 +824,12 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
-				technology = modern_tank_equipment_1
+				technology = main_battle_tank
 			}
 		}
 	}
 	focus = {
 		id = JGB_Panzerkampfwagen_IX
-		text = IX号戦車
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -874,13 +844,12 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
-				technology = super_heavy_tank_equipment_1
+				technology = super_heavy_tank
 			}
 		}
 	}
 	focus = {
 		id = JGB_Landing_Warfare
-		text = 合同上陸演習
 		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
 		cost = 5
 		prerequisite = {
@@ -898,7 +867,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_New_Navy
-		text = "ノイ・クリークスマリーネ"
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5
 		prerequisite = {
@@ -915,13 +883,12 @@ focus_tree = {
 				technology = wolfpacks
 				technology = advanced_submarine_warfare
 				technology = combined_operations_raiding
-				technology = fleet_in_being_tree
+				technology = fleet_in_being
 			}
 		}
 	}
 	focus = {
 		id = JGB_Cooperation_Army
-		text = 陸軍との連携
 		icon = GFX_focus_generic_cryptologic_bomb
 		cost = 5
 		prerequisite = {
@@ -939,7 +906,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Marine
-		text = 海兵
 		icon = GFX_goal_generic_amphibious_assault
 		cost = 5
 		prerequisite = {
@@ -960,7 +926,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Ship_Reserch
-		text = 海軍研究の開始
 		icon = GFX_focus_generic_navy_battleship2
 		cost = 5
 		prerequisite = {
@@ -978,13 +943,12 @@ focus_tree = {
 				technology = wolfpacks
 				technology = advanced_submarine_warfare
 				technology = combined_operations_raiding
-				technology = fleet_in_being_tree
+				technology = fleet_in_being
 			}
 		}
 	}
 	focus = {
 		id = JGB_Graf_Zeppelin
-		text = 新型グラーフツェッペリン
 		icon = GFX_goal_generic_navy_carrier
 		cost = 5
 		prerequisite = {
@@ -1002,7 +966,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Destroyer
-		text = 護衛艦の研究
 		icon = GFX_focus_generic_destroyer
 		cost = 5
 		prerequisite = {
@@ -1020,7 +983,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_U_Boat
-		text = Uボートの継続研究
 		icon = GFX_goal_generic_navy_submarine
 		cost = 5
 		prerequisite = {
@@ -1039,7 +1001,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_U_Boat_2
-		text = AUボート
 		icon = GFX_goal_generic_navy_anti_submarine
 		cost = 5
 		prerequisite = {
@@ -1052,7 +1013,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Reform_Airforce
-		text = 空軍の大改造
 		icon = GFX_goal_generic_air_fighter2
 		cost = 5
 		prerequisite = {
@@ -1065,8 +1025,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = JGB_Greim_Pran
-		text = グライム案
+		id = JGB_Greim_Plan
 		icon = GFX_focus_Greim_ico
 		cost = 1
 		prerequisite = {
@@ -1088,11 +1047,10 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Fighter
-		text = 制空戦闘機
 		icon = GFX_goal_continuous_air_production
 		cost = 5
 		prerequisite = {
-			focus = JGB_Greim_Pran
+			focus = JGB_Greim_Plan
 		}
 		x = 30
 		y = 4
@@ -1107,7 +1065,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Jet_Stuka
-		text = ジェットストゥーカ
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -1130,7 +1087,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Fighter_2
-		text = メッサーシュミットの新型戦闘機
 		icon = GFX_focus_research
 		cost = 5
 		prerequisite = {
@@ -1149,7 +1105,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Improvement_Me264
-		text = Me264の改良
 		icon = GFX_focus_research
 		cost = 5
 		prerequisite = {
@@ -1170,7 +1125,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Greim_doctrine
-		text = グライムドクトリン
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		cost = 5
 		prerequisite = {
@@ -1188,14 +1142,13 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Udet_Pran
-		text = ウーデット案
 		icon = GFX_focus_Udet_ico
 		cost = 1
 		prerequisite = {
 			focus = JGB_Reform_Airforce
 		}
 		mutually_exclusive = {
-			focus = JGB_Greim_Pran
+			focus = JGB_Greim_Plan
 			focus = JGB_Gering_Pran
 		}
 		x = 33
@@ -1210,7 +1163,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Emphasis_Bombers
-		text = 爆撃機重視
 		icon = GFX_focus_usa_escort_fighters
 		cost = 5
 		prerequisite = {
@@ -1228,7 +1180,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Dive_Bombing
-		text = 急降下爆撃
 		icon = GFX_goal_poland_goal
 		cost = 5
 		prerequisite = {
@@ -1251,14 +1202,13 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Gering_Pran
-		text = ゲーリング案
 		icon = GFX_focus_Gering_ico
 		cost = 1
 		prerequisite = {
 			focus = JGB_Reform_Airforce
 		}
 		mutually_exclusive = {
-			focus = JGB_Greim_Pran
+			focus = JGB_Greim_Plan
 			focus = JGB_Udet_Pran
 		}
 		x = 36
@@ -1271,7 +1221,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Battlefield_Support
-		text = 戦場支援
 		icon = GFX_goal_generic_occupy_start_war
 		cost = 5
 		prerequisite = {
@@ -1289,7 +1238,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Emphasis_Tactics
-		text = 戦術重視
 		icon = GFX_goal_generic_cavalry
 		cost = 5
 		prerequisite = {
@@ -1307,7 +1255,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Gering_Doctrine
-		text = ゲーリングドクトリン
 		icon = GFX_focus_eng_special_air_service
 		cost = 5
 		prerequisite = {
@@ -1325,7 +1272,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Air_support_Salamander
-		text = エアサポートザラマンダー
 		icon = GFX_focus_cze_military_aeronautical_institute
 		cost = 5
 		prerequisite = {
@@ -1343,7 +1289,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Emphasis_Tactics_2
-		text = 戦術研究の継続
 		icon = GFX_goal_generic_territory_or_war
 		cost = 5
 		prerequisite = {
@@ -1364,7 +1309,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_complete_Remnants
-		text = ゲルマニア民族主義の継続
 		icon = GFX_focus_ger_reichskommisariats
 		cost = 5
 		prerequisite = {
@@ -1384,7 +1328,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Special_Forces
-		text = その他の特殊作戦部隊
 		icon = GFX_focus_generic_paratrooper
 		cost = 5
 		prerequisite = {
@@ -1408,7 +1351,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Complete_Reform
-		text = 改造計画の完了
 		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 5
 		prerequisite = {
@@ -1424,7 +1366,6 @@ focus_tree = {
 	}
 	focus = {
 		id = JGB_Modern_Warframe
-		text = 現代陸軍戦術
 		icon = GFX_focus_hol_prepare_the_inundation_lines
 		cost = 5
 		prerequisite = {
