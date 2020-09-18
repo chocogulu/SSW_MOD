@@ -36,7 +36,7 @@ ideas = {
 			removal_cost = -1
 			picture = anti_soviet_pact
 			modifier = {
-				army_org_Factor = -10
+				army_org_Factor = -0.1
 			}
 		}
 		commandeer = {
