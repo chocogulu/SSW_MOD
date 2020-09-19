@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+	    #後進的な軽工業社会
+		TUR_idea_1 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_infrastructure_factor = -0.80
+				production_speed_arms_factory_factor = -0.50
+				production_speed_industrial_complex_factor = -0.50
+                industrial_capacity_factory = -0.30
+			}
+		}
+	}
+}
