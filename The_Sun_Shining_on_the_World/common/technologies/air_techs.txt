@@ -490,7 +490,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = jet_fighter3
+			leads_to_tech = jet_fighter4
 			research_cost_coeff = 1
 		}
 		
@@ -500,6 +500,63 @@ technologies = {
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 16 }
+		}
+		
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	jet_fighter4 = {
+
+		enable_equipments = {
+			jet_fighter_equipment_4
+		}
+
+		path = {
+			leads_to_tech = jet_fighter5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	jet_fighter5 = {
+
+		enable_equipments = {
+			jet_fighter_equipment_5
+		}
+
+		path = {
+			leads_to_tech = jet_fighter5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 20 }
 		}
 		
 		categories = {
@@ -529,7 +586,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = -4 y = 13 }
+			position = { x = 4 y = 13 }
 		}
 		
 		categories = {
@@ -559,7 +616,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = -4 y = 15 }
+			position = { x = 4 y = 15 }
 		}
 		
 		categories = {
@@ -579,7 +636,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = jet_cas3
+			leads_to_tech = jet_cas4
 			research_cost_coeff = 1
 		}
 
@@ -589,7 +646,7 @@ technologies = {
 
 		folder = {
 			name = air_techs_folder
-			position = { x = -4 y = 17 }
+			position = { x = 4 y = 17 }
 		}
 		
 		categories = {
@@ -601,7 +658,35 @@ technologies = {
 			factor = 1
 		}
 	}
-	
+	jet_cas4 = {
+
+		enable_equipments = {
+			jet_cas_equipment_4
+		}
+
+		path = {
+			leads_to_tech = jet_cas4
+			research_cost_coeff = 1
+		}
+
+		
+		research_cost = 2
+		start_year = 1960
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 4 y = 20 }
+		}
+		
+		categories = {
+			light_air
+			jet_technology
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
 	
 	CAS1 = {
 
@@ -1233,7 +1318,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = 2 }
+			position = { x = 2 y = 2 }
 		}
 		
 		categories = {
@@ -1310,6 +1395,11 @@ technologies = {
 		enable_equipments = {
 			heavy_fighter_equipment_3
 		}
+
+		path = {
+			leads_to_tech = heavy_fighter4
+			research_cost_coeff = 1
+		}
 		
 		#path = {
 		#	leads_to_tech = jet_fighter1
@@ -1321,6 +1411,35 @@ technologies = {
 		folder = {
 			name = air_techs_folder
 			position = { x = -2 y = 8 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+			cat_heavy_fighter
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	heavy_fighter4 = {
+
+		enable_equipments = {
+			heavy_fighter_equipment_4
+		}
+		
+		#path = {
+		#	leads_to_tech = jet_fighter1
+		#	research_cost_coeff = 1.2
+		#}
+
+		research_cost = 2
+		start_year = 1946
+		folder = {
+			name = air_techs_folder
+			position = { x = -1 y = 10 }
 		}
 		
 		categories = {
@@ -1386,12 +1505,59 @@ technologies = {
 		enable_equipments = {
 			scout_plane_equipment_2
 		}
+
+		path = {
+			leads_to_tech = scout_plane3
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
 		start_year = 1940
 		folder = {
 			name = air_techs_folder
 			position = { x = 10 y = 6 }
+		}
+		
+		categories = {
+			medium_air
+			air_equipment
+			cat_scout_plane
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				has_war = yes
+				factor = 1.5
+			}
+			modifier = {
+				has_tech = fighter2
+				has_tech = tactical_bomber2
+				has_tech = CAS2
+				factor = 3
+			}
+		}
+	}
+
+	scout_plane3 = {
+
+		enable_equipments = {
+			scout_plane_equipment_3
+		}
+
+		dependencies = {
+			jet_engines = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = air_techs_folder
+			position = { x = 10 y = 12 }
 		}
 		
 		categories = {
@@ -1617,7 +1783,10 @@ technologies = {
 			jet_tac_bomber_equipment_2
 		}
 		
-
+		path = {
+			leads_to_tech = jet_tactical_bomber_3
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2
 		start_year = 1950
@@ -1636,7 +1805,63 @@ technologies = {
 			factor = 1
 		}
 	}
+
+	jet_tactical_bomber_3 = {
+
+		enable_equipments = {
+			jet_tac_bomber_equipment_3
+		}
+
+		path = {
+			leads_to_tech = jet_tactical_bomber_4
+			research_cost_coeff = 1
+		}
+		
+
+
+		research_cost = 2
+		start_year = 1950
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = 16 }
+		}
+		
+		categories = {
+			medium_air
+			jet_technology
+			tactical_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
+	jet_tactical_bomber_4 = {
+
+		enable_equipments = {
+			jet_tac_bomber_equipment_4
+		}
+		
+
+
+		research_cost = 2
+		start_year = 1950
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = 20 }
+		}
+		
+		categories = {
+			medium_air
+			jet_technology
+			tactical_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	strategic_bomber1 = {
 
@@ -1760,6 +1985,11 @@ technologies = {
 		enable_equipments = {
 			jet_strat_bomber_equipment_1
 		}
+
+		path = {
+			leads_to_tech = jet_strategic_bomber2
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
 		start_year = 1950
@@ -1771,6 +2001,42 @@ technologies = {
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 14 }
+		}
+		
+		categories = {
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_deployed_air_force_size = {
+					size > 500
+					type = strategic_bomber
+				}
+				factor = 4.5
+			}
+		}
+	}
+
+	jet_strategic_bomber2 = {
+
+		enable_equipments = {
+			jet_strat_bomber_equipment_2
+		}
+		
+		research_cost = 2
+		start_year = 1950
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 20 }
 		}
 		
 		categories = {
