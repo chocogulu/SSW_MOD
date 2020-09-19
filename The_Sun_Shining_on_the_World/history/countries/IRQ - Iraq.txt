@@ -28,7 +28,7 @@ create_country_leader = {
 	desc = "POLITICS_GHAZI_I_DESC"
 	picture = "gfx/leaders/IRQ/Portrait_Rashid_Ali_al_Gaylani.dds"
 	expire = "1965.1.1"
-	ideology = illiberal_democracy
+	ideology = social_liberalism
 	traits = {
 		#
 	}

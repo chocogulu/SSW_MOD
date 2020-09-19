@@ -279,7 +279,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Masanori_Katsu.dds"
 	expire = "1957.1.1"
-	ideology = liberalism	#立憲民政党
+	ideology = social_liberalism	#立憲民政党
 	traits = {
 	}
 }
@@ -289,7 +289,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Kuniyuki_Tokugawa.dds"
 	expire = "1989.1.1"
-	ideology = illiberal_democracy	#将軍派
+	ideology = authoritarianism_ideology	#将軍派
 	traits = {
 	}
 }

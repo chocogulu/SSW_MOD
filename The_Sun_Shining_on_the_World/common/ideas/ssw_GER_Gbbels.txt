@@ -197,7 +197,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				air_chief_cost_factor = 0.5
+#				air_chief_cost_factor = 0.5
 				air_equipment_upgrade_xp_cost = 2.2
 				experience_gain_air = -0.05
 				air_accidents_factor = 0.1
@@ -232,7 +232,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				air_chief_cost_factor = 0.5
+#				air_chief_cost_factor = 0.5
 				air_equipment_upgrade_xp_cost = 2.2
 			}
 		}

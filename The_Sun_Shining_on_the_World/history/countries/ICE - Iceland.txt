@@ -29,11 +29,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Ólafur Thors"
+	name = "Olafur Thors"
 	desc = ""
 	picture = "gfx/leaders/ICE/Portrait_Olafur_Thors.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = social_liberalism
 	traits = {
 		#
 	}

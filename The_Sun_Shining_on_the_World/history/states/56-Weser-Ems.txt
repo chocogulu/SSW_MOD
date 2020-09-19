@@ -31,8 +31,8 @@ state={
 		add_core_of = GER
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 4
-				dockyard = 3
+				industrial_complex = 3
+				dockyard = 2
 			}
 		}
 	}

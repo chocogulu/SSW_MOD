@@ -38,7 +38,7 @@ create_country_leader = {
 	
 	picture = "GFX/leaders/MAN/Portrait_Xie_Jieshi.dds"
 	expire = "1960.1.1"
-	ideology = illiberal_democracy
+	ideology = social_liberalism
 	traits = {
 	}
 }
@@ -48,7 +48,7 @@ create_country_leader = {
 	
 	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 	expire = "1960.1.1"
-	ideology = despotism
+	ideology = despotism_ideology
 	traits = {
 		warrior_code
 	}

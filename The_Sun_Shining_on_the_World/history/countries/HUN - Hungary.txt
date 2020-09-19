@@ -42,7 +42,7 @@ if = {
 		has_dlc = "Death or Dishonor"
 	}
 	create_country_leader = {
-		name = "Miklós Horthy"
+		name = "Miklos Horthy"
 		desc = "POLITICS_MIKLOS_HORTHY_DESC"
 		picture = "Portrait_Hungary_Miklos_Horthy.dds"
 		expire = "1965.1.1"
@@ -55,14 +55,14 @@ if = {
 	}
 	else = {
 		create_country_leader = {
-			name = "Miklós Horthy"
+			name = "Miklos Horthy"
 			desc = "POLITICS_MIKLOS_HORTHY_DESC"
 			picture = "Portrait_Hungary_Miklos_Horthy.dds"
 			expire = "1965.1.1"
-			ideology = despotism
+			ideology = despotism_ideology
 		}
 		create_country_leader = {
-			name = "Miklós Horthy"
+			name = "Miklos Horthy"
 			desc = "POLITICS_MIKLOS_HORTHY_DESC"
 			picture = "Portrait_Hungary_Miklos_Horthy.dds"
 			expire = "1965.1.1"
@@ -76,14 +76,14 @@ create_country_leader = {
 	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
 	picture = "gfx/leaders/HUN/Portrait_Ferenc_Szombathelyi.dds"
 	expire = "1965.1.1"
-	ideology = illiberal_democracy
+	ideology = social_liberalism
 	traits = {
 		#
 	}
 }
 
 # create_country_leader = {
-# 	name = "Árpád Szakasits"
+# 	name = "Arpad Szakasits"
 # 	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
 # 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 # 	expire = "1965.1.1"
@@ -100,7 +100,7 @@ create_country_leader = {
 		#Remove neutral Horty add fascist
 		retire_country_leader = yes
 		create_country_leader = {
-			name = "Miklós Horthy"
+			name = "Miklos Horthy"
 			desc = "POLITICS_MIKLOS_HORTHY_DESC"
 			picture = "Portrait_Hungary_Miklos_Horthy.dds"
 			expire = "1965.1.1"
@@ -125,7 +125,7 @@ create_country_leader = {
 }
 
 create_corps_commander = {
-	name = "Géza Lakatos"
+	name = "Geza Lakatos"
 	gfx = GFX_Portrait_hungary_geza_lakatos
 	traits = {
 	}
@@ -137,7 +137,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Iván Hindy"
+	name = "Ivan Hindy"
 	gfx = GFX_Portrait_hungary_ivan_hindy
 	traits = {
 		trickster
@@ -150,7 +150,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Károly Beregfy"
+	name = "Karoly Beregfy"
 	gfx = GFX_Portrait_hungary_karoly_beregfy
 	traits = {
 	}

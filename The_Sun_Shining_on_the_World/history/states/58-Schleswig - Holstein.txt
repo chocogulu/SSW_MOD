@@ -14,10 +14,10 @@ state= {
 		}
 		owner = GER
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			arms_factory = 2
-			dockyard = 6
-			air_base = 5
+			dockyard = 3
+			air_base = 3
 			6389 ={
 				naval_base = 8
 			}
@@ -25,10 +25,10 @@ state= {
 		add_core_of = GER
 		1939.1.1 = {
 			buildings = {
-				synthetic_refinery = 3
-				anti_air_building = 5
-				dockyard = 7
-				arms_factory = 4
+				synthetic_refinery = 2
+				anti_air_building = 3
+				dockyard = 5
+				arms_factory = 3
 			}
 		}
 	}

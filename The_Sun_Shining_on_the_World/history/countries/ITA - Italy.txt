@@ -222,7 +222,7 @@ create_country_leader = {
 	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
 	picture = "GFX_portrait_italy_victor_emmanuel_iii"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = despotism_ideology
 	traits = {
 	}
 }

@@ -161,7 +161,7 @@ create_country_leader = {
 }
 
 create_navy_leader = {
-	name = "François Darlan"	#フランソワダルラン
+	name = "Francois Darlan"	#フランソワダルラン
 	desc = ""
 	picture = ""
 	# expire = "1965.1.1" 失効指定はできません
@@ -182,7 +182,7 @@ create_navy_leader = {
 # 	}
 # }
 # create_country_leader = {
-# 	name = "Henri d'Orléans"	#アンリ6世
+# 	name = "Henri d'Orleans"	#アンリ6世
 # 	desc = ""
 # 	picture = ""
 # 	expire = "1965.1.1"
@@ -291,7 +291,7 @@ create_corps_commander = {
 		harsh_leader
 		media_personality
 	}
-	id = 101
+#	id = 101
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
@@ -396,7 +396,7 @@ create_navy_leader = {
 		bold
 		superior_tactician
 	}
-	id = 102
+#	id = 102
 	skill = 3
 	attack_skill = 2
 	defense_skill = 2

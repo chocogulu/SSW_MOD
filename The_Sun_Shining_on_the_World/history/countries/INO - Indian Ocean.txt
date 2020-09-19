@@ -1,4 +1,4 @@
-﻿capital = 244
+﻿capital = 422
 
 #obb = INO_1950
 set_cosmetic_tag = INO_JAP

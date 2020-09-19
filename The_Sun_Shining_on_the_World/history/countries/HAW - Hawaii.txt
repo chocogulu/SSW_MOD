@@ -80,7 +80,7 @@ create_country_leader = {
 	name = "Joseph Poindexter"
 	desc = ""
 	picture = "gfx/leaders/USA/Portrait_USA_Generic_land_1.dds"
-	ideology = liberalism
+	ideology = social_liberalism
 	traits = {
 		#
 	}

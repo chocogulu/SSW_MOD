@@ -25,7 +25,7 @@ create_country_leader = {
 	desc = "POLITICS_EAMON_DE_VALERA_DESC"
 	picture = "gfx/leaders/IRE/Portrait_E_amon_de_Valera.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = social_liberalism
 	traits = {
 		#
 	}

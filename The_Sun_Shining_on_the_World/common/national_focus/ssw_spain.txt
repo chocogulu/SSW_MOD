@@ -2128,20 +2128,19 @@ focus_tree = {
 		x = 49
 		y = 9
 		available = {
-			OR = {
-					any_country = {
-							limit = {
-								OR = {
-									is_puppet_of = SPR
-									tag = SPR
-								}
-							}
-							owns_state = 278
-							owns_state = 493
-							owns_state = 307
-							owns_state = 305
-					}	
+			any_country = {
+				limit = {
+					OR = {
+						is_puppet_of = SPR
+						tag = SPR
+					}
 				}
+				owns_state = 278
+				owns_state = 493
+				owns_state = 307
+				owns_state = 305
+				}	
+			}
 		}
 		completion_reward = {
 			
@@ -2190,12 +2189,9 @@ focus_tree = {
 		x = 45
 		y = 9
 		available = {
-			any_country = {						
+			any_country = {
 				limit = {
-					OR = {
-						tag = SPR
-						is_puppet_of = SPR
-					}
+					OR = { tag = SPR is_puppet_of = SPR }
 				}
 				owns_state = 278
 				owns_state = 300
@@ -2238,7 +2234,6 @@ focus_tree = {
 					}
 			}
 		}
-
 	}
 	focus = {
 		id = SPR_guntai_kuugun
@@ -2308,30 +2303,18 @@ focus_tree = {
 		x = 51
 		y = 9
 		available = {
-			OR = {
-					SPR = {
-							owns_state = 303
-							owns_state = 492
-							owns_state = 506
-							owns_state = 649
-					}
-						
-					SPR = {
-						303 = {
-							is_puppet_of = SPR
-						}
-						492 = {
-							is_puppet_of = SPR
-						}
-						506 = {
-							is_puppet_of = SPR
-						}
-						649 = {
-							is_puppet_of = SPR
-						}
-						
+			any_country = {
+				limit = {
+					OR = {
+						is_puppet_of = SPR
+						tag = SPR
 					}
 				}
+				owns_state = 303
+				owns_state = 492
+				owns_state = 506
+				owns_state = 649
+			}
 		}
 		completion_reward = {
 			
@@ -2804,16 +2787,15 @@ focus_tree = {
 		x = 1
 		y = 5
 		available = {
-			OR = {
-					SPR = {
-							owns_state = 112
-						
-		
-						112 = {
-							is_puppet_of = SPR
-						}
+			any_country = {
+				limit = {
+					OR = {
+						is_puppet_of = SPR
+						tag = SPR
 					}
 				}
+				owns_state = 112
+			}
 		}
 		completion_reward = {
 			
@@ -3134,30 +3116,18 @@ focus_tree = {
 		x = 47
 		y = 9
 		available = {
-			OR = {
-					SPR = {
-							owns_state = 375
-							owns_state = 277
-							owns_state = 378
-							owns_state = 316
-					}
-						
-					SPR = {
-						375 = {
-							is_puppet_of = SPR
-						}
-						277 = {
-							is_puppet_of = SPR
-						}
-						378 = {
-							is_puppet_of = SPR
-						}
-						316 = {
-							is_puppet_of = SPR
-						}
-						
+			any_country = {
+				limit = {
+					OR = {
+						is_puppet_of = SPR
+						tag = SPR
 					}
 				}
+				owns_state = 375
+				owns_state = 277
+				owns_state = 378
+				owns_state = 316
+			}
 		}
 		completion_reward = {
 			

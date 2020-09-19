@@ -111,7 +111,7 @@ if = {
 		desc = "POLITICS_ANTONIO_DE_OLIVEIRA_SALAZAR_DESC"
 		picture = "gfx/leaders/POR/portrait_por_antonio_de_oliveira_salazar.dds"
 		expire = "1965.1.1"
-		ideology = despotism
+		ideology = despotism_ideology
 		traits = {
 			conservative_nationalist_lar
 		}

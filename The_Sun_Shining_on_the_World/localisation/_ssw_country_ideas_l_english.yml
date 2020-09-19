@@ -4,7 +4,7 @@
  minister:0 "閣僚"
  research_production1:0 "研究と生産"
  military_chief:0 "参謀"
- 
+ social_system:0 "社会体制"
 
 #社会体制
  collectivist_anarchism:0 "集産的無政府主義社会"
@@ -17,3 +17,9 @@
 
 #経済法
  social_anarchism_economy:0 "無政府主義経済"
+#閣僚
+ minister_of_foreign_affairs:0 "外務大臣"
+ minister_of_finance:0 "大蔵大臣"
+ minister_of_education:0 "文科大臣"
+ minister_of_army:0 "陸軍大臣"
+ navy_minister:0 "海軍大臣"

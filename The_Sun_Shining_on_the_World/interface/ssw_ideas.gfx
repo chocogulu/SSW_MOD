@@ -1,6 +1,37 @@
 spriteTypes = {
+#スロットのアイコンを定義
+#外務大臣#
+	spriteType = {#外務大臣#
+		name = "GFX_idea_slot_minister_of_foreign_affairs"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+#大蔵大臣#
+
+	spriteType = {
+		name = "GFX_idea_slot_minister_of_finance"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+#文科大臣#
+
+	spriteType = {
+		name = "GFX_idea_slot_minister_of_education"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+#陸軍大臣#
+
+	spriteType = {
+		name = "GFX_idea_slot_minister_of_army"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+#海軍大臣#
+
+	spriteType = {
+		name = "GFX_idea_slot_navy_minister"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+#アイデアのアイコンを定義
 #社会体制
-    SpriteType = { 
+	SpriteType = { 
 		name = "GFX_idea_corporate_council_system"
 		texturefile = "gfx/interface/ideas/social_system/idea_corporate_council_system.dds"
 	}

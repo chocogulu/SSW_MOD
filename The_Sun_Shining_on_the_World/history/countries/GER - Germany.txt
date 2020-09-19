@@ -1168,3 +1168,10 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
+create_equipment_variant = {
+	name = "Gew 98k"
+	type = infantry_equipment_1
+	upgrades = {
+	}
+	obsolete = no
+}

@@ -1,4 +1,4 @@
-capital = 686
+capital = 685
 #obb = PAC_1950
 set_cosmetic_tag = PAC_JAP
 set_research_slots = 3

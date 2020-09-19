@@ -1,4 +1,4 @@
-﻿capital = 244
+﻿capital = 232
 
 #obb = ARC_1950
 set_cosmetic_tag = ARC_JAP

@@ -7,9 +7,6 @@ state={
 		owner = KOR
 		add_core_of = KOR
 		buildings = {
-			4056 = {
-				naval_base = 1
-			}
 
 		}
 
