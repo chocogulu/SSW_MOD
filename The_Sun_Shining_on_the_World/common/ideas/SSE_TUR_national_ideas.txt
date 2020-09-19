@@ -86,5 +86,38 @@ ideas = {
 				consumer_goods_factor = 0.50
 			}
 		}
+		#一時的な経済対策
+		TUR_idea_6 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = -0.30
+				production_speed_industrial_complex_factor = -0.30
+				research_speed_factor = -0.10
+				consumer_goods_factor = 0.35
+			}
+                }
+		#紙幣の大量印刷
+		TUR_idea_7 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				political_power_gain = -0.15
+				stability_weekly = 0.45
+				consumer_goods_factor = 0.05
+			}
+                }
 	}
 }
