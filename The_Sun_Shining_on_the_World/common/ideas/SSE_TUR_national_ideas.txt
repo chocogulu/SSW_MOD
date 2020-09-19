@@ -54,5 +54,21 @@ ideas = {
 				war_support_factor = -0.1
 			}
 		}
+		#正教会の帰属問題
+		TUR_idea_4 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				political_power_factor = -0.25
+			}
+		}
 	}
 }
