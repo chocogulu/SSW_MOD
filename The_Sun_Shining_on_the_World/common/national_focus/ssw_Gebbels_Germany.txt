@@ -640,7 +640,7 @@ focus_tree = {
 		completion_reward = {
 			GER = {
 				country_event = {
-					id = jgb.1
+					id = jgb.2
 				}
 			}
 		}
