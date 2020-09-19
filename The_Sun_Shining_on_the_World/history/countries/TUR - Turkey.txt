@@ -16,6 +16,7 @@ add_ideas = {
 	TUR_idea_2
 	TUR_idea_3
 	TUR_idea_4
+	TUR_idea_5
 }
 
 set_technology = {
