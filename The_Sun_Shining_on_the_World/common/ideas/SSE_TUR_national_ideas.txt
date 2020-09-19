@@ -136,5 +136,40 @@ ideas = {
 				consumer_goods_factor = 0.10
 			}
 		}
+		#安定傾向にある経済
+		TUR_idea_9 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = -0.10
+				production_speed_industrial_complex_factor = -0.10
+				research_speed_factor = -0.05
+				consumer_goods_factor = 0.10
+			}
+		}
+		#4カ年計画の開始
+		TUR_idea_10 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = -0.10
+				consumer_goods_factor = 0.10
+			}
+		}
 	}
 }
