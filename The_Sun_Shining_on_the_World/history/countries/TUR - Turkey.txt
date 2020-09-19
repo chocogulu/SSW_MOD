@@ -12,6 +12,9 @@ if = {
 set_research_slots = 3
 add_ideas = {
 	limited_conscription
+	TUR_idea_1
+	TUR_idea_2
+	TUR_idea_3
 }
 
 set_technology = {
