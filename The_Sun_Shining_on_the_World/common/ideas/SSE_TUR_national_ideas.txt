@@ -15,7 +15,43 @@ ideas = {
 				production_speed_infrastructure_factor = -0.80
 				production_speed_arms_factory_factor = -0.50
 				production_speed_industrial_complex_factor = -0.50
-                industrial_capacity_factory = -0.30
+                                industrial_capacity_factory = -0.30
+			}
+		}
+		#外交的孤立
+		TUR_idea_2 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				generate_wargoal_tension = 0.40
+				political_advisor_cost_factor = 0.25
+				trade_laws_cost_factor = 0.25
+				mobilization_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+			}
+		}
+		#アルメニア人弾圧
+		TUR_idea_3 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				surrender_limit = -0.50
+				mobilization_speed = -0.50
+				stability_factor = -0.1
+				war_support_factor = -0.1
 			}
 		}
 	}
