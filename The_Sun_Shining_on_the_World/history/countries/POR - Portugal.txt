@@ -20,10 +20,19 @@ set_technology = {
 	early_bomber = 1
 	CAS1 = 1
 }
-add_ideas = {
-	civilian_economy
-}
 
+set_autonomy = {
+	target = ANG
+	autonomous_state = colony
+}
+set_autonomy = {
+	target = MZB
+	autonomous_state = colony
+}
+set_autonomy = {
+	target = GNB
+	autonomous_state = colony
+}
 
 if = {
 	limit = {
@@ -115,7 +124,7 @@ if = {
 		desc = "POLITICS_ANTONIO_DE_OLIVEIRA_SALAZAR_DESC"
 		picture = "gfx/leaders/POR/portrait_por_antonio_de_oliveira_salazar.dds"
 		expire = "1965.1.1"
-		ideology = despotism_ideology
+		ideology = despotism
 		traits = {
 			conservative_nationalist_lar
 		}

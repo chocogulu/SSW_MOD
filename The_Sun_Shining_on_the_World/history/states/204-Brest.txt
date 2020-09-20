@@ -2,7 +2,7 @@
 state={
 	id=204
 	name="STATE_204" # Bobruysk
-	manpower = 1321084
+	manpower = 442501
 	
 	state_category = rural
 
@@ -21,6 +21,6 @@ state={
 	}
 
 	provinces={
-		304 331 360 386 3350 3759 6373 11313 
+	360 3759 11313 
 	}
 }

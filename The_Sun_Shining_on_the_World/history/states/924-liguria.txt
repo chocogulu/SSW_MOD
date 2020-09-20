@@ -1,0 +1,22 @@
+state={
+	id=924
+	name="STATE_924"
+		provinces={
+		11891 3772 6788
+		}
+		history={
+		owner = ITA
+		add_core_of = ITA
+			buildings = {
+			infrastructure = 6
+			dockyard = 1
+			industrial_complex = 3
+			}
+			victory_points = {
+			6788 15 
+			}
+		}
+	manpower=1123901
+	buildings_max_level_factor=1.000
+	state_category= city
+}

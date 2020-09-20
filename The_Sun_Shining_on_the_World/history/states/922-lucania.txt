@@ -1,0 +1,17 @@
+state={
+	id=922
+	name="STATE_922"
+		provinces={
+		9856 3968 6972 3958
+		}
+		history={
+		owner = ITA
+		add_core_of = ITA
+			buildings = {
+			infrastructure = 3
+			}
+		}
+	manpower=850236
+	buildings_max_level_factor=1.000
+	state_category= rural
+}

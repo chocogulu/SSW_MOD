@@ -1,0 +1,20 @@
+state={
+	id=928
+	name="STATE_928"
+		provinces={
+		215 304 331 3203 3293 3350 3507 6319 6373 9249
+		}
+		history={
+		owner = MOS
+		add_core_of = MOS
+			victory_points = {
+			9289 5
+			}
+			buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			}
+		}
+	manpower = 623585
+	state_category= rural
+}

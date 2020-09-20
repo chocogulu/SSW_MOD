@@ -16,10 +16,13 @@ state={
 			industrial_complex = 1
 			air_base = 3
 		}
+		victory_points = {
+			476 3
+		}
 		add_core_of = UKR
 	}
 
 	provinces={
-		462 3430 3457 3511 6429 6509 
+		462 476 3430 3457 3511 6429 6455 6509 
 	}
 }

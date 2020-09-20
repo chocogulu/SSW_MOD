@@ -259,3 +259,5 @@ LES = "countries/Lesotho.txt"			#レソト
 SWL = "countries/Swaziland.txt"			#スワジランド(現:エスワティニ)
 MYS = "countries/Mysore.txt"            #マイソール
 JAK = "countries/Jammu and Kashmir.txt" #ジャンムー・カシミール
+VAC = "countries/Vatican.txt" #バチカン市国
+SMR = "countries/San Marino.txt #サンマリノ共和国

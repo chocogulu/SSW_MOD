@@ -7,19 +7,15 @@ state={
 	state_category = large_town
 
 	history={
-		victory_points = {
-			476 3
-		}
-		owner = UKR
+		owner = ROM
 		buildings = {
 			infrastructure = 5
 			air_base = 3
 		}
-		add_core_of = SOV
-		add_core_of = UKR
+		add_core_of = ROM
 	}
 
 	provinces={
-		476 6455 6480 9423 9435 9481 9576 
+	9423 9435 9576 
 	}
 }

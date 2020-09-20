@@ -1,189 +1,204 @@
-Great_Mongol = {	#大蒙古
+Great_Mongol = {
 	color = rgb { 92 92 92 }
 	color_ui = rgb { 92 92 92 }
 }
 
-KOR_JAP = {	#日本領朝鮮
+KOR_JAP = {
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-JAM_JAP = {	#日本領ジャマイカ
+JAM_JAP = {
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-SIN_JAP = {	#昭南島
+SIN_JAP = {
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-BRN_JAP = {	#日本領ブルネイ
+BRN_JAP = {
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-HAW_JAP = {	#日本領布哇
+HAW_JAP = {
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-ARC_JAP = {	#日本領北極
+ARC_JAP = {
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-PAO_JAP = {	#日本領大南洋
+PAO_JAP = {
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-INO_JAP = {	#日本領印度洋
+INO_JAP = {
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-PAC_JAP = {	#日本領パナマ運河
+PAC_JAP = {
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-CLC_JAPandCHI = {	#
+CLC_JAPandCHI = {
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
-CZE_GER = {	#独領チェコ
-color = rgb { 60 60 60 }
-	color_ui = rgb { 60 60 60 }
-}
-
-POL_GER = {	#独領ポーランド
+CZE_GER = {
 	color = rgb { 60 60 60 }
-	color_ui = rgb { 60 60 60 }
+	color_ui = rgb { 138 155 116 }
 }
 
-HOL_GER = {	#独領ニーダーラント
+POL_GER = {
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 138 155 116 }
+}
+
+HOL_GER = {
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
 }
 
-BEL_GER = {	#独領ベルギエン
+BEL_GER = {
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
 }
 
-NFR_GER = {	#独軍統治下北フランス
+NFR_GER = {
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
 }
 
-NOR_GER = {	#独領ノルウェー
+NOR_GER = {
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
 }
 
-BAL_GER = {	#独領オストラント
+BAL_GER = {
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
 }
 
-UKR_GER = {	#独領ウクライナ
+UKR_GER = {
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
 }
 
-MOS_GER = {	#独領モスクワ
+MOS_GER = {
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
 }
 
-CCS_GER = {	#独領カフカース
+CCS_GER = {
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
 }
 
-TOG_GER = {	#独領トーゴ
-color = rgb { 102 89 86 }
-	color_ui = rgb { 102 89 86 }
-}
-
-WAF_GER = {	#独領西アフリカ
+TOG_GER = {
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
 }
 
-MAF_GER = {	#独領ミッテルアフリカ
+WAF_GER = {
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
 }
 
-MAD_GER = {	#独領マダガスカル
+MAF_GER = {
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
 }
 
-ATL_GER = {	#独領大西洋
+MAD_GER = {
 	color = rgb { 102 89 86 }
-	color_ui = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
 }
 
-RIF_SPR = {	#西領モロッコ
+ATL_GER = {
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
+}
+
+RIF_SPR = {
 	color = rgb { 200 100 31 }
-	color_ui = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
 }
 
-WES_SPR = {	#���̃T�n��
+WES_SPR = {
 	color = rgb { 200 100 31 }
-	color_ui = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
 }
 
-EQG_SPR = {	#���̃M�j�A
+EQG_SPR = {
 	color = rgb { 200 100 31 }
-	color_ui = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
 }
 
-NWA_VFR = {	#���B�V�[�̐��A�t���J
+NWA_VFR = {
 	color = rgb { 80 168 181 }
-	color_ui = rgb {80 168 181 }
+	color_ui = rgb {115 185 196 }
 }
 
-EQA_VFR = {	#���B�V�[�̐ԓ��A�t���J
+EQA_VFR = {
 	color = rgb { 80 168 181 }
-	color_ui = rgb {80 168 181 }
+	color_ui = rgb {115 185 196 }
 }
 
-SUD_ITAandEGY = {	#�ɚ��̃X�[�_��
+SUD_ITAandEGY = {
 	color = rgb { 230 230 70 }
 	color_ui = rgb { 230 230 70 }
 }
 
-LBA_ITA = {	#�ɗ̃��r�A
+LBA_ITA = {
 	color = rgb { 67 127 63 }
-	color_ui = rgb { 67 127 63 }
+	color_ui = rgb { 87 165 82 }
 }
 
-TUN_ITA = {	#�ɗ̃`���j�W�A
+TUN_ITA = {
 	color = rgb { 67 127 63 }
-	color_ui = rgb { 67 127 63 }
+	color_ui = rgb { 87 165 82 }
 }
 
-NEA_ITA = {	#�ɗ̓��A�t���J
+NEA_ITA = {
 	color = rgb { 67 127 63 }
-	color_ui = rgb { 67 127 63 }
+	color_ui = rgb { 87 165 82 }
 }
 
-SUC_ITA = {	#�ɗ̃X�G�Y�^��
+SUC_ITA = {
 	color = rgb { 67 127 63 }
-	color_ui = rgb { 67 127 63 }
+	color_ui = rgb { 87 165 82 }
 }
 
-GIB_ITA = {	#�ɗ̃W�u�����^��
+GIB_ITA = {
 	color = rgb { 67 127 63 }
-	color_ui = rgb { 67 127 63 }
+	color_ui = rgb { 87 165 82 }
 }
 
-MOR_AFR = {	#�A���W�F���̃����b�R
+MOR_AFR = {
 	color = rgb { 0 18 127 }
 	color_ui = rgb { 0 18 127 }
+}
+
+ANG_POR = {
+	color = rgb { 53 82 85 }
+	color_ui = rgb { 53 82 85 }
+}
+
+MZB_POR = {
+	color = rgb { 53 82 85 }
+	color_ui = rgb { 53 82 85 }
+}
+
+GNB_POR = {
+	color = rgb { 53 82 85 }
+	color_ui = rgb { 53 82 85 }
 }

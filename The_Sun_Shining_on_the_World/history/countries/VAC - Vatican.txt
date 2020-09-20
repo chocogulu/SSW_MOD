@@ -1,0 +1,34 @@
+capital = 925
+
+set_stability = 100
+set_war_support = 80
+set_research_slots = 2
+
+set_convoys = 0
+add_ideas = {
+	VAC_holy_see_idea
+	civilian_economy
+	disarmed_nation
+}
+
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1950.1.1"
+	elections_allowed = no
+}
+
+set_popularities = {
+authoritarianism = 77
+authoritative_democracy = 23
+}
+
+create_country_leader = {
+	name = "Pius XII"
+	desc = "POLITICS_PIUS_XII_DESC"
+	picture = "gfx/leaders/Pius_XII.dds"
+	expire = "1958.10.09"
+	ideology = authoritarianism_ideology
+	traits = {
+		#
+	}
+}

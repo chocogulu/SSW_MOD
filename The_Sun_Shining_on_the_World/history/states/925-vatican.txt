@@ -1,0 +1,16 @@
+state={
+	id=925
+	name="STATE_925"
+		provinces={
+		13251
+		}
+		history={
+		owner = VAC
+		add_core_of = VAC
+			buildings = {
+			infrastructure = 3
+			}
+		}
+	manpower = 625
+	state_category = tiny_island
+}

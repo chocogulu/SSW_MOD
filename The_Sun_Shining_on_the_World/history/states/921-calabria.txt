@@ -1,0 +1,18 @@
+state={
+	id=921
+	name="STATE_921"
+		provinces={
+		9990 12066 3901 12098 10027
+		}
+		history={
+		owner = ITA
+		add_core_of = ITA
+			buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			}
+		}
+	manpower=1135612
+	buildings_max_level_factor=1.000
+	state_category= town
+}

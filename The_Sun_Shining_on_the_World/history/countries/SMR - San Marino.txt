@@ -1,0 +1,34 @@
+capital = 926
+set_research_slots = 2
+
+set_stability = 100
+set_war_support = 80
+
+set_technology = {
+
+}
+set_politics = {
+	ruling_party = fascism
+	last_election = "1950.1.1"
+	elections_allowed = no
+}
+
+set_popularities = {
+	social_democracy = 3
+	democratic = 4
+	conservatism = 3
+	authoritative_democracy = 8
+	fascism = 72
+	neutrality = 10
+}
+
+create_country_leader = {
+	name = "no image"
+	desc = "POLITICS_NO_IMAGE_DESC"
+	picture = "gfx/leaders/noimage.dds"
+	expire = "9999.12.31"
+	ideology = fascism
+	traits = {
+		#
+	}
+}
