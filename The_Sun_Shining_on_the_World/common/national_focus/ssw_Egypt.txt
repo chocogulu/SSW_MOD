@@ -1,0 +1,2690 @@
+focus_tree = {
+	id = EGY_focus_ssw
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = EGY
+		}
+	}
+	default = no
+	focus = {
+		id = EGY_focus_ssw_naisei_1
+		text = EGY_naisei_01
+		icon = GFX_focus_eng_special_air_service
+		cost = 10.00
+		x = 13
+		y = 0
+		completion_reward = {
+			add_political_power = 150
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_d_1
+		text = EGY_d_1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 68
+		y = 5
+		completion_reward = {
+				set_rule = {
+can_create_factions = yes
+can_force_government = yes
+can_only_justify_war_on_threat_country = yes
+autonomy_gain = 10
+	subjects_autonomy_gain = -11
+}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_2
+		text = EGY_naisei_02
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_1
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_naisei_3
+		}
+		x = 3
+		y = 1
+completion_reward = {
+	add_opinion_modifier = {
+target = GER
+modifier = offered_support
+}
+}
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_3
+		text = EGY_naisei_03
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_1
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_naisei_2
+		}
+		x = 46
+		y = 1
+		completion_reward  = {
+			add_opinion_modifier = {
+				target = JAP
+				modifier = offered_support
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_4
+		text = EGY_naisei_04
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_3
+			focus = EGY_focus_ssw_naisei_2
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+			add_ideas = EGY_economy_reform
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_6
+		text = EGY_naisei_06
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_4
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_2
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_naisei_5
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+			add_ideas = EGY_ger_economy
+
+	}
+	}
+
+	focus = {
+		id = EGY_focus_ssw_naisei_5
+		text = EGY_naisei_05
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_4
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_naisei_6
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+			add_ideas = EGY_jap_economy
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_16
+		text = EGY_naisei_16
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_5
+		}
+		x = 9
+		y = 4
+completion_reward = {
+	add_ideas = EGY_misr_reform
+}
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_20
+		text = EGY_naisei_20
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_16
+		}
+		x = 9
+		y = 5
+
+completion_reward = {
+	64 = { 446
+	add_extra_state_shared_building_slots = 1
+	add_building_construction = {
+		type = infrastructure
+		level = 2
+		instant_build = yes
+	}
+}
+	}
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_19
+		text = EGY_naisei_19
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_20
+		}
+		x = 8
+		y = 6
+completion_reward = {
+	64 = { 452 
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+		type = infrastructure
+		level = 2
+		instant_build = yes
+	}
+
+	}
+		64 = { 447 
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+		type = infrastructure
+		level = 2
+		instant_build = yes
+	}
+
+	}
+		64 = {  446 
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+		type = infrastructure
+		level = 2
+		instant_build = yes
+	}
+
+	}
+		64 = { 453
+	add_extra_state_shared_building_slots = 2
+	add_building_construction = {
+		type = infrastructure
+		level = 2
+		instant_build = yes
+	}
+
+	}
+}
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_17
+		text = EGY_naisei_17
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_20
+		}
+		x = 10
+		y = 6
+		completion_reward = {
+			64 = { 456 
+			add_building_construction = {
+				type = infrastructure 
+				level = 2
+				instant_build = yes
+			}
+
+			}
+						64 = { 446
+			add_building_construction = {
+				type = infrastructure 
+				level = 2
+				instant_build = yes
+			}
+
+			}
+		}
+}
+
+	
+	focus = {
+		id = EGY_focus_ssw_naisei_24
+		text = EGY_naisei_24
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_17
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_19
+		}
+		x = 9
+		y = 7
+completion_reward = {
+	64 = {446
+		add_building_construction = {
+			type = infrastructure 
+			level = 3
+			instant_build = yes
+		}
+	}
+}
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_18
+		text = EGY_naisei_18
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_16
+		}
+		x = 12
+		y = 5
+		completion_reward = { 
+			64 = { 447 
+			add_building_construction = { 
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+
+			}
+		}
+			64 = { 452 
+				add_building_construction = { 
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+
+			}
+		}
+					64 = { 446
+			add_building_construction = { 
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+
+			}
+		}
+							64 = { 456
+			add_building_construction = { 
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+
+			}
+		}
+	}
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_22
+		text = EGY_naisei_22
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_18
+		}
+		x = 12
+		y = 6
+		completion_reward = {
+			64 = { 453			
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}	
+			}
+				64 = { 446			
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}	
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_21
+		text = EGY_naisei_21
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_16
+		}
+		x = 15
+		y = 5
+		completion_reward = {
+			64 = { 446
+			add_building_construction =　{
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+
+			}
+						64 = { 447
+			add_building_construction =　{
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+
+			}
+									64 = { 452
+			add_building_construction =　{
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_23
+		text = EGY_naisei_23
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_22
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_21
+		}
+		x = 12
+		y = 7
+		completion_reward = {
+			64 ={ 552
+			add_building_construction = {
+				type = industrial_complex 
+				level = 3
+				instant_build = yes
+			}
+			}
+						64 ={ 457
+			add_building_construction = {
+				type = industrial_complex 
+				level = 3
+				instant_build = yes
+			}
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_25
+		text = EGY_naisei_25
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_23
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_24
+		}
+		x = 12
+		y = 8
+completion_reward = {
+	64 = { 452 
+	add_building_construction = {
+		type = industrial_complex 
+		level = 3
+		instant_build = yes
+	}
+
+	}
+		64 = { 447
+	add_building_construction = {
+		type = industrial_complex 
+		level = 3
+		instant_build = yes
+	}
+
+	}
+			64 = { 446
+	add_building_construction = {
+		type = industrial_complex 
+		level = 3
+		instant_build = yes
+	}
+
+	}
+}
+	}
+	focus = {
+		id = EGY_focus_ssw_political_1
+		text = EGY_political_01
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_3
+			focus = EGY_focus_ssw_naisei_2
+		}
+		x = 20
+		y = 2
+completion_reward = {
+	add_political_power = 150
+}
+	}
+	focus = {
+		id = EGY_focus_ssw_political_2
+		text = EGY_political_02
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_1
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_2
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_political_3
+		}
+		x = 18
+		y = 3
+completion_reward = {
+	add_popularity = {
+ideology = fascism
+popularity = 0.2
+}
+add_popularity = {
+ideology = nazism
+popularity = 0.2
+}
+nazism_drift = 0.1
+fascism_drift = 0.1
+}
+	}
+	focus = {
+		id = EGY_focus_ssw_political_3
+		text = EGY_political_03
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_1
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_political_2
+		}
+		x = 22
+		y = 3
+completion_reward = {
+	add_popularity = {
+		ideology = conservatism
+		popularity = 0.1
+	}
+	add_popularity = { 
+		ideology = democratic
+		popularity = 0.1
+	}
+	democratic_drift = 0.1
+   conservatism_drift = 0.1 
+}
+	}
+	focus = {
+		id = EGY_focus_ssw_political_4
+		text = EGY_political_04
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_3
+			focus = EGY_focus_ssw_political_2
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+			remove_ideas = EGY_free_general
+			stability_factor = 0.01
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_political_5
+		text = EGY_political_05
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_4
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_political_2
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_political_6
+		}
+		x = 18
+		y = 5
+		completion_reward = {
+			set_politics = {
+				parties = {
+					democratic = {
+						popularity = 0
+					}
+					fascism = {
+						popularity = 75
+						ruling_party = {
+							fascism
+						}
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_political_6
+		text = EGY_political_06
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_4
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_political_3
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_political_5
+		}
+		x = 21
+		y = 5
+	completion_reward = {
+			set_politics = {
+				parties = {
+					democratic = {
+						popularity = 10
+					}
+					fascism = {
+						popularity = 0
+						conservatism = {
+							popularity = 60
+						}
+						ruling_party = {
+							conservatism
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = EGY_focus_ssw_political_8
+		text = EGY_political_08
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_6
+		}
+		x = 21
+		y = 6
+completion_reward = {
+	stability_factor_weekly = 0.1
+	stability_factor = 0.01
+	}
+	}
+	focus = {
+		id = EGY_focus_ssw_political_17
+		text = EGY_political_17
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_8
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_political_16
+		}
+		x = 20
+		y = 7
+completion_reward = {
+	add_political_power = 150
+	political_power_gain = 0.3
+}
+	}
+	
+	focus = {
+		id = EGY_focus_ssw_political_16
+		text = EGY_political_16
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_8
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_political_17
+		}
+		x = 22
+		y = 7
+
+completion_reward = {
+	stability_factor = 0.3
+	stability_factor_weekly = 0.01
+}
+	}
+	focus = {
+		id = EGY_focus_ssw_political_15
+		text = EGY_political_15
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_16
+			focus = EGY_focus_ssw_political_17
+		}
+		x = 21
+		y = 8
+		completion_reward = {
+			stability_factor  = 0.1
+			political_power_factor = 0.1
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_political_18
+		text = EGY_political_18
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_15
+		}
+		x = 21
+		y = 9
+		completion_reward = {
+			add_ideas = EGY_nairu_golden
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_1
+		text = EGY_military_01
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_3
+			focus = EGY_focus_ssw_naisei_2
+		}
+		x = 32
+		y = 2
+		completion_reward = {
+			remove_ideas = EGY_ideas_late_army
+			experience_gain_army_factor = 0.1
+			experience_gain_army = 0.5
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_3
+		text = EGY_military_03
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_1
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_2
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_military_2
+		}
+		x = 27
+		y = 3
+		completion_reward = {
+			army_speed_factor = 0.5
+			errain_penalty_reduction = 0.05
+		}
+
+	}
+	focus = {
+		id = EGY_focus_military_20
+		text = EGY_military_20
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_3
+		}
+		x = 27
+		y = 4
+		completion_reward = {
+			planning_speed = 0.10
+			max_planning = 0.25
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_21
+		text = EGY_military_21
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_military_20
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_military_22
+		}
+		x = 25
+		y = 5
+		completion_reward = {
+			army_armor_speed_factor = 0.05
+			army_armor_attack_factor = 0.01
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_30
+		text = EGY_miliary_30
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_21
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_military_29
+		}
+		x = 24
+		y = 6
+		completion_reward = {
+			army_armor_attack_factor = 0.1
+			army_armor_defence_factor = 0.1
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_29
+		text = EGY_military_29
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_21
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_military_30
+		}
+		x = 26
+		y = 6
+		completion_reward = {
+			army_infantry_attack_factor = 0.05
+			army_speed_factor = 0.01
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_22
+		text = EGY_military_22
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_military_20
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_military_21
+		}
+		x = 29
+		y = 5
+		completion_reward = {
+			army_speed_factor = 0.1
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_23
+		text = EGY_military_23
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_22
+		}
+		x = 28
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+bonus = 0.5
+uses = 100
+category = 2 
+}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_24
+		text = EGY_military_24
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_22
+		}
+		x = 30
+		y = 6
+		completion_reward = {
+						add_tech_bonus = {
+bonus = 0.5
+uses = 100
+category = 2 #自動車技術
+}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_25
+		text = EGY_military_25
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_24
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_military_23
+		}
+		x = 29
+		y = 7
+completion_reward = {
+	add_political_power = -50
+	}
+}
+	focus = {
+		id = EGY_focus_ssw_military_26
+		text = EGY_military_26
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_25
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_military_27
+		}
+		x = 28
+		y = 8
+		completion_reward = {
+				add_opinion_modifier = {
+target = GER
+modifier = offered_support
+license_light_tank_eq_tech_difference_speed_factor= -0.60
+}
+		}
+	}
+	focus = {
+		id = EGY_focus_ssw_military_27
+		text = EGY_military_27
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_25
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_military_26
+		}
+		x = 30
+		y = 8
+		completion_reward = {
+				add_tech_bonus = {
+bonus = 0.5
+uses = 100
+category = 2 #自動車技術
+}
+		}
+	}
+	focus = {
+		id = EGY_focus_ssw_military_28
+		text = EGY_military_28
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_27
+			focus = EGY_focus_ssw_military_26
+		}
+		x = 29
+		y = 9
+completion_reward = {
+	land_equipment_upgrade_xp_cost = -2.1
+}
+	}
+	focus = {
+		id = EGY_focus_ssw_military_2
+		text = EGY_military_02
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_1
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_3
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_military_3
+			focus = EGY_focus_ssw_military_10
+		}
+		x = 34
+		y = 3
+completion_reward = {
+					add_tech_bonus = {
+bonus = 0.1
+uses = 5
+category = 3 #陸軍ドクトリン.大規模系
+}
+
+		}
+			}
+	focus = {
+		id = EGY_focus_ssw_military_4
+		text = EGY_military_04
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_2
+		}
+		x = 34
+		y = 4
+		completion_reward = {
+			planning_speed = 0.10
+			max_planning = 0.25
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_5
+		text = EGY_military_05
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_4
+		}
+		x = 34
+		y = 5
+completion_reward = {
+	max_planning = 0.5
+	planning_speed = 0.5
+	army_org = 8
+}
+	}
+	focus = {
+		id = EGY_focus_ssw_military_7
+		text = EGY_military_07
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_5
+		}
+		x = 32
+		y = 6
+		completion_reward = {
+			army_artillery_attack_factor = 0.15
+			army_artillery_defence_factor = 0.05
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_,military_6
+		text = EGY_military_06
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_5
+		}
+		x = 36
+		y = 6
+		completion_reward = {
+			planning_speed = 0.05
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_9
+		text = EGY_military_9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_,military_6
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_military_7
+		}
+		x = 36
+		y = 7
+		completion_reward = {
+			army_infantry_attack_factor = 0.05
+			army_artillery_attack_factor = 0.15
+			army_armor_attack_factor = 0.1
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_8
+		text = EGY_military_08
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_7
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_,military_6
+		}
+		x = 32
+		y = 7
+		completion_reward = {
+			land_reinforce_rate = 0.3
+		}
+
+	}
+	focus = {
+		id = EGY_focus_military_12
+		text = EGY_military_12
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_9
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_military_8
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_military_11
+		}
+		x = 36
+		y = 8
+		completion_reward = {
+			conscription = 0.25
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_10
+		text = EGY_military_10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_1
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_military_2
+		}
+		x = 38
+		y = 3
+		completion_reward = {
+			conscription = 0.10
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_13
+		text = EGY_military_13
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_10
+		}
+		x = 37 
+		y = 4
+		completion_reward = {
+training_time_factor = -0.1
+army_defence_factor = 0.1
+set_rule = {
+	can_use_kamikaze_pilots = yes
+}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_mlitary_14
+		text = EGY_military_14
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_10
+		}
+		x = 39
+		y = 4
+		completion_reward = {
+			training_time_army_factor = -0.5
+
+	}
+	}
+	focus = {
+		id = EGY_focus_ssw_military_15
+		text = EGY_military_15
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_mlitary_14
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_military_13
+		}
+		x = 38
+		y = 5
+		completion_reward = {
+
+		}training_time_army_factor = -0.75
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_16
+		text = EGY_military_16
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_15
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_military_17
+		}
+		x = 38
+		y = 6
+		completion_reward = {
+				army_core_attack_factor = 0.2
+				non_core_manpower = 0.20
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_17
+		text = EGY_military_17
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_15
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_military_16
+		}
+		x = 40
+		y = 6
+		completion_reward = {
+				ai_focus_aggressive_factor = 0.5
+				war_support_factor = 0.75
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_MIlitary_18
+		text = EGY_military_18
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_16
+			focus = EGY_focus_ssw_military_17
+		}
+		x = 39
+		y = 7
+		completion_reward = {
+				mic_to_target_factor = 0.95
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_19
+		text = EGY_military_19
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_MIlitary_18
+		}
+		x = 39
+		y = 8
+		completion_reward = {
+			MONTHLY_POPULATION = 0.75}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_nougyou_1
+		text = EGY_nougyou_01
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_1
+		}
+		x = 44
+		y = 3
+		completion_reward =  {
+			add_political_power = 150
+
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_nougyou_7
+		text = EGY_nougyou_07
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_nougyou_1
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_nougyou_8
+		}
+		x = 41
+		y = 4
+		completion_reward = {
+			add_ideas = EGY_blood_and_land
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_nogyou_2
+		text = EGY_nougyou_02
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_nougyou_7
+		}
+		x = 41
+		y = 5
+		completion_reward = {
+			add_ideas = EGY_farm_get
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_nougyou_8
+		text = EGY_nougyou_08
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_nougyou_1
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_nougyou_7
+		}
+		x = 48
+		y = 4
+		completion_reward = {
+			add_ideas = EGY_japanese_farm
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_nougyou_3
+		text = EGY_nougyou_03
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_nougyou_8
+		}
+		x = 48
+		y = 5
+		completion_reward = {
+			add_ideas = EGY_farmer_buy
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_nougyou_5
+		text = EGY_nougyou_05
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_nougyou_3
+			focus = EGY_focus_ssw_nogyou_2
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_nougyou_4
+		}
+		x = 42
+		y = 7
+		completion_reward = {
+			comsumer_goods_factor = 0.1
+			stability_factor = 0.2
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_nougyou_4
+		text = EGY_nougyou_04
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_nougyou_3
+			focus = EGY_focus_ssw_nogyou_2
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_nougyou_5
+		}
+		x = 47
+		y = 7
+		completion_reward = {
+			comsumer_goods_factor = -0.2
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_nougyou_6
+		text = EGY_nougyou_06
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_nougyou_4
+			focus = EGY_focus_ssw_nougyou_5
+		}
+		x = 45
+		y = 9
+		completion_reward = {
+			comsumer_goods_factor = 0.1
+			production_factory_max_efficiency_factor = 0.5
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_nougyou_9
+		text = EGY_nougyou_09
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_nougyou_6
+		}
+		x = 43
+		y = 10
+		completion_reward = {
+			MONTHLY_POPULATION = 0.1
+			production_speed_buildings_factor = 0.1
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_navy_1
+		text = EGY_navy_1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_1
+		}
+		x = 55
+		y = 1
+		completion_reward = {
+			navy_refit_speed = 0.5
+
+			}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_navy_2
+		text = EGY_navy_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_navy_1
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_navy_3
+		}
+		x = 53
+		y = 2
+		completion_reward = {
+			ships_at_battle_start = 0.25
+			add_tech_bonus = {
+bonus = 0.8
+uses = 3
+category = 4 #戦艦とか重巡洋艦とか
+}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_navy_6
+		text = EGY_navy_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_navy_2
+		}
+		x = 53
+		y = 3
+		completion_reward = {
+			navy_capital_ship_attack_factor = 0.15
+				navy_capital_ship_defence_factor = 0.15
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_navy_9
+		text = EGY_navy_9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_navy_6
+		}
+		x = 52
+		Y = 4
+		completion_reward = {
+			add_tech_bonus = {
+bonus = 0.5
+uses = 10
+category = 5 #戦艦
+}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_navy_3
+		text = EGY_navy_3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_navy_1
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_navy_2
+		}
+		x = 57
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+bonus = 0.5
+uses = 10
+category = 6 #直営艦
+}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_navy_5
+		text = EGY_navy_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_navy_3
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_navy_4
+		}
+		x = 56
+		y = 3
+		completion_reward = {
+				navy_screen_attack_factor = 0.15
+					navy_screen_defence_factor = 0.15
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_navy_4
+		text = EGY_navy_4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_navy_3
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_navy_5
+		}
+		x = 59
+		y = 3
+		completion_reward = {
+			convoy_raiding_efficiency_factor = 0.5
+		}
+
+
+	}
+	focus = {
+		id = EGY_focus_ssw_navy_8
+		text = EGY_navy_8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_navy_5
+			focus = EGY_focus_ssw_navy_6
+			focus = EGY_focus_ssw_navy_4
+		}
+		x = 56
+		y = 4
+		completion_reward = {
+						add_tech_bonus = {
+bonus = 0.5
+uses = 10
+category = 7 #駆逐艦
+}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_navy_7
+		text = EGY_navy_7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_navy_5
+			focus = EGY_focus_ssw_navy_6
+			focus = EGY_focus_ssw_navy_4
+		}
+		x = 54
+		y = 4
+		completion_reward = {
+						add_tech_bonus = {
+bonus = 0.5
+uses = 10
+category = 8 #巡洋艦
+}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_navy_12
+		text = EGY_navy_12
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_navy_7
+			focus = EGY_focus_ssw_navy_9
+		}
+		x = 53
+		y = 5
+		completion_reward = {
+	convoy_escort_efficiency = 0.25
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_navy_10
+		text = EGY_navy_10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_navy_4
+			focus = EGY_focus_ssw_navy_5
+		}
+		x = 59
+		y = 4
+		completion_reward = {
+									add_tech_bonus = {
+bonus = 0.5
+uses = 10
+category = 9 #潜水艦
+}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_navy_11
+		text = EGY_navy_11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_navy_10
+			focus = EGY_focus_ssw_navy_8
+		}
+		x = 58
+		y = 5
+		completion_reward = {
+			convoy_raiding_efficiency_factor = 0.15
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_navy_13
+		text = EGY_navy_13
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_navy_11
+			focus = EGY_focus_ssw_navy_12
+		}
+		x = 55
+		y = 6
+		completion_reward = {
+				experience_gain_navy_factor = 0.15
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_a_1
+		text = EGY_a_1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_1
+		}
+		x = 64
+		y = 1
+		completion_reward = {
+				experience_gain_air = 0.08
+					experience_gain_air_factor = 0.1
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_a_2
+		text = EGY_a_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_a_1
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_a_3
+		}
+		x = 62
+		y = 2
+		completion_reward = {	
+											add_tech_bonus = {
+bonus = 0.5
+uses = 10
+category = 10 #戦闘機
+		}
+army_bonus_air_superiority_factor = 0.1
+
+	}
+	}
+	focus = {
+		id = EGY_focus_ssw_a_4
+		text = EGY_a_4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_a_2
+		}
+		x = 62
+		y = 3
+		completion_reward = {
+				air_air_superiority_attack_factor = 0.2
+					air_air_superiority_defence_factor = 0.2
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_a_6
+		text = EGY_a_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_a_1
+		}
+		x = 64
+		y = 3
+		completion_reward = {
+			set_technology = {
+				tokkouki = 1
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_d_2
+		text = EGY_d_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_d_1
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_d_3
+		}
+		x = 65
+		y = 6
+		completion_reward = {
+			create_wargoal = {
+type = puppet_wargoal_focus
+target = SYR
+}
+create_wargoal = {
+type = puppet_wargoal_focus
+target = IRQ
+}
+create_wargoal = {
+type = puppet_wargoal_focus
+target = JOR
+}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_d_8
+		text = EGY_d_9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_d_2
+		}
+		x = 65
+		y = 7
+completion_reward = {		create_wargoal = {
+type = puppet_wargoal_focus
+target = PAL
+}
+
+	}
+	}
+
+	focus = {
+		id = EGY_focus_ssw_d_10
+		text = EGY_d_10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_d_8
+		}
+		x = 65
+		y = 8
+	completion_reward = {	create_wargoal = {
+type = puppet_wargoal_focus
+target = SAU
+}
+
+	}
+	}
+
+	focus = {
+		id = EGY_focus_ssw_d_11
+		text = EGY_d_11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_d_10
+		}
+		x = 65
+		y = 9
+		completion_reward = {
+		create_wargoal = {
+type = puppet_wargoal_focus
+target = TUR
+}
+
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_d_12
+		text = EGY_d_12
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_d_11
+		}
+		x = 65
+		y = 10
+		completion_reward = {
+			create_wargoal = {
+type = puppet_wargoal_focus
+target = GER
+}
+		}
+
+
+	}
+	focus = {
+		id = EGY_focus_ssw_a_3
+		text = EGY_a_3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_a_1
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_a_2
+		}
+		x = 67
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+bonus = 0.5
+uses = 10
+category = 11 #爆撃機
+		}
+
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_a_5
+		text = EGY_a_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_a_3
+		}
+		x = 67
+		y = 3
+		completion_reward = {
+air_strategic_bomber_bombing_factor = 0.3
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_a_7
+		text = EGY_a_7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_a_4
+			focus = EGY_focus_ssw_a_5
+		}
+		x = 64
+		y = 5
+		completion_reward = {
+			add_political_power = 150
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_d_3
+		text = EGY_d_3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_d_1
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_d_2
+		}
+		x = 71
+		y = 6
+		completion_reward = {
+						create_wargoal = {
+type = puppet_wargoal_focus
+target = NEA
+}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_d_4
+		text = EGY_d_4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_d_3
+		}
+		x = 71
+		y = 7
+		completion_reward = {
+			add_state_core = 767
+			add_state_core = 551
+			add_state_core = 549
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_d_5
+		text = EGY_d_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_d_4
+		}
+		x = 71
+		y = 8
+		completion_reward = {
+									create_wargoal = {
+type = puppet_wargoal_focus
+target = LBA
+		}
+
+
+	}
+	}
+	focus = {
+		id = EGY_focus_ssw_d_6
+		text = EGY_d_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_d_5
+		}
+		x = 71
+		y = 9
+		completion_reward = {
+									create_wargoal = {
+type = puppet_wargoal_focus
+target = TUN
+		}
+								create_wargoal = {
+type = puppet_wargoal_focus
+target = MOR
+						create_wargoal = {
+type = puppet_wargoal_focus
+target = AFR
+
+		}
+	}
+		}
+	}
+
+	focus = {
+		id = EGY_focus_ssw_d_7
+		text = EGY_d_7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_d_6
+		}
+		x = 71
+		y = 10
+		completion_reward = {
+									create_wargoal = {
+type = puppet_wargoal_focus
+target = ITA
+		}
+
+	}
+	}
+	focus = {
+		id = EGY_focus_ssw_s_1
+		text = EGY_s_1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_d_4
+		}
+		x = 75
+		y = 8
+		completion_reward = {
+			add_ideas = EGY_task_of_sudan
+		}
+		}
+
+	
+	focus = {
+		id = EGY_focus_ssw_s_2
+		text = EGY_s_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_s_1
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_s_3
+		}
+		x = 73
+		y = 9
+
+	}
+	focus = {
+		id = EGY_focus_ssw_s_4
+		text = EGY_s_4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_s_2
+		}
+		x = 73
+		y = 10
+		completion_reward = {
+			stability_factor = -0.01
+			political_power_gain = 0.01
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_s_6
+		text = EGY_s_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_s_4
+		}
+		x = 73
+		y = 11
+		completion_reward = {
+			MONTHLY_POPULATION = 0.1
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_7
+		text = EGY_naisei_07
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_6
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+			add_ideas = EGY_fouth_economy
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_8
+		text = EGY_naisei_08
+		icon = GFX_focus_generic_rubber
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_7
+		}
+		x = 5
+		y = 5
+		production_speed_synthetic_refinery_factor = 0.1
+		min_export = -0.75
+
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_9
+		text = EGY_naisei_9
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_8
+		}
+		x = 6
+		y = 6
+		completion_reward = {
+			add_resource = {
+type = oil
+amount = 50
+state = 551
+}
+add_resource = {
+type = oil
+amount = 50
+state = 767
+}
+add_resource = {
+type = oil
+amount = 50
+state = 549
+}
+
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_10
+		text = EGY_naisei_10
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_8
+		}
+		x = 4
+		y = 6
+		completion_reward = {
+			add_resource = {
+				type = rubber
+				amount = 50
+				state = 447
+			}
+						add_resource = {
+				type = rubber
+				amount = 50
+				state = 452
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_11
+		text = EGY_naisei_11
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_7
+		}
+		x = 1
+		y = 5
+		completion_reward = {
+			conversion_cost_civ_to_mil_factor = -0.5
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_12
+		text = EGY_naisei_12
+		icon = GFX_focus_generic_aluminum
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_10
+		}
+		x = 4
+		y = 7
+		completion_reward = {
+			add_resource = {
+				type = aluminium
+				amount = 50
+				state = 557
+			}
+						add_resource = {
+				type = aluminium
+				amount = 50
+				state = 456
+			}
+						add_resource = {
+				type = tungsten
+								amount = 50
+				state = 557
+			}
+									add_resource = {
+				type = tungsten
+								amount = 50
+				state = 457
+			}
+									add_resource = {
+				type = steel
+								amount = 50
+				state = 557
+			}
+									add_resource = {
+				type = steel
+								amount = 50
+				state = 453
+			}
+									add_resource = {
+				type = chromium
+								amount = 50
+				state = 447
+			}
+												add_resource = {
+				type = chromium
+								amount = 50
+				state = 456
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_13
+		text = EGY_naisei_13
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_11
+		}
+		x = 1
+		y = 6
+		completion_reward = {
+			64 = { 447 
+				add_building_construction = { 
+				type = infrastructure
+				level = 3
+				instant_build = yes
+
+			}
+		}
+		64 = { 446 
+				add_building_construction = { 
+				type = infrastructure
+				level = 3
+				instant_build = yes
+
+			}
+		}
+		}
+				64 = { 456
+				add_building_construction = { 
+				type = infrastructure
+				level = 3
+				instant_build = yes
+
+			}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_naisei_14
+		text = EGY_naisei_14
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_13
+		}
+		x = 1
+		y = 7
+		completion_reward = {
+						64 = { 447 
+				add_building_construction = { 
+				type = infrastructure
+				level = 3
+				instant_build = yes
+
+			}
+		}
+		64 = { 446 
+				add_building_construction = { 
+				type = infrastructure
+				level = 3
+				instant_build = yes
+
+			}
+		}
+		}
+				64 = { 456
+				add_building_construction = { 
+				type = infrastructure
+				level = 3
+				instant_build = yes
+
+			}
+		}
+					64 = { 453
+				add_building_construction = { 
+				type = infrastructure
+				level = 3
+				instant_build = yes
+
+			}
+		}
+		64 = { 457 
+				add_building_construction = { 
+				type = infrastructure
+				level = 3
+				instant_build = yes
+
+			}
+		}
+				64 = { 557
+				add_building_construction = { 
+				type = infrastructure
+				level = 3
+				instant_build = yes
+
+			}
+		}
+	}
+
+
+	focus = {
+		id = EGY_focus_ssw_naisei_15
+		text = EGY_naisei_15
+		icon = GFX_focus_secret_rearmament
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_12
+		}
+		prerequisite = {
+			focus = EGY_focus_naisei_14
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_9
+		}
+		x = 3
+		y = 8
+		completion_reward = {
+			production_speed_arms_factory_factor = 0.75
+
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_naisei_26
+		text = EGY_naisei_26
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_naisei_15
+			focus = EGY_focus_ssw_naisei_25
+		}
+		x = 7
+		y = 12
+		completion_reward = {
+			swap_ideas = {
+remove_idea = EGY_economy_reform
+add_idea = EGY_reform_end
+}
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_nougyou_10
+		text = EGY_nougyou_10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_nougyou_6
+		}
+		x = 47
+		y = 10
+		completion_reward = {
+			add_ideas = EGY_farmer_public_company
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_nougyou_11
+		text = EGY_nougyou_11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_nougyou_10
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_nougyou_9
+		}
+		x = 45
+		y = 12
+		completion_reward = {
+			add_political_power = 150
+			remove_ideas = EGY_ideas_poor
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_political_7
+		text = EGY_political_07
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_9
+		}
+		x = 18
+		y = 7
+		completion_reward = {
+			remove_ideas = EGY_focus_radical
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_political_9
+		text = EGY_political_09
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_5
+		}
+		x = 18
+		y = 6
+		completion_reward = {
+			conscription_factor = 0.05
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_political_10
+		text = EGY_political_10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_9
+		}
+		x = 16
+		y = 7
+		completion_reward = {
+			stability_factor = -0.1
+			political_power_gain = 0.1
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_political_11
+		text = EGY_political_11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_7
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_political_10
+		}
+		x = 18
+		y = 8
+		completion_reward = {
+			remove_ideas = EGY_ideas_elite
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_political_14
+		text = EGY_political_14
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_11
+		}
+		x = 18
+		y = 9
+		completion_reward = {
+			justify_war_goal_time = -0.25
+			generate_wargoal_tension = -0.40
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_11
+		text = EGY_military_11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_8
+		}
+		prerequisite = {
+			focus = EGY_focus_ssw_military_9
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_military_12
+		}
+		x = 32
+		y = 8
+		completion_reward = {
+industrial_capacity_factory = 0.55
+		}
+
+	}
+		focus = {
+		id = EGY_focus_ssw_military_31
+		text = EGY_military_31
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_30
+		}
+		x = 24
+		y = 7
+		completion_reward = {
+			land_equipment_upgrade_xp_cost = -0.1
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_32
+		text = EGY_military_32
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_29
+		}
+		x = 26
+		y = 7
+		completion_reward = {	
+				army_armor_speed_factor = 0.1
+					army_armor_attack_factor = 0.05
+						army_armor_defence_factor = 0.05
+
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_33
+		text = EGY_militray_33
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_32
+			focus = EGY_focus_ssw_military_31
+		}
+		x = 25
+		y = 8
+		completion_reward = {
+			army_artillery_attack_factor = 0.15
+			motorized_attack_factor = 0.15
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_34
+		text = EGY_military_34
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_33
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_military_35
+		}
+		x = 24
+		y = 9
+		completion_reward = {
+			license_infantry_eq_cost_factor= -0.1
+			license_artillery_eq_cost_factor= -0.1
+			license_light_tank_eq_cost_factor= -0.1
+			license_anti_tank_eq_cost_factor= -0.1
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_35
+		text = EGY_military_35
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_33
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_military_34
+		}
+		x = 26
+		y = 9
+		completion_reward = {
+			research_speed_factor = 0.05
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_36
+		text = EGY_military_36
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_military_35
+			focus = EGY_focus_ssw_military_34
+		}
+		x = 25
+		y = 10
+		completion_reward = {
+				army_armor_speed_factor = 0.5
+					army_armor_attack_factor = 0.5
+						army_armor_defence_factor = 0.5
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_military_37
+		text = EGY_military_37
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_military_12
+			focus = EGY_focus_ssw_military_11
+			focus = EGY_focus_ssw_military_28
+			focus = EGY_focus_ssw_military_36
+			focus = EGY_focus_ssw_military_19
+		}
+		x = 30
+		y = 12
+		completion_reward = {
+			rarmy_leader_start_level = 1
+			army_leader_start_attack_level = 1
+			army_leader_start_planning_level = 1
+			army_leader_start_defence_level = 1
+			army_leader_start_logistic_level = 1
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_political_19
+		text = EGY_political_19
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_political_18
+			focus = EGY_focus_ssw_political_14
+		}
+		x = 20
+		y = 12
+		completion_reward = {
+			stability_factor = 0.1
+			political_power_gain = 0.1
+			war_support_factor = 0.1
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_d_13
+		text = EGY_d_13
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_d_12
+			focus = EGY_focus_ssw_d_7
+		}
+		x = 68
+		y = 12
+		completion_reward = {
+			set_cosmetic_tag = SPQR_UNIFIED
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_s_3
+		text = EGY_s_3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_s_1
+		}
+		mutually_exclusive = {
+			focus = EGY_focus_ssw_s_2
+		}
+		x = 77
+		y = 9
+		completion_reward = {
+			stability_factor = 0.1
+			add_political_power = -0.1
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_s_5
+		text = EGY_s_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_s_3
+		}
+		x = 77
+		y = 10
+		completion_reward = {
+			stability_factor = -0.1
+			add_political_power = 0.1
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_s_7
+		text = EGY_s_7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_s_5
+		}
+		x = 77
+		y = 11
+		completion_reward = {
+			annex_country = {
+target = SUD
+transfer_troops = yes
+}
+add_political_power = 150
+		}
+
+	}
+	focus = {
+		id = EGY_focus_ssw_s_8
+		text = EGY_s_8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = EGY_focus_ssw_s_7
+			focus = EGY_focus_ssw_s_6
+		}
+		x = 75
+		y = 12
+		completion_reward = {
+			annex_country = {
+target = SUD
+transfer_troops = yes
+}
+
+		}
+	}
+}		
+
+
+
+	
+

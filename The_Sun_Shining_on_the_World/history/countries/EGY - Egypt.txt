@@ -8,6 +8,13 @@ set_technology = {
 }
 
 puppet = SUD
+add_ideas = {
+	EGY_ideas_elite
+	EGY_ideas_poor
+	EGY_ideas_late_army
+	EGY_free_general
+	EGY_ideas_radical
+}
 
 set_convoys = 150
 set_politics = {

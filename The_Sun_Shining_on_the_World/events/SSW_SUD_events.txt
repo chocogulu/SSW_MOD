@@ -1,0 +1,280 @@
+add_namespace = sudan
+country_event = { #buyweapon
+	id = sudan.1
+	title = sudan.1.t
+	picture = GFX_report_event_canadian_artillery
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = {
+		text = sudan.1.d
+	}
+	option = { #accept
+	    name = sudan.1.a
+		ai_chance = {
+			factor = 25
+		}
+		add_offsite_building = {
+		    type = industrial_complex
+		    level = 1
+		}
+		SUD = { add_timed_idea = { idea = SUD_payment days = 365 }
+	    	add_equipment_to_stockpile = {
+		    	type = infantry_equipment
+		    	amount = 700
+		    	producer = ROOT
+		    }
+	    }
+	}
+	option = { #refuse
+	    name = sudan.1.b
+	}
+}
+country_event = {
+	id = sudan.20
+	
+	hidden = yes
+	
+	immediate = {
+		country_event = { id = sudan.21 days = 300 }
+	}
+
+	trigger = {
+		has_capitulated = no
+		NOT = { surrender_progress > 0.5 }
+		original_tag = SUD
+		has_idea = SUD_risk_of_disease
+        OR = {
+            has_completed_focus = {
+			    SUD_continue_the_condominium
+				SUD_removal_the_condominium
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 150 }
+
+}
+country_event = { #disease
+	id = sudan.21
+	title = sudan.21.t
+	picture = GFX_report_event_african_soldiers
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = {
+		text = sudan.21.d
+	}
+	immediate = {
+		hidden_effect = {
+			remove_ideas = SUD_risk_of_disease
+			add_timed_idea = { idea = SUD_disease days = 365 }
+		}
+	}
+			
+	trigger = {
+		has_capitulated = no
+		NOT = { surrender_progress > 0.5 }
+		original_tag = SUD
+		has_idea = SUD_risk_of_disease
+	}
+
+	option = {
+		name = sudan.21.a
+		effect_tooltip = {
+			remove_ideas = SUD_risk_of_disease
+			add_timed_idea = { idea = SUD_disease days = 365 }
+		}
+	}
+}
+country_event = {
+    id = sudan.22 #accident locomotive
+	title = sudan.22.t
+	picture = GFX_report_event_generic_train
+	is_triggered_only = yes
+	desc = sudan.22.d
+	option = {
+	    name = sudan.22.a
+	    random_owned_state = {
+		limit = {
+			is_fully_controlled_by = ROOT
+			infrastructure > 0
+		}
+		damage_building = {
+			type = infrastructure
+	    	damage = 1
+			}
+    	}
+	}
+}
+country_event = {
+    id = sudan.23 #factory damage
+	title = sudan.23.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = sudan.23.d
+	option = {
+		name = sudan.22.a
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				industrial_complex > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+country_event = {
+    id = sudan.24 #result of improvement
+	title = sudan.24.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = sudan.24.d
+	option = {
+	    name = sudan.22.a
+		add_stability = 0.01
+	}
+}
+country_event = { #tanktech
+    id = sudan.30
+	title = sudan.30.t
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = yes
+	desc = { text = sudan.30.d }
+	option = { #geraccept
+	    name = sudan.30.a
+		ai_chance = {
+		    factor = 0
+			modifier = {
+			    add = 200
+				tag = GER
+			}
+		}
+		trigger = { tag = GER }
+		SUD = { country_event = sudan.31 }
+	}
+	option = { #italyaccept
+	    name = sudan.30.b
+		ai_chance = {
+		    factor = 0
+			modifier = {
+			    add = 200
+				tag = ITA
+			}
+		}
+		trigger = { tag = ITA }
+		SUD = { country_event = sudan.32 }
+	}
+	option = { #refuse
+	    name = sudan.30.c
+	}
+}
+country_event = { #gertech
+    id = sudan.32
+	title = sudan.31.t
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes
+	desc = { text = sudan.31.d }
+	option = {
+	ai_chance = { factor = 30 }
+	    name = sudan.31.a
+		add_tech_bonus = {
+			name = GER_tank_tech
+			ahead_reduction = 2
+			technology = basic_medium_tank
+		}
+		add_tech_bonus = {
+			name = GER_tank_tech
+			bonus = 1.0
+			uses = 2
+			category = armor
+		}
+	}
+}
+country_event = { #italytech
+    id = sudan.32
+	title = sudan.32.t
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes
+	desc = { text = sudan.32.d }
+	option = {
+	ai_chance = { factor = 30 }
+	    name = sudan.32.a
+		add_tech_bonus = {
+			name = ITA_tank_tech
+			ahead_reduction = 2
+			technology = basic_light_tank
+		}
+		add_tech_bonus = {
+			name = ITA_tank_tech
+			bonus = 1.0
+			uses = 1
+			category = armor
+		}
+	}
+}
+country_event = { #italytech
+    id = sudan.32
+	title = sudan.32.t
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes
+	desc = { text = sudan.32.d }
+	option = {
+	ai_chance = { factor = 30 }
+	    name = sudan.32.a
+		add_tech_bonus = {
+			name = ITA_tank_tech
+			ahead_reduction = 2
+			technology = basic_light_tank
+		}
+		add_tech_bonus = {
+			name = ITA_tank_tech
+			bonus = 1.0
+			uses = 1
+			category = armor
+		}
+	}
+}
+country_event = { #integrate with egypt
+    id = sudan.4
+	title = sudan.4.t
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes
+	desc = { text = sudan.4.d }
+	option = {
+	ai_chance = { factor = 30 }
+	    name = sudan.4.a
+		SUD = {
+			every_unit_leader = {
+				set_nationality = EGY
+			}
+		}
+		annex_country = { target = SUD transfer_troops = yes }
+		EGY = {
+			add_state_core = 551
+			add_state_core = 549
+			add_state_core　= 767
+		}
+	}
+	option = {
+	    name = sudan.4.b
+	}
+}
+country_event = { #integrate with egypt
+    id = sudan.5
+	title = sudan.5.t
+	picture = GFX_report_event_hitler_handshake
+	is_triggered_only = yes
+	desc = { text = sudan.5.d }
+	option = {
+	ai_chance = { factor = 30 }
+	    name = sudan.5.a
+		OVERLORD = {
+			set_autonomy = {
+				target = SUD
+				autonomy_state = autonomy_free
+			}
+		}
+	}
+}

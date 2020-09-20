@@ -1,0 +1,281 @@
+＃EGY_ideas_elite:0 "地主のエリート"EGY_ideas_poor:0 "飢餓の恐れ"EGY_ideas_late_army:0　"遅れた陸軍"EGY_free_general:0 "自由将校団"EGY_focus_radical:0 "イスラム過激派"＃＃
+ideas = { 
+	country = {
+		EGY_ideas_elite = {　
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1　
+
+			allowed_civil_war = {always = yes}
+
+			picture = 　
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+
+			}
+		}
+	}
+}
+ideas = {
+EGY_ideas_late_army = {
+        allowed = {always = yes}
+        removal_cost = -1
+        allowed_civil_war = {always = yes}
+        picture =
+        modifier = {
+            planning_speed = -0.10
+            max_planning = -0.10
+            army_defence_factor = -0.10
+            army_attack_factor = -0.10
+            army_org = -0.20
+
+
+
+
+        }
+    }
+}
+ideas = {
+    EGY_ideas_poor = {
+        allowed = {always = yes}
+        removal_cost = -1
+        allowed_civil_war = {always = yes}
+        picture =
+    modifier = {
+            stability_weekly = -0.02
+            stability_factor = -0.20
+            conscription = 0.01
+
+
+        }
+
+    }
+}
+ideas = {
+    EGY_free_general = {
+        allowed = {always = yes}
+        removal_cost = -1
+        allowed_civil_war = {always = yes}
+        picture =
+        modifier = {
+            stability_weekly = -0.02
+            custom_effect_tooltip = EGY_free_general_tt
+            political_power_gain = -0.1
+
+        }
+    }
+}
+ideas = {
+    EGY_focus_radical = {
+        allowed = {always = yes}
+        removal_cost = -1
+        allowed_civil_war = {always = yes}
+        picture =
+        modifier = {
+            stability_weekly = -0.10
+            stability_factor = -0.10
+        }
+    }
+}
+ideas = {
+    EGY_ideas_economy_reform = {
+        allowed = {always = yes}
+        removal_cost = -1
+        allowed_civil_war = {always = yes}
+        picture =
+        modifier = {
+            production_speed_buildings_factor = 0.1
+            political_power_gain = 0.5
+
+        }
+    }
+}
+ideas = {
+    EGY_ger_economy = {
+        allowed = {always = yes}
+        removal_cost = -1
+        allowed_civil_war = {always = yes}
+        picture =
+        modifier = {
+            production_speed_arms_factory_factor = 0.1
+            production_speed_industrial_complex_factor = 0.1
+            production_speed_bunker_factor = 0.1
+            production_speed_coastal_bunker_factor = 0.1
+            production_speed_anti_air_building_factor = 0.1
+            production_speed_dockyard_factor = 0.1
+            production_speed_naval_base_factor = 0.1
+            production_speed_air_base_factor = 0.1
+            production_speed_rocket_site_factor = 0.1
+            production_speed_radar_station_factor = 0.1
+        }
+    }
+
+}
+ideas = {
+    EGY_jap_economy ={
+        allowed = {always = yes}
+        removal_cost = -1
+        allowed_civil_war = {always = yes}
+        picture =
+        modifier = {
+            production_speed_infrastructure_factor = 0.1
+            production_speed_nuclear_reactor_factor = 0.1
+
+
+        }
+    }
+}
+ideas = {
+    EGY_fouth_economy = {
+        allowed = {always = yes}
+        removal_cost = -1
+        allowed_civil_war = {always = yes}
+        picture =
+        modifier = {
+            production_speed_arms_factory_factor = 0.15
+            production_speed_industrial_complex_factor = 0.15
+            production_speed_bunker_factor = 0.2
+            production_speed_coastal_bunker_factor = 0.15
+            production_speed_anti_air_building_factor = 0.2
+            production_speed_dockyard_factor = 0.15
+            production_speed_naval_base_factor = 0.15
+            production_speed_air_base_factor = 0.15
+            production_speed_rocket_site_factor = 0.15
+            production_speed_radar_station_factor = 0.15
+        }
+    }
+
+ideas = {
+    EGY_war_economy = {
+        allowed = {always = yes}
+        removal_cost = -1
+        allowed_civil_war = {always = yes}
+        picture =
+        modifier = {
+            production_speed_arms_factory_factor = 0.3
+            production_speed_industrial_complex_factor = 0.3
+            production_speed_bunker_factor = 0.3
+            production_speed_coastal_bunker_factor = 0.3
+            production_speed_anti_air_building_factor = 0.3
+            production_speed_dockyard_factor = 0.3
+            production_speed_naval_base_factor = 0.45
+            production_speed_air_base_factor = 0.4
+            production_speed_rocket_site_factor = 0.3
+            production_speed_radar_station_factor = 0.3
+        }
+    }
+
+}
+}
+ideas = {
+    EGY_misr_reform = {
+        allowed = {always = yes}
+        removal_cost = -1
+        allowed_civil_war = {always = yes}
+        picture =
+        modifier = {
+            production_speed_infrastructure_factor = 0.3
+        }
+    }
+}
+ ideas = {
+      EGY_farmer_buy = {
+          allowed = {always = yes}
+          removal_cost = -1
+          allowed_civil_war = {always = yes}
+          picture = 
+          modifier = {
+              consumer_goods_factor = 0.1
+              stability_factor = 0.01
+
+          }
+      }
+
+ }
+ ideas = {
+     EGY_farm_get = {
+         allowed = {always = yes}
+         removal_cost = -1
+         allowed_civil_war = {always = yes}
+         picture = 
+         modifier = {
+             consumer_goods_factor = -0.2
+             stability_factor = -0.01
+         }
+     }
+ }
+ ideas = {
+     EGY_nairu_golden = {
+         allowed = {always = yes}
+         removal_cost = -1
+         allowed_civil_war = {always = yes}
+         picture
+         modifier = {
+             stability_weekly = 0.1
+             stability_factor = 0.1
+         }
+     }
+ }
+ideas = {
+    EGY_blood_and_land
+    allowed = {always = yes}
+    removal_cost = -1
+    allowed = allowed_civil_war = {always = yes}
+    picture = 
+    modifier  = {
+        stability_factor = 0.01
+MONTHLY_POPULATION = 0.1
+        consumer_goods_factor = -0.05
+    
+}
+}
+ideas = {
+    EGY_farmer_public_company
+    allowed = {always = yes}
+    removal_cost = -1
+    allowed_civil_war = {always = yes}
+    picture = 
+    modifier = {
+        MONTHLY_POPULATION = 0.5
+        global_building_slots_factor = 0.10
+        consumer_goods_factor = -0.05 
+    }
+}
+ideas = {
+    EGY_japanese_farm
+allowed = {always = yes}
+removal_cost = -1
+allowed_civil_war = {always = yes}
+picture = 
+modifier = {
+    consumer_goods_factor = -0.5
+    production_speed_infrastructure_factor = 0.5
+}
+}
+ideas = {
+    EGY_task_of_sudan
+    allowed = {always = yes}
+    removal_cost = -1
+    allowed_civil_war = {always = yes}
+    picture = 
+    modifier = {
+        stability_factor = -0.01
+    }
+}
+ideas = {
+    EGY_reform_end
+    allowed = {always = yes
+    }
+    removal_cost = -1
+    allowed_civil_war = {
+        always = yes
+    }
+    picture = 
+    modifier = {
+        	industrial_capacity_factory = 0.1
+            	production_factory_efficiency_gain_factor = 0.05
+                consumer_goods_factor = -0.1
+    }
+}

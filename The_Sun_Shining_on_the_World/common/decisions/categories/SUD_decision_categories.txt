@@ -1,0 +1,16 @@
+SUD_investment_from_the_overlord = {
+    allowed = {
+	    original_tag = SUD
+	}
+	visible = {
+        has_completed_focus = SUD_investment_from_the_overlord
+	}
+}
+SUD_resources_development = {
+    allowed = {
+	    original_tag = SUD
+	}
+	visible = {
+	    has_completed_focus = SUD_southern_resources
+	}
+}

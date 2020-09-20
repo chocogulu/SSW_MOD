@@ -1,0 +1,272 @@
+SUD_investment_from_the_overlord = {
+    SUD_investment_from_egypt = {
+	    icon = generic_industry
+		
+		allowed = {
+				tag = SUD
+			}
+		
+		available = {
+		    OR = {
+				is_subject_of = egy
+	        }
+		}
+		
+		cost = 30
+		
+		ai_will_do = {
+			factor = 0.1
+		}
+		
+		fire_only_once = no
+		
+		days_remove = 200
+		
+		modifier = {
+			EGY = { civilian_factory_use = 1
+			consumer_goods_factor = -0.05
+			}
+		}
+		remove_effect = {
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	SUD_investment_from_italy = {
+	    icon = generic_industry
+		
+		allowed = {
+				tag = SUD
+			}
+		
+		available = {
+		    OR = {
+				is_subject_of = ITA
+				is_in_faction_with = ITA
+	        }
+		}
+		
+		cost = 30
+		
+		ai_will_do = {
+			factor = 0.1
+		}
+		
+		fire_only_once = no
+		
+		days_remove = 200
+		
+		modifier = {
+			ITA = { civilian_factory_use = 1 
+			consumer_goods_factor = -0.05
+		    }
+		}
+		remove_effect = {
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+    SUD_exclude_risk_of_disease = {
+	    icon = hol_inundate_water_lines
+		
+		allowed = {
+				tag = SUD
+		}
+		
+		available = {
+			has_completed_focus = SUD_development_of_the_nile_coastal
+			has_ideas = SUD_risk_of_disease
+		}
+		
+		cost = 300
+		
+		ai_will_do = { factor = 0.1 }
+		
+		fire_only_once = yes
+		
+		is_good = yes
+		
+		visible = {
+			NOT = { has_active_mission = SUD_improve_hygiene }
+		}
+		
+		complete_effect = {
+			activate_mission = SUD_improve_hygiene
+			custom_effect_tooltip = SUD_exclude_risk_of_disease_tt
+			hidden_effect = {
+					random_list = {
+						25 = {
+							country_event = { id = sudan.22 days = 100 }
+						}
+						25 = {
+							country_event = { id = sudan.23 days = 100 }
+						}
+						25 = {
+							country_event = { id = sudan.24 days = 100 }
+						}
+						25 = {
+						
+						}
+					}
+					random_list = {
+						25 = {
+							country_event = { id = sudan.22 days = 200 }
+						}
+						25 = {
+							country_event = { id = sudan.23 days = 200 }
+						}
+						25 = {
+							country_event = { id = sudan.24 days = 200 }
+						}
+						25 = {
+						
+						}
+					}
+					random_list = {
+						25 = {
+							country_event = { id = sudan.22 days = 300 }
+						}
+						25 = {
+							country_event = { id = sudan.23 days = 300 }
+						}
+						25 = {
+							country_event = { id = sudan.24 days = 300 }
+						}
+						25 = {
+						
+						}
+					}
+					random_list = {
+						25 = {
+							country_event = { id = sudan.22 days = 400 }
+						}
+						25 = {
+							country_event = { id = sudan.23 days = 400 }
+						}
+						25 = {
+							country_event = { id = sudan.24 days = 400 }
+						}
+						25 = {
+						
+						}
+					}
+			}
+		}
+	}
+	SUD_improve_hygiene = {
+
+		icon = generic_civil_support
+
+		available = {
+			always = no
+		}
+		
+		days_mission_timeout = MAN_main_control_timer?500
+		
+		activation = {
+			always = no #Triggered from effect
+		}
+
+		cancel_trigger = {
+			NOT = {
+			    controls_state = 549
+			}
+		}
+		
+		is_good = yes
+		
+		timeout_effect = {
+			remove_ideas = SUD_risk_of_disease
+		}
+	}
+}
+SUD_resources_development = {
+    SUD_expand_the_chromium_mine = {
+	icon = chromium
+		
+		allowed = {
+				tag = SUD
+			}
+		
+		available = {
+		    has_tech = excavation2
+			has_completed_focus = SUD_chromium_mine
+		}
+		
+		cost = 30
+		
+		ai_will_do = {
+			factor = 0.1
+		}
+		
+		fire_only_once = no
+		
+		days_remove = 150
+		
+		remove_effect = {
+		    549 = {
+			    add_resource = {
+					type = chromium
+					amount = 5
+				}
+			}
+		}
+	}
+	SUD_expand_the_iron_mine = {
+	icon = steel
+		
+		allowed = {
+				tag = SUD
+			}
+		
+		available = {
+		    has_tech = excavation2
+			has_completed_focus = SUD_iron_mine
+		}
+		
+		cost = 30
+		
+		ai_will_do = {
+			factor = 0.1
+		}
+		
+		fire_only_once = no
+		
+		days_remove = 150
+		
+		remove_effect = {
+		    549 = {
+			    add_resource = {
+					type = steel
+					amount = 5
+				}
+			}
+		}
+	}
+}
