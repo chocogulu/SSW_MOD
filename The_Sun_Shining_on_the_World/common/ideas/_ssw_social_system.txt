@@ -10,6 +10,10 @@ ideas = {
 		collectivist_anarchism = {
 
 			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
 				NOT = {
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
 				}
@@ -45,6 +49,10 @@ ideas = {
 		one_party_dictatorship = {
 
 			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
 				NOT = {
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
 				}
@@ -83,6 +91,11 @@ ideas = {
 		ssw_military_dictatorship = {
 
 			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+
 				NOT = {
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
 				}
@@ -116,6 +129,11 @@ ideas = {
 		Corporate_council_system = {
 
 			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+
 				NOT = {
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
 				}
@@ -152,6 +170,11 @@ ideas = {
 		Parliamentary_democracy_leftist_administration = {
 
 			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+
 				NOT = {
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
 				}
@@ -184,6 +207,11 @@ ideas = {
 		Parliamentary_democracy_rightist_administration = {
 
 			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+
 				NOT = {
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
 				}
@@ -215,6 +243,11 @@ ideas = {
 		Despotism = {
 
 			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+
 				NOT = {
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
 				}
