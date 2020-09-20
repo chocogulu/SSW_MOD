@@ -16,9 +16,6 @@ ideas = {
 
 			}
 		}
-	}
-}
-ideas = {
 EGY_ideas_late_army = {
         allowed = {always = yes}
         removal_cost = -1
@@ -36,8 +33,6 @@ EGY_ideas_late_army = {
 
         }
     }
-}
-ideas = {
     EGY_ideas_poor = {
         allowed = {always = yes}
         removal_cost = -1
@@ -52,8 +47,6 @@ ideas = {
         }
 
     }
-}
-ideas = {
     EGY_free_general = {
         allowed = {always = yes}
         removal_cost = -1
@@ -66,8 +59,6 @@ ideas = {
 
         }
     }
-}
-ideas = {
     EGY_focus_radical = {
         allowed = {always = yes}
         removal_cost = -1
@@ -78,8 +69,7 @@ ideas = {
             stability_factor = -0.10
         }
     }
-}
-ideas = {
+
     EGY_ideas_economy_reform = {
         allowed = {always = yes}
         removal_cost = -1
@@ -91,8 +81,6 @@ ideas = {
 
         }
     }
-}
-ideas = {
     EGY_ger_economy = {
         allowed = {always = yes}
         removal_cost = -1
@@ -112,8 +100,6 @@ ideas = {
         }
     }
 
-}
-ideas = {
     EGY_jap_economy ={
         allowed = {always = yes}
         removal_cost = -1
@@ -126,8 +112,6 @@ ideas = {
 
         }
     }
-}
-ideas = {
     EGY_fouth_economy = {
         allowed = {always = yes}
         removal_cost = -1
@@ -146,8 +130,6 @@ ideas = {
             production_speed_radar_station_factor = 0.15
         }
     }
-
-ideas = {
     EGY_war_economy = {
         allowed = {always = yes}
         removal_cost = -1
@@ -167,9 +149,6 @@ ideas = {
         }
     }
 
-}
-}
-ideas = {
     EGY_misr_reform = {
         allowed = {always = yes}
         removal_cost = -1
@@ -179,8 +158,6 @@ ideas = {
             production_speed_infrastructure_factor = 0.3
         }
     }
-}
- ideas = {
       EGY_farmer_buy = {
           allowed = {always = yes}
           removal_cost = -1
@@ -193,8 +170,6 @@ ideas = {
           }
       }
 
- }
- ideas = {
      EGY_farm_get = {
          allowed = {always = yes}
          removal_cost = -1
@@ -205,21 +180,18 @@ ideas = {
              stability_factor = -0.01
          }
      }
- }
- ideas = {
      EGY_nairu_golden = {
          allowed = {always = yes}
          removal_cost = -1
          allowed_civil_war = {always = yes}
-         picture
+         picture = 
          modifier = {
              stability_weekly = 0.1
              stability_factor = 0.1
          }
      }
- }
-ideas = {
-    EGY_blood_and_land
+
+    EGY_blood_and_land = {
     allowed = {always = yes}
     removal_cost = -1
     allowed = allowed_civil_war = {always = yes}
@@ -231,8 +203,7 @@ MONTHLY_POPULATION = 0.1
     
 }
 }
-ideas = {
-    EGY_farmer_public_company
+    EGY_farmer_public_company = {
     allowed = {always = yes}
     removal_cost = -1
     allowed_civil_war = {always = yes}
@@ -243,8 +214,7 @@ ideas = {
         consumer_goods_factor = -0.05 
     }
 }
-ideas = {
-    EGY_japanese_farm
+    EGY_japanese_farm = {
 allowed = {always = yes}
 removal_cost = -1
 allowed_civil_war = {always = yes}
@@ -254,8 +224,7 @@ modifier = {
     production_speed_infrastructure_factor = 0.5
 }
 }
-ideas = {
-    EGY_task_of_sudan
+    EGY_task_of_sudan = {
     allowed = {always = yes}
     removal_cost = -1
     allowed_civil_war = {always = yes}
@@ -264,8 +233,7 @@ ideas = {
         stability_factor = -0.01
     }
 }
-ideas = {
-    EGY_reform_end
+    EGY_reform_end = {
     allowed = {always = yes
     }
     removal_cost = -1
@@ -277,5 +245,7 @@ ideas = {
         	industrial_capacity_factory = 0.1
             	production_factory_efficiency_gain_factor = 0.05
                 consumer_goods_factor = -0.1
+            }
+        }
     }
 }

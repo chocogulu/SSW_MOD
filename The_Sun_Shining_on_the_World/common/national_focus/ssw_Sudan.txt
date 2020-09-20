@@ -1,0 +1,1338 @@
+focus_tree = {
+	id = SUD_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SUD
+		}
+	}
+	default = no
+	focus = {
+		id = SUD_investment_from_the_overlord
+		icon = GFX_focus_mex_privatisation
+		cost = 10.00
+		x = 4
+		y = 0
+		ai_will_do = {
+		    factor = 10
+		}
+		available = {
+		OR = {
+	        OR = {
+			    is_in_faction_with = ITA
+				is_subject_of = ITA
+			}
+			OR = {
+			    is_in_faction_with = EGY
+				is_subject_of = EGY
+			}
+        }
+		}
+		completion_reward = {
+		    unlock_decision_category_tooltip = SUD_investment_from_the_overlord
+		}
+	}
+	focus = {
+		id = SUD_continue_the_condominium
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		mutually_exclusive = {
+			focus = SUD_removal_the_condominium
+		}
+		available = {
+		    is_in_faction_with = ITA
+			is_subject_of = EGY
+			has_idea = SUD_italian_and_egyptian_condominium
+		}
+		bypass = {
+		    is_subject = no
+			NOT = {
+			    has_idea = SUD_italian_and_egyptian_condominium
+			}
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    ITA = { add_opinion_modifier = { target = SUD modifier = medium_increase } }
+			EGY = { add_opinion_modifier = { target = SUD modifier = medium_increase } }
+			swap_ideas = {
+			    remove_idea = SUD_italian_and_egyptian_condominium
+				add_idea = SUD_cooperative_governance_1
+			}
+		}
+		x = 23
+		y = 0
+search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = SUD_removal_the_condominium
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 10.00
+		mutually_exclusive = {
+			focus = SUD_continue_the_condominium
+		}
+		available = {
+		    is_in_faction_with = ITA
+			is_subject_of = EGY
+			has_idea = SUD_italian_and_egyptian_condominium
+		}
+		bypass = {
+		    is_subject = no
+			NOT = {
+			    has_idea = SUD_italian_and_egyptian_condominium
+			}
+		}
+		ai_will_do = { factor = 0.1 }
+		completion_reward = {
+		    ITA = { add_opinion_modifier = { target = SUD modifier = medium_decrease } }
+			add_war_support = 0.05
+			swap_ideas = { 
+			    remove_idea = SUD_italian_and_egyptian_condominium
+			    add_idea = SUD_rebillious_governance
+			}
+		}
+		x = 29
+		y = 0
+search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+	}
+	focus = {
+		id = SUD_italian_military_training
+		icon = GFX_focus_generic_license_production
+		cost = 10.00
+		x = 15
+		y = 0
+		ai_will_do = {
+		    factor = 1
+		}
+		available = {
+		    OR = {
+			    is_in_faction_with = ITA
+				is_subject_of = ITA
+			}
+		}
+        completion_reward = {
+		army_experience = 10
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 2.0
+							uses = 1
+							category = land_doctrine
+						}
+		    add_ideas = SUD_italian_military_training
+		}
+	}
+	focus = {
+		id = SUD_build_the_airport
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		x = 43
+		y = 0
+		ai_will_do = {
+					factor = 2
+				}
+		available = {
+		    controls_state = 551
+			controls_state = 549
+		}
+		completion_reward = {
+		    551 = {
+			    add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+		    549 = {
+		    add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SUD_expand_port_sudan
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10.00
+		x = 36
+		y = 0
+		ai_will_do = {
+					factor = 2
+				}
+		available = { 
+		    controls_state = 551
+		}
+		completion_reward = {
+		    551 = {
+			    add_building_construction = {
+						type = naval_base
+						level = 3
+						province = 12725
+						instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = SUD_development_of_the_nile_coastal
+		icon = GFX_focus_generic_africa_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_investment_from_the_overlord
+		}
+		ai_will_do = {
+		    factor = 2 
+		}
+		available = {
+		    controls_state = 551
+			controls_state = 549
+		}
+		completion_reward = {
+		    551 = {
+			    add_extra_state_shared_building_slots = 1
+			    add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+				}
+			    add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+			}
+			549 = {
+			    add_extra_state_shared_building_slots = 1
+			    add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+				}
+			    add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+			}
+			unlock_decision_tooltip = SUD_exclude_risk_of_disease
+		}
+		x = 4
+		y = 1
+    search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SUD_expand_the_farmlands
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_development_of_the_nile_coastal
+		}
+		ai_will_do = {
+		    factor = 1
+		}
+		completion_reward = {
+		    random_owned_controlled_state = {
+			    add_extra_state_shared_building_slots = 1
+				add_manpower = 19810
+				set_country_flag = SUD_expand_the_farmlands
+			}
+			random_owned_controlled_state = {
+			    if = {
+				    limit = {
+					    NOT = {
+						    has_country_flag = SUD_expand_the_farmlands
+						}
+					}
+			    add_extra_state_shared_building_slots = 1
+				add_manpower = 24198
+			}
+			add_ideas = SUD_local_production_for_local_consumption
+		}
+	}
+		x = 1
+		y = 2
+search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
+	}
+	focus = {
+		id = SUD_resumption_the_gezira_scheme
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_expand_the_farmlands
+		}
+		available = {
+		    controls_state = 551
+		}
+		ai_will_do = {
+		    factor = 1
+		}
+		completion_reward = {
+		    551 = {
+		        add_extra_state_shared_building_slots = 3
+			}
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = SUD_urbanization_of_khartoum
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_development_of_the_nile_coastal
+		}
+		ai_will_do = {
+		    factor = 1
+		}
+		available = { controls_state = 551 }
+		cancel_if_invalid = yes
+		completion_reward = {
+		    551 = {
+			add_extra_state_shared_building_slots = 2
+			    add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 3
+		y = 2
+search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SUD_investment_for_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_urbanization_of_khartoum
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    random_owned_controlled_state = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = SUD_southern_resources
+				bonus = 1.0
+				uses = 1
+				technology = construction1
+				technology = construction2
+				technology = construction3
+				technology = construction4
+				technology = construction5
+			}
+			add_ideas = SUD_investment_for_infrastructure
+		}
+		x = 3
+		y = 3
+search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SUD_merowe_dam
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_investment_for_infrastructure
+		}
+		ai_will_do = {
+		    factor = 2
+		}
+		completion_reward = {
+		   add_ideas = SUD_merowe_dam
+		}
+		x = 2
+		y = 4
+search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SUD_road_work
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_investment_for_infrastructure
+		}
+		ai_will_do = {
+		    factor = 0.1
+		}
+		completion_reward = {
+		    random_owned_controlled_state = {
+			    add_building_construction = {
+				    type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_country_flag = SUD_road_work
+			}
+			random_owned_controlled_state = {
+			    if = {
+				    limit = {
+					    NOT = {
+						    has_country_flag = SUD_road_work
+						}
+					}
+			    add_building_construction = {
+				    type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = SUD_southern_resources
+		icon = GFX_focus_generic_africa_factory
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_development_of_the_nile_coastal
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    add_ideas = SUD_resources_mining
+			add_tech_bonus = {
+				name = SUD_southern_resources
+				bonus = 1.0
+				uses = 1
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+			hidden_effect = {
+			unlock_decision_category_tooltip = SUD_resources_development
+			}
+			custom_effect_tooltip = SUD_southern_resources_tt
+		}
+		x = 7
+		y = 2
+search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SUD_chromium_mine
+		icon = GFX_focus_generic_industry_2
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_southern_resources
+		}
+		ai_will_do = { factor = 1 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		available = {
+		    has_full_control_of_state = 549
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+		    549 = {
+			    add_resource = {
+					type = chromium
+					amount = 20
+				}
+			}
+			unlock_decision_tooltip = SUD_expand_the_chromium_mine
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = SUD_iron_mine
+		icon = GFX_focus_generic_steel
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_southern_resources
+		}
+		x = 7
+		y = 3
+		ai_will_do = { factor = 1 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		available = {
+		    has_full_control_of_state = 549
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+		    549 = {
+			    add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+			unlock_decision_tooltip = SUD_expand_the_iron_mine
+		}
+
+	}
+	focus = {
+		id = SUD_precious_metal_mine
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_southern_resources
+		}
+		ai_will_do = { factor = 1 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		available = {
+		    has_full_control_of_state = 549
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+		    add_ideas = SUD_gold_mine
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = SUD_found_the_sudanese_army
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_italian_military_training
+		}
+		available = {
+		    has_army_manpower = { size > 19999 }
+		}
+		ai_will_do = {
+		    factor = 1
+		}
+		completion_reward = {
+		    army_experience = 30
+			add_ideas = SUD_sudan_army_1
+			remove_ideas = SUD_unprepared_armament
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = SUD_training_in_desert
+		icon = GFX_focus_chi_army_reform
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_found_the_sudanese_army
+		}
+		x = 11
+		y = 2
+        available = {
+		}
+		ai_will_do = {
+		    factor = 1
+		}
+		completion_reward = {
+		    swap_ideas = {
+			    remove_idea = SUD_sudan_army_1
+				add_idea = SUD_sudan_army_2
+			}
+		}
+	}
+	focus = {
+		id = SUD_training_in_plain
+		icon = GFX_focus_chi_army_reform
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_found_the_sudanese_army
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    every_army_leader = {
+			    add_planning = 1
+			}
+		    army_experience = 5
+		}
+		x = 13
+		y = 2
+	}
+	focus = {
+		id = SUD_river_crossing
+		icon = GFX_goal_generic_special_forces
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_training_in_desert
+			focus = SUD_training_in_plain
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    add_tech_bonus = {
+			    name = SUD_river_crossing
+				bonus = 1.0
+				uses = 1
+				technology = marines
+				technology = marines2
+				technology = marines3
+			}
+		}
+		x = 12
+		y = 3
+search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SUD_conscription_system
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_found_the_sudanese_army
+		}
+		ai_will_do = { factor = 1 }
+		x = 14
+		y = 3
+        completion_reward = {
+			if = {
+				limit = {
+					has_war_support < 0.5
+				}
+				add_war_support = 0.1
+			}
+			else_if = {
+				limit = {
+					has_idea = limited_conscription	
+				}
+			add_political_power = 150
+		    }
+			else = {
+				add_ideas = limited_conscription	
+			}
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
+	}
+	focus = {
+		id = SUD_sudanese_general_staff
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_italian_military_training
+		}
+		available = {
+		    NOT = {
+			    has_idea = SUD_unprepared_armament
+			}
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    add_ideas = SUD_sudanese_general_staff
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = SUD_buy_the_weapons
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_italian_military_training
+		}
+		ai_will_do = { factor = 1 }
+		available = {
+		    SUD = {
+			    is_subject = yes
+				is_in_faction_with = ITA
+			}
+		}
+		bypass = {
+		    SUD = {
+			    is_subject = no
+			}
+		}
+		completion_reward = {
+	    ITA = {
+		    country_event = sudan.1
+			}
+		}
+		x = 16
+		y = 1
+
+	}
+	focus = {
+		id = SUD_steelmaking_for_weapons
+		icon = GFX_goal_generic_build_tank
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_buy_the_weapons
+		}
+		completion_reward = {
+		    add_ideas = SUD_steel_for_weapons
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = SUD_domestic_gunsmiths
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_buy_the_weapons
+		}
+		ai_will_do = {
+					factor = 5
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 2
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = SUD_tank_technology
+		icon = GFX_focus_generic_army_tanks2
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_buy_the_weapons
+		}
+		available = {
+		OR = {
+		    is_in_faction_with = GER
+		    is_in_faction_with = ITA
+		}
+		}
+		ai_will_do = { factor = 1 }
+		cancel_if_invalid = yes
+		completion_reward = { 
+		    if = {
+			    limit = {
+				    is_in_faction_with = GER
+				}
+			GER = { country_event = sudan.30 }
+		    }
+			if = {
+			    limit = {
+				    is_in_faction_with = ITA
+				}
+			ITA = { country_event = sudan.30 }
+		    }
+		}
+		x = 19
+		y = 2
+search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SUD_encourage_to_divide_and_conquer
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_continue_the_condominium
+		}
+		available = {
+		    is_in_faction_with = ITA
+			is_subject_of = EGY
+		}
+		bypass = {
+		    NOT = {
+			    is_in_faction_with = ITA
+				is_subject_of = EGY
+			}
+		}
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { factor = 30 }
+		completion_reward = {
+		    swap_ideas = {
+				remove_idea = SUD_divide_and_conquer
+				add_idea = SUD_divide_and_conquer_2
+			}
+		}
+		x = 23
+		y = 1
+search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = SUD_settlement_of_the_caucasians
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_encourage_to_divide_and_conquer
+		}
+		mutually_exclusive = {
+			focus = SUD_promote_the_slavery
+		}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+		    random_owned_controlled_state = {
+			    add_manpower = 40000
+				add_extra_state_shared_building_slots = 1
+				set_country_flag = SUD_settlement
+			}
+			random_owned_controlled_state = {
+			limit = {
+			    NOT = {
+			    has_country_flag = SUD_settlement
+				}
+			}
+			    add_manpower = 20000
+				add_extra_state_shared_building_slots = 1
+				set_country_flag = SUD_settlement
+			}
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = SUD_discover_the_oil_field
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_settlement_of_the_caucasians
+		}
+		ai_will_do = { factor = 1 }
+		available = {
+		    controls_state = 551
+			controls_state = 549
+		    NOT = {
+			    OR = {
+					has_idea = SUD_risk_of_disease
+					has_idea = SUD_disease
+				}
+			}
+		}
+		completion_reward = {
+		    551 = {
+			    add_resource = {
+				    type = oil
+					amount = 5
+				}
+			}
+			549 = {
+			    add_resource = {
+				    type = oil
+					amount = 12
+				}
+			}
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = SUD_promote_the_slavery
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_encourage_to_divide_and_conquer
+		}
+		mutually_exclusive = {
+			focus = SUD_settlement_of_the_caucasians
+		}
+		available = {
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    add_ideas = SUD_slavery
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = SUD_large_plantation
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_promote_the_slavery
+		}
+		available = {
+		    NOT = {
+			    OR = {
+					has_idea = SUD_risk_of_disease
+					has_idea = SUD_disease
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    swap_ideas = {
+				remove_idea = SUD_slavery
+				add_idea = SUD_large_plantation
+			}
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = SUD_found_the_steel_making_company
+		icon = GFX_focus_generic_steel
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_discover_the_oil_field
+			focus = SUD_large_plantation
+		}
+		available = {
+		    controls_state = 551
+			num_of_factories > 7
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    551 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+			if = {
+			    limit = {
+				    has_completed_focus = SUD_iron_mine
+				}
+				549 = {
+					add_resource = {
+						type = steel
+						amount = 5
+					}
+				}
+			}
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = SUD_abolish_to_divide_and_conquer
+		icon = GFX_goal_continuous_suppression
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_removal_the_condominium
+		}
+		available = {
+		    is_in_faction_with = ITA
+			is_subject_of = EGY
+		}
+		bypass = {
+		    NOT = {
+			    is_in_faction_with = ITA
+				is_subject_of = EGY
+			}
+		}
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = { factor = 30 }
+		completion_reward = {
+		    remove_ideas = SUD_divide_and_conquer
+			add_autonomy_ratio = {
+				value = 0.3
+				localization = SUD_abolish_to_divide_and_conquer
+			}
+			custom_effect_tooltip = SUD_abolish_to_divide_and_conquer_tt
+			hidden_effect = {
+			    add_opinion_modifier = { target = ITA modifier = embargo }
+				ITA = { add_opinion_modifier = { target = SUD modifier = embargo } }
+			}
+		}
+		x = 29
+		y = 1
+
+	}
+	focus = {
+		id = SUD_support_for_the_hizb_al_umma
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_abolish_to_divide_and_conquer
+		}
+		mutually_exclusive = {
+			focus = SUD_promote_the_egyptization
+		}
+		ai_will_do = { factor = 0.1 }
+		completion_reward = {
+		    add_popularity = {
+				ideology = conservatism
+				popularity = 0.25
+			}
+			add_ideas = SUD_hizb_al_umma
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = SUD_inauguration_of_autonomous_government
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_support_for_the_hizb_al_umma
+		}
+		available = {
+		    conservatism > 0.5
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_politics = {
+				ruling_party = conservatism
+			}
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = SUD_guarantee_the_southern_workers
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_inauguration_of_autonomous_government
+		}
+		completion_reward = {
+		    add_stability = 0.1
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.15
+			}
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = SUD_promote_the_egyptization
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_abolish_to_divide_and_conquer
+		}
+		mutually_exclusive = {
+			focus = SUD_support_for_the_hizb_al_umma
+		}
+		available = {
+		    is_subject_of = EGY
+		}
+		ai_will_do = { factor = 0.1 }
+		completion_reward = {
+		    create_country_leader = {
+				name = "Husein Al-Shafei"
+				desc = "POLITICS_EDWIN_BARCLAY_DESC"
+				picture = "gfx/leaders/SUD/Portrait_Husein_al_shafei.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits = {
+					#
+				}
+			}
+			add_opinion_modifier = { target = EGY modifier = large_increase }
+			EGY = { add_opinion_modifier = { target = SUD modifier = large_increase } }
+		}
+		x = 31
+		y = 2
+
+	}
+	focus = {
+		id = SUD_encourage_immigrants
+		icon = GFX_focus_generic_concessions
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_promote_the_egyptization
+		}
+		available = {
+		    is_subject_of = EGY
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    add_manpower = 37398
+			EGY = { add_manpower = -37398 
+			        add_political_power = 100
+			}
+		}
+		x = 31
+		y = 3
+search_filters = { FOCUS_FILTER_MANPOWER }
+	}
+	focus = {
+		id = SUD_integrate
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_encourage_immigrants
+		}
+		available = { is_subject_of = EGY }
+		ai_will_do = { factor = 0 }
+		completion_reward = { 
+		    EGY = {
+			    country_event = sudan.4
+			}
+		}
+		x = 31
+		y = 4
+search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = SUD_build_convoys
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_expand_port_sudan
+		}
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+			    type = convoy_1
+				amount = 50
+			}
+		}
+		x = 34
+		y = 1
+
+	}
+	focus = {
+		id = SUD_learn_by_italy
+		icon = GFX_focus_befriend_italy
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_expand_port_sudan
+		}
+		available = {
+		    is_in_faction_with = ITA
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    navy_experience = 30
+		    add_tech_bonus = {
+			    name = SUD_learn_by_italy
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+			add_tech_bonus = {
+			    name = SUD_learn_by_italy
+				bonus = 1.0
+				uses = 3
+				category = dd_tech
+			}
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = SUD_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_learn_by_italy
+		}
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    random_owned_controlled_state = {
+			    limit = {
+			        is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = SUD_submarine
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_expand_port_sudan
+		}
+		available_if_capitulated = yes
+
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+		    add_tech_bonus = {
+			    name = SUD_submarine
+				bonus = 1.0
+				uses = 2
+				category = ss_tech
+			}
+		}
+		x = 38
+		y = 1
+search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SUD_air_transtport
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_build_the_airport
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+			    type = transport_plane_equipment_1
+				amount = 50
+			}
+		}
+		x = 41
+		y = 1
+
+	}
+	focus = {
+		id = SUD_establishment_the_airforce
+		icon = GFX_goal_continuous_air_production
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_build_the_airport
+		}
+		available = { 
+		    OR = {
+		        has_idea = SUD_sudan_army_1
+			    has_idea = SUD_sudan_army_2
+			}
+		}
+		completion_reward = {
+		    air_experience = 30
+		}
+		x = 43
+		y = 1
+	}
+	focus = {
+		id = SUD_fighter
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_establishment_the_airforce
+		}
+		mutually_exclusive = {
+			focus = SUD_bomber
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    add_tech_bonus = {
+				name = SUD_southern_resources
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+		x = 42
+		y = 2
+search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SUD_bomber
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_establishment_the_airforce
+		}
+		mutually_exclusive = {
+			focus = SUD_fighter
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		    add_tech_bonus = {
+				name = SUD_southern_resources
+				bonus = 1.0
+				uses = 2
+				category = tactical_bomber
+				category = cat_strategic_bomber
+				category = cas_bomber
+			}
+		}
+		x = 44
+		y = 2
+search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SUD_pilot_training
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_fighter
+			focus = SUD_bomber
+		}
+		completion_reward = { add_ideas = SUD_pilot_training }
+		x = 43
+		y = 3
+
+	}
+	focus = {
+		id = SUD_obedience
+		icon = GFX_focus_CZE_german_puppet
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_found_the_steel_making_company
+		}
+		ai_will_do = { factor = 0.1 }
+		available = { is_in_faction_with = ITA is_subject_of = EGY }
+		completion_reward = {
+		    swap_ideas = {
+			    remove_idea = SUD_cooperative_governance_1
+				add_idea = SUD_cooperative_governance_2
+			}
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = SUD_cairo_agreement
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = SUD_guarantee_the_southern_workers
+		}
+		available = {
+		    compare_autonomy_progress_ratio> 0.9
+			conservatism > 0.80
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+		    country_event = sudan.5
+		}
+		x = 29
+		y = 5
+
+	}
+}

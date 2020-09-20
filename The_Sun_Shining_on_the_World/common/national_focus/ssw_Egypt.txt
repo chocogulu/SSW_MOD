@@ -167,9 +167,9 @@ completion_reward = {
 		type = infrastructure
 		level = 2
 		instant_build = yes
-	}
-}
-	}
+				}
+			}
+		}
 	}
 	focus = {
 		id = EGY_focus_ssw_naisei_19
