@@ -383,24 +383,26 @@ focus_tree = {
 		x = 9
 		y = 5
 		available = {
-			any_country = {
-				limit = {
-					OR = {
-						is_puppet_of = SPR
-						tag = SPR
+			OR = {
+					SPR = {
+							owns_state = 461
+						
+		
+						461 = {
+							is_puppet_of = SPR
+						}
 					}
 				}
-				owns_state = 461
-			}
 		}
 		completion_reward = {
+			
 			461 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
 			}
 		}
 
@@ -446,7 +448,7 @@ focus_tree = {
 		desc = "POLITICS_MILITARY_JUNTA_DESC"
 		picture = "GFX_portrait_SPA_military_junta"
 		expire = "1965.1.1"
-		ideology = military
+		ideology = militarism   
 		traits = {
 			divided_interests
 		}
@@ -480,11 +482,9 @@ focus_tree = {
 		y = 4
 		available = {
 			has_idea = {
-				spr_ideas_01
-			}
-		}
-		completion_reward = {
-			remove_ideas = brm_debahu_01
+				spr_ideas_01 
+				}
+				remove_ideas = { brm_debahu_01 }
 		}
 
 
@@ -1068,9 +1068,6 @@ focus_tree = {
 	focus = {
 		id = SPR_guntai_daikibosakusen
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 32
-		y = 12
-
 		cost = 4.00
 		prerequisite = {
 			focus = SPR_guntai_rikugun
@@ -1081,6 +1078,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SPR_guntai_kidousen
 		}
+		x = 32
+		y = 12
 		completion_reward = {
 			add_tech_bonus = {
 					bonus = 1
@@ -1164,8 +1163,10 @@ focus_tree = {
 			focus = SPR_guntai_rikugun
 		}
 		mutually_exclusive = {
-			focus = SPR_guntai_hoheidokutorin
 			focus = SPR_guntai_kidousen
+		}
+		mutually_exclusive = {
+			focus = SPR_guntai_daikibosakusen
 		}
 		x = 34
 		y = 12
@@ -1184,8 +1185,6 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = SPR_guntai_daikibosakusen
-		}
-		prerequisite = {
 			focus = SPR_guntai_yuuseikaryoku
 		}
 		x = 33
@@ -1377,7 +1376,7 @@ focus_tree = {
 		x = 36
 		y = 8
 		completion_reward = {
-			SPR = {
+			JAP = {
 				country_event = { id = ssw_spr.49 days = 1 }
 			}
 		}
@@ -2128,19 +2127,30 @@ focus_tree = {
 		x = 49
 		y = 9
 		available = {
-			any_country = {
-				limit = {
-					OR = {
-						is_puppet_of = SPR
-						tag = SPR
+			OR = {
+					SPR = {
+							owns_state = 278
+							owns_state = 493
+							owns_state = 307
+							owns_state = 305
+					}
+						
+					SPR = {
+						278 = {
+							is_puppet_of = SPR
+						}
+						493 = {
+							is_puppet_of = SPR
+						}
+						307 = {
+							is_puppet_of = SPR
+						}
+						305 = {
+							is_puppet_of = SPR
+						}
+						
 					}
 				}
-				owns_state = 278
-				owns_state = 493
-				owns_state = 307
-				owns_state = 305
-				}	
-			}
 		}
 		completion_reward = {
 			
@@ -2189,15 +2199,30 @@ focus_tree = {
 		x = 45
 		y = 9
 		available = {
-			any_country = {
-				limit = {
-					OR = { tag = SPR is_puppet_of = SPR }
+			OR = {
+					SPR = {
+							owns_state = 278
+							owns_state = 300
+							owns_state = 301
+							owns_state = 302
+					}
+						
+					SPR = {
+						278 = {
+							is_puppet_of = SPR
+						}
+						300 = {
+							is_puppet_of = SPR
+						}
+						301 = {
+							is_puppet_of = SPR
+						}
+						302 = {
+							is_puppet_of = SPR
+						}
+						
+					}
 				}
-				owns_state = 278
-				owns_state = 300
-				owns_state = 301
-				owns_state = 302
-			}
 		}
 		completion_reward = {
 			
@@ -2234,6 +2259,7 @@ focus_tree = {
 					}
 			}
 		}
+
 	}
 	focus = {
 		id = SPR_guntai_kuugun
@@ -2303,52 +2329,64 @@ focus_tree = {
 		x = 51
 		y = 9
 		available = {
-			any_country = {
-				limit = {
-					OR = {
-						is_puppet_of = SPR
-						tag = SPR
+			OR = {
+					SPR = {
+							owns_state = 303
+							owns_state = 492
+							owns_state = 506
+							owns_state = 649
+					}
+						
+					SPR = {
+						303 = {
+							is_puppet_of = SPR
+						}
+						492 = {
+							is_puppet_of = SPR
+						}
+						506 = {
+							is_puppet_of = SPR
+						}
+						649 = {
+							is_puppet_of = SPR
+						}
+						
 					}
 				}
-				owns_state = 303
-				owns_state = 492
-				owns_state = 506
-				owns_state = 649
-			}
 		}
 		completion_reward = {
 			
 			303 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
 			}
 			492 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
 			}
 			506 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
 			}
 			649 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
 			}
 		}
 
@@ -2361,7 +2399,9 @@ focus_tree = {
 			focus = SPR_guntai_kuugun
 		}
 		mutually_exclusive = {
-			focus = SPR_guntai_senjyousien
+			focus = SPR_guntai_senryakuhakai
+		}
+		mutually_exclusive = {
 			focus = SPR_guntai_sakusenseigou
 		}
 		x = 52
@@ -2423,8 +2463,6 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = SPR_guntai_senjyousien
-		}
-		prerequisite = {
 			focus = SPR_guntai_senryakuhakai
 		}
 		x = 53
@@ -2572,8 +2610,6 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = SPR_guntai_senjyousien
-		}
-		prerequisite = {
 			focus = SPR_guntai_sakusenseigou
 		}
 		x = 55
@@ -2787,15 +2823,16 @@ focus_tree = {
 		x = 1
 		y = 5
 		available = {
-			any_country = {
-				limit = {
-					OR = {
-						is_puppet_of = SPR
-						tag = SPR
+			OR = {
+					SPR = {
+							owns_state = 112
+						
+		
+						112 = {
+							is_puppet_of = SPR
+						}
 					}
 				}
-				owns_state = 112
-			}
 		}
 		completion_reward = {
 			
@@ -3028,11 +3065,45 @@ focus_tree = {
 		x = 31
 		y = 10
 		completion_reward = {
-			SPR = {
-				country_event = { id = ssw_spr.50 days = 1 }
+			add_extra_state_shared_building_slots = 2
+			41 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+			}
+			41 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+			}
+			41 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+			}
+			41 = {
+				add_building_construction = {
+						type = air_base
+						level = 4
+						instant_build = yes
+					}
+			}
+			41 = {
+				add_building_construction = {
+						type = radar_station
+						level = 3
+						instant_build = yes
+					}
 			}
 		}
-
 	}
 	focus = {
 		id = SPR_outouha_santaeria
@@ -3064,6 +3135,16 @@ focus_tree = {
 		}
 		x = 60
 		y = 5
+		completion_reward = {			
+			41 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+			}
+		}
 
 	}
 	focus = {
@@ -3116,52 +3197,64 @@ focus_tree = {
 		x = 47
 		y = 9
 		available = {
-			any_country = {
-				limit = {
-					OR = {
-						is_puppet_of = SPR
-						tag = SPR
+			OR = {
+					SPR = {
+							owns_state = 375
+							owns_state = 277
+							owns_state = 378
+							owns_state = 316
+					}
+						
+					SPR = {
+						375 = {
+							is_puppet_of = SPR
+						}
+						277 = {
+							is_puppet_of = SPR
+						}
+						378 = {
+							is_puppet_of = SPR
+						}
+						316 = {
+							is_puppet_of = SPR
+						}
+						
 					}
 				}
-				owns_state = 375
-				owns_state = 277
-				owns_state = 378
-				owns_state = 316
-			}
 		}
 		completion_reward = {
 			
 			375 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
 			}
 			277 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
 			}
 			378 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
 			}
 			316 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
 			}
 		}
 
@@ -3215,8 +3308,6 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = SPR_guntai_yuuseikaryoku
-		}
-		prerequisite = {
 			focus = SPR_guntai_kidousen
 		}
 		x = 35
@@ -3236,8 +3327,6 @@ focus_tree = {
 		cost = 6.00
 		prerequisite = {
 			focus = SPR_guntai_sensya
-		}
-		prerequisite = {
 			focus = SPR_guntai_jidousya
 		}
 		x = 36
@@ -3258,8 +3347,6 @@ focus_tree = {
 		cost = 6.00
 		prerequisite = {
 			focus = SPR_guntai_jidousya
-		}
-		prerequisite = {
 			focus = SPR_guntai_houhei
 		}
 		x = 34
@@ -3280,8 +3367,6 @@ focus_tree = {
 		cost = 6.00
 		prerequisite = {
 			focus = SPR_guntai_houhei
-		}
-		prerequisite = {
 			focus = SPR_guntai_hohei
 		}
 		x = 32
@@ -3382,39 +3467,53 @@ focus_tree = {
 		x = 42
 		y = 14
 		completion_reward = {
+			set_technology = {
+				ship_hull_super_heavy_2 = 1
+			}
 			
 				create_equipment_variant = {
-					name = "Nuestra Senora de la Santisima Trinidad Class"
-					type = ship_hull_super_heavy_1
+					name = "Nuestra Señora de la Santísima Trinidad Class"
+					type = ship_hull_super_heavy_2
 					name_group = SPR_BB_HISTORICAL
 					parent_version = 0
 					modules = {
 						fixed_ship_battery_slot = ship_super_heavy_battery_1
-						fixed_ship_anti_air_slot = ship_anti_air_2
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_anti_air_slot = ship_anti_air_3
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+						fixed_ship_radar_slot = ship_radar_3
+						fixed_ship_engine_slot = super_heavy_ship_engine_2
 						fixed_ship_secondaries_slot = ship_secondaries_2
 						fixed_ship_armor_slot = ship_armor_shbb
-						front_1_custom_slot = ship_anti_air_1
-						front_2_custom_slot = empty
-						mid_1_custom_slot = empty
-						mid_2_custom_slot = ship_secondaries_2
+						front_1_custom_slot = ship_super_heavy_battery_1
+						front_2_custom_slot = ship_anti_air_3
+						mid_1_custom_slot = ship_anti_air_3
+						mid_2_custom_slot = ship_anti_air_3
 						mid_3_custom_slot = ship_secondaries_2
 						rear_1_custom_slot = ship_super_heavy_battery_1
-						rear_2_custom_slot = ship_airplane_launcher_1
+						rear_2_custom_slot = ship_airplane_launcher_2
 					}
 				}
 				hidden_effect = {
 					add_equipment_production = {
 						equipment = {
-							type = ship_hull_super_heavy_1
+							type = ship_hull_super_heavy_2
 							creator = "SPR" 
-							version_name = "Nuestra Senora de la Santisima Trinidad Class"
+							version_name = "Nuestra Señora de la Santísima Trinidad Class"
 						}
-						name = "Nuestra Senora de la Santisima Trinidad" 
+						name = "Nuestra Señora de la Santísima Trinidad" 
 						requested_factories = 1
 						progress = 0.75
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_super_heavy_2
+							creator = "SPR" 
+							version_name = "Nuestra Señora de la Santísima Trinidad Class"
+						}
+						name = "Virgen de la Candelaria" 
+						requested_factories = 1
+						progress = 0.5
 						amount = 1
 					}
 				}
@@ -3447,8 +3546,6 @@ focus_tree = {
 		cost = 9.00
 		prerequisite = {
 			focus = SPR_guntai_jyusen
-		}
-		prerequisite = {
 			focus = SPR_guntai_jyutubaku
 		}
 		x = 54
@@ -3469,8 +3566,6 @@ focus_tree = {
 		cost = 9.00
 		prerequisite = {
 			focus = SPR_guntai_jyutubaku
-		}
-		prerequisite = {
 			focus = SPR_guntai_keisen
 		}
 		x = 56
@@ -3490,8 +3585,6 @@ focus_tree = {
 		cost = 9.00
 		prerequisite = {
 			focus = SPR_guntai_ryakubaku
-		}
-		prerequisite = {
 			focus = SPR_guntai_jyusen
 		}
 		x = 52

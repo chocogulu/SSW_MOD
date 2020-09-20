@@ -1,5 +1,6 @@
 ﻿l_english:
 #国家方針
+ SPR_kougyou_kenkyuu:0 "スペイン進歩主義"
  SPR_kougyou_kougyouka:0 "工業化政策"
  SPR_kougyou_hokubuzousen:0 "北部での造船事業"
  SPR_kougyou_nannbuzousen:0 "南部での造船事業"
@@ -48,7 +49,7 @@
  SPR_faranhe_sangakuhei:0 "山岳テルシオ隊"
  SPR_faranhe_gunkakudai:0 "軍事的拡大"
  SPR_faranhe_kensetukyouka:0 "軍用工場の建設強化"
- SPR_franco_orinpia:0 "マドリード五輪の開催"
+ SPR_franco_orinpia:0 "マドリード五輪の開催に向けて"
  SPR_faranhe_itariakorosu:0 "イタリア征服"
  SPR_faranhe_doitu:0 "ドイツ征服"
  SPR_faranhe_igirisu:0 "イギリス征服"
