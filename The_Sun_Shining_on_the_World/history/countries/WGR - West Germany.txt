@@ -47,7 +47,9 @@ if = {
 		transport = 1
 	}
 }
-
+add_ideas = {
+	civilian_economy
+}
 if = {
 	limit = {
 		has_dlc = "Man the Guns"

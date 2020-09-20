@@ -17,3 +17,6 @@ set_politics = {
 set_popularities = {
 	militarism = 100
 }
+add_ideas = {
+	civilian_economy
+}

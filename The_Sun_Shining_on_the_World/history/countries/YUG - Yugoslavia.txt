@@ -22,7 +22,9 @@ if = {
 		YUG_idea_serbian_general_staff
 	}
 }
-
+add_ideas = {
+	civilian_economy
+}
 add_ideas = {
 	anti_german_military
 }

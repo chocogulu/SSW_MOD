@@ -81,7 +81,9 @@ create_country_leader = {
 }
 
 
+
 add_ideas = {
+	civilian_economy
 	rus_debahu1
 	rus_debahu2
 	rus_debahu3

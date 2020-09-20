@@ -27,6 +27,9 @@ set_technology = {
 	cv_naval_bomber1 = 1
 	early_bomber = 1
 }
+add_ideas = {
+	civilian_economy
+}
 
 if = {
 	limit = {

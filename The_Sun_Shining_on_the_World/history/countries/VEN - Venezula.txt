@@ -10,6 +10,9 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
+add_ideas = {
+	civilian_economy
+}
 set_country_flag = monroe_doctrine
 
 set_convoys = 10

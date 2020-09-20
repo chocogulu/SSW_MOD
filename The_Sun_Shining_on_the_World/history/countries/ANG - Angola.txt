@@ -71,3 +71,7 @@ create_country_leader = {
 		neutrality = 100
 	}
 }
+
+add_ideas = {
+	civilian_economy
+}

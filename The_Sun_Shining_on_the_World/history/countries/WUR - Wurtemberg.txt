@@ -28,7 +28,9 @@ set_technology = {
 	oil_processing = 1
 	fuel_refining = 1
 }
-
+add_ideas = {
+	civilian_economy
+}
 if = {
 	limit = {
 		not = {

@@ -12,6 +12,10 @@ set_technology = {
 	transport = 1
 	fuel_silos = 1
 }
+add_ideas = {
+	civilian_economy
+}
+
 
 if = {
 	limit = {

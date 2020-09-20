@@ -5,7 +5,9 @@ set_stability = 0.8
 set_war_support = 0.5
 set_convoys = 0
 #set_technology = {}
-
+add_ideas = {
+	civilian_economy
+}
 set_politics = {
 	ruling_party = militarism
 	last_election = 1950.1.1

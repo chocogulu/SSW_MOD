@@ -77,3 +77,6 @@ create_country_leader = {
 		elections_allowed = yes
 	}
 }
+add_ideas = {
+	civilian_economy
+}

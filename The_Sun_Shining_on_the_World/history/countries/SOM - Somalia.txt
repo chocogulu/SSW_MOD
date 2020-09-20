@@ -52,7 +52,9 @@ set_convoys = 10
 		dispersed_industry2 = 1
 	}
 }
-
+add_ideas = {
+	civilian_economy
+}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

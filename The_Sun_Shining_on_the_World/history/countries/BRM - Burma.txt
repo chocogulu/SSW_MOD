@@ -146,6 +146,7 @@ create_country_leader = {
 	}
 }
 add_ideas = {
+	civilian_economy
 	brm_bahu_01
 	brm_debahu_01
 	brm_debahu_02

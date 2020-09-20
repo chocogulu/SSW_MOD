@@ -15,7 +15,9 @@ set_technology = {
 	early_bomber = 1
 	CAS1 = 1
 }
-
+add_ideas = {
+	civilian_economy
+}
 set_politics = {
 	ruling_party = nazism
 	last_election = "1933.3.5"

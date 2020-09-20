@@ -20,6 +20,10 @@ set_technology = {
 	early_bomber = 1
 	CAS1 = 1
 }
+add_ideas = {
+	civilian_economy
+}
+
 
 if = {
 	limit = {

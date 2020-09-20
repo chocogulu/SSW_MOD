@@ -25,3 +25,6 @@ set_popularities = {
 	neutrality = 100
 	militarism = 0
 }
+add_ideas = {
+	civilian_economy
+}

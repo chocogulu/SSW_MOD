@@ -27,6 +27,7 @@ set_technology = {
 	marines = 1
 }
 
+
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
@@ -88,6 +89,9 @@ if = {
 set_variable = {
 	var = gateway_to_europe_influence_pp_total
 	value = 0
+}
+add_ideas = {
+	civilian_economy
 }
 
 add_ideas = {

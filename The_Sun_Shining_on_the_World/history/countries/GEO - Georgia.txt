@@ -82,5 +82,8 @@ create_country_leader = {
 	traits = {
 	}
 }
+add_ideas = {
+	civilian_economy
+}
 
 #couldnt find anything else, the commies simply forced everyone else into exile

@@ -28,6 +28,10 @@ set_popularities = {
 	neutrality = 0
 	militarism = 0
 }
+add_ideas = {
+	civilian_economy
+}
+
 
 #create_country_leader = { イデオロギーが不正
 #	name = "土肥原賢二"

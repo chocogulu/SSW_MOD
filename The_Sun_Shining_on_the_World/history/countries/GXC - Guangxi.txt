@@ -17,6 +17,10 @@ if = {
 		CHI_ineffective_bureaucracy_warlord
 	}
 }
+add_ideas = {
+	civilian_economy
+}
+
 
 set_convoys = 5
 set_politics = {

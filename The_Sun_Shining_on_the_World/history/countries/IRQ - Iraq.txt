@@ -9,6 +9,10 @@ set_technology = {
 	CAS1 = 1
 	fuel_silos = 1
 }
+add_ideas = {
+	civilian_economy
+}
+
 
 set_convoys = 5
 set_politics = {

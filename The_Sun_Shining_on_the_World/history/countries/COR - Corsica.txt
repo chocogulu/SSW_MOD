@@ -187,3 +187,6 @@ set_popularities = {
 	communism = 2
 	neutrality = 25
 }
+add_ideas = {
+	civilian_economy
+}

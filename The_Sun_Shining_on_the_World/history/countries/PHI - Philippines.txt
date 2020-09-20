@@ -10,6 +10,10 @@ set_technology = {
 	early_bomber = 1
 }
 
+add_ideas = {
+	civilian_economy
+}
+
 set_convoys = 5
 create_country_leader = {
 	name = "Jose Laurel"

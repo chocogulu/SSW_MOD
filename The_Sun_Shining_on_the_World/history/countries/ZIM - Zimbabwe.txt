@@ -37,7 +37,9 @@ set_convoys = 5
 		dispersed_industry2 = 1
 	}
 }
-
+add_ideas = {
+	civilian_economy
+}
 # A colongy of Italy in 1939, however if independent it would have the same politics as in 1936
 set_politics = {
 	ruling_party = neutrality

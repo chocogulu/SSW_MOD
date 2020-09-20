@@ -61,6 +61,10 @@ set_country_flag = monroe_doctrine
 		dispersed_industry2 = 1
 	}
 }
+add_ideas = {
+	civilian_economy
+}
+
 
 set_politics = {
 	ruling_party = neutrality

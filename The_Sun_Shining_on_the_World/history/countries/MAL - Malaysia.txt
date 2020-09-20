@@ -29,6 +29,10 @@ set_technology = {
 	radio = 1
 	radio_detection = 1
 }
+add_ideas = {
+	civilian_economy
+}
+
 
 if = {
 	limit = {

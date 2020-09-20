@@ -99,6 +99,9 @@ set_convoys = 10
 		dispersed_industry2 = 1
 	}
 }
+add_ideas = {
+	civilian_economy
+}
 
 set_convoys = 5
 set_politics = {

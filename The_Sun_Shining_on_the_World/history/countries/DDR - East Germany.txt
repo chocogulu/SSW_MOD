@@ -120,6 +120,9 @@ set_stability = 0.75
 		dispersed_industry4 = 1
 	}
 }
+add_ideas = {
+	civilian_economy
+}
 
 set_politics = {
 	ruling_party = communism

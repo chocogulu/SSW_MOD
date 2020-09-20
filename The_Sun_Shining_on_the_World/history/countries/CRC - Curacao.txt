@@ -67,3 +67,6 @@ set_popularities = {
 #		#
 #	}
 #}
+add_ideas = {
+	civilian_economy
+}

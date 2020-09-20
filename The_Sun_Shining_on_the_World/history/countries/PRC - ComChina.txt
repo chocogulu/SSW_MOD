@@ -130,7 +130,10 @@ set_popularities = {
 }
 
 add_ideas = {
-	closed_economy
+	
+		civilian_economy
+	
+	
 	service_by_requirement
 	partial_economic_mobilisation
 }
