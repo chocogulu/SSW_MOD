@@ -1,0 +1,212 @@
+ideas = {
+	country = {
+	    #後進的な軽工業社会
+		TUR_idea_1 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.30
+				industrial_capacity_factory = -0.30
+				consumer_goods_factor = 0.30
+			}
+		}
+		#外交的孤立
+		TUR_idea_2 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				generate_wargoal_tension = 0.40
+				political_advisor_cost_factor = 0.25
+				trade_laws_cost_factor = 0.25
+				mobilization_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+			}
+		}
+		#アルメニア人弾圧
+		TUR_idea_3 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				surrender_limit = -0.50
+				mobilization_speed = -0.50
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		#正教会の帰属問題
+		TUR_idea_4 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				political_power_factor = -0.25
+			}
+		}
+		#経済危機
+		TUR_idea_5 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = -0.50
+				production_speed_industrial_complex_factor = -0.50
+				research_speed_factor = -0.20
+				consumer_goods_factor = 0.50
+			}
+		}
+		#一時的な経済対策
+		TUR_idea_6 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = -0.30
+				production_speed_industrial_complex_factor = -0.30
+				research_speed_factor = -0.10
+				consumer_goods_factor = 0.35
+			}
+                }
+		#紙幣の大量印刷
+		TUR_idea_7 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				political_power_gain = -0.15
+				stability_weekly = 0.45
+				consumer_goods_factor = 0.05
+			}
+                }
+		#重工業化への準備
+		TUR_idea_8 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.10
+				industrial_capacity_factory = -0.10
+				consumer_goods_factor = 0.10
+			}
+		}
+		#安定傾向にある経済
+		TUR_idea_9 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = -0.10
+				production_speed_industrial_complex_factor = -0.10
+				research_speed_factor = -0.05
+				consumer_goods_factor = 0.10
+			}
+		}
+		#4カ年計画の開始
+		TUR_idea_10 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = -0.10
+				consumer_goods_factor = 0.10
+			}
+		}
+		#乾燥地域への熟練
+		TUR_idea_11 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				attrition = -0.15
+				heat_attrition_factor = -0.5
+				acclimatization_hot_climate_gain_factor = 0.25
+				out_of_supply_factor = -0.05
+				supply_consumption_factor = -0.05
+				training_time_factor = 0.1
+			}
+		}
+		#復活の前兆
+		TUR_idea_12 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = -0.05
+				production_speed_industrial_complex_factor = -0.05
+				consumer_goods_factor = 0.5
+			}
+		}
+	}
+}
