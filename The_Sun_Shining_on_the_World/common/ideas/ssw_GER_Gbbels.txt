@@ -10,7 +10,7 @@ ideas = {
 			removal_cost = -1
 			picture = anti_soviet_pact
 			modifier = {
-				consumer_goods_factor = -1.5
+				consumer_goods_factor = -0.15
 			}
 		}
 		timed_gold_standard = {
@@ -23,7 +23,7 @@ ideas = {
 			removal_cost = -1
 			picture = anti_soviet_pact
 			modifier = {
-				consumer_goods_factor = -2.0
+				consumer_goods_factor = -0.20
 			}
 		}
 		missing_upper_echelon = {
@@ -49,9 +49,9 @@ ideas = {
 			removal_cost = -1
 			picture = anti_soviet_pact
 			modifier = {
-				consumer_goods_factor = -10
-				stability_weekly = -20
-				conscription_factor = -10
+				consumer_goods_factor = -0.10
+				stability_weekly = -0.20
+				conscription_factor = -0.10
 			}
 		}
 		commandeer_2 = {
@@ -64,9 +64,9 @@ ideas = {
 			removal_cost = -1
 			picture = anti_soviet_pact
 			modifier = {
-				consumer_goods_factor = -10
-				stability_weekly = -10
-				conscription_factor = -5
+				consumer_goods_factor = -0.10
+				stability_weekly = -0.10
+				conscription_factor = -0.5
 			}
 		}
 		military_and_peope_offensive = {
@@ -180,7 +180,7 @@ ideas = {
 			picture = FRA_matignon_agreements
 			equipment_bonus = {
 				fighter_equipment = {
-					build_cost_ic = 5
+					build_cost_ic = 0.5
 					instant = yes
 				}
 				CAS_equipment = {
