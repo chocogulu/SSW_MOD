@@ -162,13 +162,33 @@ ideas = {
 			removal_cost = -1
 
 			allowed_civil_war = {always = yes}
-
+			
 			picture = generic_goods_red_bonus
 			
 			modifier = {
 				production_speed_arms_factory_factor = 0.10
 				production_speed_industrial_complex_factor = -0.10
 				consumer_goods_factor = 0.10
+			}
+		}
+		#乾燥地域への熟練
+		TUR_idea_11 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				attrition = -0.15
+				heat_attrition_factor = -0.5
+				acclimatization_hot_climate_gain_factor = 0.25
+				out_of_supply_factor = -0.05
+				supply_consumption_factor = -0.05
+				training_time_factor = 0.1
 			}
 		}
 	}
