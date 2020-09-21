@@ -91,12 +91,11 @@ set_variable = {
 	value = 0
 }
 add_ideas = {
+	Colonial_goverment
 	civilian_economy
 }
 
-add_ideas = {
-	HOL_wilhelmina
-}
+
 
 if = {
 	limit = {

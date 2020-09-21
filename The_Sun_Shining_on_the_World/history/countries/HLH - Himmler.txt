@@ -130,6 +130,7 @@ add_ideas = {
 	Protester
 	Emergency_conscription
 	GER_idea_1
+	partial_economic_mobilisation
 }
 
 # activate_mission = GER_mefo_bills_mission

@@ -79,5 +79,23 @@ ideas = {
 				custom_modifier_tooltip = Air_force_conspiracy.d
 			}
 		}
+
+		Colonial_goverment = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			#picture = 
+			modifier = {
+				army_attack_factor = -0.3
+				conscription = -0.5
+			}
+			
+		}
 	}
 }

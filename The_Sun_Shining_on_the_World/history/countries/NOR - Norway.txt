@@ -12,6 +12,7 @@ if = {
 
 set_research_slots = 3
 add_ideas = {
+	Colonial_goverment
 	limited_conscription
 }
 

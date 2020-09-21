@@ -127,6 +127,7 @@ add_ideas = {
 	extensive_conscription
 	closed_economy
 	tot_economic_mobilisation
+	ssw_military_dictatorship
 }
 
 # activate_mission = GER_mefo_bills_mission

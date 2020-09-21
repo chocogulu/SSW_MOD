@@ -126,6 +126,7 @@ add_ideas = {
 	service_by_requirement
 	Protester
 	Emergency_conscription
+	partial_economic_mobilisation
 }
 
 set_politics = {

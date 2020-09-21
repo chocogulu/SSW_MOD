@@ -127,6 +127,7 @@ add_ideas = {
 	limited_conscription
 	export_focus
 	partial_economic_mobilisation
+	one_party_dictatorship
 }
 
 set_politics = {

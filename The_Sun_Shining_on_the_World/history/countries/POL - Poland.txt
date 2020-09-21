@@ -28,6 +28,7 @@ set_technology = {
 	trench_warfare = 1
 }
 add_ideas = {
+	Colonial_goverment
 	civilian_economy
 }
 

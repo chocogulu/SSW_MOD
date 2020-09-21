@@ -16,6 +16,7 @@ set_technology = {
 	CAS1 = 1
 }
 add_ideas = {
+	Colonial_goverment
 	civilian_economy
 }
 set_politics = {
