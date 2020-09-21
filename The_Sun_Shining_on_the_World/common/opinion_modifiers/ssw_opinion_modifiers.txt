@@ -7,9 +7,8 @@
 # decay
 # months/years/days = timer
 # trade = yes/no
-
 opinion_modifiers = {
 	TAG_friend_country = {
-	value = 50
+		value = 50
 	}
 }
