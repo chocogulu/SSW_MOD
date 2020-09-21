@@ -6,6 +6,10 @@ country_event = {
 	picture = GFX_Attlee_speech
 
 	is_triggered_only = yes
+	
+	trigger = {
+		tag = TUR
+		}
 
 	option = {
 		name = SSW_TUR.1.a
