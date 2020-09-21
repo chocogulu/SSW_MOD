@@ -191,5 +191,22 @@ ideas = {
 				training_time_factor = 0.1
 			}
 		}
+		#復活の前兆
+		TUR_idea_12 = {
+			
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = -0.05
+				production_speed_industrial_complex_factor = -0.05
+				consumer_goods_factor = 0.5
+			}
+		}
 	}
 }
