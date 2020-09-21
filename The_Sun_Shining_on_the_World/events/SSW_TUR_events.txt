@@ -1,0 +1,13 @@
+add_namespace = SSW_TUR
+country_event = {
+	id = SSW_TUR.1
+	title = SSW_TUR.1.t
+	desc = SSW_TUR.1.d
+	picture = GFX_Attlee_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_TUR.1.a
+	}
+}
